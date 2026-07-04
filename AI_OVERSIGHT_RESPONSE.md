@@ -1,6 +1,6 @@
 # AI Oversight â€” Review Responses
 
-**Status:** Active review ï¿½ 7 findings triaged (2026-07-04). Sprint execution continues; hourly monitoring enabled.
+**Status:** Active review — 7 findings triaged (2026-07-04). Sprint execution continues; hourly monitoring enabled.
 
 Findings from independent oversight land here. Sprint execution continues regardless of response timing.
 
