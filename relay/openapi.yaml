@@ -1,0 +1,127 @@
+openapi: 3.1.0
+info:
+  title: Construction Intelligence Oversight Relay
+  description: |
+    Submit independent oversight findings to wimaxnz/construction-intelligence-oversight.
+    Single fixed endpoint — no repo, branch, path, or shell selection.
+    Bearer token required (OVERSIGHT_RELAY_API_KEY).
+  version: 1.0.0
+servers:
+  - url: https://oversight-relay.YOUR_SUBDOMAIN.workers.dev
+    description: Production Cloudflare Worker (replace after deploy)
+security:
+  - BearerAuth: []
+paths:
+  /v1/findings:
+    post:
+      operationId: submitOversightFinding
+      summary: Submit one oversight finding
+      description: |
+        Validates schema, sanitizes text, and dispatches to the oversight ingest bridge.
+        Idempotent by findingId — duplicate IDs return 409.
+        Rate limit: 10 accepts per hour per API key.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OversightFinding'
+            example:
+              findingId: relay-e2e-example-001
+              timestamp: '2026-07-05T08:00:00Z'
+              severity: low
+              category: architecture
+              title: Example finding from ChatGPT oversight
+              evidence: Observed pattern in published state snapshot.
+              whyItMatters: Advisory input for sprint planning.
+              recommendedAction: Review in next close-out; no blocking action.
+              source: independent-oversight
+      responses:
+        '202':
+          description: Finding accepted and dispatched to GitHub ingest workflow
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                    enum: [true]
+                  findingId:
+                    type: string
+                  mode:
+                    type: string
+                    enum: [dispatched]
+                  sanitized:
+                    type: boolean
+        '400':
+          description: Validation failed (schema, size, forbidden fields)
+        '401':
+          description: Missing or invalid Bearer token
+        '409':
+          description: Duplicate findingId
+        '422':
+          description: High-risk content blocked after sanitization
+        '429':
+          description: Rate limit exceeded (10/hour)
+        '502':
+          description: GitHub dispatch failed
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      description: OVERSIGHT_RELAY_API_KEY — issued by platform ops, not stored in any repo
+  schemas:
+    OversightFinding:
+      type: object
+      required:
+        - findingId
+        - timestamp
+        - severity
+        - category
+        - title
+        - evidence
+        - whyItMatters
+        - recommendedAction
+        - source
+      additionalProperties: false
+      properties:
+        findingId:
+          type: string
+          maxLength: 64
+          pattern: '^[a-z0-9][a-z0-9-]{0,62}[a-z0-9]$|^[a-z0-9]{1,2}$'
+          description: Stable unique id (idempotency key)
+        timestamp:
+          type: string
+          format: date-time
+          description: ISO-8601 UTC
+        severity:
+          type: string
+          enum: [low, medium, high, critical]
+        category:
+          type: string
+          enum:
+            - architecture
+            - product
+            - construction
+            - commercial
+            - roadmap
+            - regression
+            - security
+            - data-integrity
+        title:
+          type: string
+          maxLength: 120
+        evidence:
+          type: string
+          maxLength: 2000
+        whyItMatters:
+          type: string
+          maxLength: 2000
+        recommendedAction:
+          type: string
+          maxLength: 2000
+        source:
+          type: string
+          enum: [independent-oversight]

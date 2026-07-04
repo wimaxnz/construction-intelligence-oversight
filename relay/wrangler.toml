@@ -1,0 +1,12 @@
+name = "oversight-relay"
+main = "src/index.ts"
+compatibility_date = "2024-06-01"
+
+# Create KV namespace: wrangler kv namespace create RELAY_KV
+# Then bind id below (replace placeholder)
+[[kv_namespaces]]
+binding = "RELAY_KV"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+[vars]
+# No secrets in wrangler.toml — use wrangler secret put
