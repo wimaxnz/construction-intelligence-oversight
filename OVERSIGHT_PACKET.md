@@ -37,6 +37,6 @@ This file is **optional**. When present and updated, it is included in the sanit
 
 ## Guidelines
 
-- Do **not** include API keys, credentials, `.env` values, email/phone, commercial figures, drawing paths, or internal hostnames.
+- Do **not** include API keys, credentials, `[REDACTED]` values, email/phone, commercial figures, drawing paths, or internal hostnames.
 - Prefer references to public doc themes (milestone names, feature areas) over file paths.
 - The sync script scrubs this file before push; keep source content clean to avoid `-Force`.

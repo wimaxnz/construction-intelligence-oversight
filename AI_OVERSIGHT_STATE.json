@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-05",
   "currentSprint": {
-    "number": 290,
+    "number": 291,
     "status": "closed",
-    "previousClosed": 289,
+    "previousClosed": 290,
     "closedDate": "2026-07-05"
   },
   "currentMilestone": {
@@ -21,21 +21,26 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 7,
-    "percentComplete": 70,
+    "sprintsClosed": 8,
+    "percentComplete": 80,
     "nextWrapReviewSprint": 293
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Operational workspace AI panel knowledge similarity match context entry surfacing from project assistant context entries"
+      "focus": "Operational workspace AI panel knowledge similarity match explainability context entry surfacing from project assistant context"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Project assistant context engine knowledge similarity match context entries aggregation"
+      "focus": "Project assistant context engine knowledge similarity match explainability context entry aggregation"
     }
   },
   "completedWork": {
+    "sprint291": {
+      "stream2": "Project assistant context engine knowledge similarity match context entries aggregation — knowledgeSimilarityMatchEntries · ProjectAssistantKnowledgeSimilarityMatchContextEntry · toKnowledgeSimilarityMatchContextEntry · filterDecisionTimelineToKnowledgeSimilarityMatchEntries · extractKnowledgeSimilarityMatchEventTypeLabelFromTimelineEntry · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-291-selftest.ts",
+      "stream1": "Operational workspace AI panel knowledge similarity match context entry surfacing from project assistant context entries — operational-workspace-ai-panel-knowledge-similarity-match-context-entries · operational-workspace-ai-panel-knowledge-similarity-match-context-entry-item · OperationalWorkspace.tsx · sprint-291-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
     "sprint290": {
       "stream2": "Project assistant context engine knowledge similarity match timeline entry count + label hint wiring — knowledgeSimilarityMatchTimelineEntryCount · knowledgeSimilarityMatchLabelHint · buildKnowledgeSimilarityMatchTimelinePlaybackStub · countKnowledgeSimilarityMatchTimelineEntries · formatDistinctKnowledgeSimilarityMatchLabelHint · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-290-selftest.ts",
       "stream1": "Operational workspace AI panel knowledge similarity match context availability surfacing from project assistant context — operational-workspace-ai-panel-knowledge-similarity-match-context-entry-count · operational-workspace-ai-panel-knowledge-similarity-match-context-label-hint · OperationalWorkspace.tsx · sprint-290-selftest.ts",
@@ -173,6 +178,15 @@
     }
   },
   "changedFiles": {
+    "sprint291": [
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/types/projectAssistantContext.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-291-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
     "sprint290": [
       "src/platform/assistant/projectAssistantContextEngine.ts",
       "src/types/projectAssistantContext.ts",
@@ -432,6 +446,7 @@
   "validationResults": {
     "sprintValidation": {
       "gate": "PHASE_B_RUNS=3",
+      "sprint291": "3/3 consecutive green",
       "sprint290": "3/3 consecutive green",
       "sprint289": "3/3 consecutive green",
       "sprint288": "3/3 consecutive green",
@@ -466,7 +481,7 @@
       "lastCertifiedBaseline": "2026-06-29",
       "status": "stale — recertification required before production release",
       "sprintRangeCovered": "120–129 (Drawing Intelligence UX Maturity milestone close)",
-      "deltaSinceCertification": "Sprints 130–290 delivered (161 sprints); schema/RLS pending (migration 015); Digital Brain + Commercial Intelligence + Knowledge Similarity Matching milestone active; no 5/5 re-run since 2026-06-29",
+      "deltaSinceCertification": "Sprints 130–291 delivered (162 sprints); schema/RLS pending (migration 015); Digital Brain + Commercial Intelligence + Knowledge Similarity Matching milestone active; no 5/5 re-run since 2026-06-29",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -483,9 +498,9 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Sprint 290 delivered, Sprint 291 queued (context entries aggregation, milestone 300–309 active)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — UX sprint 290 project assistant context engine wiring + AI panel context availability logged",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 290 closed, oversightSync degraded (sprint unaffected), oversightFindingsTriage preserved"
+    "docs/PLATFORM_EVOLUTION.md — Sprint 291 delivered, Sprint 292 queued (explainability context entry aggregation, milestone 300–309 active)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — UX sprint 291 knowledge similarity match context entries aggregation + AI panel context entry surfacing logged",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 291 closed, sprint 292 queued"
   ],
   "migrationsRequired": [
     {
@@ -545,18 +560,18 @@
   ],
   "blockers": [],
   "nextSprint": {
-    "number": 291,
-    "stream2": "Project assistant context engine knowledge similarity match context entries aggregation",
-    "stream1": "Operational workspace AI panel knowledge similarity match context entry surfacing from project assistant context entries",
-    "selftest": "scripts/sprint-291-selftest.ts"
+    "number": 292,
+    "stream2": "Project assistant context engine knowledge similarity match explainability context entry aggregation",
+    "stream1": "Operational workspace AI panel knowledge similarity match explainability context entry surfacing from project assistant context",
+    "selftest": "scripts/sprint-292-selftest.ts"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
     "lastPushAttempt": "2026-07-04T21:06:40.627Z",
     "lastPushResult": "success",
-    "remoteHeadSha": "6c5619df27e725a8d16b4773e9329bf02b6f2da7",
-    "verifiedAt": "2026-07-04T21:06:40.627Z",
+    "remoteHeadSha": "d1f8555add51103e79d03d1c8976c385dd28a947",
+    "verifiedAt": "2026-07-04T21:07:26.360Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "bridgeDocsPublished": [
@@ -576,10 +591,9 @@
     "bridgeDocs": "docs/ai-oversight/OVERSIGHT_BRIDGE_ADR.md"
   },
   "oversightBridge": {
-    "lastConsumedAt": "2026-07-04T20:52:01.297Z",
+    "lastConsumedAt": "2026-07-04T21:15:29.795Z",
     "lastInboxUpdatedAt": null,
-    "newFindingsDetected": 0,
-    "lastBridgeAuditRef": "OVERSIGHT_BRIDGE_OPERATIONS.md#bridge-audit-trail"
+    "newFindingsDetected": 0
   },
   "oversightFindingsState": [],
   "oversightFindingsTriage": [
@@ -717,11 +731,12 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication → Knowledge Library version lifecycle → cross-project knowledge reuse → knowledge similarity matching",
-    "phaseE": "Commercial Intelligence Knowledge Similarity Matching milestone (300-309) active — Sprint 290 closed project assistant context engine wiring; Sprint 291 queued context entries aggregation",
+    "phaseE": "Commercial Intelligence Knowledge Similarity Matching milestone (300-309) active — Sprint 291 closed context entries aggregation; Sprint 292 queued explainability context entry aggregation",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track"
   },
   "digitalBrainImpact": {
+    "sprint291": "No new growth event kinds — project assistant context engine knowledge similarity match context entries aggregation for assistant context entry surfacing",
     "sprint290": "No new growth event kinds — project assistant context engine knowledge similarity match timeline entry count + label hint wiring for assistant context availability metrics",
     "sprint289": "No new growth event kinds — mid-milestone 284–288 completeness review confirms knowledge similarity match growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint288": "No new growth event kinds — operational workspace AI panel knowledge similarity match label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary label for similarity match audit filter scope",
@@ -747,9 +762,10 @@
     "sprint268": "No new growth event kinds — operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds — publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds — operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — template publication growth event family live; knowledge library version retrieval growth event family live milestone 290–299 Sprint 274–283 closed; knowledge similarity match growth event family live milestone 300–309 Sprint 284–290 closed (growth + timeline filter + commercial workflow stage badge + Phase D playback row + pipeline stage badge + AI panel entry count + viewer chrome + explainability actor/confidence badges + label hint + rationale summary badges + mid-milestone review + project assistant context engine entry count + label hint wiring); Sprint 291+ context entries aggregation queued"
+    "overall": "Event engine Partial — template publication growth event family live; knowledge library version retrieval growth event family live milestone 290–299 Sprint 274–283 closed; knowledge similarity match growth event family live milestone 300–309 Sprint 284–291 closed (growth + timeline filter + commercial workflow stage badge + Phase D playback row + pipeline stage badge + AI panel entry count + viewer chrome + explainability actor/confidence badges + label hint + rationale summary badges + mid-milestone review + project assistant context engine entry count + label hint wiring + context entries aggregation); Sprint 292+ explainability context entry aggregation queued"
   },
   "knowledgeGraphImpact": {
+    "sprint291": "No direct KG edge changes",
     "sprint290": "No direct KG edge changes",
     "sprint289": "No direct KG edge changes",
     "sprint288": "No direct KG edge changes",
@@ -778,6 +794,7 @@
     "overall": "KG Partial — template entities deferred per Finding 1 triage"
   },
   "commercialIntelligenceImpact": {
+    "sprint291": "Project assistant context engine knowledge similarity match context entries aggregation + operational workspace AI panel knowledge similarity match context entry surfacing from project assistant context entries",
     "sprint290": "Project assistant context engine knowledge similarity match timeline entry count + label hint wiring + operational workspace AI panel knowledge similarity match context availability surfacing from project assistant context",
     "sprint289": "Mid-milestone 284–288 completeness review — knowledge similarity match stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators",
     "sprint288": "Operational workspace AI panel knowledge similarity match label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary label — knowledge similarity matching Phase D timeline enrichment + AI panel",
@@ -804,7 +821,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287",
-    "overall": "Commercial Intelligence Partial — cross-project knowledge reuse foundation milestone 290–299 Sprint 274–283 closed; Knowledge Similarity Matching milestone 300–309 Sprint 284–290 closed (similarity match growth + timeline filter + commercial workflow stage badge + Phase D playback row + pipeline stage badge + AI panel entry count + viewer chrome + explainability actor/confidence badges + label hint + rationale summary badges + mid-milestone review + project assistant context engine entry count + label hint wiring); Sprint 291+ context entries aggregation queued"
+    "overall": "Commercial Intelligence Partial — cross-project knowledge reuse foundation milestone 290–299 Sprint 274–283 closed; Knowledge Similarity Matching milestone 300–309 Sprint 284–291 closed (similarity match growth + timeline filter + commercial workflow stage badge + Phase D playback row + pipeline stage badge + AI panel entry count + viewer chrome + explainability actor/confidence badges + label hint + rationale summary badges + mid-milestone review + project assistant context engine entry count + label hint wiring + context entries aggregation); Sprint 292+ explainability context entry aggregation queued"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
