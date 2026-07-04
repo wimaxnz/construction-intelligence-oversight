@@ -553,11 +553,12 @@
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-04T21:05:57.132Z",
+    "lastPushAttempt": "2026-07-04T21:06:40.627Z",
     "lastPushResult": "success",
-    "remoteHeadSha": "e2d0c2c98d2ce2ba9f5bde831c75d05c9c96d77d",
-    "verifiedAt": "2026-07-04T21:05:57.132Z",
+    "remoteHeadSha": "6c5619df27e725a8d16b4773e9329bf02b6f2da7",
+    "verifiedAt": "2026-07-04T21:06:40.627Z",
     "allowlistOnly": true,
+    "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "bridgeDocsPublished": [
       "OVERSIGHT_BRIDGE_ADR.md",
       "OVERSIGHT_BRIDGE_OPERATIONS.md",
@@ -565,8 +566,7 @@
       "OVERSIGHT_SYNC.md",
       "OVERSIGHT_REMOTE.md",
       "AI_OVERSIGHT_INBOX.json"
-    ],
-    "pushMethod": "manual git in oversight clone (sync-ai-oversight.ps1 -Push blocked by pre-pull unstaged copy; script order issue)"
+    ]
   },
   "oversightMonitoring": {
     "status": "active",
