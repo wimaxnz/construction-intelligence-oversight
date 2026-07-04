@@ -1,6 +1,6 @@
 # AI Oversight — Review Responses
 
-**Status:** No reviews received yet.
+**Status:** Active review � 7 findings triaged (2026-07-04). Sprint execution continues; hourly monitoring enabled.
 
 Findings from independent oversight land here. Sprint execution continues regardless of response timing.
 
@@ -20,6 +20,8 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 ## Responses
+
+
 
 ## Independent Oversight Review, 2026-07-04
 
@@ -107,6 +109,8 @@ Suggested triggers:
 - Commercial Intelligence state-machine change
 - before production release
 
+
+
 ### Finding 5, Guard against presentation-parity milestones
 
 **Severity:** Medium strategic concern  
@@ -132,6 +136,8 @@ Knowledge Template Review should have explicit domain completeness criteria cove
 - future-project reuse
 - outcome feedback
 - proactive warning/recommendation behavior
+
+
 
 ### Finding 6, Cross-project learning loop is not yet demonstrated
 
@@ -185,10 +191,49 @@ Independent oversight recognizes the following strengths:
 - Decision Timeline integration improves explainability.
 - No current blocker requires Sprint 255 to pause.
 
+
+
 ### Oversight recommendation
 
 Continue Sprint 255 and active autonomous execution.
 
 Add accepted findings to future sprint planning. Do not reopen validated Sprint 254 solely for advisory findings.
 
-Immediate exception: if review of Finding 2 shows commercial or knowledge decisions cannot be traced to exact drawing revisions, classify that as a data-integrity issue and address it under the protocol’s interrupt rule.
+Immediate exception: if review of Finding 2 shows commercial or knowledge decisions cannot be traced to exact drawing revisions, classify that as a data-integrity issue and address it under the protocol’s interrupt rule.  
+
+## Independent Oversight Monitoring Setup, 2026-07-04
+
+**Status:** Recurring independent oversight monitoring enabled.
+
+**Monitoring cadence:** Hourly condition watch.
+
+**Repository monitored:**
+https://github.com/wimaxnz/construction-intelligence-oversight
+
+**Files monitored:**
+- AI_OVERSIGHT_STATE.json
+- AI_OVERSIGHT_REQUEST.md
+- AI_OVERSIGHT_RESPONSE.md
+- AI_OVERSIGHT_PROTOCOL.md
+- OVERSIGHT_PACKET.md
+
+**Alert criteria:**
+- strategic roadmap drift
+- regression or validation deterioration
+- failed or reduced sprint gates
+- untriaged oversight findings
+- growing or stale risks
+- blockers
+- architecture concerns
+- Knowledge Graph or Digital Brain incoherence
+- Commercial Intelligence provenance gaps
+- security or data-integrity concerns
+- migration risks
+- contradictions between oversight files
+- milestone progress that appears presentation-heavy without sufficient underlying platform integration
+
+**Monitoring behavior:**
+- Do not pause active sprint execution.
+- Do not wait for oversight response.
+- Notify only on meaningful issues or material changes.
+- Include severity, evidence, why it matters, and recommended action.

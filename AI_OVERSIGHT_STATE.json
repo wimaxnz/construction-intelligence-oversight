@@ -1,71 +1,430 @@
 {
-  "lastUpdated": "2026-07-04",
+  "lastUpdated": "2026-07-05",
   "currentSprint": {
-    "number": 261,
+    "number": 290,
     "status": "closed",
-    "previousClosed": 260,
-    "closedDate": "2026-07-04"
+    "previousClosed": 289,
+    "closedDate": "2026-07-05"
   },
   "currentMilestone": {
-    "range": "270-279",
-    "name": "Commercial Intelligence Knowledge Template Review",
+    "range": "300-309",
+    "milestoneId": "300-309",
+    "milestoneName": "Commercial Intelligence Knowledge Similarity Matching",
+    "plannedSprintCount": 10,
+    "actualSprintStart": 284,
+    "actualSprintEnd": null,
+    "wrapReviewSprint": 293,
     "status": "active",
-    "theme": "Human review gate · promoted template approve/reject lifecycle",
-    "openedDate": "2026-07-04",
-    "previousMilestoneClosed": "260-269 (Commercial Intelligence Knowledge Library Loop-back)"
+    "theme": "Similarity scoring · matched template recommendations · proactive warning foundations",
+    "openedDate": "2026-07-05",
+    "previousMilestoneClosed": "290-299 (Commercial Intelligence Cross-Project Knowledge Reuse)"
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 8,
-    "percentComplete": 80,
-    "nextWrapReviewSprint": 263
+    "sprintsClosed": 7,
+    "percentComplete": 70,
+    "nextWrapReviewSprint": 293
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Operational workspace AI panel knowledge template review explainability context entry surfacing from project assistant context"
+      "focus": "Operational workspace AI panel knowledge similarity match context entry surfacing from project assistant context entries"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Project assistant context engine knowledge template review explainability context entry aggregation"
+      "focus": "Project assistant context engine knowledge similarity match context entries aggregation"
     }
   },
   "completedWork": {
-    "sprint261": {
-      "stream2": "Project assistant context engine knowledge template review context entries aggregation — knowledgeTemplateReviewEntries/ProjectAssistantKnowledgeTemplateReviewContextEntry via filterDecisionTimelineToKnowledgeTemplateReviewEntries",
-      "stream1": "Operational workspace AI panel knowledge template review context entry surfacing from project assistant context — operational-workspace-ai-panel-knowledge-template-review-context-entries + context-entry-item",
+    "sprint290": {
+      "stream2": "Project assistant context engine knowledge similarity match timeline entry count + label hint wiring — knowledgeSimilarityMatchTimelineEntryCount · knowledgeSimilarityMatchLabelHint · buildKnowledgeSimilarityMatchTimelinePlaybackStub · countKnowledgeSimilarityMatchTimelineEntries · formatDistinctKnowledgeSimilarityMatchLabelHint · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-290-selftest.ts",
+      "stream1": "Operational workspace AI panel knowledge similarity match context availability surfacing from project assistant context — operational-workspace-ai-panel-knowledge-similarity-match-context-entry-count · operational-workspace-ai-panel-knowledge-similarity-match-context-label-hint · OperationalWorkspace.tsx · sprint-290-selftest.ts",
       "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
     },
-    "sprint260": {
-      "stream2": "Project assistant context engine knowledge template review timeline entry count + label hint wiring — knowledgeTemplateReviewTimelineEntryCount/knowledgeTemplateReviewLabelHint on ProjectAssistantContextSnapshot via buildKnowledgeTemplateReviewTimelinePlaybackStub",
-      "stream1": "Operational workspace AI panel knowledge template review context availability surfacing from project assistant context — operational-workspace-ai-panel-knowledge-template-review-context-entry-count + context-label-hint",
+    "sprint289": {
+      "stream2": "Mid-milestone 284–288 Commercial Intelligence Knowledge Similarity Matching completeness review — sprint-289-selftest.ts audits knowledge similarity match stack partial (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint indicators) across operational workspace",
+      "stream1": "Mid-milestone review — Commercial Intelligence Knowledge Similarity Matching first-half completeness prep",
       "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
     },
-    "sprint259": {
-      "stream2": "Mid-milestone 270–274 Commercial Intelligence Knowledge Template Review completeness review — sprint-259-selftest.ts audits first-half stack",
-      "stream1": "Mid-milestone review — first-half completeness prep",
+    "sprint288": {
+      "stream2": "Operational workspace AI panel knowledge similarity match label hint — distinctKnowledgeSimilarityMatchLabels · formatDistinctKnowledgeSimilarityMatchLabelHint · operational-workspace-ai-panel-knowledge-similarity-match-label-hint · OperationalWorkspace.tsx · decisionTimelineBuilder.ts · sprint-288-selftest.ts",
+      "stream1": "Decision Timeline knowledge similarity match explainability rationale summary filtered badges + Phase D playback labels — appendExplainabilityRationaleSummaryPlaybackLine knowledge similarity match scope · extractKnowledgeSimilarityMatchPlaybackRowFromTimelineEntry · decision-timeline-knowledge-similarity-match-explainability-rationale-summary · decision-timeline-knowledge-similarity-match-playback-explainability-rationale-summary · decisionTimelineBuilder.ts · DecisionTimeline.tsx",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint287": {
+      "stream2": "Commercial Intelligence knowledge similarity match indicator in viewer chrome — KnowledgeSimilarityMatchIndicator.tsx · knowledge-similarity-match-indicator · getKnowledgeSimilarityMatchesForRevision · subscribeKnowledgeSimilarityMatches · knowledgeSimilarityMatchGrowthService.ts · DrawingsModule.tsx · sprint-287-selftest.ts",
+      "stream1": "Decision Timeline knowledge similarity match explainability actor/confidence filtered badges + Phase D playback labels — explainabilityPayloadFromTimelineEntry knowledge similarity match scope · appendExplainabilityActorPlaybackLine · appendExplainabilityConfidencePlaybackLine · extractKnowledgeSimilarityMatchPlaybackRowFromTimelineEntry · decision-timeline-knowledge-similarity-match-explainability-actor · decision-timeline-knowledge-similarity-match-explainability-confidence · decision-timeline-knowledge-similarity-match-playback-explainability-actor · decision-timeline-knowledge-similarity-match-playback-explainability-confidence · decisionTimelineBuilder.ts · DecisionTimeline.tsx",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint286": {
+      "stream2": "Operational workspace AI panel knowledge similarity match timeline entry count indicator — knowledgeSimilarityMatchTimelineEntryCount · countHubKnowledgeSimilarityMatchTimelineEntries · countKnowledgeSimilarityMatchTimelineEntries · operational-workspace-ai-panel-knowledge-similarity-match-entry-count · workspaceAggregatorService.ts · OperationalWorkspace.tsx · OperationalWorkspaceHost.tsx · sprint-286-selftest.ts",
+      "stream1": "Decision Timeline knowledge similarity match pipeline stage filtered badge + Phase D playback label — appendCommercialWorkflowPipelineStagePlaybackLine knowledge similarity match scope · extractKnowledgeSimilarityMatchPlaybackRowFromTimelineEntry · decision-timeline-knowledge-similarity-match-pipeline-stage · decision-timeline-knowledge-similarity-match-playback-pipeline-stage · decisionTimelineBuilder.ts · DecisionTimeline.tsx",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint285": {
+      "stream2": "Decision Timeline knowledge similarity match commercial workflow stage filtered badge + Phase D playback label — extractCommercialWorkflowStageLabelFromTimelineEntry knowledge similarity match scope · appendCommercialWorkflowStagePlaybackLine · decision-timeline-knowledge-similarity-match-commercial-workflow-stage · decision-timeline-knowledge-similarity-match-playback-commercial-stage · decisionTimelineBuilder.ts · DecisionTimeline.tsx · sprint-285-selftest.ts",
+      "stream1": "Decision Timeline knowledge similarity match Phase D playback row — decision-timeline-knowledge-similarity-match-playback-row · decision-timeline-knowledge-similarity-match-playback-title · decision-timeline-knowledge-similarity-match-playback-matched-template-id · decision-timeline-knowledge-similarity-match-playback-source-template-id · decision-timeline-knowledge-similarity-match-playback-similarity-score · decision-timeline-knowledge-similarity-match-playback-match-context · decision-timeline-knowledge-similarity-match-playback-source-project-id · extractKnowledgeSimilarityMatchPlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint284": {
+      "stream2": "Commercial Intelligence knowledge similarity match growth event contract — knowledgeSimilarityMatchGrowthService.ts · knowledgeSimilarityMatchMemoryService.ts · knowledgeSimilarityMatchTimelinePlaybackService.ts · knowledge_similarity_match_detected · KNOWLEDGE_SIMILARITY_MATCH_JOB_DERIVATION_KINDS · sprint-284-selftest.ts",
+      "stream1": "Decision Timeline knowledge similarity match timeline filter — decision-timeline-knowledge-similarity-match-filter · decision-timeline-knowledge-similarity-match-badge · decision-timeline-knowledge-similarity-match-event-type · filterDecisionTimelineToKnowledgeSimilarityMatchEntries · countKnowledgeSimilarityMatchTimelineEntries · DecisionTimeline.tsx · decisionTimelineBuilder.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint283": {
+      "stream2": "Milestone 290–299 Commercial Intelligence Cross-Project Knowledge Reuse wrap completeness review — sprint-283-selftest.ts audits knowledge library version retrieval full stack (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint + context entries + explainability context entry indicators · project assistant context engine wiring) across operational workspace",
+      "stream1": "Milestone wrap — Commercial Intelligence Cross-Project Knowledge Reuse closes",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint282": {
+      "stream2": "Project assistant context engine knowledge library version retrieval explainability context entry aggregation — knowledgeLibraryVersionRetrievalExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · filterDecisionTimelineToKnowledgeLibraryVersionRetrievalEntries · toExplainabilityContextEntry · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-282-selftest.ts",
+      "stream1": "Operational workspace AI panel knowledge library version retrieval explainability context entry surfacing from project assistant context — operational-workspace-ai-panel-knowledge-library-version-retrieval-explainability-context-entries · OperationalWorkspace.tsx",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint281": {
+      "stream2": "Project assistant context engine knowledge library version retrieval context entries aggregation — knowledgeLibraryVersionRetrievalEntries · ProjectAssistantKnowledgeLibraryVersionRetrievalContextEntry · toKnowledgeLibraryVersionRetrievalContextEntry · filterDecisionTimelineToKnowledgeLibraryVersionRetrievalEntries · extractKnowledgeLibraryVersionRetrievalEventTypeLabelFromTimelineEntry · project-assistant-context-knowledge-library-version-retrieval-entries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-281-selftest.ts",
+      "stream1": "Operational workspace AI panel knowledge library version retrieval context entry surfacing from project assistant context entries — operational-workspace-ai-panel-knowledge-library-version-retrieval-context-entries · operational-workspace-ai-panel-knowledge-library-version-retrieval-context-entry-item · OperationalWorkspace.tsx",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint280": {
+      "stream2": "Project assistant context engine knowledge library version retrieval timeline entry count + label hint wiring — knowledgeLibraryVersionRetrievalTimelineEntryCount · knowledgeLibraryVersionRetrievalLabelHint · buildKnowledgeLibraryVersionRetrievalTimelinePlaybackStub · filterDecisionTimelineToKnowledgeLibraryVersionRetrievalEntries · formatDistinctKnowledgeLibraryVersionRetrievalLabelHint · project-assistant-context-knowledge-library-version-retrieval-entry-count · project-assistant-context-knowledge-library-version-retrieval-label-hint · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-280-selftest.ts",
+      "stream1": "Operational workspace AI panel knowledge library version retrieval context availability surfacing from project assistant context — operational-workspace-ai-panel-knowledge-library-version-retrieval-context-entry-count · operational-workspace-ai-panel-knowledge-library-version-retrieval-context-label-hint · OperationalWorkspace.tsx",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint279": {
+      "stream2": "Mid-milestone 274–278 Commercial Intelligence Cross-Project Knowledge Reuse completeness review — sprint-279-selftest.ts audits knowledge library version retrieval stack partial (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint indicators) across operational workspace",
+      "stream1": "Mid-milestone review — Commercial Intelligence Cross-Project Knowledge Reuse first-half completeness prep",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint278": {
+      "stream2": "Operational workspace AI panel knowledge library version retrieval label hint — distinctKnowledgeLibraryVersionRetrievalLabels · formatDistinctKnowledgeLibraryVersionRetrievalLabelHint · operational-workspace-ai-panel-knowledge-library-version-retrieval-label-hint · OperationalWorkspace.tsx · decisionTimelineBuilder.ts · sprint-278-selftest.ts",
+      "stream1": "Decision Timeline knowledge library version retrieval explainability rationale summary filtered badges + Phase D playback labels — appendExplainabilityRationaleSummaryPlaybackLine knowledge library version retrieval scope · extractKnowledgeLibraryVersionRetrievalPlaybackRowFromTimelineEntry · decision-timeline-knowledge-library-version-retrieval-explainability-rationale-summary · decision-timeline-knowledge-library-version-retrieval-playback-explainability-rationale-summary · decisionTimelineBuilder.ts · DecisionTimeline.tsx",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint277": {
+      "stream2": "Commercial Intelligence knowledge library version retrieval indicator in viewer chrome — KnowledgeLibraryVersionRetrievalIndicator.tsx · knowledge-library-version-retrieval-indicator · getKnowledgeLibraryVersionRetrievalsForRevision · subscribeKnowledgeLibraryVersionRetrievals · knowledgeLibraryVersionRetrievalGrowthService.ts · DrawingsModule.tsx · sprint-277-selftest.ts",
+      "stream1": "Decision Timeline knowledge library version retrieval explainability actor/confidence filtered badges + Phase D playback labels — explainabilityPayloadFromTimelineEntry knowledge library version retrieval scope · appendExplainabilityActorPlaybackLine · appendExplainabilityConfidencePlaybackLine · extractKnowledgeLibraryVersionRetrievalPlaybackRowFromTimelineEntry · decision-timeline-knowledge-library-version-retrieval-explainability-actor · decision-timeline-knowledge-library-version-retrieval-explainability-confidence · decision-timeline-knowledge-library-version-retrieval-playback-explainability-actor · decision-timeline-knowledge-library-version-retrieval-playback-explainability-confidence · decisionTimelineBuilder.ts · DecisionTimeline.tsx",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint276": {
+      "stream2": "Operational workspace AI panel knowledge library version retrieval timeline entry count indicator — knowledgeLibraryVersionRetrievalTimelineEntryCount · countHubKnowledgeLibraryVersionRetrievalTimelineEntries · countKnowledgeLibraryVersionRetrievalTimelineEntries · operational-workspace-ai-panel-knowledge-library-version-retrieval-entry-count · workspaceAggregatorService.ts · OperationalWorkspace.tsx · OperationalWorkspaceHost.tsx · sprint-276-selftest.ts",
+      "stream1": "Decision Timeline knowledge library version retrieval pipeline stage filtered badge + Phase D playback label — appendCommercialWorkflowPipelineStagePlaybackLine knowledge library version retrieval scope · extractKnowledgeLibraryVersionRetrievalPlaybackRowFromTimelineEntry · decision-timeline-knowledge-library-version-retrieval-pipeline-stage · decision-timeline-knowledge-library-version-retrieval-playback-pipeline-stage · decisionTimelineBuilder.ts · DecisionTimeline.tsx",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint275": {
+      "stream2": "Decision Timeline knowledge library version retrieval commercial workflow stage filtered badge + Phase D playback label — extractCommercialWorkflowStageLabelFromTimelineEntry knowledge library version retrieval scope · extractKnowledgeLibraryVersionRetrievalPlaybackRowFromTimelineEntry · appendCommercialWorkflowStagePlaybackLine · decision-timeline-knowledge-library-version-retrieval-commercial-workflow-stage · decision-timeline-knowledge-library-version-retrieval-playback-commercial-stage · decisionTimelineBuilder.ts · DecisionTimeline.tsx · sprint-275-selftest.ts",
+      "stream1": "Decision Timeline knowledge library version retrieval Phase D playback row — decision-timeline-knowledge-library-version-retrieval-playback-row · decision-timeline-knowledge-library-version-retrieval-playback-title · decision-timeline-knowledge-library-version-retrieval-playback-template-id · decision-timeline-knowledge-library-version-retrieval-playback-knowledge-library-version-id · decision-timeline-knowledge-library-version-retrieval-playback-retrieval-query-text · decision-timeline-knowledge-library-version-retrieval-playback-source-project-id · extractKnowledgeLibraryVersionRetrievalPlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint274": {
+      "stream2": "Commercial Intelligence knowledge library version retrieval growth event contract — knowledgeLibraryVersionRetrievalGrowthService.ts · knowledgeLibraryVersionRetrievalMemoryService.ts · knowledgeLibraryVersionRetrievalTimelinePlaybackService.ts · knowledge_library_version_retrieved · KNOWLEDGE_LIBRARY_VERSION_RETRIEVAL_JOB_DERIVATION_KINDS · sprint-274-selftest.ts",
+      "stream1": "Decision Timeline knowledge library version retrieval timeline filter — decision-timeline-knowledge-library-version-retrieval-filter · decision-timeline-knowledge-library-version-retrieval-badge · decision-timeline-knowledge-library-version-retrieval-event-type · filterDecisionTimelineToKnowledgeLibraryVersionRetrievalEntries · countKnowledgeLibraryVersionRetrievalTimelineEntries · DecisionTimeline.tsx · decisionTimelineBuilder.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint273": {
+      "stream2": "Milestone 280–289 Commercial Intelligence Knowledge Template Publication wrap completeness review — sprint-273-selftest.ts audits knowledge template publication full stack (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint + context entries + explainability context entry indicators · project assistant context engine wiring) across operational workspace",
+      "stream1": "Milestone wrap — Commercial Intelligence Knowledge Template Publication closes",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint272": {
+      "stream2": "Project assistant context engine knowledge template publication explainability context entry aggregation — knowledgeTemplatePublicationExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · filterDecisionTimelineToKnowledgeTemplatePublicationEntries · toExplainabilityContextEntry · projectAssistantContextEngine.ts · projectAssistantContext.ts",
+      "stream1": "Operational workspace AI panel knowledge template publication explainability context entry surfacing from project assistant context — operational-workspace-ai-panel-knowledge-template-publication-explainability-context-entries · OperationalWorkspace.tsx",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint271": {
+      "stream2": "Project assistant context engine knowledge template publication context entries aggregation — knowledgeTemplatePublicationEntries · ProjectAssistantKnowledgeTemplatePublicationContextEntry · toKnowledgeTemplatePublicationContextEntry · filterDecisionTimelineToKnowledgeTemplatePublicationEntries · extractKnowledgeTemplatePublicationEventTypeLabelFromTimelineEntry · project-assistant-context-knowledge-template-publication-entries · projectAssistantContextEngine.ts · projectAssistantContext.ts",
+      "stream1": "Operational workspace AI panel knowledge template publication context entry surfacing from project assistant context entries — operational-workspace-ai-panel-knowledge-template-publication-context-entries · operational-workspace-ai-panel-knowledge-template-publication-context-entry-item · OperationalWorkspace.tsx",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint270": {
+      "stream2": "Project assistant context engine knowledge template publication timeline entry count + label hint wiring — knowledgeTemplatePublicationTimelineEntryCount · knowledgeTemplatePublicationLabelHint · buildKnowledgeTemplatePublicationTimelinePlaybackStub · filterDecisionTimelineToKnowledgeTemplatePublicationEntries · formatDistinctKnowledgeTemplatePublicationLabelHint · project-assistant-context-knowledge-template-publication-entry-count · project-assistant-context-knowledge-template-publication-label-hint · projectAssistantContextEngine.ts · projectAssistantContext.ts",
+      "stream1": "Operational workspace AI panel knowledge template publication context availability surfacing from project assistant context — operational-workspace-ai-panel-knowledge-template-publication-context-entry-count · operational-workspace-ai-panel-knowledge-template-publication-context-label-hint · OperationalWorkspace.tsx",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint269": {
+      "stream2": "Mid-milestone 280–284 Commercial Intelligence Knowledge Template Publication completeness review — sprint-269-selftest.ts audits knowledge template publication stack partial (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint indicators) across operational workspace",
+      "stream1": "Mid-milestone review — Commercial Intelligence Knowledge Template Publication first-half completeness prep",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint268": {
+      "stream2": "Operational workspace AI panel knowledge template publication label hint — formatDistinctKnowledgeTemplatePublicationLabelHint · distinctKnowledgeTemplatePublicationLabels · operational-workspace-ai-panel-knowledge-template-publication-label-hint · OperationalWorkspace.tsx · decisionTimelineBuilder.ts",
+      "stream1": "Decision Timeline knowledge template publication explainability rationale summary filtered badges + Phase D playback labels — appendExplainabilityRationaleSummaryPlaybackLine knowledge template publication scope · extractKnowledgeTemplatePublicationPlaybackRowFromTimelineEntry · decision-timeline-knowledge-template-publication-explainability-rationale-summary · decision-timeline-knowledge-template-publication-playback-explainability-rationale-summary",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint267": {
+      "stream2": "Commercial Intelligence knowledge template publication indicator in viewer chrome — KnowledgeTemplatePublicationIndicator.tsx · knowledge-template-publication-indicator · getKnowledgeTemplatePublicationsForRevision · subscribeKnowledgeTemplatePublications · knowledgeTemplatePublicationGrowthService.ts · DrawingsModule.tsx",
+      "stream1": "Decision Timeline knowledge template publication explainability actor/confidence filtered badges + Phase D playback labels — appendExplainabilityActorPlaybackLine knowledge template publication scope · appendExplainabilityConfidencePlaybackLine · extractKnowledgeTemplatePublicationPlaybackRowFromTimelineEntry · decision-timeline-knowledge-template-publication-explainability-actor · decision-timeline-knowledge-template-publication-explainability-confidence · decision-timeline-knowledge-template-publication-playback-explainability-actor · decision-timeline-knowledge-template-publication-playback-explainability-confidence",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint266": {
+      "stream2": "Operational workspace AI panel knowledge template publication timeline entry count indicator — knowledgeTemplatePublicationTimelineEntryCount · countHubKnowledgeTemplatePublicationTimelineEntries · countKnowledgeTemplatePublicationTimelineEntries · operational-workspace-ai-panel-knowledge-template-publication-entry-count · workspaceAggregatorService.ts · OperationalWorkspace.tsx · OperationalWorkspaceHost.tsx",
+      "stream1": "Decision Timeline knowledge template publication pipeline stage filtered badge + Phase D playback label — appendCommercialWorkflowPipelineStagePlaybackLine knowledge template publication scope · extractKnowledgeTemplatePublicationPlaybackRowFromTimelineEntry · decision-timeline-knowledge-template-publication-pipeline-stage · decision-timeline-knowledge-template-publication-playback-pipeline-stage",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint265": {
+      "stream2": "Decision Timeline knowledge template publication commercial workflow stage filtered badge + Phase D playback label — extractCommercialWorkflowStageLabelFromTimelineEntry knowledge template publication scope · extractKnowledgeTemplatePublicationPlaybackRowFromTimelineEntry · appendCommercialWorkflowStagePlaybackLine · decision-timeline-knowledge-template-publication-commercial-workflow-stage · decision-timeline-knowledge-template-publication-playback-commercial-stage",
+      "stream1": "Decision Timeline knowledge template publication Phase D playback row — extractKnowledgeTemplatePublicationPlaybackRowFromTimelineEntry · decision-timeline-knowledge-template-publication-playback-row · decision-timeline-knowledge-template-publication-playback-title · decision-timeline-knowledge-template-publication-playback-template-id · decision-timeline-knowledge-template-publication-playback-change-summary · decision-timeline-knowledge-template-publication-playback-published-at · decision-timeline-knowledge-template-publication-playback-knowledge-library-version-id",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint264": {
+      "stream2": "Commercial Intelligence knowledge template publication growth event contract — knowledgeTemplatePublicationGrowthService.ts · knowledgeTemplatePublicationMemoryService.ts · knowledgeTemplatePublicationTimelinePlaybackService.ts · knowledge_template_publication_published · knowledge_template_publication_failed · KNOWLEDGE_TEMPLATE_PUBLICATION_JOB_DERIVATION_KINDS",
+      "stream1": "Decision Timeline knowledge template publication timeline filter — decision-timeline-knowledge-template-publication-filter · decision-timeline-knowledge-template-publication-badge · decision-timeline-knowledge-template-publication-event-type · filterDecisionTimelineToKnowledgeTemplatePublicationEntries · countKnowledgeTemplatePublicationTimelineEntries",
       "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
     }
   },
   "changedFiles": {
-    "sprint261": [
-      "src/types/projectAssistantContext.ts",
+    "sprint290": [
       "src/platform/assistant/projectAssistantContextEngine.ts",
-      "src/components/workspace/OperationalWorkspace.tsx",
-      "scripts/sprint-261-selftest.ts",
-      "docs/PLATFORM_EVOLUTION.md",
-      "docs/PHASE_B_UX_ACCEPTANCE.md"
-    ],
-    "sprint260": [
       "src/types/projectAssistantContext.ts",
-      "src/platform/assistant/projectAssistantContextEngine.ts",
       "src/components/workspace/OperationalWorkspace.tsx",
-      "scripts/sprint-260-selftest.ts",
+      "scripts/sprint-290-selftest.ts",
       "docs/PLATFORM_EVOLUTION.md",
-      "docs/PHASE_B_UX_ACCEPTANCE.md"
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
     ],
-    "sprint259": [
-      "scripts/sprint-259-selftest.ts",
+    "sprint289": [
+      "scripts/sprint-289-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint288": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-288-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint287": [
+      "src/platform/commercial/knowledgeSimilarityMatchGrowthService.ts",
+      "[REDACTED-path]",
+      "[REDACTED-path]",
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/sprint-287-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint286": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/platform/workspace/workspaceAggregatorService.ts",
+      "src/types/operationalWorkspace.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "src/components/workspace/OperationalWorkspaceHost.tsx",
+      "scripts/sprint-286-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint284": [
+      "src/types/commercialIntelligence.ts",
+      "src/types/projectDigitalBrain.ts",
+      "src/types/operationalWorkspace.ts",
+      "src/platform/commercial/knowledgeSimilarityMatchGrowthService.ts",
+      "src/platform/memory/knowledgeSimilarityMatchMemoryService.ts",
+      "src/platform/memory/knowledgeSimilarityMatchTimelinePlaybackService.ts",
+      "src/platform/digitalBrain/digitalBrainJobDerivation.ts",
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/platform/workspace/workspaceAggregatorService.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/sprint-284-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint283": [
+      "scripts/sprint-283-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint282": [
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/types/projectAssistantContext.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-282-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint281": [
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/types/projectAssistantContext.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-281-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint280": [
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/types/projectAssistantContext.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-280-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint279": [
+      "scripts/sprint-279-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint278": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-278-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint277": [
+      "src/platform/commercial/knowledgeLibraryVersionRetrievalGrowthService.ts",
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "[REDACTED-path]",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "[REDACTED-path]",
+      "scripts/sprint-277-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint276": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/platform/workspace/workspaceAggregatorService.ts",
+      "src/types/operationalWorkspace.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "src/components/workspace/OperationalWorkspaceHost.tsx",
+      "scripts/sprint-276-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint275": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/platform/commercial/knowledgeLibraryVersionRetrievalGrowthService.ts",
+      "scripts/sprint-275-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint274": [
+      "src/types/commercialIntelligence.ts",
+      "src/types/projectDigitalBrain.ts",
+      "src/types/operationalWorkspace.ts",
+      "src/platform/commercial/knowledgeLibraryVersionRetrievalGrowthService.ts",
+      "src/platform/memory/knowledgeLibraryVersionRetrievalMemoryService.ts",
+      "src/platform/memory/knowledgeLibraryVersionRetrievalTimelinePlaybackService.ts",
+      "src/platform/digitalBrain/digitalBrainJobDerivation.ts",
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/platform/workspace/workspaceAggregatorService.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/sprint-274-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint273": [
+      "scripts/sprint-273-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint272": [
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/types/projectAssistantContext.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-272-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint271": [
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/types/projectAssistantContext.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-271-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint270": [
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/types/projectAssistantContext.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-270-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint269": [
+      "scripts/sprint-269-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint268": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-268-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint267": [
+      "src/platform/commercial/knowledgeTemplatePublicationGrowthService.ts",
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "[REDACTED-path]",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "[REDACTED-path]",
+      "scripts/sprint-267-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint266": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/platform/workspace/workspaceAggregatorService.ts",
+      "src/types/operationalWorkspace.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "src/components/workspace/OperationalWorkspaceHost.tsx",
+      "scripts/sprint-266-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint265": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/sprint-265-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/AI_OVERSIGHT_PROTOCOL.md"
+    ],
+    "sprint264": [
+      "src/types/commercialIntelligence.ts",
+      "src/types/projectDigitalBrain.ts",
+      "src/types/operationalWorkspace.ts",
+      "src/platform/commercial/knowledgeTemplatePublicationGrowthService.ts",
+      "src/platform/memory/knowledgeTemplatePublicationMemoryService.ts",
+      "src/platform/memory/knowledgeTemplatePublicationTimelinePlaybackService.ts",
+      "src/platform/digitalBrain/digitalBrainJobDerivation.ts",
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/platform/workspace/workspaceAggregatorService.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/sprint-264-selftest.ts",
       "docs/PLATFORM_EVOLUTION.md",
       "docs/PHASE_B_UX_ACCEPTANCE.md"
     ]
@@ -73,82 +432,393 @@
   "validationResults": {
     "sprintValidation": {
       "gate": "PHASE_B_RUNS=3",
-      "sprint261": "3/3 consecutive green",
-      "sprint260": "3/3 consecutive green",
+      "sprint290": "3/3 consecutive green",
+      "sprint289": "3/3 consecutive green",
+      "sprint288": "3/3 consecutive green",
+      "sprint287": "3/3 consecutive green",
+      "sprint286": "3/3 consecutive green",
+      "sprint285": "3/3 consecutive green",
+      "sprint284": "3/3 consecutive green",
+      "sprint283": "3/3 consecutive green",
+      "sprint282": "3/3 consecutive green",
+      "sprint281": "3/3 consecutive green",
+      "sprint280": "3/3 consecutive green",
+      "sprint279": "3/3 consecutive green",
+      "sprint278": "3/3 consecutive green",
+      "sprint277": "3/3 consecutive green",
+      "sprint276": "3/3 consecutive green",
+      "sprint275": "3/3 consecutive green",
+      "sprint274": "3/3 consecutive green",
+      "sprint273": "3/3 consecutive green",
+      "sprint272": "3/3 consecutive green",
+      "sprint271": "3/3 consecutive green",
+      "sprint270": "3/3 consecutive green",
+      "sprint269": "3/3 consecutive green",
+      "sprint268": "3/3 consecutive green",
+      "sprint267": "3/3 consecutive green",
+      "sprint266": "3/3 consecutive green",
+      "sprint265": "3/3 consecutive green",
+      "sprint264": "3/3 consecutive green",
       "regressionSuite": "scripts/phase-b-wynyard-validation.ts"
     },
     "platformCertification": {
       "lastAchieved": "2026-06-29",
-      "status": "valid",
-      "note": "5/5 deterministic; re-certification only at major milestones"
+      "lastCertifiedBaseline": "2026-06-29",
+      "status": "stale — recertification required before production release",
+      "sprintRangeCovered": "120–129 (Drawing Intelligence UX Maturity milestone close)",
+      "deltaSinceCertification": "Sprints 130–290 delivered (161 sprints); schema/RLS pending (migration 015); Digital Brain + Commercial Intelligence + Knowledge Similarity Matching milestone active; no 5/5 re-run since 2026-06-29",
+      "recertificationTriggers": [
+        "milestone close",
+        "schema or RLS change",
+        "core viewer change",
+        "search architecture change",
+        "Digital Brain persistence change",
+        "Knowledge Graph schema change",
+        "Commercial Intelligence state-machine change",
+        "before production release"
+      ],
+      "note": "5/5 deterministic last achieved 2026-06-29; recertify on triggers above — not indefinite valid"
     },
     "typecheck": "npx tsc -b (per regression gate)"
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Sprint 261 delivered, Sprint 262 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — UX sprint 261 refinements logged"
+    "docs/PLATFORM_EVOLUTION.md — Sprint 290 delivered, Sprint 291 queued (context entries aggregation, milestone 300–309 active)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — UX sprint 290 project assistant context engine wiring + AI panel context availability logged",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 290 closed, oversightSync degraded (sprint unaffected), oversightFindingsTriage preserved"
   ],
   "migrationsRequired": [
     {
       "id": "015",
       "status": "scheduled",
-      "note": "RLS/security hardening per PHASE_B_TECH_DEBT.md; not blocking active sprints"
+      "blockingScope": "non-blocking for local autonomous sprint execution; blocking for production release or production acceptance until applied and verified",
+      "owner": "platform-engineering",
+      "targetEnvironment": "production Supabase",
+      "verificationTest": "Apply migration 015 to staging; verify RLS policies on drawing_pins/evidence; confirm delete-policy behavior; run phase-b-wynyard-validation.ts 3/3 on staging",
+      "rollbackPlan": "Revert migration 015 SQL on staging; restore prior RLS policy definitions from migration 014 snapshot; re-run validation suite",
+      "completionEvidence": null,
+      "note": "RLS/security hardening per PHASE_B_TECH_DEBT.md; not applied to production"
     },
     {
       "id": "017",
       "status": "scheduled",
+      "blockingScope": "non-blocking for local autonomous sprint execution",
       "note": "Env-only; not blocking active sprints"
     }
   ],
   "openRisks": [
     {
       "id": "migration-015-pending",
-      "severity": "medium",
+      "severity": "high-before-production",
+      "blockingScope": "non-blocking for local autonomous sprint execution; blocking for production release or production acceptance",
+      "owner": "platform-engineering",
+      "targetEnvironment": "production Supabase",
+      "verificationTest": "Staging apply + RLS policy audit + Sprint Validation 3/3",
+      "rollbackPlan": "Revert to migration 014 RLS snapshot",
+      "completionEvidence": null,
       "description": "Supabase migration 015 (RLS, pin/evidence delete policies) not yet applied to production"
     },
     {
+      "id": "drawing-revision-provenance-gap",
+      "severity": "data-integrity",
+      "relatedFinding": "finding-2",
+      "description": "Knowledge/commercial template chain tracks knowledgeLibraryTemplateId/templateRevisionId only; exact DrawingRevision provenance not persisted in growth/Memory payloads; superseded drawing revalidation not wired; Phase C revision management not started",
+      "architectureDecisionRequired": true,
+      "targetSprintOrMilestone": "Phase C + dedicated provenance sprint before production knowledge reuse"
+    },
+    {
       "id": "phase-c-gated",
-      "severity": "low",
-      "description": "Phase C revision management prepared but not started; gated on checklist + regression"
+      "severity": "medium",
+      "description": "Phase C revision management prepared but not started; gated on checklist + regression; elevated by Finding 2 provenance review"
     },
     {
       "id": "partial-platform-services",
       "severity": "low",
       "description": "Digital Brain, KG, and Commercial Intelligence remain Partial per service register; incremental delivery by design"
+    },
+    {
+      "id": "platform-certification-stale",
+      "severity": "medium-governance",
+      "relatedFinding": "finding-4",
+      "description": "Platform Certification 5/5 last achieved 2026-06-29; 148 sprints since; recertification required before production release per trigger policy"
     }
   ],
   "blockers": [],
   "nextSprint": {
-    "number": 262,
-    "stream2": "Project assistant context engine knowledge template review explainability context entry aggregation",
-    "stream1": "Operational workspace AI panel knowledge template review explainability context entry surfacing from project assistant context",
-    "selftest": "scripts/sprint-262-selftest.ts"
+    "number": 291,
+    "stream2": "Project assistant context engine knowledge similarity match context entries aggregation",
+    "stream1": "Operational workspace AI panel knowledge similarity match context entry surfacing from project assistant context entries",
+    "selftest": "scripts/sprint-291-selftest.ts"
+  },
+  "oversightSync": {
+    "status": "degraded",
+    "reason": "git was not on PATH in prior agent shell; push retry with Git for Windows",
+    "lastPushAttempt": "2026-07-04T21:02:15.652Z",
+    "lastPushResult": "pending",
+    "remoteHeadSha": null,
+    "verifiedAt": null,
+    "allowlistOnly": true,
+    "bridgeDocsPublished": [
+      "OVERSIGHT_BRIDGE_ADR.md",
+      "OVERSIGHT_BRIDGE_OPERATIONS.md",
+      "OVERSIGHT_BRIDGE_THREAT_MODEL.md",
+      "OVERSIGHT_SYNC.md",
+      "OVERSIGHT_REMOTE.md",
+      "AI_OVERSIGHT_INBOX.json"
+    ]
+  },
+  "oversightMonitoring": {
+    "status": "active",
+    "cadence": "hourly",
+    "repository": "https://github.com/wimaxnz/construction-intelligence-oversight",
+    "githubWriteBack": "403 direct — use oversight bridge (repository_dispatch)",
+    "bridgeDocs": "docs/ai-oversight/OVERSIGHT_BRIDGE_ADR.md"
+  },
+  "oversightBridge": {
+    "lastConsumedAt": "2026-07-04T20:52:01.297Z",
+    "lastInboxUpdatedAt": null,
+    "newFindingsDetected": 0,
+    "lastBridgeAuditRef": "OVERSIGHT_BRIDGE_OPERATIONS.md#bridge-audit-trail"
+  },
+  "oversightFindingsState": [],
+  "oversightFindingsTriage": [
+    {
+      "findingId": "finding-1",
+      "title": "Knowledge Template Review lacks direct Knowledge Graph integration",
+      "severity": "high-strategic",
+      "disposition": "accepted",
+      "rationale": "Valid strategic gap — template entities and provenance edges deferred; Decision Timeline playback is not graph integration",
+      "targetSprintOrMilestone": "Future milestone post 280-289 or linked follow-on",
+      "relatedRisk": "partial-platform-services",
+      "architectureDecisionRequired": true,
+      "completionEvidence": null
+    },
+    {
+      "findingId": "finding-2",
+      "title": "Phase C versus Phase E dependency coherence requires explicit decision record",
+      "severity": "data-integrity",
+      "disposition": "accepted",
+      "rationale": "Codebase review confirms exact DrawingRevision provenance is NOT guaranteed for knowledge/commercial template chain. Growth payloads (knowledgeTemplateReviewGrowthService, knowledgeTemplatePublicationGrowthService) carry templateRevisionId (Knowledge Library template version) not drawing revision IDs. linkedRevisionIds is optional call-time context for viewer chrome subscription only — not persisted in Memory audit payloads for template review/publication. LessonsLearnedCapture type has no sourceRevisionIds field. drawing_revision_superseded events exist (revisionDetectionService) but no knowledge invalidation/revalidation hook. Cross-ref timeline tracks revisionId but is not linked to knowledge template chain. VariationEvidenceLink supports entityType drawing_revision but knowledge pipeline does not consume it. Superseded drawing invalidation and approved-knowledge revalidation on source revision change are not implemented.",
+      "targetSprintOrMilestone": "Architecture decision record + Phase C start + provenance sprint before production knowledge reuse",
+      "relatedRisk": "drawing-revision-provenance-gap",
+      "architectureDecisionRequired": true,
+      "completionEvidence": null
+    },
+    {
+      "findingId": "finding-3",
+      "title": "Migration 015 production RLS risk is understated",
+      "severity": "high-before-production",
+      "disposition": "accepted",
+      "rationale": "Reclassified in migrationsRequired and openRisks — non-blocking for local sprints; blocking for production release/acceptance",
+      "targetSprintOrMilestone": "Pre-production deployment gate",
+      "relatedRisk": "migration-015-pending",
+      "architectureDecisionRequired": false,
+      "completionEvidence": null
+    },
+    {
+      "findingId": "finding-4",
+      "title": "Platform Certification freshness policy is insufficient",
+      "severity": "medium-governance",
+      "disposition": "accepted",
+      "rationale": "Updated validationResults.platformCertification with trigger policy, delta since 2026-06-29, sprint range covered",
+      "targetSprintOrMilestone": "Recertify at milestone 280-289 wrap or before production release",
+      "relatedRisk": "platform-certification-stale",
+      "architectureDecisionRequired": false,
+      "completionEvidence": "validationResults.platformCertification updated Sprint 265 oversight incorporation"
+    },
+    {
+      "findingId": "finding-5",
+      "title": "Guard against presentation-parity milestones",
+      "severity": "medium-strategic",
+      "disposition": "accepted",
+      "rationale": "Added knowledgeTemplateReviewDomainCompleteness assessment — UI playback/badges documented as partial/not substitutes",
+      "targetSprintOrMilestone": "Ongoing milestone wrap reviews; domain completeness sprints post 280-289",
+      "relatedRisk": "partial-platform-services",
+      "architectureDecisionRequired": false,
+      "completionEvidence": "knowledgeTemplateReviewDomainCompleteness object in AI_OVERSIGHT_STATE.json"
+    },
+    {
+      "findingId": "finding-6",
+      "title": "Cross-project learning loop is not yet demonstrated",
+      "severity": "high-strategic",
+      "disposition": "accepted",
+      "rationale": "End-to-end acceptance scenario required — no Project A → Project B proactive warning demo exists",
+      "targetSprintOrMilestone": "Post 280-289 milestone acceptance scenario sprint",
+      "relatedRisk": "partial-platform-services",
+      "architectureDecisionRequired": true,
+      "completionEvidence": null
+    },
+    {
+      "findingId": "finding-7",
+      "title": "Clarify milestone identifiers",
+      "severity": "low-governance",
+      "disposition": "accepted",
+      "rationale": "Explicit milestoneId, milestoneName, plannedSprintCount, actualSprintStart, actualSprintEnd, wrapReviewSprint added to currentMilestone",
+      "targetSprintOrMilestone": "Immediate — schema cleanup",
+      "relatedRisk": null,
+      "architectureDecisionRequired": false,
+      "completionEvidence": "currentMilestone explicit fields populated Sprint 265 oversight incorporation"
+    }
+  ],
+  "knowledgeTemplateReviewDomainCompleteness": {
+    "lifecycleStateMachine": {
+      "status": "partial",
+      "evidence": "Approve/reject growth events + Memory audit; no full draft→review→supersede state machine with invalidation"
+    },
+    "reviewerAuthority": {
+      "status": "partial",
+      "evidence": "reviewedBy on growth payload; no permissions/RLS gate for reviewer role"
+    },
+    "evidenceProvenance": {
+      "status": "not_started",
+      "evidence": "No DrawingRevision ID in template review/publication Memory payloads; templateRevisionId is Knowledge Library version not drawing revision"
+    },
+    "versioning": {
+      "status": "partial",
+      "evidence": "templateRevisionId + knowledgeLibraryVersionId on publication; no full version lineage graph"
+    },
+    "supersession": {
+      "status": "not_started",
+      "evidence": "No supersedes/superseded-by on approved knowledge templates; drawing supersede does not trigger knowledge revalidation"
+    },
+    "duplicateDetection": {
+      "status": "not_started",
+      "evidence": "No near-duplicate detection on template promotion or review"
+    },
+    "applicabilityScope": {
+      "status": "partial",
+      "evidence": "category/trade on capture; no trade/discipline/system applicability engine on approved templates"
+    },
+    "effectiveExpiryDates": {
+      "status": "not_started",
+      "evidence": "No effectiveFrom/effectiveUntil on KnowledgeTemplateReviewDecision or publication entities"
+    },
+    "confidenceEvolution": {
+      "status": "not_started",
+      "evidence": "Explainability confidence on growth events only; no confidence evolution from outcome feedback"
+    },
+    "futureProjectReuse": {
+      "status": "not_started",
+      "evidence": "No similarity retrieval or applied-to future project relationship"
+    },
+    "outcomeFeedback": {
+      "status": "not_started",
+      "evidence": "No accept/dismiss/modify recommendation outcome loop"
+    },
+    "proactiveWarning": {
+      "status": "not_started",
+      "evidence": "No proactive warning/recommendation engine wired to approved knowledge"
+    },
+    "knowledgeGraphIntegration": {
+      "status": "not_started",
+      "evidence": "No KnowledgeTemplate node/entity or provenance edges in KG; AI_OVERSIGHT_STATE confirms deferred"
+    }
   },
   "strategicRoadmapAlignment": {
-    "cosPipelineStage": "lessons_learned → knowledge library loop-back → knowledge template review",
-    "phaseE": "Commercial Intelligence Knowledge Template Review milestone (270-279) in progress — 8/10 sprints closed",
+    "cosPipelineStage": "knowledge template publication → Knowledge Library version lifecycle → cross-project knowledge reuse → knowledge similarity matching",
+    "phaseE": "Commercial Intelligence Knowledge Similarity Matching milestone (300-309) active — Sprint 290 closed project assistant context engine wiring; Sprint 291 queued context entries aggregation",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track"
   },
   "digitalBrainImpact": {
-    "sprint261": "No new growth events; context engine aggregates filtered knowledge_template_review_* timeline entries into assistant snapshot as knowledgeTemplateReviewEntries",
-    "overall": "Event engine Partial — template review joins commercial workflow growth event family"
+    "sprint290": "No new growth event kinds — project assistant context engine knowledge similarity match timeline entry count + label hint wiring for assistant context availability metrics",
+    "sprint289": "No new growth event kinds — mid-milestone 284–288 completeness review confirms knowledge similarity match growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
+    "sprint288": "No new growth event kinds — operational workspace AI panel knowledge similarity match label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary label for similarity match audit filter scope",
+    "sprint287": "No new growth event kinds — knowledge similarity match viewer chrome session store + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels for similarity match audit filter scope",
+    "sprint286": "No new growth event kinds — operational workspace AI panel knowledge similarity match entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label for similarity match audit filter scope",
+    "sprint285": "No new growth event kinds — Decision Timeline knowledge similarity match commercial workflow stage filtered badge + Phase D playback commercial-stage label + Phase D playback row (title · matched template id · source template id · similarity score · match context · source project id · detected-at) for similarity match audit filter scope",
+    "sprint284": "knowledge_similarity_match_detected growth event kind live — Digital Brain bus + Construction Memory audit + timeline playback stub for cross-project Knowledge Library similarity scoring/match lifecycle",
+    "sprint283": "No new growth event kinds — milestone 290–299 wrap completeness review confirms knowledge library version retrieval full stack audit; milestone closed",
+    "sprint282": "No new growth event kinds — project assistant context engine knowledge library version retrieval explainability context entry aggregation for assistant explainability context entry surfacing",
+    "sprint281": "No new growth event kinds — project assistant context engine knowledge library version retrieval context entries aggregation for assistant context entry surfacing",
+    "sprint280": "No new growth event kinds — project assistant context engine knowledge library version retrieval timeline entry count + label hint wiring for assistant context availability metrics",
+    "sprint279": "No new growth event kinds — mid-milestone 274–278 completeness review confirms knowledge library version retrieval growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
+    "sprint278": "No new growth event kinds — operational workspace AI panel knowledge library version retrieval label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary label for version retrieval audit filter scope",
+    "sprint277": "No new growth event kinds — knowledge library version retrieval viewer chrome session store + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels for version retrieval audit filter scope",
+    "sprint276": "No new growth event kinds — operational workspace AI panel knowledge library version retrieval entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label for version retrieval audit filter scope",
+    "sprint275": "No new growth event kinds — Decision Timeline knowledge library version retrieval commercial workflow stage filtered badge + Phase D playback commercial-stage label + Phase D playback row for version retrieval audit filter scope",
+    "sprint274": "knowledge_library_version_retrieved growth event kind live — Digital Brain bus + Construction Memory audit + timeline playback stub for cross-project Knowledge Library version retrieval/query lifecycle",
+    "sprint273": "No new growth event kinds — milestone 280–289 wrap completeness review confirms knowledge template publication full stack audit",
+    "sprint272": "No new growth event kinds — project assistant context engine knowledge template publication explainability context entry aggregation for assistant explainability context entry surfacing",
+    "sprint271": "No new growth event kinds — project assistant context engine knowledge template publication context entries aggregation for assistant context entry surfacing",
+    "sprint270": "No new growth event kinds — project assistant context engine knowledge template publication timeline entry count + label hint wiring for assistant context availability metrics",
+    "sprint269": "No new growth event kinds — mid-milestone 280–284 completeness review confirms knowledge template publication growth event family + Memory audit stack",
+    "sprint268": "No new growth event kinds — operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
+    "sprint267": "No new growth event kinds — publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
+    "sprint266": "No new growth event kinds — operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
+    "overall": "Event engine Partial — template publication growth event family live; knowledge library version retrieval growth event family live milestone 290–299 Sprint 274–283 closed; knowledge similarity match growth event family live milestone 300–309 Sprint 284–290 closed (growth + timeline filter + commercial workflow stage badge + Phase D playback row + pipeline stage badge + AI panel entry count + viewer chrome + explainability actor/confidence badges + label hint + rationale summary badges + mid-milestone review + project assistant context engine entry count + label hint wiring); Sprint 291+ context entries aggregation queued"
   },
   "knowledgeGraphImpact": {
-    "sprint261": "No direct KG edge changes",
-    "overall": "KG Partial — project-wide merge, cross-ref and trade package edges live; template entities deferred to future milestones"
+    "sprint290": "No direct KG edge changes",
+    "sprint289": "No direct KG edge changes",
+    "sprint288": "No direct KG edge changes",
+    "sprint287": "No direct KG edge changes",
+    "sprint286": "No direct KG edge changes",
+    "sprint285": "No direct KG edge changes",
+    "sprint284": "No direct KG edge changes",
+    "sprint283": "No direct KG edge changes",
+    "sprint282": "No direct KG edge changes",
+    "sprint281": "No direct KG edge changes",
+    "sprint280": "No direct KG edge changes",
+    "sprint279": "No direct KG edge changes",
+    "sprint278": "No direct KG edge changes",
+    "sprint277": "No direct KG edge changes",
+    "sprint276": "No direct KG edge changes",
+    "sprint275": "No direct KG edge changes",
+    "sprint274": "No direct KG edge changes",
+    "sprint273": "No direct KG edge changes",
+    "sprint272": "No direct KG edge changes",
+    "sprint271": "No direct KG edge changes",
+    "sprint270": "No direct KG edge changes",
+    "sprint269": "No direct KG edge changes",
+    "sprint268": "No direct KG edge changes",
+    "sprint267": "No direct KG edge changes",
+    "sprint266": "No direct KG edge changes",
+    "overall": "KG Partial — template entities deferred per Finding 1 triage"
   },
   "commercialIntelligenceImpact": {
-    "sprint261": "Project assistant context engine knowledge template review context entries aggregated; AI panel surfaces template review context entries from assistant snapshot",
-    "viewerChrome": "Knowledge template review viewer chrome indicator delivered Sprint 257",
-    "overall": "Commercial Intelligence Partial — tender-through-lessons-learned stack mature; template review context engine hooks progressing per milestone pattern"
+    "sprint290": "Project assistant context engine knowledge similarity match timeline entry count + label hint wiring + operational workspace AI panel knowledge similarity match context availability surfacing from project assistant context",
+    "sprint289": "Mid-milestone 284–288 completeness review — knowledge similarity match stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators",
+    "sprint288": "Operational workspace AI panel knowledge similarity match label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary label — knowledge similarity matching Phase D timeline enrichment + AI panel",
+    "sprint287": "Knowledge similarity match viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels — knowledge similarity matching Phase D timeline enrichment + viewer chrome",
+    "sprint286": "Operational workspace AI panel knowledge similarity match entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label — knowledge similarity matching Phase D timeline enrichment + AI panel",
+    "sprint285": "Decision Timeline knowledge similarity match commercial workflow stage filtered badge + Phase D playback commercial-stage label + Phase D playback row — knowledge similarity matching Phase D timeline enrichment (lessons_learned stage badge · title · matched template id · source template id · similarity score · match context · source project id · detected-at playback lines)",
+    "sprint284": "Commercial Intelligence knowledge similarity match growth event contract + Decision Timeline knowledge similarity match timeline filter — first Phase E knowledge similarity matching platform hook (knowledge_similarity_match_detected · Memory audit · timeline filter with event type label)",
+    "sprint283": "Milestone 290–299 Commercial Intelligence Cross-Project Knowledge Reuse wrap completeness review — full stack audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring; milestone closed",
+    "sprint282": "Project assistant context engine knowledge library version retrieval explainability context entry aggregation + operational workspace AI panel knowledge library version retrieval explainability context entry surfacing from project assistant context",
+    "sprint281": "Project assistant context engine knowledge library version retrieval context entries aggregation + operational workspace AI panel knowledge library version retrieval context entry surfacing from project assistant context entries",
+    "sprint280": "Project assistant context engine knowledge library version retrieval timeline entry count + label hint wiring + operational workspace AI panel knowledge library version retrieval context availability surfacing from project assistant context",
+    "sprint279": "Mid-milestone 274–278 completeness review — knowledge library version retrieval stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators",
+    "sprint278": "Operational workspace AI panel knowledge library version retrieval label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary label — cross-project knowledge reuse Phase D timeline enrichment + AI panel",
+    "sprint277": "Knowledge library version retrieval viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels — cross-project knowledge reuse Phase D timeline enrichment + viewer chrome",
+    "sprint276": "Operational workspace AI panel knowledge library version retrieval entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label — cross-project knowledge reuse Phase D timeline enrichment",
+    "sprint275": "Decision Timeline knowledge library version retrieval commercial workflow stage filtered badge + Phase D playback commercial-stage label + Phase D playback row — cross-project knowledge reuse Phase D timeline enrichment (lessons_learned stage badge · title · template id · version id · retrieval query · source project id playback lines)",
+    "sprint274": "Commercial Intelligence knowledge library version retrieval growth event contract + Decision Timeline knowledge library version retrieval timeline filter — first Phase E cross-project knowledge reuse platform hook (knowledge_library_version_retrieved · Memory audit · timeline filter with event type label)",
+    "sprint273": "Milestone 280–289 Commercial Intelligence Knowledge Template Publication wrap completeness review — full stack audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring; milestone closed",
+    "sprint272": "Project assistant context engine knowledge template publication explainability context entry aggregation + operational workspace AI panel knowledge template publication explainability context entry surfacing from project assistant context",
+    "sprint271": "Project assistant context engine knowledge template publication context entries aggregation + operational workspace AI panel knowledge template publication context entry surfacing from project assistant context entries",
+    "sprint270": "Project assistant context engine knowledge template publication timeline entry count + label hint wiring + operational workspace AI panel knowledge template publication context availability surfacing from project assistant context",
+    "sprint269": "Mid-milestone 280–284 completeness review — knowledge template publication stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators",
+    "sprint268": "Operational workspace AI panel knowledge template publication label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary label",
+    "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
+    "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
+    "viewerChrome": "Knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287",
+    "overall": "Commercial Intelligence Partial — cross-project knowledge reuse foundation milestone 290–299 Sprint 274–283 closed; Knowledge Similarity Matching milestone 300–309 Sprint 284–290 closed (similarity match growth + timeline filter + commercial workflow stage badge + Phase D playback row + pipeline stage badge + AI panel entry count + viewer chrome + explainability actor/confidence badges + label hint + rationale summary badges + mid-milestone review + project assistant context engine entry count + label hint wiring); Sprint 291+ context entries aggregation queued"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
-    "Migration 015 apply to Supabase",
-    "Migration 017 env-only apply",
-    "Project assistant context engine knowledge template review explainability context entry aggregation (Sprint 262 queued)",
-    "Milestone 270–279 wrap completeness review (Sprint ~263)"
-  ]
+    "DrawingRevision provenance for knowledge/commercial chain (Finding 2 — data-integrity)",
+    "Knowledge Graph template entity integration (Finding 1)",
+    "Cross-project learning loop acceptance scenario (Finding 6)",
+    "Platform Certification recertification (Finding 4 — before production release)",
+    "Migration 015 apply to Supabase production",
+    "Migration 017 env-only apply"
+  ],
+  "reviewStatus": {
+    "status": "active",
+    "lastReviewDate": "2026-07-04",
+    "findingsCount": 7,
+    "triageComplete": true,
+    "monitoring": "hourly"
+  }
 }
