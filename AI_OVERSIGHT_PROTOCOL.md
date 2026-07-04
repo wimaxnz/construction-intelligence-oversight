@@ -81,7 +81,12 @@ Independent review is published to a separate public repo so oversight can run o
 
 **Remote:** [wimaxnz/construction-intelligence-oversight](https://github.com/wimaxnz/construction-intelligence-oversight)
 
-**GitHub write-back:** External reviewers use the **oversight bridge** (`repository_dispatch` → `oversight-ingest.yml` on the oversight repo only). ChatGPT direct GitHub writes return 403; see [`OVERSIGHT_BRIDGE_ADR.md`](./OVERSIGHT_BRIDGE_ADR.md). Delivery team publishes outbound state via `.\scripts\sync-ai-oversight.ps1 -Push` only.
+**GitHub write-back:** External reviewers use the **oversight bridge**:
+
+1. **ChatGPT (recommended):** Custom GPT Action → HTTPS relay (`POST /v1/findings`) → HMAC-signed `repository_dispatch` → `oversight-ingest.yml` on the oversight repo. Template: [`templates/oversight-relay/`](./templates/oversight-relay/README.md). ChatGPT direct GitHub writes return 403.
+2. **Direct dispatch:** PAT + HMAC → `repository_dispatch` (scripts or `gh api`).
+
+Delivery team publishes outbound state via `.\scripts\sync-ai-oversight.ps1 -Push` only. See [`OVERSIGHT_BRIDGE_ADR.md`](./OVERSIGHT_BRIDGE_ADR.md).
 
 Full sync instructions: [`OVERSIGHT_SYNC.md`](./OVERSIGHT_SYNC.md) (allowlist, sanitization, usage). Quick reference: [`OVERSIGHT_REMOTE.md`](./OVERSIGHT_REMOTE.md).
 
@@ -108,6 +113,8 @@ This is a **docs-only link** — not a git submodule. The delivery repo keeps wo
 | `OVERSIGHT_BRIDGE_ADR.md` | Bridge architecture decision + invocation path |
 | `OVERSIGHT_BRIDGE_THREAT_MODEL.md` | Security threat model |
 | `OVERSIGHT_BRIDGE_OPERATIONS.md` | Deploy, test, auth, rollback |
+| `templates/oversight-relay/` | HTTPS relay for ChatGPT Actions (Cloudflare Worker) |
+| `OVERSIGHT_RELAY_E2E_PROOF.md` | Timestamped E2E proof artifact |
 | `OVERSIGHT_SYNC.md` | Safe public sync — allowlist, sanitization, usage |
 | `OVERSIGHT_PACKET.md` | Optional human-readable close-out summary for external review |
 | `OVERSIGHT_REMOTE.md` | External repo URL, push/pull workflow, non-blocking rules |

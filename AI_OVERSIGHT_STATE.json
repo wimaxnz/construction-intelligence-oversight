@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-05",
   "currentSprint": {
-    "number": 294,
+    "number": 295,
     "status": "closed",
-    "previousClosed": 293,
+    "previousClosed": 294,
     "closedDate": "2026-07-05"
   },
   "currentMilestone": {
@@ -21,21 +21,26 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 1,
-    "percentComplete": 10,
+    "sprintsClosed": 2,
+    "percentComplete": 20,
     "nextWrapReviewSprint": 303
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Decision Timeline proactive knowledge warning Phase D playback row"
+      "focus": "Operational workspace AI panel proactive knowledge warning timeline entry count indicator"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Decision Timeline proactive knowledge warning commercial workflow stage filtered badge + Phase D playback label"
+      "focus": "Decision Timeline proactive knowledge warning pipeline stage filtered badge + Phase D playback pipeline-stage label"
     }
   },
   "completedWork": {
+    "sprint295": {
+      "stream2": "Decision Timeline proactive knowledge warning commercial workflow stage filtered badge + Phase D playback label — extractProactiveKnowledgeWarningPlaybackRowFromTimelineEntry · appendCommercialWorkflowStagePlaybackLine · decision-timeline-proactive-knowledge-warning-commercial-workflow-stage · decision-timeline-proactive-knowledge-warning-playback-commercial-stage · decisionTimelineBuilder.ts · DecisionTimeline.tsx · sprint-295-selftest.ts",
+      "stream1": "Decision Timeline proactive knowledge warning Phase D playback row — decision-timeline-proactive-knowledge-warning-playback-row · decision-timeline-proactive-knowledge-warning-playback-row-toggle · decision-timeline-proactive-knowledge-warning-playback-title · decision-timeline-proactive-knowledge-warning-playback-matched-template-id · decision-timeline-proactive-knowledge-warning-playback-similarity-match-id · decision-timeline-proactive-knowledge-warning-playback-warning-text · decision-timeline-proactive-knowledge-warning-playback-warning-severity · decision-timeline-proactive-knowledge-warning-playback-recommendation-text · decision-timeline-proactive-knowledge-warning-playback-source-project-id · decision-timeline-proactive-knowledge-warning-playback-issued-at · extractProactiveKnowledgeWarningPlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
     "sprint294": {
       "stream2": "Commercial Intelligence proactive knowledge warning growth event contract â€” proactiveKnowledgeWarningGrowthService.ts Â· proactiveKnowledgeWarningMemoryService.ts Â· proactiveKnowledgeWarningTimelinePlaybackService.ts Â· proactive_knowledge_warning_issued Â· PROACTIVE_KNOWLEDGE_WARNING_JOB_DERIVATION_KINDS Â· sprint-294-selftest.ts",
       "stream1": "Decision Timeline proactive knowledge warning timeline filter â€” decision-timeline-proactive-knowledge-warning-filter Â· decision-timeline-proactive-knowledge-warning-badge Â· decision-timeline-proactive-knowledge-warning-event-type Â· filterDecisionTimelineToProactiveKnowledgeWarningEntries Â· countProactiveKnowledgeWarningTimelineEntries Â· DecisionTimeline.tsx Â· decisionTimelineBuilder.ts",
@@ -193,6 +198,15 @@
     }
   },
   "changedFiles": {
+    "sprint295": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/sprint-295-selftest.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
     "sprint294": [
       "src/types/commercialIntelligence.ts",
       "src/types/projectDigitalBrain.ts",
@@ -493,6 +507,7 @@
   "validationResults": {
     "sprintValidation": {
       "gate": "PHASE_B_RUNS=3",
+      "sprint295": "3/3 consecutive green",
       "sprint294": "3/3 consecutive green",
       "sprint293": "3/3 consecutive green",
       "sprint292": "3/3 consecutive green",
@@ -547,9 +562,9 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md â€” Sprint 294 delivered, Sprint 295 queued (milestone 310â€“319)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md â€” UX sprint 294 proactive knowledge warning growth event + timeline filter logged",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json â€” sprint 294 closed, sprint 295 queued"
+    "docs/PLATFORM_EVOLUTION.md â€” Sprint 295 delivered, Sprint 296 queued (milestone 310â€“319)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md â€” UX sprint 295 proactive knowledge warning Phase D playback row + commercial workflow stage badge logged",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json â€” sprint 295 closed, sprint 296 queued"
   ],
   "migrationsRequired": [
     {
@@ -609,18 +624,18 @@
   ],
   "blockers": [],
   "nextSprint": {
-    "number": 295,
-    "stream2": "Decision Timeline proactive knowledge warning commercial workflow stage filtered badge + Phase D playback label",
-    "stream1": "Decision Timeline proactive knowledge warning Phase D playback row",
-    "selftest": "scripts/sprint-295-selftest.ts"
+    "number": 296,
+    "stream2": "Decision Timeline proactive knowledge warning pipeline stage filtered badge + Phase D playback pipeline-stage label",
+    "stream1": "Operational workspace AI panel proactive knowledge warning timeline entry count indicator",
+    "selftest": "scripts/sprint-296-selftest.ts"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-04T23:09:03.183Z",
+    "lastPushAttempt": "2026-07-04T23:09:27.785Z",
     "lastPushResult": "success",
-    "remoteHeadSha": "5f535e225a9bd73848b19816ae1f2923ccc3dc37",
-    "verifiedAt": "2026-07-04T23:09:03.183Z",
+    "remoteHeadSha": "f564ebd12ef504753605652fd2c37c6ed47b6b06",
+    "verifiedAt": "2026-07-04T23:09:27.785Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "bridgeDocsPublished": [
@@ -640,7 +655,7 @@
     "bridgeDocs": "docs/ai-oversight/OVERSIGHT_BRIDGE_ADR.md"
   },
   "oversightBridge": {
-    "lastConsumedAt": "2026-07-04T21:15:29.795Z",
+    "lastConsumedAt": "2026-07-04T23:22:21.679Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0
   },
@@ -771,7 +786,7 @@
     },
     "proactiveWarning": {
       "status": "partial",
-      "evidence": "proactive_knowledge_warning_issued growth event + Memory audit + Decision Timeline filter live Sprint 294; outcome feedback loop and viewer chrome not yet wired"
+      "evidence": "proactive_knowledge_warning_issued growth event + Memory audit + Decision Timeline filter + Phase D playback row + commercial workflow stage badge live Sprint 294–295; outcome feedback loop and viewer chrome not yet wired"
     },
     "knowledgeGraphIntegration": {
       "status": "not_started",
@@ -780,11 +795,12 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning",
-    "phaseE": "Commercial Intelligence Proactive Knowledge Warning milestone (310-319) active â€” Sprint 294 closed proactive knowledge warning growth event contract + timeline filter; Sprint 295 queued Phase D playback row + commercial workflow stage badge",
+    "phaseE": "Commercial Intelligence Proactive Knowledge Warning milestone (310-319) active â€” Sprint 295 closed Phase D playback row + commercial workflow stage badge; Sprint 296 queued pipeline stage badge + AI panel entry count",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track"
   },
   "digitalBrainImpact": {
+    "sprint295": "No new growth event kinds â€” Decision Timeline proactive knowledge warning Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label for proactive warning audit filter scope",
     "sprint294": "proactive_knowledge_warning_issued growth event kind live â€” Digital Brain bus + Construction Memory audit + timeline playback stub for cross-project similarity match â†’ proactive warning lifecycle",
     "sprint293": "No new growth event kinds â€” milestone 300â€“309 wrap completeness review confirms knowledge similarity match full stack audit; milestone closed",
     "sprint292": "No new growth event kinds â€” project assistant context engine knowledge similarity match explainability context entry aggregation for assistant explainability context entry surfacing",
@@ -814,9 +830,10 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial â€” template publication growth event family live; knowledge library version retrieval growth event family live milestone 290â€“299 Sprint 274â€“283 closed; knowledge similarity match growth event family live milestone 300â€“309 Sprint 284â€“293 closed; proactive knowledge warning growth event family live milestone 310â€“319 Sprint 294 (growth + timeline filter); Sprint 295 queued Phase D playback row + commercial workflow stage badge"
+    "overall": "Event engine Partial â€” template publication growth event family live; knowledge library version retrieval growth event family live milestone 290â€“299 Sprint 274â€“283 closed; knowledge similarity match growth event family live milestone 300â€“309 Sprint 284â€“293 closed; proactive knowledge warning growth event family live milestone 310â€“319 Sprint 294â€“295 (growth + timeline filter + Phase D playback row + commercial workflow stage badge); Sprint 296 queued pipeline stage badge + AI panel entry count"
   },
   "knowledgeGraphImpact": {
+    "sprint295": "No direct KG edge changes",
     "sprint294": "No direct KG edge changes",
     "sprint293": "No direct KG edge changes",
     "sprint292": "No direct KG edge changes",
@@ -849,6 +866,7 @@
     "overall": "KG Partial â€” template entities deferred per Finding 1 triage"
   },
   "commercialIntelligenceImpact": {
+    "sprint295": "Decision Timeline proactive knowledge warning Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label â€” proactive knowledge warning Phase D timeline enrichment (lessons_learned stage badge Â· title Â· matched template id Â· similarity match id Â· warning text Â· warning severity Â· recommendation text Â· source project id Â· issued-at playback lines)",
     "sprint294": "Commercial Intelligence proactive knowledge warning growth event contract + Decision Timeline proactive knowledge warning timeline filter â€” first Phase E proactive knowledge warning platform hook (proactive_knowledge_warning_issued Â· Memory audit Â· timeline filter with event type label)",
     "sprint293": "Milestone 300â€“309 Commercial Intelligence Knowledge Similarity Matching wrap completeness review â€” full stack audit confirms growth events Â· Memory audit Â· viewer chrome Â· Decision Timeline Â· explainability Â· AI panel Â· project assistant context engine wiring; milestone closed",
     "sprint292": "Project assistant context engine knowledge similarity match explainability context entry aggregation + operational workspace AI panel knowledge similarity match explainability context entry surfacing from project assistant context",
@@ -879,7 +897,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287",
-    "overall": "Commercial Intelligence Partial â€” cross-project knowledge reuse foundation milestone 290â€“299 Sprint 274â€“283 closed; Knowledge Similarity Matching milestone 300â€“309 Sprint 284â€“293 closed; Proactive Knowledge Warning milestone 310â€“319 Sprint 294 (proactive warning growth + timeline filter); Sprint 295 queued Phase D playback row + commercial workflow stage badge"
+    "overall": "Commercial Intelligence Partial â€” cross-project knowledge reuse foundation milestone 290â€“299 Sprint 274â€“283 closed; Knowledge Similarity Matching milestone 300â€“309 Sprint 284â€“293 closed; Proactive Knowledge Warning milestone 310â€“319 Sprint 294â€“295 (proactive warning growth + timeline filter + Phase D playback row + commercial workflow stage badge); Sprint 296 queued pipeline stage badge + AI panel entry count"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
