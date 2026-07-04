@@ -1,0 +1,105 @@
+# name: Oversight finding ingest
+
+# Deploy ONLY to wimaxnz/construction-intelligence-oversight (not construction-command-centre).
+# Bootstrap: copy from construction-command-centre/docs/ai-oversight/templates/oversight-repo/
+#
+# Triggers:
+#   - repository_dispatch (type: oversight-finding) — primary for ChatGPT / external callers
+#   - workflow_dispatch — manual test with JSON payload
+
+on:
+  repository_dispatch:
+    types: [oversight-finding]
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: 'JSON finding payload (see AI_OVERSIGHT_PROTOCOL bridge contract)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify dispatch secret
+        env:
+          EXPECTED: ${{ secrets.OVERSIGHT_INGEST_HMAC }}
+          PROVIDED: ${{ github.event.client_payload.hmac }}
+          PAYLOAD: ${{ github.event.client_payload.payload }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Manual dispatch — skipping HMAC check"
+            exit 0
+          fi
+          if [ -z "$EXPECTED" ]; then
+            echo "OVERSIGHT_INGEST_HMAC secret not configured"
+            exit 1
+          fi
+          if [ -z "$PROVIDED" ]; then
+            echo "Missing client_payload.hmac"
+            exit 1
+          fi
+          COMPUTED=$(printf '%s' "$PAYLOAD" | openssl dgst -sha256 -hmac "$EXPECTED" | awk '{print $2}')
+          if [ "$COMPUTED" != "$PROVIDED" ]; then
+            echo "HMAC verification failed"
+            exit 1
+          fi
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install tsx
+        run: npm install -g tsx
+
+      - name: Resolve payload JSON
+        id: payload
+        env:
+          DISPATCH_PAYLOAD: ${{ github.event.client_payload.payload }}
+          MANUAL_PAYLOAD: ${{ inputs.payload }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "$MANUAL_PAYLOAD" > /tmp/finding.json
+          else
+            echo "$DISPATCH_PAYLOAD" > /tmp/finding.json
+          fi
+          FINDING_ID=$(node -e "console.log(JSON.parse(require('fs').readFileSync('/tmp/finding.json','utf8')).findingId)")
+          echo "finding_id=$FINDING_ID" >> "$GITHUB_OUTPUT"
+
+      - name: Ingest finding (validate · sanitize · append)
+        env:
+          OVERSIGHT_FILE_LAYOUT: root
+        run: |
+          tsx scripts/oversight-bridge/ingest-cli.ts --file /tmp/finding.json --base-dir "$GITHUB_WORKSPACE" --layout-root
+        continue-on-error: false
+
+      - name: Create branch and commit (PR model)
+        run: |
+          FINDING_ID="${{ steps.payload.outputs.finding_id }}"
+          BRANCH="oversight/inbox/${FINDING_ID}"
+          git config user.name "oversight-bridge[bot]"
+          git config user.email "oversight-bridge@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add AI_OVERSIGHT_INBOX.json AI_OVERSIGHT_RESPONSE.md bridge-audit.jsonl
+          git diff --staged --quiet && echo "No file changes" && exit 0
+          git commit -m "chore(oversight): ingest finding ${FINDING_ID}"
+          git push origin "$BRANCH"
+
+      - name: Open pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          FINDING_ID="${{ steps.payload.outputs.finding_id }}"
+          BRANCH="oversight/inbox/${FINDING_ID}"
+          gh pr create \
+            --base main \
+            --head "$BRANCH" \
+            --title "Oversight finding: ${FINDING_ID}" \
+            --body "Automated ingest via oversight bridge. Review and merge when satisfied." \
+            || echo "PR may already exist or branch unchanged"
