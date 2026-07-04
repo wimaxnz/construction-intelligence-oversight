@@ -1,0 +1,154 @@
+{
+  "lastUpdated": "2026-07-04",
+  "currentSprint": {
+    "number": 261,
+    "status": "closed",
+    "previousClosed": 260,
+    "closedDate": "2026-07-04"
+  },
+  "currentMilestone": {
+    "range": "270-279",
+    "name": "Commercial Intelligence Knowledge Template Review",
+    "status": "active",
+    "theme": "Human review gate · promoted template approve/reject lifecycle",
+    "openedDate": "2026-07-04",
+    "previousMilestoneClosed": "260-269 (Commercial Intelligence Knowledge Library Loop-back)"
+  },
+  "milestoneProgress": {
+    "sprintsInMilestone": 10,
+    "sprintsClosed": 8,
+    "percentComplete": 80,
+    "nextWrapReviewSprint": 263
+  },
+  "activeStreams": {
+    "stream1": {
+      "name": "UX / PM refinements",
+      "focus": "Operational workspace AI panel knowledge template review explainability context entry surfacing from project assistant context"
+    },
+    "stream2": {
+      "name": "Platform / strategic foundations",
+      "focus": "Project assistant context engine knowledge template review explainability context entry aggregation"
+    }
+  },
+  "completedWork": {
+    "sprint261": {
+      "stream2": "Project assistant context engine knowledge template review context entries aggregation — knowledgeTemplateReviewEntries/ProjectAssistantKnowledgeTemplateReviewContextEntry via filterDecisionTimelineToKnowledgeTemplateReviewEntries",
+      "stream1": "Operational workspace AI panel knowledge template review context entry surfacing from project assistant context — operational-workspace-ai-panel-knowledge-template-review-context-entries + context-entry-item",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint260": {
+      "stream2": "Project assistant context engine knowledge template review timeline entry count + label hint wiring — knowledgeTemplateReviewTimelineEntryCount/knowledgeTemplateReviewLabelHint on ProjectAssistantContextSnapshot via buildKnowledgeTemplateReviewTimelinePlaybackStub",
+      "stream1": "Operational workspace AI panel knowledge template review context availability surfacing from project assistant context — operational-workspace-ai-panel-knowledge-template-review-context-entry-count + context-label-hint",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint259": {
+      "stream2": "Mid-milestone 270–274 Commercial Intelligence Knowledge Template Review completeness review — sprint-259-selftest.ts audits first-half stack",
+      "stream1": "Mid-milestone review — first-half completeness prep",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    }
+  },
+  "changedFiles": {
+    "sprint261": [
+      "src/types/projectAssistantContext.ts",
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-261-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md"
+    ],
+    "sprint260": [
+      "src/types/projectAssistantContext.ts",
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-260-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md"
+    ],
+    "sprint259": [
+      "scripts/sprint-259-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md"
+    ]
+  },
+  "validationResults": {
+    "sprintValidation": {
+      "gate": "PHASE_B_RUNS=3",
+      "sprint261": "3/3 consecutive green",
+      "sprint260": "3/3 consecutive green",
+      "regressionSuite": "scripts/phase-b-wynyard-validation.ts"
+    },
+    "platformCertification": {
+      "lastAchieved": "2026-06-29",
+      "status": "valid",
+      "note": "5/5 deterministic; re-certification only at major milestones"
+    },
+    "typecheck": "npx tsc -b (per regression gate)"
+  },
+  "regressionStatus": "green",
+  "documentationUpdates": [
+    "docs/PLATFORM_EVOLUTION.md — Sprint 261 delivered, Sprint 262 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — UX sprint 261 refinements logged"
+  ],
+  "migrationsRequired": [
+    {
+      "id": "015",
+      "status": "scheduled",
+      "note": "RLS/security hardening per PHASE_B_TECH_DEBT.md; not blocking active sprints"
+    },
+    {
+      "id": "017",
+      "status": "scheduled",
+      "note": "Env-only; not blocking active sprints"
+    }
+  ],
+  "openRisks": [
+    {
+      "id": "migration-015-pending",
+      "severity": "medium",
+      "description": "Supabase migration 015 (RLS, pin/evidence delete policies) not yet applied to production"
+    },
+    {
+      "id": "phase-c-gated",
+      "severity": "low",
+      "description": "Phase C revision management prepared but not started; gated on checklist + regression"
+    },
+    {
+      "id": "partial-platform-services",
+      "severity": "low",
+      "description": "Digital Brain, KG, and Commercial Intelligence remain Partial per service register; incremental delivery by design"
+    }
+  ],
+  "blockers": [],
+  "nextSprint": {
+    "number": 262,
+    "stream2": "Project assistant context engine knowledge template review explainability context entry aggregation",
+    "stream1": "Operational workspace AI panel knowledge template review explainability context entry surfacing from project assistant context",
+    "selftest": "scripts/sprint-262-selftest.ts"
+  },
+  "strategicRoadmapAlignment": {
+    "cosPipelineStage": "lessons_learned → knowledge library loop-back → knowledge template review",
+    "phaseE": "Commercial Intelligence Knowledge Template Review milestone (270-279) in progress — 8/10 sprints closed",
+    "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
+    "alignment": "on-track"
+  },
+  "digitalBrainImpact": {
+    "sprint261": "No new growth events; context engine aggregates filtered knowledge_template_review_* timeline entries into assistant snapshot as knowledgeTemplateReviewEntries",
+    "overall": "Event engine Partial — template review joins commercial workflow growth event family"
+  },
+  "knowledgeGraphImpact": {
+    "sprint261": "No direct KG edge changes",
+    "overall": "KG Partial — project-wide merge, cross-ref and trade package edges live; template entities deferred to future milestones"
+  },
+  "commercialIntelligenceImpact": {
+    "sprint261": "Project assistant context engine knowledge template review context entries aggregated; AI panel surfaces template review context entries from assistant snapshot",
+    "viewerChrome": "Knowledge template review viewer chrome indicator delivered Sprint 257",
+    "overall": "Commercial Intelligence Partial — tender-through-lessons-learned stack mature; template review context engine hooks progressing per milestone pattern"
+  },
+  "deferredItems": [
+    "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
+    "Migration 015 apply to Supabase",
+    "Migration 017 env-only apply",
+    "Project assistant context engine knowledge template review explainability context entry aggregation (Sprint 262 queued)",
+    "Milestone 270–279 wrap completeness review (Sprint ~263)"
+  ]
+}
