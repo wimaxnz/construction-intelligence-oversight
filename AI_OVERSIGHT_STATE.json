@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-05",
   "currentSprint": {
-    "number": 300,
+    "number": 302,
     "status": "closed",
-    "previousClosed": 299,
+    "previousClosed": 301,
     "closedDate": "2026-07-05"
   },
   "currentMilestone": {
@@ -21,21 +21,31 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 7,
-    "percentComplete": 70,
+    "sprintsClosed": 9,
+    "percentComplete": 90,
     "nextWrapReviewSprint": 303
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Operational workspace AI panel proactive knowledge warning context entry surfacing from project assistant context entries"
+      "focus": "Milestone 310–319 Commercial Intelligence Proactive Knowledge Warning wrap completeness review"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Project assistant context engine proactive knowledge warning context entries aggregation"
+      "focus": "Milestone 310–319 Commercial Intelligence Proactive Knowledge Warning wrap completeness review"
     }
   },
   "completedWork": {
+    "sprint302": {
+      "stream2": "Project assistant context engine proactive knowledge warning explainability context entry aggregation — isExplainabilityEnrichedDecisionTimelineEntry · filterDecisionTimelineToProactiveKnowledgeWarningEntries · proactiveKnowledgeWarningExplainabilityEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-302-selftest.ts",
+      "stream1": "Operational workspace AI panel proactive knowledge warning explainability context entry surfacing from project assistant context — operational-workspace-ai-panel-proactive-knowledge-warning-explainability-context-entries · OperationalWorkspace.tsx · sprint-302-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint301": {
+      "stream2": "Project assistant context engine proactive knowledge warning context entries aggregation — filterDecisionTimelineToProactiveKnowledgeWarningEntries · toProactiveKnowledgeWarningContextEntry · ProjectAssistantProactiveKnowledgeWarningContextEntry · project-assistant-context-proactive-knowledge-warning-entries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-301-selftest.ts",
+      "stream1": "Operational workspace AI panel proactive knowledge warning context entry surfacing from project assistant context entries — operational-workspace-ai-panel-proactive-knowledge-warning-context-entries · operational-workspace-ai-panel-proactive-knowledge-warning-context-entry-item · OperationalWorkspace.tsx · sprint-301-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
     "sprint300": {
       "stream2": "Project assistant context engine proactive knowledge warning timeline entry count + label hint wiring — buildProactiveKnowledgeWarningTimelinePlaybackStub · countProactiveKnowledgeWarningTimelineEntries · formatDistinctProactiveKnowledgeWarningLabelHint · project-assistant-context-proactive-knowledge-warning-entry-count · project-assistant-context-proactive-knowledge-warning-label-hint · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-300-selftest.ts",
       "stream1": "Operational workspace AI panel proactive knowledge warning context availability surfacing from project assistant context — operational-workspace-ai-panel-proactive-knowledge-warning-context-entry-count · operational-workspace-ai-panel-proactive-knowledge-warning-context-label-hint · OperationalWorkspace.tsx · sprint-300-selftest.ts",
@@ -223,6 +233,24 @@
     }
   },
   "changedFiles": {
+    "sprint302": [
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/types/projectAssistantContext.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-302-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint301": [
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/types/projectAssistantContext.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-301-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
     "sprint299": [
       "scripts/sprint-299-selftest.ts",
       "scripts/phase-b-wynyard-validation.ts",
@@ -562,6 +590,8 @@
       "sprint294": "3/3 consecutive green",
       "sprint293": "3/3 consecutive green",
       "sprint292": "3/3 consecutive green",
+      "sprint301": "3/3 consecutive green",
+      "sprint302": "3/3 consecutive green",
       "sprint290": "3/3 consecutive green",
       "sprint289": "3/3 consecutive green",
       "sprint288": "3/3 consecutive green",
@@ -613,9 +643,9 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Sprint 300 delivered, Sprint 301 queued (milestone 310–319)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — UX sprint 300 proactive knowledge warning project assistant context engine wiring logged",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 300 closed, sprint 301 queued"
+    "docs/PLATFORM_EVOLUTION.md — Sprint 302 delivered, Sprint 303 queued (milestone 310–319)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — UX sprint 301–302 proactive knowledge warning context entries + explainability context entry surfacing logged",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 302 closed, sprint 303 queued"
   ],
   "migrationsRequired": [
     {
@@ -675,26 +705,26 @@
   ],
   "blockers": [],
   "nextSprint": {
-    "number": 301,
-    "stream2": "Project assistant context engine proactive knowledge warning context entries aggregation",
-    "stream1": "Operational workspace AI panel proactive knowledge warning context entry surfacing from project assistant context entries",
-    "selftest": "scripts/sprint-301-selftest.ts"
+    "number": 303,
+    "stream2": "Milestone 310–319 Commercial Intelligence Proactive Knowledge Warning wrap completeness review",
+    "stream1": "Milestone wrap — Commercial Intelligence Proactive Knowledge Warning closes",
+    "selftest": "scripts/sprint-303-selftest.ts"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-05T02:03:03.465Z",
+    "lastPushAttempt": "2026-07-05T02:04:10.536Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-05T02:03:03.465Z",
+    "verifiedAt": "2026-07-05T02:04:10.536Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-05T02:00:00.000Z",
-    "sanitizedAt": "2026-07-05T02:03:24.5599592Z",
-    "pushedAt": "2026-07-05T02:03:03.465Z",
-    "remoteHeadSha": "b751862626e98b3f163c8433cbf3dbc4083b2fe4",
-    "publicStateVerifiedAt": "2026-07-05T02:03:03.465Z",
+    "sanitizedAt": "2026-07-05T02:22:28.5108690Z",
+    "pushedAt": "2026-07-05T02:04:10.536Z",
+    "remoteHeadSha": "8fbe856a1daaa6baff04a67b454c53da72140c63",
+    "publicStateVerifiedAt": "2026-07-05T02:04:10.536Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "62cad0b30ce34405ba66b4d42a1263d5b515f6b097e40ff34661e4e42345ecf7",
+    "publicStateContentHash": "f1124dd7192bec54f0dfc35998f7ef5811b6426795982497658b7ecc9e605e35",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -881,7 +911,7 @@
     },
     "proactiveWarning": {
       "status": "partial",
-      "evidence": "proactive_knowledge_warning_issued growth event + Memory audit + Decision Timeline filter + Phase D playback row + commercial workflow stage badge + pipeline stage badge + AI panel entry count + viewer chrome indicator + explainability actor/confidence badges + AI panel label hint + explainability rationale summary badges + mid-milestone 294–298 completeness review + project assistant context engine entry count + label hint wiring live Sprint 300; outcome feedback loop not yet wired"
+      "evidence": "proactive_knowledge_warning_issued growth event + Memory audit + Decision Timeline filter + Phase D playback row + commercial workflow stage badge + pipeline stage badge + AI panel entry count + viewer chrome indicator + explainability actor/confidence badges + AI panel label hint + explainability rationale summary badges + mid-milestone 294–298 completeness review + project assistant context engine entry count + label hint + context entries + explainability context entry wiring live Sprint 302; outcome feedback loop not yet wired"
     },
     "knowledgeGraphIntegration": {
       "status": "not_started",
@@ -890,11 +920,13 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning",
-    "phaseE": "Commercial Intelligence Proactive Knowledge Warning milestone (310-319) active — Sprint 300 closed project assistant context engine entry count + label hint wiring; Sprint 301 queued context entries aggregation",
+    "phaseE": "Commercial Intelligence Proactive Knowledge Warning milestone (310-319) active — Sprint 302 closed explainability context entry aggregation; Sprint 303 queued milestone wrap completeness review",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track"
   },
   "digitalBrainImpact": {
+    "sprint302": "No new growth event kinds — project assistant context engine proactive knowledge warning explainability context entry aggregation for assistant explainability context entry surfacing",
+    "sprint301": "No new growth event kinds — project assistant context engine proactive knowledge warning context entries aggregation for assistant context entry surfacing",
     "sprint300": "No new growth event kinds — project assistant context engine proactive knowledge warning timeline entry count + label hint wiring for assistant context availability metrics",
     "sprint299": "No new growth event kinds — mid-milestone 294–298 completeness review confirms proactive knowledge warning growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint298": "No new growth event kinds — operational workspace AI panel proactive knowledge warning label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary label for proactive warning audit filter scope",
@@ -930,7 +962,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — template publication growth event family live; knowledge library version retrieval growth event family live milestone 290–299 Sprint 274–283 closed; knowledge similarity match growth event family live milestone 300–309 Sprint 284–293 closed; proactive knowledge warning growth event family live milestone 310–319 Sprint 294–300 (growth + timeline filter + Phase D playback row + commercial workflow stage badge + pipeline stage badge + AI panel entry count + viewer chrome indicator + explainability actor/confidence badges + AI panel label hint + explainability rationale summary badges + mid-milestone 294–298 completeness review + project assistant context engine entry count + label hint wiring); Sprint 301 queued context entries aggregation"
+    "overall": "Event engine Partial — template publication growth event family live; knowledge library version retrieval growth event family live milestone 290–299 Sprint 274–283 closed; knowledge similarity match growth event family live milestone 300–309 Sprint 284–293 closed; proactive knowledge warning growth event family live milestone 310–319 Sprint 294–302 (growth + timeline filter + Phase D playback row + commercial workflow stage badge + pipeline stage badge + AI panel entry count + viewer chrome indicator + explainability actor/confidence badges + AI panel label hint + explainability rationale summary badges + mid-milestone 294–298 completeness review + project assistant context engine entry count + label hint + context entries + explainability context entry wiring); Sprint 303 queued milestone wrap completeness review"
   },
   "knowledgeGraphImpact": {
     "sprint300": "No direct KG edge changes",
@@ -1007,7 +1039,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — cross-project knowledge reuse foundation milestone 290–299 Sprint 274–283 closed; Knowledge Similarity Matching milestone 300–309 Sprint 284–293 closed; Proactive Knowledge Warning milestone 310–319 Sprint 294–300 (proactive warning growth + timeline filter + Phase D playback row + commercial workflow stage badge + pipeline stage badge + AI panel entry count + viewer chrome indicator + explainability actor/confidence badges + AI panel label hint + explainability rationale summary badges + mid-milestone 294–298 completeness review + project assistant context engine entry count + label hint wiring); Sprint 301 queued context entries aggregation"
+    "overall": "Commercial Intelligence Partial — cross-project knowledge reuse foundation milestone 290–299 Sprint 274–283 closed; Knowledge Similarity Matching milestone 300–309 Sprint 284–293 closed; Proactive Knowledge Warning milestone 310–319 Sprint 294–302 (proactive warning growth + timeline filter + Phase D playback row + commercial workflow stage badge + pipeline stage badge + AI panel entry count + viewer chrome indicator + explainability actor/confidence badges + AI panel label hint + explainability rationale summary badges + mid-milestone 294–298 completeness review + project assistant context engine entry count + label hint + context entries + explainability context entry wiring); Sprint 303 queued milestone wrap completeness review"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
