@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-06",
   "currentSprint": {
-    "number": 329,
+    "number": 330,
     "status": "closed",
-    "previousClosed": 328,
+    "previousClosed": 329,
     "closedDate": "2026-07-06"
   },
   "currentMilestone": {
@@ -21,21 +21,26 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 6,
-    "percentComplete": 60,
+    "sprintsClosed": 7,
+    "percentComplete": 70,
     "nextWrapReviewSprint": 333
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Operational workspace AI panel knowledge applied to future project context entry surfacing from project assistant context entries — operational-workspace-ai-panel-knowledge-applied-to-future-project-context-entries · operational-workspace-ai-panel-knowledge-applied-to-future-project-context-entry-item · OperationalWorkspace.tsx · sprint-330-selftest.ts"
+      "focus": "Operational workspace AI panel knowledge applied to future project explainability context entry surfacing from project assistant context — operational-workspace-ai-panel-knowledge-applied-to-future-project-explainability-context-entries · OperationalWorkspace.tsx · sprint-331-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Project assistant context engine knowledge applied to future project context entries aggregation — knowledgeAppliedToFutureProjectEntries · toKnowledgeAppliedToFutureProjectContextEntry · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-330-selftest.ts"
+      "focus": "Project assistant context engine knowledge applied to future project explainability context entry aggregation — knowledgeAppliedToFutureProjectExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · filterDecisionTimelineToKnowledgeAppliedToFutureProjectEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-331-selftest.ts"
     }
   },
   "completedWork": {
+    "sprint330": {
+      "stream2": "Project assistant context engine knowledge applied to future project context entries aggregation — filterDecisionTimelineToKnowledgeAppliedToFutureProjectEntries · toKnowledgeAppliedToFutureProjectContextEntry · ProjectAssistantKnowledgeAppliedToFutureProjectContextEntry · knowledgeAppliedToFutureProjectEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-330-selftest.ts",
+      "stream1": "Operational workspace AI panel knowledge applied to future project context entry surfacing from project assistant context entries — operational-workspace-ai-panel-knowledge-applied-to-future-project-context-entries · operational-workspace-ai-panel-knowledge-applied-to-future-project-context-entry-item · OperationalWorkspace.tsx · sprint-330-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
     "sprint329": {
       "stream2": "Project assistant context engine knowledge applied to future project timeline entry count + label hint wiring — knowledgeAppliedToFutureProjectTimelineEntryCount · knowledgeAppliedToFutureProjectLabelHint · formatDistinctKnowledgeAppliedToFutureProjectLabelHint · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-329-selftest.ts",
       "stream1": "Operational workspace AI panel knowledge applied to future project context availability surfacing from project assistant context — operational-workspace-ai-panel-knowledge-applied-to-future-project-context-entry-count · operational-workspace-ai-panel-knowledge-applied-to-future-project-context-label-hint · OperationalWorkspace.tsx · sprint-329-selftest.ts",
@@ -368,6 +373,15 @@
     }
   },
   "changedFiles": {
+    "sprint330": [
+      "src/types/projectAssistantContext.ts",
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-330-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
     "sprint329": [
       "src/types/projectAssistantContext.ts",
       "src/platform/assistant/projectAssistantContextEngine.ts",
@@ -889,6 +903,7 @@
       "sprint307": "3/3 consecutive green",
       "sprint316": "3/3 consecutive green",
       "sprint317": "3/3 consecutive green",
+      "sprint330": "3/3 consecutive green",
       "sprint329": "3/3 consecutive green",
       "sprint328": "3/3 consecutive green",
       "sprint327": "3/3 consecutive green",
@@ -963,9 +978,9 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Sprint 323 delivered, Sprint 324 queued (milestone 330–339 closed · 340–349 opens)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 323 milestone 330–339 wrap completeness review logged",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 323 closed, sprint 324 queued, milestone 330–339 closed"
+    "docs/PLATFORM_EVOLUTION.md — Sprint 330 delivered, Sprint 331 queued (milestone 340–349 active 7/10)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 330 knowledge applied to future project context entries aggregation + AI panel context entry surfacing logged",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 330 closed, sprint 331 queued"
   ],
   "migrationsRequired": [
     {
@@ -1025,26 +1040,26 @@
   ],
   "blockers": [],
   "nextSprint": {
-    "number": 330,
-    "stream2": "Project assistant context engine knowledge applied to future project context entries aggregation — knowledgeAppliedToFutureProjectEntries · toKnowledgeAppliedToFutureProjectContextEntry · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-330-selftest.ts",
-    "stream1": "Operational workspace AI panel knowledge applied to future project context entry surfacing from project assistant context entries — operational-workspace-ai-panel-knowledge-applied-to-future-project-context-entries · operational-workspace-ai-panel-knowledge-applied-to-future-project-context-entry-item · OperationalWorkspace.tsx · sprint-330-selftest.ts",
-    "selftest": "scripts/sprint-330-selftest.ts"
+    "number": 331,
+    "stream2": "Project assistant context engine knowledge applied to future project explainability context entry aggregation — knowledgeAppliedToFutureProjectExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · filterDecisionTimelineToKnowledgeAppliedToFutureProjectEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-331-selftest.ts",
+    "stream1": "Operational workspace AI panel knowledge applied to future project explainability context entry surfacing from project assistant context — operational-workspace-ai-panel-knowledge-applied-to-future-project-explainability-context-entries · OperationalWorkspace.tsx · sprint-331-selftest.ts",
+    "selftest": "scripts/sprint-331-selftest.ts"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-05T12:23:10.014Z",
+    "lastPushAttempt": "2026-07-05T12:23:30.728Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-05T12:23:10.014Z",
+    "verifiedAt": "2026-07-05T12:23:30.728Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-05T02:00:00.000Z",
-    "sanitizedAt": "2026-07-05T12:22:51.6839810Z",
-    "pushedAt": "2026-07-05T12:23:10.014Z",
-    "remoteHeadSha": "b9037816adfbeb30c6825926806efd95c5f9e089",
-    "publicStateVerifiedAt": "2026-07-05T12:23:10.014Z",
+    "sanitizedAt": "2026-07-05T12:44:09.8938075Z",
+    "pushedAt": "2026-07-05T12:23:30.728Z",
+    "remoteHeadSha": "f47e7ecc04d4b35dfbfda3437544ca82fba19dce",
+    "publicStateVerifiedAt": "2026-07-05T12:23:30.728Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "02f534cd0f9bae444298e8e356a491ee192b52318932ac8bf88e06121205c99c",
+    "publicStateContentHash": "8f35c30db6efeebd495b2da2bd8cbdca897b656a723d436a58bf65726123c9f3",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -1078,16 +1093,16 @@
     "publicStateRawCdnHash": "56d1322c1ba2e8b9a35bd068b1083c120a0445f9930e4763462d8480373f752c",
     "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-05T12:23:10.014Z",
-      "rawEndpointVerifiedAt": "2026-07-05T12:23:10.014Z",
-      "gitOriginVerifiedAt": "2026-07-05T12:23:10.014Z",
+      "githubApiVerifiedAt": "2026-07-05T12:23:30.728Z",
+      "rawEndpointVerifiedAt": "2026-07-05T12:23:30.728Z",
+      "gitOriginVerifiedAt": "2026-07-05T12:23:30.728Z",
       "routeContentHashes": {
-        "github-api": "02f534cd0f9bae444298e8e356a491ee192b52318932ac8bf88e06121205c99c",
+        "github-api": "8f35c30db6efeebd495b2da2bd8cbdca897b656a723d436a58bf65726123c9f3",
         "raw-cdn": "56d1322c1ba2e8b9a35bd068b1083c120a0445f9930e4763462d8480373f752c",
-        "git-origin": "02f534cd0f9bae444298e8e356a491ee192b52318932ac8bf88e06121205c99c"
+        "git-origin": "8f35c30db6efeebd495b2da2bd8cbdca897b656a723d436a58bf65726123c9f3"
       },
       "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "b9037816adfbeb30c6825926806efd95c5f9e089",
+      "canonicalRemoteHeadSha": "f47e7ecc04d4b35dfbfda3437544ca82fba19dce",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 217,
       "classification": "cdn-lag-api-git-agree"
@@ -1238,7 +1253,7 @@
     },
     "futureProjectReuse": {
       "status": "partial",
-      "evidence": "knowledge_applied_to_future_project growth event + Memory audit + Decision Timeline knowledge applied to future project filter with event type label + Phase D playback row + commercial workflow stage badge + Phase D playback commercial-stage line + pipeline stage badge + Phase D playback pipeline-stage line + AI panel entry count + viewer chrome indicator + explainability actor/confidence badges + AI panel label hint + explainability rationale summary badges + project assistant context engine entry count + label hint live Sprint 329"
+      "evidence": "knowledge_applied_to_future_project growth event + Memory audit + Decision Timeline knowledge applied to future project filter with event type label + Phase D playback row + commercial workflow stage badge + Phase D playback commercial-stage line + pipeline stage badge + Phase D playback pipeline-stage line + AI panel entry count + viewer chrome indicator + explainability actor/confidence badges + AI panel label hint + explainability rationale summary badges + project assistant context engine entry count + label hint + context entries aggregation live Sprint 330"
     },
     "outcomeFeedback": {
       "status": "partial",
@@ -1255,11 +1270,12 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Commercial Intelligence Future Project Knowledge Reuse milestone (340-349) active — Sprint 329 closed; Sprint 330 queued",
+    "phaseE": "Commercial Intelligence Future Project Knowledge Reuse milestone (340-349) active — Sprint 330 closed; Sprint 331 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track"
   },
   "digitalBrainImpact": {
+    "sprint330": "No new growth event kinds — project assistant context engine knowledge applied to future project context entries aggregation for assistant context entry surfacing",
     "sprint329": "No new growth event kinds — project assistant context engine knowledge applied to future project timeline entry count + label hint wiring for assistant context availability metrics",
     "sprint328": "No new growth event kinds — operational workspace AI panel knowledge applied to future project label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary label for future project knowledge reuse audit filter scope",
     "sprint327": "No new growth event kinds — knowledge applied to future project viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels for future project knowledge reuse audit filter scope",
@@ -1324,7 +1340,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 340-349 6/10 sprints closed (60%); latest growth-event sprint 324; Sprint 329 closed; Sprint 330 queued per nextSprint"
+    "overall": "Event engine Partial — milestone 340-349 7/10 sprints closed (70%); latest growth-event sprint 324; Sprint 330 closed; Sprint 331 queued per nextSprint"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -1367,6 +1383,7 @@
     "overall": "KG Partial — template entities deferred per Finding 1 triage"
   },
   "commercialIntelligenceImpact": {
+    "sprint330": "Project assistant context engine knowledge applied to future project context entries aggregation + operational workspace AI panel knowledge applied to future project context entry surfacing from project assistant context entries",
     "sprint329": "Project assistant context engine knowledge applied to future project timeline entry count + label hint wiring + operational workspace AI panel knowledge applied to future project context availability surfacing from project assistant context",
     "sprint328": "Operational workspace AI panel knowledge applied to future project label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary label — future project knowledge reuse Phase D timeline enrichment + AI panel label hint per confidence evolution milestone pattern (Sprint 318)",
     "sprint327": "Commercial Intelligence knowledge applied to future project indicator in viewer chrome + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels — future project knowledge reuse Phase D timeline enrichment + viewer chrome per confidence evolution milestone pattern (Sprint 317)",
@@ -1426,7 +1443,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Commercial Intelligence Future Project Knowledge Reuse (340-349) active 6/10; Sprint 329 closed; Sprint 330 queued (Project assistant context engine knowledge applied to future project context ent · Operational workspace AI panel knowledge applied to future project context entry)"
+    "overall": "Commercial Intelligence Partial — Commercial Intelligence Future Project Knowledge Reuse (340-349) active 7/10; Sprint 330 closed; Sprint 331 queued (Project assistant context engine knowledge applied to future project explainabil · Operational workspace AI panel knowledge applied to future project explainabilit)"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
