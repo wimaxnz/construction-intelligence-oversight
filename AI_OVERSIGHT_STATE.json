@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-05",
   "currentSprint": {
-    "number": 304,
+    "number": 305,
     "status": "closed",
-    "previousClosed": 303,
+    "previousClosed": 304,
     "closedDate": "2026-07-05"
   },
   "currentMilestone": {
@@ -21,21 +21,26 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 1,
-    "percentComplete": 10,
+    "sprintsClosed": 2,
+    "percentComplete": 20,
     "nextWrapReviewSprint": 313
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Decision Timeline user outcome feedback Phase D playback row"
+      "focus": "Operational workspace AI panel user outcome feedback timeline entry count indicator"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Decision Timeline user outcome feedback commercial workflow stage filtered badge + Phase D playback label"
+      "focus": "Decision Timeline user outcome feedback pipeline stage filtered badge + Phase D playback pipeline-stage label"
     }
   },
   "completedWork": {
+    "sprint305": {
+      "stream2": "Decision Timeline user outcome feedback commercial workflow stage filtered badge + Phase D playback label — decision-timeline-user-outcome-feedback-commercial-workflow-stage · decision-timeline-user-outcome-feedback-playback-commercial-stage · extractCommercialWorkflowStageLabelFromTimelineEntry user outcome feedback scope · appendCommercialWorkflowStagePlaybackLine · decisionTimelineBuilder.ts · DecisionTimeline.tsx · sprint-305-selftest.ts",
+      "stream1": "Decision Timeline user outcome feedback Phase D playback row — decision-timeline-user-outcome-feedback-playback-row · extractUserOutcomeFeedbackPlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-305-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
     "sprint304": {
       "stream2": "Commercial Intelligence knowledge recommendation outcome recorded growth event contract — knowledgeRecommendationOutcomeGrowthService.ts · knowledgeRecommendationOutcomeMemoryService.ts · knowledgeRecommendationOutcomeTimelinePlaybackService.ts · knowledge_recommendation_outcome_recorded · KNOWLEDGE_RECOMMENDATION_OUTCOME_JOB_DERIVATION_KINDS · sprint-304-selftest.ts",
       "stream1": "Decision Timeline user outcome feedback timeline filter — decision-timeline-user-outcome-feedback-filter · decision-timeline-user-outcome-feedback-badge · decision-timeline-user-outcome-feedback-event-type · filterDecisionTimelineToUserOutcomeFeedbackEntries · countUserOutcomeFeedbackTimelineEntries · DecisionTimeline.tsx · decisionTimelineBuilder.ts",
@@ -722,26 +727,26 @@
   ],
   "blockers": [],
   "nextSprint": {
-    "number": 305,
-    "stream2": "Decision Timeline user outcome feedback commercial workflow stage filtered badge + Phase D playback label",
-    "stream1": "Decision Timeline user outcome feedback Phase D playback row",
-    "selftest": "scripts/sprint-305-selftest.ts"
+    "number": 306,
+    "stream2": "Decision Timeline user outcome feedback pipeline stage filtered badge + Phase D playback pipeline-stage label",
+    "stream1": "Operational workspace AI panel user outcome feedback timeline entry count indicator",
+    "selftest": "scripts/sprint-306-selftest.ts"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-05T03:14:05.814Z",
+    "lastPushAttempt": "2026-07-05T03:14:29.545Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-05T03:14:05.814Z",
+    "verifiedAt": "2026-07-05T03:14:29.545Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-05T02:00:00.000Z",
-    "sanitizedAt": "2026-07-05T03:13:49.000Z",
-    "pushedAt": "2026-07-05T03:14:05.814Z",
-    "remoteHeadSha": "03d45ca893b96b09c4747b1c4a439ff2e9fed228",
-    "publicStateVerifiedAt": "2026-07-05T03:14:05.814Z",
+    "sanitizedAt": "2026-07-05T03:37:17.1813365Z",
+    "pushedAt": "2026-07-05T03:14:29.545Z",
+    "remoteHeadSha": "95b75d9a52425aab698b866498dca2f6870039c2",
+    "publicStateVerifiedAt": "2026-07-05T03:14:29.545Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "60832126d8a20d647c35937a5ae7c2520090248bda78dd045a1b3ca9cbb57c53",
+    "publicStateContentHash": "41146ac689b3349f611028f3c779637ff8a33bc1734ce42a601a9a87a1fe87bd",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -773,7 +778,7 @@
     },
     "publicStateVerificationSource": "github-api",
     "publicStateRawCdnHash": "60832126d8a20d647c35937a5ae7c2520090248bda78dd045a1b3ca9cbb57c53",
-    "publicStateRawCdnStale": false
+    "publicStateRawCdnStale": true
   },
   "oversightMonitoring": {
     "status": "active",
@@ -924,7 +929,7 @@
     },
     "outcomeFeedback": {
       "status": "partial",
-      "evidence": "knowledge_recommendation_outcome_recorded growth event + Memory audit + Decision Timeline user outcome feedback filter with event type label; Phase D playback row not yet wired"
+      "evidence": "knowledge_recommendation_outcome_recorded growth event + Memory audit + Decision Timeline user outcome feedback filter with event type label + Phase D playback row + commercial workflow stage badge + Phase D playback commercial-stage line"
     },
     "proactiveWarning": {
       "status": "partial",
@@ -937,11 +942,12 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback",
-    "phaseE": "Commercial Intelligence User Outcome Feedback milestone (320-329) active — Sprint 304 closed knowledge recommendation outcome recorded growth event + Decision Timeline user outcome feedback filter; Sprint 305 queued Phase D playback row",
+    "phaseE": "Commercial Intelligence User Outcome Feedback milestone (320-329) active — Sprint 305 closed user outcome feedback Phase D playback row + commercial workflow stage badge; Sprint 306 queued pipeline stage badge + AI panel entry count",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track"
   },
   "digitalBrainImpact": {
+    "sprint305": "No new growth event kinds — Decision Timeline user outcome feedback Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label for outcome feedback audit filter scope",
     "sprint304": "knowledge_recommendation_outcome_recorded growth event kind live — Digital Brain bus + Construction Memory audit + timeline playback stub for accept/dismiss/modify recommendation outcome feedback lifecycle",
     "sprint303": "No new growth event kinds — milestone 310–319 wrap completeness review confirms proactive knowledge warning full stack audit; milestone closed",
     "sprint302": "No new growth event kinds — project assistant context engine proactive knowledge warning explainability context entry aggregation for assistant explainability context entry surfacing",
