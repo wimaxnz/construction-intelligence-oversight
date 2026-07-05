@@ -725,18 +725,18 @@
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-05T02:23:00.560Z",
+    "lastPushAttempt": "2026-07-05T02:32:41.245Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-05T02:23:00.560Z",
+    "verifiedAt": "2026-07-05T02:32:41.245Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-05T02:00:00.000Z",
     "sanitizedAt": "2026-07-05T02:32:03.3486729Z",
-    "pushedAt": "2026-07-05T02:23:00.560Z",
-    "remoteHeadSha": "69bfe04140370b18df99ba719b7954644d4aa5f1",
-    "publicStateVerifiedAt": "2026-07-05T02:23:00.560Z",
+    "pushedAt": "2026-07-05T02:32:41.245Z",
+    "remoteHeadSha": "ec1df72b76599c2976f7ab8f33f1af23f14f60c2",
+    "publicStateVerifiedAt": "2026-07-05T02:32:41.245Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "e8eb6d14bddac2900b869949105d0acc85dfd03660108d30a0075257cfa854f2",
+    "publicStateContentHash": "fa2b35211e377f3496c00cd80dcd19c881109b80fcdbd6d14dcb1b14f2f89a9b",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -767,8 +767,8 @@
       "note": "bridgeDocsPublished retired — prior list falsely claimed bridge ops docs were on public main; only push allowlist + inbox are public"
     },
     "publicStateVerificationSource": "github-api",
-    "publicStateRawCdnHash": "90f5572f62dc5256e6d1397f7f1bc2918406b25477b1d87605b101d931d81273",
-    "publicStateRawCdnStale": true
+    "publicStateRawCdnHash": "fa2b35211e377f3496c00cd80dcd19c881109b80fcdbd6d14dcb1b14f2f89a9b",
+    "publicStateRawCdnStale": false
   },
   "oversightMonitoring": {
     "status": "active",
