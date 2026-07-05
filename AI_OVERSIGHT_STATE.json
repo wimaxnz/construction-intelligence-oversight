@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-05",
   "currentSprint": {
-    "number": 311,
+    "number": 312,
     "status": "closed",
-    "previousClosed": 310,
+    "previousClosed": 311,
     "closedDate": "2026-07-05"
   },
   "currentMilestone": {
@@ -21,21 +21,26 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 8,
-    "percentComplete": 80,
+    "sprintsClosed": 9,
+    "percentComplete": 90,
     "nextWrapReviewSprint": 313
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Mid-milestone review — Commercial Intelligence User Outcome Feedback first-half completeness prep"
+      "focus": "Milestone wrap — Commercial Intelligence User Outcome Feedback closes"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Mid-milestone 304–308 Commercial Intelligence User Outcome Feedback completeness review"
+      "focus": "Milestone 320–329 Commercial Intelligence User Outcome Feedback wrap completeness review — sprint-313-selftest.ts audits user outcome feedback full stack (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint + context entries + explainability context entry indicators · project assistant context engine wiring) across operational workspace"
     }
   },
   "completedWork": {
+    "sprint312": {
+      "stream2": "Mid-milestone 304–308 Commercial Intelligence User Outcome Feedback completeness review — sprint-312-selftest.ts audits user outcome feedback stack partial (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint indicators) across operational workspace",
+      "stream1": "Mid-milestone review — Commercial Intelligence User Outcome Feedback first-half completeness prep",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
     "sprint311": {
       "stream2": "Project assistant context engine user outcome feedback explainability context entry aggregation — isExplainabilityEnrichedDecisionTimelineEntry · filterDecisionTimelineToUserOutcomeFeedbackEntries · userOutcomeFeedbackExplainabilityEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-311-selftest.ts",
       "stream1": "Operational workspace AI panel user outcome feedback explainability context entry surfacing from project assistant context — operational-workspace-ai-panel-user-outcome-feedback-explainability-context-entries · OperationalWorkspace.tsx · sprint-311-selftest.ts",
@@ -681,6 +686,7 @@
       "sprint305": "3/3 consecutive green",
       "sprint306": "3/3 consecutive green",
       "sprint307": "3/3 consecutive green",
+      "sprint312": "3/3 consecutive green",
       "sprint311": "3/3 consecutive green",
       "sprint310": "3/3 consecutive green",
       "sprint309": "3/3 consecutive green",
@@ -722,7 +728,7 @@
       "lastCertifiedBaseline": "2026-06-29",
       "status": "stale â€” recertification required before production release",
       "sprintRangeCovered": "120â€“129 (Drawing Intelligence UX Maturity milestone close)",
-      "deltaSinceCertification": "Sprints 130–311 delivered (182 sprints); schema/RLS pending (migration 015); Digital Brain + Commercial Intelligence + User Outcome Feedback milestone active; no 5/5 re-run since 2026-06-29",
+      "deltaSinceCertification": "Sprints 130–312 delivered (183 sprints); schema/RLS pending (migration 015); Digital Brain + Commercial Intelligence + User Outcome Feedback milestone active; no 5/5 re-run since 2026-06-29",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -739,9 +745,9 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Sprint 311 delivered, Sprint 312 queued (milestone 320–329)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — UX sprint 311 user outcome feedback explainability context entry aggregation + AI panel explainability context entry surfacing logged",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 311 closed, sprint 312 queued"
+    "docs/PLATFORM_EVOLUTION.md — Sprint 312 delivered, Sprint 313 queued (milestone 320–329)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — UX sprint 312 mid-milestone 304–308 user outcome feedback completeness review logged",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 312 closed, sprint 313 queued"
   ],
   "migrationsRequired": [
     {
@@ -801,26 +807,26 @@
   ],
   "blockers": [],
   "nextSprint": {
-    "number": 312,
-    "stream2": "Mid-milestone 304–308 Commercial Intelligence User Outcome Feedback completeness review",
-    "stream1": "Mid-milestone review — Commercial Intelligence User Outcome Feedback first-half completeness prep",
-    "selftest": "scripts/sprint-312-selftest.ts"
+    "number": 313,
+    "stream2": "Milestone 320–329 Commercial Intelligence User Outcome Feedback wrap completeness review — sprint-313-selftest.ts audits user outcome feedback full stack (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint + context entries + explainability context entry indicators · project assistant context engine wiring) across operational workspace",
+    "stream1": "Milestone wrap — Commercial Intelligence User Outcome Feedback closes",
+    "selftest": "scripts/sprint-313-selftest.ts"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-05T05:30:09.596Z",
+    "lastPushAttempt": "2026-07-05T05:30:46.548Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-05T05:30:09.596Z",
+    "verifiedAt": "2026-07-05T05:30:46.548Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-05T02:00:00.000Z",
-    "sanitizedAt": "2026-07-05T05:29:40.5954479Z",
-    "pushedAt": "2026-07-05T05:30:09.596Z",
-    "remoteHeadSha": "67d0ace502bfa9671c7a712b3f7bc12f84666c44",
-    "publicStateVerifiedAt": "2026-07-05T05:30:09.596Z",
+    "sanitizedAt": "2026-07-05T05:53:20.2025577Z",
+    "pushedAt": "2026-07-05T05:30:46.548Z",
+    "remoteHeadSha": "086333222b0843bd0c5c64e622bd50f247637d59",
+    "publicStateVerifiedAt": "2026-07-05T05:30:46.548Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "f77808c9afe1fd51b52f2e7d86031d674eb91f8c4f966aafd580633fcbc187cb",
+    "publicStateContentHash": "38fc6f811fccbb174bd32a20d3a2c0e3f160bf77c6811d488dcf26da56a62bbe",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -852,21 +858,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "f77808c9afe1fd51b52f2e7d86031d674eb91f8c4f966aafd580633fcbc187cb",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-05T05:30:09.596Z",
-      "rawEndpointVerifiedAt": "2026-07-05T05:30:09.596Z",
-      "gitOriginVerifiedAt": "2026-07-05T05:30:09.596Z",
+      "githubApiVerifiedAt": "2026-07-05T05:30:46.548Z",
+      "rawEndpointVerifiedAt": "2026-07-05T05:30:46.548Z",
+      "gitOriginVerifiedAt": "2026-07-05T05:30:46.548Z",
       "routeContentHashes": {
-        "github-api": "f77808c9afe1fd51b52f2e7d86031d674eb91f8c4f966aafd580633fcbc187cb",
+        "github-api": "38fc6f811fccbb174bd32a20d3a2c0e3f160bf77c6811d488dcf26da56a62bbe",
         "raw-cdn": "f77808c9afe1fd51b52f2e7d86031d674eb91f8c4f966aafd580633fcbc187cb",
-        "git-origin": "f77808c9afe1fd51b52f2e7d86031d674eb91f8c4f966aafd580633fcbc187cb"
+        "git-origin": "38fc6f811fccbb174bd32a20d3a2c0e3f160bf77c6811d488dcf26da56a62bbe"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "67d0ace502bfa9671c7a712b3f7bc12f84666c44",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "086333222b0843bd0c5c64e622bd50f247637d59",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 181,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -1018,7 +1024,7 @@
     },
     "outcomeFeedback": {
       "status": "partial",
-      "evidence": "knowledge_recommendation_outcome_recorded growth event + Memory audit + Decision Timeline user outcome feedback filter with event type label + Phase D playback row + commercial workflow stage badge + Phase D playback commercial-stage line + pipeline stage badge + Phase D playback pipeline-stage line + AI panel entry count + viewer chrome indicator + explainability actor/confidence badges + AI panel label hint + explainability rationale summary badges + project assistant context engine entry count + label hint + context entries aggregation + explainability context entry aggregation live Sprint 311"
+      "evidence": "knowledge_recommendation_outcome_recorded growth event + Memory audit + Decision Timeline user outcome feedback filter with event type label + Phase D playback row + commercial workflow stage badge + Phase D playback commercial-stage line + pipeline stage badge + Phase D playback pipeline-stage line + AI panel entry count + viewer chrome indicator + explainability actor/confidence badges + AI panel label hint + explainability rationale summary badges + mid-milestone 304–308 completeness review + project assistant context engine entry count + label hint + context entries aggregation + explainability context entry aggregation live Sprint 311"
     },
     "proactiveWarning": {
       "status": "partial",
@@ -1031,11 +1037,12 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback",
-    "phaseE": "Commercial Intelligence User Outcome Feedback milestone (320-329) active — Sprint 311 closed; Sprint 312 queued",
+    "phaseE": "Commercial Intelligence User Outcome Feedback milestone (320-329) active — Sprint 312 closed; Sprint 313 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track"
   },
   "digitalBrainImpact": {
+    "sprint312": "No new growth event kinds — mid-milestone 304–308 completeness review confirms user outcome feedback growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint311": "No new growth event kinds — project assistant context engine user outcome feedback explainability context entry aggregation for assistant explainability context entry surfacing",
     "sprint310": "No new growth event kinds — project assistant context engine user outcome feedback context entries aggregation for assistant context entry surfacing",
     "sprint309": "No new growth event kinds — project assistant context engine user outcome feedback timeline entry count + label hint wiring for assistant context availability metrics",
@@ -1082,7 +1089,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 320-329 8/10 sprints closed (80%); latest growth-event sprint 304; Sprint 311 closed; Sprint 312 queued per nextSprint"
+    "overall": "Event engine Partial — milestone 320-329 9/10 sprints closed (90%); latest growth-event sprint 304; Sprint 312 closed; Sprint 313 queued per nextSprint"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -1125,6 +1132,7 @@
     "overall": "KG Partial — template entities deferred per Finding 1 triage"
   },
   "commercialIntelligenceImpact": {
+    "sprint312": "Mid-milestone 304–308 completeness review — user outcome feedback stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators",
     "sprint311": "Project assistant context engine user outcome feedback explainability context entry aggregation + operational workspace AI panel user outcome feedback explainability context entry surfacing from project assistant context",
     "sprint310": "Project assistant context engine user outcome feedback context entries aggregation + operational workspace AI panel user outcome feedback context entry surfacing from project assistant context entries",
     "sprint309": "Project assistant context engine user outcome feedback timeline entry count + label hint wiring + operational workspace AI panel user outcome feedback context availability surfacing from project assistant context",
@@ -1170,7 +1178,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Commercial Intelligence User Outcome Feedback (320-329) active 8/10; Sprint 311 closed; Sprint 312 queued (Mid-milestone 304–308 Commercial Intelligence User Outcome Feedback completeness · Mid-milestone review — Commercial Intelligence User Outcome Feedback first-half )"
+    "overall": "Commercial Intelligence Partial — Commercial Intelligence User Outcome Feedback (320-329) active 9/10; Sprint 312 closed; Sprint 313 queued (Milestone 320–329 Commercial Intelligence User Outcome Feedback wrap completenes · Milestone wrap — Commercial Intelligence User Outcome Feedback closes)"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
