@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-05",
   "currentSprint": {
-    "number": 324,
+    "number": 325,
     "status": "closed",
-    "previousClosed": 323,
+    "previousClosed": 324,
     "closedDate": "2026-07-05"
   },
   "currentMilestone": {
@@ -21,21 +21,26 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 1,
-    "percentComplete": 10,
+    "sprintsClosed": 2,
+    "percentComplete": 20,
     "nextWrapReviewSprint": 333
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Decision Timeline knowledge applied to future project Phase D playback row — decision-timeline-knowledge-applied-to-future-project-playback-row · extractKnowledgeAppliedToFutureProjectPlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-325-selftest.ts"
+      "focus": "Operational workspace AI panel knowledge applied to future project timeline entry count indicator — operational-workspace-ai-panel-knowledge-applied-to-future-project-entry-count · countHubKnowledgeAppliedToFutureProjectTimelineEntries · countKnowledgeAppliedToFutureProjectTimelineEntries · knowledgeAppliedToFutureProjectTimelineEntryCount · workspaceAggregatorService.ts · OperationalWorkspace.tsx · OperationalWorkspaceHost.tsx · sprint-326-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Decision Timeline knowledge applied to future project commercial workflow stage filtered badge + Phase D playback commercial-stage label — decision-timeline-knowledge-applied-to-future-project-commercial-workflow-stage · decision-timeline-knowledge-applied-to-future-project-playback-commercial-stage · appendCommercialWorkflowStagePlaybackLine · extractKnowledgeAppliedToFutureProjectPlaybackRowFromTimelineEntry · decisionTimelineBuilder.ts · DecisionTimeline.tsx · sprint-325-selftest.ts"
+      "focus": "Decision Timeline knowledge applied to future project pipeline stage filtered badge + Phase D playback pipeline-stage label — decision-timeline-knowledge-applied-to-future-project-pipeline-stage · decision-timeline-knowledge-applied-to-future-project-playback-pipeline-stage · appendCommercialWorkflowPipelineStagePlaybackLine knowledge applied to future project scope · extractKnowledgeAppliedToFutureProjectPlaybackRowFromTimelineEntry · decisionTimelineBuilder.ts · DecisionTimeline.tsx · sprint-326-selftest.ts"
     }
   },
   "completedWork": {
+    "sprint325": {
+      "stream2": "Decision Timeline knowledge applied to future project commercial workflow stage filtered badge + Phase D playback commercial-stage label — decision-timeline-knowledge-applied-to-future-project-commercial-workflow-stage · decision-timeline-knowledge-applied-to-future-project-playback-commercial-stage · appendCommercialWorkflowStagePlaybackLine · extractKnowledgeAppliedToFutureProjectPlaybackRowFromTimelineEntry · decisionTimelineBuilder.ts · DecisionTimeline.tsx · sprint-325-selftest.ts",
+      "stream1": "Decision Timeline knowledge applied to future project Phase D playback row — decision-timeline-knowledge-applied-to-future-project-playback-row · extractKnowledgeAppliedToFutureProjectPlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-325-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
     "sprint324": {
       "stream2": "Commercial Intelligence knowledge applied to future project growth event contract — knowledgeAppliedToFutureProjectGrowthService.ts · knowledgeAppliedToFutureProjectMemoryService.ts · knowledgeAppliedToFutureProjectTimelinePlaybackService.ts · knowledge_applied_to_future_project · KNOWLEDGE_APPLIED_TO_FUTURE_PROJECT_JOB_DERIVATION_KINDS · sprint-324-selftest.ts",
       "stream1": "Decision Timeline knowledge applied to future project timeline filter — decision-timeline-knowledge-applied-to-future-project-filter · decision-timeline-knowledge-applied-to-future-project-badge · decision-timeline-knowledge-applied-to-future-project-event-type · filterDecisionTimelineToKnowledgeAppliedToFutureProjectEntries · countKnowledgeAppliedToFutureProjectTimelineEntries · DecisionTimeline.tsx · decisionTimelineBuilder.ts",
@@ -824,6 +829,7 @@
       "sprint307": "3/3 consecutive green",
       "sprint316": "3/3 consecutive green",
       "sprint317": "3/3 consecutive green",
+      "sprint325": "3/3 consecutive green",
       "sprint324": "3/3 consecutive green",
       "sprint323": "3/3 consecutive green",
       "sprint322": "3/3 consecutive green",
@@ -955,26 +961,26 @@
   ],
   "blockers": [],
   "nextSprint": {
-    "number": 325,
-    "stream2": "Decision Timeline knowledge applied to future project commercial workflow stage filtered badge + Phase D playback commercial-stage label — decision-timeline-knowledge-applied-to-future-project-commercial-workflow-stage · decision-timeline-knowledge-applied-to-future-project-playback-commercial-stage · appendCommercialWorkflowStagePlaybackLine · extractKnowledgeAppliedToFutureProjectPlaybackRowFromTimelineEntry · decisionTimelineBuilder.ts · DecisionTimeline.tsx · sprint-325-selftest.ts",
-    "stream1": "Decision Timeline knowledge applied to future project Phase D playback row — decision-timeline-knowledge-applied-to-future-project-playback-row · extractKnowledgeAppliedToFutureProjectPlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-325-selftest.ts",
-    "selftest": "scripts/sprint-325-selftest.ts"
+    "number": 326,
+    "stream2": "Decision Timeline knowledge applied to future project pipeline stage filtered badge + Phase D playback pipeline-stage label — decision-timeline-knowledge-applied-to-future-project-pipeline-stage · decision-timeline-knowledge-applied-to-future-project-playback-pipeline-stage · appendCommercialWorkflowPipelineStagePlaybackLine knowledge applied to future project scope · extractKnowledgeAppliedToFutureProjectPlaybackRowFromTimelineEntry · decisionTimelineBuilder.ts · DecisionTimeline.tsx · sprint-326-selftest.ts",
+    "stream1": "Operational workspace AI panel knowledge applied to future project timeline entry count indicator — operational-workspace-ai-panel-knowledge-applied-to-future-project-entry-count · countHubKnowledgeAppliedToFutureProjectTimelineEntries · countKnowledgeAppliedToFutureProjectTimelineEntries · knowledgeAppliedToFutureProjectTimelineEntryCount · workspaceAggregatorService.ts · OperationalWorkspace.tsx · OperationalWorkspaceHost.tsx · sprint-326-selftest.ts",
+    "selftest": "scripts/sprint-326-selftest.ts"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-05T10:32:14.810Z",
+    "lastPushAttempt": "2026-07-05T10:32:37.806Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-05T10:32:14.810Z",
+    "verifiedAt": "2026-07-05T10:32:37.806Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-05T02:00:00.000Z",
-    "sanitizedAt": "2026-07-05T10:31:56.4035686Z",
-    "pushedAt": "2026-07-05T10:32:14.810Z",
-    "remoteHeadSha": "42472a0773de25f4f8c768225b29a68ad491d54d",
-    "publicStateVerifiedAt": "2026-07-05T10:32:14.810Z",
+    "sanitizedAt": "2026-07-05T10:55:03.9155915Z",
+    "pushedAt": "2026-07-05T10:32:37.806Z",
+    "remoteHeadSha": "4c0bfc397c3d44dab4661408beeb50eb7693acf2",
+    "publicStateVerifiedAt": "2026-07-05T10:32:37.806Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "d00a198fc341dac1c60a6ca26b58a932bfb2d5e99270d43da9b05dd457d7bf87",
+    "publicStateContentHash": "40c8214a0e04c08542005dc12fe4c320f7a31d4de41865c1e50a8e4c74918519",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -1006,21 +1012,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "d00a198fc341dac1c60a6ca26b58a932bfb2d5e99270d43da9b05dd457d7bf87",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-05T10:32:14.810Z",
-      "rawEndpointVerifiedAt": "2026-07-05T10:32:14.810Z",
-      "gitOriginVerifiedAt": "2026-07-05T10:32:14.810Z",
+      "githubApiVerifiedAt": "2026-07-05T10:32:37.806Z",
+      "rawEndpointVerifiedAt": "2026-07-05T10:32:37.806Z",
+      "gitOriginVerifiedAt": "2026-07-05T10:32:37.806Z",
       "routeContentHashes": {
-        "github-api": "d00a198fc341dac1c60a6ca26b58a932bfb2d5e99270d43da9b05dd457d7bf87",
+        "github-api": "40c8214a0e04c08542005dc12fe4c320f7a31d4de41865c1e50a8e4c74918519",
         "raw-cdn": "d00a198fc341dac1c60a6ca26b58a932bfb2d5e99270d43da9b05dd457d7bf87",
-        "git-origin": "d00a198fc341dac1c60a6ca26b58a932bfb2d5e99270d43da9b05dd457d7bf87"
+        "git-origin": "40c8214a0e04c08542005dc12fe4c320f7a31d4de41865c1e50a8e4c74918519"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "42472a0773de25f4f8c768225b29a68ad491d54d",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "4c0bfc397c3d44dab4661408beeb50eb7693acf2",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 207,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -1168,7 +1174,7 @@
     },
     "futureProjectReuse": {
       "status": "partial",
-      "evidence": "knowledge_applied_to_future_project growth event + Memory audit + Decision Timeline knowledge applied to future project filter with event type label live Sprint 324"
+      "evidence": "knowledge_applied_to_future_project growth event + Memory audit + Decision Timeline knowledge applied to future project filter with event type label + Phase D playback row + commercial workflow stage badge + Phase D playback commercial-stage line live Sprint 325"
     },
     "outcomeFeedback": {
       "status": "partial",
@@ -1185,11 +1191,12 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Commercial Intelligence Future Project Knowledge Reuse milestone (340-349) active — Sprint 324 closed; Sprint 325 queued",
+    "phaseE": "Commercial Intelligence Future Project Knowledge Reuse milestone (340-349) active — Sprint 325 closed; Sprint 326 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track"
   },
   "digitalBrainImpact": {
+    "sprint325": "No new growth event kinds — Decision Timeline knowledge applied to future project Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label for future project knowledge reuse audit filter scope",
     "sprint324": "knowledge_applied_to_future_project growth event kind live — Digital Brain bus + Construction Memory audit + timeline playback stub for cross-project knowledge application on future project starts",
     "sprint323": "No new growth event kinds — milestone 330–339 wrap completeness review confirms knowledge confidence evolution full stack audit; milestone closed",
     "sprint322": "No new growth event kinds — mid-milestone 314–318 completeness review confirms knowledge confidence evolution growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
@@ -1249,7 +1256,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 340-349 1/10 sprints closed (10%); latest growth-event sprint 324; Sprint 324 closed; Sprint 325 queued per nextSprint"
+    "overall": "Event engine Partial — milestone 340-349 2/10 sprints closed (20%); latest growth-event sprint 324; Sprint 325 closed; Sprint 326 queued per nextSprint"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -1346,7 +1353,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Commercial Intelligence Future Project Knowledge Reuse (340-349) active 1/10; Sprint 324 closed; Sprint 325 queued (Decision Timeline knowledge applied to future project commercial workflow stage  · Decision Timeline knowledge applied to future project Phase D playback row — dec)"
+    "overall": "Commercial Intelligence Partial — Commercial Intelligence Future Project Knowledge Reuse (340-349) active 2/10; Sprint 325 closed; Sprint 326 queued (Decision Timeline knowledge applied to future project pipeline stage filtered ba · Operational workspace AI panel knowledge applied to future project timeline entr)"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
