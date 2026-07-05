@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-05",
   "currentSprint": {
-    "number": 316,
+    "number": 317,
     "status": "closed",
-    "previousClosed": 315,
+    "previousClosed": 316,
     "closedDate": "2026-07-05"
   },
   "currentMilestone": {
@@ -21,21 +21,26 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 3,
-    "percentComplete": 30,
+    "sprintsClosed": 4,
+    "percentComplete": 40,
     "nextWrapReviewSprint": 323
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Decision Timeline knowledge confidence evolution explainability actor/confidence filtered badges + Phase D playback labels — decision-timeline-knowledge-confidence-evolution-explainability-actor · decision-timeline-knowledge-confidence-evolution-explainability-confidence · decision-timeline-knowledge-confidence-evolution-playback-explainability-actor · decision-timeline-knowledge-confidence-evolution-playback-explainability-confidence · appendExplainabilityActorPlaybackLine · appendExplainabilityConfidencePlaybackLine · extractKnowledgeConfidenceEvolutionPlaybackRowFromTimelineEntry · decisionTimelineBuilder.ts · DecisionTimeline.tsx · sprint-317-selftest.ts"
+      "focus": "Decision Timeline knowledge confidence evolution explainability rationale summary filtered badges + Phase D playback labels — decision-timeline-knowledge-confidence-evolution-explainability-rationale-summary · decision-timeline-knowledge-confidence-evolution-playback-explainability-rationale-summary · appendExplainabilityRationaleSummaryPlaybackLine · extractKnowledgeConfidenceEvolutionPlaybackRowFromTimelineEntry · decisionTimelineBuilder.ts · DecisionTimeline.tsx · sprint-318-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Commercial Intelligence knowledge confidence evolution indicator in viewer chrome — knowledge-confidence-evolution-indicator · knowledge-confidence-evolution-indicator-item · knowledge-confidence-evolution-indicator-title · KnowledgeConfidenceEvolutionIndicator.tsx · getKnowledgeConfidenceEvolutionForRevision · subscribeKnowledgeConfidenceEvolution · knowledgeConfidenceEvolutionGrowthService.ts · DrawingsModule.tsx · sprint-317-selftest.ts"
+      "focus": "Operational workspace AI panel knowledge confidence evolution label hint — operational-workspace-ai-panel-knowledge-confidence-evolution-label-hint · distinctKnowledgeConfidenceEvolutionLabels · formatDistinctKnowledgeConfidenceEvolutionLabelHint · OperationalWorkspace.tsx · decisionTimelineBuilder.ts · sprint-318-selftest.ts"
     }
   },
   "completedWork": {
+    "sprint317": {
+      "stream2": "Commercial Intelligence knowledge confidence evolution indicator in viewer chrome — knowledge-confidence-evolution-indicator · knowledge-confidence-evolution-indicator-item · knowledge-confidence-evolution-indicator-title · KnowledgeConfidenceEvolutionIndicator.tsx · getKnowledgeConfidenceEvolutionForRevision · subscribeKnowledgeConfidenceEvolution · knowledgeConfidenceEvolutionGrowthService.ts · DrawingsModule.tsx · sprint-317-selftest.ts",
+      "stream1": "Decision Timeline knowledge confidence evolution explainability actor/confidence filtered badges + Phase D playback labels — decision-timeline-knowledge-confidence-evolution-explainability-actor · decision-timeline-knowledge-confidence-evolution-explainability-confidence · decision-timeline-knowledge-confidence-evolution-playback-explainability-actor · decision-timeline-knowledge-confidence-evolution-playback-explainability-confidence · appendExplainabilityActorPlaybackLine · appendExplainabilityConfidencePlaybackLine · extractKnowledgeConfidenceEvolutionPlaybackRowFromTimelineEntry · decisionTimelineBuilder.ts · DecisionTimeline.tsx · sprint-317-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
     "sprint316": {
       "stream2": "Decision Timeline knowledge confidence evolution pipeline stage filtered badge + Phase D playback pipeline-stage label — decision-timeline-knowledge-confidence-evolution-pipeline-stage · decision-timeline-knowledge-confidence-evolution-playback-pipeline-stage · appendCommercialWorkflowPipelineStagePlaybackLine knowledge confidence evolution scope · extractKnowledgeConfidenceEvolutionPlaybackRowFromTimelineEntry · decisionTimelineBuilder.ts · DecisionTimeline.tsx · sprint-316-selftest.ts",
       "stream1": "Operational workspace AI panel knowledge confidence evolution timeline entry count indicator — operational-workspace-ai-panel-knowledge-confidence-evolution-entry-count · countHubKnowledgeConfidenceEvolutionTimelineEntries · countKnowledgeConfidenceEvolutionTimelineEntries · knowledgeConfidenceEvolutionTimelineEntryCount · workspaceAggregatorService.ts · OperationalWorkspace.tsx · OperationalWorkspaceHost.tsx · sprint-316-selftest.ts",
@@ -774,7 +779,7 @@
       "lastCertifiedBaseline": "2026-06-29",
       "status": "stale â€” recertification required before production release",
       "sprintRangeCovered": "120â€“129 (Drawing Intelligence UX Maturity milestone close)",
-      "deltaSinceCertification": "Sprints 130–316 delivered (187 sprints); schema/RLS pending (migration 015); Digital Brain + Commercial Intelligence + Confidence Evolution milestone active (330-339); Sprint 316 closed; no 5/5 re-run since 2026-06-29",
+      "deltaSinceCertification": "Sprints 130–317 delivered (188 sprints); schema/RLS pending (migration 015); Digital Brain + Commercial Intelligence + Confidence Evolution milestone active (330-339); Sprint 317 closed; no 5/5 re-run since 2026-06-29",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -791,9 +796,9 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Sprint 316 delivered, Sprint 317 queued (milestone 330–339 active · 3/10)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — UX sprint 316 knowledge confidence evolution pipeline stage badge + AI panel entry count logged",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 316 closed, sprint 317 queued"
+    "docs/PLATFORM_EVOLUTION.md — Sprint 317 delivered, Sprint 318 queued (milestone 330–339 active · 4/10)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — UX sprint 317 knowledge confidence evolution viewer chrome indicator + explainability actor/confidence badges logged",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 317 closed, sprint 318 queued"
   ],
   "migrationsRequired": [
     {
@@ -853,26 +858,26 @@
   ],
   "blockers": [],
   "nextSprint": {
-    "number": 317,
-    "stream2": "Commercial Intelligence knowledge confidence evolution indicator in viewer chrome — knowledge-confidence-evolution-indicator · knowledge-confidence-evolution-indicator-item · knowledge-confidence-evolution-indicator-title · KnowledgeConfidenceEvolutionIndicator.tsx · getKnowledgeConfidenceEvolutionForRevision · subscribeKnowledgeConfidenceEvolution · knowledgeConfidenceEvolutionGrowthService.ts · DrawingsModule.tsx · sprint-317-selftest.ts",
-    "stream1": "Decision Timeline knowledge confidence evolution explainability actor/confidence filtered badges + Phase D playback labels — decision-timeline-knowledge-confidence-evolution-explainability-actor · decision-timeline-knowledge-confidence-evolution-explainability-confidence · decision-timeline-knowledge-confidence-evolution-playback-explainability-actor · decision-timeline-knowledge-confidence-evolution-playback-explainability-confidence · appendExplainabilityActorPlaybackLine · appendExplainabilityConfidencePlaybackLine · extractKnowledgeConfidenceEvolutionPlaybackRowFromTimelineEntry · decisionTimelineBuilder.ts · DecisionTimeline.tsx · sprint-317-selftest.ts",
-    "selftest": "scripts/sprint-317-selftest.ts"
+    "number": 318,
+    "stream2": "Operational workspace AI panel knowledge confidence evolution label hint — operational-workspace-ai-panel-knowledge-confidence-evolution-label-hint · distinctKnowledgeConfidenceEvolutionLabels · formatDistinctKnowledgeConfidenceEvolutionLabelHint · OperationalWorkspace.tsx · decisionTimelineBuilder.ts · sprint-318-selftest.ts",
+    "stream1": "Decision Timeline knowledge confidence evolution explainability rationale summary filtered badges + Phase D playback labels — decision-timeline-knowledge-confidence-evolution-explainability-rationale-summary · decision-timeline-knowledge-confidence-evolution-playback-explainability-rationale-summary · appendExplainabilityRationaleSummaryPlaybackLine · extractKnowledgeConfidenceEvolutionPlaybackRowFromTimelineEntry · decisionTimelineBuilder.ts · DecisionTimeline.tsx · sprint-318-selftest.ts",
+    "selftest": "scripts/sprint-318-selftest.ts"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-05T07:34:13.011Z",
+    "lastPushAttempt": "2026-07-05T07:34:35.593Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-05T07:34:13.011Z",
+    "verifiedAt": "2026-07-05T07:34:35.593Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-05T02:00:00.000Z",
-    "sanitizedAt": "2026-07-05T07:33:54.4128850Z",
-    "pushedAt": "2026-07-05T07:34:13.011Z",
-    "remoteHeadSha": "13aadcb1912117e93e887c09033e7bac221fe6cb",
-    "publicStateVerifiedAt": "2026-07-05T07:34:13.011Z",
+    "sanitizedAt": "2026-07-05T07:54:44.4499562Z",
+    "pushedAt": "2026-07-05T07:34:35.593Z",
+    "remoteHeadSha": "37ca228a05e6bc4c1b147fef0349e099c01c98e1",
+    "publicStateVerifiedAt": "2026-07-05T07:34:35.593Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "7cef8ad773fdae39ad46d61c3bc69474421d2634876433f219044cd7346a8466",
+    "publicStateContentHash": "f64b9580e751fc89f7576dae63640a353de0990ebf289e03bc496e959d29cf68",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -904,21 +909,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "7cef8ad773fdae39ad46d61c3bc69474421d2634876433f219044cd7346a8466",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-05T07:34:13.011Z",
-      "rawEndpointVerifiedAt": "2026-07-05T07:34:13.011Z",
-      "gitOriginVerifiedAt": "2026-07-05T07:34:13.011Z",
+      "githubApiVerifiedAt": "2026-07-05T07:34:35.593Z",
+      "rawEndpointVerifiedAt": "2026-07-05T07:34:35.593Z",
+      "gitOriginVerifiedAt": "2026-07-05T07:34:35.593Z",
       "routeContentHashes": {
-        "github-api": "7cef8ad773fdae39ad46d61c3bc69474421d2634876433f219044cd7346a8466",
+        "github-api": "f64b9580e751fc89f7576dae63640a353de0990ebf289e03bc496e959d29cf68",
         "raw-cdn": "7cef8ad773fdae39ad46d61c3bc69474421d2634876433f219044cd7346a8466",
-        "git-origin": "7cef8ad773fdae39ad46d61c3bc69474421d2634876433f219044cd7346a8466"
+        "git-origin": "f64b9580e751fc89f7576dae63640a353de0990ebf289e03bc496e959d29cf68"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "13aadcb1912117e93e887c09033e7bac221fe6cb",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "37ca228a05e6bc4c1b147fef0349e099c01c98e1",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 191,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -1083,11 +1088,12 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback",
-    "phaseE": "Commercial Intelligence Confidence Evolution milestone (330-339) active — Sprint 316 closed; Sprint 317 queued",
+    "phaseE": "Commercial Intelligence Confidence Evolution milestone (330-339) active — Sprint 317 closed; Sprint 318 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track"
   },
   "digitalBrainImpact": {
+    "sprint317": "No new growth event kinds — knowledge confidence evolution viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels for confidence evolution audit filter scope",
     "sprint316": "No new growth event kinds — Decision Timeline knowledge confidence evolution pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count for confidence evolution audit filter scope",
     "sprint315": "No new growth event kinds — Decision Timeline knowledge confidence evolution Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label for confidence evolution audit filter scope",
     "sprint314": "knowledge_confidence_evolved growth event kind live — Digital Brain bus + Construction Memory audit + timeline playback stub for outcome-driven template confidence evolution lifecycle",
@@ -1139,7 +1145,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 330-339 3/10 sprints closed (30%); latest growth-event sprint 314; Sprint 316 closed; Sprint 317 queued per nextSprint"
+    "overall": "Event engine Partial — milestone 330-339 4/10 sprints closed (40%); latest growth-event sprint 314; Sprint 317 closed; Sprint 318 queued per nextSprint"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -1230,7 +1236,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Commercial Intelligence Confidence Evolution (330-339) active 3/10; Sprint 316 closed; Sprint 317 queued (Commercial Intelligence knowledge confidence evolution indicator in viewer chrom · Decision Timeline knowledge confidence evolution explainability actor/confidence)"
+    "overall": "Commercial Intelligence Partial — Commercial Intelligence Confidence Evolution (330-339) active 4/10; Sprint 317 closed; Sprint 318 queued (Operational workspace AI panel knowledge confidence evolution label hint — opera · Decision Timeline knowledge confidence evolution explainability rationale summar)"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
