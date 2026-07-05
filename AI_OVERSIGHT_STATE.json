@@ -681,22 +681,49 @@
     "selftest": "scripts/sprint-301-selftest.ts"
   },
   "oversightSync": {
-    "status": "ok",
-    "reason": null,
-    "lastPushAttempt": "2026-07-05T00:20:00.000Z",
-    "lastPushResult": "success",
-    "remoteHeadSha": "cf709e2",
-    "verifiedAt": "2026-07-05T00:20:00.000Z",
+    "status": "repair_in_progress",
+    "reason": "Atomic sync repair 2026-07-05 — correcting false bridgeDocsPublished claims and adding verification metadata",
+    "lastPushAttempt": null,
+    "lastPushResult": null,
+    "verifiedAt": null,
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
-    "bridgeDocsPublished": [
-      "OVERSIGHT_BRIDGE_ADR.md",
-      "OVERSIGHT_BRIDGE_OPERATIONS.md",
-      "OVERSIGHT_BRIDGE_THREAT_MODEL.md",
-      "OVERSIGHT_SYNC.md",
-      "OVERSIGHT_REMOTE.md",
-      "AI_OVERSIGHT_INBOX.json"
-    ]
+    "localStateGeneratedAt": "2026-07-05T02:00:00.000Z",
+    "sanitizedAt": "2026-07-05T02:00:56.1202041Z",
+    "pushedAt": null,
+    "remoteHeadSha": null,
+    "publicStateVerifiedAt": null,
+    "publicStateJsonParsePassed": null,
+    "publicStateContentHash": null,
+    "publicationAudit": {
+      "auditedAt": "2026-07-05T02:00:00.000Z",
+      "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
+      "publicRootFiles": [
+        "AI_OVERSIGHT_STATE.json",
+        "AI_OVERSIGHT_REQUEST.md",
+        "AI_OVERSIGHT_RESPONSE.md",
+        "AI_OVERSIGHT_PROTOCOL.md",
+        "OVERSIGHT_PACKET.md",
+        "AI_OVERSIGHT_INBOX.json",
+        "README.md"
+      ],
+      "pushAllowlistFiles": [
+        "AI_OVERSIGHT_STATE.json",
+        "AI_OVERSIGHT_REQUEST.md",
+        "AI_OVERSIGHT_RESPONSE.md",
+        "AI_OVERSIGHT_PROTOCOL.md",
+        "OVERSIGHT_PACKET.md"
+      ],
+      "localOnlyBridgeDocs": [
+        "OVERSIGHT_BRIDGE_ADR.md",
+        "OVERSIGHT_BRIDGE_OPERATIONS.md",
+        "OVERSIGHT_BRIDGE_THREAT_MODEL.md",
+        "OVERSIGHT_SYNC.md",
+        "OVERSIGHT_REMOTE.md",
+        "OVERSIGHT_RELAY_E2E_PROOF.md"
+      ],
+      "note": "bridgeDocsPublished retired — prior list falsely claimed bridge ops docs were on public main; only push allowlist + inbox are public"
+    }
   },
   "oversightMonitoring": {
     "status": "active",
@@ -708,7 +735,21 @@
   "oversightBridge": {
     "lastConsumedAt": "2026-07-04T23:22:21.679Z",
     "lastInboxUpdatedAt": null,
-    "newFindingsDetected": 0
+    "newFindingsDetected": 0,
+    "localE2EProven": true,
+    "localE2EProofDoc": "docs/ai-oversight/OVERSIGHT_RELAY_E2E_PROOF.md",
+    "localE2EProvenAt": "2026-07-04T23:22:45.038Z",
+    "localE2EMode": "local-simulated relay at http://127.0.0.1:9876",
+    "cloudflareDeployProven": false,
+    "chatgptCallablePathProven": false,
+    "relayDeployStatus": "template-only — bootstrap-deploy.sh not run; remote relay URL not configured",
+    "remainingDependencies": [
+      "Deploy Cloudflare Worker from docs/ai-oversight/templates/oversight-relay/",
+      "Configure OVERSIGHT_RELAY_API_KEY and GITHUB_DISPATCH_PAT worker secrets",
+      "Configure ChatGPT Custom GPT Action with openapi.yaml + worker URL",
+      "Re-run scripts/oversight-bridge-relay-e2e-selftest.ts against deployed relay",
+      "Verify AI_OVERSIGHT_INBOX.json update via raw GitHub fetch after remote ingest"
+    ]
   },
   "oversightFindingsState": [],
   "oversightFindingsTriage": [
@@ -963,7 +1004,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — cross-project knowledge reuse foundation milestone 290–299 Sprint 274–283 closed; Knowledge Similarity Matching milestone 300–309 Sprint 284–293 closed; Proactive Knowledge Warning milestone 310–319 Sprint 294–299 (proactive warning growth + timeline filter + Phase D playback row + commercial workflow stage badge + pipeline stage badge + AI panel entry count + viewer chrome indicator + explainability actor/confidence badges + AI panel label hint + explainability rationale summary badges + mid-milestone 294–298 completeness review); Sprint 300 queued project assistant context engine wiring"
+    "overall": "Commercial Intelligence Partial — cross-project knowledge reuse foundation milestone 290–299 Sprint 274–283 closed; Knowledge Similarity Matching milestone 300–309 Sprint 284–293 closed; Proactive Knowledge Warning milestone 310–319 Sprint 294–300 (proactive warning growth + timeline filter + Phase D playback row + commercial workflow stage badge + pipeline stage badge + AI panel entry count + viewer chrome indicator + explainability actor/confidence badges + AI panel label hint + explainability rationale summary badges + mid-milestone 294–298 completeness review + project assistant context engine entry count + label hint wiring); Sprint 301 queued context entries aggregation"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",

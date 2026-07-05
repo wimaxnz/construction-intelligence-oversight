@@ -1,4 +1,4 @@
-# AI Oversight — Review Responses
+# AI Oversight � Review Responses
 
 **Status:** Active review � 7 findings triaged (2026-07-04). Sprint execution continues; hourly monitoring enabled.
 
@@ -8,8 +8,8 @@ Findings from independent oversight land here. Sprint execution continues regard
 
 ## How to incorporate responses
 
-1. Triage each finding: accept · defer · reject (with rationale).
-2. Accepted items → backlog or `PLATFORM_EVOLUTION.md` sprint queue.
+1. Triage each finding: accept � defer � reject (with rationale).
+2. Accepted items ? backlog or `PLATFORM_EVOLUTION.md` sprint queue.
 3. Update `AI_OVERSIGHT_STATE.json` (risks, deferred items, alignment).
 4. Clear or archive resolved request sections in `AI_OVERSIGHT_REQUEST.md`.
 
@@ -118,7 +118,7 @@ Suggested triggers:
 
 Recent milestones repeatedly use:
 
-growth event → timeline filter → workflow badge → playback row → AI count → pipeline badge → viewer chrome → actor/confidence → rationale
+growth event ? timeline filter ? workflow badge ? playback row ? AI count ? pipeline badge ? viewer chrome ? actor/confidence ? rationale
 
 This is valuable platform consistency, but it must not become the definition of functional completeness.
 
@@ -199,41 +199,4 @@ Continue Sprint 255 and active autonomous execution.
 
 Add accepted findings to future sprint planning. Do not reopen validated Sprint 254 solely for advisory findings.
 
-Immediate exception: if review of Finding 2 shows commercial or knowledge decisions cannot be traced to exact drawing revisions, classify that as a data-integrity issue and address it under the protocol’s interrupt rule.  
-
-## Independent Oversight Monitoring Setup, 2026-07-04
-
-**Status:** Recurring independent oversight monitoring enabled.
-
-**Monitoring cadence:** Hourly condition watch.
-
-**Repository monitored:**
-https://github.com/wimaxnz/construction-intelligence-oversight
-
-**Files monitored:**
-- AI_OVERSIGHT_STATE.json
-- AI_OVERSIGHT_REQUEST.md
-- AI_OVERSIGHT_RESPONSE.md
-- AI_OVERSIGHT_PROTOCOL.md
-- OVERSIGHT_PACKET.md
-
-**Alert criteria:**
-- strategic roadmap drift
-- regression or validation deterioration
-- failed or reduced sprint gates
-- untriaged oversight findings
-- growing or stale risks
-- blockers
-- architecture concerns
-- Knowledge Graph or Digital Brain incoherence
-- Commercial Intelligence provenance gaps
-- security or data-integrity concerns
-- migration risks
-- contradictions between oversight files
-- milestone progress that appears presentation-heavy without sufficient underlying platform integration
-
-**Monitoring behavior:**
-- Do not pause active sprint execution.
-- Do not wait for oversight response.
-- Notify only on meaningful issues or material changes.
-- Include severity, evidence, why it matters, and recommended action.
+Immediate exception: if review of Finding 2 shows commercial or knowledge decisions cannot be traced to exact drawing revisions, classify that as a data-integrity issue and address it under the protocol�s interrupt rule.  
