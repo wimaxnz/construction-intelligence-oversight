@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-07",
   "currentSprint": {
-    "number": 419,
+    "number": 420,
     "status": "closed",
-    "previousClosed": 418,
+    "previousClosed": 419,
     "closedDate": "2026-07-07"
   },
   "currentMilestone": {
@@ -22,18 +22,18 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 4,
-    "percentComplete": 40,
+    "sprintsClosed": 5,
+    "percentComplete": 50,
     "nextWrapReviewSprint": 425
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Phase C tech debt — migration 015 staging apply execution — sprint-420-selftest.ts"
+      "focus": "Phase C tech debt — migration 015 staging apply retry with credentials — sprint-421-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Phase C tech debt — migration 015 staging Sprint Validation 3/3 — sprint-420-selftest.ts"
+      "focus": "Phase C tech debt — migration 015 staging Sprint Validation 3/3 retry — sprint-421-selftest.ts"
     }
   },
   "completedWork": {
@@ -816,6 +816,11 @@
       "stream1": "Migration 015 staging apply verification probe — verify-migration-015-staging.ts · docs/MIGRATION_015_STAGING_VERIFICATION.json · sprint-419-selftest.ts",
       "stream2": "RLS policy audit evidence — status env_only · gate2 not_satisfied · sprint-419-selftest.ts",
       "validation": "Migration 015 staging verification env-only — env_only (honest deferral)"
+    },
+    "sprint420": {
+      "stream1": "Migration 015 staging apply execution — verify-migration-015-staging.ts MIGRATION_015_APPLY=1 · docs/MIGRATION_015_STAGING_VERIFICATION.json · sprint-420-selftest.ts",
+      "stream2": "RLS policy audit + Sprint Validation 3/3 on staging — skipped (credentials missing) · sprint-420-selftest.ts",
+      "validation": "Migration 015 staging apply env-only — env_only (SUPABASE_SERVICE_ROLE_KEY and DATABASE_URL missing from [REDACTED]; gate #2 not_satisfied)"
     }
   },
   "changedFiles": {
@@ -2146,6 +2151,17 @@
       "docs/PHASE_C_DEPENDENCY_CHECKLIST.md",
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md"
+    ],
+    "sprint420": [
+      "scripts/verify-migration-015-staging.ts",
+      "scripts/sprint-420-selftest.ts",
+      "docs/MIGRATION_015_STAGING_VERIFICATION.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/PHASE_B_TECH_DEBT.md",
+      "docs/PHASE_C_DEPENDENCY_CHECKLIST.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md"
     ]
   },
   "validationResults": {
@@ -2305,14 +2321,15 @@
       "sprint416": "3/3 consecutive green",
       "sprint417": "3/3 consecutive green",
       "sprint418": "5/5 consecutive green (Platform Certification)",
-      "sprint419": "env-only (env_only) — gate #2 not satisfied"
+      "sprint419": "env-only (env_only) — gate #2 not satisfied",
+      "sprint420": "skipped — staging credentials missing (SUPABASE_SERVICE_ROLE_KEY, DATABASE_URL not in .env.local); gate #2 not_satisfied"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-07",
       "lastCertifiedBaseline": "2026-07-07",
       "status": "current — recertified Sprint 418 (440-449 Phase B re-validation after S1/S5)",
       "sprintRangeCovered": "416–418 (Drawing Intelligence Phase C — Tech Debt Prerequisites S1/S5 + Phase B re-validation)",
-      "deltaSinceCertification": "Sprints 130–419 delivered (290 sprints); migration 015 staging verification env-only Sprint 419; Platform Certification 5/5 re-run 2026-07-07; Phase C tech debt S1/S5 + Phase B re-validation delivered (440-449); latest growth-event sprint 408",
+      "deltaSinceCertification": "Sprints 130–420 delivered (291 sprints); migration 015 staging apply env-only Sprint 420 (credentials missing); Platform Certification 5/5 re-run 2026-07-07; Phase C tech debt S1/S5 + Phase B re-validation delivered (440-449); latest growth-event sprint 408",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -2329,13 +2346,13 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Sprint 419 delivered, Sprint 420 queued (migration 015 staging apply)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 419 migration 015 staging verification logged",
-    "docs/PHASE_B_TECH_DEBT.md — Sprint 419 staging verification status documented",
-    "docs/PHASE_C_DEPENDENCY_CHECKLIST.md — Sprint 419 staging verification evidence",
-    "docs/MIGRATION_015_STAGING_VERIFICATION.json — honest staging probe report",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 419 closed, sprint 420 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 419 close-out packet"
+    "docs/PLATFORM_EVOLUTION.md — Sprint 420 delivered, Sprint 421 queued (migration 015 staging apply retry with credentials)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 420 migration 015 staging apply logged",
+    "docs/PHASE_B_TECH_DEBT.md — Sprint 420 staging apply status documented",
+    "docs/PHASE_C_DEPENDENCY_CHECKLIST.md — Sprint 420 staging apply evidence",
+    "docs/MIGRATION_015_STAGING_VERIFICATION.json — honest staging apply report (env-only Sprint 420)",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 420 closed, sprint 421 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 420 close-out packet"
   ],
   "migrationsRequired": [
     {
@@ -2346,8 +2363,8 @@
       "targetEnvironment": "production Supabase",
       "verificationTest": "Apply migration 015 to staging; verify RLS policies on drawing_pins/evidence; confirm delete-policy behavior; run phase-b-wynyard-validation.ts 3/3 on staging",
       "rollbackPlan": "Revert migration 015 SQL on staging; restore prior RLS policy definitions from migration 014 snapshot; re-run validation suite",
-      "completionEvidence": "supabase/migrations/015_phase_b_rls_remediation.sql · scripts/sprint-417-selftest.ts · docs/MIGRATION_015_STAGING_VERIFICATION.json (env-only Sprint 419)",
-      "note": "RLS/security hardening authored Sprint 417; staging verification Sprint 419 — env_only (apply opens Sprint 420)"
+      "completionEvidence": "supabase/migrations/015_phase_b_rls_remediation.sql · scripts/sprint-417-selftest.ts · docs/MIGRATION_015_STAGING_VERIFICATION.json (env-only Sprint 419–420)",
+      "note": "RLS/security hardening authored Sprint 417; staging verification Sprint 419; staging apply Sprint 420 — env_only (credentials missing; retry opens Sprint 421)"
     },
     {
       "id": "017",
@@ -2366,7 +2383,7 @@
       "verificationTest": "Staging apply + RLS policy audit + Sprint Validation 3/3",
       "rollbackPlan": "Revert to migration 014 RLS snapshot",
       "completionEvidence": null,
-      "description": "Supabase migration 015 authored Sprint 417; staging verification Sprint 419 — env_only (staging apply opens Sprint 420)"
+      "description": "Supabase migration 015 authored Sprint 417; staging verification Sprint 419; staging apply Sprint 420 — env_only (SUPABASE_SERVICE_ROLE_KEY and DATABASE_URL missing; retry opens Sprint 421)"
     },
     {
       "id": "drawing-revision-provenance-gap",
@@ -2379,7 +2396,7 @@
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Phase C tech debt S1/S5 delivered; Phase B re-validation 5/5 (418); migration 015 staging verification env-only (419); staging apply execution opens Sprint 420"
+      "description": "Phase C tech debt S1/S5 delivered; Phase B re-validation 5/5 (418); migration 015 staging verification env-only (419); staging apply env-only (420); credential-gated retry opens Sprint 421"
     },
     {
       "id": "partial-platform-services",
@@ -2393,28 +2410,38 @@
       "description": "Platform Certification 5/5 re-achieved 2026-07-07 Sprint 418; recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
     }
   ],
-  "blockers": [],
+  "blockers": [
+    {
+      "id": "migration-015-staging-credentials",
+      "severity": "high-before-production",
+      "description": "SUPABASE_SERVICE_ROLE_KEY and DATABASE_URL not present in [REDACTED] — migration 015 staging apply and pg_policies audit blocked; Sprint Validation 3/3 on staging skipped",
+      "owner": "platform-engineering",
+      "opensSprint": 421,
+      "resolution": "Add SUPABASE_SERVICE_ROLE_KEY and DATABASE_URL to [REDACTED]; re-run verify-migration-015-staging.ts with MIGRATION_015_APPLY=1"
+    }
+  ],
   "nextSprint": {
-    "number": 420,
-    "stream1": "Phase C tech debt — migration 015 staging apply execution — sprint-420-selftest.ts",
-    "stream2": "Phase C tech debt — migration 015 staging Sprint Validation 3/3 — sprint-420-selftest.ts",
-    "selftest": "scripts/sprint-420-selftest.ts"
+    "number": 421,
+    "stream1": "Phase C tech debt — migration 015 staging apply retry (requires SUPABASE_SERVICE_ROLE_KEY + DATABASE_URL in .env.local) — sprint-421-selftest.ts",
+    "stream2": "Phase C tech debt — migration 015 staging Sprint Validation 3/3 retry — sprint-421-selftest.ts",
+    "selftest": "scripts/sprint-421-selftest.ts",
+    "credentialRequirement": "SUPABASE_SERVICE_ROLE_KEY and DATABASE_URL must be set in .env.local before staging apply or pg_policies audit can proceed"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-06T20:13:48.206Z",
+    "lastPushAttempt": "2026-07-06T20:14:16.432Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-06T20:13:48.206Z",
+    "verifiedAt": "2026-07-06T20:14:16.432Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-06T07:15:00.000Z",
-    "sanitizedAt": "2026-07-06T20:13:22.9489357Z",
-    "pushedAt": "2026-07-06T20:13:48.206Z",
-    "remoteHeadSha": "515a1b9af44eb56ce9a21fc5cd2deba79cc6cd2e",
-    "publicStateVerifiedAt": "2026-07-06T20:13:48.206Z",
+    "sanitizedAt": "2026-07-06T20:19:16.6527411Z",
+    "pushedAt": "2026-07-06T20:14:16.432Z",
+    "remoteHeadSha": "68cb733bba28983605e7dc99317645def63d0282",
+    "publicStateVerifiedAt": "2026-07-06T20:14:16.432Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "b377a0f4a0a26c6755832470a7a8c1b4fa781de62d59b841875e93cf90f44eb1",
+    "publicStateContentHash": "6dfe58c9716086ddeca18383960dee6a5224b20284e51de277e0fdec1bea3cba",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -2446,21 +2473,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "b377a0f4a0a26c6755832470a7a8c1b4fa781de62d59b841875e93cf90f44eb1",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-06T20:13:48.206Z",
-      "rawEndpointVerifiedAt": "2026-07-06T20:13:48.206Z",
-      "gitOriginVerifiedAt": "2026-07-06T20:13:48.206Z",
+      "githubApiVerifiedAt": "2026-07-06T20:14:16.432Z",
+      "rawEndpointVerifiedAt": "2026-07-06T20:14:16.432Z",
+      "gitOriginVerifiedAt": "2026-07-06T20:14:16.432Z",
       "routeContentHashes": {
-        "github-api": "b377a0f4a0a26c6755832470a7a8c1b4fa781de62d59b841875e93cf90f44eb1",
+        "github-api": "6dfe58c9716086ddeca18383960dee6a5224b20284e51de277e0fdec1bea3cba",
         "raw-cdn": "b377a0f4a0a26c6755832470a7a8c1b4fa781de62d59b841875e93cf90f44eb1",
-        "git-origin": "b377a0f4a0a26c6755832470a7a8c1b4fa781de62d59b841875e93cf90f44eb1"
+        "git-origin": "6dfe58c9716086ddeca18383960dee6a5224b20284e51de277e0fdec1bea3cba"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "515a1b9af44eb56ce9a21fc5cd2deba79cc6cd2e",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "68cb733bba28983605e7dc99317645def63d0282",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 404,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -2625,7 +2652,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase C — Tech Debt Prerequisites milestone (440-449) active — Sprint 419 closed; Sprint 420 queued",
+    "phaseE": "Drawing Intelligence Phase C — Tech Debt Prerequisites milestone (440-449) active — Sprint 420 closed; Sprint 421 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -2733,7 +2760,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 440-449 4/10 sprints closed (40%); latest growth-event sprint 400; Sprint 419 closed; Sprint 420 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 440-449 5/10 sprints closed (50%); latest growth-event sprint 400; Sprint 420 closed; Sprint 421 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -2794,7 +2821,8 @@
     "sprint416": "No new growth event kinds — Phase C tech debt S1 Riverside catalog seed memoization + listPinsForSheet read-path hygiene (no ensureRiversideCatalogPinsPersisted on pin list); S5 migration 015 opens Sprint 417",
     "sprint417": "No new growth event kinds — Phase C tech debt S5 migration 015 RLS remediation authored (spatial_objects RLS · pin/evidence delete/update · knowledge-revisions INSERT-only); Phase B re-validation opens Sprint 418",
     "sprint418": "No new growth event kinds — Platform Certification 5/5 Phase B re-validation after S1/S5 tech debt; migration 015 staging apply opens Sprint 419",
-    "sprint419": "No new growth event kinds — migration 015 staging verification env-only Sprint 419; staging apply execution opens Sprint 420"
+    "sprint419": "No new growth event kinds — migration 015 staging verification env-only Sprint 419; staging apply execution opens Sprint 420",
+    "sprint420": "No new growth event kinds — migration 015 staging apply env-only Sprint 420 (credentials missing); credential-gated retry opens Sprint 421"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -2920,7 +2948,8 @@
     "sprint416": "No direct KG edge changes — Phase C tech debt S1 Riverside catalog seed memoization + listPinsForSheet read-path hygiene; S5 migration 015 opens Sprint 417",
     "sprint417": "No direct KG edge changes — Phase C tech debt S5 migration 015 closes knowledge_revisions open write (INSERT-only append); spatial_objects RLS; Phase B re-validation opens Sprint 418",
     "sprint418": "No direct KG edge changes — Platform Certification 5/5 re-run confirms Phase B baseline after S1 catalog pin persistence + S5 migration 015 authored; migration 015 staging apply opens Sprint 419",
-    "sprint419": "No direct KG edge changes — migration 015 staging verification documented honestly; apply opens Sprint 420"
+    "sprint419": "No direct KG edge changes — migration 015 staging verification documented honestly; apply opens Sprint 420",
+    "sprint420": "No direct KG edge changes — migration 015 staging apply blocked by missing credentials; honest env-only deferral; retry opens Sprint 421"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
@@ -3006,7 +3035,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase C — Tech Debt Prerequisites (440-449) active 4/10; Sprint 419 closed; Sprint 420 queued (Phase C tech debt — migration 015 staging Sprint Validation 3/3 — sprint-420-sel · Phase C tech debt — migration 015 staging apply execution — sprint-420-selftest.)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase C — Tech Debt Prerequisites (440-449) active 5/10; Sprint 420 closed; Sprint 421 queued (Phase C tech debt — migration 015 staging Sprint Validation 3/3 retry — sprint-4 · Phase C tech debt — migration 015 staging apply retry (requires SUPABASE_SERVICE)",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -3072,21 +3101,22 @@
     "sprint416": "Phase C catalog pin persistence S1 — Riverside catalog seed memoization · no write-on-read on pin list — riversideDrawingCatalog.ts · drawingIntelligenceService.ts · sprint-416-selftest.ts",
     "sprint417": "Phase C tech debt S5 — migration 015 RLS remediation authored (spatial_objects · drawing_pins delete · evidence update/delete) · 015_phase_b_rls_remediation.sql · sprint-417-selftest.ts",
     "sprint418": "Phase B Platform Certification 5/5 re-validation — phase-b-wynyard-validation.ts · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · sprint-418-selftest.ts",
-    "sprint419": "Migration 015 staging verification — verify-migration-015-staging.ts · docs/MIGRATION_015_STAGING_VERIFICATION.json · sprint-419-selftest.ts"
+    "sprint419": "Migration 015 staging verification — verify-migration-015-staging.ts · docs/MIGRATION_015_STAGING_VERIFICATION.json · sprint-419-selftest.ts",
+    "sprint420": "Migration 015 staging apply execution — verify-migration-015-staging.ts MIGRATION_015_APPLY=1 · docs/MIGRATION_015_STAGING_VERIFICATION.json · sprint-420-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
     "scope": "cross-project learning loop + production readiness gates",
     "passFailCriteria": [
       "Finding 6 chained acceptance: Project A lesson from evidence → Knowledge Library → human review approve → versioned provenance-backed template → Project B similar condition → similarity retrieval → proactive warning → user accept/dismiss/modify → outcome feedback → confidence evolution",
-      "⏳ Migration 015 applied and verified on staging Supabase (RLS policies, pin/evidence delete policies, Sprint Validation 3/3 on staging) — env-only Sprint 419; staging apply opens Sprint 420",
+      "⏳ Migration 015 applied and verified on staging Supabase (RLS policies, pin/evidence delete policies, Sprint Validation 3/3 on staging) — env-only Sprint 419–420 (SUPABASE_SERVICE_ROLE_KEY and DATABASE_URL missing from .env.local); credential-gated retry opens Sprint 421",
       "Platform Certification 5/5 deterministic suite re-run with baseline covering sprints through current closed sprint",
       "Oversight bridge remote callable path proven (chatgptCallablePathProven) OR documented deferral with owner — deferral documented; local E2E only"
     ],
     "daysRemaining": 5,
     "computedAsOf": "2026-07-07",
     "status": "at_risk",
-    "statusRationale": "Cross-project learning loop not demonstrated end-to-end; migration 015 staging env_only Sprint 419 (Migration 015 staging verification Sprint 419 — env_only (SUPABASE_SERVICE_ROLE_KEY and DATABASE_URL both missing — cannot audit pg_policies)); Platform Certification 5/5 re-achieved Sprint 418; bridge remote callable not proven"
+    "statusRationale": "Cross-project learning loop not demonstrated end-to-end; migration 015 staging env_only Sprint 420 (SUPABASE_SERVICE_ROLE_KEY and DATABASE_URL missing from .env.local — MIGRATION_015_APPLY=1 blocked); Platform Certification 5/5 re-achieved Sprint 418; bridge remote callable not proven"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
