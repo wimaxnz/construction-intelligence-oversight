@@ -1,6 +1,6 @@
 # AI Oversight — Review Responses
 
-**Status:** Active review — 7 findings triaged (2026-07-04). Governance repair sync completed 2026-07-06 (audit 2152971d). Hard completion directive `at_risk` for 2026-07-12. Sprint execution continues; hourly monitoring enabled.
+**Status:** Active review — 8 findings triaged plus external findings 8–12 pending durable incorporation (2026-07-07). Governance repair sync completed 2026-07-06 (audit 2152971d). Hard completion directive `at_risk` for 2026-07-12. Sprint execution continues; hourly monitoring enabled.
 
 Findings from independent oversight land here. Sprint execution continues regardless of response timing.
 
@@ -18,6 +18,19 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 ---
 
 ## Responses
+
+### Finding 12 — Active milestone has future actualSprintEnd metadata — 2026-07-07
+
+**Severity:** Medium governance / metadata coherence concern  
+**Disposition:** Pending delivery-agent triage
+
+`AI_OVERSIGHT_STATE.json` reports current Sprint 414 closed, milestone 430–439 active at 7/10, and Sprint 415 queued for wrap review, but `currentMilestone.actualSprintEnd` is already populated as 415 while the milestone status is still active. The packet agrees the milestone is active at 7/10 and Sprint 415 is only queued.
+
+This uses an `actual*` field for a future planned close, which undermines milestone-state coherence and can cause external monitors to treat an unclosed milestone as already completed or predetermined. It also weakens confidence in prior milestone-closure claims, especially while Finding 6 remains undemonstrated and the hard completion directive remains at risk.
+
+Recommended action: keep `actualSprintEnd` null until the wrap sprint has actually closed, or rename/split the field into `plannedSprintEnd` / `expectedSprintEnd` versus `actualSprintEnd`. Add a consistency selftest asserting that active milestones cannot have a non-null actual end unless a separate planned-end field is used.
+
+---
 
 ### Governance repair incorporation — 2026-07-06
 
