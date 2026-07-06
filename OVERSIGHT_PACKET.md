@@ -1,41 +1,36 @@
-# AI Oversight — Close-out Packet
+# Oversight Packet — Sprint 422 Close-out
 
-**Status:** Active — Sprint 421 close-out for milestone 440–449 Tech Debt Prerequisites migration 015 staging apply credential retry (Sprint 421, 6/10); Sprint 422 queued.
+**Status:** Active — Sprint 422 close-out for milestone 440–449 Tech Debt Prerequisites Finding 6 acceptance + mid-milestone 416–421 wrap (Sprint 422, 7/10); Sprint 423 queued.
 
-This file is included in the sanitized push to the public oversight repo.
+**Milestone:** 440–449 Drawing Intelligence Phase C — Tech Debt Prerequisites  
+**Sprint closed:** 422 (7 Jul 2026)  
+**Previous closed:** 421  
+**Milestone progress:** 7/10 (70%)  
+**Wrap review sprint:** 425  
+**Next sprint:** 423 queued — migration 015 staging retry (credential-gated) + hard completion gate review  
+**hardCompletionDirective:** preserved — at_risk · 5 days remaining · gate #1 satisfied (Finding 6 chained acceptance Sprint 422) · gate #2 not_satisfied (env-only staging)
 
----
+## Sprint 422 summary
 
-## Packet — 2026-07-07
+Sprint 422 delivered Finding 6 cross-project learning loop chained acceptance scenario (`run-cross-project-learning-loop-acceptance.ts`) proving Project A→B loop: lessons capture → Knowledge Library promotion → human review approve → versioned publication → similarity match → proactive warning → user accept outcome → confidence evolution → applied to future project. Evidence: `docs/CROSS_PROJECT_LEARNING_LOOP_ACCEPTANCE.json`. Mid-milestone 416–421 Tech Debt Prerequisites completeness review confirms S1 catalog pin persistence, S5 migration 015 authored, Phase B 5/5 re-validation, and honest staging env-only status (419–421). Gate selftest: `sprint-422-selftest.ts`. **hardCompletionDirective gate #1 satisfied** (chained acceptance passed). **Gate #2 remains not_satisfied** — `migration-015-staging-credentials` blocker persists (`SUPABASE_SERVICE_ROLE_KEY` and `DATABASE_URL` missing). Sprint 423 queued per roadmap.
 
-**Sprint closed:** 421  
-**Milestone:** 440–449 Drawing Intelligence Phase C — Tech Debt Prerequisites (S1+S5 delivered Sprints 416–417; Phase B re-validation Sprint 418; staging verification Sprint 419; staging apply Sprints 420–421, 6/10)  
-**Previous milestone closed:** 430–439 Revision Upload UI (wrap Sprint 415, 8/8)  
-**Next sprint:** 422 queued — Finding 6 cross-project learning loop + mid-milestone 416–421 wrap  
-**Validation:** build green · selftest green · Sprint Validation 3/3 on staging **skipped** (credentials still missing)
-
-### Summary
-
-Sprint 421 re-checked `[REDACTED]` and re-attempted migration 015 staging apply via `verify-migration-015-staging.ts` with `MIGRATION_015_APPLY=1`. Stream 1: staging connectivity probe succeeded; apply still blocked — `SUPABASE_SERVICE_ROLE_KEY` and `DATABASE_URL` not present in `[REDACTED]`. Stream 2: RLS policy audit (`pg_policies`) blocked for same reason; Sprint Validation 3/3 on staging skipped with documented reason. Gate selftest: `sprint-421-selftest.ts`. Staging verification returned **env-only** status. **hardCompletionDirective gate #2 remains not_satisfied** (honest deferral — third credential retry). Milestone 440–449 active (6/10). Sprint 422 queued per roadmap (Finding 6 + mid-milestone wrap). Blocker `migration-015-staging-credentials` persists until human adds credentials.
-
-### Current sprint state
+## Canonical state
 
 | Field | Value |
-|---|---|
-| **currentSprint** | 421 closed (2026-07-07) |
-| **currentMilestone** | 440–449 Tech Debt Prerequisites active (6/10) · S1+S5 + Phase B re-validation + staging verification + staging apply retries delivered |
-| **nextSprint** | 422 — Finding 6 cross-project learning loop acceptance scenario foundation + mid-milestone 416–421 completeness review |
-| **hardCompletionDirective** | preserved — at_risk · 5 days remaining · gate #2 not_satisfied (env-only Sprint 421) |
+|-------|-------|
+| **currentSprint** | 422 closed |
+| **nextSprint** | 423 — migration 015 staging apply retry + hard completion gate status review |
+| **hardCompletionDirective** | preserved — at_risk · gate #1 satisfied · gate #2 not_satisfied |
+| **blockers** | `migration-015-staging-credentials` persists |
 
-### Sprint 421 delivery
+## Risk register (active)
 
-- **Stream 1:** Migration 015 staging apply credential retry — `verify-migration-015-staging.ts` `MIGRATION_015_APPLY=1` · `sprint-421-selftest.ts`
-- **Stream 2:** RLS policy audit + Sprint Validation 3/3 — skipped (credentials still missing) · `docs/MIGRATION_015_STAGING_VERIFICATION.json` · `sprint-421-selftest.ts`
-- **phase-c-gated** — S1+S5 delivered (416–417); Phase B re-validation 5/5 (418); staging env-only (419–421); Finding 6 opens Sprint 422
-- **migration-015-pending** — migration 015 authored Sprint 417; staging apply still pending (blocked by missing credentials Sprint 419–421)
+- **migration-015-pending** — authored Sprint 417; staging env-only 419–421; production apply pending
+- **phase-c-gated** — S1+S5 delivered (416–417); Phase B re-validation 5/5 (418); Finding 6 demonstrated (422); staging env-only
+- **drawing-revision-provenance-gap** — data-integrity; architecture decision required before production knowledge reuse
 
-### Blocker
+## Blockers
 
 | ID | Description | Resolution |
-|---|---|---|
-| `migration-015-staging-credentials` | `SUPABASE_SERVICE_ROLE_KEY` and `DATABASE_URL` not in `[REDACTED]` (confirmed Sprint 421) | Add credentials; re-run with `MIGRATION_015_APPLY=1` when available (parallel with Sprint 422) |
+|----|-------------|------------|
+| `migration-015-staging-credentials` | `SUPABASE_SERVICE_ROLE_KEY` and `DATABASE_URL` not in `[REDACTED]` (confirmed Sprint 421) | Add credentials; re-run with `MIGRATION_015_APPLY=1` when available (parallel with Sprint 423) |
