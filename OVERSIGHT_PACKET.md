@@ -1,6 +1,6 @@
 # AI Oversight — Close-out Packet
 
-**Status:** Active — Sprint 417 close-out for milestone 440–449 Tech Debt Prerequisites S5 (Sprint 417, 2/10); Sprint 418 queued.
+**Status:** Active — Sprint 418 close-out for milestone 440–449 Tech Debt Prerequisites Phase B re-validation (Sprint 418, 3/10); Sprint 419 queued.
 
 This file is included in the sanitized push to the public oversight repo.
 
@@ -8,31 +8,29 @@ This file is included in the sanitized push to the public oversight repo.
 
 ## Packet — 2026-07-07
 
-**Sprint closed:** 417  
-**Milestone:** 440–449 Drawing Intelligence Phase C — Tech Debt Prerequisites (S1+S5 delivered Sprints 416–417, 2/10)  
+**Sprint closed:** 418  
+**Milestone:** 440–449 Drawing Intelligence Phase C — Tech Debt Prerequisites (S1+S5 delivered Sprints 416–417; Phase B re-validation Sprint 418, 3/10)  
 **Previous milestone closed:** 430–439 Revision Upload UI (wrap Sprint 415, 8/8)  
-**Next sprint:** 418 queued — Phase B regression re-validation (5 green runs)  
-**Validation:** Sprint Validation 3/3 consecutive green · build green · selftest green
+**Next sprint:** 419 queued — migration 015 staging apply verification  
+**Validation:** Platform Certification 5/5 consecutive green · build green · selftest green
 
 ### Summary
 
-Sprint 417 delivered Phase C tech debt prerequisite S5 via `sprint-417-selftest.ts`. Stream 1: `spatial_objects` RLS — `ENABLE ROW LEVEL SECURITY` + `spatial_objects_member` policy scoped to project members. Stream 2: RLS delete/update policies — `drawing_pins_delete` · evidence UPDATE/DELETE · comments UPDATE/DELETE · `knowledge_revisions_insert` (closes open write). Migration `015_phase_b_rls_remediation.sql` authored; staging/production apply tracked separately. Milestone 440–449 active (2/10). Sprint 418 queued (Phase B re-validation). Cross-project learning loop (Finding 6) remains undemonstrated as a chained acceptance scenario.
+Sprint 418 delivered Phase B regression re-validation via `phase-b-wynyard-validation.ts` with `PHASE_B_RUNS=5`. Stream 1: 5/5 consecutive green runs · 14 passed / 0 failed / 2 deferred per run · network/console clean. Stream 2: Platform Certification recertification — `docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md` and `docs/di-screenshots/validation/results.json` updated. Gate selftest: `sprint-418-selftest.ts`. Milestone 440–449 active (3/10). Sprint 419 queued (migration 015 staging apply verification). Cross-project learning loop (Finding 6) remains undemonstrated as a chained acceptance scenario.
 
 ### Current sprint state
 
 | Field | Value |
 |---|---|
-| **currentSprint** | 417 closed (2026-07-07) |
-| **currentMilestone** | 440–449 Tech Debt Prerequisites active (2/10) · S1+S5 delivered Sprints 416–417 |
-| **nextSprint** | 418 — Phase B regression re-validation (5 green runs) |
+| **currentSprint** | 418 closed (2026-07-07) |
+| **currentMilestone** | 440–449 Tech Debt Prerequisites active (3/10) · S1+S5 + Phase B re-validation delivered |
+| **nextSprint** | 419 — migration 015 staging apply verification |
 | **hardCompletionDirective** | preserved — at_risk · 5 days remaining · computed 2026-07-07 |
 
-### Sprint 417 delivery
+### Sprint 418 delivery
 
+- **Stream 1:** Phase B regression re-validation — `phase-b-wynyard-validation.ts` `PHASE_B_RUNS=5` · 5/5 green · `sprint-418-selftest.ts`
+- **Stream 2:** Platform Certification recertification — validation report + results.json · `sprint-418-selftest.ts`
+- **phase-c-gated** — S1+S5 delivered (416–417); Phase B re-validation 5/5 (418); migration 015 staging apply opens Sprint 419
+- **platform-certification-stale** — resolved Sprint 418 (5/5 re-achieved 2026-07-07)
 - **migration-015-pending** — migration 015 authored Sprint 417; staging/production apply still pending
-- **phase-c-gated** — S1+S5 delivered (Sprints 416–417); Phase B re-validation opens Sprint 418
-
-### Open risks (unchanged scope)
-
-- **migration-015-pending** — authored Sprint 417; staging/production apply pending
-- **phase-c-gated** — S1+S5 delivered; migration 015 apply + 5 green runs before Phase C feature work
