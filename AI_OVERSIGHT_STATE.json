@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-06",
+  "lastUpdated": "2026-07-07",
   "currentSprint": {
-    "number": 392,
+    "number": 393,
     "status": "closed",
-    "previousClosed": 391,
-    "closedDate": "2026-07-06"
+    "previousClosed": 392,
+    "closedDate": "2026-07-07"
   },
   "currentMilestone": {
     "range": "410-419",
@@ -22,18 +22,18 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 1,
-    "percentComplete": 10,
+    "sprintsClosed": 2,
+    "percentComplete": 20,
     "nextWrapReviewSprint": 401
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Decision Timeline Phase C change-cloud detection Phase D playback row + commercial workflow stage filtered badge — sprint-393-selftest.ts"
+      "focus": "Decision Timeline Phase C change-cloud detection pipeline stage filtered badge + Phase D playback pipeline-stage label — sprint-394-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Operational workspace AI panel Phase C change-cloud detection timeline entry count indicator — sprint-393-selftest.ts"
+      "focus": "Operational workspace AI panel Phase C change-cloud detection label hint — sprint-394-selftest.ts"
     }
   },
   "completedWork": {
@@ -680,6 +680,11 @@
     "sprint392": {
       "stream2": "Phase C change-cloud detection growth event contract (`change_cloud_detected` telemetry) · Construction Memory audit (`drawing.change_cloud_detected`) · timeline playback stub · job derivation parity — phaseCChangeCloudGrowthService.ts · phaseCChangeCloudMemoryService.ts · phaseCChangeCloudTimelinePlaybackService.ts · sprint-392-selftest.ts",
       "stream1": "Phase C change-cloud detection viewer mode foundation — assistive highlight overlay UI prep — PhaseCChangeCloudOverlay in viewer chrome · Decision Timeline Phase C change-cloud detection timeline filter + badge — decision-timeline-phase-c-change-cloud-filter · decision-timeline-phase-c-change-cloud-badge · DecisionTimeline.tsx · DrawingsModule.tsx",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint393": {
+      "stream1": "Decision Timeline Phase C change-cloud detection Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — decision-timeline-phase-c-change-cloud-playback-row-toggle · decision-timeline-phase-c-change-cloud-playback-baseline-revision-id · decision-timeline-phase-c-change-cloud-playback-target-revision-id · decision-timeline-phase-c-change-cloud-playback-sheet-number · decision-timeline-phase-c-change-cloud-playback-region-count · decision-timeline-phase-c-change-cloud-playback-detection-mode · decision-timeline-phase-c-change-cloud-commercial-workflow-stage · decision-timeline-phase-c-change-cloud-playback-commercial-stage · extractPhaseCChangeCloudPlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-393-selftest.ts",
+      "stream2": "Operational workspace AI panel Phase C change-cloud detection timeline entry count indicator — operational-workspace-ai-panel-phase-c-change-cloud-entry-count · countHubPhaseCChangeCloudTimelineEntries · countPhaseCChangeCloudTimelineEntries · phaseCChangeCloudTimelineEntryCount · workspaceAggregatorService.ts · OperationalWorkspace.tsx · OperationalWorkspaceHost.tsx · sprint-393-selftest.ts",
       "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
     }
   },
@@ -1740,6 +1745,17 @@
       "docs/PHASE_B_UX_ACCEPTANCE.md",
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md"
+    ],
+    "sprint393": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "src/components/workspace/OperationalWorkspaceHost.tsx",
+      "scripts/sprint-393-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md"
     ]
   },
   "validationResults": {
@@ -1872,14 +1888,15 @@
       "sprint389": "3/3 consecutive green",
       "sprint390": "3/3 consecutive green",
       "sprint391": "3/3 consecutive green",
-      "sprint392": "3/3 consecutive green"
+      "sprint392": "3/3 consecutive green",
+      "sprint393": "3/3 consecutive green"
     },
     "platformCertification": {
       "lastAchieved": "2026-06-29",
       "lastCertifiedBaseline": "2026-06-29",
       "status": "stale â€” recertification required before production release",
       "sprintRangeCovered": "120â€“129 (Drawing Intelligence UX Maturity milestone close)",
-      "deltaSinceCertification": "Sprints 130–392 delivered (263 sprints); schema/RLS pending (migration 015); Digital Brain + Commercial Intelligence + Drawing Intelligence Phase C change-cloud detection milestone active (410-419 1/10); latest growth-event sprint 392 (change_cloud_detected); no 5/5 re-run since 2026-06-29",
+      "deltaSinceCertification": "Sprints 130–393 delivered (264 sprints); schema/RLS pending (migration 015); Digital Brain + Commercial Intelligence + Drawing Intelligence Phase C change-cloud detection milestone active (410-419 2/10); latest growth-event sprint 392 (change_cloud_detected); no 5/5 re-run since 2026-06-29",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -1896,10 +1913,10 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Sprint 392 delivered, Sprint 393 queued (milestone 410-419 1/10)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 392 Phase C change-cloud detection growth event contract logged",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 392 closed, sprint 393 queued, milestone 410-419 active (1/10)",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 392 close-out packet"
+    "docs/PLATFORM_EVOLUTION.md — Sprint 393 delivered, Sprint 394 queued (milestone 410-419 2/10)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 393 Phase C change-cloud Phase D playback + AI panel entry count logged",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 393 closed, sprint 394 queued, milestone 410-419 active (2/10)",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 393 close-out packet"
   ],
   "migrationsRequired": [
     {
@@ -1936,14 +1953,14 @@
       "id": "drawing-revision-provenance-gap",
       "severity": "data-integrity",
       "relatedFinding": "finding-2",
-      "description": "Drawing revision provenance + supersede invalidation full stack delivered milestones 360-369 and 370-379; Phase C revision supersede full stack delivered milestone 380-389; Phase C pin re-anchor full stack delivered milestone 390-399; C3 visual revision compare full stack delivered milestone 400-409; C4 change-cloud detection growth event contract delivered Sprint 392; C1 upload UI not started — milestone 410-419 active 1/10 Sprint 393 queued",
+      "description": "Drawing revision provenance + supersede invalidation full stack delivered milestones 360-369 and 370-379; Phase C revision supersede full stack delivered milestone 380-389; Phase C pin re-anchor full stack delivered milestone 390-399; C3 visual revision compare full stack delivered milestone 400-409; C4 change-cloud detection Phase D playback + commercial workflow stage badge + AI panel entry count delivered Sprint 393; C1 upload UI not started — milestone 410-419 active 2/10 Sprint 394 queued",
       "architectureDecisionRequired": true,
       "targetSprintOrMilestone": "Phase C pin re-anchor (390-399) + dedicated provenance sprint before production knowledge reuse"
     },
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Phase C change-cloud detection growth event contract live Sprint 392 (`change_cloud_detected`); bulk upload engine opens milestone 420-429; gated on checklist + regression"
+      "description": "Phase C change-cloud detection Phase D playback + commercial workflow stage badge + AI panel entry count live Sprint 393; bulk upload engine opens milestone 420-429; gated on checklist + regression"
     },
     {
       "id": "partial-platform-services",
@@ -1959,26 +1976,26 @@
   ],
   "blockers": [],
   "nextSprint": {
-    "number": 393,
-    "stream2": "Operational workspace AI panel Phase C change-cloud detection timeline entry count indicator — sprint-393-selftest.ts",
-    "stream1": "Decision Timeline Phase C change-cloud detection Phase D playback row + commercial workflow stage filtered badge — sprint-393-selftest.ts",
-    "selftest": "scripts/sprint-393-selftest.ts"
+    "number": 394,
+    "stream1": "Decision Timeline Phase C change-cloud detection pipeline stage filtered badge + Phase D playback pipeline-stage label — sprint-394-selftest.ts",
+    "stream2": "Operational workspace AI panel Phase C change-cloud detection label hint — sprint-394-selftest.ts",
+    "selftest": "scripts/sprint-394-selftest.ts"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-06T12:09:54.077Z",
+    "lastPushAttempt": "2026-07-06T12:10:14.338Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-06T12:09:54.077Z",
+    "verifiedAt": "2026-07-06T12:10:14.338Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-06T07:15:00.000Z",
-    "sanitizedAt": "2026-07-06T12:09:36.9095302Z",
-    "pushedAt": "2026-07-06T12:09:54.077Z",
-    "remoteHeadSha": "440f155cf746850a49648987cbb4edd02992957b",
-    "publicStateVerifiedAt": "2026-07-06T12:09:54.077Z",
+    "sanitizedAt": "2026-07-06T12:31:14.6486656Z",
+    "pushedAt": "2026-07-06T12:10:14.338Z",
+    "remoteHeadSha": "e32408b19764f4ac52b53093ee205a489a49a72a",
+    "publicStateVerifiedAt": "2026-07-06T12:10:14.338Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "6649769ca0f404372d18658170b48c5d330fbff3509c6cc4dc82a5e2717245dc",
+    "publicStateContentHash": "0006cb5c843c9529b5a6b1283fdae92e98fbd69d92ad1b94c1f8419c2f87dfa4",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -2010,21 +2027,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "6649769ca0f404372d18658170b48c5d330fbff3509c6cc4dc82a5e2717245dc",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-06T12:09:54.077Z",
-      "rawEndpointVerifiedAt": "2026-07-06T12:09:54.077Z",
-      "gitOriginVerifiedAt": "2026-07-06T12:09:54.077Z",
+      "githubApiVerifiedAt": "2026-07-06T12:10:14.338Z",
+      "rawEndpointVerifiedAt": "2026-07-06T12:10:14.338Z",
+      "gitOriginVerifiedAt": "2026-07-06T12:10:14.338Z",
       "routeContentHashes": {
-        "github-api": "6649769ca0f404372d18658170b48c5d330fbff3509c6cc4dc82a5e2717245dc",
+        "github-api": "0006cb5c843c9529b5a6b1283fdae92e98fbd69d92ad1b94c1f8419c2f87dfa4",
         "raw-cdn": "6649769ca0f404372d18658170b48c5d330fbff3509c6cc4dc82a5e2717245dc",
-        "git-origin": "6649769ca0f404372d18658170b48c5d330fbff3509c6cc4dc82a5e2717245dc"
+        "git-origin": "0006cb5c843c9529b5a6b1283fdae92e98fbd69d92ad1b94c1f8419c2f87dfa4"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "440f155cf746850a49648987cbb4edd02992957b",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "e32408b19764f4ac52b53093ee205a489a49a72a",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 350,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -2175,7 +2192,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase C — Change-cloud Detection milestone (410-419) active — Sprint 392 closed; Sprint 393 queued",
+    "phaseE": "Drawing Intelligence Phase C — Change-cloud Detection milestone (410-419) active — Sprint 393 closed; Sprint 394 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -2187,7 +2204,7 @@
     "sprint381": "No new growth event kinds — project assistant context engine Phase C pin re-anchor explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCPinReanchorExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint382": "No new growth event kinds — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint379": "No new growth event kinds — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
-    "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (6 days remaining as of 2026-07-06)"
+    "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (5 days remaining as of 2026-07-07)"
   },
   "digitalBrainImpact": {
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -2283,7 +2300,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 410-419 1/10 sprints closed (10%); latest growth-event sprint 392; Sprint 392 closed; Sprint 393 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 410-419 2/10 sprints closed (20%); latest growth-event sprint 392; Sprint 393 closed; Sprint 394 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -2317,7 +2334,8 @@
     "sprint389": "No new growth event kinds — project assistant context engine Phase C visual revision compare explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionCompareExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint390": "No new growth event kinds — mid-milestone 384–388 completeness review confirms Phase C visual revision compare growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint391": "No new growth event kinds — milestone 400–409 wrap completeness review confirms Phase C visual revision compare full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 410–419 Change-cloud Detection opens Sprint 392",
-    "sprint392": "change_cloud_detected growth event kind on Digital Brain bus (`drawing_revision` entity · enterprise_drawing commercialStage · reindex_search job derivation) · Construction Memory audit · timeline playback stub wired to decision timeline builder — milestone 410-419 Change-cloud Detection Sprint 392"
+    "sprint392": "change_cloud_detected growth event kind on Digital Brain bus (`drawing_revision` entity · enterprise_drawing commercialStage · reindex_search job derivation) · Construction Memory audit · timeline playback stub wired to decision timeline builder — milestone 410-419 Change-cloud Detection Sprint 392",
+    "sprint393": "No new growth event kinds — Decision Timeline Phase C change-cloud detection Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage line for Phase C change-cloud audit filter scope"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -2416,7 +2434,8 @@
     "sprint389": "No direct KG edge changes — Phase C revision compare explainability context entries derived from drawing.revision_compared Memory audit timeline playback",
     "sprint390": "No direct KG edge changes — mid-milestone 384–388 completeness review confirms Phase C visual revision compare stack partial audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators); milestone 400-409 active (7/10)",
     "sprint391": "No direct KG edge changes — milestone 400–409 wrap completeness review confirms Phase C visual revision compare full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 410–419 Change-cloud Detection opens Sprint 392",
-    "sprint392": "No direct KG edge changes — change_cloud_detected telemetry read-only audit event; assistive highlight overlay scoped to active revision"
+    "sprint392": "No direct KG edge changes — change_cloud_detected telemetry read-only audit event; assistive highlight overlay scoped to active revision",
+    "sprint393": "No direct KG edge changes — Phase C change-cloud Phase D playback row surfaces baseline/target revision ids, region count, and detection mode from Memory audit payload"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
@@ -2502,7 +2521,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase C — Change-cloud Detection (410-419) active 1/10; Sprint 392 closed; Sprint 393 queued (Operational workspace AI panel Phase C change-cloud detection timeline entry cou · Decision Timeline Phase C change-cloud detection Phase D playback row + commerci)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase C — Change-cloud Detection (410-419) active 2/10; Sprint 393 closed; Sprint 394 queued (Operational workspace AI panel Phase C change-cloud detection label hint — sprin · Decision Timeline Phase C change-cloud detection pipeline stage filtered badge +)",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -2541,7 +2560,8 @@
     "sprint389": "Project assistant context engine Phase C visual revision compare explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionCompareExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry · operational-workspace-ai-panel-phase-c-revision-compare-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-compare-explainability-context-entry-item · sprint-389-selftest.ts",
     "sprint390": "Mid-milestone 384–388 Drawing Intelligence Phase C visual revision compare completeness review — Phase C visual revision compare stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-390-selftest.ts",
     "sprint391": "Milestone 400–409 Drawing Intelligence Phase C visual revision compare wrap completeness review — full stack audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring; milestone closed; 410–419 Change-cloud Detection opens Sprint 392 — sprint-391-selftest.ts",
-    "sprint392": "Phase C change-cloud detection growth event contract — change_cloud_detected · drawing.change_cloud_detected Memory audit · Decision Timeline filter + badge · viewer assistive overlay foundation — sprint-392-selftest.ts"
+    "sprint392": "Phase C change-cloud detection growth event contract — change_cloud_detected · drawing.change_cloud_detected Memory audit · Decision Timeline filter + badge · viewer assistive overlay foundation — sprint-392-selftest.ts",
+    "sprint393": "Decision Timeline Phase C change-cloud detection Phase D playback row + commercial workflow stage filtered badge + operational workspace AI panel entry count indicator — enterprise_drawing commercialStage · extractPhaseCChangeCloudPlaybackRowFromTimelineEntry · phaseCChangeCloudTimelineEntryCount · sprint-393-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
@@ -2552,8 +2572,8 @@
       "Platform Certification 5/5 deterministic suite re-run with baseline covering sprints through current closed sprint",
       "Oversight bridge remote callable path proven (chatgptCallablePathProven) OR documented deferral with owner — deferral documented; local E2E only"
     ],
-    "daysRemaining": 6,
-    "computedAsOf": "2026-07-06",
+    "daysRemaining": 5,
+    "computedAsOf": "2026-07-07",
     "status": "at_risk",
     "statusRationale": "Cross-project learning loop not demonstrated end-to-end; migration 015 staging pending; platform certification stale since 2026-06-29; bridge remote callable not proven"
   },
