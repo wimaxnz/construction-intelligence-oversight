@@ -215,16 +215,3 @@ Continue Sprint 255 and active autonomous execution.
 Add accepted findings to future sprint planning. Do not reopen validated Sprint 254 solely for advisory findings.
 
 Immediate exception: if review of Finding 2 shows commercial or knowledge decisions cannot be traced to exact drawing revisions, classify that as a data-integrity issue and address it under the protocol's interrupt rule.
-
----
-
-### Finding 11, AI_OVERSIGHT_STATE completedWork omits recent closed sprint history
-
-**Severity:** Medium governance and data-integrity concern  
-**Disposition:** New independent finding, requires triage and state repair
-
-**Evidence:** `AI_OVERSIGHT_STATE.json` reports `currentSprint.number: 397`, `status: closed`, and milestone 410-419 at 6/10, while `completedWork` begins at `sprint382` in the published state snapshot and does not include the recent closed sprint entries for 383-397. `OVERSIGHT_PACKET.md` separately documents Sprint 397 close-out details, which means the human-readable packet and the machine-readable state are no longer equally complete.
-
-**Why this matters:** Downstream oversight, automated monitors, and acceptance checks depend on `AI_OVERSIGHT_STATE.json` as the canonical machine-readable record. If current sprint and packet metadata advance while `completedWork` silently drops recent close-outs, validation can stay green while public governance loses the proof trail for the latest milestone work.
-
-**Recommended action:** Regenerate `AI_OVERSIGHT_STATE.json` from local canonical state so `completedWork` includes the closed sprint history for 383-397, or add an explicit archival/windowing field that states which sprint range is intentionally retained. Add a contract selftest that fails when `currentSprint.closed` is newer than the latest sprint represented in `completedWork`, unless an explicit archive pointer is present.
