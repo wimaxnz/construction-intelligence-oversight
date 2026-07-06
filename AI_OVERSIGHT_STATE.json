@@ -1739,18 +1739,18 @@
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-06T07:02:33.821Z",
+    "lastPushAttempt": "2026-07-06T07:02:55.878Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-06T07:02:33.821Z",
+    "verifiedAt": "2026-07-06T07:02:55.878Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-06T06:27:43.719Z",
-    "sanitizedAt": "2026-07-06T07:02:14.4392964Z",
-    "pushedAt": "2026-07-06T07:02:33.821Z",
-    "remoteHeadSha": "358173c22dab7f437cc05ba41f4978d908e3a3a3",
-    "publicStateVerifiedAt": "2026-07-06T07:02:33.821Z",
+    "sanitizedAt": "2026-07-06T07:12:19.2448702Z",
+    "pushedAt": "2026-07-06T07:02:55.878Z",
+    "remoteHeadSha": "f0c7c442ae974717d14562cc16c2977e924ae34e",
+    "publicStateVerifiedAt": "2026-07-06T07:02:55.878Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "18036dcf72f915997cad72b4c404275f4339ffb57c646622beee2be62b37295b",
+    "publicStateContentHash": "879728cf03e66ac65a06de674cf4ed8689f5eaaf2e4bccb625c9017c3272a84e",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -1782,21 +1782,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "18036dcf72f915997cad72b4c404275f4339ffb57c646622beee2be62b37295b",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-06T07:02:33.821Z",
-      "rawEndpointVerifiedAt": "2026-07-06T07:02:33.821Z",
-      "gitOriginVerifiedAt": "2026-07-06T07:02:33.821Z",
+      "githubApiVerifiedAt": "2026-07-06T07:02:55.878Z",
+      "rawEndpointVerifiedAt": "2026-07-06T07:02:55.878Z",
+      "gitOriginVerifiedAt": "2026-07-06T07:02:55.878Z",
       "routeContentHashes": {
-        "github-api": "18036dcf72f915997cad72b4c404275f4339ffb57c646622beee2be62b37295b",
+        "github-api": "879728cf03e66ac65a06de674cf4ed8689f5eaaf2e4bccb625c9017c3272a84e",
         "raw-cdn": "18036dcf72f915997cad72b4c404275f4339ffb57c646622beee2be62b37295b",
-        "git-origin": "18036dcf72f915997cad72b4c404275f4339ffb57c646622beee2be62b37295b"
+        "git-origin": "879728cf03e66ac65a06de674cf4ed8689f5eaaf2e4bccb625c9017c3272a84e"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "358173c22dab7f437cc05ba41f4978d908e3a3a3",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "f0c7c442ae974717d14562cc16c2977e924ae34e",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 315,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -1807,7 +1807,7 @@
     "bridgeDocs": "docs/ai-oversight/OVERSIGHT_BRIDGE_ADR.md"
   },
   "oversightBridge": {
-    "lastConsumedAt": "2026-07-04T23:22:21.679Z",
+    "lastConsumedAt": "2026-07-06T07:04:43.659Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
     "localE2EProven": true,
@@ -1823,7 +1823,13 @@
       "Configure ChatGPT Custom GPT Action with openapi.yaml + worker URL",
       "Re-run scripts/oversight-bridge-relay-e2e-selftest.ts against deployed relay",
       "Verify AI_OVERSIGHT_INBOX.json update via raw GitHub fetch after remote ingest"
-    ]
+    ],
+    "deferral": {
+      "remoteCallableDeferred": true,
+      "owner": "platform-engineering",
+      "documentedIn": "docs/ai-oversight/OVERSIGHT_BRIDGE_OPERATIONS.md",
+      "hardCompletionGate": "callable OR documented deferral — deferral documented; deploy pending"
+    }
   },
   "oversightFindingsState": [],
   "oversightFindingsTriage": [
@@ -1968,7 +1974,8 @@
     "sprint375": "No new growth event kinds — Decision Timeline Phase C pin re-anchor Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage line for Phase C pin re-anchor audit filter scope",
     "sprint374": "pin_reanchored growth event kind live — pin node kind · Digital Brain bus + Construction Memory audit + timeline playback stub · exact pinId + priorAnchorRevisionId + newAnchorRevisionId persisted in growth/Memory payloads · rebuild_graph_snapshot + reindex_search job derivation · Decision Timeline Phase C pin re-anchor filter + badge",
     "sprint377": "No new growth event kinds — Phase C pin re-anchor viewer chrome session store + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability actor/confidence lines for Phase C pin re-anchor audit filter scope",
-    "sprint378": "No new growth event kinds — operational workspace AI panel Phase C pin re-anchor label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary line for Phase C pin re-anchor audit filter scope"
+    "sprint378": "No new growth event kinds — operational workspace AI panel Phase C pin re-anchor label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary line for Phase C pin re-anchor audit filter scope",
+    "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (6 days remaining as of 2026-07-06)"
   },
   "digitalBrainImpact": {
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -2281,6 +2288,20 @@
     "sprint375": "Decision Timeline Phase C pin re-anchor Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — enterprise_drawing commercialStage · extractPhaseCPinReanchorPlaybackRowFromTimelineEntry · appendCommercialWorkflowStagePlaybackLine · sprint-375-selftest.ts",
     "sprint377": "Drawing Intelligence Phase C pin re-anchor indicator in viewer chrome + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels — phase-c-pin-reanchor-indicator · decision-timeline-phase-c-pin-reanchor-explainability-actor · decision-timeline-phase-c-pin-reanchor-explainability-confidence · sprint-377-selftest.ts",
     "sprint378": "Operational workspace AI panel Phase C pin re-anchor label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback explainability rationale summary label — operational-workspace-ai-panel-phase-c-pin-reanchor-label-hint · decision-timeline-phase-c-pin-reanchor-explainability-rationale-summary · sprint-378-selftest.ts"
+  },
+  "hardCompletionDirective": {
+    "targetDate": "2026-07-12",
+    "scope": "cross-project learning loop + production readiness gates",
+    "passFailCriteria": [
+      "Finding 6 chained acceptance: Project A lesson from evidence → Knowledge Library → human review approve → versioned provenance-backed template → Project B similar condition → similarity retrieval → proactive warning → user accept/dismiss/modify → outcome feedback → confidence evolution",
+      "Migration 015 applied and verified on staging Supabase (RLS policies, pin/evidence delete policies, Sprint Validation 3/3 on staging)",
+      "Platform Certification 5/5 deterministic suite re-run with baseline covering sprints through current closed sprint",
+      "Oversight bridge remote callable path proven (chatgptCallablePathProven) OR documented deferral with owner — deferral documented; local E2E only"
+    ],
+    "daysRemaining": 6,
+    "computedAsOf": "2026-07-06",
+    "status": "at_risk",
+    "statusRationale": "Cross-project learning loop not demonstrated end-to-end; migration 015 staging pending; platform certification stale since 2026-06-29; bridge remote callable not proven"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",

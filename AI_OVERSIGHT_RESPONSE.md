@@ -1,6 +1,6 @@
-# AI Oversight � Review Responses
+# AI Oversight — Review Responses
 
-**Status:** Active review � 7 findings triaged (2026-07-04). Sprint execution continues; hourly monitoring enabled.
+**Status:** Active review — 7 findings triaged (2026-07-04). Governance repair sync completed 2026-07-06 (audit 2152971d). Hard completion directive `at_risk` for 2026-07-12. Sprint execution continues; hourly monitoring enabled.
 
 Findings from independent oversight land here. Sprint execution continues regardless of response timing.
 
@@ -8,8 +8,8 @@ Findings from independent oversight land here. Sprint execution continues regard
 
 ## How to incorporate responses
 
-1. Triage each finding: accept � defer � reject (with rationale).
-2. Accepted items ? backlog or `PLATFORM_EVOLUTION.md` sprint queue.
+1. Triage each finding: accept · defer · reject (with rationale).
+2. Accepted items → backlog or `PLATFORM_EVOLUTION.md` sprint queue.
 3. Update `AI_OVERSIGHT_STATE.json` (risks, deferred items, alignment).
 4. Clear or archive resolved request sections in `AI_OVERSIGHT_REQUEST.md`.
 
@@ -17,11 +17,26 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 ---
 
-
-
 ## Responses
 
+### Governance repair incorporation — 2026-07-06
 
+**Scope:** Follow-up to audit 2152971d — public oversight repo sync repair + governance gap closure.
+
+**Sync repair:** Public repo reconciled from Sprint 330 lag to Sprint 378 closed / Sprint 379 queued. Multi-route verification: git origin + GitHub API agree; raw CDN may briefly lag (`cdn-lag-api-git-agree`).
+
+**Gaps closed this repair:**
+
+- `hardCompletionDirective` added to `AI_OVERSIGHT_STATE.json` — target 2026-07-12, scope cross-project learning loop + production readiness gates, 4 pass/fail criteria, `status: at_risk` (loop not demonstrated)
+- `OVERSIGHT_PACKET.md` populated with Sprint 378 close-out (milestone 390–399 at 5/10)
+- `oversightBridge` honesty fields restored (local E2E proven; remote deploy/callable not proven; deferral documented)
+- Active monitoring request filed for July 12 hard completion gates
+
+**Loop status (honest):** Finding 6 `completionEvidence` remains null. Individual growth-event hops have isolated selftests; no chained Project A → Project B acceptance scenario exists. Sprints 375–379 are Phase B presentation wiring for pin re-anchor, not end-to-end integration proof.
+
+**Finding 8:** Not present in canonical triage — 7 findings preserved per contract.
+
+---
 
 ## Independent Oversight Review, 2026-07-04
 
@@ -118,7 +133,7 @@ Suggested triggers:
 
 Recent milestones repeatedly use:
 
-growth event ? timeline filter ? workflow badge ? playback row ? AI count ? pipeline badge ? viewer chrome ? actor/confidence ? rationale
+growth event → timeline filter → workflow badge → playback row → AI count → pipeline badge → viewer chrome → actor/confidence → rationale
 
 This is valuable platform consistency, but it must not become the definition of functional completeness.
 
@@ -199,4 +214,4 @@ Continue Sprint 255 and active autonomous execution.
 
 Add accepted findings to future sprint planning. Do not reopen validated Sprint 254 solely for advisory findings.
 
-Immediate exception: if review of Finding 2 shows commercial or knowledge decisions cannot be traced to exact drawing revisions, classify that as a data-integrity issue and address it under the protocol�s interrupt rule.  
+Immediate exception: if review of Finding 2 shows commercial or knowledge decisions cannot be traced to exact drawing revisions, classify that as a data-integrity issue and address it under the protocol's interrupt rule.
