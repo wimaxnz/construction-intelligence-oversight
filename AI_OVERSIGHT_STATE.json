@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-07",
   "currentSprint": {
-    "number": 416,
+    "number": 417,
     "status": "closed",
-    "previousClosed": 415,
+    "previousClosed": 416,
     "closedDate": "2026-07-07"
   },
   "currentMilestone": {
@@ -22,18 +22,18 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 1,
-    "percentComplete": 10,
+    "sprintsClosed": 2,
+    "percentComplete": 20,
     "nextWrapReviewSprint": 425
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Phase C tech debt S5 — apply migration 015 · RLS delete/update policies · spatial_objects RLS — sprint-417-selftest.ts"
+      "focus": "Phase B regression re-validation — phase-b-wynyard-validation.ts 5 green runs — sprint-418-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Phase C tech debt S5 — apply migration 015 · RLS delete/update policies · spatial_objects RLS — sprint-417-selftest.ts"
+      "focus": "Phase B regression re-validation — phase-b-wynyard-validation.ts 5 green runs — sprint-418-selftest.ts"
     }
   },
   "completedWork": {
@@ -800,6 +800,11 @@
     "sprint416": {
       "stream1": "Riverside catalog seed memoization — RIVERSIDE_CATALOG_PINS_MEMOIZED · materializeCatalogPin · getRiversideCatalogPins read-path cache · riversideDrawingCatalog.ts · sprint-416-selftest.ts",
       "stream2": "No write-on-read on pin list — listPinsForSheet read path no longer calls ensureRiversideCatalogPinsPersisted; catalog seed remains on explicit write paths (pinEvidenceService · DrawingsModule workspace open) · drawingIntelligenceService.ts · sprint-416-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint417": {
+      "stream1": "spatial_objects RLS — ENABLE ROW LEVEL SECURITY · spatial_objects_member policy (is_project_member) · 015_phase_b_rls_remediation.sql · sprint-417-selftest.ts",
+      "stream2": "RLS delete/update policies — drawing_pins_delete · drawing_evidence_update · drawing_evidence_delete · drawing_evidence_comments_update · drawing_evidence_comments_delete · knowledge_revisions_insert (closes open write) · 015_phase_b_rls_remediation.sql · sprint-417-selftest.ts",
       "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
     }
   },
@@ -2099,6 +2104,16 @@
       "docs/PHASE_C_DEPENDENCY_CHECKLIST.md",
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md"
+    ],
+    "sprint417": [
+      "supabase/migrations/015_phase_b_rls_remediation.sql",
+      "scripts/sprint-417-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/PHASE_B_TECH_DEBT.md",
+      "docs/PHASE_C_DEPENDENCY_CHECKLIST.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md"
     ]
   },
   "validationResults": {
@@ -2255,14 +2270,15 @@
       "sprint413": "3/3 consecutive green",
       "sprint414": "3/3 consecutive green",
       "sprint415": "3/3 consecutive green",
-      "sprint416": "3/3 consecutive green"
+      "sprint416": "3/3 consecutive green",
+      "sprint417": "3/3 consecutive green"
     },
     "platformCertification": {
       "lastAchieved": "2026-06-29",
       "lastCertifiedBaseline": "2026-06-29",
       "status": "stale â€” recertification required before production release",
       "sprintRangeCovered": "120â€“129 (Drawing Intelligence UX Maturity milestone close)",
-      "deltaSinceCertification": "Sprints 130–416 delivered (287 sprints); schema/RLS pending (migration 015); Digital Brain + Commercial Intelligence + Drawing Intelligence Phase C tech debt S1 delivered (440-449); latest growth-event sprint 408 (revision_added · sheet_superseded upload-path wiring); no 5/5 re-run since 2026-06-29",
+      "deltaSinceCertification": "Sprints 130–417 delivered (288 sprints); migration 015 authored (staging apply pending); Digital Brain + Commercial Intelligence + Drawing Intelligence Phase C tech debt S1/S5 delivered (440-449); latest growth-event sprint 408 (revision_added · sheet_superseded upload-path wiring); no 5/5 re-run since 2026-06-29",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -2279,23 +2295,24 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Sprint 416 delivered, Sprint 417 queued (milestone 440–449 S1 closed)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 416 Phase C catalog pin persistence S1 logged",
-    "docs/PHASE_C_DEPENDENCY_CHECKLIST.md — S1 resolved (Riverside catalog memoization · no write-on-read on pin list)",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 416 closed, sprint 417 queued, milestone 440–449 S1 delivered",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 416 close-out packet"
+    "docs/PLATFORM_EVOLUTION.md — Sprint 417 delivered, Sprint 418 queued (milestone 440–449 S5 closed)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 417 Phase C tech debt S5 migration 015 logged",
+    "docs/PHASE_B_TECH_DEBT.md — S5 resolved (migration 015 authored Sprint 417)",
+    "docs/PHASE_C_DEPENDENCY_CHECKLIST.md — S5 resolved (spatial_objects RLS · delete/update policies)",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 417 closed, sprint 418 queued, milestone 440–449 S5 delivered",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 417 close-out packet"
   ],
   "migrationsRequired": [
     {
       "id": "015",
-      "status": "scheduled",
+      "status": "authored",
       "blockingScope": "non-blocking for local autonomous sprint execution; blocking for production release or production acceptance until applied and verified",
       "owner": "platform-engineering",
       "targetEnvironment": "production Supabase",
       "verificationTest": "Apply migration 015 to staging; verify RLS policies on drawing_pins/evidence; confirm delete-policy behavior; run phase-b-wynyard-validation.ts 3/3 on staging",
       "rollbackPlan": "Revert migration 015 SQL on staging; restore prior RLS policy definitions from migration 014 snapshot; re-run validation suite",
-      "completionEvidence": null,
-      "note": "RLS/security hardening per PHASE_B_TECH_DEBT.md; not applied to production"
+      "completionEvidence": "supabase/migrations/015_phase_b_rls_remediation.sql · scripts/sprint-417-selftest.ts",
+      "note": "RLS/security hardening per PHASE_B_TECH_DEBT.md S5 — authored Sprint 417; staging/production apply pending"
     },
     {
       "id": "017",
@@ -2314,20 +2331,20 @@
       "verificationTest": "Staging apply + RLS policy audit + Sprint Validation 3/3",
       "rollbackPlan": "Revert to migration 014 RLS snapshot",
       "completionEvidence": null,
-      "description": "Supabase migration 015 (RLS, pin/evidence delete policies) not yet applied to production"
+      "description": "Supabase migration 015 authored Sprint 417 (RLS, pin/evidence delete policies); staging/production apply pending"
     },
     {
       "id": "drawing-revision-provenance-gap",
       "severity": "data-integrity",
       "relatedFinding": "finding-2",
-      "description": "Drawing revision provenance + supersede invalidation full stack delivered milestones 360-369 and 370-379; Phase C revision supersede full stack delivered milestone 380-389; Phase C pin re-anchor full stack delivered milestone 390-399; C3 visual revision compare full stack delivered milestone 400-409; C4 change-cloud detection full stack delivered milestone 410-419; C5 bulk upload engine full stack delivered milestone 420-429; C1 revision upload UI full stack delivered milestone 430-439 closed Sprint 415; Phase C tech debt S1 catalog pin persistence delivered Sprint 416; S5 migration 015 opens Sprint 417",
+      "description": "Drawing revision provenance + supersede invalidation full stack delivered milestones 360-369 and 370-379; Phase C revision supersede full stack delivered milestone 380-389; Phase C pin re-anchor full stack delivered milestone 390-399; C3 visual revision compare full stack delivered milestone 400-409; C4 change-cloud detection full stack delivered milestone 410-419; C5 bulk upload engine full stack delivered milestone 420-429; C1 revision upload UI full stack delivered milestone 430-439 closed Sprint 415; Phase C tech debt S1 catalog pin persistence delivered Sprint 416; S5 migration 015 authored Sprint 417; Phase B re-validation opens Sprint 418",
       "architectureDecisionRequired": true,
       "targetSprintOrMilestone": "Phase C pin re-anchor (390-399) + dedicated provenance sprint before production knowledge reuse"
     },
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Phase C revision upload UI full stack delivered milestone 430-439 closed Sprint 415; Phase C tech debt S1 catalog pin persistence delivered Sprint 416 (`RIVERSIDE_CATALOG_PINS_MEMOIZED` · no write-on-read on pin list); S5 migration 015 opens Sprint 417; gated on checklist + regression"
+      "description": "Phase C tech debt S1 (Sprint 416) and S5 (Sprint 417) delivered; migration 015 staging/production apply pending; Phase B re-validation (5 green) opens Sprint 418; gated on checklist + regression"
     },
     {
       "id": "partial-platform-services",
@@ -2343,26 +2360,26 @@
   ],
   "blockers": [],
   "nextSprint": {
-    "number": 417,
-    "stream1": "Phase C tech debt S5 — apply migration 015 · RLS delete/update policies · spatial_objects RLS — sprint-417-selftest.ts",
-    "stream2": "Phase C tech debt S5 — apply migration 015 · RLS delete/update policies · spatial_objects RLS — sprint-417-selftest.ts",
-    "selftest": "scripts/sprint-417-selftest.ts"
+    "number": 418,
+    "stream1": "Phase B regression re-validation — phase-b-wynyard-validation.ts 5 green runs — sprint-418-selftest.ts",
+    "stream2": "Phase B regression re-validation — phase-b-wynyard-validation.ts 5 green runs — sprint-418-selftest.ts",
+    "selftest": "scripts/sprint-418-selftest.ts"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-06T19:17:51.156Z",
+    "lastPushAttempt": "2026-07-06T19:18:14.038Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-06T19:17:51.156Z",
+    "verifiedAt": "2026-07-06T19:18:14.038Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-06T07:15:00.000Z",
-    "sanitizedAt": "2026-07-06T19:17:30.9348491Z",
-    "pushedAt": "2026-07-06T19:17:51.156Z",
-    "remoteHeadSha": "9e47fae7c95b58b5adbc0cc4f24a26b58c956cf9",
-    "publicStateVerifiedAt": "2026-07-06T19:17:51.156Z",
+    "sanitizedAt": "2026-07-06T19:23:06.8670040Z",
+    "pushedAt": "2026-07-06T19:18:14.038Z",
+    "remoteHeadSha": "bb643c9507b2f2186fe7828266ca7fce684c5a36",
+    "publicStateVerifiedAt": "2026-07-06T19:18:14.038Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "934be56bf65fc1e435a5ee40b47ea8ea57dd35e633df53a0553986bb81c04760",
+    "publicStateContentHash": "a6b133356187bc52f89b0ea5498128d965634bc37262f36d515a546110b28734",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -2394,21 +2411,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "934be56bf65fc1e435a5ee40b47ea8ea57dd35e633df53a0553986bb81c04760",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-06T19:17:51.156Z",
-      "rawEndpointVerifiedAt": "2026-07-06T19:17:51.156Z",
-      "gitOriginVerifiedAt": "2026-07-06T19:17:51.156Z",
+      "githubApiVerifiedAt": "2026-07-06T19:18:14.038Z",
+      "rawEndpointVerifiedAt": "2026-07-06T19:18:14.038Z",
+      "gitOriginVerifiedAt": "2026-07-06T19:18:14.038Z",
       "routeContentHashes": {
-        "github-api": "934be56bf65fc1e435a5ee40b47ea8ea57dd35e633df53a0553986bb81c04760",
+        "github-api": "a6b133356187bc52f89b0ea5498128d965634bc37262f36d515a546110b28734",
         "raw-cdn": "934be56bf65fc1e435a5ee40b47ea8ea57dd35e633df53a0553986bb81c04760",
-        "git-origin": "934be56bf65fc1e435a5ee40b47ea8ea57dd35e633df53a0553986bb81c04760"
+        "git-origin": "a6b133356187bc52f89b0ea5498128d965634bc37262f36d515a546110b28734"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "9e47fae7c95b58b5adbc0cc4f24a26b58c956cf9",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "bb643c9507b2f2186fe7828266ca7fce684c5a36",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 398,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -2573,7 +2590,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase C — Tech Debt Prerequisites milestone (440-449) active — Sprint 416 closed; Sprint 417 queued",
+    "phaseE": "Drawing Intelligence Phase C — Tech Debt Prerequisites milestone (440-449) active — Sprint 417 closed; Sprint 418 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -2681,7 +2698,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 440-449 1/10 sprints closed (10%); latest growth-event sprint 400; Sprint 416 closed; Sprint 417 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 440-449 2/10 sprints closed (20%); latest growth-event sprint 400; Sprint 417 closed; Sprint 418 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -2739,7 +2756,8 @@
     "sprint413": "No new growth event kinds — project assistant context engine Phase C revision upload explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionUploadExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint414": "No new growth event kinds — mid-milestone 408–412 completeness review confirms Phase C revision upload UI growth event family + Memory audit stack partial (UI foundation · upload-path wiring · Decision Timeline · AI panel · project assistant context engine wiring through context entries)",
     "sprint415": "No new growth event kinds — milestone 430–439 wrap completeness review confirms Phase C revision upload UI full stack audit (UI foundation · upload-path wiring · growth events · Memory audit · Decision Timeline · explainability · AI panel · project assistant context engine wiring from Sprints 411–413); milestone closed; 440–449 Tech Debt Prerequisites opens Sprint 416",
-    "sprint416": "No new growth event kinds — Phase C tech debt S1 Riverside catalog seed memoization + listPinsForSheet read-path hygiene (no ensureRiversideCatalogPinsPersisted on pin list); S5 migration 015 opens Sprint 417"
+    "sprint416": "No new growth event kinds — Phase C tech debt S1 Riverside catalog seed memoization + listPinsForSheet read-path hygiene (no ensureRiversideCatalogPinsPersisted on pin list); S5 migration 015 opens Sprint 417",
+    "sprint417": "No new growth event kinds — Phase C tech debt S5 migration 015 RLS remediation authored (spatial_objects RLS · pin/evidence delete/update · knowledge-revisions INSERT-only); Phase B re-validation opens Sprint 418"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -2862,7 +2880,8 @@
     "sprint413": "No direct KG edge changes — Phase C revision upload explainability context entries derived from drawing.revision_added · drawing.sheet_superseded Memory audit timeline playback filtered by phase_c_revision_upload source label",
     "sprint414": "No direct KG edge changes — mid-milestone 408–412 completeness review confirms Phase C revision upload UI stack partial audit (UI foundation · upload-path wiring · Decision Timeline · AI panel · project assistant context engine wiring through context entries); milestone 430-439 active (7/10)",
     "sprint415": "No direct KG edge changes — milestone 430–439 wrap completeness review confirms Phase C revision upload UI full stack audit (UI foundation · upload-path wiring · Decision Timeline · explainability · AI panel · project assistant context engine wiring from Sprints 411–413); milestone closed; 440–449 Tech Debt Prerequisites opens Sprint 416",
-    "sprint416": "No direct KG edge changes — Phase C tech debt S1 Riverside catalog seed memoization + listPinsForSheet read-path hygiene; S5 migration 015 opens Sprint 417"
+    "sprint416": "No direct KG edge changes — Phase C tech debt S1 Riverside catalog seed memoization + listPinsForSheet read-path hygiene; S5 migration 015 opens Sprint 417",
+    "sprint417": "No direct KG edge changes — Phase C tech debt S5 migration 015 closes knowledge_revisions open write (INSERT-only append); spatial_objects RLS; Phase B re-validation opens Sprint 418"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
@@ -2948,7 +2967,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase C — Tech Debt Prerequisites (440-449) active 1/10; Sprint 416 closed; Sprint 417 queued (Phase C tech debt S5 — apply migration 015 · RLS delete/update policies · spatia · Phase C tech debt S5 — apply migration 015 · RLS delete/update policies · spatia)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase C — Tech Debt Prerequisites (440-449) active 2/10; Sprint 417 closed; Sprint 418 queued (Phase B regression re-validation — phase-b-wynyard-validation.ts 5 green runs —  · Phase B regression re-validation — phase-b-wynyard-validation.ts 5 green runs — )",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -3011,7 +3030,8 @@
     "sprint413": "Project assistant context engine Phase C revision upload explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionUploadExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry · operational-workspace-ai-panel-phase-c-revision-upload-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-upload-explainability-context-entry-item · sprint-413-selftest.ts",
     "sprint414": "Mid-milestone 408–412 Drawing Intelligence Phase C revision upload UI completeness review — Phase C revision upload UI stack partial audit confirms UI foundation · upload-path wiring · Decision Timeline · AI panel · project assistant context engine wiring through context entries — sprint-414-selftest.ts",
     "sprint415": "Milestone 430–439 Drawing Intelligence Phase C revision upload UI wrap completeness review — full stack audit confirms UI foundation · upload-path wiring · growth events · Memory audit · Decision Timeline · explainability · AI panel · project assistant context engine wiring from Sprints 411–413; milestone closed; 440–449 Tech Debt Prerequisites opens Sprint 416 — sprint-415-selftest.ts",
-    "sprint416": "Phase C catalog pin persistence S1 — Riverside catalog seed memoization · no write-on-read on pin list — riversideDrawingCatalog.ts · drawingIntelligenceService.ts · sprint-416-selftest.ts"
+    "sprint416": "Phase C catalog pin persistence S1 — Riverside catalog seed memoization · no write-on-read on pin list — riversideDrawingCatalog.ts · drawingIntelligenceService.ts · sprint-416-selftest.ts",
+    "sprint417": "Phase C tech debt S5 — migration 015 RLS remediation authored (spatial_objects · drawing_pins delete · evidence update/delete) · 015_phase_b_rls_remediation.sql · sprint-417-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
