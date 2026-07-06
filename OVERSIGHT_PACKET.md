@@ -1,6 +1,6 @@
 # AI Oversight — Close-out Packet
 
-**Status:** Active — Sprint 391 close-out for milestone 400–409 Visual Revision Compare wrap (closed); milestone 410–419 Change-cloud Detection opens (0/10).
+**Status:** Active — Sprint 391 close-out for milestone 400–409 Visual Revision Compare wrap (8/8 closed).
 
 This file is included in the sanitized push to the public oversight repo.
 
@@ -9,8 +9,8 @@ This file is included in the sanitized push to the public oversight repo.
 ## Packet — 2026-07-06
 
 **Sprint closed:** 391  
-**Milestone closed:** 400–409 Drawing Intelligence Phase C — Visual Revision Compare (8/8 sprints, wrap closed)  
-**Milestone active:** 410–419 Drawing Intelligence Phase C — Change-cloud Detection (0/10, 0%)  
+**Milestone closed:** 400–409 Drawing Intelligence Phase C — Visual Revision Compare (8/8 sprints, wrap Sprint 391)  
+**Next milestone opens:** 410–419 Change-cloud Detection (Sprint 392)  
 **Next sprint:** 392 queued — Phase C change-cloud detection growth event contract + viewer mode foundation  
 **Validation:** Sprint Validation 3/3 consecutive green (14/0/2 per run, network/console clean) · regression suite unchanged green
 
@@ -24,7 +24,7 @@ Sprint 391 delivered milestone 400–409 Drawing Intelligence Phase C visual rev
 |---|---|
 | **currentSprint** | 391 closed (2026-07-06) |
 | **nextSprint** | 392 queued — Phase C change-cloud detection growth event contract + viewer mode foundation |
-| **Milestone progress** | 400–409 closed (wrap Sprint 391) · 410–419 opens (0/10) |
+| **Milestone progress** | 400–409 wrap closed (8/8, Sprint 391) · 410–419 opens Sprint 392 |
 | **Prior milestone** | 390–399 Pin Re-anchor & Carry-forward closed Sprint 383 |
 
 ### Validation summary
