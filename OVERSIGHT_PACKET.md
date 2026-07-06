@@ -1,6 +1,6 @@
 # AI Oversight — Close-out Packet
 
-**Status:** Active — Sprint 378 close-out for milestone 390–399 Pin Re-anchor & Carry-forward (5/10).
+**Status:** Active — Sprint 379 close-out for milestone 390–399 Pin Re-anchor & Carry-forward (6/10).
 
 This file is included in the sanitized push to the public oversight repo.
 
@@ -8,29 +8,29 @@ This file is included in the sanitized push to the public oversight repo.
 
 ## Packet — 2026-07-06
 
-**Sprint closed:** 378  
-**Milestone:** 390–399 Drawing Intelligence Phase C — Pin Re-anchor & Carry-forward (5/10, 50%)  
+**Sprint closed:** 379  
+**Milestone:** 390–399 Drawing Intelligence Phase C — Pin Re-anchor & Carry-forward (6/10, 60%)  
 **Validation:** Sprint Validation 3/3 consecutive green (14/0/2 per run, network/console clean) · regression suite unchanged green
 
 ### Summary
 
-Sprint 378 closed Phase B presentation wiring for Phase C pin re-anchor explainability: operational workspace AI panel label hint plus Decision Timeline explainability rationale summary filtered badges and Phase D playback rationale summary line. No new growth event kinds — `pin_reanchored` contract landed Sprint 374. Milestone 390–399 is at 5/10; Sprint 379 is queued with project assistant context engine entry count + label hint + AI panel context availability surfacing (same presentation pattern as prior milestones). Cross-project learning loop (Finding 6) remains undemonstrated as a chained acceptance scenario.
+Sprint 379 closed Phase B presentation wiring for Phase C pin re-anchor context surfacing: project assistant context engine timeline entry count + label hint merged into decision timeline, plus operational workspace AI panel context availability surfacing (entry count + label hint). No new growth event kinds — `pin_reanchored` contract landed Sprint 374. Milestone 390–399 is at 6/10; Sprint 380 is queued with project assistant context engine context entries aggregation + AI panel context entry item surfacing (same presentation pattern as prior milestones). Cross-project learning loop (Finding 6) remains undemonstrated as a chained acceptance scenario.
 
 ### Current sprint state
 
 | Field | Value |
 |---|---|
-| **currentSprint** | 378 closed (2026-07-06) |
-| **nextSprint** | 379 queued/running — context engine + AI panel context surfacing |
-| **Milestone progress** | 390–399 at 5/10 (50%) · wrap review Sprint 383 |
+| **currentSprint** | 379 closed (2026-07-06) |
+| **nextSprint** | 380 queued — context entries aggregation + AI panel context entry surfacing |
+| **Milestone progress** | 390–399 at 6/10 (60%) · wrap review Sprint 383 |
 | **Prior milestone** | 380–389 Revision Management & Compare closed Sprint 373 |
 
 ### Validation summary
 
-- Sprint 374–378: each 3/3 consecutive green per `validationResults.sprintValidation`
+- Sprint 374–379: each 3/3 consecutive green per `validationResults.sprintValidation`
 - Platform Certification 5/5: **stale** — last achieved 2026-06-29; recertification required before production release
 - Logical consistency self-test: passing on canonical state
-- Oversight sync: repaired 2026-07-06 — public repo reconciled from Sprint 330 lag to Sprint 378
+- Oversight sync: reconciled 2026-07-06 — public state at Sprint 379 closed; packet updated to match canonical `currentSprint`
 
 ### Open findings (7 triaged)
 
@@ -55,7 +55,7 @@ Sprint 378 closed Phase B presentation wiring for Phase C pin re-anchor explaina
 
 ### Presentation vs integration (honest)
 
-Sprints 375–379 extend the established Phase B presentation stack (timeline filter → badge → playback row → pipeline/commercial stage → explainability actor/confidence/rationale → AI panel entry count → label hint → context surfacing). Growth event contracts land in ~1 sprint per milestone; the remaining sprints wire UI surfacing only. This is valuable platform consistency but **does not** satisfy Finding 6 or the hard completion directive for 2026-07-12.
+Sprints 375–380 extend the established Phase B presentation stack (timeline filter → badge → playback row → pipeline/commercial stage → explainability actor/confidence/rationale → AI panel entry count → label hint → context surfacing). Growth event contracts land in ~1 sprint per milestone; the remaining sprints wire UI surfacing only. This is valuable platform consistency but **does not** satisfy Finding 6 or the hard completion directive for 2026-07-12.
 
 ### Hard completion directive
 
@@ -70,7 +70,7 @@ Sprints 375–379 extend the established Phase B presentation stack (timeline fi
 
 ### Deferred to next sprint
 
-- Sprint 379 context engine + AI panel context surfacing (presentation)
+- Sprint 380 context entries aggregation + AI panel context entry surfacing (presentation)
 - Finding 6 acceptance scenario sprint (integration — required for hard completion pass)
 - Migration 015 staging apply
 - Platform Certification 5/5 re-run
