@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-06",
   "currentSprint": {
-    "number": 381,
+    "number": 382,
     "status": "closed",
-    "previousClosed": 380,
+    "previousClosed": 381,
     "closedDate": "2026-07-06"
   },
   "currentMilestone": {
@@ -22,21 +22,26 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 8,
-    "percentComplete": 80,
+    "sprintsClosed": 9,
+    "percentComplete": 90,
     "nextWrapReviewSprint": 383
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Mid-milestone review — Drawing Intelligence Phase C pin re-anchor first-half completeness prep"
+      "focus": "Milestone wrap — Drawing Intelligence Phase C pin re-anchor closes"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Mid-milestone 374–378 Drawing Intelligence Phase C pin re-anchor completeness review — sprint-382-selftest.ts audits Phase C pin re-anchor stack partial (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint indicators) across operational workspace"
+      "focus": "Milestone 390–399 Drawing Intelligence Phase C — Pin Re-anchor & Carry-forward wrap completeness review — sprint-383-selftest.ts audits Phase C pin re-anchor full stack (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint + context entries + explainability context entry indicators · project assistant context engine wiring) across operational workspace"
     }
   },
   "completedWork": {
+    "sprint382": {
+      "stream2": "Mid-milestone 374–378 Drawing Intelligence Phase C pin re-anchor completeness review — sprint-382-selftest.ts audits Phase C pin re-anchor stack partial (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint indicators) across operational workspace",
+      "stream1": "Mid-milestone review — Drawing Intelligence Phase C pin re-anchor first-half completeness prep",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
     "sprint381": {
       "stream2": "Project assistant context engine Phase C pin re-anchor explainability context entry aggregation — phaseCPinReanchorExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-381-selftest.ts",
       "stream1": "Operational workspace AI panel Phase C pin re-anchor explainability context entry surfacing from project assistant context — operational-workspace-ai-panel-phase-c-pin-reanchor-explainability-context-entries · operational-workspace-ai-panel-phase-c-pin-reanchor-explainability-context-entry-item · OperationalWorkspace.tsx · sprint-381-selftest.ts",
@@ -629,6 +634,12 @@
     }
   },
   "changedFiles": {
+    "sprint382": [
+      "scripts/sprint-382-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
     "sprint355": [
       "src/platform/workspace/decisionTimelineBuilder.ts",
       "src/components/workspace/DecisionTimeline.tsx",
@@ -1688,6 +1699,7 @@
       "sprint374": "3/3 consecutive green",
       "sprint380": "3/3 consecutive green",
       "sprint381": "3/3 consecutive green",
+      "sprint382": "3/3 consecutive green",
       "sprint379": "3/3 consecutive green",
       "sprint378": "3/3 consecutive green",
       "sprint377": "3/3 consecutive green"
@@ -1714,9 +1726,9 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Sprint 381 delivered, Sprint 382 queued (milestone 390–399 active 8/10)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 381 Phase C pin re-anchor assistant explainability context entry aggregation + AI panel explainability context entry surfacing logged",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 381 closed, sprint 382 queued, milestone 390–399 active (8/10)"
+    "docs/PLATFORM_EVOLUTION.md — Sprint 382 delivered, Sprint 383 queued (milestone 390–399 active 9/10)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 382 mid-milestone 374–378 Phase C pin re-anchor completeness review logged",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 382 closed, sprint 383 queued, milestone 390–399 active (9/10)"
   ],
   "migrationsRequired": [
     {
@@ -1753,7 +1765,7 @@
       "id": "drawing-revision-provenance-gap",
       "severity": "data-integrity",
       "relatedFinding": "finding-2",
-      "description": "Drawing revision provenance + supersede invalidation full stack delivered milestones 360-369 and 370-379; Phase C revision supersede full stack delivered milestone 380-389; Phase C pin re-anchor growth event + timeline filter + playback + pipeline stage + AI panel entry count + explainability actor/confidence + viewer chrome + explainability rationale summary + AI panel label hint + project assistant context engine entry count + label hint + AI panel context availability + context entries aggregation + AI panel context entry surfacing + explainability context entry aggregation + AI panel explainability context entry surfacing live milestone 390-399 (8/10); C1 upload UI not started — milestone 390-399 active Sprint 382 queued",
+      "description": "Drawing revision provenance + supersede invalidation full stack delivered milestones 360-369 and 370-379; Phase C revision supersede full stack delivered milestone 380-389; Phase C pin re-anchor growth event + timeline filter + playback + pipeline stage + AI panel entry count + explainability actor/confidence + viewer chrome + explainability rationale summary + AI panel label hint + project assistant context engine entry count + label hint + AI panel context availability + context entries aggregation + AI panel context entry surfacing + explainability context entry aggregation + AI panel explainability context entry surfacing live milestone 390-399 (9/10); mid-milestone 374–378 partial stack audit complete Sprint 382; C1 upload UI not started — milestone 390-399 active Sprint 383 queued",
       "architectureDecisionRequired": true,
       "targetSprintOrMilestone": "Phase C pin re-anchor (390-399) + dedicated provenance sprint before production knowledge reuse"
     },
@@ -1776,26 +1788,26 @@
   ],
   "blockers": [],
   "nextSprint": {
-    "number": 382,
-    "stream2": "Mid-milestone 374–378 Drawing Intelligence Phase C pin re-anchor completeness review — sprint-382-selftest.ts audits Phase C pin re-anchor stack partial (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint indicators) across operational workspace",
-    "stream1": "Mid-milestone review — Drawing Intelligence Phase C pin re-anchor first-half completeness prep",
-    "selftest": "scripts/sprint-382-selftest.ts"
+    "number": 383,
+    "stream2": "Milestone 390–399 Drawing Intelligence Phase C — Pin Re-anchor & Carry-forward wrap completeness review — sprint-383-selftest.ts audits Phase C pin re-anchor full stack (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint + context entries + explainability context entry indicators · project assistant context engine wiring) across operational workspace",
+    "stream1": "Milestone wrap — Drawing Intelligence Phase C pin re-anchor closes",
+    "selftest": "scripts/sprint-383-selftest.ts"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-06T08:04:46.508Z",
+    "lastPushAttempt": "2026-07-06T08:05:06.995Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-06T08:04:46.508Z",
+    "verifiedAt": "2026-07-06T08:05:06.995Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-06T07:15:00.000Z",
-    "sanitizedAt": "2026-07-06T08:04:28.7949511Z",
-    "pushedAt": "2026-07-06T08:04:46.508Z",
-    "remoteHeadSha": "340ab2df9b9d19f2f13746293a17625d6046c69d",
-    "publicStateVerifiedAt": "2026-07-06T08:04:46.508Z",
+    "sanitizedAt": "2026-07-06T08:28:21.7475282Z",
+    "pushedAt": "2026-07-06T08:05:06.995Z",
+    "remoteHeadSha": "2fce9a7846ab66bfc36d5b3781a0d4f3dbbdddf6",
+    "publicStateVerifiedAt": "2026-07-06T08:05:06.995Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "8e7f10d1c617752219e55e2199d62f0b06232ca5c0f35a5334c9fa3ec8684697",
+    "publicStateContentHash": "296a8b7e0716c7d2bc2c66bd77a52a06efc26ae287a5bd01c6ab260def1bb520",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -1827,21 +1839,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "8e7f10d1c617752219e55e2199d62f0b06232ca5c0f35a5334c9fa3ec8684697",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-06T08:04:46.508Z",
-      "rawEndpointVerifiedAt": "2026-07-06T08:04:46.508Z",
-      "gitOriginVerifiedAt": "2026-07-06T08:04:46.508Z",
+      "githubApiVerifiedAt": "2026-07-06T08:05:06.995Z",
+      "rawEndpointVerifiedAt": "2026-07-06T08:05:06.995Z",
+      "gitOriginVerifiedAt": "2026-07-06T08:05:06.995Z",
       "routeContentHashes": {
-        "github-api": "8e7f10d1c617752219e55e2199d62f0b06232ca5c0f35a5334c9fa3ec8684697",
+        "github-api": "296a8b7e0716c7d2bc2c66bd77a52a06efc26ae287a5bd01c6ab260def1bb520",
         "raw-cdn": "8e7f10d1c617752219e55e2199d62f0b06232ca5c0f35a5334c9fa3ec8684697",
-        "git-origin": "8e7f10d1c617752219e55e2199d62f0b06232ca5c0f35a5334c9fa3ec8684697"
+        "git-origin": "296a8b7e0716c7d2bc2c66bd77a52a06efc26ae287a5bd01c6ab260def1bb520"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "340ab2df9b9d19f2f13746293a17625d6046c69d",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "2fce9a7846ab66bfc36d5b3781a0d4f3dbbdddf6",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 328,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -1999,7 +2011,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase C — Pin Re-anchor & Carry-forward milestone (390-399) active — Sprint 381 closed; Sprint 382 queued",
+    "phaseE": "Drawing Intelligence Phase C — Pin Re-anchor & Carry-forward milestone (390-399) active — Sprint 382 closed; Sprint 383 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -2009,6 +2021,7 @@
     "sprint378": "No new growth event kinds — operational workspace AI panel Phase C pin re-anchor label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary line for Phase C pin re-anchor audit filter scope",
     "sprint380": "No new growth event kinds — project assistant context engine Phase C pin re-anchor context entries aggregation + operational workspace AI panel context entry surfacing from project assistant context entries (phaseCPinReanchorEntries · toPhaseCPinReanchorContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint381": "No new growth event kinds — project assistant context engine Phase C pin re-anchor explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCPinReanchorExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
+    "sprint382": "No new growth event kinds — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint379": "No new growth event kinds — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (6 days remaining as of 2026-07-06)"
   },
@@ -2106,7 +2119,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 390-399 8/10 sprints closed (80%); latest growth-event sprint 374; Sprint 381 closed; Sprint 382 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 390-399 9/10 sprints closed (90%); latest growth-event sprint 374; Sprint 382 closed; Sprint 383 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -2129,6 +2142,7 @@
     "sprint378": "No new growth event kinds — operational workspace AI panel Phase C pin re-anchor label hint (distinctPhaseCPinReanchorLabels · formatDistinctPhaseCPinReanchorLabelHint) + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary line (appendExplainabilityRationaleSummaryPlaybackLine in extractPhaseCPinReanchorPlaybackRowFromTimelineEntry · explainabilityPayloadFromTimelineEntry phaseCPinReanchorPlaybackPayload scope)",
     "sprint380": "No new growth event kinds — project assistant context engine Phase C pin re-anchor context entries aggregation + operational workspace AI panel context entry surfacing from project assistant context entries (phaseCPinReanchorEntries · toPhaseCPinReanchorContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint381": "No new growth event kinds — project assistant context engine Phase C pin re-anchor explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCPinReanchorExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
+    "sprint382": "No new growth event kinds — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint379": "No new growth event kinds — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (phaseCPinReanchorTimelineEntryCount · phaseCPinReanchorLabelHint · mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)"
   },
   "knowledgeGraphImpact": {
@@ -2217,6 +2231,7 @@
     "sprint378": "No direct KG edge changes — operational workspace AI panel Phase C pin re-anchor label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary line; milestone 390-399 active (5/10)",
     "sprint380": "No direct KG edge changes — project assistant context engine Phase C pin re-anchor context entries aggregation + AI panel context entry surfacing; milestone 390-399 active (7/10)",
     "sprint381": "No direct KG edge changes — project assistant context engine Phase C pin re-anchor explainability context entry aggregation + AI panel explainability context entry surfacing; milestone 390-399 active (8/10)",
+    "sprint382": "No direct KG edge changes — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor stack partial audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators); milestone 390-399 active (9/10)",
     "sprint379": "No direct KG edge changes — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + AI panel context availability surfacing; milestone 390-399 active (6/10)"
   },
   "commercialIntelligenceImpact": {
@@ -2303,7 +2318,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase C — Pin Re-anchor & Carry-forward (390-399) active 8/10; Sprint 381 closed; Sprint 382 queued (Mid-milestone 374–378 Drawing Intelligence Phase C pin re-anchor completeness re · Mid-milestone review — Drawing Intelligence Phase C pin re-anchor first-half com)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase C — Pin Re-anchor & Carry-forward (390-399) active 9/10; Sprint 382 closed; Sprint 383 queued (Milestone 390–399 Drawing Intelligence Phase C — Pin Re-anchor & Carry-forward w · Milestone wrap — Drawing Intelligence Phase C pin re-anchor closes)",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -2331,6 +2346,7 @@
     "sprint378": "Operational workspace AI panel Phase C pin re-anchor label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback explainability rationale summary label — operational-workspace-ai-panel-phase-c-pin-reanchor-label-hint · decision-timeline-phase-c-pin-reanchor-explainability-rationale-summary · sprint-378-selftest.ts",
     "sprint380": "Project assistant context engine Phase C pin re-anchor context entries aggregation + operational workspace AI panel context entry surfacing from project assistant context entries — phaseCPinReanchorEntries · toPhaseCPinReanchorContextEntry · operational-workspace-ai-panel-phase-c-pin-reanchor-context-entries · operational-workspace-ai-panel-phase-c-pin-reanchor-context-entry-item · sprint-380-selftest.ts",
     "sprint381": "Project assistant context engine Phase C pin re-anchor explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCPinReanchorExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-pin-reanchor-explainability-context-entries · operational-workspace-ai-panel-phase-c-pin-reanchor-explainability-context-entry-item · sprint-381-selftest.ts",
+    "sprint382": "Mid-milestone 374–378 Drawing Intelligence Phase C pin re-anchor completeness review — Phase C pin re-anchor stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-382-selftest.ts",
     "sprint379": "Project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing — phaseCPinReanchorTimelineEntryCount · operational-workspace-ai-panel-phase-c-pin-reanchor-context-entry-count · sprint-379-selftest.ts"
   },
   "hardCompletionDirective": {
