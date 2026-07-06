@@ -1,41 +1,197 @@
 {
   "lastUpdated": "2026-07-06",
   "currentSprint": {
-    "number": 330,
+    "number": 378,
     "status": "closed",
-    "previousClosed": 329,
+    "previousClosed": 377,
     "closedDate": "2026-07-06"
   },
   "currentMilestone": {
-    "range": "340-349",
-    "milestoneId": "340-349",
-    "milestoneName": "Commercial Intelligence Future Project Knowledge Reuse",
+    "range": "390-399",
+    "milestoneId": "390-399",
+    "milestoneName": "Drawing Intelligence Phase C — Pin Re-anchor & Carry-forward",
     "plannedSprintCount": 10,
-    "actualSprintStart": 324,
-    "actualSprintEnd": null,
-    "wrapReviewSprint": 333,
+    "actualSprintStart": 374,
+    "actualSprintEnd": 383,
+    "wrapReviewSprint": 383,
     "status": "active",
-    "theme": "Applied-to future project relationship · cross-project knowledge portability · lessons learned application on new project starts",
-    "openedDate": "2026-07-05",
-    "previousMilestoneClosed": "330-339 (Commercial Intelligence Confidence Evolution)"
+    "theme": "Pin re-anchor/carry-forward on revision change · user validity confirmation · carry-forward audit · visual revision compare · change-cloud detection · bulk upload engine (PHASE_C_DEPENDENCY_CHECKLIST)",
+    "openedDate": "2026-07-06",
+    "previousMilestoneClosed": "380-389 (Drawing Intelligence Phase C — Revision Management & Compare)",
+    "nextMilestoneOpens": "400-409 (Drawing Intelligence Phase C — Visual Revision Compare)"
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 7,
-    "percentComplete": 70,
-    "nextWrapReviewSprint": 333
+    "sprintsClosed": 5,
+    "percentComplete": 50,
+    "nextWrapReviewSprint": 383
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Operational workspace AI panel knowledge applied to future project explainability context entry surfacing from project assistant context — operational-workspace-ai-panel-knowledge-applied-to-future-project-explainability-context-entries · OperationalWorkspace.tsx · sprint-331-selftest.ts"
+      "focus": "Operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context — operational-workspace-ai-panel-phase-c-pin-reanchor-context-entry-count · operational-workspace-ai-panel-phase-c-pin-reanchor-context-label-hint · OperationalWorkspace.tsx · sprint-379-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Project assistant context engine knowledge applied to future project explainability context entry aggregation — knowledgeAppliedToFutureProjectExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · filterDecisionTimelineToKnowledgeAppliedToFutureProjectEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-331-selftest.ts"
+      "focus": "Project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring — phaseCPinReanchorTimelineEntryCount · phaseCPinReanchorLabelHint · formatDistinctPhaseCPinReanchorLabelHint · countPhaseCPinReanchorTimelineEntries · mergePhaseCPinReanchorTimelineIntoDecisionTimeline · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-379-selftest.ts"
     }
   },
   "completedWork": {
+    "sprint378": {
+      "stream1": "Decision Timeline Phase C pin re-anchor explainability rationale summary filtered badges + Phase D playback explainability rationale summary labels — decision-timeline-phase-c-pin-reanchor-explainability-rationale-summary · decision-timeline-phase-c-pin-reanchor-playback-explainability-rationale-summary · appendExplainabilityRationaleSummaryPlaybackLine · extractPhaseCPinReanchorPlaybackRowFromTimelineEntry · explainabilityPayloadFromTimelineEntry phaseCPinReanchorPlaybackPayload scope · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-378-selftest.ts",
+      "stream2": "Operational workspace AI panel Phase C pin re-anchor label hint — operational-workspace-ai-panel-phase-c-pin-reanchor-label-hint · distinctPhaseCPinReanchorLabels · formatDistinctPhaseCPinReanchorLabelHint · OperationalWorkspace.tsx · decisionTimelineBuilder.ts · sprint-378-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint377": {
+      "stream1": "Decision Timeline Phase C pin re-anchor explainability actor/confidence filtered badges + Phase D playback explainability labels — decision-timeline-phase-c-pin-reanchor-explainability-actor · decision-timeline-phase-c-pin-reanchor-explainability-confidence · decision-timeline-phase-c-pin-reanchor-playback-explainability-actor · decision-timeline-phase-c-pin-reanchor-playback-explainability-confidence · appendExplainabilityActorPlaybackLine · appendExplainabilityConfidencePlaybackLine · extractPhaseCPinReanchorPlaybackRowFromTimelineEntry · explainabilityPayloadFromTimelineEntry phaseCPinReanchorPlaybackPayload scope · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-377-selftest.ts",
+      "stream2": "Drawing Intelligence Phase C pin re-anchor indicator in viewer chrome — phase-c-pin-reanchor-indicator · phase-c-pin-reanchor-indicator-item · phase-c-pin-reanchor-indicator-title · PhaseCPinReanchorIndicator.tsx · getPhaseCPinReanchorForRevision · subscribePhaseCPinReanchor · countPhaseCPinReanchorForRevision · phaseCPinReanchorGrowthService.ts · DrawingsModule.tsx · sprint-377-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint376": {
+      "stream1": "Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage label — decision-timeline-phase-c-pin-reanchor-pipeline-stage · decision-timeline-phase-c-pin-reanchor-playback-pipeline-stage · extractCommercialWorkflowPipelineStageLabelFromTimelineEntry phaseCPinReanchorPlaybackPayload scope · appendCommercialWorkflowPipelineStagePlaybackLine · extractPhaseCPinReanchorPlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-376-selftest.ts",
+      "stream2": "Operational workspace AI panel Phase C pin re-anchor timeline entry count indicator — operational-workspace-ai-panel-phase-c-pin-reanchor-entry-count · countHubPhaseCPinReanchorTimelineEntries · countPhaseCPinReanchorTimelineEntries · phaseCPinReanchorTimelineEntryCount · workspaceAggregatorService.ts · OperationalWorkspace.tsx · OperationalWorkspaceHost.tsx · sprint-376-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint375": {
+      "stream1": "Decision Timeline Phase C pin re-anchor Phase D playback row — decision-timeline-phase-c-pin-reanchor-playback-row-toggle · decision-timeline-phase-c-pin-reanchor-playback-row · decision-timeline-phase-c-pin-reanchor-playback-pin-id · decision-timeline-phase-c-pin-reanchor-playback-prior-anchor-revision-id · decision-timeline-phase-c-pin-reanchor-playback-new-anchor-revision-id · extractPhaseCPinReanchorPlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-375-selftest.ts",
+      "stream2": "Decision Timeline Phase C pin re-anchor commercial workflow stage filtered badge + Phase D playback commercial-stage label — decision-timeline-phase-c-pin-reanchor-commercial-workflow-stage · decision-timeline-phase-c-pin-reanchor-playback-commercial-stage · extractCommercialWorkflowStageLabelFromTimelineEntry phaseCPinReanchorPlaybackPayload scope · appendCommercialWorkflowStagePlaybackLine · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-375-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint366": {
+      "stream1": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label — decision-timeline-phase-c-revision-supersede-pipeline-stage · decision-timeline-phase-c-revision-supersede-playback-pipeline-stage · extractCommercialWorkflowPipelineStageLabelFromTimelineEntry phaseCRevisionSupersedePlaybackPayload scope · appendCommercialWorkflowPipelineStagePlaybackLine · extractPhaseCRevisionSupersedePlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-366-selftest.ts",
+      "stream2": "Operational workspace AI panel Phase C revision supersede timeline entry count indicator — operational-workspace-ai-panel-phase-c-revision-supersede-entry-count · countHubPhaseCRevisionSupersedeTimelineEntries · countPhaseCRevisionSupersedeTimelineEntries · phaseCRevisionSupersedeTimelineEntryCount · workspaceAggregatorService.ts · OperationalWorkspace.tsx · OperationalWorkspaceHost.tsx · sprint-366-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint365": {
+      "stream1": "Decision Timeline Phase C revision supersede Phase D playback row — decision-timeline-phase-c-revision-supersede-playback-row-toggle · decision-timeline-phase-c-revision-supersede-playback-row · decision-timeline-phase-c-revision-supersede-playback-drawing-revision-id · decision-timeline-phase-c-revision-supersede-playback-superseded-revision-id · decision-timeline-phase-c-revision-supersede-playback-new-current-revision-id · extractPhaseCRevisionSupersedePlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-365-selftest.ts",
+      "stream2": "Decision Timeline Phase C revision supersede commercial workflow stage filtered badge + Phase D playback commercial-stage label — decision-timeline-phase-c-revision-supersede-commercial-workflow-stage · decision-timeline-phase-c-revision-supersede-playback-commercial-stage · extractCommercialWorkflowStageLabelFromTimelineEntry phaseCRevisionSupersedePlaybackPayload scope · appendCommercialWorkflowStagePlaybackLine · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-365-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint355": {
+      "stream1": "Decision Timeline drawing revision supersede invalidation Phase D playback row — decision-timeline-drawing-revision-supersede-invalidation-playback-row-toggle · decision-timeline-drawing-revision-supersede-invalidation-playback-row · decision-timeline-drawing-revision-supersede-invalidation-playback-drawing-revision-id · decision-timeline-drawing-revision-supersede-invalidation-playback-superseded-by-revision-id · decision-timeline-drawing-revision-supersede-invalidation-playback-invalidation-scope · extractDrawingRevisionSupersedeInvalidationPlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-355-selftest.ts",
+      "stream2": "Decision Timeline drawing revision supersede invalidation commercial workflow stage filtered badge + Phase D playback commercial-stage label — decision-timeline-drawing-revision-supersede-invalidation-commercial-workflow-stage · decision-timeline-drawing-revision-supersede-invalidation-playback-commercial-stage · extractCommercialWorkflowStageLabelFromTimelineEntry drawingRevisionSupersedeInvalidationPlaybackPayload scope · appendCommercialWorkflowStagePlaybackLine · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-355-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint354": {
+      "stream2": "Commercial Intelligence drawing revision supersede invalidation growth event contract — drawing_revision_provenance_superseded · drawing_revision_provenance_invalidation_requested on Digital Brain bus · drawing_revision node kind · Construction Memory audit · timeline playback stub · DRAWING_REVISION_SUPERSEDE_INVALIDATION_JOB_DERIVATION_KINDS · drawingRevisionSupersedeInvalidationGrowthService.ts · drawingRevisionSupersedeInvalidationMemoryService.ts · drawingRevisionSupersedeInvalidationTimelinePlaybackService.ts · sprint-354-selftest.ts",
+      "stream1": "Decision Timeline drawing revision supersede invalidation timeline filter — decision-timeline-drawing-revision-supersede-invalidation-filter · decision-timeline-drawing-revision-supersede-invalidation-badge · filterDecisionTimelineToDrawingRevisionSupersedeInvalidationEntries · countDrawingRevisionSupersedeInvalidationTimelineEntries · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-354-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint353": {
+      "stream2": "Milestone 360–369 Commercial Intelligence Drawing Revision Provenance wrap completeness review — sprint-353-selftest.ts audits drawing revision provenance full stack (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint + context entries + explainability context entry indicators · project assistant context engine wiring) across operational workspace",
+      "stream1": "Milestone wrap — Commercial Intelligence Drawing Revision Provenance closes",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint352": {
+      "stream2": "Mid-milestone 344–348 Commercial Intelligence Drawing Revision Provenance completeness review — sprint-352-selftest.ts audits drawing revision provenance stack partial (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint indicators) across operational workspace",
+      "stream1": "Mid-milestone review — Commercial Intelligence Drawing Revision Provenance first-half completeness prep",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint351": {
+      "stream2": "Project assistant context engine drawing revision provenance explainability context entry aggregation — isExplainabilityEnrichedDecisionTimelineEntry · filterDecisionTimelineToDrawingRevisionProvenanceEntries · drawingRevisionProvenanceExplainabilityEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-351-selftest.ts",
+      "stream1": "Operational workspace AI panel drawing revision provenance explainability context entry surfacing from project assistant context — operational-workspace-ai-panel-drawing-revision-provenance-explainability-context-entries · operational-workspace-ai-panel-drawing-revision-provenance-explainability-context-entry-item · OperationalWorkspace.tsx · sprint-351-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint350": {
+      "stream2": "Project assistant context engine drawing revision provenance context entries aggregation — filterDecisionTimelineToDrawingRevisionProvenanceEntries · toDrawingRevisionProvenanceContextEntry · ProjectAssistantDrawingRevisionProvenanceContextEntry · drawingRevisionProvenanceEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-350-selftest.ts",
+      "stream1": "Operational workspace AI panel drawing revision provenance context entry surfacing from project assistant context entries — operational-workspace-ai-panel-drawing-revision-provenance-context-entries · operational-workspace-ai-panel-drawing-revision-provenance-context-entry-item · OperationalWorkspace.tsx · sprint-350-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint349": {
+      "stream2": "Project assistant context engine drawing revision provenance timeline entry count + label hint wiring — drawingRevisionProvenanceTimelineEntryCount · drawingRevisionProvenanceLabelHint · formatDistinctDrawingRevisionProvenanceLabelHint · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-349-selftest.ts",
+      "stream1": "Operational workspace AI panel drawing revision provenance context availability surfacing from project assistant context — operational-workspace-ai-panel-drawing-revision-provenance-context-entry-count · operational-workspace-ai-panel-drawing-revision-provenance-context-label-hint · OperationalWorkspace.tsx · sprint-349-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint348": {
+      "stream2": "Operational workspace AI panel drawing revision provenance label hint — operational-workspace-ai-panel-drawing-revision-provenance-label-hint · distinctDrawingRevisionProvenanceLabels · formatDistinctDrawingRevisionProvenanceLabelHint · OperationalWorkspace.tsx · decisionTimelineBuilder.ts · sprint-348-selftest.ts",
+      "stream1": "Decision Timeline drawing revision provenance explainability rationale summary filtered badges + Phase D playback explainability labels — decision-timeline-drawing-revision-provenance-explainability-rationale-summary · decision-timeline-drawing-revision-provenance-playback-explainability-rationale-summary · appendExplainabilityRationaleSummaryPlaybackLine · extractDrawingRevisionProvenancePlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-348-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint347": {
+      "stream2": "Commercial Intelligence drawing revision provenance indicator in viewer chrome — drawing-revision-provenance-indicator · drawing-revision-provenance-indicator-item · drawing-revision-provenance-indicator-title · DrawingRevisionProvenanceIndicator.tsx · getDrawingRevisionProvenanceForRevision · subscribeDrawingRevisionProvenance · countDrawingRevisionProvenanceForRevision · drawingRevisionProvenanceGrowthService.ts · DrawingsModule.tsx · sprint-347-selftest.ts",
+      "stream1": "Decision Timeline drawing revision provenance explainability actor/confidence filtered badges + Phase D playback explainability labels — decision-timeline-drawing-revision-provenance-explainability-actor · decision-timeline-drawing-revision-provenance-explainability-confidence · decision-timeline-drawing-revision-provenance-playback-explainability-actor · decision-timeline-drawing-revision-provenance-playback-explainability-confidence · appendExplainabilityActorPlaybackLine · appendExplainabilityConfidencePlaybackLine · extractDrawingRevisionProvenancePlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-347-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint346": {
+      "stream2": "Decision Timeline drawing revision provenance pipeline stage filtered badge + Phase D playback pipeline-stage label — decision-timeline-drawing-revision-provenance-pipeline-stage · decision-timeline-drawing-revision-provenance-playback-pipeline-stage · extractCommercialWorkflowPipelineStageLabelFromTimelineEntry drawingRevisionProvenancePlaybackPayload scope · appendCommercialWorkflowPipelineStagePlaybackLine · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-346-selftest.ts",
+      "stream1": "Operational workspace AI panel drawing revision provenance timeline entry count indicator — operational-workspace-ai-panel-drawing-revision-provenance-entry-count · countHubDrawingRevisionProvenanceTimelineEntries · countDrawingRevisionProvenanceTimelineEntries · drawingRevisionProvenanceTimelineEntryCount · workspaceAggregatorService.ts · OperationalWorkspace.tsx · OperationalWorkspaceHost.tsx · sprint-346-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint345": {
+      "stream2": "Decision Timeline drawing revision provenance commercial workflow stage filtered badge + Phase D playback commercial-stage label — decision-timeline-drawing-revision-provenance-commercial-workflow-stage · decision-timeline-drawing-revision-provenance-playback-commercial-stage · extractCommercialWorkflowStageLabelFromTimelineEntry drawingRevisionProvenancePlaybackPayload scope · appendCommercialWorkflowStagePlaybackLine · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-345-selftest.ts",
+      "stream1": "Decision Timeline drawing revision provenance Phase D playback row — decision-timeline-drawing-revision-provenance-playback-row-toggle · decision-timeline-drawing-revision-provenance-playback-row · decision-timeline-drawing-revision-provenance-playback-drawing-revision-id · decision-timeline-drawing-revision-provenance-playback-sheet-id · decision-timeline-drawing-revision-provenance-playback-source-revision-ids · decision-timeline-drawing-revision-provenance-playback-registered-at · extractDrawingRevisionProvenancePlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-345-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint344": {
+      "stream2": "Commercial Intelligence drawing revision provenance growth event contract — drawing_revision_provenance_registered · drawing_revision_provenance_source_linked on Digital Brain bus · drawing_revision node kind · Construction Memory audit · timeline playback stub · DRAWING_REVISION_PROVENANCE_JOB_DERIVATION_KINDS · drawingRevisionProvenanceGrowthService.ts · drawingRevisionProvenanceMemoryService.ts · drawingRevisionProvenanceTimelinePlaybackService.ts · sprint-344-selftest.ts",
+      "stream1": "Decision Timeline drawing revision provenance timeline filter — decision-timeline-drawing-revision-provenance-filter · decision-timeline-drawing-revision-provenance-badge · decision-timeline-drawing-revision-provenance-event-type · filterDecisionTimelineToDrawingRevisionProvenanceEntries · countDrawingRevisionProvenanceTimelineEntries · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-344-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint343": {
+      "stream2": "Milestone 350–359 Commercial Intelligence Knowledge Graph Integration wrap completeness review — sprint-343-selftest.ts audits knowledge graph template entity full stack (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint + context entries + explainability context entry indicators · project assistant context engine wiring) across operational workspace",
+      "stream1": "Milestone wrap — Commercial Intelligence Knowledge Graph Integration closes",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint342": {
+      "stream2": "Mid-milestone 334–338 Commercial Intelligence Knowledge Graph Integration completeness review — sprint-342-selftest.ts audits knowledge graph template entity stack partial (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint indicators) across operational workspace",
+      "stream1": "Mid-milestone review — Commercial Intelligence Knowledge Graph Integration first-half completeness prep",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint341": {
+      "stream2": "Project assistant context engine knowledge graph template entity explainability context entry aggregation — isExplainabilityEnrichedDecisionTimelineEntry · filterDecisionTimelineToKnowledgeTemplateEntityEntries · knowledgeTemplateEntityExplainabilityEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-341-selftest.ts",
+      "stream1": "Operational workspace AI panel knowledge graph template entity explainability context entry surfacing from project assistant context — operational-workspace-ai-panel-knowledge-template-entity-explainability-context-entries · OperationalWorkspace.tsx · sprint-341-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint340": {
+      "stream2": "Project assistant context engine knowledge graph template entity context entries aggregation — filterDecisionTimelineToKnowledgeTemplateEntityEntries · toKnowledgeTemplateEntityContextEntry · ProjectAssistantKnowledgeTemplateEntityContextEntry · knowledgeTemplateEntityEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-340-selftest.ts",
+      "stream1": "Operational workspace AI panel knowledge graph template entity context entry surfacing from project assistant context entries — operational-workspace-ai-panel-knowledge-template-entity-context-entries · operational-workspace-ai-panel-knowledge-template-entity-context-entry-item · OperationalWorkspace.tsx · sprint-340-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint339": {
+      "stream2": "Project assistant context engine knowledge graph template entity timeline entry count + label hint wiring — knowledgeTemplateEntityTimelineEntryCount · knowledgeTemplateEntityLabelHint · formatDistinctKnowledgeTemplateEntityLabelHint · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-339-selftest.ts",
+      "stream1": "Operational workspace AI panel knowledge graph template entity context availability surfacing from project assistant context — operational-workspace-ai-panel-knowledge-template-entity-context-entry-count · operational-workspace-ai-panel-knowledge-template-entity-context-label-hint · OperationalWorkspace.tsx · sprint-339-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint338": {
+      "stream2": "Operational workspace AI panel knowledge graph template entity label hint — operational-workspace-ai-panel-knowledge-template-entity-label-hint · distinctKnowledgeTemplateEntityLabels · formatDistinctKnowledgeTemplateEntityLabelHint · OperationalWorkspace.tsx · decisionTimelineBuilder.ts · sprint-338-selftest.ts",
+      "stream1": "Decision Timeline knowledge graph template entity explainability rationale summary filtered badges + Phase D playback explainability labels — decision-timeline-knowledge-template-entity-explainability-rationale-summary · decision-timeline-knowledge-template-entity-playback-explainability-rationale-summary · appendExplainabilityRationaleSummaryPlaybackLine · extractKnowledgeTemplateEntityPlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-338-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint337": {
+      "stream2": "Commercial Intelligence knowledge graph template entity indicator in viewer chrome — knowledge-graph-template-entity-indicator · knowledge-graph-template-entity-indicator-item · knowledge-graph-template-entity-indicator-title · KnowledgeGraphTemplateEntityIndicator.tsx · getKnowledgeTemplateEntityForRevision · subscribeKnowledgeTemplateEntity · countKnowledgeTemplateEntityForRevision · knowledgeTemplateEntityGrowthService.ts · DrawingsModule.tsx · sprint-337-selftest.ts",
+      "stream1": "Decision Timeline knowledge graph template entity explainability actor/confidence filtered badges + Phase D playback explainability labels — decision-timeline-knowledge-template-entity-explainability-actor · decision-timeline-knowledge-template-entity-explainability-confidence · decision-timeline-knowledge-template-entity-playback-explainability-actor · decision-timeline-knowledge-template-entity-playback-explainability-confidence · appendExplainabilityActorPlaybackLine · appendExplainabilityConfidencePlaybackLine · extractKnowledgeTemplateEntityPlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-337-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint336": {
+      "stream2": "Decision Timeline knowledge graph template entity pipeline stage filtered badge + Phase D playback pipeline-stage label — decision-timeline-knowledge-template-entity-pipeline-stage · decision-timeline-knowledge-template-entity-playback-pipeline-stage · extractCommercialWorkflowPipelineStageLabelFromTimelineEntry knowledgeTemplateEntityPlaybackPayload scope · appendCommercialWorkflowPipelineStagePlaybackLine · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-336-selftest.ts",
+      "stream1": "Operational workspace AI panel knowledge graph template entity timeline entry count indicator — operational-workspace-ai-panel-knowledge-template-entity-entry-count · countHubKnowledgeTemplateEntityTimelineEntries · countKnowledgeTemplateEntityTimelineEntries · knowledgeTemplateEntityTimelineEntryCount · workspaceAggregatorService.ts · OperationalWorkspace.tsx · OperationalWorkspaceHost.tsx · sprint-336-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint335": {
+      "stream2": "Decision Timeline knowledge graph template entity commercial workflow stage filtered badge + Phase D playback commercial-stage label — decision-timeline-knowledge-template-entity-commercial-workflow-stage · decision-timeline-knowledge-template-entity-playback-commercial-stage · extractCommercialWorkflowStageLabelFromTimelineEntry knowledgeTemplateEntityPlaybackPayload scope · appendCommercialWorkflowStagePlaybackLine · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-335-selftest.ts",
+      "stream1": "Decision Timeline knowledge graph template entity Phase D playback row — decision-timeline-knowledge-template-entity-playback-row-toggle · decision-timeline-knowledge-template-entity-playback-row · decision-timeline-knowledge-template-entity-playback-template-id · decision-timeline-knowledge-template-entity-playback-node-id · decision-timeline-knowledge-template-entity-playback-provenance-type · decision-timeline-knowledge-template-entity-playback-edge-kind · decision-timeline-knowledge-template-entity-playback-registered-at · extractKnowledgeTemplateEntityPlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-335-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint334": {
+      "stream2": "Commercial Intelligence Knowledge Graph KnowledgeTemplate entity growth event contract — knowledge_template_entity_registered · knowledge_template_entity_provenance_linked on Digital Brain bus · knowledge_template node kind · Construction Memory audit · timeline playback stub · KNOWLEDGE_TEMPLATE_ENTITY_JOB_DERIVATION_KINDS · knowledgeTemplateEntityGrowthService.ts · knowledgeTemplateEntityMemoryService.ts · knowledgeTemplateEntityTimelinePlaybackService.ts · sprint-334-selftest.ts",
+      "stream1": "Decision Timeline knowledge graph template entity timeline filter — decision-timeline-knowledge-template-entity-filter · decision-timeline-knowledge-template-entity-badge · decision-timeline-knowledge-template-entity-event-type · filterDecisionTimelineToKnowledgeTemplateEntityEntries · countKnowledgeTemplateEntityTimelineEntries · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-334-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint333": {
+      "stream2": "Milestone 340–349 Commercial Intelligence Future Project Knowledge Reuse wrap completeness review — sprint-333-selftest.ts audits knowledge applied to future project full stack (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint + context entries + explainability context entry indicators · project assistant context engine wiring) across operational workspace",
+      "stream1": "Milestone wrap — Commercial Intelligence Future Project Knowledge Reuse closes",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint332": {
+      "stream2": "Mid-milestone 324–328 Commercial Intelligence Future Project Knowledge Reuse completeness review — sprint-332-selftest.ts audits knowledge applied to future project stack partial (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint indicators) across operational workspace",
+      "stream1": "Mid-milestone review — Commercial Intelligence Future Project Knowledge Reuse first-half completeness prep",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint331": {
+      "stream2": "Project assistant context engine knowledge applied to future project explainability context entry aggregation — isExplainabilityEnrichedDecisionTimelineEntry · filterDecisionTimelineToKnowledgeAppliedToFutureProjectEntries · knowledgeAppliedToFutureProjectExplainabilityEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-331-selftest.ts",
+      "stream1": "Operational workspace AI panel knowledge applied to future project explainability context entry surfacing from project assistant context — operational-workspace-ai-panel-knowledge-applied-to-future-project-explainability-context-entries · OperationalWorkspace.tsx · sprint-331-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
     "sprint330": {
       "stream2": "Project assistant context engine knowledge applied to future project context entries aggregation — filterDecisionTimelineToKnowledgeAppliedToFutureProjectEntries · toKnowledgeAppliedToFutureProjectContextEntry · ProjectAssistantKnowledgeAppliedToFutureProjectContextEntry · knowledgeAppliedToFutureProjectEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-330-selftest.ts",
       "stream1": "Operational workspace AI panel knowledge applied to future project context entry surfacing from project assistant context entries — operational-workspace-ai-panel-knowledge-applied-to-future-project-context-entries · operational-workspace-ai-panel-knowledge-applied-to-future-project-context-entry-item · OperationalWorkspace.tsx · sprint-330-selftest.ts",
@@ -370,9 +526,202 @@
       "stream2": "Commercial Intelligence knowledge template publication growth event contract â€” knowledgeTemplatePublicationGrowthService.ts Â· knowledgeTemplatePublicationMemoryService.ts Â· knowledgeTemplatePublicationTimelinePlaybackService.ts Â· knowledge_template_publication_published Â· knowledge_template_publication_failed Â· KNOWLEDGE_TEMPLATE_PUBLICATION_JOB_DERIVATION_KINDS",
       "stream1": "Decision Timeline knowledge template publication timeline filter â€” decision-timeline-knowledge-template-publication-filter Â· decision-timeline-knowledge-template-publication-badge Â· decision-timeline-knowledge-template-publication-event-type Â· filterDecisionTimelineToKnowledgeTemplatePublicationEntries Â· countKnowledgeTemplatePublicationTimelineEntries",
       "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint364": {
+      "stream2": "Phase C revision supersede growth event contract — revision_added · sheet_superseded on Digital Brain bus · drawing_revision node kind · Construction Memory audit · timeline playback stub · PHASE_C_REVISION_SUPERSEDE_JOB_DERIVATION_KINDS · phaseCRevisionSupersedeGrowthService.ts · phaseCRevisionSupersedeMemoryService.ts · phaseCRevisionSupersedeTimelinePlaybackService.ts · sprint-364-selftest.ts",
+      "stream1": "Decision Timeline Phase C revision supersede timeline filter — decision-timeline-phase-c-revision-supersede-filter · decision-timeline-phase-c-revision-supersede-badge · filterDecisionTimelineToPhaseCRevisionSupersedeEntries · countPhaseCRevisionSupersedeTimelineEntries · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-364-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint363": {
+      "stream2": "Milestone 370–379 Commercial Intelligence Drawing Revision Supersede Invalidation wrap completeness review — sprint-363-selftest.ts audits supersede invalidation full stack (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint + context entries + explainability context entry indicators · project assistant context engine wiring) across operational workspace",
+      "stream1": "Milestone wrap — Commercial Intelligence Drawing Revision Supersede Invalidation closes",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint362": {
+      "stream2": "Mid-milestone 354–358 Commercial Intelligence Drawing Revision Supersede Invalidation completeness review — sprint-362-selftest.ts audits supersede invalidation stack partial (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint indicators) across operational workspace",
+      "stream1": "Mid-milestone review — Commercial Intelligence Drawing Revision Supersede Invalidation first-half completeness prep",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint361": {
+      "stream2": "Project assistant context engine drawing revision supersede invalidation explainability context entry aggregation — isExplainabilityEnrichedDecisionTimelineEntry · filterDecisionTimelineToDrawingRevisionSupersedeInvalidationEntries · drawingRevisionSupersedeInvalidationExplainabilityEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-361-selftest.ts",
+      "stream1": "Operational workspace AI panel drawing revision supersede invalidation explainability context entry surfacing from project assistant context — operational-workspace-ai-panel-drawing-revision-supersede-invalidation-explainability-context-entries · operational-workspace-ai-panel-drawing-revision-supersede-invalidation-explainability-context-entry-item · OperationalWorkspace.tsx · sprint-361-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint360": {
+      "stream2": "Project assistant context engine drawing revision supersede invalidation context entries aggregation — filterDecisionTimelineToDrawingRevisionSupersedeInvalidationEntries · toDrawingRevisionSupersedeInvalidationContextEntry · ProjectAssistantDrawingRevisionSupersedeInvalidationContextEntry · drawingRevisionSupersedeInvalidationEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-360-selftest.ts",
+      "stream1": "Operational workspace AI panel drawing revision supersede invalidation context entry surfacing from project assistant context entries — operational-workspace-ai-panel-drawing-revision-supersede-invalidation-context-entries · operational-workspace-ai-panel-drawing-revision-supersede-invalidation-context-entry-item · OperationalWorkspace.tsx · sprint-360-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint359": {
+      "stream2": "Project assistant context engine drawing revision supersede invalidation timeline entry count + label hint wiring — drawingRevisionSupersedeInvalidationTimelineEntryCount · drawingRevisionSupersedeInvalidationLabelHint · formatDistinctDrawingRevisionSupersedeInvalidationLabelHint · countDrawingRevisionSupersedeInvalidationTimelineEntries · mergeDrawingRevisionSupersedeInvalidationTimelineIntoDecisionTimeline · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-359-selftest.ts",
+      "stream1": "Operational workspace AI panel drawing revision supersede invalidation context availability surfacing from project assistant context — operational-workspace-ai-panel-drawing-revision-supersede-invalidation-context-entry-count · operational-workspace-ai-panel-drawing-revision-supersede-invalidation-context-label-hint · OperationalWorkspace.tsx · sprint-359-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint358": {
+      "stream1": "Decision Timeline drawing revision supersede invalidation explainability rationale summary filtered badges + Phase D playback explainability rationale summary labels — decision-timeline-drawing-revision-supersede-invalidation-explainability-rationale-summary · decision-timeline-drawing-revision-supersede-invalidation-playback-explainability-rationale-summary · appendExplainabilityRationaleSummaryPlaybackLine · extractDrawingRevisionSupersedeInvalidationPlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-358-selftest.ts",
+      "stream2": "Operational workspace AI panel drawing revision supersede invalidation label hint — operational-workspace-ai-panel-drawing-revision-supersede-invalidation-label-hint · distinctDrawingRevisionSupersedeInvalidationLabels · formatDistinctDrawingRevisionSupersedeInvalidationLabelHint · OperationalWorkspace.tsx · decisionTimelineBuilder.ts · sprint-358-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint357": {
+      "stream1": "Decision Timeline drawing revision supersede invalidation explainability actor/confidence filtered badges + Phase D playback explainability labels — decision-timeline-drawing-revision-supersede-invalidation-explainability-actor · decision-timeline-drawing-revision-supersede-invalidation-explainability-confidence · decision-timeline-drawing-revision-supersede-invalidation-playback-explainability-actor · decision-timeline-drawing-revision-supersede-invalidation-playback-explainability-confidence · appendExplainabilityActorPlaybackLine · appendExplainabilityConfidencePlaybackLine · extractDrawingRevisionSupersedeInvalidationPlaybackRowFromTimelineEntry · explainabilityPayloadFromTimelineEntry drawingRevisionSupersedeInvalidationPlaybackPayload scope · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-357-selftest.ts",
+      "stream2": "Commercial Intelligence drawing revision supersede invalidation indicator in viewer chrome — drawing-revision-supersede-invalidation-indicator · drawing-revision-supersede-invalidation-indicator-item · drawing-revision-supersede-invalidation-indicator-title · DrawingRevisionSupersedeInvalidationIndicator.tsx · getDrawingRevisionSupersedeInvalidationForRevision · subscribeDrawingRevisionSupersedeInvalidation · countDrawingRevisionSupersedeInvalidationForRevision · drawingRevisionSupersedeInvalidationGrowthService.ts · DrawingsModule.tsx · sprint-357-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint356": {
+      "stream1": "Decision Timeline drawing revision supersede invalidation pipeline stage filtered badge + Phase D playback pipeline-stage label — decision-timeline-drawing-revision-supersede-invalidation-pipeline-stage · decision-timeline-drawing-revision-supersede-invalidation-playback-pipeline-stage · extractCommercialWorkflowPipelineStageLabelFromTimelineEntry drawingRevisionSupersedeInvalidationPlaybackPayload scope · appendCommercialWorkflowPipelineStagePlaybackLine · extractDrawingRevisionSupersedeInvalidationPlaybackRowFromTimelineEntry · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-356-selftest.ts",
+      "stream2": "Operational workspace AI panel drawing revision supersede invalidation timeline entry count indicator — operational-workspace-ai-panel-drawing-revision-supersede-invalidation-entry-count · countHubDrawingRevisionSupersedeInvalidationTimelineEntries · countDrawingRevisionSupersedeInvalidationTimelineEntries · drawingRevisionSupersedeInvalidationTimelineEntryCount · workspaceAggregatorService.ts · OperationalWorkspace.tsx · OperationalWorkspaceHost.tsx · sprint-356-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint372": {
+      "stream2": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — sprint-372-selftest.ts audits Phase C revision supersede stack partial (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint indicators) across operational workspace",
+      "stream1": "Mid-milestone review — Drawing Intelligence Phase C revision supersede first-half completeness prep",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint371": {
+      "stream2": "Project assistant context engine Phase C revision supersede explainability context entry aggregation — isExplainabilityEnrichedDecisionTimelineEntry · filterDecisionTimelineToPhaseCRevisionSupersedeEntries · phaseCRevisionSupersedeExplainabilityEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-371-selftest.ts",
+      "stream1": "Operational workspace AI panel Phase C revision supersede explainability context entry surfacing from project assistant context — operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · OperationalWorkspace.tsx · sprint-371-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint370": {
+      "stream2": "Project assistant context engine Phase C revision supersede context entries aggregation — filterDecisionTimelineToPhaseCRevisionSupersedeEntries · toPhaseCRevisionSupersedeContextEntry · ProjectAssistantPhaseCRevisionSupersedeContextEntry · phaseCRevisionSupersedeEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-370-selftest.ts",
+      "stream1": "Operational workspace AI panel Phase C revision supersede context entry surfacing from project assistant context entries — operational-workspace-ai-panel-phase-c-revision-supersede-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-context-entry-item · OperationalWorkspace.tsx · sprint-370-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint369": {
+      "stream2": "Project assistant context engine Phase C revision supersede timeline entry count + label hint wiring — phaseCRevisionSupersedeTimelineEntryCount · phaseCRevisionSupersedeLabelHint · formatDistinctPhaseCRevisionSupersedeLabelHint · countPhaseCRevisionSupersedeTimelineEntries · mergePhaseCRevisionSupersedeTimelineIntoDecisionTimeline · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-369-selftest.ts",
+      "stream1": "Operational workspace AI panel Phase C revision supersede context availability surfacing from project assistant context — operational-workspace-ai-panel-phase-c-revision-supersede-context-entry-count · operational-workspace-ai-panel-phase-c-revision-supersede-context-label-hint · OperationalWorkspace.tsx · sprint-369-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint368": {
+      "stream1": "Decision Timeline Phase C revision supersede explainability rationale summary filtered badges + Phase D playback explainability rationale summary labels — decision-timeline-phase-c-revision-supersede-explainability-rationale-summary · decision-timeline-phase-c-revision-supersede-playback-explainability-rationale-summary · appendExplainabilityRationaleSummaryPlaybackLine · extractPhaseCRevisionSupersedePlaybackRowFromTimelineEntry · explainabilityPayloadFromTimelineEntry phaseCRevisionSupersedePlaybackPayload scope · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-368-selftest.ts",
+      "stream2": "Operational workspace AI panel Phase C revision supersede label hint — operational-workspace-ai-panel-phase-c-revision-supersede-label-hint · distinctPhaseCRevisionSupersedeLabels · formatDistinctPhaseCRevisionSupersedeLabelHint · OperationalWorkspace.tsx · decisionTimelineBuilder.ts · sprint-368-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint367": {
+      "stream1": "Decision Timeline Phase C revision supersede explainability actor/confidence filtered badges + Phase D playback explainability labels — decision-timeline-phase-c-revision-supersede-explainability-actor · decision-timeline-phase-c-revision-supersede-explainability-confidence · decision-timeline-phase-c-revision-supersede-playback-explainability-actor · decision-timeline-phase-c-revision-supersede-playback-explainability-confidence · appendExplainabilityActorPlaybackLine · appendExplainabilityConfidencePlaybackLine · extractPhaseCRevisionSupersedePlaybackRowFromTimelineEntry · explainabilityPayloadFromTimelineEntry phaseCRevisionSupersedePlaybackPayload scope · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-367-selftest.ts",
+      "stream2": "Drawing Intelligence Phase C revision supersede indicator in viewer chrome — phase-c-revision-supersede-indicator · phase-c-revision-supersede-indicator-item · phase-c-revision-supersede-indicator-title · PhaseCRevisionSupersedeIndicator.tsx · getPhaseCRevisionSupersedeForRevision · subscribePhaseCRevisionSupersede · countPhaseCRevisionSupersedeForRevision · phaseCRevisionSupersedeGrowthService.ts · DrawingsModule.tsx · sprint-367-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint373": {
+      "stream2": "Milestone 380–389 Drawing Intelligence Phase C — Revision Management & Compare wrap completeness review — sprint-373-selftest.ts audits Phase C revision supersede full stack (growth events · Memory audit · viewer chrome · Decision Timeline filter + Phase D playback + pipeline stage · explainability audit badges · AI panel entry count + label hint + context entries + explainability context entry indicators · project assistant context engine wiring) across operational workspace",
+      "stream1": "Milestone wrap — Drawing Intelligence Phase C revision supersede closes",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
+    },
+    "sprint374": {
+      "stream1": "Decision Timeline Phase C pin re-anchor timeline filter — decision-timeline-phase-c-pin-reanchor-filter · decision-timeline-phase-c-pin-reanchor-badge · filterDecisionTimelineToPhaseCPinReanchorEntries · countPhaseCPinReanchorTimelineEntries · DecisionTimeline.tsx · decisionTimelineBuilder.ts · sprint-374-selftest.ts",
+      "stream2": "Phase C pin re-anchor growth event contract — pin_reanchored on Digital Brain bus · pin node kind · Construction Memory audit · timeline playback stub · PHASE_C_PIN_REANCHOR_JOB_DERIVATION_KINDS · phaseCPinReanchorGrowthService.ts · phaseCPinReanchorMemoryService.ts · phaseCPinReanchorTimelinePlaybackService.ts · sprint-374-selftest.ts",
+      "validation": "Sprint Validation 3/3 consecutive (14/0/2 per run, network/console clean)"
     }
   },
   "changedFiles": {
+    "sprint355": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/sprint-355-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint354": [
+      "src/types/commercialIntelligence.ts",
+      "src/types/projectDigitalBrain.ts",
+      "src/types/operationalWorkspace.ts",
+      "[REDACTED-path]",
+      "[REDACTED-path]",
+      "[REDACTED-path]",
+      "src/platform/digitalBrain/digitalBrainJobDerivation.ts",
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/sprint-354-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint353": [
+      "scripts/sprint-353-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint352": [
+      "scripts/sprint-352-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint351": [
+      "src/types/projectAssistantContext.ts",
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-351-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint350": [
+      "src/types/projectAssistantContext.ts",
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-350-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint349": [
+      "src/types/projectAssistantContext.ts",
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-349-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint348": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-348-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint347": [
+      "[REDACTED-path]",
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "[REDACTED-path]",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "[REDACTED-path]",
+      "scripts/sprint-347-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint346": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/platform/workspace/workspaceAggregatorService.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "src/components/workspace/OperationalWorkspaceHost.tsx",
+      "src/types/operationalWorkspace.ts",
+      "scripts/sprint-346-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint345": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/sprint-345-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint343": [
+      "scripts/sprint-343-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
     "sprint330": [
       "src/types/projectAssistantContext.ts",
       "src/platform/assistant/projectAssistantContextEngine.ts",
@@ -433,6 +782,81 @@
       "src/types/projectDigitalBrain.ts",
       "src/types/operationalWorkspace.ts",
       "scripts/sprint-324-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint342": [
+      "scripts/sprint-342-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint338": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-338-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint337": [
+      "src/platform/commercial/knowledgeTemplateEntityGrowthService.ts",
+      "[REDACTED-path]",
+      "[REDACTED-path]",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/types/projectDigitalBrain.ts",
+      "scripts/sprint-337-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint336": [
+      "src/platform/workspace/workspaceAggregatorService.ts",
+      "src/types/operationalWorkspace.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "src/components/workspace/OperationalWorkspaceHost.tsx",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/sprint-336-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint335": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/sprint-335-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint334": [
+      "src/types/constructionKnowledgeGraph.ts",
+      "src/types/commercialIntelligence.ts",
+      "src/types/projectDigitalBrain.ts",
+      "src/types/operationalWorkspace.ts",
+      "src/platform/commercial/knowledgeTemplateEntityGrowthService.ts",
+      "src/platform/memory/knowledgeTemplateEntityMemoryService.ts",
+      "src/platform/memory/knowledgeTemplateEntityTimelinePlaybackService.ts",
+      "src/platform/digitalBrain/digitalBrainJobDerivation.ts",
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/platform/workspace/workspaceAggregatorService.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/sprint-334-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint333": [
+      "scripts/sprint-333-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint332": [
+      "scripts/sprint-332-selftest.ts",
       "docs/PLATFORM_EVOLUTION.md",
       "docs/PHASE_B_UX_ACCEPTANCE.md",
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
@@ -884,10 +1308,233 @@
       "scripts/sprint-264-selftest.ts",
       "docs/PLATFORM_EVOLUTION.md",
       "docs/PHASE_B_UX_ACCEPTANCE.md"
+    ],
+    "sprint364": [
+      "[REDACTED-path]",
+      "src/types/projectDigitalBrain.ts",
+      "src/types/operationalWorkspace.ts",
+      "[REDACTED-path]",
+      "src/platform/memory/phaseCRevisionSupersedeMemoryService.ts",
+      "src/platform/memory/phaseCRevisionSupersedeTimelinePlaybackService.ts",
+      "src/platform/digitalBrain/digitalBrainJobDerivation.ts",
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/platform/workspace/workspaceAggregatorService.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/sprint-364-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint366": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/platform/workspace/workspaceAggregatorService.ts",
+      "src/types/operationalWorkspace.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "src/components/workspace/OperationalWorkspaceHost.tsx",
+      "scripts/sprint-366-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint365": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/sprint-365-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint363": [
+      "scripts/sprint-363-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint362": [
+      "scripts/sprint-362-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint361": [
+      "src/types/projectAssistantContext.ts",
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-361-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint360": [
+      "src/types/projectAssistantContext.ts",
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-360-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint359": [
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/types/projectAssistantContext.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-359-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint358": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-358-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint357": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "[REDACTED-path]",
+      "[REDACTED-path]",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "[REDACTED-path]",
+      "scripts/sprint-357-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint356": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/platform/workspace/workspaceAggregatorService.ts",
+      "src/types/operationalWorkspace.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "src/components/workspace/OperationalWorkspaceHost.tsx",
+      "scripts/sprint-356-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint372": [
+      "scripts/sprint-372-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint371": [
+      "src/types/projectAssistantContext.ts",
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-371-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint370": [
+      "src/types/projectAssistantContext.ts",
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-370-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint369": [
+      "src/types/projectAssistantContext.ts",
+      "src/platform/assistant/projectAssistantContextEngine.ts",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-369-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint368": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-368-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint367": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "[REDACTED-path]",
+      "[REDACTED-path]",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "[REDACTED-path]",
+      "scripts/sprint-367-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint373": [
+      "scripts/sprint-373-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint376": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "src/components/workspace/OperationalWorkspaceHost.tsx",
+      "scripts/sprint-376-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint375": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/sprint-375-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint374": [
+      "[REDACTED-path]",
+      "src/types/projectDigitalBrain.ts",
+      "src/types/operationalWorkspace.ts",
+      "[REDACTED-path]",
+      "src/platform/memory/phaseCPinReanchorMemoryService.ts",
+      "src/platform/memory/phaseCPinReanchorTimelinePlaybackService.ts",
+      "src/platform/digitalBrain/digitalBrainJobDerivation.ts",
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/platform/workspace/workspaceAggregatorService.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/sprint-374-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint378": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/components/workspace/OperationalWorkspace.tsx",
+      "scripts/sprint-378-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
+    ],
+    "sprint377": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "[REDACTED-path]",
+      "[REDACTED-path]",
+      "scripts/sprint-377-selftest.ts",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json"
     ]
   },
   "validationResults": {
     "sprintValidation": {
+      "sprint355": "3/3 consecutive green",
+      "sprint354": "3/3 consecutive green",
+      "sprint353": "3/3 consecutive green",
+      "sprint352": "3/3 consecutive green",
       "gate": "PHASE_B_RUNS=3",
       "sprint299": "3/3 consecutive green",
       "sprint298": "3/3 consecutive green",
@@ -903,6 +1550,27 @@
       "sprint307": "3/3 consecutive green",
       "sprint316": "3/3 consecutive green",
       "sprint317": "3/3 consecutive green",
+      "sprint339": "3/3 consecutive green",
+      "sprint351": "3/3 consecutive green",
+      "sprint350": "3/3 consecutive green",
+      "sprint349": "3/3 consecutive green",
+      "sprint348": "3/3 consecutive green",
+      "sprint347": "3/3 consecutive green",
+      "sprint346": "3/3 consecutive green",
+      "sprint345": "3/3 consecutive green",
+      "sprint344": "3/3 consecutive green",
+      "sprint343": "3/3 consecutive green",
+      "sprint342": "3/3 consecutive green",
+      "sprint341": "3/3 consecutive green",
+      "sprint340": "3/3 consecutive green",
+      "sprint338": "3/3 consecutive green",
+      "sprint337": "3/3 consecutive green",
+      "sprint336": "3/3 consecutive green",
+      "sprint335": "3/3 consecutive green",
+      "sprint334": "3/3 consecutive green",
+      "sprint333": "3/3 consecutive green",
+      "sprint332": "3/3 consecutive green",
+      "sprint331": "3/3 consecutive green",
       "sprint330": "3/3 consecutive green",
       "sprint329": "3/3 consecutive green",
       "sprint328": "3/3 consecutive green",
@@ -954,14 +1622,37 @@
       "sprint266": "3/3 consecutive green",
       "sprint265": "3/3 consecutive green",
       "sprint264": "3/3 consecutive green",
-      "regressionSuite": "scripts/phase-b-wynyard-validation.ts"
+      "regressionSuite": "scripts/phase-b-wynyard-validation.ts",
+      "sprint364": "3/3 consecutive green",
+      "sprint366": "3/3 consecutive green",
+      "sprint365": "3/3 consecutive green",
+      "sprint363": "3/3 consecutive green",
+      "sprint362": "3/3 consecutive green",
+      "sprint361": "3/3 consecutive green",
+      "sprint360": "3/3 consecutive green",
+      "sprint359": "3/3 consecutive green",
+      "sprint358": "3/3 consecutive green",
+      "sprint357": "3/3 consecutive green",
+      "sprint356": "3/3 consecutive green",
+      "sprint367": "3/3 consecutive green",
+      "sprint372": "3/3 consecutive green",
+      "sprint371": "3/3 consecutive green",
+      "sprint370": "3/3 consecutive green",
+      "sprint369": "3/3 consecutive green",
+      "sprint368": "3/3 consecutive green",
+      "sprint373": "3/3 consecutive green",
+      "sprint376": "3/3 consecutive green",
+      "sprint375": "3/3 consecutive green",
+      "sprint374": "3/3 consecutive green",
+      "sprint378": "3/3 consecutive green",
+      "sprint377": "3/3 consecutive green"
     },
     "platformCertification": {
       "lastAchieved": "2026-06-29",
       "lastCertifiedBaseline": "2026-06-29",
       "status": "stale â€” recertification required before production release",
       "sprintRangeCovered": "120â€“129 (Drawing Intelligence UX Maturity milestone close)",
-      "deltaSinceCertification": "Sprints 130–324 delivered (195 sprints); schema/RLS pending (migration 015); Digital Brain + Commercial Intelligence + Future Project Knowledge Reuse milestone active (340-349); Sprint 324 closed; no 5/5 re-run since 2026-06-29",
+      "deltaSinceCertification": "Sprints 130–378 delivered (249 sprints); schema/RLS pending (migration 015); Digital Brain + Commercial Intelligence + Drawing Revision Provenance milestone active (360-369 8/10); latest growth-event sprint 344 (drawing_revision_provenance_registered · drawing_revision_provenance_source_linked); no 5/5 re-run since 2026-06-29",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -978,9 +1669,9 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Sprint 330 delivered, Sprint 331 queued (milestone 340–349 active 7/10)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 330 knowledge applied to future project context entries aggregation + AI panel context entry surfacing logged",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 330 closed, sprint 331 queued"
+    "docs/PLATFORM_EVOLUTION.md — Sprint 378 delivered, Sprint 379 queued (milestone 390–399 active 5/10)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 378 Phase C pin re-anchor explainability rationale summary badges + AI panel label hint logged",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 378 closed, sprint 379 queued, milestone 390–399 active (5/10)"
   ],
   "migrationsRequired": [
     {
@@ -1017,14 +1708,14 @@
       "id": "drawing-revision-provenance-gap",
       "severity": "data-integrity",
       "relatedFinding": "finding-2",
-      "description": "Knowledge/commercial template chain tracks knowledgeLibraryTemplateId/templateRevisionId only; exact DrawingRevision provenance not persisted in growth/Memory payloads; superseded drawing revalidation not wired; Phase C revision management not started",
+      "description": "Drawing revision provenance + supersede invalidation full stack delivered milestones 360-369 and 370-379; Phase C revision supersede full stack delivered milestone 380-389; Phase C pin re-anchor growth event + timeline filter + playback + pipeline stage + AI panel entry count + explainability actor/confidence + viewer chrome + explainability rationale summary + AI panel label hint live milestone 390-399 (5/10); C1 upload UI not started — milestone 390-399 active Sprint 379 queued",
       "architectureDecisionRequired": true,
-      "targetSprintOrMilestone": "Phase C + dedicated provenance sprint before production knowledge reuse"
+      "targetSprintOrMilestone": "Phase C pin re-anchor (390-399) + dedicated provenance sprint before production knowledge reuse"
     },
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Phase C revision management prepared but not started; gated on checklist + regression; elevated by Finding 2 provenance review"
+      "description": "Phase C revision supersede growth event full stack live milestone 380-389 closed Sprint 373; C1 upload UI not started; C2 pin re-anchor opens Sprint 374; gated on checklist + regression; elevated by Finding 2 provenance review"
     },
     {
       "id": "partial-platform-services",
@@ -1035,31 +1726,31 @@
       "id": "platform-certification-stale",
       "severity": "medium-governance",
       "relatedFinding": "finding-4",
-      "description": "Platform Certification 5/5 last achieved 2026-06-29; 168 sprints since; recertification required before production release per trigger policy"
+      "description": "Platform Certification 5/5 last achieved 2026-06-29; 169 sprints since; recertification required before production release per trigger policy"
     }
   ],
   "blockers": [],
   "nextSprint": {
-    "number": 331,
-    "stream2": "Project assistant context engine knowledge applied to future project explainability context entry aggregation — knowledgeAppliedToFutureProjectExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · filterDecisionTimelineToKnowledgeAppliedToFutureProjectEntries · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-331-selftest.ts",
-    "stream1": "Operational workspace AI panel knowledge applied to future project explainability context entry surfacing from project assistant context — operational-workspace-ai-panel-knowledge-applied-to-future-project-explainability-context-entries · OperationalWorkspace.tsx · sprint-331-selftest.ts",
-    "selftest": "scripts/sprint-331-selftest.ts"
+    "number": 379,
+    "stream1": "Operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context — operational-workspace-ai-panel-phase-c-pin-reanchor-context-entry-count · operational-workspace-ai-panel-phase-c-pin-reanchor-context-label-hint · OperationalWorkspace.tsx · sprint-379-selftest.ts",
+    "stream2": "Project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring — phaseCPinReanchorTimelineEntryCount · phaseCPinReanchorLabelHint · formatDistinctPhaseCPinReanchorLabelHint · countPhaseCPinReanchorTimelineEntries · mergePhaseCPinReanchorTimelineIntoDecisionTimeline · projectAssistantContextEngine.ts · projectAssistantContext.ts · sprint-379-selftest.ts",
+    "selftest": "scripts/sprint-379-selftest.ts"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-05T12:44:27.573Z",
+    "lastPushAttempt": "2026-07-05T12:44:48.976Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-05T12:44:27.573Z",
+    "verifiedAt": "2026-07-05T12:44:48.976Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
-    "localStateGeneratedAt": "2026-07-05T02:00:00.000Z",
-    "sanitizedAt": "2026-07-05T12:44:09.8938075Z",
-    "pushedAt": "2026-07-05T12:44:27.573Z",
-    "remoteHeadSha": "629b32fc18b9ea11e8792c1eaa8f6da154aef397",
-    "publicStateVerifiedAt": "2026-07-05T12:44:27.573Z",
+    "localStateGeneratedAt": "2026-07-06T06:27:43.719Z",
+    "sanitizedAt": "2026-07-06T07:02:14.4392964Z",
+    "pushedAt": "2026-07-05T12:44:48.976Z",
+    "remoteHeadSha": "1ca4645f3b9f3fb6774a82af62b6d81c652fd77d",
+    "publicStateVerifiedAt": "2026-07-05T12:44:48.976Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "333d3a80272837c9eefe7238f3ec39258cd0bb1e605ef1b005b338e8c156d3bf",
+    "publicStateContentHash": "dd8a017e90ee001a9f15294ba9f4c1ce67231f19162abfa22dbb13299ef5996d",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -1091,21 +1782,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "333d3a80272837c9eefe7238f3ec39258cd0bb1e605ef1b005b338e8c156d3bf",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-05T12:44:27.573Z",
-      "rawEndpointVerifiedAt": "2026-07-05T12:44:27.573Z",
-      "gitOriginVerifiedAt": "2026-07-05T12:44:27.573Z",
+      "githubApiVerifiedAt": "2026-07-05T12:44:48.976Z",
+      "rawEndpointVerifiedAt": "2026-07-05T12:44:48.976Z",
+      "gitOriginVerifiedAt": "2026-07-05T12:44:48.976Z",
       "routeContentHashes": {
-        "github-api": "333d3a80272837c9eefe7238f3ec39258cd0bb1e605ef1b005b338e8c156d3bf",
+        "github-api": "dd8a017e90ee001a9f15294ba9f4c1ce67231f19162abfa22dbb13299ef5996d",
         "raw-cdn": "333d3a80272837c9eefe7238f3ec39258cd0bb1e605ef1b005b338e8c156d3bf",
-        "git-origin": "333d3a80272837c9eefe7238f3ec39258cd0bb1e605ef1b005b338e8c156d3bf"
+        "git-origin": "dd8a017e90ee001a9f15294ba9f4c1ce67231f19162abfa22dbb13299ef5996d"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "629b32fc18b9ea11e8792c1eaa8f6da154aef397",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "1ca4645f3b9f3fb6774a82af62b6d81c652fd77d",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 219,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -1145,7 +1836,7 @@
       "targetSprintOrMilestone": "Future milestone post 280-289 or linked follow-on",
       "relatedRisk": "partial-platform-services",
       "architectureDecisionRequired": true,
-      "completionEvidence": null
+      "completionEvidence": "Milestone 350-359 wrap completeness review Sprint 343 — knowledge_template_entity_registered · knowledge_template_entity_provenance_linked growth events · knowledge_template KG node kind · full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring)"
     },
     {
       "findingId": "finding-2",
@@ -1156,7 +1847,7 @@
       "targetSprintOrMilestone": "Architecture decision record + Phase C start + provenance sprint before production knowledge reuse",
       "relatedRisk": "drawing-revision-provenance-gap",
       "architectureDecisionRequired": true,
-      "completionEvidence": null
+      "completionEvidence": "Milestone 360-369 wrap completeness review Sprint 353 — drawing_revision_provenance_registered · drawing_revision_provenance_source_linked growth events · drawing_revision node kind · full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); supersede invalidation hooks deferred milestone 370-379"
     },
     {
       "findingId": "finding-3",
@@ -1253,7 +1944,7 @@
     },
     "futureProjectReuse": {
       "status": "partial",
-      "evidence": "knowledge_applied_to_future_project growth event + Memory audit + Decision Timeline knowledge applied to future project filter with event type label + Phase D playback row + commercial workflow stage badge + Phase D playback commercial-stage line + pipeline stage badge + Phase D playback pipeline-stage line + AI panel entry count + viewer chrome indicator + explainability actor/confidence badges + AI panel label hint + explainability rationale summary badges + project assistant context engine entry count + label hint + context entries aggregation live Sprint 330"
+      "evidence": "knowledge_applied_to_future_project growth event + Memory audit + Decision Timeline knowledge applied to future project filter with event type label + Phase D playback row + commercial workflow stage badge + Phase D playback commercial-stage line + pipeline stage badge + Phase D playback pipeline-stage line + AI panel entry count + viewer chrome indicator + explainability actor/confidence badges + AI panel label hint + explainability rationale summary badges + mid-milestone 324–328 completeness review + project assistant context engine entry count + label hint + context entries aggregation + explainability context entry aggregation + milestone 340–349 wrap completeness review live Sprint 333"
     },
     "outcomeFeedback": {
       "status": "partial",
@@ -1264,17 +1955,50 @@
       "evidence": "proactive_knowledge_warning_issued growth event + Memory audit + Decision Timeline filter + Phase D playback row + commercial workflow stage badge + pipeline stage badge + AI panel entry count + viewer chrome indicator + explainability actor/confidence badges + AI panel label hint + explainability rationale summary badges + mid-milestone 294–298 completeness review + project assistant context engine entry count + label hint + context entries aggregation live Sprint 301; explainability context entry aggregation not yet wired; outcome feedback loop not yet wired"
     },
     "knowledgeGraphIntegration": {
-      "status": "not_started",
-      "evidence": "No KnowledgeTemplate node/entity or provenance edges in KG; AI_OVERSIGHT_STATE confirms deferred"
+      "status": "partial",
+      "evidence": "knowledge_template_entity_registered · knowledge_template_entity_provenance_linked growth event contract + knowledge_template KG node kind + Memory audit + timeline playback stub live Sprint 334; Decision Timeline knowledge graph template entity filter + event type label Sprint 334; Phase D playback row + commercial workflow stage badge + Phase D playback commercial-stage line Sprint 335; pipeline stage badge + Phase D playback pipeline-stage line + AI panel entry count Sprint 336; viewer chrome indicator + explainability actor/confidence badges + Phase D playback explainability labels Sprint 337; explainability rationale summary badges + AI panel label hint Sprint 338; project assistant context engine timeline entry count + label hint wiring + AI panel context availability surfacing Sprint 339; project assistant context engine context entries aggregation + AI panel context entry surfacing Sprint 340; project assistant context engine explainability context entry aggregation + AI panel explainability context entry surfacing Sprint 341; mid-milestone 334–338 completeness review Sprint 342; milestone 350–359 wrap completeness review live Sprint 343"
     }
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Commercial Intelligence Future Project Knowledge Reuse milestone (340-349) active — Sprint 330 closed; Sprint 331 queued",
+    "phaseE": "Drawing Intelligence Phase C — Pin Re-anchor & Carry-forward milestone (390-399) active — Sprint 378 closed; Sprint 379 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
-    "alignment": "on-track"
+    "alignment": "on-track",
+    "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
+    "sprint375": "No new growth event kinds — Decision Timeline Phase C pin re-anchor Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage line for Phase C pin re-anchor audit filter scope",
+    "sprint374": "pin_reanchored growth event kind live — pin node kind · Digital Brain bus + Construction Memory audit + timeline playback stub · exact pinId + priorAnchorRevisionId + newAnchorRevisionId persisted in growth/Memory payloads · rebuild_graph_snapshot + reindex_search job derivation · Decision Timeline Phase C pin re-anchor filter + badge",
+    "sprint377": "No new growth event kinds — Phase C pin re-anchor viewer chrome session store + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability actor/confidence lines for Phase C pin re-anchor audit filter scope",
+    "sprint378": "No new growth event kinds — operational workspace AI panel Phase C pin re-anchor label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary line for Phase C pin re-anchor audit filter scope"
   },
   "digitalBrainImpact": {
+    "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
+    "sprint375": "No new growth event kinds — Decision Timeline Phase C pin re-anchor Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage line for Phase C pin re-anchor audit filter scope",
+    "sprint366": "No new growth event kinds — Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C revision supersede timeline entry count indicator for Phase C revision supersede audit filter scope",
+    "sprint365": "No new growth event kinds — Decision Timeline Phase C revision supersede Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage line for Phase C revision supersede audit filter scope",
+    "sprint364": "revision_added · sheet_superseded growth event kinds live — drawing_revision node kind · Digital Brain bus + Construction Memory audit + timeline playback stub · exact drawingRevisionId + supersededRevisionId + newCurrentRevisionId persisted in growth/Memory payloads · rebuild_graph_snapshot + reindex_search job derivation · Decision Timeline Phase C revision supersede filter + badge",
+    "sprint355": "No new growth event kinds — Decision Timeline drawing revision supersede invalidation Phase D playback row surfaces drawing revision id · superseded-by revision id · invalidation scope playback lines + commercial workflow stage filtered badge + Phase D playback commercial-stage line for supersede invalidation audit filter scope",
+    "sprint354": "drawing_revision_provenance_superseded · drawing_revision_provenance_invalidation_requested growth event kinds live — drawing_revision node kind · Digital Brain bus + Construction Memory audit + timeline playback stub · supersede + invalidation scope persisted in growth/Memory payloads · rebuild_graph_snapshot job derivation (Finding 2 continuation)",
+    "sprint351": "No new growth event kinds — project assistant context engine drawing revision provenance explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context",
+    "sprint350": "No new growth event kinds — project assistant context engine drawing revision provenance context entries aggregation + operational workspace AI panel context entry surfacing from project assistant context entries",
+    "sprint349": "No new growth event kinds — project assistant context engine drawing revision provenance timeline entry count + label hint wiring + operational workspace AI panel context availability surfacing from project assistant context",
+    "sprint348": "No new growth event kinds — operational workspace AI panel drawing revision provenance label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary label for drawing revision provenance audit filter scope",
+    "sprint347": "No new growth event kinds — drawing revision provenance viewer chrome session store + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability actor/confidence lines for drawing revision provenance audit filter scope",
+    "sprint346": "No new growth event kinds — Decision Timeline drawing revision provenance pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel drawing revision provenance timeline entry count indicator (hub-scoped countHubDrawingRevisionProvenanceTimelineEntries · drawingRevisionProvenanceTimelineEntryCount)",
+    "sprint345": "No new growth event kinds — Decision Timeline drawing revision provenance Phase D playback row surfaces drawing revision id · sheet id · source revision ids · registered-at playback lines + commercial workflow stage filtered badge + Phase D playback commercial-stage line for drawing revision provenance audit filter scope",
+    "sprint344": "drawing_revision_provenance_registered · drawing_revision_provenance_source_linked growth event kinds live — drawing_revision node kind · Digital Brain bus + Construction Memory audit + timeline playback stub · exact DrawingRevision ID + sourceRevisionIds persisted in growth/Memory payloads · rebuild_graph_snapshot job derivation (Finding 2 foundation)",
+    "sprint343": "No new growth event kinds — milestone 350–359 wrap completeness review confirms knowledge graph template entity full stack audit; milestone closed; 360–369 Drawing Revision Provenance opens Sprint 344",
+    "sprint342": "No new growth event kinds — mid-milestone 334–338 completeness review confirms knowledge graph template entity growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
+    "sprint341": "No new growth event kinds — project assistant context engine knowledge graph template entity explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context",
+    "sprint340": "No new growth event kinds — project assistant context engine knowledge graph template entity context entries aggregation + operational workspace AI panel context entry surfacing from project assistant context entries",
+    "sprint339": "No new growth event kinds — project assistant context engine knowledge graph template entity timeline entry count + label hint wiring + operational workspace AI panel context availability surfacing from project assistant context",
+    "sprint338": "No new growth event kinds — operational workspace AI panel knowledge graph template entity label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary label for KnowledgeTemplate entity audit filter scope",
+    "sprint337": "No new growth event kinds — knowledge graph template entity viewer chrome session store + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels for KnowledgeTemplate entity audit filter scope",
+    "sprint336": "No new growth event kinds — Decision Timeline knowledge graph template entity pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel knowledge graph template entity timeline entry count indicator for KnowledgeTemplate entity audit filter scope",
+    "sprint335": "No new growth event kinds — Decision Timeline knowledge graph template entity Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label for KnowledgeTemplate entity audit filter scope",
+    "sprint334": "knowledge_template_entity_registered · knowledge_template_entity_provenance_linked growth event kinds live — knowledge_template KG node kind · Digital Brain bus + Construction Memory audit + timeline playback stub · rebuild_graph_snapshot job derivation (Finding 1 foundation)",
+    "sprint333": "No new growth event kinds — milestone 340–349 wrap completeness review confirms knowledge applied to future project full stack audit; milestone closed",
+    "sprint332": "No new growth event kinds — mid-milestone 324–328 completeness review confirms knowledge applied to future project growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
+    "sprint331": "No new growth event kinds — project assistant context engine knowledge applied to future project explainability context entry aggregation for assistant explainability context entry surfacing",
     "sprint330": "No new growth event kinds — project assistant context engine knowledge applied to future project context entries aggregation for assistant context entry surfacing",
     "sprint329": "No new growth event kinds — project assistant context engine knowledge applied to future project timeline entry count + label hint wiring for assistant context availability metrics",
     "sprint328": "No new growth event kinds — operational workspace AI panel knowledge applied to future project label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary label for future project knowledge reuse audit filter scope",
@@ -1340,7 +2064,27 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 340-349 7/10 sprints closed (70%); latest growth-event sprint 324; Sprint 330 closed; Sprint 331 queued per nextSprint"
+    "overall": "Event engine Partial — milestone 390-399 5/10 sprints closed (50%); latest growth-event sprint 374; Sprint 378 closed; Sprint 379 queued per nextSprint",
+    "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
+    "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
+    "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
+    "sprint362": "No new growth event kinds — mid-milestone 354–358 completeness review confirms supersede invalidation growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
+    "sprint361": "No new growth event kinds — project assistant context engine drawing revision supersede invalidation explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context",
+    "sprint360": "No new growth event kinds — project assistant context engine drawing revision supersede invalidation context entries aggregation + operational workspace AI panel context entry surfacing from project assistant context entries (drawingRevisionSupersedeInvalidationEntries · toDrawingRevisionSupersedeInvalidationContextEntry in buildProjectAssistantContextSnapshot)",
+    "sprint359": "No new growth event kinds — project assistant context engine drawing revision supersede invalidation timeline entry count + label hint wiring + operational workspace AI panel supersede invalidation context availability surfacing from project assistant context (mergeDrawingRevisionSupersedeInvalidationTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
+    "sprint352": "No new growth event kinds — mid-milestone 344–348 completeness review confirms drawing revision provenance growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
+    "sprint353": "No new growth event kinds — milestone 360–369 wrap completeness review confirms drawing revision provenance full stack audit; milestone closed; 370–379 Drawing Revision Supersede Invalidation opens Sprint 354",
+    "sprint358": "No new growth event kinds — operational workspace AI panel drawing revision supersede invalidation label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary line for supersede invalidation audit filter scope",
+    "sprint357": "No new growth event kinds — drawing revision supersede invalidation viewer chrome session store + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability actor/confidence lines for supersede invalidation audit filter scope",
+    "sprint356": "No new growth event kinds — Decision Timeline drawing revision supersede invalidation pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel supersede invalidation timeline entry count indicator (hub-scoped countHubDrawingRevisionSupersedeInvalidationTimelineEntries · drawingRevisionSupersedeInvalidationTimelineEntryCount · mergeDrawingRevisionSupersedeInvalidationTimelineIntoDecisionTimeline in buildDecisionTimelineFromHub)",
+    "sprint370": "No new growth event kinds — project assistant context engine Phase C revision supersede context entries aggregation + operational workspace AI panel context entry surfacing from project assistant context entries (phaseCRevisionSupersedeEntries · toPhaseCRevisionSupersedeContextEntry in buildProjectAssistantContextSnapshot)",
+    "sprint369": "No new growth event kinds — project assistant context engine Phase C revision supersede timeline entry count + label hint wiring + operational workspace AI panel Phase C revision supersede context availability surfacing from project assistant context",
+    "sprint368": "No new growth event kinds — operational workspace AI panel Phase C revision supersede label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary line for Phase C revision supersede audit filter scope",
+    "sprint367": "No new growth event kinds — Phase C revision supersede viewer chrome session store + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability actor/confidence lines for Phase C revision supersede audit filter scope",
+    "sprint373": "No new growth event kinds — milestone 380–389 wrap completeness review confirms Phase C revision supersede full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 390–399 Pin Re-anchor opens Sprint 374",
+    "sprint374": "pin_reanchored growth event kind live — pin node kind · Digital Brain bus + Construction Memory audit + timeline playback stub · exact pinId + priorAnchorRevisionId + newAnchorRevisionId persisted in growth/Memory payloads · rebuild_graph_snapshot + reindex_search job derivation · Decision Timeline Phase C pin re-anchor filter + badge",
+    "sprint377": "No new growth event kinds — Phase C pin re-anchor viewer chrome session store (getPhaseCPinReanchorForRevision · subscribePhaseCPinReanchor) + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability actor/confidence lines (explainabilityPayloadFromTimelineEntry phaseCPinReanchorPlaybackPayload scope · appendExplainabilityActorPlaybackLine · appendExplainabilityConfidencePlaybackLine in extractPhaseCPinReanchorPlaybackRowFromTimelineEntry)",
+    "sprint378": "No new growth event kinds — operational workspace AI panel Phase C pin re-anchor label hint (distinctPhaseCPinReanchorLabels · formatDistinctPhaseCPinReanchorLabelHint) + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary line (appendExplainabilityRationaleSummaryPlaybackLine in extractPhaseCPinReanchorPlaybackRowFromTimelineEntry · explainabilityPayloadFromTimelineEntry phaseCPinReanchorPlaybackPayload scope)"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -1380,9 +2124,77 @@
     "sprint268": "No direct KG edge changes",
     "sprint267": "No direct KG edge changes",
     "sprint266": "No direct KG edge changes",
-    "overall": "KG Partial — template entities deferred per Finding 1 triage"
+    "sprint338": "No direct KG edge changes — Decision Timeline knowledge graph template entity explainability rationale summary filtered badges + Phase D playback rationale summary line + operational workspace AI panel label hint",
+    "sprint343": "No direct KG edge changes — milestone 350–359 wrap completeness review confirms knowledge graph template entity full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed",
+    "sprint342": "No direct KG edge changes — mid-milestone 334–338 completeness review confirms knowledge graph template entity stack partial audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
+    "sprint341": "No direct KG edge changes — project assistant context engine knowledge graph template entity explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context",
+    "sprint340": "No direct KG edge changes — project assistant context engine knowledge graph template entity context entries aggregation + operational workspace AI panel context entry surfacing from project assistant context entries",
+    "sprint339": "No direct KG edge changes — project assistant context engine knowledge graph template entity timeline entry count + label hint wiring + operational workspace AI panel context availability surfacing from project assistant context",
+    "sprint337": "No direct KG edge changes — knowledge graph template entity viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability actor/confidence lines",
+    "sprint336": "No direct KG edge changes — Decision Timeline knowledge graph template entity pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel entry count indicator",
+    "sprint335": "No direct KG edge changes — Decision Timeline knowledge graph template entity Phase D playback row surfaces template id · node id · provenance type · edge kind · registered-at playback lines",
+    "sprint334": "knowledge_template node kind added · knowledge_template_entity_registered · knowledge_template_entity_provenance_linked growth events · provenance edge foundation payload (provenanceType · provenanceEdgeKind · source/target node ids) · rebuild_graph_snapshot job derivation · Memory audit · timeline playback stub — Finding 1 foundation sprint",
+    "sprint351": "No direct KG edge changes — project assistant context engine drawing revision provenance explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context",
+    "sprint350": "No direct KG edge changes — project assistant context engine drawing revision provenance context entries aggregation + operational workspace AI panel context entry surfacing from project assistant context entries",
+    "sprint349": "No direct KG edge changes — project assistant context engine drawing revision provenance timeline entry count + label hint wiring + operational workspace AI panel context availability surfacing from project assistant context",
+    "sprint348": "No direct KG edge changes — Decision Timeline drawing revision provenance explainability rationale summary filtered badges + Phase D playback rationale summary line + operational workspace AI panel label hint",
+    "sprint347": "No direct KG edge changes — drawing revision provenance viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability actor/confidence lines",
+    "sprint346": "No direct KG edge changes — Decision Timeline drawing revision provenance pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel entry count indicator",
+    "sprint345": "No direct KG edge changes — Decision Timeline drawing revision provenance Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage line",
+    "sprint344": "drawing_revision node kind added · drawing_revision_provenance_registered · drawing_revision_provenance_source_linked growth events · exact DrawingRevision ID + sourceRevisionIds persisted in growth/Memory payloads · rebuild_graph_snapshot job derivation · Memory audit · timeline playback stub — Finding 2 foundation sprint",
+    "overall": "KG Partial — template entities deferred per Finding 1 triage",
+    "sprint366": "No direct KG edge changes — Decision Timeline Phase C revision supersede pipeline stage badge + AI panel entry count live; milestone 380–389 active (3/10)",
+    "sprint365": "No direct KG edge changes — Decision Timeline Phase C revision supersede Phase D playback row + commercial workflow stage badge live; milestone 380–389 active (2/10)",
+    "sprint364": "No direct KG edge changes — revision_added · sheet_superseded growth events derive rebuild_graph_snapshot + reindex_search; Phase C revision supersede timeline filter live; milestone 380–389 active (1/10)",
+    "sprint363": "No direct KG edge changes — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C opens Sprint 364",
+    "sprint362": "No direct KG edge changes — mid-milestone 354–358 completeness review confirms supersede invalidation stack partial audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
+    "sprint361": "No direct KG edge changes — project assistant context engine drawing revision supersede invalidation explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context",
+    "sprint360": "No direct KG edge changes — project assistant context engine drawing revision supersede invalidation context entries aggregation + operational workspace AI panel context entry surfacing from project assistant context entries",
+    "sprint359": "No direct KG edge changes — project assistant context engine drawing revision supersede invalidation timeline entry count + label hint wiring + operational workspace AI panel context availability surfacing from project assistant context",
+    "sprint355": "No direct KG edge changes — Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage line",
+    "sprint354": "drawing_revision node kind · drawing_revision_provenance_superseded · drawing_revision_provenance_invalidation_requested growth events · supersede + invalidation scope persisted in growth/Memory payloads · Memory audit · timeline playback stub · Decision Timeline filter — Finding 2 continuation foundation sprint",
+    "sprint352": "No direct KG edge changes — mid-milestone 344–348 completeness review confirms drawing revision provenance stack partial audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
+    "sprint353": "No direct KG edge changes — milestone 360–369 wrap completeness review confirms drawing revision provenance full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed",
+    "sprint358": "No direct KG edge changes — operational workspace AI panel supersede invalidation label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary line",
+    "sprint357": "No direct KG edge changes — drawing revision supersede invalidation viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability actor/confidence lines",
+    "sprint356": "No direct KG edge changes — Decision Timeline drawing revision supersede invalidation pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel entry count indicator",
+    "sprint372": "No direct KG edge changes — mid-milestone 364–368 completeness review confirms Phase C revision supersede stack partial audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
+    "sprint371": "No direct KG edge changes — project assistant context engine Phase C revision supersede explainability context entry aggregation + AI panel explainability context entry surfacing; milestone 380–389 active (9/10)",
+    "sprint370": "No direct KG edge changes — project assistant context engine Phase C revision supersede context entries aggregation + AI panel context entry surfacing; milestone 380–389 active (7/10)",
+    "sprint369": "No direct KG edge changes — project assistant context engine Phase C revision supersede timeline entry count + label hint wiring + AI panel context availability surfacing; milestone 380–389 active (6/10)",
+    "sprint368": "No direct KG edge changes — operational workspace AI panel Phase C revision supersede label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary line; milestone 380–389 active (5/10)",
+    "sprint367": "No direct KG edge changes — Phase C revision supersede viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability actor/confidence lines; milestone 380–389 active (4/10)",
+    "sprint373": "No direct KG edge changes — milestone 380–389 wrap completeness review confirms Phase C revision supersede full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 390–399 Pin Re-anchor opens Sprint 374",
+    "sprint374": "No direct KG edge changes — pin_reanchored growth event derives rebuild_graph_snapshot + reindex_search; Phase C pin re-anchor timeline filter live; milestone 390-399 active (1/10)",
+    "sprint376": "No direct KG edge changes — Decision Timeline Phase C pin re-anchor pipeline stage badge + AI panel entry count live; milestone 390-399 active (3/10)",
+    "sprint375": "No direct KG edge changes — Decision Timeline Phase C pin re-anchor Phase D playback row + commercial workflow stage badge live; milestone 390-399 active (2/10)",
+    "sprint377": "No direct KG edge changes — Phase C pin re-anchor viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability actor/confidence lines; milestone 390-399 active (4/10)",
+    "sprint378": "No direct KG edge changes — operational workspace AI panel Phase C pin re-anchor label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary line; milestone 390-399 active (5/10)"
   },
   "commercialIntelligenceImpact": {
+    "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
+    "sprint354": "Drawing revision supersede invalidation growth event contract — drawing_revision_provenance_superseded · drawing_revision_provenance_invalidation_requested · exact DrawingRevision ID + supersededByRevisionId + invalidationScope persisted in Memory audit payloads · Decision Timeline supersede invalidation filter Sprint 354 — sprint-354-selftest.ts",
+    "sprint351": "Project assistant context engine drawing revision provenance explainability context entry aggregation + operational workspace AI panel drawing revision provenance explainability context entry surfacing from project assistant context — drawingRevisionProvenanceExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-drawing-revision-provenance-explainability-context-entries · operational-workspace-ai-panel-drawing-revision-provenance-explainability-context-entry-item · sprint-351-selftest.ts",
+    "sprint350": "Project assistant context engine drawing revision provenance context entries aggregation + operational workspace AI panel drawing revision provenance context entry surfacing from project assistant context entries — drawingRevisionProvenanceEntries · toDrawingRevisionProvenanceContextEntry · operational-workspace-ai-panel-drawing-revision-provenance-context-entries · operational-workspace-ai-panel-drawing-revision-provenance-context-entry-item · sprint-350-selftest.ts",
+    "sprint349": "Project assistant context engine drawing revision provenance timeline entry count + label hint wiring + operational workspace AI panel drawing revision provenance context availability surfacing from project assistant context — drawingRevisionProvenanceTimelineEntryCount · drawingRevisionProvenanceLabelHint · operational-workspace-ai-panel-drawing-revision-provenance-context-entry-count · operational-workspace-ai-panel-drawing-revision-provenance-context-label-hint · sprint-349-selftest.ts",
+    "sprint348": "Operational workspace AI panel drawing revision provenance label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback explainability rationale summary label — decision-timeline-drawing-revision-provenance-explainability-rationale-summary · operational-workspace-ai-panel-drawing-revision-provenance-label-hint · sprint-348-selftest.ts",
+    "sprint347": "Commercial Intelligence drawing revision provenance indicator in viewer chrome + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels — drawing-revision-provenance-indicator · decision-timeline-drawing-revision-provenance-explainability-actor · decision-timeline-drawing-revision-provenance-explainability-confidence · sprint-347-selftest.ts",
+    "sprint346": "Decision Timeline drawing revision provenance pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — lessons_learned COS pipeline stage badge · drawingRevisionProvenanceTimelineEntryCount · sprint-346-selftest.ts",
+    "sprint345": "Decision Timeline drawing revision provenance Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · sheet id · source revision ids · registered-at playback lines · lessons_learned stage badge · sprint-345-selftest.ts",
+    "sprint344": "Drawing revision provenance growth event contract — drawing_revision_provenance_registered · drawing_revision_provenance_source_linked · exact DrawingRevision ID persisted in Memory audit payloads · Decision Timeline filter Sprint 344",
+    "sprint343": "Milestone 350–359 Commercial Intelligence Knowledge Graph Integration wrap completeness review — full stack audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring; milestone closed; 360–369 Drawing Revision Provenance opens Sprint 344",
+    "sprint342": "Mid-milestone 334–338 Commercial Intelligence Knowledge Graph Integration completeness review — knowledge graph template entity stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-342-selftest.ts",
+    "sprint341": "Project assistant context engine knowledge graph template entity explainability context entry aggregation + operational workspace AI panel knowledge graph template entity explainability context entry surfacing from project assistant context — knowledgeTemplateEntityExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-knowledge-template-entity-explainability-context-entries · sprint-341-selftest.ts",
+    "sprint340": "Project assistant context engine knowledge graph template entity context entries aggregation + operational workspace AI panel knowledge graph template entity context entry surfacing from project assistant context entries — knowledgeTemplateEntityEntries · toKnowledgeTemplateEntityContextEntry · operational-workspace-ai-panel-knowledge-template-entity-context-entries · operational-workspace-ai-panel-knowledge-template-entity-context-entry-item · sprint-340-selftest.ts",
+    "sprint339": "Project assistant context engine knowledge graph template entity timeline entry count + label hint wiring + operational workspace AI panel knowledge graph template entity context availability surfacing from project assistant context — knowledgeTemplateEntityTimelineEntryCount · knowledgeTemplateEntityLabelHint · operational-workspace-ai-panel-knowledge-template-entity-context-entry-count · operational-workspace-ai-panel-knowledge-template-entity-context-label-hint · sprint-339-selftest.ts",
+    "sprint338": "Operational workspace AI panel knowledge graph template entity label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback explainability rationale summary label — decision-timeline-knowledge-template-entity-explainability-rationale-summary · operational-workspace-ai-panel-knowledge-template-entity-label-hint · sprint-338-selftest.ts",
+    "sprint337": "Commercial Intelligence knowledge graph template entity indicator in viewer chrome + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels — knowledge-graph-template-entity-indicator · decision-timeline-knowledge-template-entity-explainability-actor · decision-timeline-knowledge-template-entity-explainability-confidence · sprint-337-selftest.ts",
+    "sprint336": "Decision Timeline knowledge graph template entity pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel knowledge graph template entity timeline entry count indicator — lessons_learned pipeline stage badge · operational-workspace-ai-panel-knowledge-template-entity-entry-count · sprint-336-selftest.ts",
+    "sprint335": "Decision Timeline knowledge graph template entity Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — template id · node id · provenance type · edge kind · registered-at playback lines · lessons_learned stage badge · sprint-335-selftest.ts",
+    "sprint334": "KnowledgeTemplate entity growth event contract — knowledge_template_entity_registered · knowledge_template_entity_provenance_linked · knowledge_template KG node kind · Memory audit · Decision Timeline knowledge graph template entity filter + event type label · sprint-334-selftest.ts",
+    "sprint333": "Milestone 340–349 Commercial Intelligence Future Project Knowledge Reuse wrap completeness review — full stack audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring; milestone closed; 350–359 Knowledge Graph Integration opens Sprint 334",
+    "sprint332": "Mid-milestone 324–328 completeness review — knowledge applied to future project stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators",
+    "sprint331": "Project assistant context engine knowledge applied to future project explainability context entry aggregation + operational workspace AI panel knowledge applied to future project explainability context entry surfacing from project assistant context",
     "sprint330": "Project assistant context engine knowledge applied to future project context entries aggregation + operational workspace AI panel knowledge applied to future project context entry surfacing from project assistant context entries",
     "sprint329": "Project assistant context engine knowledge applied to future project timeline entry count + label hint wiring + operational workspace AI panel knowledge applied to future project context availability surfacing from project assistant context",
     "sprint328": "Operational workspace AI panel knowledge applied to future project label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary label — future project knowledge reuse Phase D timeline enrichment + AI panel label hint per confidence evolution milestone pattern (Sprint 318)",
@@ -1442,13 +2254,36 @@
     "sprint268": "Operational workspace AI panel knowledge template publication label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback rationale summary label",
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
-    "viewerChrome": "Knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Commercial Intelligence Future Project Knowledge Reuse (340-349) active 7/10; Sprint 330 closed; Sprint 331 queued (Project assistant context engine knowledge applied to future project explainabil · Operational workspace AI panel knowledge applied to future project explainabilit)"
+    "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase C — Pin Re-anchor & Carry-forward (390-399) active 5/10; Sprint 378 closed; Sprint 379 queued (Project assistant context engine Phase C pin re-anchor timeline entry count + la · Operational workspace AI panel Phase C pin re-anchor context availability surfac)",
+    "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
+    "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
+    "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
+    "sprint365": "Decision Timeline Phase C revision supersede Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — enterprise_drawing commercialStage · extractPhaseCRevisionSupersedePlaybackRowFromTimelineEntry · appendCommercialWorkflowStagePlaybackLine · sprint-365-selftest.ts",
+    "sprint364": "Phase C revision supersede growth event contract — revision_added · sheet_superseded on Digital Brain bus · drawing_revision node kind · Construction Memory audit · timeline playback stub · Decision Timeline Phase C revision supersede filter + badge — sprint-364-selftest.ts",
+    "sprint363": "Milestone 370–379 Commercial Intelligence Drawing Revision Supersede Invalidation wrap completeness review — full stack audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring; milestone closed; 380–389 Phase C Revision Management opens Sprint 364 — sprint-363-selftest.ts",
+    "sprint362": "Mid-milestone 354–358 Commercial Intelligence Drawing Revision Supersede Invalidation completeness review — supersede invalidation stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-362-selftest.ts",
+    "sprint361": "Project assistant context engine drawing revision supersede invalidation explainability context entry aggregation + operational workspace AI panel supersede invalidation explainability context entry surfacing from project assistant context — drawingRevisionSupersedeInvalidationExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-drawing-revision-supersede-invalidation-explainability-context-entries · operational-workspace-ai-panel-drawing-revision-supersede-invalidation-explainability-context-entry-item · sprint-361-selftest.ts",
+    "sprint360": "Project assistant context engine drawing revision supersede invalidation context entries aggregation + operational workspace AI panel supersede invalidation context entry surfacing from project assistant context entries — drawingRevisionSupersedeInvalidationEntries · toDrawingRevisionSupersedeInvalidationContextEntry · operational-workspace-ai-panel-drawing-revision-supersede-invalidation-context-entries · operational-workspace-ai-panel-drawing-revision-supersede-invalidation-context-entry-item · sprint-360-selftest.ts",
+    "sprint359": "Project assistant context engine drawing revision supersede invalidation timeline entry count + label hint wiring + operational workspace AI panel supersede invalidation context availability surfacing from project assistant context — drawingRevisionSupersedeInvalidationTimelineEntryCount · drawingRevisionSupersedeInvalidationLabelHint · operational-workspace-ai-panel-drawing-revision-supersede-invalidation-context-entry-count · operational-workspace-ai-panel-drawing-revision-supersede-invalidation-context-label-hint · sprint-359-selftest.ts",
+    "sprint352": "Mid-milestone 344–348 Commercial Intelligence Drawing Revision Provenance completeness review — drawing revision provenance stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-352-selftest.ts",
+    "sprint353": "Milestone 360–369 Commercial Intelligence Drawing Revision Provenance wrap completeness review — full stack audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring; milestone closed; 370–379 Supersede Invalidation opens Sprint 354 — sprint-353-selftest.ts",
+    "sprint358": "Operational workspace AI panel drawing revision supersede invalidation label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback explainability rationale summary label — operational-workspace-ai-panel-drawing-revision-supersede-invalidation-label-hint · decision-timeline-drawing-revision-supersede-invalidation-explainability-rationale-summary · sprint-358-selftest.ts",
+    "sprint357": "Commercial Intelligence drawing revision supersede invalidation indicator in viewer chrome + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels — drawing-revision-supersede-invalidation-indicator · decision-timeline-drawing-revision-supersede-invalidation-explainability-actor · decision-timeline-drawing-revision-supersede-invalidation-explainability-confidence · sprint-357-selftest.ts",
+    "sprint356": "Decision Timeline drawing revision supersede invalidation pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — lessons_learned COS pipeline stage badge · drawingRevisionSupersedeInvalidationTimelineEntryCount · sprint-356-selftest.ts",
+    "sprint370": "Project assistant context engine Phase C revision supersede context entries aggregation + operational workspace AI panel context entry surfacing from project assistant context entries — phaseCRevisionSupersedeEntries · toPhaseCRevisionSupersedeContextEntry · operational-workspace-ai-panel-phase-c-revision-supersede-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-context-entry-item · sprint-370-selftest.ts",
+    "sprint369": "Project assistant context engine Phase C revision supersede timeline entry count + label hint wiring + operational workspace AI panel Phase C revision supersede context availability surfacing — phaseCRevisionSupersedeTimelineEntryCount · operational-workspace-ai-panel-phase-c-revision-supersede-context-entry-count · sprint-369-selftest.ts",
+    "sprint368": "Operational workspace AI panel Phase C revision supersede label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback explainability rationale summary label — operational-workspace-ai-panel-phase-c-revision-supersede-label-hint · decision-timeline-phase-c-revision-supersede-explainability-rationale-summary · sprint-368-selftest.ts",
+    "sprint367": "Drawing Intelligence Phase C revision supersede indicator in viewer chrome + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels — phase-c-revision-supersede-indicator · decision-timeline-phase-c-revision-supersede-explainability-actor · decision-timeline-phase-c-revision-supersede-explainability-confidence · sprint-367-selftest.ts",
+    "sprint373": "Milestone 380–389 Drawing Intelligence Phase C — Revision Management & Compare wrap completeness review — full stack audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring; milestone closed; 390–399 Pin Re-anchor opens Sprint 374 — sprint-373-selftest.ts",
+    "sprint374": "Phase C pin re-anchor growth event contract — pin_reanchored on Digital Brain bus · pin node kind · Construction Memory audit · timeline playback stub · Decision Timeline Phase C pin re-anchor filter + badge — sprint-374-selftest.ts",
+    "sprint376": "Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCPinReanchorTimelineEntryCount · sprint-376-selftest.ts",
+    "sprint375": "Decision Timeline Phase C pin re-anchor Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — enterprise_drawing commercialStage · extractPhaseCPinReanchorPlaybackRowFromTimelineEntry · appendCommercialWorkflowStagePlaybackLine · sprint-375-selftest.ts",
+    "sprint377": "Drawing Intelligence Phase C pin re-anchor indicator in viewer chrome + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels — phase-c-pin-reanchor-indicator · decision-timeline-phase-c-pin-reanchor-explainability-actor · decision-timeline-phase-c-pin-reanchor-explainability-confidence · sprint-377-selftest.ts",
+    "sprint378": "Operational workspace AI panel Phase C pin re-anchor label hint + Decision Timeline explainability rationale summary filtered badges + Phase D playback explainability rationale summary label — operational-workspace-ai-panel-phase-c-pin-reanchor-label-hint · decision-timeline-phase-c-pin-reanchor-explainability-rationale-summary · sprint-378-selftest.ts"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
-    "DrawingRevision provenance for knowledge/commercial chain (Finding 2 â€” data-integrity)",
-    "Knowledge Graph template entity integration (Finding 1)",
     "Cross-project learning loop acceptance scenario (Finding 6)",
     "Platform Certification recertification (Finding 4 â€” before production release)",
     "Migration 015 apply to Supabase production",

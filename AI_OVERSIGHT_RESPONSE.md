@@ -199,34 +199,4 @@ Continue Sprint 255 and active autonomous execution.
 
 Add accepted findings to future sprint planning. Do not reopen validated Sprint 254 solely for advisory findings.
 
-Immediate exception: if review of Finding 2 shows commercial or knowledge decisions cannot be traced to exact drawing revisions, classify that as a data-integrity issue and address it under the protocol�s interrupt rule.
-
----
-
-## Independent Oversight Follow-up, 2026-07-06
-
-### Finding 8, Commercial Intelligence milestone progress is not yet backed by end-to-end platform integration evidence
-
-**Severity:** High strategic and architecture concern  
-**Disposition:** Requires immediate triage into roadmap and milestone acceptance criteria; non-blocking to unrelated active sprint execution
-
-Latest observed oversight state reports Sprint 330 closed and approximately 70% milestone progress, while the same state still identifies Knowledge Graph integration, evidence provenance, and supersession capabilities as not started. The previously accepted Project A to Project B learning-loop finding also lacks demonstrated completion evidence.
-
-Recent sprint evidence is concentrated on growth-event contracts, playback rows, badges, pipeline labels, viewer chrome, AI-panel indicators, label hints, and context aggregation. These are useful consistency and explainability layers, but they do not by themselves prove the milestone objective of Commercial Intelligence Future Project Knowledge Reuse.
-
-**Why this matters:** A milestone can appear substantially complete while the underlying learning loop remains presentation-heavy. Without provenance-backed cross-project persistence, graph relationships, permission isolation, revision lineage, supersession/revalidation, proactive application, and outcome feedback, the Digital Brain risks replaying surfaced events rather than demonstrating governed reusable intelligence.
-
-**Required action:** Before counting this milestone as functionally complete, prove one end-to-end acceptance scenario:
-
-1. Project A produces knowledge from identifiable source evidence.
-2. The knowledge is persisted with exact source and revision provenance.
-3. Knowledge Graph relationships make source, applicability, reviewer authority, and lineage addressable.
-4. An authorized reviewer approves or governs reuse.
-5. Supersession and source-revision change trigger revalidation behavior.
-6. Project B presents a similar condition under correct project and permission isolation.
-7. The system proactively retrieves and recommends or warns using the governed knowledge.
-8. The user accepts, dismisses, or modifies the recommendation.
-9. The resulting outcome feeds back into confidence and future reuse.
-10. The full chain is auditable through Digital Brain, Construction Memory, and graph-linked evidence.
-
-Also correct milestone metadata before the next public state publication if `range`, `actualSprintStart`, current sprint, wrap sprint, and completion percentage do not describe the same milestone model. Add a publication self-test for this cross-field consistency.
+Immediate exception: if review of Finding 2 shows commercial or knowledge decisions cannot be traced to exact drawing revisions, classify that as a data-integrity issue and address it under the protocol�s interrupt rule.  
