@@ -1,6 +1,6 @@
 # AI Oversight — Close-out Packet
 
-**Status:** Active — Sprint 407 close-out for milestone 420–429 Bulk Upload Engine wrap (Sprint 407); milestone 430–439 Revision Upload UI opens; Sprint 408 queued.
+**Status:** Active — Sprint 407 close-out for milestone 420–429 Bulk Upload Engine wrap (Sprint 407, 8/8 closed); Sprint 408 queued opens milestone 430–439.
 
 This file is included in the sanitized push to the public oversight repo.
 
@@ -10,7 +10,7 @@ This file is included in the sanitized push to the public oversight repo.
 
 **Sprint closed:** 407  
 **Milestone closed:** 420–429 Drawing Intelligence Phase C — Bulk Upload Engine (wrap Sprint 407, 8/8)  
-**Milestone opened:** 430–439 Drawing Intelligence Phase C — Revision Upload UI (Sprint 408, 0/10)  
+**Next milestone opens:** 430–439 Drawing Intelligence Phase C — Revision Upload UI (Sprint 408)  
 **Previous milestone closed:** 410–419 Change-cloud Detection (wrap Sprint 399)  
 **Next sprint:** 408 queued — Phase C revision upload UI foundation + upload-path wiring  
 **Validation:** Sprint Validation 3/3 consecutive green (14/0/2 per run, network/console clean) · build green
@@ -24,8 +24,8 @@ Sprint 407 delivered milestone 420–429 Drawing Intelligence Phase C bulk uploa
 | Field | Value |
 |---|---|
 | **currentSprint** | 407 closed (2026-07-07) |
-| **currentMilestone** | 430–439 Revision Upload UI active (0/10) |
-| **nextSprint** | 408 — Phase C revision upload UI foundation + upload-path wiring |
+| **currentMilestone** | 420–429 Bulk Upload Engine wrap closed (8/8) |
+| **nextSprint** | 408 — opens milestone 430–439 Revision Upload UI |
 | **hardCompletionDirective** | preserved — at_risk · 5 days remaining · computed 2026-07-07 |
 
 ### Stream delivery
