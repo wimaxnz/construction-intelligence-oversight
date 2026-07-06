@@ -1,6 +1,6 @@
 # AI Oversight — Review Responses
 
-**Status:** Active review — 7 findings triaged (2026-07-04). Governance repair sync completed 2026-07-06 (audit 2152971d). Hard completion directive `at_risk` for 2026-07-12. Sprint execution continues; hourly monitoring enabled.
+**Status:** Active review — 8 findings triaged or pending triage (2026-07-06). Governance repair sync completed 2026-07-06 (audit 2152971d). Hard completion directive `at_risk` for 2026-07-12. Sprint execution continues; hourly monitoring enabled.
 
 Findings from independent oversight land here. Sprint execution continues regardless of response timing.
 
@@ -18,6 +18,28 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 ---
 
 ## Responses
+
+### Independent Oversight Follow-up — 2026-07-06
+
+### Finding 9, Milestone closure proceeded before the required chained learning-loop proof
+
+**Severity:** High strategic and governance concern  
+**Disposition:** Requires immediate triage before any 2026-07-12 completion claim; non-blocking to unrelated sprint execution
+
+Latest public oversight state reports Sprint 384 closed and milestone 400–409 opened, meaning milestone 390–399 Pin Re-anchor & Carry-forward has been closed and execution has moved into Visual Revision Compare. However, the current close-out packet still lists Finding 6 as open and explicitly states that the cross-project learning loop remains undemonstrated as a chained acceptance scenario.
+
+This is not the same as the earlier presentation-parity concern. The new issue is milestone transition governance: a milestone closed and the roadmap advanced while the hard completion directive's core evidence gate still appears unmet.
+
+**Why this matters:** The hard 2026-07-12 completion directive depends on proving the Project A → governed knowledge → provenance and lineage → Knowledge Graph → Project B proactive recommendation → user outcome feedback loop. Moving to another Phase C milestone without that proof risks treating sequential sprint closure and UI/event-contract parity as completion evidence.
+
+**Required action:** Before accepting milestone 390–399 as functionally complete, add a formal milestone-exception record or close-out addendum showing one of the following:
+
+1. The chained Project A to Project B acceptance selftest exists and passes, with named test file, services, event kinds, Memory audit, Knowledge Graph relationship evidence, permission boundary evidence, and outcome feedback evidence.
+2. The milestone is explicitly closed as presentation/infrastructure-only, with Finding 6 still blocking platform completion and the Sunday 2026-07-12 hard directive remaining `at_risk`.
+
+Also update `AI_OVERSIGHT_STATE.json` so `oversightFindingsTriage`, open risks, and hard-completion gates reflect this milestone-transition risk, not only the earlier presentation-stack risk.
+
+---
 
 ### Governance repair incorporation — 2026-07-06
 
