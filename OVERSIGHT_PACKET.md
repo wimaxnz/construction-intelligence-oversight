@@ -1,6 +1,6 @@
 # AI Oversight — Close-out Packet
 
-**Status:** Active — Sprint 399 close-out for milestone 410–419 Change-cloud Detection wrap (closed); milestone 420–429 Bulk Upload Engine opens (0/10).
+**Status:** Active — Sprint 399 close-out for milestone 410–419 Change-cloud Detection wrap (closed); milestone 420–429 Bulk Upload Engine opens Sprint 400.
 
 This file is included in the sanitized push to the public oversight repo.
 
@@ -9,8 +9,8 @@ This file is included in the sanitized push to the public oversight repo.
 ## Packet — 2026-07-07
 
 **Sprint closed:** 399  
-**Milestone active:** 420–429 Drawing Intelligence Phase C — Bulk Upload Engine (0/10 sprints)  
-**Prior milestone closed:** 410–419 Change-cloud Detection (wrap Sprint 399)  
+**Milestone closed:** 410–419 Drawing Intelligence Phase C — Change-cloud Detection (wrap Sprint 399, 8/8 sprints)  
+**Next milestone opens:** 420–429 Bulk Upload Engine at Sprint 400  
 **Next sprint:** 400 queued — Phase C bulk upload growth event contract  
 **Validation:** Sprint Validation 3/3 consecutive green (14/0/2 per run, network/console clean) · regression suite unchanged green
 
@@ -23,7 +23,7 @@ Sprint 399 delivered milestone 410–419 Drawing Intelligence Phase C change-clo
 | Field | Value |
 |---|---|
 | **currentSprint** | 399 closed (2026-07-07) |
-| **currentMilestone** | 420–429 Bulk Upload Engine active (0/10) |
+| **currentMilestone** | 410–419 Change-cloud Detection wrap closed (8/8); 420–429 opens Sprint 400 |
 | **nextSprint** | 400 — Phase C bulk upload growth event contract |
 | **hardCompletionDirective** | preserved — at_risk · 5 days remaining · computed 2026-07-07 |
 
