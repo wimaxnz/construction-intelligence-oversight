@@ -28,14 +28,6 @@ Independent review is optional and non-blocking. File a request here only when a
 
 ## Active requests
 
-### Request — 2026-07-07
-
-**Topic:** Migration 015 staging credential blocker update, owner action completed  
-**Context:** Owner has updated the existing local `DATABASE_URL.txt` credential file with the PostgreSQL URI obtained from the verified Supabase staging project connection dialog. No credential value is included here. Prior project identity verification matched staging project ref `aybovjvmyqexgpmhedni`.  
-**Question:** Securely re-read the existing local credential files, re-verify target identity and same-project consistency without exposing secrets, then resume the migration 015 staging apply path. If verification passes, run `MIGRATION_015_APPLY=1`, perform the RLS policy audit, rerun Sprint Validation 3/3 against staging, verify rollback readiness, reassess hard-completion gate #2, and sync redacted evidence to oversight. If any safety or identity check fails, stop only the affected migration path and report the blocker while continuing safe non-conflicting work.  
-**Urgency:** security/data-integrity  
-**Suggested reviewer focus:** architecture | roadmap | governance
-
 ### Request — 2026-07-06
 
 **Topic:** Hard completion directive monitoring (Sunday 12 July 2026)  

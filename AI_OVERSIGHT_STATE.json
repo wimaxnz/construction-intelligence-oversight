@@ -2402,7 +2402,8 @@
       "sprint422": "3/3 consecutive green (Finding 6 acceptance + mid-milestone wrap)",
       "sprint423": "gate #2 blocked — PHASE_B_RUNS=3 on staging skipped; gate #1 regression guard green",
       "sprint424": "3/3 consecutive green (PHASE_B_RUNS=3 + regression guard + growth-event contract)",
-      "sprint425": "Milestone 440–449 wrap — selftest green; gate #2 deferral documented"
+      "sprint425": "Milestone 440–449 wrap — selftest green; gate #2 deferral documented",
+      "sprint426Migration": "gate #2 blocked — fresh read; extracted postgresql URI has placeholder; 0/7 policies; PHASE_B_RUNS=3 skipped"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-07",
@@ -2491,10 +2492,10 @@
     {
       "id": "migration-015-staging-credentials",
       "severity": "high-before-production",
-      "description": "SUPABASE_SERVICE_ROLE_KEY present but DATABASE_URL is REST URL not postgres:// — pg_policies audit and MIGRATION_015_APPLY blocked (Sprint 423 secure apply verified 2026-07-07)",
+      "description": "SUPABASE_SERVICE_ROLE_KEY present (sb_secret) but DATABASE_URL is mixed REST+postgres file with [YOUR-PASSWORD] placeholder — pg_policies audit and MIGRATION_015_APPLY blocked (Sprint 426 fresh read 2026-07-07)",
       "owner": "platform-engineering",
-      "opensSprint": 424,
-      "resolution": "Provide direct Postgres DATABASE_URL for staging project; re-run verify-migration-015-staging.ts with MIGRATION_015_APPLY=1 (parallel worker may update gate #2 when credentials verified)"
+      "opensSprint": 426,
+      "resolution": "Replace DATABASE_URL.txt with single session pooler postgresql:// URI (real password); re-run verify-migration-015-staging.ts with MIGRATION_015_APPLY=1"
     }
   ],
   "nextSprint": {
@@ -2502,23 +2503,23 @@
     "stream1": "Milestone 450–459 integration — cross-project loop production hardening + Digital Brain registry seam",
     "stream2": "Migration 015 staging apply retry (credential-gated parallel) — verify-migration-015-staging.ts",
     "selftest": "scripts/sprint-426-selftest.ts",
-    "credentialNote": "Gate #2 blocked until postgres DATABASE_URL available — parallel worker may satisfy when credentials verified"
+    "credentialNote": "Gate #2 blocked — DATABASE_URL.txt mixed format; extracted postgresql URI has [YOUR-PASSWORD] placeholder (Sprint 426 fresh read)"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-06T22:00:26.662Z",
+    "lastPushAttempt": "2026-07-06T22:00:49.699Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-06T22:00:26.662Z",
+    "verifiedAt": "2026-07-06T22:00:49.699Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-06T07:15:00.000Z",
-    "sanitizedAt": "2026-07-06T22:00:06.9968593Z",
-    "pushedAt": "2026-07-06T22:00:26.662Z",
-    "remoteHeadSha": "f6aec66c468b5fa321c67b45a97a160d102430c0",
-    "publicStateVerifiedAt": "2026-07-06T22:00:26.662Z",
+    "sanitizedAt": "2026-07-06T22:29:43.0789837Z",
+    "pushedAt": "2026-07-06T22:00:49.699Z",
+    "remoteHeadSha": "4213d046dbf535ad0de792cbc14abae7222dfff3",
+    "publicStateVerifiedAt": "2026-07-06T22:00:49.699Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "2ad7d1efd393e2aa9e86c4f42ae743446c3dcede82a08da7767e7b42c6d81457",
+    "publicStateContentHash": "76233670d98b2aa0128c6850b785a8018fc520f8f9750343a2c84be64b761a9a",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -2550,21 +2551,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "2ad7d1efd393e2aa9e86c4f42ae743446c3dcede82a08da7767e7b42c6d81457",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-06T22:00:26.662Z",
-      "rawEndpointVerifiedAt": "2026-07-06T22:00:26.662Z",
-      "gitOriginVerifiedAt": "2026-07-06T22:00:26.662Z",
+      "githubApiVerifiedAt": "2026-07-06T22:00:49.699Z",
+      "rawEndpointVerifiedAt": "2026-07-06T22:00:49.699Z",
+      "gitOriginVerifiedAt": "2026-07-06T22:00:49.699Z",
       "routeContentHashes": {
-        "github-api": "2ad7d1efd393e2aa9e86c4f42ae743446c3dcede82a08da7767e7b42c6d81457",
+        "github-api": "76233670d98b2aa0128c6850b785a8018fc520f8f9750343a2c84be64b761a9a",
         "raw-cdn": "2ad7d1efd393e2aa9e86c4f42ae743446c3dcede82a08da7767e7b42c6d81457",
-        "git-origin": "2ad7d1efd393e2aa9e86c4f42ae743446c3dcede82a08da7767e7b42c6d81457"
+        "git-origin": "76233670d98b2aa0128c6850b785a8018fc520f8f9750343a2c84be64b761a9a"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "f6aec66c468b5fa321c67b45a97a160d102430c0",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "4213d046dbf535ad0de792cbc14abae7222dfff3",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 416,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -2575,16 +2576,9 @@
     "bridgeDocs": "docs/ai-oversight/OVERSIGHT_BRIDGE_ADR.md"
   },
   "oversightBridge": {
-    "lastConsumedAt": "2026-07-06T21:31:27.924Z",
+    "lastConsumedAt": "2026-07-06T22:00:54.159Z",
     "lastInboxUpdatedAt": null,
-    "newFindingsDetected": 0,
-    "localE2EProven": true,
-    "localE2EProofDoc": "docs/ai-oversight/OVERSIGHT_RELAY_E2E_PROOF.md",
-    "cloudflareDeployProven": false,
-    "chatgptCallablePathProven": false,
-    "gate4DeferralDocumented": true,
-    "gate4DeferralOwner": "platform-team",
-    "gate4DeferralRationale": "Remote Cloudflare deploy and ChatGPT callable path not proven — local E2E only; deferral documented Sprint 424"
+    "newFindingsDetected": 0
   },
   "oversightFindingsState": [],
   "oversightFindingsTriage": [
@@ -3186,7 +3180,7 @@
     "scope": "cross-project learning loop + production readiness gates",
     "passFailCriteria": [
       "✅ Finding 6 chained acceptance: Project A lesson from evidence → Knowledge Library → human review approve → versioned provenance-backed template → Project B similar condition → similarity retrieval → proactive warning → user accept/dismiss/modify → outcome feedback → confidence evolution — demonstrated Sprint 422 (docs/CROSS_PROJECT_LEARNING_LOOP_ACCEPTANCE.json)",
-      "⏳ Migration 015 applied and verified on staging Supabase (RLS policies, pin/evidence delete policies, Sprint Validation 3/3 on staging) — policies_missing Sprint 423 (rest_api_url — pg_policies audit blocked; project ref aybo... matches VITE_SUPABASE_URL; MIGRATION_015_APPLY not attempted); human action required",
+      "⏳ Migration 015 applied and verified on staging Supabase (RLS policies, pin/evidence delete policies, Sprint Validation 3/3 on staging) — policies_missing Sprint 426 (mixed REST+postgres file; project ref aybo... matches; [YOUR-PASSWORD] placeholder blocks connect; MIGRATION_015_APPLY not attempted); human action required",
       "Platform Certification 5/5 deterministic suite re-run with baseline covering sprints through current closed sprint — 5/5 Sprint 418 preserved; Sprint Validation 3/3 re-run Sprint 424",
       "Oversight bridge remote callable path proven (chatgptCallablePathProven) OR documented deferral with owner — deferral documented Sprint 424; cloudflareDeployProven false; local E2E only"
     ],

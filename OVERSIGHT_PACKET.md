@@ -2,11 +2,16 @@
 
 **Status:** Active — Milestone 440–449 wrap complete; Sprint 426 queued (450–459 Integration Milestone opens).
 
-**Last updated:** 2026-07-07  
+**Last updated:** 2026-07-07
 **Current sprint:** 425 closed  
 **Next sprint:** 426 queued  
 **Milestone:** 440–449 wrap closed (10/10) · 450–459 opens Sprint 426  
 **hardCompletionDirective:** at_risk · 5 days remaining · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 not_satisfied (migration 015 staging blocked)
+
+## Sprint 426 migration stream (credential gate)
+
+Fresh credential read (2026-07-06): `DATABASE_URL.txt` lastWriteTimeUtc **2026-07-06T22:14:52.120Z**. Scheme **rest (primary) + postgresql (extracted)**; project ref **aybo...** matches intended staging. Extracted `[REDACTED] line has `[YOUR-PASSWORD]` placeholder (not session pooler). **MIGRATION_015_APPLY not attempted.** Gate #2 **not_satisfied** (0/7 policies). PHASE_B_RUNS=3 on staging **skipped**. Rollback readiness **verified** (reversible; migration not applied).
+
 
 ## Sprint 425 summary
 
