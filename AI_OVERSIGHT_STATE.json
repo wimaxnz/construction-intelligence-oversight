@@ -2386,18 +2386,18 @@
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-06T20:01:56.580Z",
+    "lastPushAttempt": "2026-07-06T20:02:21.223Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-06T20:01:56.580Z",
+    "verifiedAt": "2026-07-06T20:02:21.223Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-06T07:15:00.000Z",
-    "sanitizedAt": "2026-07-06T20:01:37.3975645Z",
-    "pushedAt": "2026-07-06T20:01:56.580Z",
-    "remoteHeadSha": "0af3e8003b1b63d6a7637f4c013f3be0bdfc5123",
-    "publicStateVerifiedAt": "2026-07-06T20:01:56.580Z",
+    "sanitizedAt": "2026-07-06T20:02:56.5857402Z",
+    "pushedAt": "2026-07-06T20:02:21.223Z",
+    "remoteHeadSha": "11119f43df41eb480684e13a1b933a21562bf884",
+    "publicStateVerifiedAt": "2026-07-06T20:02:21.223Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "5d59ce28092cb313e506f5202124aeecff6a1be7cdcc727d275ef45da95d42fb",
+    "publicStateContentHash": "974f042c27aba11a9c604a0ece2eab5560c68207b908c24cb30a11c30f316527",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -2429,21 +2429,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "5d59ce28092cb313e506f5202124aeecff6a1be7cdcc727d275ef45da95d42fb",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-06T20:01:56.580Z",
-      "rawEndpointVerifiedAt": "2026-07-06T20:01:56.580Z",
-      "gitOriginVerifiedAt": "2026-07-06T20:01:56.580Z",
+      "githubApiVerifiedAt": "2026-07-06T20:02:21.223Z",
+      "rawEndpointVerifiedAt": "2026-07-06T20:02:21.223Z",
+      "gitOriginVerifiedAt": "2026-07-06T20:02:21.223Z",
       "routeContentHashes": {
-        "github-api": "5d59ce28092cb313e506f5202124aeecff6a1be7cdcc727d275ef45da95d42fb",
+        "github-api": "974f042c27aba11a9c604a0ece2eab5560c68207b908c24cb30a11c30f316527",
         "raw-cdn": "5d59ce28092cb313e506f5202124aeecff6a1be7cdcc727d275ef45da95d42fb",
-        "git-origin": "5d59ce28092cb313e506f5202124aeecff6a1be7cdcc727d275ef45da95d42fb"
+        "git-origin": "974f042c27aba11a9c604a0ece2eab5560c68207b908c24cb30a11c30f316527"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "0af3e8003b1b63d6a7637f4c013f3be0bdfc5123",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "11119f43df41eb480684e13a1b933a21562bf884",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 402,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -3066,7 +3066,7 @@
     "daysRemaining": 5,
     "computedAsOf": "2026-07-07",
     "status": "at_risk",
-    "statusRationale": "Cross-project learning loop not demonstrated end-to-end; migration 015 staging pending; platform certification stale since 2026-06-29; bridge remote callable not proven"
+    "statusRationale": "Cross-project learning loop not demonstrated end-to-end; migration 015 staging pending; Platform Certification 5/5 re-achieved Sprint 418; bridge remote callable not proven"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
