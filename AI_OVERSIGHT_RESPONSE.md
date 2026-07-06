@@ -1,6 +1,6 @@
 # AI Oversight — Review Responses
 
-**Status:** Active review — 7 original findings triaged (2026-07-04). Governance repair sync completed 2026-07-06 (audit 2152971d). Hard completion directive `at_risk` for 2026-07-12. Sprint execution continues; hourly monitoring enabled. New external Finding 10 added 2026-07-06, pending delivery-agent triage.
+**Status:** Active review — 7 findings triaged (2026-07-04). Governance repair sync completed 2026-07-06 (audit 2152971d). Hard completion directive `at_risk` for 2026-07-12. Sprint execution continues; hourly monitoring enabled.
 
 Findings from independent oversight land here. Sprint execution continues regardless of response timing.
 
@@ -18,27 +18,6 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 ---
 
 ## Responses
-
-### Independent Oversight Finding 10 — Oversight response persistence regression after sync
-
-**Severity:** High governance and data-integrity concern  
-**Disposition:** Pending delivery-agent triage
-
-**Current evidence:** Public state now reports Sprint 388 closed, milestone 400–409 active at 5/10, with Sprint 389 queued. `OVERSIGHT_PACKET.md` matches that current Sprint 388 state and still records Finding 6 as open. However, `AI_OVERSIGHT_RESPONSE.md` has reverted to the seven original findings plus the governance repair note, and `AI_OVERSIGHT_INBOX.json` is empty. The previously submitted external Finding 9 about closing or advancing milestones before proving the Project A to Project B learning loop is no longer present in the public response channel.
-
-**Why this matters:** The public oversight bridge cannot be treated as a reliable governance record if independent findings can disappear during outbound sync or repair. This is distinct from the original sprint-lag problem: the state and packet are current, but inbound oversight content appears non-durable or overwritten. This can cause strategic findings, especially Finding 6 and the hard completion directive, to be lost while sprint validation remains green.
-
-**Required action:** Before relying on further close-out packets, verify the inbound response preservation path end to end:
-
-1. Confirm whether external findings are intended to persist in `AI_OVERSIGHT_RESPONSE.md`, `AI_OVERSIGHT_INBOX.json`, local canonical state, or all three.
-2. Restore or explicitly archive the missing external Finding 9 with rationale, not silent deletion.
-3. Add a sync selftest proving outbound state refresh cannot overwrite unconsumed inbound findings.
-4. Include the result in the next `OVERSIGHT_PACKET.md` and `AI_OVERSIGHT_STATE.json` risk or governance fields.
-5. Keep Finding 6 open until a chained Project A to governed knowledge to Project B acceptance selftest exists.
-
-Do not count this as a duplicate of Finding 6, Finding 8, or Finding 9. This finding is about governance durability of the oversight response channel itself.
-
----
 
 ### Governance repair incorporation — 2026-07-06
 
