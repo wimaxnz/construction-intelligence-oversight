@@ -2449,10 +2449,10 @@
     {
       "id": "migration-015-staging-credentials",
       "severity": "high-before-production",
-      "description": "SUPABASE_SERVICE_ROLE_KEY and DATABASE_URL not present in [REDACTED] — migration 015 staging apply and pg_policies audit blocked through Sprint 421; Sprint Validation 3/3 on staging skipped",
+      "description": "Credential retry 2026-07-07: SUPABASE_SERVICE_ROLE_KEY present (sb_secret, REST probe ok) but DATABASE_URL file is REST API URL not postgres:// — project ref aybo... matches staging; pg_policies audit and MIGRATION_015_APPLY blocked; Sprint Validation 3/3 on staging skipped",
       "owner": "platform-engineering",
       "opensSprint": 423,
-      "resolution": "Add SUPABASE_SERVICE_ROLE_KEY and DATABASE_URL to [REDACTED]; re-run verify-migration-015-staging.ts with MIGRATION_015_APPLY=1 (can run in parallel with Sprint 423 when credentials available)"
+      "resolution": "Provide postgres:// DATABASE_URL for staging project aybo... (Supabase Dashboard connection string); inject session-only; re-run verify-migration-015-staging.ts with MIGRATION_015_APPLY=1"
     }
   ],
   "nextSprint": {
@@ -2460,23 +2460,23 @@
     "stream1": "Migration 015 staging apply retry (credential-gated parallel) — sprint-423-selftest.ts",
     "stream2": "Hard completion directive gate status review — sprint-423-selftest.ts",
     "selftest": "scripts/sprint-423-selftest.ts",
-    "credentialNote": "Migration 015 staging apply remains blocked by migration-015-staging-credentials until SUPABASE_SERVICE_ROLE_KEY and DATABASE_URL added to .env.local"
+    "credentialNote": "Migration 015 staging apply blocked: service role present (REST ok) but DATABASE_URL is REST URL not postgres:// — need Postgres connection string for project aybo..."
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-06T21:02:09.148Z",
+    "lastPushAttempt": "2026-07-06T21:02:57.854Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-06T21:02:09.148Z",
+    "verifiedAt": "2026-07-06T21:02:57.854Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-06T07:15:00.000Z",
-    "sanitizedAt": "2026-07-06T21:01:31.8980476Z",
-    "pushedAt": "2026-07-06T21:02:09.148Z",
-    "remoteHeadSha": "f23a3c440b7de75f18196c88b4e5314e31fa67b1",
-    "publicStateVerifiedAt": "2026-07-06T21:02:09.148Z",
+    "sanitizedAt": "2026-07-06T21:09:51.3285036Z",
+    "pushedAt": "2026-07-06T21:02:57.854Z",
+    "remoteHeadSha": "65c6a76a8dfce2138b7c4658ddd9f0675e0733fa",
+    "publicStateVerifiedAt": "2026-07-06T21:02:57.854Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "824c463a2d12bc441b9030b47b1b2c06cee6e86bdbef67004ff7220a2f181cda",
+    "publicStateContentHash": "a4fa01e02d72d913a7fe00492054b33a898ce3dafc42dc90e64ab355839492ec",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -2508,21 +2508,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "824c463a2d12bc441b9030b47b1b2c06cee6e86bdbef67004ff7220a2f181cda",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-06T21:02:09.148Z",
-      "rawEndpointVerifiedAt": "2026-07-06T21:02:09.148Z",
-      "gitOriginVerifiedAt": "2026-07-06T21:02:09.148Z",
+      "githubApiVerifiedAt": "2026-07-06T21:02:57.854Z",
+      "rawEndpointVerifiedAt": "2026-07-06T21:02:57.854Z",
+      "gitOriginVerifiedAt": "2026-07-06T21:02:57.854Z",
       "routeContentHashes": {
-        "github-api": "824c463a2d12bc441b9030b47b1b2c06cee6e86bdbef67004ff7220a2f181cda",
+        "github-api": "a4fa01e02d72d913a7fe00492054b33a898ce3dafc42dc90e64ab355839492ec",
         "raw-cdn": "824c463a2d12bc441b9030b47b1b2c06cee6e86bdbef67004ff7220a2f181cda",
-        "git-origin": "824c463a2d12bc441b9030b47b1b2c06cee6e86bdbef67004ff7220a2f181cda"
+        "git-origin": "a4fa01e02d72d913a7fe00492054b33a898ce3dafc42dc90e64ab355839492ec"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "f23a3c440b7de75f18196c88b4e5314e31fa67b1",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "65c6a76a8dfce2138b7c4658ddd9f0675e0733fa",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 410,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -3150,14 +3150,14 @@
     "scope": "cross-project learning loop + production readiness gates",
     "passFailCriteria": [
       "✅ Finding 6 chained acceptance: Project A lesson from evidence → Knowledge Library → human review approve → versioned provenance-backed template → Project B similar condition → similarity retrieval → proactive warning → user accept/dismiss/modify → outcome feedback → confidence evolution — demonstrated Sprint 422 (docs/CROSS_PROJECT_LEARNING_LOOP_ACCEPTANCE.json)",
-      "⏳ Migration 015 applied and verified on staging Supabase (RLS policies, pin/evidence delete policies, Sprint Validation 3/3 on staging) — env-only Sprint 419–421 (SUPABASE_SERVICE_ROLE_KEY and DATABASE_URL missing from .env.local); human action required",
+      "⏳ Migration 015 applied and verified on staging Supabase (RLS policies, pin/evidence delete policies, Sprint Validation 3/3 on staging) — credential retry 2026-07-07: project ref match aybo..., service role REST ok, DATABASE_URL wrong format (REST not postgres); gate #2 not_satisfied",
       "Platform Certification 5/5 deterministic suite re-run with baseline covering sprints through current closed sprint",
       "Oversight bridge remote callable path proven (chatgptCallablePathProven) OR documented deferral with owner — deferral documented; local E2E only"
     ],
     "daysRemaining": 5,
     "computedAsOf": "2026-07-07",
     "status": "at_risk",
-    "statusRationale": "Finding 6 chained acceptance demonstrated Sprint 422 (gate #1 satisfied); migration 015 staging env_only (Migration 015 staging apply Sprint 421 — env_only (SUPABASE_SERVICE_ROLE_KEY and DATABASE_URL both missing — cannot audit pg_policies; MIGRATION_015_APPLY=1 requested but DATABASE_URL / SUPABASE_DB_URL not set)); Platform Certification 5/5 re-achieved Sprint 418; bridge remote callable not proven"
+    "statusRationale": "Finding 6 chained acceptance demonstrated Sprint 422 (gate #1 satisfied); migration 015 staging credential retry 2026-07-07 — project ref match, service role REST ok, DATABASE_URL REST URL not postgres (pg_policies audit blocked, apply not attempted); gate #2 not_satisfied; Platform Certification 5/5 re-achieved Sprint 418; bridge remote callable not proven"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
