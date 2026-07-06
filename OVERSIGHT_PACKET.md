@@ -1,6 +1,6 @@
 # AI Oversight — Close-out Packet
 
-**Status:** Active — Sprint 406 close-out for milestone 420–429 Bulk Upload Engine (Sprint 406, 7/10); Sprint 407 queued.
+**Status:** Active — Sprint 407 close-out for milestone 420–429 Bulk Upload Engine wrap (Sprint 407); milestone 430–439 Revision Upload UI opens; Sprint 408 queued.
 
 This file is included in the sanitized push to the public oversight repo.
 
@@ -8,35 +8,36 @@ This file is included in the sanitized push to the public oversight repo.
 
 ## Packet — 2026-07-07
 
-**Sprint closed:** 406  
-**Milestone active:** 420–429 Drawing Intelligence Phase C — Bulk Upload Engine (Sprint 406, 7/10)  
+**Sprint closed:** 407  
+**Milestone closed:** 420–429 Drawing Intelligence Phase C — Bulk Upload Engine (wrap Sprint 407, 8/8)  
+**Milestone opened:** 430–439 Drawing Intelligence Phase C — Revision Upload UI (Sprint 408, 0/10)  
 **Previous milestone closed:** 410–419 Change-cloud Detection (wrap Sprint 399)  
-**Next sprint:** 407 queued — Milestone 420–429 Phase C bulk upload engine wrap completeness review  
+**Next sprint:** 408 queued — Phase C revision upload UI foundation + upload-path wiring  
 **Validation:** Sprint Validation 3/3 consecutive green (14/0/2 per run, network/console clean) · build green
 
 ### Summary
 
-Sprint 406 delivered milestone 420–429 Drawing Intelligence Phase C bulk upload engine mid-milestone 400–404 completeness review via `sprint-406-selftest.ts`. Stream 1: Mid-milestone review — first-half completeness prep. Stream 2: Partial stack audit confirms growth events · Memory audit · batch review UI foundation · Decision Timeline · AI panel · project assistant context engine wiring through context entries. Milestone 420–429 active (7/10). Cross-project learning loop (Finding 6) remains undemonstrated as a chained acceptance scenario.
+Sprint 407 delivered milestone 420–429 Drawing Intelligence Phase C bulk upload engine wrap completeness review via `sprint-407-selftest.ts`. Stream 1: Milestone wrap — bulk upload engine closes. Stream 2: Full stack audit confirms growth events · Memory audit · batch review UI foundation · Decision Timeline · explainability · AI panel · project assistant context engine wiring from Sprints 403–405. Milestone 420–429 closed (8/8). Milestone 430–439 Revision Upload UI opens Sprint 408. Cross-project learning loop (Finding 6) remains undemonstrated as a chained acceptance scenario.
 
 ### Current sprint state
 
 | Field | Value |
 |---|---|
-| **currentSprint** | 406 closed (2026-07-07) |
-| **currentMilestone** | 420–429 Bulk Upload Engine active (7/10) |
-| **nextSprint** | 407 — Milestone 420–429 Phase C bulk upload engine wrap completeness review |
+| **currentSprint** | 407 closed (2026-07-07) |
+| **currentMilestone** | 430–439 Revision Upload UI active (0/10) |
+| **nextSprint** | 408 — Phase C revision upload UI foundation + upload-path wiring |
 | **hardCompletionDirective** | preserved — at_risk · 5 days remaining · computed 2026-07-07 |
 
 ### Stream delivery
 
 | Stream | Deliverable |
 |---|---|
-| **Stream 1 (UX)** | Mid-milestone review — Drawing Intelligence Phase C bulk upload engine first-half completeness prep |
-| **Stream 2 (Platform)** | Mid-milestone 400–404 Drawing Intelligence Phase C bulk upload engine completeness review — `sprint-406-selftest.ts` |
+| **Stream 1 (UX)** | Milestone wrap — Drawing Intelligence Phase C bulk upload engine closes |
+| **Stream 2 (Platform)** | Milestone 420–429 Drawing Intelligence Phase C bulk upload engine wrap completeness review — `sprint-407-selftest.ts` |
 
-### Changed files (Sprint 406)
+### Changed files (Sprint 407)
 
-- `scripts/sprint-406-selftest.ts`
+- `scripts/sprint-407-selftest.ts`
 - `docs/PLATFORM_EVOLUTION.md`
 - `docs/PHASE_B_UX_ACCEPTANCE.md`
 - `docs/ai-oversight/AI_OVERSIGHT_STATE.json`
@@ -44,11 +45,11 @@ Sprint 406 delivered milestone 420–429 Drawing Intelligence Phase C bulk uploa
 
 ### Self-test
 
-`scripts/sprint-406-selftest.ts` — browser-free; validates Phase C bulk upload engine stack partial (growth events · Memory audit · batch review UI foundation · Decision Timeline · AI panel · project assistant context engine wiring through context entries) across operational workspace.
+`scripts/sprint-407-selftest.ts` — browser-free; validates Phase C bulk upload engine full stack (growth events · Memory audit · batch review UI foundation · Decision Timeline · explainability · AI panel · project assistant context engine wiring from Sprints 403–405) across operational workspace.
 
 ### Digital Brain impact
 
-No new growth event kinds — mid-milestone 400–404 completeness review confirms Phase C bulk upload engine growth event family + Memory audit stack partial.
+No new growth event kinds — milestone 420–429 wrap completeness review confirms Phase C bulk upload engine full stack audit.
 
 ### Knowledge graph impact
 
@@ -56,5 +57,5 @@ No direct KG edge changes.
 
 ### Open risks (unchanged posture)
 
-- **drawing-revision-provenance-gap** — C5 bulk upload mid-milestone 400–404 partial stack audit delivered Sprint 406; C5 explainability delivered Sprint 405; C1 upload UI not started
-- **phase-c-gated** — bulk upload first-half stack live Sprint 406; milestone wrap opens Sprint 407; revision upload UI opens milestone 430–439
+- **drawing-revision-provenance-gap** — C5 bulk upload engine full stack delivered milestone 420–429 closed Sprint 407; C1 revision upload UI opens milestone 430–439 Sprint 408
+- **phase-c-gated** — bulk upload engine full stack live Sprint 407; revision upload UI opens milestone 430–439 Sprint 408
