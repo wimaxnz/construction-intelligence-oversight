@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 470–479 Phase D Construction Memory (4/10); Sprint 450 queued.
+**Status:** Active — Milestone 470–479 Phase D Construction Memory (5/10); Sprint 451 queued.
 
 **Last updated:** 2026-07-07
-**Current sprint:** 449 closed  
-**Next sprint:** 450 queued
-**Milestone:** 470–479 Phase D Construction Memory active (4/10)
+**Current sprint:** 450 closed  
+**Next sprint:** 451 queued
+**Milestone:** 470–479 Phase D Construction Memory active (5/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 450 summary
+
+Project assistant context engine `drawing_pin_events` timeline entry count + label hint (`drawingPinEventsTimelineEntryCount` · `drawingPinEventsLabelHint` · `formatDistinctDrawingPinEventsLabelHint` · `projectAssistantContextEngine.ts`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-450-selftest.ts`.
 
 ## Sprint 449 summary
 
@@ -110,10 +114,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 | #3 Platform Certification 3/3 | **recertified** | Sprint 446 post-milestone-close (Finding 4) |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Next sprint (450)
+## Next sprint (451)
 
-- Stream 1: Project assistant context engine drawing pin events timeline entry count + label hint wiring — sprint-450-selftest.ts
+- Stream 1: Operational workspace AI panel drawing pin events context availability surfacing from project assistant context — operational-workspace-ai-panel-drawing-pin-events-context-entry-count · operational-workspace-ai-panel-drawing-pin-events-context-label-hint · OperationalWorkspace.tsx · sprint-451-selftest.ts
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
