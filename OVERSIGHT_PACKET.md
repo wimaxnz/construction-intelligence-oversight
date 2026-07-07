@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 480–489 Phase D Audit Trail Export active (2/10); Sprint 458 queued.
+**Status:** Active — Milestone 480–489 Phase D Audit Trail Export active (3/10); Sprint 459 queued.
 
 **Last updated:** 2026-07-08
-**Current sprint:** 457 closed  
-**Next sprint:** 458 queued
-**Milestone:** 480–489 Phase D Audit Trail Export active (2/10)
+**Current sprint:** 458 closed  
+**Next sprint:** 459 queued
+**Milestone:** 480–489 Phase D Audit Trail Export active (3/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 458 summary
+
+Milestone 480–489 Phase D audit trail export — Operational workspace AI panel drawing pin events audit trail export dispute sheet hint (`formatDistinctDrawingPinEventsAuditTrailExportDisputeSheetHint` · `operational-workspace-ai-panel-drawing-pin-events-audit-trail-export-dispute-sheet-hint`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-458-selftest.ts`.
 
 ## Sprint 457 summary
 
@@ -142,10 +146,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 | #3 Platform Certification 3/3 | **recertified** | Sprint 446 post-milestone-close (Finding 4) |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Next sprint (458)
+## Next sprint (459)
 
-- Stream 1: Operational workspace AI panel drawing pin events audit trail export dispute sheet hint — sprint-458-selftest.ts
+- Stream 1: Project assistant context engine drawing pin events audit trail export dispute sheet hint wiring — sprint-459-selftest.ts
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
