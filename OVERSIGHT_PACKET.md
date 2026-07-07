@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 470–479 Phase D Construction Memory (5/10); Sprint 451 queued.
+**Status:** Active — Milestone 470–479 Phase D Construction Memory (6/10); Sprint 452 queued.
 
 **Last updated:** 2026-07-07
-**Current sprint:** 450 closed  
-**Next sprint:** 451 queued
-**Milestone:** 470–479 Phase D Construction Memory active (5/10)
+**Current sprint:** 451 closed  
+**Next sprint:** 452 queued
+**Milestone:** 470–479 Phase D Construction Memory active (6/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 451 summary
+
+Operational workspace AI panel drawing pin events context availability surfacing from project assistant context (`operational-workspace-ai-panel-drawing-pin-events-context-entry-count` · `operational-workspace-ai-panel-drawing-pin-events-context-label-hint` · `OperationalWorkspace.tsx`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-451-selftest.ts`.
 
 ## Sprint 450 summary
 
@@ -114,10 +118,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 | #3 Platform Certification 3/3 | **recertified** | Sprint 446 post-milestone-close (Finding 4) |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Next sprint (451)
+## Next sprint (452)
 
-- Stream 1: Operational workspace AI panel drawing pin events context availability surfacing from project assistant context — operational-workspace-ai-panel-drawing-pin-events-context-entry-count · operational-workspace-ai-panel-drawing-pin-events-context-label-hint · OperationalWorkspace.tsx · sprint-451-selftest.ts
+- Stream 1: Project assistant context engine drawing pin events context entries aggregation + operational workspace AI panel drawing pin events context entry surfacing from project assistant context entries — drawingPinEventsEntries · toDrawingPinEventsContextEntry · operational-workspace-ai-panel-drawing-pin-events-context-entries · operational-workspace-ai-panel-drawing-pin-events-context-entry-item · projectAssistantContextEngine.ts · projectAssistantContext.ts · OperationalWorkspace.tsx · sprint-452-selftest.ts
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
