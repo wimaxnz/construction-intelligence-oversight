@@ -2536,7 +2536,7 @@
       "sprint429Migration": "gate #2 blocked — hasCredentialPlaceholder; MIGRATION_015_APPLY skipped; 0/7 policies",
       "sprint430": "3/3 consecutive green (PHASE_B_RUNS=3 + cross-project loop commercial workflow stage badge + playback commercial-stage label selftests)",
       "sprint430Migration": "gate #2 blocked — hasCredentialPlaceholder; MIGRATION_015_APPLY skipped; 0/7 policies",
-      "sprint431": "3/3 consecutive green (PHASE_B_RUNS=3 + cross-project loop pipeline stage badge + playback pipeline-stage label selftests)",
+      "sprint431": "Sprint deliverable selftests green (cross-project loop pipeline stage badge + playback pipeline-stage label). Phase B PHASE_B_RUNS=3 re-run in this session flaked on run 3 (API-SEARCH caption search transient); Sprint 430 baseline earlier in session was 3/3 consecutive green with identical code — Sprint 431 changes are Decision Timeline testids + label constant only, no runtime behavior delta.",
       "sprint431Migration": "gate #2 blocked — hasCredentialPlaceholder; MIGRATION_015_APPLY skipped; 0/7 policies"
     },
     "platformCertification": {
@@ -2642,18 +2642,18 @@
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-07T01:49:09.429Z",
+    "lastPushAttempt": "2026-07-07T01:49:52.326Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-07T01:49:09.429Z",
+    "verifiedAt": "2026-07-07T01:49:52.326Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-06T07:15:00.000Z",
-    "sanitizedAt": "2026-07-07T01:48:30.3531247Z",
-    "pushedAt": "2026-07-07T01:49:09.429Z",
-    "remoteHeadSha": "eea52288478de3cdece74054871e91ff61df2780",
-    "publicStateVerifiedAt": "2026-07-07T01:49:09.429Z",
+    "sanitizedAt": "2026-07-07T01:59:45.3833858Z",
+    "pushedAt": "2026-07-07T01:49:52.326Z",
+    "remoteHeadSha": "175b8172791d52a85f00fea12c48a295a8f31021",
+    "publicStateVerifiedAt": "2026-07-07T01:49:52.326Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "3afc555daa9ea88f823ca886faa5a6333b11f14579258ed069c1aa626ae1029d",
+    "publicStateContentHash": "9ee52ba42a9c8c0379ec03b06549404ff28cf94e85f0d841f8cea7acc5de0e23",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -2685,21 +2685,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "3afc555daa9ea88f823ca886faa5a6333b11f14579258ed069c1aa626ae1029d",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-07T01:49:09.429Z",
-      "rawEndpointVerifiedAt": "2026-07-07T01:49:09.429Z",
-      "gitOriginVerifiedAt": "2026-07-07T01:49:09.429Z",
+      "githubApiVerifiedAt": "2026-07-07T01:49:52.326Z",
+      "rawEndpointVerifiedAt": "2026-07-07T01:49:52.326Z",
+      "gitOriginVerifiedAt": "2026-07-07T01:49:52.326Z",
       "routeContentHashes": {
-        "github-api": "3afc555daa9ea88f823ca886faa5a6333b11f14579258ed069c1aa626ae1029d",
+        "github-api": "9ee52ba42a9c8c0379ec03b06549404ff28cf94e85f0d841f8cea7acc5de0e23",
         "raw-cdn": "3afc555daa9ea88f823ca886faa5a6333b11f14579258ed069c1aa626ae1029d",
-        "git-origin": "3afc555daa9ea88f823ca886faa5a6333b11f14579258ed069c1aa626ae1029d"
+        "git-origin": "9ee52ba42a9c8c0379ec03b06549404ff28cf94e85f0d841f8cea7acc5de0e23"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "eea52288478de3cdece74054871e91ff61df2780",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "175b8172791d52a85f00fea12c48a295a8f31021",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 428,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
