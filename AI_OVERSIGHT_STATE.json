@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-07",
   "currentSprint": {
-    "number": 432,
+    "number": 433,
     "status": "closed",
-    "previousClosed": 431,
+    "previousClosed": 432,
     "closedDate": "2026-07-07"
   },
   "currentMilestone": {
@@ -23,15 +23,15 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 7,
-    "percentComplete": 70,
+    "sprintsClosed": 8,
+    "percentComplete": 80,
     "nextWrapReviewSprint": 435,
     "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Milestone 450–459 integration — cross-project loop Decision Timeline explainability rationale summary filtered badges + Phase D playback explainability rationale summary labels"
+      "focus": "Milestone 450–459 integration — cross-project loop project assistant context engine explainability context entry aggregation + operational workspace AI panel cross-project loop chain step explainability context entry surfacing"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -882,6 +882,11 @@
     "sprint432": {
       "stream1": "Cross-project loop Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels — decisionTimelineBuilder.ts · DecisionTimeline.tsx · cross-project-loop-decision-timeline-filter-playback-selftest.ts · sprint-432-selftest.ts",
       "stream2": "Gate #2 satisfied — migration 015 staging verified (7/7 policies, migrationApplied true); PHASE_B_RUNS=3 post-gate re-validation — phase-b-wynyard-validation.ts · docs/MIGRATION_015_STAGING_VERIFICATION.json",
+      "validation": "Sprint Validation 3/3 consecutive post-gate #2 (PHASE_B_RUNS=3); gate #1 regression guard green; gate #2 satisfied per MIGRATION_015_STAGING_VERIFICATION.json"
+    },
+    "sprint433": {
+      "stream1": "Cross-project loop Decision Timeline explainability rationale summary filtered badges + Phase D playback explainability rationale summary labels — decisionTimelineBuilder.ts · DecisionTimeline.tsx · cross-project-loop-decision-timeline-filter-playback-selftest.ts · sprint-433-selftest.ts",
+      "stream2": "PHASE_B_RUNS=3 post-gate #2 re-validation — phase-b-wynyard-validation.ts · gate #2 satisfied per docs/MIGRATION_015_STAGING_VERIFICATION.json",
       "validation": "Sprint Validation 3/3 consecutive post-gate #2 (PHASE_B_RUNS=3); gate #1 regression guard green; gate #2 satisfied per MIGRATION_015_STAGING_VERIFICATION.json"
     }
   },
@@ -2379,6 +2384,19 @@
       "docs/PHASE_B_UX_ACCEPTANCE.md",
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md"
+    ],
+    "sprint433": [
+      "src/platform/workspace/decisionTimelineBuilder.ts",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "scripts/cross-project-loop-decision-timeline-filter-playback-selftest.ts",
+      "scripts/sprint-433-selftest.ts",
+      "scripts/sprint-433-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md"
     ]
   },
   "validationResults": {
@@ -2560,14 +2578,16 @@
       "sprint431Migration": "gate #2 blocked — hasCredentialPlaceholder; MIGRATION_015_APPLY skipped; 0/7 policies",
       "sprint432": "3/3 consecutive green post-gate #2 (PHASE_B_RUNS=3 + cross-project loop explainability actor/confidence badge + playback explainability label selftests)",
       "sprint432PhaseB": "3/3 consecutive green post-gate #2 (PHASE_B_RUNS=3 after migration 015 staging verified)",
-      "sprint432Migration": "gate #2 satisfied — verified Sprint 421; evidence docs/MIGRATION_015_STAGING_VERIFICATION.json (7/7 policies, migrationApplied true)"
+      "sprint432Migration": "gate #2 satisfied — verified Sprint 421; evidence docs/MIGRATION_015_STAGING_VERIFICATION.json (7/7 policies, migrationApplied true)",
+      "sprint433": "3/3 consecutive green post-gate #2 (PHASE_B_RUNS=3 + cross-project loop explainability rationale summary badge + playback explainability rationale summary label selftests)",
+      "sprint433PhaseB": "3/3 consecutive green post-gate #2 (PHASE_B_RUNS=3 after migration 015 staging verified)"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-07",
       "lastCertifiedBaseline": "2026-07-07",
       "status": "current — recertified Sprint 418 (440-449 Phase B re-validation after S1/S5)",
       "sprintRangeCovered": "416–418 (Drawing Intelligence Phase C — Tech Debt Prerequisites S1/S5 + Phase B re-validation)",
-      "deltaSinceCertification": "Sprints 130–432 delivered (303 sprints); Milestone 450–459 active 7/10; cross-project loop explainability actor/confidence badges; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Platform Certification 5/5 Sprint 418; Sprint Validation 3/3 post-gate Sprint 432",
+      "deltaSinceCertification": "Sprints 130–433 delivered (304 sprints); Milestone 450–459 active 8/10; cross-project loop explainability rationale summary badges; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Platform Certification 5/5 Sprint 418; Sprint Validation 3/3 post-gate Sprint 433",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -2584,10 +2604,10 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Sprint 432 delivered, milestone 450–459 (7/10)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 432 cross-project loop explainability actor/confidence badges logged",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 432 closed, gate #2 satisfied, sprint 433 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 432 close-out packet"
+    "docs/PLATFORM_EVOLUTION.md — Sprint 433 delivered, milestone 450–459 (8/10)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 433 cross-project loop explainability rationale summary badges logged",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 433 closed, gate #2 satisfied, sprint 434 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 433 close-out packet"
   ],
   "migrationsRequired": [
     {
@@ -2647,27 +2667,27 @@
   ],
   "blockers": [],
   "nextSprint": {
-    "number": 433,
-    "stream1": "Milestone 450–459 integration — cross-project loop Decision Timeline explainability rationale summary filtered badges + Phase D playback explainability rationale summary labels",
+    "number": 434,
+    "stream1": "Milestone 450–459 integration — cross-project loop project assistant context engine explainability context entry aggregation + operational workspace AI panel cross-project loop chain step explainability context entry surfacing",
     "stream2": "Phase B regression re-validation post-gate #2 — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-433-selftest.ts",
+    "selftest": "scripts/sprint-434-selftest.ts",
     "credentialNote": "Gate #2 satisfied Sprint 421 — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; stream2 may run PHASE_B_RUNS=3 re-validation or integration work (not migration retry)"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-07T03:04:13.952Z",
+    "lastPushAttempt": "2026-07-07T03:04:50.302Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-07T03:04:13.952Z",
+    "verifiedAt": "2026-07-07T03:04:50.302Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-07T03:03:43.6395277Z",
-    "pushedAt": "2026-07-07T03:04:13.952Z",
-    "remoteHeadSha": "d2a87f83b2324946dca11334058ddba753e70704",
-    "publicStateVerifiedAt": "2026-07-07T03:04:13.952Z",
+    "sanitizedAt": "2026-07-07T03:34:41.5968052Z",
+    "pushedAt": "2026-07-07T03:04:50.302Z",
+    "remoteHeadSha": "b9ad03eb528ea38e9f6fb72b69e4a025f13deb14",
+    "publicStateVerifiedAt": "2026-07-07T03:04:50.302Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "54daa467e20f84b609aede00ceef941fbfc80958f72832fd2f5a66b5b2fe0c94",
+    "publicStateContentHash": "7beb9a376d52241c0a5759af5f4a8a632007540ba66dbde939ec7537d93363d7",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -2699,21 +2719,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "54daa467e20f84b609aede00ceef941fbfc80958f72832fd2f5a66b5b2fe0c94",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-07T03:04:13.952Z",
-      "rawEndpointVerifiedAt": "2026-07-07T03:04:13.952Z",
-      "gitOriginVerifiedAt": "2026-07-07T03:04:13.952Z",
+      "githubApiVerifiedAt": "2026-07-07T03:04:50.302Z",
+      "rawEndpointVerifiedAt": "2026-07-07T03:04:50.302Z",
+      "gitOriginVerifiedAt": "2026-07-07T03:04:50.302Z",
       "routeContentHashes": {
-        "github-api": "54daa467e20f84b609aede00ceef941fbfc80958f72832fd2f5a66b5b2fe0c94",
+        "github-api": "7beb9a376d52241c0a5759af5f4a8a632007540ba66dbde939ec7537d93363d7",
         "raw-cdn": "54daa467e20f84b609aede00ceef941fbfc80958f72832fd2f5a66b5b2fe0c94",
-        "git-origin": "54daa467e20f84b609aede00ceef941fbfc80958f72832fd2f5a66b5b2fe0c94"
+        "git-origin": "7beb9a376d52241c0a5759af5f4a8a632007540ba66dbde939ec7537d93363d7"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "d2a87f83b2324946dca11334058ddba753e70704",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "b9ad03eb528ea38e9f6fb72b69e4a025f13deb14",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 430,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -2864,7 +2884,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase C — Integration Milestone milestone (450-459) active — Sprint 432 closed; Sprint 433 queued",
+    "phaseE": "Drawing Intelligence Phase C — Integration Milestone milestone (450-459) active — Sprint 433 closed; Sprint 434 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -2972,7 +2992,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 450-459 7/10 sprints closed (70%); latest growth-event sprint 400; Sprint 432 closed; Sprint 433 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 450-459 8/10 sprints closed (80%); latest growth-event sprint 400; Sprint 433 closed; Sprint 434 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -3044,7 +3064,8 @@
     "sprint429": "Cross-project loop chain step Decision Timeline filter + Phase D playback wiring — commercial.cross_project_loop_chain_step_recorded entries merged into operational workspace timeline",
     "sprint430": "Cross-project loop chain step Decision Timeline commercial workflow stage badge + Phase D playback commercial-stage label — lessons_learned stage surfaced when chain step filter active",
     "sprint431": "Cross-project loop chain step Decision Timeline commercial workflow pipeline stage badge + Phase D playback pipeline-stage label — lessons_learned pipeline stage surfaced when chain step filter active",
-    "sprint432": "Cross-project loop chain step Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels — commercial intelligence actor + high confidence surfaced when chain step filter active"
+    "sprint432": "Cross-project loop chain step Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels — commercial intelligence actor + high confidence surfaced when chain step filter active",
+    "sprint433": "Cross-project loop chain step Decision Timeline explainability rationale summary filtered badges + Phase D playback explainability rationale summary labels — commercial intelligence rationale snippet surfaced when chain step filter active"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -3179,7 +3200,8 @@
     "sprint429": "No direct KG edge changes — Decision Timeline integration wiring for cross-project loop chain step audit only",
     "sprint430": "No direct KG edge changes — Decision Timeline commercial workflow stage presentation wiring for cross-project loop chain step audit only",
     "sprint431": "No direct KG edge changes — Decision Timeline pipeline stage presentation wiring for cross-project loop chain step audit only",
-    "sprint432": "No direct KG edge changes — Decision Timeline explainability presentation wiring for cross-project loop chain step audit only"
+    "sprint432": "No direct KG edge changes — Decision Timeline explainability presentation wiring for cross-project loop chain step audit only",
+    "sprint433": "No direct KG edge changes — Decision Timeline explainability rationale summary presentation wiring for cross-project loop chain step audit only"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
@@ -3265,7 +3287,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase C — Integration Milestone (450-459) active 7/10; Sprint 432 closed; Sprint 433 queued (Phase B regression re-validation post-gate #2 — phase-b-wynyard-validation.ts PH · Milestone 450–459 integration — cross-project loop Decision Timeline explainabil)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase C — Integration Milestone (450-459) active 8/10; Sprint 433 closed; Sprint 434 queued (Phase B regression re-validation post-gate #2 — phase-b-wynyard-validation.ts PH · Milestone 450–459 integration — cross-project loop project assistant context eng)",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -3348,7 +3370,7 @@
     "daysRemaining": 5,
     "computedAsOf": "2026-07-07",
     "status": "at_risk",
-    "statusRationale": "Milestone 440–449 closed Sprint 425; Finding 6 gate #1 satisfied; gate #2 satisfied Sprint 421 (docs/MIGRATION_015_STAGING_VERIFICATION.json); Platform Certification 5/5 Sprint 418; Sprint Validation 3/3 post-gate Sprint 432; bridge remote callable deferral open (gate #4)"
+    "statusRationale": "Milestone 440–449 closed Sprint 425; Finding 6 gate #1 satisfied; gate #2 satisfied Sprint 421 (docs/MIGRATION_015_STAGING_VERIFICATION.json); Platform Certification 5/5 Sprint 418; Sprint Validation 3/3 post-gate Sprint 433; bridge remote callable deferral documented"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
