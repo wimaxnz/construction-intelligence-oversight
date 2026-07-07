@@ -3334,18 +3334,18 @@
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-07T16:47:51.483Z",
+    "lastPushAttempt": "2026-07-07T17:39:06.964Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-07T16:47:51.483Z",
+    "verifiedAt": "2026-07-07T17:39:06.964Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
     "sanitizedAt": "2026-07-07T17:38:44.7294704Z",
-    "pushedAt": "2026-07-07T16:47:51.483Z",
-    "remoteHeadSha": "a263204dea972c91953a01cb5cd2004b5020ef5c",
-    "publicStateVerifiedAt": "2026-07-07T16:47:51.483Z",
+    "pushedAt": "2026-07-07T17:39:06.964Z",
+    "remoteHeadSha": "f1e4547dad4902d4c9d3caff774fb3700a7f32cc",
+    "publicStateVerifiedAt": "2026-07-07T17:39:06.964Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "a616e99f177861bc5ad83acd785a3be8cda496f6992c8316a6f9abe35b5680e9",
+    "publicStateContentHash": "51d897fd98997c97d0e139f90bf2707ef6c25ea9b5943eb86921f4b3519487af",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -3376,22 +3376,22 @@
       "note": "bridgeDocsPublished retired — prior list falsely claimed bridge ops docs were on public main; only push allowlist + inbox are public"
     },
     "publicStateVerificationSource": "multi-route",
-    "publicStateRawCdnHash": "32c011b37740eded1374cefb30c48b1f199cc01d6bae62f66c60849edf5810fc",
-    "publicStateRawCdnStale": true,
+    "publicStateRawCdnHash": "51d897fd98997c97d0e139f90bf2707ef6c25ea9b5943eb86921f4b3519487af",
+    "publicStateRawCdnStale": false,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-07T16:47:51.483Z",
-      "rawEndpointVerifiedAt": "2026-07-07T16:47:51.483Z",
-      "gitOriginVerifiedAt": "2026-07-07T16:47:51.483Z",
+      "githubApiVerifiedAt": "2026-07-07T17:39:06.964Z",
+      "rawEndpointVerifiedAt": "2026-07-07T17:39:06.964Z",
+      "gitOriginVerifiedAt": "2026-07-07T17:39:06.964Z",
       "routeContentHashes": {
-        "github-api": "a616e99f177861bc5ad83acd785a3be8cda496f6992c8316a6f9abe35b5680e9",
-        "raw-cdn": "32c011b37740eded1374cefb30c48b1f199cc01d6bae62f66c60849edf5810fc",
-        "git-origin": "a616e99f177861bc5ad83acd785a3be8cda496f6992c8316a6f9abe35b5680e9"
+        "github-api": "51d897fd98997c97d0e139f90bf2707ef6c25ea9b5943eb86921f4b3519487af",
+        "raw-cdn": "51d897fd98997c97d0e139f90bf2707ef6c25ea9b5943eb86921f4b3519487af",
+        "git-origin": "51d897fd98997c97d0e139f90bf2707ef6c25ea9b5943eb86921f4b3519487af"
       },
-      "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "a263204dea972c91953a01cb5cd2004b5020ef5c",
+      "routeHashesMatch": true,
+      "canonicalRemoteHeadSha": "f1e4547dad4902d4c9d3caff774fb3700a7f32cc",
       "logicalConsistencyPassed": true,
-      "logicalConsistencyTestCount": 488,
-      "classification": "cdn-lag-api-git-agree"
+      "logicalConsistencyTestCount": 492,
+      "classification": "all-routes-consistent"
     }
   },
   "oversightMonitoring": {
