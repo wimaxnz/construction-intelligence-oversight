@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 480–489 Phase D Audit Trail Export active (4/10); Sprint 460 queued.
+**Status:** Active — Milestone 480–489 Phase D Audit Trail Export active (5/10); Sprint 461 queued.
 
 **Last updated:** 2026-07-08
-**Current sprint:** 459 closed  
-**Next sprint:** 460 queued
-**Milestone:** 480–489 Phase D Audit Trail Export active (4/10)
+**Current sprint:** 460 closed  
+**Next sprint:** 461 queued
+**Milestone:** 480–489 Phase D Audit Trail Export active (5/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 460 summary
+
+Milestone 480–489 Phase D audit trail export — Operational workspace AI panel drawing pin events audit trail export dispute sheet hint surfacing from project assistant context (`operational-workspace-ai-panel-drawing-pin-events-audit-trail-export-dispute-sheet-hint` · `OperationalWorkspace.tsx`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-460-selftest.ts`.
 
 ## Sprint 459 summary
 
@@ -150,10 +154,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 | #3 Platform Certification 3/3 | **recertified** | Sprint 446 post-milestone-close (Finding 4) |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Next sprint (460)
+## Next sprint (461)
 
-- Stream 1: Operational workspace AI panel drawing pin events audit trail export dispute sheet hint surfacing from project assistant context — operational-workspace-ai-panel-drawing-pin-events-audit-trail-export-dispute-sheet-hint · OperationalWorkspace.tsx · sprint-460-selftest.ts
-- Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+- Stream 1: Mid-milestone review — Drawing Intelligence Phase D audit trail export first-half completeness prep
+- Stream 2: Mid-milestone 456–460 Drawing Intelligence Phase D audit trail export stack partial completeness review — sprint-461-selftest.ts audits audit trail export stack (export workflow foundation · sheet-scoped dispute filter · AI panel dispute sheet hint · project assistant context engine dispute sheet hint wiring · operational workspace context surfacing) · PHASE_B_RUNS=3
+
+
 
 
 
