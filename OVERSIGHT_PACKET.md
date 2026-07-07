@@ -1,12 +1,16 @@
 ﻿# Oversight Packet â€” Sprint 427 Close-out
 
-**Status:** Active — Milestone 450–459 Integration (6/10); Sprint 432 queued.
+**Status:** Active — Milestone 450–459 Integration (7/10); Sprint 433 queued.
 
 **Last updated:** 2026-07-07
-**Current sprint:** 431 closed  
-**Next sprint:** 432 queued  
+**Current sprint:** 432 closed  
+**Next sprint:** 433 queued  
 **Milestone:** 450â€“459 active (4/10) Â· 440â€“449 closed Sprint 425  
 **hardCompletionDirective:** at_risk Â· 5 days remaining Â· gate #1 satisfied (Finding 6 Sprint 422) Â· gate #2 not_satisfied ([YOUR-PASSWORD] placeholder â€” owner action)
+
+## Sprint 432 summary
+
+Cross-project loop Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels: `decisionTimelineBuilder.ts` · `DecisionTimeline.tsx` · Sprint Validation 3/3 post-gate #2 (PHASE_B_RUNS=3). Gate #2 satisfied — migration 015 staging verified (`docs/MIGRATION_015_STAGING_VERIFICATION.json`). Selftest: `scripts/sprint-432-selftest.ts`.
 
 ## Sprint 431 summary
 
@@ -39,10 +43,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 | #3 Platform Certification 5/5 | **valid** | Sprint 418 baseline preserved |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Next sprint (432)
+## Next sprint (433)
 
-- Stream 1: Milestone 450–459 integration — cross-project loop Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels
-- Stream 2: Migration 015 staging apply retry (credential-gated parallel)
+- Stream 1: Milestone 450–459 integration — cross-project loop Decision Timeline explainability rationale summary filtered badges + Phase D playback explainability rationale summary labels
+- Stream 2: Phase B regression re-validation post-gate #2 (PHASE_B_RUNS=3)
+
+
 
 
 
