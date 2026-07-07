@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 450–459 Integration (9/10); Sprint 435 queued.
+**Status:** Active — Milestone 450–459 Integration CLOSED (10/10); Sprint 436 queued.
 
 **Last updated:** 2026-07-07
-**Current sprint:** 434 closed  
-**Next sprint:** 435 queued  
-**Milestone:** 450–459 active (9/10) · 440–449 closed Sprint 425  
+**Current sprint:** 435 closed  
+**Next sprint:** 436 queued  
+**Milestone:** 450–459 WRAP CLOSED (10/10) · 460–469 opens Sprint 436 · 440–449 closed Sprint 425  
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 435 summary
+
+Milestone 450–459 wrap review — cross-project learning loop integration completeness audit: production hardening · Digital Brain registry seam · chain step registry · KG entity provenance · Memory audit bridge · Decision Timeline filter + Phase D playback + explainability badges · AI panel context + explainability context entries · project assistant context engine wiring. Sprint Validation 3/3 post-gate #2 (PHASE_B_RUNS=3). Gate #2 satisfied — migration 015 staging verified (`docs/MIGRATION_015_STAGING_VERIFICATION.json`). Selftest: `scripts/sprint-435-selftest.ts`.
 
 ## Sprint 434 summary
 
@@ -49,9 +53,11 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 | #3 Platform Certification 5/5 | **valid** | Sprint 418 baseline preserved |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Next sprint (435)
+## Next sprint (436)
 
-- Stream 1: Milestone 450–459 wrap review — cross-project learning loop integration completeness audit — sprint-435-selftest.ts
-- Stream 2: Phase B regression re-validation post-gate #2 (PHASE_B_RUNS=3)
+- Stream 1: Milestone 460–469 production readiness — migration 015 production apply planning + RLS production verification prep — sprint-436-selftest.ts
+- Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
+
+
 
 
