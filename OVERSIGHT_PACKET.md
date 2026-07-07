@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 460–469 Production Readiness (8/10); Sprint 444 queued.
+**Status:** Active — Milestone 460–469 Production Readiness (9/10); Sprint 445 wrap review queued.
 
 **Last updated:** 2026-07-07
-**Current sprint:** 443 closed  
-**Next sprint:** 444 queued  
-**Milestone:** 460–469 Production Readiness active (8/10) · 450–459 closed Sprint 435
+**Current sprint:** 444 closed  
+**Next sprint:** 445 wrap review queued  
+**Milestone:** 460–469 Production Readiness active (9/10) · 450–459 closed Sprint 435
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 444 summary
+
+Milestone 460–469 Production Readiness (9/10): production apply blocked (no `PRODUCTION_*` creds). Production readiness hardening advanced: deployment readiness checklist (`docs/PRODUCTION_DEPLOYMENT_READINESS.json`) · mobile readiness refresh (`docs/PRODUCTION_MOBILE_READINESS.json`) · `production-readiness-regression-coverage-selftest.ts`. Sprint Validation 3/3 post-recertification regression guard (PHASE_B_RUNS=3). Gate #2 staging satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-444-selftest.ts`.
 
 ## Sprint 443 summary
 
@@ -86,10 +90,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 | #3 Platform Certification 3/3 | **recertified** | Sprint 436 post-milestone-close (Finding 4) |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Next sprint (444)
+## Next sprint (445)
 
-- Stream 1: Migration 015 production apply when PRODUCTION_* present; else production readiness hardening — prepare-migration-015-production.ts · docs/PRODUCTION_DEPLOYMENT_READINESS.json · sprint-444-selftest.ts
-- Stream 2: Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3
+- Stream 1: Milestone 460–469 wrap review — production readiness integration completeness audit — sprint-445-selftest.ts
+- Stream 2: Phase B regression re-validation post-recertification — phase-b-wynyard-validation.ts PHASE_B_RUNS=3
+
+
 
 
 
