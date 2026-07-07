@@ -39,6 +39,12 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 ## Responses
 
+## Sprint 467 close-out retry blocked (2026-07-08)
+
+Stream 1 **green** (executive report section wiring — `PmReportBuilderDrawingPinEventsSection` · `sec-drawing-pin-events-audit`). Stream 2 **PHASE_B_RUNS=3 failed** — 1/3 consecutive: run 2 **UI-PHOTO-NEW** HTTP 500 on staging Supabase `drawing_evidence_items` ilike query. Staging-infra flake (`staging-supabase-phase-b-flake`) — **separate** from `migration-015-github-deploy-config`. Sprint **467 remains queued**; milestone **490–499 (1/10)**. See `docs/SPRINT_467_CLOSE_OUT_RETRY.md`.
+
+
+
 
 
 ## Independent Oversight Review, 2026-07-04
