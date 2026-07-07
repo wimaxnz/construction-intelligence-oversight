@@ -1,16 +1,21 @@
 ﻿# Oversight Packet â€” Sprint 427 Close-out
 
-**Status:** Active — Milestone 450–459 Integration (5/10); Sprint 431 queued.
+**Status:** Active — Milestone 450–459 Integration (6/10); Sprint 432 queued.
 
 **Last updated:** 2026-07-07
-**Current sprint:** 430 closed  
-**Next sprint:** 431 queued  
+**Current sprint:** 431 closed  
+**Next sprint:** 432 queued  
 **Milestone:** 450â€“459 active (4/10) Â· 440â€“449 closed Sprint 425  
 **hardCompletionDirective:** at_risk Â· 5 days remaining Â· gate #1 satisfied (Finding 6 Sprint 422) Â· gate #2 not_satisfied ([YOUR-PASSWORD] placeholder â€” owner action)
+
+## Sprint 431 summary
+
+Cross-project loop Decision Timeline commercial workflow pipeline stage filtered badge + Phase D playback pipeline-stage label: `decisionTimelineBuilder.ts` · `DecisionTimeline.tsx` · Sprint Validation 3/3 (PHASE_B_RUNS=3). Stream 2: `hasCredentialPlaceholder` gate — MIGRATION_015_APPLY skipped. Selftest: `scripts/sprint-431-selftest.ts`.
 
 ## Sprint 430 summary
 
 Cross-project loop Decision Timeline commercial workflow stage filtered badge + Phase D playback commercial-stage label: `decisionTimelineBuilder.ts` · `DecisionTimeline.tsx` · Sprint Validation 3/3 (PHASE_B_RUNS=3). Stream 2: `hasCredentialPlaceholder` gate — MIGRATION_015_APPLY skipped. Selftest: `scripts/sprint-430-selftest.ts`.
+
 
 ## Sprint 429 summary
 
@@ -33,10 +38,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 | #3 Platform Certification 5/5 | **valid** | Sprint 418 baseline preserved |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Next sprint (431)
+## Next sprint (432)
 
-- Stream 1: Milestone 450–459 integration — cross-project loop Decision Timeline commercial workflow pipeline stage filtered badge + Phase D playback pipeline-stage label
+- Stream 1: Milestone 450–459 integration — cross-project loop Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels
 - Stream 2: Migration 015 staging apply retry (credential-gated parallel)
+
+
 
 
 
