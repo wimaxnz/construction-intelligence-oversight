@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 470–479 Phase D Construction Memory CLOSED (10/10); Sprint 456 queued.
+**Status:** Active — Milestone 480–489 Phase D Audit Trail Export OPEN (1/10); Sprint 457 queued.
 
 **Last updated:** 2026-07-08
-**Current sprint:** 455 closed  
-**Next sprint:** 456 queued
-**Milestone:** 470–479 WRAP CLOSED (10/10) · 480–489 Audit Trail Export opens Sprint 456
+**Current sprint:** 456 closed  
+**Next sprint:** 457 queued
+**Milestone:** 480–489 Phase D Audit Trail Export active (1/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 456 summary
+
+Milestone 480–489 Phase D audit trail export — drawing pin events audit trail CSV/PDF export workflow foundation (`drawingPinEventsAuditTrailExportWorkflowService` · Decision Timeline `decision-timeline-drawing-pin-events-audit-trail-export-csv` · `decision-timeline-drawing-pin-events-audit-trail-export-pdf`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-456-selftest.ts`.
 
 ## Sprint 455 summary
 
@@ -134,10 +138,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 | #3 Platform Certification 3/3 | **recertified** | Sprint 446 post-milestone-close (Finding 4) |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Next sprint (456)
+## Next sprint (457)
 
-- Stream 1: Milestone 480–489 Phase D audit trail export — drawing pin events audit trail CSV/PDF export workflow foundation — sprint-456-selftest.ts
-- Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
+- Stream 1: Decision Timeline drawing pin events audit trail export sheet-scoped dispute filter — sprint-457-selftest.ts
+- Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
