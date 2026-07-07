@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 470–479 Phase D Construction Memory (1/10); Sprint 447 queued.
+**Status:** Active — Milestone 470–479 Phase D Construction Memory (2/10); Sprint 448 queued.
 
 **Last updated:** 2026-07-07
-**Current sprint:** 446 closed  
-**Next sprint:** 447 queued
-**Milestone:** 470–479 Phase D Construction Memory active (1/10)
+**Current sprint:** 447 closed  
+**Next sprint:** 448 queued
+**Milestone:** 470–479 Phase D Construction Memory active (2/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 447 summary
+
+`drawing_pin_events` timeline wired to decision timeline builder (`mergeDrawingPinEventsTimelineIntoDecisionTimeline` · `filterDecisionTimelineToDrawingPinEventsEntries`) + Decision Timeline filter badge (`decision-timeline-drawing-pin-events-filter` · `decision-timeline-drawing-pin-events-badge`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-447-selftest.ts`.
 
 ## Sprint 446 summary
 
@@ -98,10 +102,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 | #3 Platform Certification 3/3 | **recertified** | Sprint 446 post-milestone-close (Finding 4) |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Next sprint (447)
+## Next sprint (448)
 
-- Stream 1: drawing_pin_events timeline wired to decision timeline builder + Decision Timeline filter badge — sprint-447-selftest.ts
+- Stream 1: drawing_pin_events sheet-scoped playback row in Decision Timeline UI — sprint-448-selftest.ts
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
