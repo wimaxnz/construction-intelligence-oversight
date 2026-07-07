@@ -3256,8 +3256,8 @@
       "id": "migration-015-production-credentials",
       "severity": "owner-action",
       "relatedFinding": "finding-3",
-      "description": "Migration 015 production apply blocked Sprint 444 — PRODUCTION_DATABASE_URL and PRODUCTION_SUPABASE credentials not present in env or credential files; owner action required before apply; production readiness hardening advanced",
-      "recordedAt": "2026-07-07",
+      "description": "Migration 015 production apply blocked — partial production credentials: PRODUCTION_SUPABASE_SERVICE_ROLE_KEY is present (env or credential file); still missing PRODUCTION_DATABASE_URL, PRODUCTION_SUPABASE_URL, and PRODUCTION_SUPABASE_ANON_KEY; owner action required before apply; do not reuse staging DATABASE_URL for production",
+      "recordedAt": "2026-07-08",
       "evidence": "docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json"
     }
   ],
@@ -3271,18 +3271,18 @@
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-07T16:10:58.770Z",
+    "lastPushAttempt": "2026-07-07T16:11:24.713Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-07T16:10:58.770Z",
+    "verifiedAt": "2026-07-07T16:11:24.713Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-07T16:10:37.9019078Z",
-    "pushedAt": "2026-07-07T16:10:58.770Z",
-    "remoteHeadSha": "b6c60c00a886382b3a55d89f4e0762636f92ab08",
-    "publicStateVerifiedAt": "2026-07-07T16:10:58.770Z",
+    "sanitizedAt": "2026-07-07T16:36:36.1203236Z",
+    "pushedAt": "2026-07-07T16:11:24.713Z",
+    "remoteHeadSha": "f57e8b953be4bbbb76f17ec3795ba2c6a3914ac5",
+    "publicStateVerifiedAt": "2026-07-07T16:11:24.713Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "49e1be80e04d172c9a99be2c2124bcfdb44b324cfe29185124e104331a47ba8c",
+    "publicStateContentHash": "9353b0a1bed0e7848c288d96750972c5d7e5d2f58654fc8cd50727816cb56eda",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -3314,21 +3314,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "49e1be80e04d172c9a99be2c2124bcfdb44b324cfe29185124e104331a47ba8c",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-07T16:10:58.770Z",
-      "rawEndpointVerifiedAt": "2026-07-07T16:10:58.770Z",
-      "gitOriginVerifiedAt": "2026-07-07T16:10:58.770Z",
+      "githubApiVerifiedAt": "2026-07-07T16:11:24.713Z",
+      "rawEndpointVerifiedAt": "2026-07-07T16:11:24.713Z",
+      "gitOriginVerifiedAt": "2026-07-07T16:11:24.713Z",
       "routeContentHashes": {
-        "github-api": "49e1be80e04d172c9a99be2c2124bcfdb44b324cfe29185124e104331a47ba8c",
+        "github-api": "9353b0a1bed0e7848c288d96750972c5d7e5d2f58654fc8cd50727816cb56eda",
         "raw-cdn": "49e1be80e04d172c9a99be2c2124bcfdb44b324cfe29185124e104331a47ba8c",
-        "git-origin": "49e1be80e04d172c9a99be2c2124bcfdb44b324cfe29185124e104331a47ba8c"
+        "git-origin": "9353b0a1bed0e7848c288d96750972c5d7e5d2f58654fc8cd50727816cb56eda"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "b6c60c00a886382b3a55d89f4e0762636f92ab08",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "f57e8b953be4bbbb76f17ec3795ba2c6a3914ac5",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 486,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -3339,7 +3339,7 @@
     "bridgeDocs": "docs/ai-oversight/OVERSIGHT_BRIDGE_ADR.md"
   },
   "oversightBridge": {
-    "lastConsumedAt": "2026-07-07T15:47:55.079Z",
+    "lastConsumedAt": "2026-07-07T16:11:29.097Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
     "localE2EProven": true,
