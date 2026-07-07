@@ -12,6 +12,7 @@
 
 Cross-project loop Decision Timeline commercial workflow pipeline stage filtered badge + Phase D playback pipeline-stage label: `decisionTimelineBuilder.ts` · `DecisionTimeline.tsx` · Sprint Validation 3/3 (PHASE_B_RUNS=3). Stream 2: `hasCredentialPlaceholder` gate — MIGRATION_015_APPLY skipped. Selftest: `scripts/sprint-431-selftest.ts`.
 
+
 ## Sprint 430 summary
 
 Cross-project loop Decision Timeline commercial workflow stage filtered badge + Phase D playback commercial-stage label: `decisionTimelineBuilder.ts` · `DecisionTimeline.tsx` · Sprint Validation 3/3 (PHASE_B_RUNS=3). Stream 2: `hasCredentialPlaceholder` gate — MIGRATION_015_APPLY skipped. Selftest: `scripts/sprint-430-selftest.ts`.
