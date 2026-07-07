@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-07",
   "currentSprint": {
-    "number": 440,
+    "number": 441,
     "status": "closed",
-    "previousClosed": 439,
+    "previousClosed": 440,
     "closedDate": "2026-07-07"
   },
   "currentMilestone": {
@@ -23,15 +23,15 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 5,
-    "percentComplete": 50,
+    "sprintsClosed": 6,
+    "percentComplete": 60,
     "nextWrapReviewSprint": 445,
     "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Migration 015 production apply when PRODUCTION_* present; else production readiness hardening — prepare-migration-015-production.ts · docs/PRODUCTION_DEPLOYMENT_READINESS.json · sprint-441-selftest.ts"
+      "focus": "Migration 015 production apply when PRODUCTION_* present; else production readiness hardening — prepare-migration-015-production.ts · docs/PRODUCTION_DEPLOYMENT_READINESS.json · sprint-442-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -921,6 +921,11 @@
     },
     "sprint440": {
       "stream1": "Production readiness hardening — deployment readiness checklist (docs/PRODUCTION_DEPLOYMENT_READINESS.json) · mobile readiness refresh (docs/PRODUCTION_MOBILE_READINESS.json) · production-readiness-regression-coverage-selftest.ts · prepare-migration-015-production.ts blocked (no PRODUCTION_* creds) · docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json · sprint-440-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Sprint Validation 3/3 consecutive post-recertification regression guard (PHASE_B_RUNS=3); gate #1 regression guard green; gate #2 staging satisfied; production apply blocked — production readiness hardening (deployment checklist, mobile refresh, regression coverage)"
+    },
+    "sprint441": {
+      "stream1": "Production readiness hardening — deployment readiness checklist (docs/PRODUCTION_DEPLOYMENT_READINESS.json) · mobile readiness refresh (docs/PRODUCTION_MOBILE_READINESS.json) · production-readiness-regression-coverage-selftest.ts · prepare-migration-015-production.ts blocked (no PRODUCTION_* creds) · docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json · sprint-441-selftest.ts",
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Sprint Validation 3/3 consecutive post-recertification regression guard (PHASE_B_RUNS=3); gate #1 regression guard green; gate #2 staging satisfied; production apply blocked — production readiness hardening (deployment checklist, mobile refresh, regression coverage)"
     }
@@ -2526,6 +2531,23 @@
       "docs/PHASE_B_UX_ACCEPTANCE.md",
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md"
+    ],
+    "sprint441": [
+      "scripts/prepare-migration-015-production.ts",
+      "scripts/prepare-production-deployment-readiness.ts",
+      "scripts/prepare-production-mobile-readiness.ts",
+      "scripts/production-readiness-regression-coverage-selftest.ts",
+      "scripts/sprint-441-selftest.ts",
+      "scripts/sprint-441-close-out.ts",
+      "docs/PRODUCTION_DEPLOYMENT_READINESS.json",
+      "docs/PRODUCTION_MOBILE_READINESS.json",
+      "docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md"
     ]
   },
   "validationResults": {
@@ -2727,7 +2749,10 @@
       "sprint439Migration": "production apply blocked — no PRODUCTION_* credentials; mobile readiness stub + gate #4 deferral + regression coverage wired",
       "sprint440": "Milestone 460–469 5/10 — selftest green; 3/3 consecutive post-recertification regression guard (PHASE_B_RUNS=3); production apply blocked — production readiness hardening",
       "sprint440PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3)",
-      "sprint440Migration": "production apply blocked — no PRODUCTION_* credentials; deployment readiness checklist + mobile refresh + regression coverage wired"
+      "sprint440Migration": "production apply blocked — no PRODUCTION_* credentials; deployment readiness checklist + mobile refresh + regression coverage wired",
+      "sprint441": "Milestone 460–469 6/10 — selftest green; 3/3 consecutive post-recertification regression guard (PHASE_B_RUNS=3); production apply blocked — production readiness hardening",
+      "sprint441PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3)",
+      "sprint441Migration": "production apply blocked — no PRODUCTION_* credentials; deployment readiness checklist + mobile refresh + regression coverage wired"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-07",
@@ -2751,13 +2776,13 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 460–469 5/10, Sprint 440 closed, Sprint 441 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 440 production readiness hardening logged",
-    "docs/PRODUCTION_DEPLOYMENT_READINESS.json — deployment readiness checklist Sprint 440",
-    "docs/PRODUCTION_MOBILE_READINESS.json — mobile readiness refresh Sprint 440",
+    "docs/PLATFORM_EVOLUTION.md — Milestone 460–469 6/10, Sprint 441 closed, Sprint 442 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 441 production readiness hardening logged",
+    "docs/PRODUCTION_DEPLOYMENT_READINESS.json — deployment readiness checklist Sprint 441",
+    "docs/PRODUCTION_MOBILE_READINESS.json — mobile readiness refresh Sprint 441",
     "docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json — production apply blocked (no PRODUCTION_* creds)",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 440 closed, milestone 460-469 active (5/10), sprint 441 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 440 close-out packet"
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 441 closed, milestone 460-469 active (6/10), sprint 442 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 441 close-out packet"
   ],
   "migrationsRequired": [
     {
@@ -2788,7 +2813,7 @@
       "verificationTest": "Production apply + RLS policy audit + Sprint Validation 3/3",
       "rollbackPlan": "Revert to migration 014 RLS snapshot",
       "completionEvidence": null,
-      "description": "Supabase migration 015 staging verified Sprint 421 (7/7 RLS policies, gate #2 satisfied); production apply blocked Sprint 440 — owner credentials required (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); deployment readiness checklist (docs/PRODUCTION_DEPLOYMENT_READINESS.json)"
+      "description": "Supabase migration 015 staging verified Sprint 421 (7/7 RLS policies, gate #2 satisfied); production apply blocked Sprint 441 — owner credentials required (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); deployment readiness checklist (docs/PRODUCTION_DEPLOYMENT_READINESS.json)"
     },
     {
       "id": "drawing-revision-provenance-gap",
@@ -2801,7 +2826,7 @@
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Milestone 460–469 Production Readiness active 5/10; Finding 6 gate #1 satisfied; gate #2 staging satisfied; production apply blocked — deployment readiness hardening Sprint 440"
+      "description": "Milestone 460–469 Production Readiness active 6/10; Finding 6 gate #1 satisfied; gate #2 staging satisfied; production apply blocked — deployment readiness hardening Sprint 441"
     },
     {
       "id": "partial-platform-services",
@@ -2820,33 +2845,33 @@
       "id": "migration-015-production-credentials",
       "severity": "owner-action",
       "relatedFinding": "finding-3",
-      "description": "Migration 015 production apply blocked Sprint 440 — PRODUCTION_DATABASE_URL and PRODUCTION_SUPABASE credentials not present in env or credential files; owner action required before apply; production readiness hardening advanced",
+      "description": "Migration 015 production apply blocked Sprint 441 — PRODUCTION_DATABASE_URL and PRODUCTION_SUPABASE credentials not present in env or credential files; owner action required before apply; production readiness hardening advanced",
       "recordedAt": "2026-07-07",
       "evidence": "docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json"
     }
   ],
   "nextSprint": {
-    "number": 441,
-    "stream1": "Migration 015 production apply when PRODUCTION_* present; else production readiness hardening — prepare-migration-015-production.ts · docs/PRODUCTION_DEPLOYMENT_READINESS.json · sprint-441-selftest.ts",
+    "number": 442,
+    "stream1": "Migration 015 production apply when PRODUCTION_* present; else production readiness hardening — prepare-migration-015-production.ts · docs/PRODUCTION_DEPLOYMENT_READINESS.json · sprint-442-selftest.ts",
     "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-441-selftest.ts",
-    "credentialNote": "Production apply blocked Sprint 440 — owner must provide PRODUCTION_DATABASE_URL + PRODUCTION_SUPABASE_SERVICE_ROLE_KEY in env or PRODUCTION_*.txt credential files; production readiness hardening advanced — docs/PRODUCTION_DEPLOYMENT_READINESS.json · docs/PRODUCTION_MOBILE_READINESS.json; gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json"
+    "selftest": "scripts/sprint-442-selftest.ts",
+    "credentialNote": "Production apply blocked Sprint 441 — owner must provide PRODUCTION_DATABASE_URL + PRODUCTION_SUPABASE_SERVICE_ROLE_KEY in env or PRODUCTION_*.txt credential files; production readiness hardening advanced — docs/PRODUCTION_DEPLOYMENT_READINESS.json · docs/PRODUCTION_MOBILE_READINESS.json; gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-07T07:07:17.986Z",
+    "lastPushAttempt": "2026-07-07T07:07:46.683Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-07T07:07:17.986Z",
+    "verifiedAt": "2026-07-07T07:07:46.683Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-07T07:06:50.4681756Z",
-    "pushedAt": "2026-07-07T07:07:17.986Z",
-    "remoteHeadSha": "fd77dbb656d0daa1c28ace39b509d3b836905725",
-    "publicStateVerifiedAt": "2026-07-07T07:07:17.986Z",
+    "sanitizedAt": "2026-07-07T07:30:33.5276474Z",
+    "pushedAt": "2026-07-07T07:07:46.683Z",
+    "remoteHeadSha": "84025f963e12e61a87417b968cd5ba446cfe56d3",
+    "publicStateVerifiedAt": "2026-07-07T07:07:46.683Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "bcc5f32da0e74d917dc5fe9698d2d25f53530efe9f37a940df9819dd4838447a",
+    "publicStateContentHash": "e259a2e4ddef316161c1149cd514ef072931ea780c79e465a2abe8d67844b087",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -2878,21 +2903,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "bcc5f32da0e74d917dc5fe9698d2d25f53530efe9f37a940df9819dd4838447a",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-07T07:07:17.986Z",
-      "rawEndpointVerifiedAt": "2026-07-07T07:07:17.986Z",
-      "gitOriginVerifiedAt": "2026-07-07T07:07:17.986Z",
+      "githubApiVerifiedAt": "2026-07-07T07:07:46.683Z",
+      "rawEndpointVerifiedAt": "2026-07-07T07:07:46.683Z",
+      "gitOriginVerifiedAt": "2026-07-07T07:07:46.683Z",
       "routeContentHashes": {
-        "github-api": "bcc5f32da0e74d917dc5fe9698d2d25f53530efe9f37a940df9819dd4838447a",
+        "github-api": "e259a2e4ddef316161c1149cd514ef072931ea780c79e465a2abe8d67844b087",
         "raw-cdn": "bcc5f32da0e74d917dc5fe9698d2d25f53530efe9f37a940df9819dd4838447a",
-        "git-origin": "bcc5f32da0e74d917dc5fe9698d2d25f53530efe9f37a940df9819dd4838447a"
+        "git-origin": "e259a2e4ddef316161c1149cd514ef072931ea780c79e465a2abe8d67844b087"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "fd77dbb656d0daa1c28ace39b509d3b836905725",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "84025f963e12e61a87417b968cd5ba446cfe56d3",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 446,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -2903,7 +2928,7 @@
     "bridgeDocs": "docs/ai-oversight/OVERSIGHT_BRIDGE_ADR.md"
   },
   "oversightBridge": {
-    "lastConsumedAt": "2026-07-07T06:16:32.922Z",
+    "lastConsumedAt": "2026-07-07T07:07:51.597Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0
   },
@@ -3043,7 +3068,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase C — Production Readiness Milestone milestone (460-469) active — Sprint 440 closed; Sprint 441 queued",
+    "phaseE": "Drawing Intelligence Phase C — Production Readiness Milestone milestone (460-469) active — Sprint 441 closed; Sprint 442 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -3151,7 +3176,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 460-469 5/10 sprints closed (50%); latest growth-event sprint 400; Sprint 440 closed; Sprint 441 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 460-469 6/10 sprints closed (60%); latest growth-event sprint 400; Sprint 441 closed; Sprint 442 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -3231,7 +3256,8 @@
     "sprint437": "No new growth event kinds — Milestone 460–469 Production Readiness 2/10; migration 015 production apply credential-gated (blocked pending owner credentials); Sprint Validation 3/3 regression guard green",
     "sprint438": "No new growth event kinds — Milestone 460–469 Production Readiness 3/10; migration 015 production apply credential retry (blocked pending owner credentials); Sprint Validation 3/3 regression guard green",
     "sprint439": "No new growth event kinds — Milestone 460–469 Production Readiness 4/10; non-credential production readiness (mobile stub, gate #4 deferral, regression coverage); Sprint Validation 3/3 regression guard green",
-    "sprint440": "No new growth event kinds — Milestone 460–469 Production Readiness 5/10; production readiness hardening (deployment checklist, mobile refresh); Sprint Validation 3/3 regression guard green"
+    "sprint440": "No new growth event kinds — Milestone 460–469 Production Readiness 5/10; production readiness hardening (deployment checklist, mobile refresh); Sprint Validation 3/3 regression guard green",
+    "sprint441": "No new growth event kinds — Milestone 460–469 Production Readiness 6/10; production readiness hardening (deployment checklist, mobile refresh); Sprint Validation 3/3 regression guard green"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -3374,7 +3400,8 @@
     "sprint437": "No direct KG edge changes — Production Readiness milestone 2/10; migration 015 production apply blocked pending owner credentials",
     "sprint438": "No direct KG edge changes — Production Readiness milestone 3/10; migration 015 production apply blocked pending owner credentials",
     "sprint439": "No direct KG edge changes — Production Readiness milestone 4/10; non-credential production readiness advanced",
-    "sprint440": "No direct KG edge changes — Production Readiness milestone 5/10; deployment readiness hardening advanced"
+    "sprint440": "No direct KG edge changes — Production Readiness milestone 5/10; deployment readiness hardening advanced",
+    "sprint441": "No direct KG edge changes — Production Readiness milestone 6/10; deployment readiness hardening advanced"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
@@ -3460,7 +3487,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase C — Production Readiness Milestone (460-469) active 5/10; Sprint 440 closed; Sprint 441 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Migration 015 production apply when PRODUCTION_* present; else production readin)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase C — Production Readiness Milestone (460-469) active 6/10; Sprint 441 closed; Sprint 442 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Migration 015 production apply when PRODUCTION_* present; else production readin)",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -3535,7 +3562,8 @@
     "sprint437": "Milestone 460–469 Drawing Intelligence Phase C — Production Readiness Milestone 2/10 — migration 015 production apply credential-gated + Sprint Validation 3/3 regression guard — sprint-437-selftest.ts",
     "sprint438": "Milestone 460–469 Drawing Intelligence Phase C — Production Readiness Milestone 3/10 — migration 015 production apply credential retry + Sprint Validation 3/3 regression guard — sprint-438-selftest.ts",
     "sprint439": "Milestone 460–469 Drawing Intelligence Phase C — Production Readiness Milestone 4/10 — non-credential production readiness + Sprint Validation 3/3 regression guard — sprint-439-selftest.ts",
-    "sprint440": "Milestone 460–469 Drawing Intelligence Phase C — Production Readiness Milestone 5/10 — production readiness hardening + Sprint Validation 3/3 regression guard — sprint-440-selftest.ts"
+    "sprint440": "Milestone 460–469 Drawing Intelligence Phase C — Production Readiness Milestone 5/10 — production readiness hardening + Sprint Validation 3/3 regression guard — sprint-440-selftest.ts",
+    "sprint441": "Milestone 460–469 Drawing Intelligence Phase C — Production Readiness Milestone 6/10 — production readiness hardening + Sprint Validation 3/3 regression guard — sprint-441-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
@@ -3549,7 +3577,7 @@
     "daysRemaining": 5,
     "computedAsOf": "2026-07-07",
     "status": "at_risk",
-    "statusRationale": "Milestone 460–469 Production Readiness 5/10; Finding 6 gate #1 satisfied; gate #2 staging satisfied Sprint 421 (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked Sprint 440 — owner credentials required (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); production readiness hardening (docs/PRODUCTION_DEPLOYMENT_READINESS.json, docs/PRODUCTION_MOBILE_READINESS.json); Platform Certification 3/3 recertified Sprint 436 (Finding 4); gate #4 bridge deferral reaffirmed Sprint 439"
+    "statusRationale": "Milestone 460–469 Production Readiness 6/10; Finding 6 gate #1 satisfied; gate #2 staging satisfied Sprint 421 (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked Sprint 441 — owner credentials required (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); production readiness hardening (docs/PRODUCTION_DEPLOYMENT_READINESS.json, docs/PRODUCTION_MOBILE_READINESS.json); Platform Certification 3/3 recertified Sprint 436 (Finding 4); gate #4 bridge deferral reaffirmed Sprint 439"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
