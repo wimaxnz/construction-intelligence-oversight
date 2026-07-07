@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 480–489 Phase D Audit Trail Export active (8/10); Sprint 464 queued.
+**Status:** Active — Milestone 480–489 Phase D Audit Trail Export active (9/10); Sprint 465 queued.
 
 **Last updated:** 2026-07-08
-**Current sprint:** 463 closed  
-**Next sprint:** 464 queued
-**Milestone:** 480–489 Phase D Audit Trail Export active (8/10)
+**Current sprint:** 464 closed  
+**Next sprint:** 465 queued
+**Milestone:** 480–489 Phase D Audit Trail Export active (9/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 464 summary
+
+Milestone 480–489 Phase D audit trail export — project assistant context engine drawing pin events audit trail export context entries aggregation + operational workspace AI panel audit trail export context entry surfacing (`toDrawingPinEventsAuditTrailExportContextEntry` · `operational-workspace-ai-panel-drawing-pin-events-audit-trail-export-context-entries`). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-464-selftest.ts`.
 
 ## Sprint 463 summary
 
@@ -166,10 +170,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 | #3 Platform Certification 3/3 | **recertified** | Sprint 446 post-milestone-close (Finding 4) |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Next sprint (464)
+## Next sprint (465)
 
-- Stream 1: Milestone 480–489 Phase D audit trail export — Project assistant context engine drawing pin events audit trail export context entries aggregation + operational workspace AI panel audit trail export context entry surfacing — toDrawingPinEventsAuditTrailExportContextEntry · operational-workspace-ai-panel-drawing-pin-events-audit-trail-export-context-entries · sprint-464-selftest.ts
-- Stream 2: Milestone 480–489 Phase D audit trail export wrap prep — Sprint 465 milestone wrap completeness review queue
+- Stream 1: Milestone 480–489 Phase D audit trail export wrap completeness review — sprint-465-selftest.ts audits audit trail export full stack (workflow foundation · sheet-scoped dispute filter · dispute sheet hint · context engine wiring · AI panel entry count + format hint + context entries · operational workspace surfacing)
+- Stream 2: Platform Certification recertification post-milestone-advance (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3
+
+
 
 
 
