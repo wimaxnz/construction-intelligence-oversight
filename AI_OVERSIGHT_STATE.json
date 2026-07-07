@@ -3290,18 +3290,18 @@
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-07T16:38:04.104Z",
+    "lastPushAttempt": "2026-07-07T16:38:34.769Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-07T16:38:04.104Z",
+    "verifiedAt": "2026-07-07T16:38:34.769Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-07T16:37:37.3489796Z",
-    "pushedAt": "2026-07-07T16:38:04.104Z",
-    "remoteHeadSha": "be8c7822796ec51f4c265b947bb00fb45cd8efcd",
-    "publicStateVerifiedAt": "2026-07-07T16:38:04.104Z",
+    "sanitizedAt": "2026-07-07T16:46:50.8193874Z",
+    "pushedAt": "2026-07-07T16:38:34.769Z",
+    "remoteHeadSha": "4a94bf9c3a7d0dd434458afd7774af408ffe415e",
+    "publicStateVerifiedAt": "2026-07-07T16:38:34.769Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "d6d2337ccc5331025252f0d976aa470fc5b0f906b77a62c814bcf3922508f9b1",
+    "publicStateContentHash": "4c31db3be8087bd2a3ce61bff91c06110003f2577de563e59259d4f03bbaaf29",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -3335,16 +3335,16 @@
     "publicStateRawCdnHash": "049abfe807ad0c50700815d8b13021c8f19604b9dec4d9e5fae7431304371962",
     "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-07T16:38:04.104Z",
-      "rawEndpointVerifiedAt": "2026-07-07T16:38:04.104Z",
-      "gitOriginVerifiedAt": "2026-07-07T16:38:04.104Z",
+      "githubApiVerifiedAt": "2026-07-07T16:38:34.769Z",
+      "rawEndpointVerifiedAt": "2026-07-07T16:38:34.769Z",
+      "gitOriginVerifiedAt": "2026-07-07T16:38:34.769Z",
       "routeContentHashes": {
-        "github-api": "d6d2337ccc5331025252f0d976aa470fc5b0f906b77a62c814bcf3922508f9b1",
+        "github-api": "4c31db3be8087bd2a3ce61bff91c06110003f2577de563e59259d4f03bbaaf29",
         "raw-cdn": "049abfe807ad0c50700815d8b13021c8f19604b9dec4d9e5fae7431304371962",
-        "git-origin": "d6d2337ccc5331025252f0d976aa470fc5b0f906b77a62c814bcf3922508f9b1"
+        "git-origin": "4c31db3be8087bd2a3ce61bff91c06110003f2577de563e59259d4f03bbaaf29"
       },
       "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "be8c7822796ec51f4c265b947bb00fb45cd8efcd",
+      "canonicalRemoteHeadSha": "4a94bf9c3a7d0dd434458afd7774af408ffe415e",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 488,
       "classification": "cdn-lag-api-git-agree"
@@ -3358,9 +3358,16 @@
     "bridgeDocs": "docs/ai-oversight/OVERSIGHT_BRIDGE_ADR.md"
   },
   "oversightBridge": {
-    "lastConsumedAt": "2026-07-07T16:37:42.838Z",
+    "lastConsumedAt": "2026-07-07T16:38:39.705Z",
     "lastInboxUpdatedAt": null,
-    "newFindingsDetected": 0
+    "newFindingsDetected": 0,
+    "localE2EProven": true,
+    "localE2EProofDoc": "docs/ai-oversight/OVERSIGHT_RELAY_E2E_PROOF.md",
+    "cloudflareDeployProven": false,
+    "chatgptCallablePathProven": false,
+    "gate4DeferralDocumented": true,
+    "gate4DeferralOwner": "platform-team",
+    "gate4DeferralRationale": "Remote Cloudflare deploy and ChatGPT callable path not proven — local E2E only; deferral documented Sprint 424 + reaffirmed Sprint 439"
   },
   "oversightFindingsState": [],
   "oversightFindingsTriage": [
