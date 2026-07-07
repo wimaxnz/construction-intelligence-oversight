@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 460–469 Production Readiness (1/10); Sprint 437 queued.
+**Status:** Active — Milestone 460–469 Production Readiness (2/10); Sprint 438 queued.
 
 **Last updated:** 2026-07-07
-**Current sprint:** 436 closed  
-**Next sprint:** 437 queued  
-**Milestone:** 460–469 Production Readiness active (1/10) · 450–459 closed Sprint 435
+**Current sprint:** 437 closed  
+**Next sprint:** 438 queued  
+**Milestone:** 460–469 Production Readiness active (2/10) · 450–459 closed Sprint 435
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 437 summary
+
+Milestone 460–469 Production Readiness (2/10): migration 015 production apply credential-gated execution (`prepare-migration-015-production.ts` MIGRATION_015_PRODUCTION_APPLY=1 · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json`). **Blocked** — owner production credentials not in env/credential files; honest blocker recorded. Sprint Validation 3/3 post-recertification regression guard (PHASE_B_RUNS=3). Gate #2 staging satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-437-selftest.ts`.
 
 ## Sprint 436 summary
 
@@ -58,10 +62,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 | #3 Platform Certification 3/3 | **recertified** | Sprint 436 post-milestone-close (Finding 4) |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Next sprint (437)
+## Next sprint (438)
 
-- Stream 1: Migration 015 production apply credential-gated execution — prepare-migration-015-production.ts MIGRATION_015_PRODUCTION_APPLY=1 · docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json · sprint-437-selftest.ts
-- Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+- Stream 1: Migration 015 production apply credential retry (owner action) — prepare-migration-015-production.ts MIGRATION_015_PRODUCTION_APPLY=1 · docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json · sprint-438-selftest.ts
+- Stream 2: Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3
+
+
 
 
 
