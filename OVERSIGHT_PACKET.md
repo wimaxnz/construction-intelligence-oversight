@@ -1,12 +1,17 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 450–459 Integration CLOSED (10/10); Sprint 436 queued.
+**Status:** Active — Milestone 460–469 Production Readiness (1/10); Sprint 437 queued.
 
 **Last updated:** 2026-07-07
-**Current sprint:** 435 closed  
-**Next sprint:** 436 queued  
-**Milestone:** 450–459 WRAP CLOSED (10/10) · 460–469 opens Sprint 436 · 440–449 closed Sprint 425  
+**Current sprint:** 436 closed  
+**Next sprint:** 437 queued  
+**Milestone:** 460–469 Production Readiness active (1/10) · 450–459 closed Sprint 435
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 436 summary
+
+Milestone 460–469 Production Readiness opens (1/10): migration 015 production apply planning + RLS production verification prep (`prepare-migration-015-production.ts` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json`). Platform Certification recertification post-milestone-close (Finding 4) — Sprint Validation 3/3 (PHASE_B_RUNS=3). Gate #2 staging satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-436-selftest.ts`.
+
 
 ## Sprint 435 summary
 
@@ -50,13 +55,15 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 |------|--------|----------|
 | #1 Finding 6 chained acceptance | **satisfied** | `docs/CROSS_PROJECT_LEARNING_LOOP_ACCEPTANCE.json` · Sprint 422+ regression guard |
 | #2 Migration 015 staging apply | **satisfied** | `docs/MIGRATION_015_STAGING_VERIFICATION.json` · 7/7 policies · Sprint 421 |
-| #3 Platform Certification 5/5 | **valid** | Sprint 418 baseline preserved |
+| #3 Platform Certification 3/3 | **recertified** | Sprint 436 post-milestone-close (Finding 4) |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Next sprint (436)
+## Next sprint (437)
 
-- Stream 1: Milestone 460–469 production readiness — migration 015 production apply planning + RLS production verification prep — sprint-436-selftest.ts
-- Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
+- Stream 1: Migration 015 production apply credential-gated execution — prepare-migration-015-production.ts MIGRATION_015_PRODUCTION_APPLY=1 · docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json · sprint-437-selftest.ts
+- Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
