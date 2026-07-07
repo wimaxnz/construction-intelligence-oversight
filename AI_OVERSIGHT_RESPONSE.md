@@ -1,26 +1,8 @@
 # AI Oversight — Review Responses
 
-**Status:** Active — 7 findings triaged; Migration 015 GitHub reassessment recorded 2026-07-08.
+**Status:** No reviews received yet.
 
 Findings from independent oversight land here. Sprint execution continues regardless of response timing.
-
----
-
-## Migration 015 GitHub integration reassessment (2026-07-08)
-
-**Trigger:** Supabase GitHub Integration connected (owner-reported; dashboard configuration).
-
-**Disposition:** Primary production deploy path shifted from direct `PRODUCTION_*` credential apply to Supabase GitHub Integration merge. Finding 3 production RLS gate unchanged in severity — production release remains blocked until migration 015 is applied and verified on production.
-
-| Change | Detail |
-|--------|--------|
-| Primary path | Supabase GitHub Integration — PR/preview validation then merge to production branch |
-| Blocker reclassified | `migration-015-production-credentials` → alternate-path fallback only |
-| New owner-action blocker | `migration-015-github-deploy-config` — confirm connected repo, production branch, deploy toggles |
-| Staging gate #2 | Satisfied — 7/7 RLS policies (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) |
-| Production DDL | Not applied in reassessment — no autonomous production apply |
-
-Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/ai-oversight/AI_OVERSIGHT_STATE.json` blockers array.
 
 ---
 
@@ -39,12 +21,9 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 ## Responses
 
-## Sprint 467 close-out retry blocked (2026-07-08)
+## Sprint 466 close-out (2026-07-08)
 
-Stream 1 **green** (executive report section wiring — `PmReportBuilderDrawingPinEventsSection` · `sec-drawing-pin-events-audit`). Stream 2 **PHASE_B_RUNS=3 failed** — 1/3 consecutive: run 2 **UI-PHOTO-NEW** HTTP 500 on staging Supabase `drawing_evidence_items` ilike query. Staging-infra flake (`staging-supabase-phase-b-flake`) — **separate** from `migration-015-github-deploy-config`. Sprint **467 remains queued**; milestone **490–499 (1/10)**. See `docs/SPRINT_467_CLOSE_OUT_RETRY.md`.
-
-
-
+Milestone **490–499 Phase D Report Propagation OPENS** (1/10). Stream 1: drawing pin events report engine subscription foundation (`drawingPinEventsReportPropagationService` · ReportService `sec-drawing-pin-events-audit`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **467** queued.
 
 
 ## Independent Oversight Review, 2026-07-04

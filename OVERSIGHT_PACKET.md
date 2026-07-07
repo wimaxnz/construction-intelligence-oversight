@@ -184,7 +184,7 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 |------|--------|
 | **Primary path** | Supabase GitHub Integration — merge `015_phase_b_rls_remediation.sql` to production branch after PR/preview validation |
 | **Fallback path** | `scripts/prepare-migration-015-production.ts` with `MIGRATION_015_PRODUCTION_APPLY=1` (owner-approved, credential-gated) |
-| **Active blocker** | `migration-015-github-deploy-config` — owner must confirm connected GitHub repo, production branch, Deploy to production toggle, and branching status in Supabase Dashboard; document in `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` |
+| **Active blocker** | `migration-015-github-deploy-config` — app repo `wimaxnz/247print-user-dashboard` on GitHub (`main` @ `37e19a5`, migrations 001–015; 016/017 excluded from prod PR). Owner must confirm Supabase Dashboard integration points at this repo, production branch `main`, Deploy to production toggle, and branching status |
 | **Superseded blocker** | `migration-015-production-credentials` — reclassified to alternate-path fallback only |
 | **Production DDL** | **Not applied** — no destructive DDL in reassessment |
 
