@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 480–489 Phase D Audit Trail Export CLOSED (10/10); Sprint 466 queued.
+**Status:** Active — Milestone 490–499 Phase D Report Propagation OPEN (1/10); Sprint 467 queued.
 
 **Last updated:** 2026-07-08
-**Current sprint:** 465 closed  
-**Next sprint:** 466 queued
-**Milestone:** 480–489 WRAP CLOSED (10/10) · 490–499 Report Propagation opens Sprint 466
+**Current sprint:** 466 closed  
+**Next sprint:** 467 queued
+**Milestone:** 490–499 Phase D Report Propagation active (1/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 466 summary
+
+Milestone 490–499 Phase D report propagation — drawing pin events report engine subscription foundation (`drawingPinEventsReportPropagationService` · ReportService `sec-drawing-pin-events-audit`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-466-selftest.ts`.
 
 ## Sprint 465 summary
 
@@ -174,10 +178,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 | #3 Platform Certification 3/3 | **recertified** | Sprint 446 post-milestone-close (Finding 4) |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Next sprint (466)
+## Next sprint (467)
 
-- Stream 1: Milestone 490–499 Phase D report propagation — drawing pin events report engine subscription foundation — sprint-466-selftest.ts
-- Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
+- Stream 1: Drawing pin events report engine section wired to ReportService executive report — sprint-467-selftest.ts
+- Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 

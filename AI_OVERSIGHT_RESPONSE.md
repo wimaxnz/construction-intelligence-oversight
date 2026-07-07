@@ -21,6 +21,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 ## Responses
 
+## Sprint 466 close-out (2026-07-08)
+
+Milestone **490–499 Phase D Report Propagation OPENS** (1/10). Stream 1: drawing pin events report engine subscription foundation (`drawingPinEventsReportPropagationService` · ReportService `sec-drawing-pin-events-audit`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **467** queued.
+
 ## Sprint 465 close-out (2026-07-08)
 
 Milestone **480–489 Phase D Audit Trail Export WRAP CLOSED** (10/10). Stream 1: milestone wrap completeness review. Stream 2: audit trail export full stack completeness audit (export workflow · sheet-scoped dispute filter · dispute sheet hint chain · context engine · AI panel entry count + format hint + context entries · operational workspace). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Deferred: explainability context surfacing (out of scope), PDF jsPDF stub. Sprint **466** queued (490–499 Report Propagation opens).
