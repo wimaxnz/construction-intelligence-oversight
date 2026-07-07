@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 480–489 Phase D Audit Trail Export active (9/10); Sprint 465 queued.
+**Status:** Active — Milestone 480–489 Phase D Audit Trail Export CLOSED (10/10); Sprint 466 queued.
 
 **Last updated:** 2026-07-08
-**Current sprint:** 464 closed  
-**Next sprint:** 465 queued
-**Milestone:** 480–489 Phase D Audit Trail Export active (9/10)
+**Current sprint:** 465 closed  
+**Next sprint:** 466 queued
+**Milestone:** 480–489 WRAP CLOSED (10/10) · 490–499 Report Propagation opens Sprint 466
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 465 summary
+
+Milestone 480–489 wrap review — Drawing Intelligence Phase D audit trail export full stack completeness review (`sprint-465-selftest.ts` · export workflow foundation · sheet-scoped dispute filter · dispute sheet hint chain · project assistant context engine wiring · AI panel entry count + format hint + context entries · operational workspace surfacing). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-465-selftest.ts`.
 
 ## Sprint 464 summary
 
@@ -170,10 +174,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 | #3 Platform Certification 3/3 | **recertified** | Sprint 446 post-milestone-close (Finding 4) |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Next sprint (465)
+## Next sprint (466)
 
-- Stream 1: Milestone 480–489 Phase D audit trail export wrap completeness review — sprint-465-selftest.ts audits audit trail export full stack (workflow foundation · sheet-scoped dispute filter · dispute sheet hint · context engine wiring · AI panel entry count + format hint + context entries · operational workspace surfacing)
-- Stream 2: Platform Certification recertification post-milestone-advance (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3
+- Stream 1: Milestone 490–499 Phase D report propagation — drawing pin events report engine subscription foundation — sprint-466-selftest.ts
+- Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
+
+
 
 
 
