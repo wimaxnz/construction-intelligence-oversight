@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 460–469 Production Readiness CLOSED (10/10); Sprint 446 queued.
+**Status:** Active — Milestone 470–479 Phase D Construction Memory (1/10); Sprint 447 queued.
 
 **Last updated:** 2026-07-07
-**Current sprint:** 445 closed  
-**Next sprint:** 446 queued
-**Milestone:** 460–469 WRAP CLOSED (10/10) · 470–479 Phase D opens Sprint 446
+**Current sprint:** 446 closed  
+**Next sprint:** 447 queued
+**Milestone:** 470–479 Phase D Construction Memory active (1/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 446 summary
+
+Milestone 470–479 Phase D construction memory foundation — `drawing_pin_events` timeline playback on sheet (`drawingPinEventsTimelinePlaybackService` · `drawingPinEventsMemoryService`) + audit trail export prep (`drawingPinEventsAuditTrailExportService` · `docs/DRAWING_PIN_EVENTS_AUDIT_TRAIL_EXPORT_PLAN.json`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-446-selftest.ts`.
 
 ## Sprint 445 summary
 
@@ -91,13 +95,15 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 |------|--------|----------|
 | #1 Finding 6 chained acceptance | **satisfied** | `docs/CROSS_PROJECT_LEARNING_LOOP_ACCEPTANCE.json` · Sprint 422+ regression guard |
 | #2 Migration 015 staging apply | **satisfied** | `docs/MIGRATION_015_STAGING_VERIFICATION.json` · 7/7 policies · Sprint 421 |
-| #3 Platform Certification 3/3 | **recertified** | Sprint 445 post-milestone-close (Finding 4) |
+| #3 Platform Certification 3/3 | **recertified** | Sprint 446 post-milestone-close (Finding 4) |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Next sprint (446)
+## Next sprint (447)
 
-- Stream 1: Milestone 470–479 Phase D construction memory — drawing_pin_events timeline playback on sheet foundation + audit trail export prep — sprint-446-selftest.ts
-- Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
+- Stream 1: drawing_pin_events timeline wired to decision timeline builder + Decision Timeline filter badge — sprint-447-selftest.ts
+- Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
