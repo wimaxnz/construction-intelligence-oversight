@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-08",
   "currentSprint": {
-    "number": 456,
+    "number": 457,
     "status": "closed",
-    "previousClosed": 455,
+    "previousClosed": 456,
     "closedDate": "2026-07-08"
   },
   "currentMilestone": {
@@ -23,15 +23,15 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 1,
-    "percentComplete": 10,
+    "sprintsClosed": 2,
+    "percentComplete": 20,
     "nextWrapReviewSprint": 465,
     "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Decision Timeline drawing pin events audit trail export sheet-scoped dispute filter — sprint-457-selftest.ts"
+      "focus": "Operational workspace AI panel drawing pin events audit trail export dispute sheet hint — sprint-458-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -1003,6 +1003,11 @@
       "stream1": "Milestone 480–489 Phase D audit trail export — drawing pin events audit trail CSV/PDF export workflow foundation — drawingPinEventsAuditTrailExportWorkflowService · Decision Timeline CSV/PDF export buttons · sprint-456-selftest.ts",
       "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 480–489 opens selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3); gate #1 regression guard green; gate #2 satisfied per MIGRATION_015_STAGING_VERIFICATION.json; production apply blocked — owner credentials required"
+    },
+    "sprint457": {
+      "stream1": "Milestone 480–489 Phase D audit trail export — Decision Timeline drawing pin events audit trail export sheet-scoped dispute filter — distinctDrawingPinEventsAuditTrailExportSheetReferences · filterDrawingPinEventsExportEntriesBySheetReference · decision-timeline-drawing-pin-events-audit-trail-export-dispute-sheet-filter · sprint-457-selftest.ts",
+      "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 480–489 advances (2/10) selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3); gate #1 regression guard green; gate #2 satisfied per MIGRATION_015_STAGING_VERIFICATION.json; production apply blocked — owner credentials required"
     }
   },
   "changedFiles": {
@@ -2842,6 +2847,21 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint457": [
+      "[REDACTED-path]",
+      "src/components/workspace/DecisionTimeline.tsx",
+      "src/platform/index.ts",
+      "scripts/sprint-457-selftest.ts",
+      "scripts/sprint-457-close-out.ts",
+      "[REDACTED-path]",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -3079,14 +3099,16 @@
       "sprint455": "Milestone 470–479 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + drawing pin events full stack completeness audit)",
       "sprint455PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3)",
       "sprint456": "Milestone 480–489 opens — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + audit trail export workflow foundation)",
-      "sprint456PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3)"
+      "sprint456PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3)",
+      "sprint457": "Milestone 480–489 advances (2/10) — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + audit trail export sheet-scoped dispute filter)",
+      "sprint457PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3)"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-08",
       "lastCertifiedBaseline": "2026-07-08",
-      "status": "current — recertified Sprint 456 (480-489 Phase D Audit Trail Export opens Finding 4)",
-      "sprintRangeCovered": "446–456 (Drawing Intelligence Phase D — Construction Memory Milestone 470-479 closed + Audit Trail Export 480-489 opens)",
-      "deltaSinceCertification": "Sprints 130–456 delivered (327 sprints); Milestone 470–479 closed; Phase D Audit Trail Export 480-489 opens (1/10); gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); audit trail export workflow foundation (docs/DRAWING_PIN_EVENTS_AUDIT_TRAIL_EXPORT_PLAN.json); Platform Certification 3/3 recertified Sprint 456 (Finding 4)",
+      "status": "current — recertified Sprint 457 (480-489 Phase D Audit Trail Export sheet-scoped dispute filter Finding 4)",
+      "sprintRangeCovered": "446–457 (Drawing Intelligence Phase D — Construction Memory Milestone 470-479 closed + Audit Trail Export 480-489 active 2/10)",
+      "deltaSinceCertification": "Sprints 130–457 delivered (328 sprints); Milestone 470–479 closed; Phase D Audit Trail Export 480-489 active (2/10); gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); audit trail export sheet-scoped dispute filter (docs/DRAWING_PIN_EVENTS_AUDIT_TRAIL_EXPORT_PLAN.json); Platform Certification 3/3 recertified Sprint 457 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -3097,18 +3119,18 @@
         "Commercial Intelligence state-machine change",
         "before production release"
       ],
-      "note": "3/3 deterministic re-achieved 2026-07-08 Sprint 456 post-milestone-open; recertify on triggers in recertificationTriggers — not indefinite valid"
+      "note": "3/3 deterministic re-achieved 2026-07-08 Sprint 457 post-milestone-advance; recertify on triggers in recertificationTriggers — not indefinite valid"
     },
     "typecheck": "npx tsc -b (per regression gate)"
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 480–489 opens (1/10), Sprint 456 closed, Sprint 457 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Milestone 480–489 Audit Trail Export opens logged",
-    "docs/DRAWING_PIN_EVENTS_AUDIT_TRAIL_EXPORT_PLAN.json — workflowFoundationComplete Sprint 456",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 456 closed, milestone 480-489 active (1/10), sprint 457 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 456 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 456 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 480–489 advances (2/10), Sprint 457 closed, Sprint 458 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Milestone 480–489 Audit Trail Export sheet-scoped dispute filter logged",
+    "docs/DRAWING_PIN_EVENTS_AUDIT_TRAIL_EXPORT_PLAN.json — sheetScopedDisputeFilterComplete Sprint 457",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 457 closed, milestone 480-489 active (2/10), sprint 458 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 457 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 457 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -3152,7 +3174,7 @@
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Milestone 480–489 Phase D Audit Trail Export opens Sprint 456; Finding 6 gate #1 satisfied; gate #2 staging satisfied; production apply blocked — owner credentials required"
+      "description": "Milestone 480–489 Phase D Audit Trail Export active (2/10) Sprint 457; Finding 6 gate #1 satisfied; gate #2 staging satisfied; production apply blocked — owner credentials required"
     },
     {
       "id": "partial-platform-services",
@@ -3163,7 +3185,7 @@
       "id": "platform-certification-stale",
       "severity": "low-governance",
       "relatedFinding": "finding-4",
-      "description": "Platform Certification 3/3 recertified 2026-07-08 Sprint 456 post-milestone-open (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
+      "description": "Platform Certification 3/3 recertified 2026-07-08 Sprint 457 post-milestone-advance (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
     }
   ],
   "blockers": [
@@ -3177,27 +3199,27 @@
     }
   ],
   "nextSprint": {
-    "number": 457,
-    "stream1": "Decision Timeline drawing pin events audit trail export sheet-scoped dispute filter — sprint-457-selftest.ts",
+    "number": 458,
+    "stream1": "Operational workspace AI panel drawing pin events audit trail export dispute sheet hint — sprint-458-selftest.ts",
     "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-457-selftest.ts",
-    "credentialNote": "Production apply blocked — owner must provide PRODUCTION_* credentials; gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 480-489 Phase D Audit Trail Export active (1/10); audit trail export workflow foundation docs/DRAWING_PIN_EVENTS_AUDIT_TRAIL_EXPORT_PLAN.json"
+    "selftest": "scripts/sprint-458-selftest.ts",
+    "credentialNote": "Production apply blocked — owner must provide PRODUCTION_* credentials; gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 480-489 Phase D Audit Trail Export active (2/10); audit trail export sheet-scoped dispute filter docs/DRAWING_PIN_EVENTS_AUDIT_TRAIL_EXPORT_PLAN.json"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-07T14:40:20.754Z",
+    "lastPushAttempt": "2026-07-07T14:40:44.864Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-07T14:40:20.754Z",
+    "verifiedAt": "2026-07-07T14:40:44.864Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-07T14:39:58.8764354Z",
-    "pushedAt": "2026-07-07T14:40:20.754Z",
-    "remoteHeadSha": "3e1eb7bba7bd2fb4adbd7f18a8d70a84c88c1039",
-    "publicStateVerifiedAt": "2026-07-07T14:40:20.754Z",
+    "sanitizedAt": "2026-07-07T15:02:48.5983340Z",
+    "pushedAt": "2026-07-07T14:40:44.864Z",
+    "remoteHeadSha": "341c7bc6b4b0e7fa406b03296ad0427374eb4a2e",
+    "publicStateVerifiedAt": "2026-07-07T14:40:44.864Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "005ade5d4be7db8f8a61d55caef3fec2fffabc4a545783b9a4fb42b64318947b",
+    "publicStateContentHash": "2d35a1a0bfc72d056f28a56877e1228dc2e635512a849399526c758abb3a7184",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -3229,21 +3251,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "005ade5d4be7db8f8a61d55caef3fec2fffabc4a545783b9a4fb42b64318947b",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-07T14:40:20.754Z",
-      "rawEndpointVerifiedAt": "2026-07-07T14:40:20.754Z",
-      "gitOriginVerifiedAt": "2026-07-07T14:40:20.754Z",
+      "githubApiVerifiedAt": "2026-07-07T14:40:44.864Z",
+      "rawEndpointVerifiedAt": "2026-07-07T14:40:44.864Z",
+      "gitOriginVerifiedAt": "2026-07-07T14:40:44.864Z",
       "routeContentHashes": {
-        "github-api": "005ade5d4be7db8f8a61d55caef3fec2fffabc4a545783b9a4fb42b64318947b",
+        "github-api": "2d35a1a0bfc72d056f28a56877e1228dc2e635512a849399526c758abb3a7184",
         "raw-cdn": "005ade5d4be7db8f8a61d55caef3fec2fffabc4a545783b9a4fb42b64318947b",
-        "git-origin": "005ade5d4be7db8f8a61d55caef3fec2fffabc4a545783b9a4fb42b64318947b"
+        "git-origin": "2d35a1a0bfc72d056f28a56877e1228dc2e635512a849399526c758abb3a7184"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "3e1eb7bba7bd2fb4adbd7f18a8d70a84c88c1039",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "341c7bc6b4b0e7fa406b03296ad0427374eb4a2e",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 478,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -3254,7 +3276,7 @@
     "bridgeDocs": "docs/ai-oversight/OVERSIGHT_BRIDGE_ADR.md"
   },
   "oversightBridge": {
-    "lastConsumedAt": "2026-07-07T13:57:42.077Z",
+    "lastConsumedAt": "2026-07-07T14:40:49.121Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
     "localE2EProven": true,
@@ -3401,7 +3423,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase D — Audit Trail Export Milestone milestone (480-489) active — Sprint 456 closed; Sprint 457 queued",
+    "phaseE": "Drawing Intelligence Phase D — Audit Trail Export Milestone milestone (480-489) active — Sprint 457 closed; Sprint 458 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -3414,7 +3436,7 @@
     "sprint382": "No new growth event kinds — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint379": "No new growth event kinds — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (5 days remaining as of 2026-07-07)",
-    "phaseD": "Drawing Intelligence Phase D — Audit Trail Export Milestone (480-489) active Sprint 456; 470-479 Construction Memory Milestone closed Sprint 455"
+    "phaseD": "Drawing Intelligence Phase D — Audit Trail Export Milestone (480-489) active Sprint 457 (2/10); sheet-scoped dispute filter complete"
   },
   "digitalBrainImpact": {
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -3510,7 +3532,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 480-489 1/10 sprints closed (10%); latest growth-event sprint 400; Sprint 456 closed; Sprint 457 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 480-489 2/10 sprints closed (20%); latest growth-event sprint 400; Sprint 457 closed; Sprint 458 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -3606,7 +3628,8 @@
     "sprint453": "Project assistant context engine drawing pin events explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context entries",
     "sprint454": "Mid-milestone 446–450 drawing pin events stack partial completeness review confirms Construction Memory · timeline playback · Decision Timeline filter + Phase D playback · explainability audit badges · AI panel + project assistant context wiring through explainability context entries",
     "sprint455": "No new growth event kinds — milestone 470–479 wrap completeness review confirms drawing pin events full stack audit (Construction Memory · timeline playback · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 480–489 Audit Trail Export opens Sprint 456",
-    "sprint456": "No new growth event kinds — audit trail export workflow foundation wires Decision Timeline CSV/PDF export from drawing pin lifecycle entries; Milestone 480–489 opens Sprint 456"
+    "sprint456": "No new growth event kinds — audit trail export workflow foundation wires Decision Timeline CSV/PDF export from drawing pin lifecycle entries; Milestone 480–489 opens Sprint 456",
+    "sprint457": "No new growth event kinds — audit trail export sheet-scoped dispute filter wires Decision Timeline sheet select to CSV/PDF export workflow; Milestone 480–489 advances Sprint 457"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -3765,7 +3788,8 @@
     "sprint453": "No direct KG edge changes — Phase D Construction Memory AI panel explainability context entries for drawing pin events timeline",
     "sprint454": "No direct KG edge changes — Phase D Construction Memory mid-milestone 446–450 drawing pin events stack partial completeness review",
     "sprint455": "No direct KG edge changes — milestone 470–479 wrap completeness review confirms drawing pin events full stack audit; milestone closed; 480–489 Audit Trail Export opens Sprint 456",
-    "sprint456": "No direct KG edge changes — audit trail export workflow foundation; Milestone 480–489 opens Sprint 456"
+    "sprint456": "No direct KG edge changes — audit trail export workflow foundation; Milestone 480–489 opens Sprint 456",
+    "sprint457": "No direct KG edge changes — audit trail export sheet-scoped dispute filter; Milestone 480–489 advances Sprint 457"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
@@ -3851,7 +3875,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Audit Trail Export Milestone (480-489) active 1/10; Sprint 456 closed; Sprint 457 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Decision Timeline drawing pin events audit trail export sheet-scoped dispute fil)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Audit Trail Export Milestone (480-489) active 2/10; Sprint 457 closed; Sprint 458 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Operational workspace AI panel drawing pin events audit trail export dispute she)",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -3942,7 +3966,8 @@
     "sprint453": "Milestone 470–479 Phase D Construction Memory (8/10) — drawing pin events explainability context entries aggregation + AI panel surfacing — sprint-453-selftest.ts",
     "sprint454": "Milestone 470–479 Phase D Construction Memory (9/10) — mid-milestone 446–450 drawing pin events stack partial completeness review — sprint-454-selftest.ts",
     "sprint455": "Milestone 470–479 Drawing Intelligence Phase D — Construction Memory wrap completeness review — full stack audit confirms drawing pin events stack (Construction Memory · timeline playback · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 480–489 Audit Trail Export opens Sprint 456 — sprint-455-selftest.ts",
-    "sprint456": "Milestone 480–489 Drawing Intelligence Phase D — Audit Trail Export opens — drawing pin events audit trail CSV/PDF export workflow foundation — sprint-456-selftest.ts"
+    "sprint456": "Milestone 480–489 Drawing Intelligence Phase D — Audit Trail Export opens — drawing pin events audit trail CSV/PDF export workflow foundation — sprint-456-selftest.ts",
+    "sprint457": "Milestone 480–489 Drawing Intelligence Phase D — Audit Trail Export advances (2/10) — drawing pin events audit trail export sheet-scoped dispute filter — sprint-457-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
@@ -3956,7 +3981,7 @@
     "daysRemaining": 5,
     "computedAsOf": "2026-07-07",
     "status": "at_risk",
-    "statusRationale": "Milestone 480–489 opens Sprint 456; Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked — owner credentials required (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); audit trail export workflow foundation (docs/DRAWING_PIN_EVENTS_AUDIT_TRAIL_EXPORT_PLAN.json); Platform Certification 3/3 recertified Sprint 456 (Finding 4); Milestone 470–479 closed Sprint 455"
+    "statusRationale": "Milestone 480–489 advances Sprint 457 (2/10); Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked — owner credentials required (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); audit trail export sheet-scoped dispute filter (docs/DRAWING_PIN_EVENTS_AUDIT_TRAIL_EXPORT_PLAN.json); Platform Certification 3/3 recertified Sprint 457 (Finding 4)"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",

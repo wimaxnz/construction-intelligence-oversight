@@ -21,6 +21,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 ## Responses
 
+## Sprint 457 close-out (2026-07-08)
+
+Milestone **480–489 Phase D Audit Trail Export active** (2/10). Stream 1: Decision Timeline drawing pin events audit trail export sheet-scoped dispute filter (`distinctDrawingPinEventsAuditTrailExportSheetReferences` · `decision-timeline-drawing-pin-events-audit-trail-export-dispute-sheet-filter`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **458** queued.
+
 ## Sprint 456 close-out (2026-07-08)
 
 Milestone **480–489 Phase D Audit Trail Export OPENS** (1/10). Stream 1: drawing pin events audit trail CSV/PDF export workflow foundation (`drawingPinEventsAuditTrailExportWorkflowService` · Decision Timeline export buttons). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **457** queued.
