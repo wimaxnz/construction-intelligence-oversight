@@ -178,6 +178,18 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 | #3 Platform Certification 3/3 | **recertified** | Sprint 446 post-milestone-close (Finding 4) |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
+## Migration 015 production deploy (reassessed 2026-07-08)
+
+| Item | Status |
+|------|--------|
+| **Primary path** | Supabase GitHub Integration — merge `015_phase_b_rls_remediation.sql` to production branch after PR/preview validation |
+| **Fallback path** | `scripts/prepare-migration-015-production.ts` with `MIGRATION_015_PRODUCTION_APPLY=1` (owner-approved, credential-gated) |
+| **Active blocker** | `migration-015-github-deploy-config` — owner must confirm connected GitHub repo, production branch, Deploy to production toggle, and branching status in Supabase Dashboard; document in `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` |
+| **Superseded blocker** | `migration-015-production-credentials` — reclassified to alternate-path fallback only |
+| **Production DDL** | **Not applied** — no destructive DDL in reassessment |
+
+Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json`
+
 ## Next sprint (467)
 
 - Stream 1: Drawing pin events report engine section wired to ReportService executive report — sprint-467-selftest.ts

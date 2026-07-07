@@ -1,8 +1,26 @@
 # AI Oversight — Review Responses
 
-**Status:** Active — 7 findings triaged; Sprint 425 close-out 2026-07-07.
+**Status:** Active — 7 findings triaged; Migration 015 GitHub reassessment recorded 2026-07-08.
 
 Findings from independent oversight land here. Sprint execution continues regardless of response timing.
+
+---
+
+## Migration 015 GitHub integration reassessment (2026-07-08)
+
+**Trigger:** Supabase GitHub Integration connected (owner-reported; dashboard configuration).
+
+**Disposition:** Primary production deploy path shifted from direct `PRODUCTION_*` credential apply to Supabase GitHub Integration merge. Finding 3 production RLS gate unchanged in severity — production release remains blocked until migration 015 is applied and verified on production.
+
+| Change | Detail |
+|--------|--------|
+| Primary path | Supabase GitHub Integration — PR/preview validation then merge to production branch |
+| Blocker reclassified | `migration-015-production-credentials` → alternate-path fallback only |
+| New owner-action blocker | `migration-015-github-deploy-config` — confirm connected repo, production branch, deploy toggles |
+| Staging gate #2 | Satisfied — 7/7 RLS policies (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) |
+| Production DDL | Not applied in reassessment — no autonomous production apply |
+
+Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/ai-oversight/AI_OVERSIGHT_STATE.json` blockers array.
 
 ---
 
@@ -20,80 +38,6 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 ## Responses
-
-## Sprint 466 close-out (2026-07-08)
-
-Milestone **490–499 Phase D Report Propagation OPENS** (1/10). Stream 1: drawing pin events report engine subscription foundation (`drawingPinEventsReportPropagationService` · ReportService `sec-drawing-pin-events-audit`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **467** queued.
-
-## Sprint 465 close-out (2026-07-08)
-
-Milestone **480–489 Phase D Audit Trail Export WRAP CLOSED** (10/10). Stream 1: milestone wrap completeness review. Stream 2: audit trail export full stack completeness audit (export workflow · sheet-scoped dispute filter · dispute sheet hint chain · context engine · AI panel entry count + format hint + context entries · operational workspace). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Deferred: explainability context surfacing (out of scope), PDF jsPDF stub. Sprint **466** queued (490–499 Report Propagation opens).
-
-## Sprint 464 close-out (2026-07-08)
-
-Milestone **480–489 Phase D Audit Trail Export active** (9/10). Stream 1: project assistant context engine drawing pin events audit trail export context entries aggregation + operational workspace AI panel audit trail export context entry surfacing (`toDrawingPinEventsAuditTrailExportContextEntry` · `operational-workspace-ai-panel-drawing-pin-events-audit-trail-export-context-entries`). Stream 2: milestone wrap prep — Sprint 465 wrap completeness review queued. Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Deferred: explainability context surfacing (465 wrap), PDF stub. Sprint **465** queued.
-
-## Sprint 463 close-out (2026-07-08)
-
-Milestone **480–489 Phase D Audit Trail Export active** (8/10). Stream 1: mid-milestone second-half completeness prep. Stream 2: mid-milestone 461–462 audit trail export stack partial completeness review (AI panel export entry count + export format hint · project assistant context engine wiring · operational workspace context surfacing). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Deferred: context entries aggregation (464), explainability context surfacing (465 wrap), PDF stub. Sprint **464** queued.
-
-## Sprint 462 close-out (2026-07-08)
-
-Milestone **480–489 Phase D Audit Trail Export active** (7/10). Stream 1: Operational workspace AI panel drawing pin events audit trail export entry count + export format hint (`resolveDrawingPinEventsAuditTrailExportEntries` · `operational-workspace-ai-panel-drawing-pin-events-audit-trail-export-entry-count` · `operational-workspace-ai-panel-drawing-pin-events-audit-trail-export-format-hint`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **463** queued.
-
-## Sprint 461 close-out (2026-07-08)
-
-Milestone **480–489 Phase D Audit Trail Export active** (6/10). Stream 1: mid-milestone first-half completeness prep. Stream 2: mid-milestone 456–460 audit trail export stack partial completeness review (export workflow foundation · sheet-scoped dispute filter · AI panel dispute sheet hint · context engine dispute sheet hint wiring · operational workspace context surfacing). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **462** queued.
-
-## Sprint 460 close-out (2026-07-08)
-
-Milestone **480–489 Phase D Audit Trail Export active** (5/10). Stream 1: Operational workspace AI panel drawing pin events audit trail export dispute sheet hint surfacing from project assistant context (`operational-workspace-ai-panel-drawing-pin-events-audit-trail-export-dispute-sheet-hint`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **461** queued.
-
-## Sprint 459 close-out (2026-07-08)
-
-Milestone **480–489 Phase D Audit Trail Export active** (4/10). Stream 1: Project assistant context engine drawing pin events audit trail export dispute sheet hint wiring (`drawingPinEventsAuditTrailExportDisputeSheetHint` · `formatDistinctDrawingPinEventsAuditTrailExportDisputeSheetHint`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **460** queued.
-
-## Sprint 458 close-out (2026-07-08)
-
-Milestone **480–489 Phase D Audit Trail Export active** (3/10). Stream 1: Operational workspace AI panel drawing pin events audit trail export dispute sheet hint (`formatDistinctDrawingPinEventsAuditTrailExportDisputeSheetHint` · `operational-workspace-ai-panel-drawing-pin-events-audit-trail-export-dispute-sheet-hint`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **459** queued.
-
-## Sprint 457 close-out (2026-07-08)
-
-Milestone **480–489 Phase D Audit Trail Export active** (2/10). Stream 1: Decision Timeline drawing pin events audit trail export sheet-scoped dispute filter (`distinctDrawingPinEventsAuditTrailExportSheetReferences` · `decision-timeline-drawing-pin-events-audit-trail-export-dispute-sheet-filter`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **458** queued.
-
-## Sprint 456 close-out (2026-07-08)
-
-Milestone **480–489 Phase D Audit Trail Export OPENS** (1/10). Stream 1: drawing pin events audit trail CSV/PDF export workflow foundation (`drawingPinEventsAuditTrailExportWorkflowService` · Decision Timeline export buttons). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **457** queued.
-
-## Sprint 455 close-out (2026-07-08)
-
-Milestone **470–479 Phase D Construction Memory WRAP CLOSED** (10/10). Stream 1: milestone wrap completeness review. Stream 2: drawing pin events full stack completeness audit (Construction Memory · timeline playback · Decision Timeline · explainability · AI panel · project assistant context engine wiring). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **456** queued (480–489 Audit Trail Export opens).
-
-## Sprint 454 close-out (2026-07-08)
-
-Milestone **470–479 Phase D Construction Memory** (9/10). Stream 1: mid-milestone first-half completeness prep. Stream 2: mid-milestone 446–450 drawing pin events stack partial completeness review + Decision Timeline explainability audit badge parity. Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **455** queued (milestone wrap review).
-
-## Sprint 453 close-out (2026-07-08)
-
-Milestone **470–479 Phase D Construction Memory** (8/10). Stream 1: project assistant context engine drawing pin events explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing. Stream 2: Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **454** queued (mid-milestone 446–450 completeness review).
-
-## Sprint 452 close-out (2026-07-07)
-
-Milestone **470–479 Phase D Construction Memory** (7/10). Stream 1: project assistant context engine drawing pin events context entries aggregation + operational workspace AI panel context entry surfacing. Stream 2: Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **453** queued.
-
-## Sprint 451 close-out (2026-07-07)
-
-Milestone **470–479 Phase D Construction Memory** (6/10). Stream 1: operational workspace AI panel drawing pin events context availability surfacing from project assistant context. Stream 2: Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **452** queued.
-
-## Sprint 450 close-out (2026-07-07)
-
-Milestone **470–479 Phase D Construction Memory** (5/10). Stream 1: project assistant context engine `drawing_pin_events` timeline entry count + label hint. Stream 2: Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **451** queued.
-
-## Sprint 449 close-out (2026-07-07)
-
-Milestone **470–479 Phase D Construction Memory** (4/10). Stream 1: operational workspace AI panel `drawing_pin_events` timeline entry count + label hint. Stream 2: Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **450** queued.
-
-
 
 
 
