@@ -3847,18 +3847,18 @@
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-08T07:30:48.660Z",
+    "lastPushAttempt": "2026-07-08T07:31:17.710Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-08T07:30:48.660Z",
+    "verifiedAt": "2026-07-08T07:31:17.710Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-08T07:30:24.9231748Z",
-    "pushedAt": "2026-07-08T07:30:48.660Z",
-    "remoteHeadSha": "0f8c87bf227662e74a7435a96e15ffe6bc46e103",
-    "publicStateVerifiedAt": "2026-07-08T07:30:48.660Z",
+    "sanitizedAt": "2026-07-08T07:31:57.1578707Z",
+    "pushedAt": "2026-07-08T07:31:17.710Z",
+    "remoteHeadSha": "03e6492e2c3e8b745b6296e0b0e17b478da10a8d",
+    "publicStateVerifiedAt": "2026-07-08T07:31:17.710Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "d3b64e49c02bc1d927b351fc949faa60425fdcfc31119c5a10e8dcd2583328e9",
+    "publicStateContentHash": "cbe0c93fda4e0ab7cc5e077bf9a6b6af16d01a82e317730692cb6e9e071b920f",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -3890,21 +3890,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "d3b64e49c02bc1d927b351fc949faa60425fdcfc31119c5a10e8dcd2583328e9",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-08T07:30:48.660Z",
-      "rawEndpointVerifiedAt": "2026-07-08T07:30:48.660Z",
-      "gitOriginVerifiedAt": "2026-07-08T07:30:48.660Z",
+      "githubApiVerifiedAt": "2026-07-08T07:31:17.710Z",
+      "rawEndpointVerifiedAt": "2026-07-08T07:31:17.710Z",
+      "gitOriginVerifiedAt": "2026-07-08T07:31:17.710Z",
       "routeContentHashes": {
-        "github-api": "d3b64e49c02bc1d927b351fc949faa60425fdcfc31119c5a10e8dcd2583328e9",
+        "github-api": "cbe0c93fda4e0ab7cc5e077bf9a6b6af16d01a82e317730692cb6e9e071b920f",
         "raw-cdn": "d3b64e49c02bc1d927b351fc949faa60425fdcfc31119c5a10e8dcd2583328e9",
-        "git-origin": "d3b64e49c02bc1d927b351fc949faa60425fdcfc31119c5a10e8dcd2583328e9"
+        "git-origin": "cbe0c93fda4e0ab7cc5e077bf9a6b6af16d01a82e317730692cb6e9e071b920f"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "0f8c87bf227662e74a7435a96e15ffe6bc46e103",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "03e6492e2c3e8b745b6296e0b0e17b478da10a8d",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 536,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -3975,7 +3975,7 @@
       "targetSprintOrMilestone": "Recertify at milestone 280-289 wrap or before production release",
       "relatedRisk": "platform-certification-stale",
       "architectureDecisionRequired": false,
-      "completionEvidence": "validationResults.platformCertification updated Sprint 265 oversight incorporation"
+      "completionEvidence": "Platform Certification 3/3 recertified Sprint 485 post-milestone-close (Finding 4) — validationResults.platformCertification updated"
     },
     {
       "findingId": "finding-5",
