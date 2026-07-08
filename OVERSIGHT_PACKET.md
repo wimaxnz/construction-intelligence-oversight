@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 530–539 Phase D Natural Language Search CLOSED (10/10); Sprint 516 queued (540–549 Intelligence Index Backfill opens).
+**Status:** Active — Milestone 540–549 Phase D Intelligence Index Backfill OPEN (1/10); Sprint 517 queued.
 
 **Last updated:** 2026-07-09
-**Current sprint:** 515 closed  
-**Next sprint:** 516 queued
-**Milestone:** 530–539 WRAP CLOSED (10/10) · 540–549 Intelligence Index Backfill opens Sprint 516
+**Current sprint:** 516 closed  
+**Next sprint:** 517 queued
+**Milestone:** 540–549 Phase D Intelligence Index Backfill active (1/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 516 summary
+
+Milestone 540–549 Phase D intelligence index backfill validation automation foundation (`intelligenceIndexBackfillValidationService` · `docs/INTELLIGENCE_INDEX_BACKFILL_PLAN.json`). Theme: backfill intelligence index for pre-migration uploads (DRAWING_INTELLIGENCE_ROADMAP.md Phase B — Backfill intelligence index for pre-migration uploads). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0). Platform Certification recertified post-milestone-open (Finding 4). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-516-selftest.ts`.
 
 ## Sprint 515 summary
 
@@ -390,11 +394,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (516)
+## Next sprint (517)
 
-- Stream 1: Milestone 540–549 Phase D intelligence index backfill validation automation foundation — sprint-516-selftest.ts
-- Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
-- Theme: backfill intelligence index for pre-migration uploads (DRAWING_INTELLIGENCE_ROADMAP.md Phase B — Backfill intelligence index for pre-migration uploads)
+- Stream 1: Playwright intelligence index backfill assertion scaffold — sprint-517-selftest.ts
+- Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
