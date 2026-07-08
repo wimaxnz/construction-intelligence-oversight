@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 490–499 Phase D Report Propagation (5/10); Sprint 471 queued.
+**Status:** Active — Milestone 490–499 Phase D Report Propagation (6/10); Sprint 472 queued.
 
 **Last updated:** 2026-07-08
-**Current sprint:** 470 closed  
-**Next sprint:** 471 queued
-**Milestone:** 490–499 Phase D Report Propagation active (5/10)
+**Current sprint:** 471 closed  
+**Next sprint:** 472 queued
+**Milestone:** 490–499 Phase D Report Propagation active (6/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 471 summary
+
+Mid-milestone review — Drawing Intelligence Phase D report propagation second-half completeness prep (`sprint-471-selftest.ts` · first-half 466–470 stack confirmed · secondHalfWiring queue Sprints 472–475). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-471-selftest.ts`.
 
 ## Sprint 470 summary
 
@@ -206,10 +210,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json`
 
-## Next sprint (471)
+## Next sprint (472)
 
-- Stream 1: Mid-milestone review — Drawing Intelligence Phase D report propagation second-half completeness prep
+- Stream 1: Project assistant context engine drawing pin events report propagation context entries aggregation + operational workspace AI panel report propagation context entry surfacing — sprint-472-selftest.ts
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
