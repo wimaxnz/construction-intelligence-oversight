@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-09",
   "currentSprint": {
-    "number": 516,
+    "number": 517,
     "status": "closed",
-    "previousClosed": 515,
+    "previousClosed": 516,
     "closedDate": "2026-07-09"
   },
   "currentMilestone": {
@@ -23,15 +23,15 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 1,
-    "percentComplete": 10,
+    "sprintsClosed": 2,
+    "percentComplete": 20,
     "nextWrapReviewSprint": 525,
     "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Playwright intelligence index backfill assertion scaffold — sprint-517-selftest.ts"
+      "focus": "Phase B validation matrix intelligence index backfill row wiring — sprint-518-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -1352,6 +1352,12 @@
       "stream2": "Platform Certification recertification post-milestone-open (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 540–549 opens selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Platform Certification 3/3 recertified post-milestone-open (Finding 4); gate #1 regression guard green; gate #2 satisfied per MIGRATION_015_STAGING_VERIFICATION.json; production apply blocked — owner credentials required",
       "deferred": "Production Migration 015 apply blocked pending PRODUCTION_* credentials; full Playwright intelligence index backfill UI assertions deferred to Sprint 517+"
+    },
+    "sprint517": {
+      "stream1": "Playwright intelligence index backfill assertion scaffold — parseIntelligenceIndexBackfillDomObservation · assertIntelligenceIndexBackfillObservation · buildIntelligenceIndexBackfillPlaywrightScaffoldSummary · phase-b-wynyard-validation.ts UI-INTELLIGENCE-INDEX-BACKFILL · sprint-517-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (exclusive re-run for new result id; stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 540–549 at 2/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); UI-INTELLIGENCE-INDEX-BACKFILL passed; gate #2 satisfied; production apply blocked — owner credentials required",
+      "deferred": "Production Migration 015 apply blocked pending PRODUCTION_* credentials; full intelligence index backfill UI assertions deferred to Sprint 518+"
     }
   },
   "changedFiles": {
@@ -4069,6 +4075,21 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint517": [
+      "src/platform/validation/intelligenceIndexBackfillValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/INTELLIGENCE_INDEX_BACKFILL_PLAN.json",
+      "scripts/sprint-517-selftest.ts",
+      "scripts/sprint-517-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -4425,14 +4446,16 @@
       "sprint515": "Milestone 530–539 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + natural language search full stack completeness audit)",
       "sprint515PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
       "sprint516": "Milestone 540–549 opens — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + intelligence index backfill foundation; consecutiveGreen reuse when stampede=0)",
-      "sprint516PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
+      "sprint516PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
+      "sprint517": "Milestone 540–549 at 2/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Playwright intelligence index backfill assertion scaffold)",
+      "sprint517PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3 exclusive for UI-INTELLIGENCE-INDEX-BACKFILL; stampede=0); UI-INTELLIGENCE-INDEX-BACKFILL passed"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-09",
       "lastCertifiedBaseline": "2026-07-09",
       "status": "current — recertified Sprint 516 (540-549 Intelligence Index Backfill opens 1/10 Finding 4)",
       "sprintRangeCovered": "516–516 (Drawing Intelligence Phase D — Intelligence Index Backfill Milestone 540-549 opens)",
-      "deltaSinceCertification": "Sprints 130–516 delivered (387 sprints); Milestone 530-539 closed; Phase D Intelligence Index Backfill 540-549 opens (1/10); gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); natural language search wrap complete (docs/NATURAL_LANGUAGE_SEARCH_PLAN.json); intelligence index backfill foundation (docs/INTELLIGENCE_INDEX_BACKFILL_PLAN.json); Platform Certification 3/3 recertified Sprint 516 (Finding 4)",
+      "deltaSinceCertification": "Sprints 130–517 delivered (388 sprints); Milestone 540-549 at 2/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Playwright intelligence index backfill assertion scaffold (docs/INTELLIGENCE_INDEX_BACKFILL_PLAN.json); Platform Certification 3/3 recertified Sprint 516 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -4449,12 +4472,12 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 540–549 opens (1/10), Sprint 516 closed, Sprint 517 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Milestone 540–549 Intelligence Index Backfill opens logged",
-    "docs/INTELLIGENCE_INDEX_BACKFILL_PLAN.json — foundationComplete Sprint 516",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 516 closed, milestone 540-549 active (1/10), sprint 517 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 516 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 516 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 540–549 at 2/10, Sprint 517 closed, Sprint 518 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 517 Playwright intelligence index backfill scaffold logged",
+    "docs/INTELLIGENCE_INDEX_BACKFILL_PLAN.json — playwrightExtensionScaffoldComplete Sprint 517",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 517 closed, milestone 540-549 active (2/10), sprint 518 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 517 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 517 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -4600,27 +4623,27 @@
     }
   ],
   "nextSprint": {
-    "number": 517,
-    "stream1": "Playwright intelligence index backfill assertion scaffold — sprint-517-selftest.ts",
+    "number": 518,
+    "stream1": "Phase B validation matrix intelligence index backfill row wiring — sprint-518-selftest.ts",
     "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-517-selftest.ts",
-    "credentialNote": "Production apply blocked — owner must provide PRODUCTION_* credentials; gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 540-549 Phase D Intelligence Index Backfill active (1/10); intelligence index backfill foundation docs/INTELLIGENCE_INDEX_BACKFILL_PLAN.json"
+    "selftest": "scripts/sprint-518-selftest.ts",
+    "credentialNote": "Production apply blocked — owner must provide PRODUCTION_* credentials; gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 540-549 Phase D Intelligence Index Backfill active (2/10); Playwright scaffold complete docs/INTELLIGENCE_INDEX_BACKFILL_PLAN.json"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-08T19:31:51.377Z",
+    "lastPushAttempt": "2026-07-08T19:32:13.131Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-08T19:31:51.377Z",
+    "verifiedAt": "2026-07-08T19:32:13.131Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-08T19:31:32.1886215Z",
-    "pushedAt": "2026-07-08T19:31:51.377Z",
-    "remoteHeadSha": "a5cdf20771003f2058e177010a2076d9d247759b",
-    "publicStateVerifiedAt": "2026-07-08T19:31:51.377Z",
+    "sanitizedAt": "2026-07-08T19:54:48.8787042Z",
+    "pushedAt": "2026-07-08T19:32:13.131Z",
+    "remoteHeadSha": "6cc13e4a3de8ceda3e54cbd46ee459b16ac41e92",
+    "publicStateVerifiedAt": "2026-07-08T19:32:13.131Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "0a36d334e0078cd8360a9e2ed560d97f50af1acf039f49fd4295001edc1a7aa8",
+    "publicStateContentHash": "c453f90734951845cc283639b3c3df3e9540f17a285a3b7349d5c5284877a3df",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -4652,21 +4675,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "0a36d334e0078cd8360a9e2ed560d97f50af1acf039f49fd4295001edc1a7aa8",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-08T19:31:51.377Z",
-      "rawEndpointVerifiedAt": "2026-07-08T19:31:51.377Z",
-      "gitOriginVerifiedAt": "2026-07-08T19:31:51.377Z",
+      "githubApiVerifiedAt": "2026-07-08T19:32:13.131Z",
+      "rawEndpointVerifiedAt": "2026-07-08T19:32:13.131Z",
+      "gitOriginVerifiedAt": "2026-07-08T19:32:13.131Z",
       "routeContentHashes": {
-        "github-api": "0a36d334e0078cd8360a9e2ed560d97f50af1acf039f49fd4295001edc1a7aa8",
+        "github-api": "c453f90734951845cc283639b3c3df3e9540f17a285a3b7349d5c5284877a3df",
         "raw-cdn": "0a36d334e0078cd8360a9e2ed560d97f50af1acf039f49fd4295001edc1a7aa8",
-        "git-origin": "0a36d334e0078cd8360a9e2ed560d97f50af1acf039f49fd4295001edc1a7aa8"
+        "git-origin": "c453f90734951845cc283639b3c3df3e9540f17a285a3b7349d5c5284877a3df"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "a5cdf20771003f2058e177010a2076d9d247759b",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "6cc13e4a3de8ceda3e54cbd46ee459b16ac41e92",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 598,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -4677,12 +4700,12 @@
     "bridgeDocs": "docs/ai-oversight/OVERSIGHT_BRIDGE_ADR.md"
   },
   "oversightBridge": {
-    "lastConsumedAt": "2026-07-08T19:27:20.705Z",
+    "lastConsumedAt": "2026-07-08T19:32:16.776Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 516,
+    "lastSyncedSprint": 517,
     "lastSyncedAt": "2026-07-09",
-    "milestoneProgress": "540-549 OPENS (1/10)",
+    "milestoneProgress": "540-549 ACTIVE (2/10)",
     "productionApplyBlocked": true,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -4849,7 +4872,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase D — Intelligence Index Backfill Milestone milestone (540-549) active — Sprint 516 closed; Sprint 517 queued",
+    "phaseE": "Drawing Intelligence Phase D — Intelligence Index Backfill Milestone milestone (540-549) active — Sprint 517 closed; Sprint 518 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -4862,7 +4885,7 @@
     "sprint382": "No new growth event kinds — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint379": "No new growth event kinds — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (4 days remaining as of 2026-07-08)",
-    "phaseD": "Drawing Intelligence Phase D — Intelligence Index Backfill Milestone (540-549) active Sprint 516 (1/10); 530-539 Natural Language Search Milestone closed Sprint 515",
+    "phaseD": "Drawing Intelligence Phase D — Intelligence Index Backfill Milestone (540-549) active Sprint 517 (2/10); Playwright assertion scaffold complete",
     "phaseB": "Phase B remaining: Intelligence index backfill (540-549 active); Natural language search milestone closed Sprint 515"
   },
   "digitalBrainImpact": {
@@ -4959,7 +4982,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 540-549 1/10 sprints closed (10%); latest growth-event sprint 400; Sprint 516 closed; Sprint 517 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 540-549 2/10 sprints closed (20%); latest growth-event sprint 400; Sprint 517 closed; Sprint 518 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -5115,7 +5138,8 @@
     "sprint513": "No new growth event kinds — Natural language search knowledge graph facet Playwright assertions; Milestone 530–539 at 8/10",
     "sprint514": "No new growth event kinds — mid-milestone 506–513 natural language search stack partial completeness review; Milestone 530–539 at 9/10",
     "sprint515": "No new growth event kinds — milestone 530–539 wrap completeness review confirms natural language search full stack audit (foundation · Playwright · Phase B matrix · UI assertions · haystack match reasons · query execution · intent layer hints · knowledge graph facets); milestone closed; 540–549 opens Sprint 516",
-    "sprint516": "No new growth event kinds — intelligence index backfill foundation defines pre-migration intelligence_json index contracts via legacy backfill orchestrator + hydration wiring; Milestone 540–549 opens Sprint 516"
+    "sprint516": "No new growth event kinds — intelligence index backfill foundation defines pre-migration intelligence_json index contracts via legacy backfill orchestrator + hydration wiring; Milestone 540–549 opens Sprint 516",
+    "sprint517": "No new growth event kinds — Playwright intelligence index backfill scaffold reads legacy-backfill-progress + platform-job-progress + legacy-backfill-orchestrate-dedup; Milestone 540–549 at 2/10"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -5334,7 +5358,8 @@
     "sprint513": "NL search KG facet assertions — search-kg-facets · search-kg-facet node kinds (discipline · tender_package · subcontractor_package) · smart-search-linked-references on result cards; Milestone 530–539 at 8/10",
     "sprint514": "No direct KG edge changes — mid-milestone 506–513 natural language search stack partial completeness review; Milestone 530–539 at 9/10",
     "sprint515": "Milestone 530–539 wrap confirms NL search haystack + KG facet validation stack complete; milestone closed; 540–549 Intelligence Index Backfill opens Sprint 516",
-    "sprint516": "Intelligence index backfill foundation — candidate classification for missing intelligence_json search index on pre-migration uploads; Milestone 540–549 opens Sprint 516"
+    "sprint516": "Intelligence index backfill foundation — candidate classification for missing intelligence_json search index on pre-migration uploads; Milestone 540–549 opens Sprint 516",
+    "sprint517": "Playwright intelligence index backfill assertion scaffold — pre-migration intelligence_json index backfill UI chrome; Milestone 540–549 at 2/10"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
@@ -5420,7 +5445,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Intelligence Index Backfill Milestone (540-549) active 1/10; Sprint 516 closed; Sprint 517 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Playwright intelligence index backfill assertion scaffold — sprint-517-selftest.)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Intelligence Index Backfill Milestone (540-549) active 2/10; Sprint 517 closed; Sprint 518 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Phase B validation matrix intelligence index backfill row wiring — sprint-518-se)",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -5571,7 +5596,8 @@
     "sprint513": "Milestone 530–539 Drawing Intelligence Phase D — Natural Language Search at 8/10 — knowledge graph facet Playwright assertions — sprint-513-selftest.ts",
     "sprint514": "Milestone 530–539 Drawing Intelligence Phase D — Natural Language Search at 9/10 — mid-milestone 506–513 stack partial completeness review — sprint-514-selftest.ts",
     "sprint515": "Milestone 530–539 Drawing Intelligence Phase D — Natural Language Search wrap completeness review — full stack audit; milestone closed; 540–549 opens Sprint 516 — sprint-515-selftest.ts",
-    "sprint516": "Milestone 540–549 Drawing Intelligence Phase D — Intelligence Index Backfill opens — intelligence index backfill validation automation foundation — sprint-516-selftest.ts"
+    "sprint516": "Milestone 540–549 Drawing Intelligence Phase D — Intelligence Index Backfill opens — intelligence index backfill validation automation foundation — sprint-516-selftest.ts",
+    "sprint517": "Milestone 540–549 Drawing Intelligence Phase D — Intelligence Index Backfill at 2/10 — Playwright assertion scaffold — sprint-517-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",

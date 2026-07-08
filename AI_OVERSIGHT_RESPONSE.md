@@ -19,6 +19,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 
+## Sprint 517 close-out (2026-07-09)
+
+Milestone **540–549 Phase D Intelligence Index Backfill** at **2/10**. Stream 1: Playwright intelligence index backfill assertion scaffold (`UI-INTELLIGENCE-INDEX-BACKFILL`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (exclusive for new result id; stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **518** queued.
+
 ## Sprint 516 close-out (2026-07-09)
 
 Milestone **540–549 Phase D Intelligence Index Backfill OPENS** (1/10). Theme: backfill intelligence index for pre-migration uploads (DRAWING_INTELLIGENCE_ROADMAP.md Phase B — Backfill intelligence index for pre-migration uploads). Stream 1: intelligence index backfill validation automation foundation (`intelligenceIndexBackfillValidationService`). Stream 2: Platform Certification recertification post-milestone-open (Finding 4) · PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **517** queued.
