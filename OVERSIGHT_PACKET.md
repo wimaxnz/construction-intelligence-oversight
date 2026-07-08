@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 520–529 Phase D Specification Document Linking (2/10); Sprint 498 queued.
+**Status:** Active — Milestone 520–529 Phase D Specification Document Linking (3/10); Sprint 499 queued.
 
 **Last updated:** 2026-07-09
-**Current sprint:** 497 closed  
-**Next sprint:** 498 queued
-**Milestone:** 520–529 Phase D Specification Document Linking active (2/10)
+**Current sprint:** 498 closed  
+**Next sprint:** 499 queued
+**Milestone:** 520–529 Phase D Specification Document Linking active (3/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 498 summary
+
+Phase B validation matrix specification document linking row wiring (`buildSpecificationDocumentLinkingPhaseBMatrixRow` · `phase-b-wynyard-validation.ts` · `docs/SPECIFICATION_DOCUMENT_LINKING_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-498-selftest.ts`.
 
 ## Sprint 497 summary
 
@@ -318,10 +322,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (498)
+## Next sprint (499)
 
-- Stream 1: Phase B validation matrix specification document linking row wiring — sprint-498-selftest.ts
+- Stream 1: Specification document linking UI assertions — sprint-499-selftest.ts
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
