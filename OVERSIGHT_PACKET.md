@@ -1,12 +1,20 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 490–499 Phase D Report Propagation (8/10); Sprint 474 queued.
+**Status:** Active — Milestone 490–499 Phase D Report Propagation CLOSED (10/10); Sprint 476 queued.
 
 **Last updated:** 2026-07-08
-**Current sprint:** 473 closed  
-**Next sprint:** 474 queued
-**Milestone:** 490–499 Phase D Report Propagation active (8/10)
+**Current sprint:** 475 closed  
+**Next sprint:** 476 queued
+**Milestone:** 490–499 WRAP CLOSED (10/10) · 500–509 Canvas Marker Lifecycle Validation opens Sprint 476
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 475 summary
+
+Milestone 490–499 wrap review — Drawing Intelligence Phase D report propagation full stack completeness review (`sprint-475-selftest.ts` · subscription foundation · executive report section wiring · Report Centre UI surfacing · cross-ref audit UI · project assistant context engine wiring · AI panel context entries · cross-ref context entries · explainability context entries · operational workspace surfacing). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Platform Certification recertified post-milestone-close (Finding 4). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-475-selftest.ts`.
+
+## Sprint 474 summary
+
+Milestone 490–499 Phase D report propagation — project assistant context engine report propagation explainability context entry aggregation + operational workspace AI panel report propagation explainability context entry surfacing (`reportPropagationExplainabilityEntries` · `operational-workspace-ai-panel-report-propagation-explainability-context-entries`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-474-selftest.ts`.
 
 ## Sprint 473 summary
 
@@ -218,10 +226,14 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json`
 
-## Next sprint (474)
+## Next sprint (476)
 
-- Stream 1: Project assistant context engine report propagation explainability context entry aggregation + operational workspace AI panel report propagation explainability context entry surfacing — sprint-474-selftest.ts
-- Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+- Stream 1: Milestone 500–509 Phase D canvas marker lifecycle validation automation foundation — sprint-476-selftest.ts
+- Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
+
+
+
+
 
 
 
