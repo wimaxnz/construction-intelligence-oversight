@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 520–529 Phase D Specification Document Linking (8/10); Sprint 504 queued.
+**Status:** Active — Milestone 520–529 Phase D Specification Document Linking (9/10); Sprint 505 queued.
 
 **Last updated:** 2026-07-09
-**Current sprint:** 503 closed  
-**Next sprint:** 504 queued
-**Milestone:** 520–529 Phase D Specification Document Linking active (8/10)
+**Current sprint:** 504 closed  
+**Next sprint:** 505 queued
+**Milestone:** 520–529 Phase D Specification Document Linking active (9/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 504 summary
+
+Specification document linking remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 (`assertSpecificationDocumentLinkingRemoteReadAfterWriteRoundTrip` · `roundTripSpecificationDocumentLinkingSpecifiedByEdgesRemoteReadAfterWrite` · `runSpecificationDocumentLinkingRemoteReadAfterWriteRoundTrip` · `docs/SPECIFICATION_DOCUMENT_LINKING_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-504-selftest.ts`.
 
 ## Sprint 503 summary
 
@@ -342,10 +346,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (504)
+## Next sprint (505)
 
-- Stream 1: Specification document linking remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-504-selftest.ts
+- Stream 1: Milestone wrap review — Drawing Intelligence Phase D Specification Document Linking completeness — sprint-505-selftest.ts
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
