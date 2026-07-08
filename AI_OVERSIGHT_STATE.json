@@ -3811,13 +3811,13 @@
     {
       "id": "migration-015-pending",
       "severity": "high-before-production",
-      "blockingScope": "production apply still required; staging gate #2 satisfied",
+      "blockingScope": "post-sync verification pending; deploy triggered — not blocked on PRODUCTION_* deploy credentials",
       "owner": "platform-engineering",
       "targetEnvironment": "production Supabase",
       "verificationTest": "Production apply + RLS policy audit + Sprint Validation 3/3",
       "rollbackPlan": "Revert to migration 014 RLS snapshot",
       "completionEvidence": null,
-      "description": "Supabase migration 015 staging verified Sprint 421 (7/7 RLS policies, gate #2 staging satisfied); production sync triggered 2026-07-08 via empty commit 9d4c94a on wimaxnz/247print-user-dashboard main (content @ 37e19a5); post-sync production RLS 7/7 unverified — PRODUCTION_SUPABASE_URL/ANON_KEY and PRODUCTION_DATABASE_URL absent; evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json"
+      "description": "Migration 015 staging verified Sprint 421 (7/7 RLS, gate #2 staging satisfied). Production sync triggered 2026-07-08 via GitHub Integration empty commit 9d4c94a (content @ 37e19a5). Post-sync verification pending: dashboard deploy confirm, production RLS 7/7 probe, PHASE_B_RUNS=3 on production URL. Not production-complete."
     },
     {
       "id": "drawing-revision-provenance-gap",
@@ -3830,7 +3830,7 @@
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Milestone 510–519 Phase D Cross-Reference Graph Supabase Persistence active; Finding 6 gate #1 satisfied; gate #2 staging satisfied; gate #2 production pending — sync triggered 2026-07-08 (9d4c94a), RLS probe creds incomplete"
+      "description": "Milestone 510–519 Phase D active; gate #2 staging satisfied; gate #2 production pending post-sync verification (sync triggered 9d4c94a; RLS probe creds incomplete)"
     },
     {
       "id": "partial-platform-services",
@@ -3850,9 +3850,9 @@
       "severity": "owner-action",
       "relatedFinding": "finding-3",
       "status": "sync_triggered_verification_pending",
-      "description": "Migration 015 production deploy — owner approval granted 2026-07-08; Supabase GitHub Integration sync triggered via empty commit 9d4c94a on main (migration content @ 37e19a5). Dashboard integration confirmed (repo wimaxnz/247print-user-dashboard, Deploy to production ON). Remaining: confirm deployment success in Supabase Dashboard; production RLS 7/7 probe (PRODUCTION_* creds incomplete); PHASE_B_RUNS=3 against production URL. Evidence: docs/MIGRATION_015_PRODUCTION_VERIFICATION.json",
+      "description": "Migration 015 production deploy — owner approval granted 2026-07-08; primary path Supabase GitHub Integration; sync triggered via empty commit 9d4c94a on main (content @ 37e19a5). Dashboard integration confirmed. Deployment success unconfirmed; post-sync production RLS 7/7 and PHASE_B_RUNS=3 pending. Evidence: docs/MIGRATION_015_PRODUCTION_VERIFICATION.json · docs/MIGRATION_015_POST_SYNC_OWNER_ACTIONS.md",
       "recordedAt": "2026-07-08",
-      "updatedAt": "2026-07-08T09:20:00.000Z",
+      "updatedAt": "2026-07-08T10:06:59.083Z",
       "syncTriggeredAt": "2026-07-08T09:07:00.000Z",
       "syncTriggerCommit": "9d4c94a",
       "syncMethod": "empty-commit-push-to-main",
@@ -3865,17 +3865,32 @@
       "migrationsExcludedFromProdPr": "016,017",
       "migration015OnMain": true,
       "prRequired": false,
-      "evidence": "docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md · docs/MIGRATION_015_PRE_SYNC_OWNER_CONFIRMATION.md"
+      "evidence": "docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md · docs/MIGRATION_015_PRE_SYNC_OWNER_CONFIRMATION.md",
+      "contentCommit": "37e19a5",
+      "primaryDeployPath": "supabase-github-integration",
+      "deploymentStatus": "sync_triggered",
+      "deploymentConfirmed": false,
+      "postSyncVerified": false
     },
     {
       "id": "migration-015-production-credentials",
       "severity": "alternate-path-fallback",
       "relatedFinding": "finding-3",
       "status": "superseded",
-      "description": "Migration 015 direct credential apply — superseded as primary gate by Supabase GitHub Integration deploy path; PRODUCTION_DATABASE_URL, PRODUCTION_SUPABASE_URL, and PRODUCTION_SUPABASE_ANON_KEY still absent; retain only for fallback manual apply (MIGRATION_015_PRODUCTION_APPLY=1) or read-only production RLS probe",
+      "description": "Direct MIGRATION_015_PRODUCTION_APPLY=1 — superseded as primary deploy gate by Supabase GitHub Integration. PRODUCTION_* credentials still required only for post-sync read-only RLS probe or manual fallback if GitHub deploy fails.",
       "recordedAt": "2026-07-08",
       "supersededAt": "2026-07-08",
       "evidence": "docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json · docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md"
+    },
+    {
+      "id": "production-rls-probe-creds-missing",
+      "severity": "owner-action",
+      "relatedFinding": "finding-3",
+      "status": "active",
+      "description": "Post-sync production RLS 7/7 probe blocked — PRODUCTION_SUPABASE_URL, PRODUCTION_SUPABASE_ANON_KEY, PRODUCTION_DATABASE_URL absent; PRODUCTION_SUPABASE_SERVICE_ROLE_KEY.txt present but invalid (truncated JWT). Not a deploy blocker. See docs/MIGRATION_015_POST_SYNC_OWNER_ACTIONS.md Gate B.",
+      "recordedAt": "2026-07-08",
+      "updatedAt": "2026-07-08T10:06:59.083Z",
+      "evidence": "docs/MIGRATION_015_PRODUCTION_VERIFICATION.json"
     },
     {
       "id": "staging-supabase-phase-b-flake",
@@ -3887,6 +3902,33 @@
       "mitigatedAt": "2026-07-08",
       "retryCount": 4,
       "evidence": "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json · docs/SPRINT_467_CLOSE_OUT_RETRY.md"
+    },
+    {
+      "id": "production-deploy-success-unconfirmed",
+      "severity": "owner-action",
+      "relatedFinding": "finding-3",
+      "status": "active",
+      "description": "Supabase Dashboard deployment success for sync trigger commit 9d4c94a not yet confirmed. Treat production RLS state as unknown until Gate A passes.",
+      "updatedAt": "2026-07-08T10:06:59.083Z",
+      "evidence": "docs/MIGRATION_015_PRODUCTION_VERIFICATION.json"
+    },
+    {
+      "id": "migration-015-production-rls-unverified",
+      "severity": "owner-action",
+      "relatedFinding": "finding-3",
+      "status": "active",
+      "description": "Production RLS 7/7 not verified post-sync. Blocked until dashboard deploy confirmed and probe credentials provided.",
+      "updatedAt": "2026-07-08T10:06:59.083Z",
+      "evidence": "docs/MIGRATION_015_PRODUCTION_VERIFICATION.json"
+    },
+    {
+      "id": "production-phase-b-not-configured",
+      "severity": "owner-action",
+      "relatedFinding": "finding-3",
+      "status": "active",
+      "description": "Production PHASE_B_RUNS=3 not run — production app URL not configured. Staging 3/3 green Sprint 467 remains reference baseline.",
+      "updatedAt": "2026-07-08T10:06:59.083Z",
+      "evidence": "docs/MIGRATION_015_PRODUCTION_VERIFICATION.json"
     }
   ],
   "nextSprint": {
@@ -3894,23 +3936,23 @@
     "stream1": "Phase B validation matrix cross-ref graph Supabase persistence row wiring — sprint-488-selftest.ts",
     "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
     "selftest": "scripts/sprint-488-selftest.ts",
-    "credentialNote": "Migration 015 production sync triggered 2026-07-08 (empty commit 9d4c94a); post-sync RLS probe blocked — PRODUCTION_SUPABASE_URL/ANON_KEY and PRODUCTION_DATABASE_URL absent; gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; gate #2 production pending — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 510-519 Phase D active (2/10)"
+    "credentialNote": "Migration 015 sync triggered 2026-07-08 (9d4c94a); post-sync verification pending — not production-complete. Gate #2 staging satisfied; gate #2 production pending probe creds + dashboard confirm."
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-08T09:25:23.698Z",
+    "lastPushAttempt": "2026-07-08T09:25:57.305Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-08T09:25:23.698Z",
+    "verifiedAt": "2026-07-08T09:25:57.305Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-08T09:24:56.2375226Z",
-    "pushedAt": "2026-07-08T09:25:23.698Z",
-    "remoteHeadSha": "3f96253ca2bdeace73b7d479981ef711195b4136",
-    "publicStateVerifiedAt": "2026-07-08T09:25:23.698Z",
+    "sanitizedAt": "2026-07-08T10:07:48.5591512Z",
+    "pushedAt": "2026-07-08T09:25:57.305Z",
+    "remoteHeadSha": "6764cf83142efe8bc29ae2afb3912255ceb2f808",
+    "publicStateVerifiedAt": "2026-07-08T09:25:57.305Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "263f602b42ebc26148a53e0e78e283c6cdbd0ef618566949971e326d16a336ba",
+    "publicStateContentHash": "bad27a1e0aa4d3aaf8797ce1997a061ee4d7315624e8597af725b26f44f51d34",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -3942,21 +3984,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "263f602b42ebc26148a53e0e78e283c6cdbd0ef618566949971e326d16a336ba",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-08T09:25:23.698Z",
-      "rawEndpointVerifiedAt": "2026-07-08T09:25:23.698Z",
-      "gitOriginVerifiedAt": "2026-07-08T09:25:23.698Z",
+      "githubApiVerifiedAt": "2026-07-08T09:25:57.305Z",
+      "rawEndpointVerifiedAt": "2026-07-08T09:25:57.305Z",
+      "gitOriginVerifiedAt": "2026-07-08T09:25:57.305Z",
       "routeContentHashes": {
-        "github-api": "263f602b42ebc26148a53e0e78e283c6cdbd0ef618566949971e326d16a336ba",
+        "github-api": "bad27a1e0aa4d3aaf8797ce1997a061ee4d7315624e8597af725b26f44f51d34",
         "raw-cdn": "263f602b42ebc26148a53e0e78e283c6cdbd0ef618566949971e326d16a336ba",
-        "git-origin": "263f602b42ebc26148a53e0e78e283c6cdbd0ef618566949971e326d16a336ba"
+        "git-origin": "bad27a1e0aa4d3aaf8797ce1997a061ee4d7315624e8597af725b26f44f51d34"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "3f96253ca2bdeace73b7d479981ef711195b4136",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "6764cf83142efe8bc29ae2afb3912255ceb2f808",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 540,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -3967,13 +4009,13 @@
     "bridgeDocs": "docs/ai-oversight/OVERSIGHT_BRIDGE_ADR.md"
   },
   "oversightBridge": {
-    "lastConsumedAt": "2026-07-08T09:06:28.478Z",
+    "lastConsumedAt": "2026-07-08T09:26:04.096Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
     "lastSyncedSprint": 487,
     "lastSyncedAt": "2026-07-08",
     "milestoneProgress": "510-519 ACTIVE (2/10)",
-    "productionApplyBlocked": true,
+    "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
     "localE2EProofDoc": "docs/ai-oversight/OVERSIGHT_RELAY_E2E_PROOF.md",
@@ -3981,7 +4023,27 @@
     "chatgptCallablePathProven": false,
     "gate4DeferralDocumented": true,
     "gate4DeferralOwner": "platform-team",
-    "gate4DeferralRationale": "Remote Cloudflare deploy and ChatGPT callable path not proven — local E2E only; deferral documented Sprint 424 + reaffirmed Sprint 439"
+    "gate4DeferralRationale": "Remote Cloudflare deploy and ChatGPT callable path not proven — local E2E only; deferral documented Sprint 424 + reaffirmed Sprint 439",
+    "gate2StagingSatisfied": true,
+    "gate2ProductionPending": true,
+    "productionDeployBlocked": false,
+    "productionPostSyncVerificationPending": true,
+    "migration015PrimaryDeployPath": "supabase-github-integration",
+    "migration015FallbackDeployPath": "MIGRATION_015_PRODUCTION_APPLY=1",
+    "migration015OwnerApprovalGranted": "2026-07-08",
+    "migration015PreSyncGatesPassed": true,
+    "migration015SyncTriggerCommit": "9d4c94a",
+    "migration015ContentCommit": "37e19a5",
+    "migration015DeploymentStatus": "sync_triggered",
+    "migration015DeploymentConfirmed": false,
+    "migration015PostSyncVerified": false,
+    "migration015ProductionRls7of7": "pending_probe",
+    "migration015ProductionPhaseBRuns3": "pending_production_url",
+    "migration015ProbeCredentialsRequired": true,
+    "migration015DeployCredentialsRequired": false,
+    "migration015StagingNotTarget": "aybovjvmyqexgpmhedni",
+    "migration015ProductionProjectRefConfirmed": false,
+    "migration015Evidence": "docs/MIGRATION_015_PRODUCTION_VERIFICATION.json"
   },
   "oversightFindingsState": [],
   "oversightFindingsTriage": [
@@ -4131,7 +4193,7 @@
     "sprint381": "No new growth event kinds — project assistant context engine Phase C pin re-anchor explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCPinReanchorExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint382": "No new growth event kinds — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint379": "No new growth event kinds — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
-    "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (5 days remaining as of 2026-07-07)",
+    "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (4 days remaining as of 2026-07-08)",
     "phaseD": "Drawing Intelligence Phase D — Cross-Reference Graph Supabase Persistence Milestone (510-519) active Sprint 487 (2/10); Playwright assertion scaffold complete"
   },
   "digitalBrainImpact": {
@@ -4764,10 +4826,10 @@
       "Platform Certification 5/5 deterministic suite re-run with baseline covering sprints through current closed sprint — 5/5 Sprint 418 preserved; Sprint Validation 3/3 re-run Sprint 424",
       "Oversight bridge remote callable path proven (chatgptCallablePathProven) OR documented deferral with owner — deferral documented Sprint 424 + reaffirmed Sprint 439 (docs/PRODUCTION_GATE_4_BRIDGE_DEFERRAL.md); cloudflareDeployProven false; local E2E only"
     ],
-    "daysRemaining": 5,
-    "computedAsOf": "2026-07-07",
+    "daysRemaining": 4,
+    "computedAsOf": "2026-07-08",
     "status": "at_risk",
-    "statusRationale": "Milestone 510–519 active; Finding 6 gate #1 satisfied; gate #2 staging satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); gate #2 production pending — sync triggered 2026-07-08 (9d4c94a) but RLS 7/7 unverified (docs/MIGRATION_015_PRODUCTION_VERIFICATION.json); Platform Certification 3/3 recertified Sprint 486 (Finding 4)"
+    "statusRationale": "Milestone 510–519 active; gate #2 staging satisfied; gate #2 production pending post-sync verification — sync triggered 2026-07-08 (9d4c94a), deployment unconfirmed, RLS 7/7 unverified; Platform Certification 3/3 recertified Sprint 486"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
@@ -4791,6 +4853,18 @@
     "gate2": "satisfied",
     "gate2Production": "pending_probe",
     "gate2ProductionEvidence": "docs/MIGRATION_015_PRODUCTION_VERIFICATION.json",
-    "productionSyncTriggered": "2026-07-08 empty commit 9d4c94a on main"
+    "productionSyncTriggered": "2026-07-08 empty commit 9d4c94a on main",
+    "productionSyncContentCommit": "37e19a5",
+    "productionDeploymentStatus": "sync_triggered",
+    "productionDeploymentConfirmed": false,
+    "productionPostSyncVerified": false,
+    "productionRls7of7": "pending_probe",
+    "productionPhaseBRuns3": "pending_production_url",
+    "primaryDeployPath": "supabase-github-integration",
+    "stagingProjectRef": "aybovjvmyqexgpmhedni",
+    "productionProjectRefConfirmed": false,
+    "ownerApprovalGranted": "2026-07-08",
+    "preSyncGatesPassed": true,
+    "reconciledAt": "2026-07-08T10:06:59.083Z"
   }
 }

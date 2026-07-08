@@ -2,7 +2,7 @@
 
 **Status:** Active — Milestone 510–519 Phase D Cross-Reference Graph Supabase Persistence (2/10); Sprint 488 queued.
 
-**Last updated:** 2026-07-08
+**Last updated:** 2026-07-08 (Migration 015 sync triggered 9d4c94a — post-sync verification pending)
 **Current sprint:** 487 closed  
 **Next sprint:** 488 queued
 **Milestone:** 510–519 Phase D Cross-Reference Graph Supabase Persistence active (2/10)
