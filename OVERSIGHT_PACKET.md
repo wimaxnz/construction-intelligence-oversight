@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 530–539 Phase D Natural Language Search (8/10); Sprint 514 queued.
+**Status:** Active — Milestone 530–539 Phase D Natural Language Search (9/10); Sprint 515 queued.
 
 **Last updated:** 2026-07-09
-**Current sprint:** 513 closed  
-**Next sprint:** 514 queued
-**Milestone:** 530–539 Phase D Natural Language Search active (8/10)
+**Current sprint:** 514 closed  
+**Next sprint:** 515 queued
+**Milestone:** 530–539 Phase D Natural Language Search active (9/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 514 summary
+
+Mid-milestone 506–513 Drawing Intelligence Phase D natural language search stack partial completeness review (`sprint-514-selftest.ts` · validation foundation · Playwright assertion scaffold · Phase B validation matrix row · UI assertions · haystack match reason Playwright assertions · query execution Playwright assertions · intent layer hint Playwright assertions · knowledge graph facet Playwright assertions). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-514-selftest.ts`.
 
 ## Sprint 513 summary
 
@@ -382,10 +386,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (514)
+## Next sprint (515)
 
-- Stream 1: Mid-milestone review — Drawing Intelligence Phase D Natural Language Search completeness prep — sprint-514-selftest.ts
+- Stream 1: Milestone 530–539 wrap review — Drawing Intelligence Phase D Natural Language Search wrap completeness review — sprint-515-selftest.ts
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
