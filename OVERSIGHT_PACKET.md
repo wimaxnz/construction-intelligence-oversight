@@ -1,12 +1,20 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 500–509 Phase D Canvas Marker Lifecycle Validation CLOSED (10/10); Sprint 486 queued.
+**Status:** Active — Milestone 510–519 Phase D Cross-Reference Graph Supabase Persistence (2/10); Sprint 488 queued.
 
 **Last updated:** 2026-07-08
-**Current sprint:** 485 closed  
-**Next sprint:** 486 queued
-**Milestone:** 500–509 WRAP CLOSED (10/10) · 510–519 next milestone opens Sprint 486
+**Current sprint:** 487 closed  
+**Next sprint:** 488 queued
+**Milestone:** 510–519 Phase D Cross-Reference Graph Supabase Persistence active (2/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 487 summary
+
+Playwright cross-ref graph Supabase persistence assertion scaffold (`UI-CROSS-REF-GRAPH-SUPABASE-PERSISTENCE` in `phase-b-wynyard-validation.ts` · `crossRefGraphSupabasePersistenceValidationService` · `docs/CROSS_REF_GRAPH_SUPABASE_PERSISTENCE_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-487-selftest.ts`.
+
+## Sprint 486 summary
+
+Milestone 510–519 Phase D cross-reference graph Supabase persistence validation automation foundation (`crossRefGraphSupabasePersistenceValidationService` · `docs/CROSS_REF_GRAPH_SUPABASE_PERSISTENCE_PLAN.json`). Theme: cross-reference graph Supabase persistence (DRAWING_INTELLIGENCE_ROADMAP.md Phase B — Cross-reference graph persisted in Supabase). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Platform Certification recertified post-milestone-open (Finding 4). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-486-selftest.ts`.
 
 ## Sprint 485 summary
 
@@ -266,10 +274,14 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json`
 
-## Next sprint (486)
+## Next sprint (488)
 
-- Stream 1: Milestone 510–519 Phase D next milestone foundation (TBD per DRAWING_INTELLIGENCE_ROADMAP.md) — sprint-486-selftest.ts
-- Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
+- Stream 1: Phase B validation matrix cross-ref graph Supabase persistence row wiring — sprint-488-selftest.ts
+- Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
+
+
 
 
 
