@@ -19,6 +19,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 
+## Sprint 495 close-out (2026-07-09)
+
+Milestone **510–519 Phase D Cross-Reference Graph Supabase Persistence WRAP CLOSED** (10/10). Stream 1: milestone wrap completeness review. Stream 2: cross-ref graph Supabase persistence full stack completeness audit (foundation · Playwright scaffold · Phase B matrix · UI assertions · mirror · hydrate · cold-start · write path · round-trip). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Platform Certification recertified post-milestone-close (Finding 4). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **496** queued (520–529 Specification Document Linking opens).
+
 ## Sprint 494 close-out (2026-07-08)
 
 Milestone **510–519 Phase D Cross-Reference Graph Supabase Persistence** at **9/10**. Stream 1: Cross-ref graph Supabase persistence remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 (`assertCrossRefGraphRemoteReadAfterWriteRoundTrip`). Stream 2: Sprint Validation PHASE_B_RUNS=3. Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production post-sync verification still pending owner actions. Sprint **495** queued (wrap review).

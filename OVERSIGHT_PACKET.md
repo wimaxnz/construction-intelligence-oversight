@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 510–519 Phase D Cross-Reference Graph Supabase Persistence (9/10); Sprint 495 queued.
+**Status:** Active — Milestone 510–519 Phase D Cross-Reference Graph Supabase Persistence CLOSED (10/10); Sprint 496 queued (520–529 Specification Document Linking opens).
 
-**Last updated:** 2026-07-08
-**Current sprint:** 494 closed  
-**Next sprint:** 495 queued
-**Milestone:** 510–519 Phase D Cross-Reference Graph Supabase Persistence active (9/10)
+**Last updated:** 2026-07-09
+**Current sprint:** 495 closed  
+**Next sprint:** 496 queued
+**Milestone:** 510–519 WRAP CLOSED (10/10) · 520–529 Specification Document Linking opens Sprint 496
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 495 summary
+
+Milestone 510–519 wrap review — Drawing Intelligence Phase D cross-reference graph Supabase persistence full stack completeness review (`sprint-495-selftest.ts` · foundation · Playwright assertion scaffold · Phase B validation matrix row · Supabase-backed UI assertions · localStorage mirror reconciliation · remote seed hydrate · cold-start regeneration · full remote write path · remote read-after-write round-trip). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0). Platform Certification recertified post-milestone-close (Finding 4). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-495-selftest.ts`.
 
 ## Sprint 494 summary
 
@@ -306,10 +310,13 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (495)
+## Next sprint (496)
 
-- Stream 1: Milestone wrap review — Drawing Intelligence Phase D Cross-Reference Graph Supabase Persistence completeness — sprint-495-selftest.ts
-- Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+- Stream 1: Milestone 520–529 Phase D specification document linking validation automation foundation — sprint-496-selftest.ts
+- Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
+- Theme: specification document linking — scope docs → drawing sets (DRAWING_INTELLIGENCE_ROADMAP.md Phase B — Specification document linking)
+
+
 
 
 
