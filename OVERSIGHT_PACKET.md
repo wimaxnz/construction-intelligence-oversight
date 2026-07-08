@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 510–519 Phase D Cross-Reference Graph Supabase Persistence (8/10); Sprint 494 queued.
+**Status:** Active — Milestone 510–519 Phase D Cross-Reference Graph Supabase Persistence (9/10); Sprint 495 queued.
 
 **Last updated:** 2026-07-08
-**Current sprint:** 493 closed  
-**Next sprint:** 494 queued
-**Milestone:** 510–519 Phase D Cross-Reference Graph Supabase Persistence active (8/10)
+**Current sprint:** 494 closed  
+**Next sprint:** 495 queued
+**Milestone:** 510–519 Phase D Cross-Reference Graph Supabase Persistence active (9/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 494 summary
+
+Cross-ref graph Supabase persistence remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 (`assertCrossRefGraphRemoteReadAfterWriteRoundTrip` · `roundTripCrossRefGraphReferencesEdgesRemoteReadAfterWrite` · `runCrossRefGraphRemoteReadAfterWriteRoundTrip` · `docs/CROSS_REF_GRAPH_SUPABASE_PERSISTENCE_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-494-selftest.ts`.
 
 ## Sprint 493 summary
 
@@ -302,10 +306,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (494)
+## Next sprint (495)
 
-- Stream 1: Cross-ref graph Supabase persistence remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-494-selftest.ts
+- Stream 1: Milestone wrap review — Drawing Intelligence Phase D Cross-Reference Graph Supabase Persistence completeness — sprint-495-selftest.ts
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 

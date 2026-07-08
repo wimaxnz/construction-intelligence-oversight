@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-08",
   "currentSprint": {
-    "number": 493,
+    "number": 494,
     "status": "closed",
-    "previousClosed": 492,
+    "previousClosed": 493,
     "closedDate": "2026-07-08"
   },
   "currentMilestone": {
@@ -23,15 +23,15 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 8,
-    "percentComplete": 80,
+    "sprintsClosed": 9,
+    "percentComplete": 90,
     "nextWrapReviewSprint": 495,
     "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Cross-ref graph Supabase persistence remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-494-selftest.ts"
+      "focus": "Milestone wrap review — Drawing Intelligence Phase D Cross-Reference Graph Supabase Persistence completeness — sprint-495-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -1214,6 +1214,12 @@
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 510–519 at 8/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); full remote write-path dual-write / remote-authoritative wired; UI-CROSS-REF-GRAPH-SUPABASE-PERSISTENCE passed; gate #2 satisfied; production apply blocked — owner credentials / post-sync verification pending",
       "deferred": "Production Migration 015 post-sync verification still pending owner actions; remote read-after-write round-trip deferred to Sprint 494+"
+    },
+    "sprint494": {
+      "stream1": "Cross-ref graph Supabase persistence remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — assertCrossRefGraphRemoteReadAfterWriteRoundTrip · roundTripCrossRefGraphReferencesEdgesRemoteReadAfterWrite · buildCrossRefGraphRemoteReadAfterWriteRoundTripSummary · runCrossRefGraphRemoteReadAfterWriteRoundTrip · phase-b-wynyard-validation.ts · sprint-494-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 510–519 at 9/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-CROSS-REF-GRAPH-SUPABASE-PERSISTENCE passed; gate #2 satisfied; production apply blocked — owner credentials / post-sync verification pending",
+      "deferred": "Production Migration 015 post-sync verification still pending owner actions; Milestone 510–519 wrap review deferred to Sprint 495"
     }
   },
   "changedFiles": {
@@ -3585,6 +3591,21 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint494": [
+      "src/platform/validation/crossRefGraphSupabasePersistenceValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/CROSS_REF_GRAPH_SUPABASE_PERSISTENCE_PLAN.json",
+      "scripts/sprint-494-selftest.ts",
+      "scripts/sprint-494-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -3895,14 +3916,16 @@
       "sprint492": "Milestone 510–519 at 7/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + cold-start regeneration after remote seed)",
       "sprint492PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); cold-start regeneration after remote seed wired; UI-CROSS-REF-GRAPH-SUPABASE-PERSISTENCE passed",
       "sprint493": "Milestone 510–519 at 8/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + full remote write-path when VITE_PROJECT_KG_PERSIST=1)",
-      "sprint493PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); full remote write-path dual-write / remote-authoritative wired; UI-CROSS-REF-GRAPH-SUPABASE-PERSISTENCE passed"
+      "sprint493PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); full remote write-path dual-write / remote-authoritative wired; UI-CROSS-REF-GRAPH-SUPABASE-PERSISTENCE passed",
+      "sprint494": "Milestone 510–519 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
+      "sprint494PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-CROSS-REF-GRAPH-SUPABASE-PERSISTENCE passed"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-08",
       "lastCertifiedBaseline": "2026-07-08",
       "status": "current — recertified Sprint 486 (510-519 Cross-Reference Graph Supabase Persistence opens 1/10 Finding 4)",
       "sprintRangeCovered": "486–486 (Drawing Intelligence Phase D — Cross-Reference Graph Supabase Persistence Milestone 510-519 opens)",
-      "deltaSinceCertification": "Sprints 130–493 delivered (364 sprints); Milestone 510-519 at 8/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); full remote write-path (docs/CROSS_REF_GRAPH_SUPABASE_PERSISTENCE_PLAN.json); Platform Certification 3/3 recertified Sprint 486 (Finding 4)",
+      "deltaSinceCertification": "Sprints 130–494 delivered (365 sprints); Milestone 510-519 at 9/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); remote read-after-write round-trip (docs/CROSS_REF_GRAPH_SUPABASE_PERSISTENCE_PLAN.json); Platform Certification 3/3 recertified Sprint 486 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -3919,12 +3942,12 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 510–519 at 8/10, Sprint 493 closed, Sprint 494 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 493 full remote write-path logged",
-    "docs/CROSS_REF_GRAPH_SUPABASE_PERSISTENCE_PLAN.json — fullRemoteWritePathComplete Sprint 493",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 493 closed, milestone 510-519 active (8/10), sprint 494 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 493 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 493 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 510–519 at 9/10, Sprint 494 closed, Sprint 495 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 494 remote read-after-write round-trip logged",
+    "docs/CROSS_REF_GRAPH_SUPABASE_PERSISTENCE_PLAN.json — remoteReadAfterWriteRoundTripComplete Sprint 494",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 494 closed, milestone 510-519 active (9/10), sprint 495 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 494 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 494 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -4070,27 +4093,27 @@
     }
   ],
   "nextSprint": {
-    "number": 494,
-    "stream1": "Cross-ref graph Supabase persistence remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-494-selftest.ts",
+    "number": 495,
+    "stream1": "Milestone wrap review — Drawing Intelligence Phase D Cross-Reference Graph Supabase Persistence completeness — sprint-495-selftest.ts",
     "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-494-selftest.ts",
-    "credentialNote": "Production apply blocked — owner must provide PRODUCTION_* credentials; gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 510-519 Phase D Cross-Reference Graph Supabase Persistence active (8/10); full remote write-path complete docs/CROSS_REF_GRAPH_SUPABASE_PERSISTENCE_PLAN.json"
+    "selftest": "scripts/sprint-495-selftest.ts",
+    "credentialNote": "Production apply blocked — owner must provide PRODUCTION_* credentials; gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 510-519 Phase D Cross-Reference Graph Supabase Persistence active (9/10); remote read-after-write round-trip complete docs/CROSS_REF_GRAPH_SUPABASE_PERSISTENCE_PLAN.json; wrap review Sprint 495"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-08T12:14:09.006Z",
+    "lastPushAttempt": "2026-07-08T12:14:32.832Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-08T12:14:09.006Z",
+    "verifiedAt": "2026-07-08T12:14:32.832Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-08T12:13:47.1424097Z",
-    "pushedAt": "2026-07-08T12:14:09.006Z",
-    "remoteHeadSha": "0ed23489b4c9660fb3d02966437b0d22d8b632ea",
-    "publicStateVerifiedAt": "2026-07-08T12:14:09.006Z",
+    "sanitizedAt": "2026-07-08T12:22:34.6844350Z",
+    "pushedAt": "2026-07-08T12:14:32.832Z",
+    "remoteHeadSha": "19d86963e33a3143c97b3411eda74469c5fa72bf",
+    "publicStateVerifiedAt": "2026-07-08T12:14:32.832Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "e59fa719780ff44589c3a87f42c18998cea3f619fcb713d00e13d920553ecefa",
+    "publicStateContentHash": "dd544daefd0676e3bc4946d9be6e895fd86ed4bb44f78c6abecc11b5c97c5c75",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -4122,21 +4145,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "e59fa719780ff44589c3a87f42c18998cea3f619fcb713d00e13d920553ecefa",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-08T12:14:09.006Z",
-      "rawEndpointVerifiedAt": "2026-07-08T12:14:09.006Z",
-      "gitOriginVerifiedAt": "2026-07-08T12:14:09.006Z",
+      "githubApiVerifiedAt": "2026-07-08T12:14:32.832Z",
+      "rawEndpointVerifiedAt": "2026-07-08T12:14:32.832Z",
+      "gitOriginVerifiedAt": "2026-07-08T12:14:32.832Z",
       "routeContentHashes": {
-        "github-api": "e59fa719780ff44589c3a87f42c18998cea3f619fcb713d00e13d920553ecefa",
+        "github-api": "dd544daefd0676e3bc4946d9be6e895fd86ed4bb44f78c6abecc11b5c97c5c75",
         "raw-cdn": "e59fa719780ff44589c3a87f42c18998cea3f619fcb713d00e13d920553ecefa",
-        "git-origin": "e59fa719780ff44589c3a87f42c18998cea3f619fcb713d00e13d920553ecefa"
+        "git-origin": "dd544daefd0676e3bc4946d9be6e895fd86ed4bb44f78c6abecc11b5c97c5c75"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "0ed23489b4c9660fb3d02966437b0d22d8b632ea",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "19d86963e33a3143c97b3411eda74469c5fa72bf",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 552,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -4147,12 +4170,12 @@
     "bridgeDocs": "docs/ai-oversight/OVERSIGHT_BRIDGE_ADR.md"
   },
   "oversightBridge": {
-    "lastConsumedAt": "2026-07-08T12:02:07.510Z",
+    "lastConsumedAt": "2026-07-08T12:14:37.012Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 493,
+    "lastSyncedSprint": 494,
     "lastSyncedAt": "2026-07-08",
-    "milestoneProgress": "510-519 ACTIVE (8/10)",
+    "milestoneProgress": "510-519 ACTIVE (9/10)",
     "productionApplyBlocked": true,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -4319,7 +4342,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase D — Cross-Reference Graph Supabase Persistence Milestone milestone (510-519) active — Sprint 493 closed; Sprint 494 queued",
+    "phaseE": "Drawing Intelligence Phase D — Cross-Reference Graph Supabase Persistence Milestone milestone (510-519) active — Sprint 494 closed; Sprint 495 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -4332,7 +4355,7 @@
     "sprint382": "No new growth event kinds — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint379": "No new growth event kinds — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (4 days remaining as of 2026-07-08)",
-    "phaseD": "Drawing Intelligence Phase D — Cross-Reference Graph Supabase Persistence Milestone (510-519) active Sprint 493 (8/10); full remote write-path when VITE_PROJECT_KG_PERSIST=1 complete"
+    "phaseD": "Drawing Intelligence Phase D — Cross-Reference Graph Supabase Persistence Milestone (510-519) active Sprint 494 (9/10); remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 complete; wrap review Sprint 495"
   },
   "digitalBrainImpact": {
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -4428,7 +4451,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 510-519 8/10 sprints closed (80%); latest growth-event sprint 400; Sprint 493 closed; Sprint 494 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 510-519 9/10 sprints closed (90%); latest growth-event sprint 400; Sprint 494 closed; Sprint 495 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -4561,7 +4584,8 @@
     "sprint490": "No new growth event kinds — Cross-ref graph Supabase persistence localStorage mirror reconciliation; Milestone 510–519 at 5/10",
     "sprint491": "No new growth event kinds — Cross-ref graph Supabase persistence remote seed → localStorage hydrate path; Milestone 510–519 at 6/10",
     "sprint492": "No new growth event kinds — Cross-ref graph Supabase persistence cold-start regeneration after remote seed; Milestone 510–519 at 7/10",
-    "sprint493": "No new growth event kinds — Cross-ref graph Supabase persistence full remote write-path when VITE_PROJECT_KG_PERSIST=1; Milestone 510–519 at 8/10"
+    "sprint493": "No new growth event kinds — Cross-ref graph Supabase persistence full remote write-path when VITE_PROJECT_KG_PERSIST=1; Milestone 510–519 at 8/10",
+    "sprint494": "No new growth event kinds — Cross-ref graph Supabase persistence remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 510–519 at 9/10"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -4757,7 +4781,8 @@
     "sprint490": "localStorage ↔ remote `references` edge mirror reconciliation contract — durable Supabase edges stay consistent with di-project-kg-* offline mirror; Milestone 510–519 at 5/10",
     "sprint491": "Remote Supabase `references` edges seed di-project-kg-* localStorage mirror for cold-start hydrate; Milestone 510–519 at 6/10",
     "sprint492": "After prior remote seed, cleared/empty di-project-kg-* regenerates from durable Supabase `references` on cold start; Milestone 510–519 at 7/10",
-    "sprint493": "When VITE_PROJECT_KG_PERSIST=1, cross-ref `references` edges dual-write to localStorage + Supabase project_kg_edges (remote-authoritative); Milestone 510–519 at 8/10"
+    "sprint493": "When VITE_PROJECT_KG_PERSIST=1, cross-ref `references` edges dual-write to localStorage + Supabase project_kg_edges (remote-authoritative); Milestone 510–519 at 8/10",
+    "sprint494": "When VITE_PROJECT_KG_PERSIST=1, dual-written cross-ref `references` edges are read back from Supabase project_kg_edges and asserted equal to the write set (round-trip integrity); Milestone 510–519 at 9/10"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
@@ -4843,7 +4868,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Cross-Reference Graph Supabase Persistence Milestone (510-519) active 8/10; Sprint 493 closed; Sprint 494 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Cross-ref graph Supabase persistence remote read-after-write round-trip when VIT)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Cross-Reference Graph Supabase Persistence Milestone (510-519) active 9/10; Sprint 494 closed; Sprint 495 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Milestone wrap review — Drawing Intelligence Phase D Cross-Reference Graph Supab)",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -4971,7 +4996,8 @@
     "sprint490": "Milestone 510–519 Drawing Intelligence Phase D — Cross-Reference Graph Supabase Persistence at 5/10 — localStorage mirror reconciliation — sprint-490-selftest.ts",
     "sprint491": "Milestone 510–519 Drawing Intelligence Phase D — Cross-Reference Graph Supabase Persistence at 6/10 — remote seed → localStorage hydrate — sprint-491-selftest.ts",
     "sprint492": "Milestone 510–519 Drawing Intelligence Phase D — Cross-Reference Graph Supabase Persistence at 7/10 — cold-start regeneration after remote seed — sprint-492-selftest.ts",
-    "sprint493": "Milestone 510–519 Drawing Intelligence Phase D — Cross-Reference Graph Supabase Persistence at 8/10 — full remote write-path when VITE_PROJECT_KG_PERSIST=1 — sprint-493-selftest.ts"
+    "sprint493": "Milestone 510–519 Drawing Intelligence Phase D — Cross-Reference Graph Supabase Persistence at 8/10 — full remote write-path when VITE_PROJECT_KG_PERSIST=1 — sprint-493-selftest.ts",
+    "sprint494": "Milestone 510–519 Drawing Intelligence Phase D — Cross-Reference Graph Supabase Persistence at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-494-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",

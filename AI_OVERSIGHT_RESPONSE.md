@@ -19,6 +19,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 
+## Sprint 494 close-out (2026-07-08)
+
+Milestone **510–519 Phase D Cross-Reference Graph Supabase Persistence** at **9/10**. Stream 1: Cross-ref graph Supabase persistence remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 (`assertCrossRefGraphRemoteReadAfterWriteRoundTrip`). Stream 2: Sprint Validation PHASE_B_RUNS=3. Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production post-sync verification still pending owner actions. Sprint **495** queued (wrap review).
+
 ## Sprint 493 close-out (2026-07-08)
 
 Milestone **510–519 Phase D Cross-Reference Graph Supabase Persistence** at **8/10**. Stream 1: Cross-ref graph Supabase persistence full remote write-path when VITE_PROJECT_KG_PERSIST=1 (`assertCrossRefGraphFullRemoteWritePath`). Stream 2: Sprint Validation PHASE_B_RUNS=3. Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production post-sync verification still pending owner actions. Sprint **494** queued.
