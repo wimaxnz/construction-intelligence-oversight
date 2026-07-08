@@ -1,6 +1,6 @@
 # AI Oversight — Review Responses
 
-**Status:** Active — triaged responses recorded (latest: Migration 015 deployment reconciliation 2026-07-08).
+**Status:** Active review — 7 findings triaged (latest: Migration 015 deployment reconciliation 2026-07-08).
 
 Findings from independent oversight land here. Sprint execution continues regardless of response timing.
 
