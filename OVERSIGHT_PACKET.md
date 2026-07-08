@@ -1,12 +1,24 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 490–499 Phase D Report Propagation (2/10); Sprint 468 queued.
+**Status:** Active — Milestone 490–499 Phase D Report Propagation (5/10); Sprint 471 queued.
 
 **Last updated:** 2026-07-08
-**Current sprint:** 467 closed  
-**Next sprint:** 468 queued
-**Milestone:** 490–499 Phase D Report Propagation active (2/10)
+**Current sprint:** 470 closed  
+**Next sprint:** 471 queued
+**Milestone:** 490–499 Phase D Report Propagation active (5/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 470 summary
+
+Mid-milestone 466–470 Drawing Intelligence Phase D report propagation stack partial completeness review (`sprint-470-selftest.ts` · subscription foundation · executive report section wiring · Report Centre drawing pin events UI surfacing · Report Centre cross-ref audit UI surfacing). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-470-selftest.ts`.
+
+## Sprint 469 summary
+
+Report Centre cross-ref audit section surfacing (`ReportCentreCrossRefAuditSection` · `ReportPanel` Global Report Centre · `report-centre` source context · CSV/PDF export). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-469-selftest.ts`.
+
+## Sprint 468 summary
+
+Report Centre UI surfacing for drawing pin events audit section (`ReportCentreDrawingPinEventsSection` · `ReportPanel` Global Report Centre · `report-centre` source context · CSV/PDF export). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-468-selftest.ts`.
 
 ## Sprint 467 summary
 
@@ -194,10 +206,16 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json`
 
-## Next sprint (468)
+## Next sprint (471)
 
-- Stream 1: Report Centre UI surfacing for drawing pin events audit section — sprint-468-selftest.ts
+- Stream 1: Mid-milestone review — Drawing Intelligence Phase D report propagation second-half completeness prep
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
+
+
+
+
 
 
 

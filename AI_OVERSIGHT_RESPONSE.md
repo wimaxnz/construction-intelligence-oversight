@@ -1,6 +1,6 @@
 # AI Oversight — Review Responses
 
-**Status:** No reviews received yet.
+**Status:** Active review — 7 findings triaged (2026-07-04)
 
 Findings from independent oversight land here. Sprint execution continues regardless of response timing.
 
@@ -21,14 +21,6 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 ## Responses
 
-## Sprint 467 close-out (2026-07-08)
-
-Milestone **490–499 Phase D Report Propagation** (2/10). Stream 1: drawing pin events report engine section wired to ReportService executive report (`PmReportBuilderDrawingPinEventsSection` · `drawingPinEventsAuditExportService`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply pending — primary path Supabase GitHub Integration merge (`docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md`); blocker `migration-015-github-deploy-config`. Sprint **468** queued.
-
-
-## Sprint 466 close-out (2026-07-08)
-
-Milestone **490–499 Phase D Report Propagation OPENS** (1/10). Stream 1: drawing pin events report engine subscription foundation (`drawingPinEventsReportPropagationService` · ReportService `sec-drawing-pin-events-audit`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **467** queued.
 
 
 ## Independent Oversight Review, 2026-07-04
