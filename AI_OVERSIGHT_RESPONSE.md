@@ -19,6 +19,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 
+## Sprint 503 close-out (2026-07-09)
+
+Milestone **520–529 Phase D Specification Document Linking** at **8/10**. Stream 1: Specification document linking full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 (`assertSpecificationDocumentLinkingFullHydratePersistPath`). Stream 2: Sprint Validation PHASE_B_RUNS=3. Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production post-sync verification still pending owner actions. Sprint **504** queued.
+
 ## Sprint 502 close-out (2026-07-09)
 
 Milestone **520–529 Phase D Specification Document Linking** at **7/10**. Stream 1: Specification document linking cold-start regeneration after remote seed (`assertSpecificationDocumentLinkingColdStartRegenerationAfterRemoteSeed`). Stream 2: Sprint Validation PHASE_B_RUNS=3. Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **503** queued.
