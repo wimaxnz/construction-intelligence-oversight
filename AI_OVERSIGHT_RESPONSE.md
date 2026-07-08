@@ -1,6 +1,6 @@
 # AI Oversight — Review Responses
 
-**Status:** No reviews received yet.
+**Status:** Active — triaged responses recorded (latest: Migration 015 deployment reconciliation 2026-07-08).
 
 Findings from independent oversight land here. Sprint execution continues regardless of response timing.
 
@@ -21,13 +21,6 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 ## Responses
 
-### Migration 015 deployment reconciliation — 2026-07-08
-
-**Disposition:** Canonical state updated; production deploy gated on owner approval window (not credentials).
-
-Supabase GitHub Integration dashboard settings owner-verified: `wimaxnz/247print-user-dashboard` @ `main`, Deploy to production ON, Automatic branching ON, Supabase changes only ON. Remote `main` @ `37e19a5` contains migrations 001–015 only (016/017 absent per `supabase/README.md`). Migration 015 already on production branch — no PR merge required; Supabase sync may apply pending migration 015. Pre-sync validation via Path B (staging gate #2, 7/7 RLS satisfied). `migration-015-production-credentials` remains fallback-only. Active execution gate: owner approval window + post-sync RLS 7/7 + PHASE_B_RUNS=3.
-
-Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
 
 ## Independent Oversight Review, 2026-07-04
