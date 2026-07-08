@@ -19,6 +19,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 
+## Sprint 499 close-out (2026-07-09)
+
+Milestone **520–529 Phase D Specification Document Linking** at **4/10**. Stream 1: Specification document linking UI assertions (`assertSpecificationDocumentLinkingUiAssertions` · `SpecDocumentLinkHintBanner`). Stream 2: Sprint Validation PHASE_B_RUNS=3. Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **500** queued.
+
 ## Sprint 498 close-out (2026-07-09)
 
 Milestone **520–529 Phase D Specification Document Linking** at **3/10**. Stream 1: Phase B validation matrix specification document linking row wiring (`buildSpecificationDocumentLinkingPhaseBMatrixRow`). Stream 2: Sprint Validation PHASE_B_RUNS=3. Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **499** queued.
