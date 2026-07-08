@@ -19,6 +19,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 
+## Sprint 507 close-out (2026-07-09)
+
+Milestone **530–539 Phase D Natural Language Search** at **2/10**. Stream 1: Playwright natural language search assertion scaffold (`UI-NATURAL-LANGUAGE-SEARCH`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (exclusive for new result id; stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **508** queued.
+
 ## Sprint 506 close-out (2026-07-09)
 
 Milestone **530–539 Phase D Natural Language Search OPENS** (1/10). Theme: search — natural language queries across extracted text + metadata (DRAWING_INTELLIGENCE_ROADMAP.md Phase B — Search: natural language queries across extracted text + metadata). Stream 1: natural language search validation automation foundation (`naturalLanguageSearchValidationService`). Stream 2: Platform Certification recertification post-milestone-open (Finding 4) · PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **507** queued.
