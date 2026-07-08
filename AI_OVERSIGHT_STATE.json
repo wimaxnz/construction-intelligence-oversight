@@ -1362,8 +1362,8 @@
     "sprint518": {
       "stream1": "Phase B validation matrix intelligence index backfill row wiring — buildIntelligenceIndexBackfillPhaseBMatrixRow · resolveIntelligenceIndexBackfillPhaseBMatrixStatus · INTELLIGENCE_INDEX_BACKFILL_PHASE_B_MATRIX_AREA · phase-b-wynyard-validation.ts · sprint-518-selftest.ts",
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
-      "validation": "Milestone 540–549 at 3/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); Phase B matrix intelligence index backfill row wired; UI-INTELLIGENCE-INDEX-BACKFILL passed; gate #2 satisfied; production apply blocked — owner credentials required",
-      "deferred": "Production Migration 015 apply blocked pending PRODUCTION_* credentials; fuller intelligence index backfill UI assertions deferred to Sprint 519+"
+      "validation": "Milestone 540–549 at 3/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); Phase B matrix intelligence index backfill row wired; UI-INTELLIGENCE-INDEX-BACKFILL passed; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
+      "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; fuller intelligence index backfill UI assertions deferred to Sprint 519+"
     }
   },
   "changedFiles": {
@@ -4544,7 +4544,7 @@
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Milestone 540–549 Phase D Intelligence Index Backfill opens Sprint 516 (1/10); Finding 6 gate #1 satisfied; gate #2 staging satisfied; production apply blocked — owner credentials required"
+      "description": "Milestone 510–519 Phase D active; gate #2 staging satisfied; gate #2 production pending post-sync verification (sync triggered 9d4c94a; RLS probe creds incomplete)"
     },
     {
       "id": "partial-platform-services",
@@ -4566,7 +4566,7 @@
       "status": "sync_triggered_verification_pending",
       "description": "Migration 015 production deploy — owner approval granted 2026-07-08; primary path Supabase GitHub Integration; sync triggered via empty commit 9d4c94a on main (content @ 37e19a5). Dashboard integration confirmed. Deployment success unconfirmed; post-sync production RLS 7/7 and PHASE_B_RUNS=3 pending. Evidence: docs/MIGRATION_015_PRODUCTION_VERIFICATION.json · docs/MIGRATION_015_POST_SYNC_OWNER_ACTIONS.md",
       "recordedAt": "2026-07-08",
-      "updatedAt": "2026-07-08T10:06:59.083Z",
+      "updatedAt": "2026-07-08T20:32:16.631Z",
       "syncTriggeredAt": "2026-07-08T09:07:00.000Z",
       "syncTriggerCommit": "9d4c94a",
       "syncMethod": "empty-commit-push-to-main",
@@ -4603,7 +4603,7 @@
       "status": "active",
       "description": "Post-sync production RLS 7/7 probe blocked — PRODUCTION_SUPABASE_URL, PRODUCTION_SUPABASE_ANON_KEY, PRODUCTION_DATABASE_URL absent; PRODUCTION_SUPABASE_SERVICE_ROLE_KEY.txt present but invalid (truncated JWT). Not a deploy blocker. See docs/MIGRATION_015_POST_SYNC_OWNER_ACTIONS.md Gate B.",
       "recordedAt": "2026-07-08",
-      "updatedAt": "2026-07-08T10:06:59.083Z",
+      "updatedAt": "2026-07-08T20:32:16.631Z",
       "evidence": "docs/MIGRATION_015_PRODUCTION_VERIFICATION.json"
     },
     {
@@ -4623,7 +4623,7 @@
       "relatedFinding": "finding-3",
       "status": "active",
       "description": "Supabase Dashboard deployment success for sync trigger commit 9d4c94a not yet confirmed. Treat production RLS state as unknown until Gate A passes.",
-      "updatedAt": "2026-07-08T10:06:59.083Z",
+      "updatedAt": "2026-07-08T20:32:16.631Z",
       "evidence": "docs/MIGRATION_015_PRODUCTION_VERIFICATION.json"
     },
     {
@@ -4632,7 +4632,7 @@
       "relatedFinding": "finding-3",
       "status": "active",
       "description": "Production RLS 7/7 not verified post-sync. Blocked until dashboard deploy confirmed and probe credentials provided.",
-      "updatedAt": "2026-07-08T10:06:59.083Z",
+      "updatedAt": "2026-07-08T20:32:16.631Z",
       "evidence": "docs/MIGRATION_015_PRODUCTION_VERIFICATION.json"
     },
     {
@@ -4641,7 +4641,7 @@
       "relatedFinding": "finding-3",
       "status": "active",
       "description": "Production PHASE_B_RUNS=3 not run — production app URL not configured. Staging 3/3 green Sprint 467 remains reference baseline.",
-      "updatedAt": "2026-07-08T10:06:59.083Z",
+      "updatedAt": "2026-07-08T20:32:16.631Z",
       "evidence": "docs/MIGRATION_015_PRODUCTION_VERIFICATION.json"
     }
   ],
@@ -4650,23 +4650,23 @@
     "stream1": "Intelligence index backfill UI assertions — sprint-519-selftest.ts",
     "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
     "selftest": "scripts/sprint-519-selftest.ts",
-    "credentialNote": "Production apply blocked — owner must provide PRODUCTION_* credentials; gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 540-549 Phase D Intelligence Index Backfill active (3/10); Phase B matrix row wiring complete docs/INTELLIGENCE_INDEX_BACKFILL_PLAN.json"
+    "credentialNote": "GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 540-549 Phase D Intelligence Index Backfill active (3/10); Phase B matrix row wiring complete docs/INTELLIGENCE_INDEX_BACKFILL_PLAN.json"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-08T20:21:17.380Z",
+    "lastPushAttempt": "2026-07-08T20:22:04.407Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-08T20:21:17.380Z",
+    "verifiedAt": "2026-07-08T20:22:04.407Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-08T20:20:42.2053887Z",
-    "pushedAt": "2026-07-08T20:21:17.380Z",
-    "remoteHeadSha": "f19ee2a8e04cef74d5f03ac770318a2d41685485",
-    "publicStateVerifiedAt": "2026-07-08T20:21:17.380Z",
+    "sanitizedAt": "2026-07-08T20:32:47.1350132Z",
+    "pushedAt": "2026-07-08T20:22:04.407Z",
+    "remoteHeadSha": "fc89a82962854a25b9fb6692cf8dfe5cb71a77fb",
+    "publicStateVerifiedAt": "2026-07-08T20:22:04.407Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "4fdfc7e3980438f08b95e25681c60e1924ed6266232f7b690aa71e62a99492db",
+    "publicStateContentHash": "491f9b67c985e3755e4069be767b7c0e1e26bd75afce180d69fc3eafcc1eb567",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -4698,21 +4698,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "4fdfc7e3980438f08b95e25681c60e1924ed6266232f7b690aa71e62a99492db",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-08T20:21:17.380Z",
-      "rawEndpointVerifiedAt": "2026-07-08T20:21:17.380Z",
-      "gitOriginVerifiedAt": "2026-07-08T20:21:17.380Z",
+      "githubApiVerifiedAt": "2026-07-08T20:22:04.407Z",
+      "rawEndpointVerifiedAt": "2026-07-08T20:22:04.407Z",
+      "gitOriginVerifiedAt": "2026-07-08T20:22:04.407Z",
       "routeContentHashes": {
-        "github-api": "4fdfc7e3980438f08b95e25681c60e1924ed6266232f7b690aa71e62a99492db",
+        "github-api": "491f9b67c985e3755e4069be767b7c0e1e26bd75afce180d69fc3eafcc1eb567",
         "raw-cdn": "4fdfc7e3980438f08b95e25681c60e1924ed6266232f7b690aa71e62a99492db",
-        "git-origin": "4fdfc7e3980438f08b95e25681c60e1924ed6266232f7b690aa71e62a99492db"
+        "git-origin": "491f9b67c985e3755e4069be767b7c0e1e26bd75afce180d69fc3eafcc1eb567"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "f19ee2a8e04cef74d5f03ac770318a2d41685485",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "fc89a82962854a25b9fb6692cf8dfe5cb71a77fb",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 602,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -4723,13 +4723,13 @@
     "bridgeDocs": "docs/ai-oversight/OVERSIGHT_BRIDGE_ADR.md"
   },
   "oversightBridge": {
-    "lastConsumedAt": "2026-07-08T19:55:34.265Z",
+    "lastConsumedAt": "2026-07-08T20:22:16.520Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
     "lastSyncedSprint": 518,
     "lastSyncedAt": "2026-07-09",
     "milestoneProgress": "540-549 ACTIVE (3/10)",
-    "productionApplyBlocked": true,
+    "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
     "localE2EProofDoc": "docs/ai-oversight/OVERSIGHT_RELAY_E2E_PROOF.md",
@@ -4907,7 +4907,7 @@
     "sprint381": "No new growth event kinds — project assistant context engine Phase C pin re-anchor explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCPinReanchorExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint382": "No new growth event kinds — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint379": "No new growth event kinds — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
-    "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (4 days remaining as of 2026-07-08)",
+    "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
     "phaseD": "Drawing Intelligence Phase D — Intelligence Index Backfill Milestone (540-549) active Sprint 518 (3/10); Phase B validation matrix intelligence index backfill row wiring complete",
     "phaseB": "Phase B remaining: Intelligence index backfill (540-549 active); Natural language search milestone closed Sprint 515"
   },
@@ -5634,10 +5634,10 @@
       "Platform Certification 5/5 deterministic suite re-run with baseline covering sprints through current closed sprint — 5/5 Sprint 418 preserved; Sprint Validation 3/3 re-run Sprint 424",
       "Oversight bridge remote callable path proven (chatgptCallablePathProven) OR documented deferral with owner — deferral documented Sprint 424 + reaffirmed Sprint 439 (docs/PRODUCTION_GATE_4_BRIDGE_DEFERRAL.md); cloudflareDeployProven false; local E2E only"
     ],
-    "daysRemaining": 4,
-    "computedAsOf": "2026-07-08",
+    "daysRemaining": 3,
+    "computedAsOf": "2026-07-09",
     "status": "at_risk",
-    "statusRationale": "Milestone 540–549 opens Sprint 516 (1/10); Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked — owner credentials required (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); intelligence index backfill foundation (docs/INTELLIGENCE_INDEX_BACKFILL_PLAN.json); natural language search wrap complete (docs/NATURAL_LANGUAGE_SEARCH_PLAN.json); Platform Certification 3/3 recertified Sprint 516 (Finding 4); Milestone 530–539 closed Sprint 515"
+    "statusRationale": "Milestone 540–549 at 3/10; Finding 6 gate #1 satisfied; gate #2 staging satisfied; gate #2 production pending post-sync verification — GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Evidence: docs/MIGRATION_015_PRODUCTION_VERIFICATION.json"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
@@ -5673,6 +5673,6 @@
     "productionProjectRefConfirmed": false,
     "ownerApprovalGranted": "2026-07-08",
     "preSyncGatesPassed": true,
-    "reconciledAt": "2026-07-08T10:06:59.083Z"
+    "reconciledAt": "2026-07-08T20:32:16.631Z"
   }
 }

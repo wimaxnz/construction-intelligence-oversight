@@ -6,7 +6,7 @@
 **Current sprint:** 518 closed  
 **Next sprint:** 519 queued
 **Milestone:** 540–549 Phase D Intelligence Index Backfill active (3/10)
-**hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+**hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 518 summary
 
@@ -307,27 +307,27 @@ Milestone 460–469 wrap review — production readiness integration completenes
 
 ## Sprint 444 summary
 
-Milestone 460–469 Production Readiness (9/10): production apply blocked (no `PRODUCTION_*` creds). Production readiness hardening advanced: deployment readiness checklist (`docs/PRODUCTION_DEPLOYMENT_READINESS.json`) · mobile readiness refresh (`docs/PRODUCTION_MOBILE_READINESS.json`) · `production-readiness-regression-coverage-selftest.ts`. Sprint Validation 3/3 post-recertification regression guard (PHASE_B_RUNS=3). Gate #2 staging satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-444-selftest.ts`.
+Milestone 460–469 Production Readiness (9/10): GitHub Integration sync triggered — post-sync verification pending. Production readiness hardening advanced: deployment readiness checklist (`docs/PRODUCTION_DEPLOYMENT_READINESS.json`) · mobile readiness refresh (`docs/PRODUCTION_MOBILE_READINESS.json`) · `production-readiness-regression-coverage-selftest.ts`. Sprint Validation 3/3 post-recertification regression guard (PHASE_B_RUNS=3). Gate #2 staging satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-444-selftest.ts`.
 
 ## Sprint 443 summary
 
-Milestone 460–469 Production Readiness (8/10): production apply blocked (no `PRODUCTION_*` creds). Production readiness hardening advanced: deployment readiness checklist (`docs/PRODUCTION_DEPLOYMENT_READINESS.json`) · mobile readiness refresh (`docs/PRODUCTION_MOBILE_READINESS.json`) · `production-readiness-regression-coverage-selftest.ts`. Sprint Validation 3/3 post-recertification regression guard (PHASE_B_RUNS=3). Gate #2 staging satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-443-selftest.ts`.
+Milestone 460–469 Production Readiness (8/10): GitHub Integration sync triggered — post-sync verification pending. Production readiness hardening advanced: deployment readiness checklist (`docs/PRODUCTION_DEPLOYMENT_READINESS.json`) · mobile readiness refresh (`docs/PRODUCTION_MOBILE_READINESS.json`) · `production-readiness-regression-coverage-selftest.ts`. Sprint Validation 3/3 post-recertification regression guard (PHASE_B_RUNS=3). Gate #2 staging satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-443-selftest.ts`.
 
 ## Sprint 442 summary
 
-Milestone 460–469 Production Readiness (7/10): production apply blocked (no `PRODUCTION_*` creds). Production readiness hardening advanced: deployment readiness checklist (`docs/PRODUCTION_DEPLOYMENT_READINESS.json`) · mobile readiness refresh (`docs/PRODUCTION_MOBILE_READINESS.json`) · `production-readiness-regression-coverage-selftest.ts`. Sprint Validation 3/3 post-recertification regression guard (PHASE_B_RUNS=3). Gate #2 staging satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-442-selftest.ts`.
+Milestone 460–469 Production Readiness (7/10): GitHub Integration sync triggered — post-sync verification pending. Production readiness hardening advanced: deployment readiness checklist (`docs/PRODUCTION_DEPLOYMENT_READINESS.json`) · mobile readiness refresh (`docs/PRODUCTION_MOBILE_READINESS.json`) · `production-readiness-regression-coverage-selftest.ts`. Sprint Validation 3/3 post-recertification regression guard (PHASE_B_RUNS=3). Gate #2 staging satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-442-selftest.ts`.
 
 ## Sprint 441 summary
 
-Milestone 460–469 Production Readiness (6/10): production apply blocked (no `PRODUCTION_*` creds). Production readiness hardening advanced: deployment readiness checklist (`docs/PRODUCTION_DEPLOYMENT_READINESS.json`) · mobile readiness refresh (`docs/PRODUCTION_MOBILE_READINESS.json`) · `production-readiness-regression-coverage-selftest.ts`. Sprint Validation 3/3 post-recertification regression guard (PHASE_B_RUNS=3). Gate #2 staging satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-441-selftest.ts`.
+Milestone 460–469 Production Readiness (6/10): GitHub Integration sync triggered — post-sync verification pending. Production readiness hardening advanced: deployment readiness checklist (`docs/PRODUCTION_DEPLOYMENT_READINESS.json`) · mobile readiness refresh (`docs/PRODUCTION_MOBILE_READINESS.json`) · `production-readiness-regression-coverage-selftest.ts`. Sprint Validation 3/3 post-recertification regression guard (PHASE_B_RUNS=3). Gate #2 staging satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-441-selftest.ts`.
 
 ## Sprint 440 summary
 
-Milestone 460–469 Production Readiness (5/10): production apply blocked (no `PRODUCTION_*` creds). Production readiness hardening advanced: deployment readiness checklist (`docs/PRODUCTION_DEPLOYMENT_READINESS.json`) · mobile readiness refresh (`docs/PRODUCTION_MOBILE_READINESS.json`) · `production-readiness-regression-coverage-selftest.ts`. Sprint Validation 3/3 post-recertification regression guard (PHASE_B_RUNS=3). Gate #2 staging satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-440-selftest.ts`.
+Milestone 460–469 Production Readiness (5/10): GitHub Integration sync triggered — post-sync verification pending. Production readiness hardening advanced: deployment readiness checklist (`docs/PRODUCTION_DEPLOYMENT_READINESS.json`) · mobile readiness refresh (`docs/PRODUCTION_MOBILE_READINESS.json`) · `production-readiness-regression-coverage-selftest.ts`. Sprint Validation 3/3 post-recertification regression guard (PHASE_B_RUNS=3). Gate #2 staging satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-440-selftest.ts`.
 
 ## Sprint 439 summary
 
-Milestone 460–469 Production Readiness (4/10): **pivot from placeholder-only credential retry** — production apply blocked (no `PRODUCTION_*` creds). Non-credential production readiness advanced: mobile readiness stub (`docs/PRODUCTION_MOBILE_READINESS.json`) · gate #4 bridge deferral doc (`docs/PRODUCTION_GATE_4_BRIDGE_DEFERRAL.md`) · `production-readiness-regression-coverage-selftest.ts`. Sprint Validation 3/3 post-recertification regression guard (PHASE_B_RUNS=3). Gate #2 staging satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-439-selftest.ts`.
+Milestone 460–469 Production Readiness (4/10): **pivot from placeholder-only credential retry** — GitHub Integration sync triggered — post-sync verification pending. Non-credential production readiness advanced: mobile readiness stub (`docs/PRODUCTION_MOBILE_READINESS.json`) · gate #4 bridge deferral doc (`docs/PRODUCTION_GATE_4_BRIDGE_DEFERRAL.md`) · `production-readiness-regression-coverage-selftest.ts`. Sprint Validation 3/3 post-recertification regression guard (PHASE_B_RUNS=3). Gate #2 staging satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-439-selftest.ts`.
 
 ## Sprint 438 summary
 
