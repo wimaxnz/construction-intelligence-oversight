@@ -19,6 +19,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 
+## Sprint 519 close-out (2026-07-09)
+
+Milestone **540–549 Phase D Intelligence Index Backfill** at **4/10**. Stream 1: Intelligence index backfill UI assertions (`assertIntelligenceIndexBackfillUiAssertions` · `PlatformJobProgressIndicator`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **520** queued.
+
 ## Sprint 518 close-out (2026-07-09)
 
 Milestone **540–549 Phase D Intelligence Index Backfill** at **3/10**. Stream 1: Phase B validation matrix intelligence index backfill row wiring (`buildIntelligenceIndexBackfillPhaseBMatrixRow`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **519** queued.
