@@ -1,12 +1,20 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 490–499 Phase D Report Propagation (6/10); Sprint 472 queued.
+**Status:** Active — Milestone 490–499 Phase D Report Propagation (8/10); Sprint 474 queued.
 
 **Last updated:** 2026-07-08
-**Current sprint:** 471 closed  
-**Next sprint:** 472 queued
-**Milestone:** 490–499 Phase D Report Propagation active (6/10)
+**Current sprint:** 473 closed  
+**Next sprint:** 474 queued
+**Milestone:** 490–499 Phase D Report Propagation active (8/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 473 summary
+
+Milestone 490–499 Phase D report propagation — project assistant context engine cross-ref report propagation context entries aggregation + operational workspace AI panel cross-ref report propagation context entry surfacing (`toCrossRefReportPropagationContextEntry` · `operational-workspace-ai-panel-cross-ref-report-propagation-context-entries`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-473-selftest.ts`.
+
+## Sprint 472 summary
+
+Milestone 490–499 Phase D report propagation — project assistant context engine drawing pin events report propagation context entries aggregation + operational workspace AI panel report propagation context entry surfacing (`toDrawingPinEventsReportPropagationContextEntry` · `operational-workspace-ai-panel-drawing-pin-events-report-propagation-context-entries`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-472-selftest.ts`.
 
 ## Sprint 471 summary
 
@@ -210,10 +218,14 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json`
 
-## Next sprint (472)
+## Next sprint (474)
 
-- Stream 1: Project assistant context engine drawing pin events report propagation context entries aggregation + operational workspace AI panel report propagation context entry surfacing — sprint-472-selftest.ts
+- Stream 1: Project assistant context engine report propagation explainability context entry aggregation + operational workspace AI panel report propagation explainability context entry surfacing — sprint-474-selftest.ts
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
+
+
 
 
 
