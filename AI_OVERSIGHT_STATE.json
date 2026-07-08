@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-09",
   "currentSprint": {
-    "number": 501,
+    "number": 502,
     "status": "closed",
-    "previousClosed": 500,
+    "previousClosed": 501,
     "closedDate": "2026-07-09"
   },
   "currentMilestone": {
@@ -23,15 +23,15 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 6,
-    "percentComplete": 60,
+    "sprintsClosed": 7,
+    "percentComplete": 70,
     "nextWrapReviewSprint": 505,
     "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Specification document linking cold-start regeneration after remote seed — sprint-502-selftest.ts"
+      "focus": "Specification document linking full hydrate / persist path — sprint-503-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -1262,6 +1262,12 @@
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 520–529 at 6/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote seed → localStorage hydrate wired; UI-SPECIFICATION-DOCUMENT-LINKING passed; gate #2 satisfied; production apply blocked — owner credentials required",
       "deferred": "Production Migration 015 apply blocked pending PRODUCTION_* credentials; cold-start regeneration after remote seed deferred to Sprint 502; scope-doc ↔ drawing-set full hydrate/persist deferred to Sprint 502+"
+    },
+    "sprint502": {
+      "stream1": "Specification document linking cold-start regeneration after remote seed — assertSpecificationDocumentLinkingColdStartRegenerationAfterRemoteSeed · regenerateSpecificationDocumentLinkingLocalStorageAfterRemoteSeedColdStart · isSpecificationDocumentLinkingLocalStorageClearedOrEmpty · runSpecificationDocumentLinkingColdStartRegenerationAfterRemoteSeed · phase-b-wynyard-validation.ts · sprint-502-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 520–529 at 7/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); cold-start regeneration after remote seed wired; UI-SPECIFICATION-DOCUMENT-LINKING passed; gate #2 satisfied; production apply blocked — owner credentials required",
+      "deferred": "Production Migration 015 apply blocked pending PRODUCTION_* credentials; scope-doc ↔ drawing-set full hydrate/persist deferred to Sprint 503+"
     }
   },
   "changedFiles": {
@@ -3752,6 +3758,21 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint502": [
+      "src/platform/validation/specificationDocumentLinkingValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/SPECIFICATION_DOCUMENT_LINKING_PLAN.json",
+      "scripts/sprint-502-selftest.ts",
+      "scripts/sprint-502-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -4078,14 +4099,16 @@
       "sprint500": "Milestone 520–529 at 5/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + localStorage mirror reconciliation)",
       "sprint500PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); localStorage mirror reconciliation wired; UI-SPECIFICATION-DOCUMENT-LINKING passed",
       "sprint501": "Milestone 520–529 at 6/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote seed → localStorage hydrate)",
-      "sprint501PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote seed → localStorage hydrate wired; UI-SPECIFICATION-DOCUMENT-LINKING passed"
+      "sprint501PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote seed → localStorage hydrate wired; UI-SPECIFICATION-DOCUMENT-LINKING passed",
+      "sprint502": "Milestone 520–529 at 7/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + cold-start regeneration after remote seed)",
+      "sprint502PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); cold-start regeneration after remote seed wired; UI-SPECIFICATION-DOCUMENT-LINKING passed"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-09",
       "lastCertifiedBaseline": "2026-07-09",
       "status": "current — recertified Sprint 496 (520-529 Specification Document Linking opens 1/10 Finding 4)",
       "sprintRangeCovered": "496–496 (Drawing Intelligence Phase D — Specification Document Linking Milestone 520-529 opens)",
-      "deltaSinceCertification": "Sprints 130–501 delivered (372 sprints); Milestone 520-529 at 6/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); remote seed → localStorage hydrate (docs/SPECIFICATION_DOCUMENT_LINKING_PLAN.json); Platform Certification 3/3 recertified Sprint 496 (Finding 4)",
+      "deltaSinceCertification": "Sprints 130–502 delivered (373 sprints); Milestone 520-529 at 7/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); cold-start regeneration after remote seed (docs/SPECIFICATION_DOCUMENT_LINKING_PLAN.json); Platform Certification 3/3 recertified Sprint 496 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -4102,12 +4125,12 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 520–529 at 6/10, Sprint 501 closed, Sprint 502 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 501 remote seed → localStorage hydrate logged",
-    "docs/SPECIFICATION_DOCUMENT_LINKING_PLAN.json — remoteSeedLocalStorageHydrateComplete Sprint 501",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 501 closed, milestone 520-529 active (6/10), sprint 502 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 501 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 501 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 520–529 at 7/10, Sprint 502 closed, Sprint 503 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 502 cold-start regeneration after remote seed logged",
+    "docs/SPECIFICATION_DOCUMENT_LINKING_PLAN.json — coldStartRegenerationAfterRemoteSeedComplete Sprint 502",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 502 closed, milestone 520-529 active (7/10), sprint 503 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 502 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 502 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -4253,27 +4276,27 @@
     }
   ],
   "nextSprint": {
-    "number": 502,
-    "stream1": "Specification document linking cold-start regeneration after remote seed — sprint-502-selftest.ts",
+    "number": 503,
+    "stream1": "Specification document linking full hydrate / persist path — sprint-503-selftest.ts",
     "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-502-selftest.ts",
-    "credentialNote": "Production apply blocked — owner must provide PRODUCTION_* credentials; gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 520-529 Phase D Specification Document Linking active (6/10); remote seed → localStorage hydrate complete docs/SPECIFICATION_DOCUMENT_LINKING_PLAN.json"
+    "selftest": "scripts/sprint-503-selftest.ts",
+    "credentialNote": "Production apply blocked — owner must provide PRODUCTION_* credentials; gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 520-529 Phase D Specification Document Linking active (7/10); cold-start regeneration after remote seed complete docs/SPECIFICATION_DOCUMENT_LINKING_PLAN.json"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-08T14:36:19.815Z",
+    "lastPushAttempt": "2026-07-08T14:36:42.832Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-08T14:36:19.815Z",
+    "verifiedAt": "2026-07-08T14:36:42.832Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-08T14:35:59.7638855Z",
-    "pushedAt": "2026-07-08T14:36:19.815Z",
-    "remoteHeadSha": "0beb9a2fd22d7482977346a8bcbd64832f2ef17b",
-    "publicStateVerifiedAt": "2026-07-08T14:36:19.815Z",
+    "sanitizedAt": "2026-07-08T15:01:55.2519775Z",
+    "pushedAt": "2026-07-08T14:36:42.832Z",
+    "remoteHeadSha": "386012abaa716f18379e2a28b85344c856c35fb2",
+    "publicStateVerifiedAt": "2026-07-08T14:36:42.832Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "2a00060600de2a36390f6ffc49cd28b9e0ee7e85c9cf101b0839ba510a29d464",
+    "publicStateContentHash": "ef7488b384085e48ffdcfc1932657c6ebd4ed67bd2cc31b37dfbe6369fb6f858",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -4305,21 +4328,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "2a00060600de2a36390f6ffc49cd28b9e0ee7e85c9cf101b0839ba510a29d464",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-08T14:36:19.815Z",
-      "rawEndpointVerifiedAt": "2026-07-08T14:36:19.815Z",
-      "gitOriginVerifiedAt": "2026-07-08T14:36:19.815Z",
+      "githubApiVerifiedAt": "2026-07-08T14:36:42.832Z",
+      "rawEndpointVerifiedAt": "2026-07-08T14:36:42.832Z",
+      "gitOriginVerifiedAt": "2026-07-08T14:36:42.832Z",
       "routeContentHashes": {
-        "github-api": "2a00060600de2a36390f6ffc49cd28b9e0ee7e85c9cf101b0839ba510a29d464",
+        "github-api": "ef7488b384085e48ffdcfc1932657c6ebd4ed67bd2cc31b37dfbe6369fb6f858",
         "raw-cdn": "2a00060600de2a36390f6ffc49cd28b9e0ee7e85c9cf101b0839ba510a29d464",
-        "git-origin": "2a00060600de2a36390f6ffc49cd28b9e0ee7e85c9cf101b0839ba510a29d464"
+        "git-origin": "ef7488b384085e48ffdcfc1932657c6ebd4ed67bd2cc31b37dfbe6369fb6f858"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "0beb9a2fd22d7482977346a8bcbd64832f2ef17b",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "386012abaa716f18379e2a28b85344c856c35fb2",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 568,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -4330,12 +4353,12 @@
     "bridgeDocs": "docs/ai-oversight/OVERSIGHT_BRIDGE_ADR.md"
   },
   "oversightBridge": {
-    "lastConsumedAt": "2026-07-08T14:09:59.485Z",
+    "lastConsumedAt": "2026-07-08T14:36:46.689Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 501,
+    "lastSyncedSprint": 502,
     "lastSyncedAt": "2026-07-09",
-    "milestoneProgress": "520-529 ACTIVE (6/10)",
+    "milestoneProgress": "520-529 ACTIVE (7/10)",
     "productionApplyBlocked": true,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -4502,7 +4525,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase D — Specification Document Linking Milestone milestone (520-529) active — Sprint 501 closed; Sprint 502 queued",
+    "phaseE": "Drawing Intelligence Phase D — Specification Document Linking Milestone milestone (520-529) active — Sprint 502 closed; Sprint 503 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -4515,7 +4538,7 @@
     "sprint382": "No new growth event kinds — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint379": "No new growth event kinds — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (4 days remaining as of 2026-07-08)",
-    "phaseD": "Drawing Intelligence Phase D — Specification Document Linking Milestone (520-529) active Sprint 501 (6/10); remote seed → localStorage hydrate complete",
+    "phaseD": "Drawing Intelligence Phase D — Specification Document Linking Milestone (520-529) active Sprint 502 (7/10); cold-start regeneration after remote seed complete",
     "phaseB": "Phase B remaining: Specification document linking (520-529 active); Cross-reference graph persisted in Supabase milestone closed Sprint 495"
   },
   "digitalBrainImpact": {
@@ -4612,7 +4635,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 520-529 6/10 sprints closed (60%); latest growth-event sprint 400; Sprint 501 closed; Sprint 502 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 520-529 7/10 sprints closed (70%); latest growth-event sprint 400; Sprint 502 closed; Sprint 503 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -4753,7 +4776,8 @@
     "sprint498": "No new growth event kinds — Phase B validation matrix specification document linking row wiring; Milestone 520–529 at 3/10",
     "sprint499": "No new growth event kinds — Specification document linking UI assertions; Milestone 520–529 at 4/10",
     "sprint500": "No new growth event kinds — Specification document linking localStorage mirror reconciliation; Milestone 520–529 at 5/10",
-    "sprint501": "No new growth event kinds — Specification document linking remote seed → localStorage hydrate path; Milestone 520–529 at 6/10"
+    "sprint501": "No new growth event kinds — Specification document linking remote seed → localStorage hydrate path; Milestone 520–529 at 6/10",
+    "sprint502": "No new growth event kinds — Specification document linking cold-start regeneration after remote seed; Milestone 520–529 at 7/10"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -4957,7 +4981,8 @@
     "sprint498": "No direct KG edge changes — Phase B validation matrix specification document linking row wiring; Milestone 520–529 at 3/10",
     "sprint499": "No direct KG edge changes — Specification document linking UI assertions (spec-document-link-hint chrome); Milestone 520–529 at 4/10",
     "sprint500": "localStorage ↔ remote `specified_by` edge mirror reconciliation contract — durable Supabase edges stay consistent with di-project-kg-* offline mirror; Milestone 520–529 at 5/10",
-    "sprint501": "Remote Supabase `specified_by` edges seed di-project-kg-* localStorage mirror for cold-start hydrate; Milestone 520–529 at 6/10"
+    "sprint501": "Remote Supabase `specified_by` edges seed di-project-kg-* localStorage mirror for cold-start hydrate; Milestone 520–529 at 6/10",
+    "sprint502": "After prior remote seed, cleared/empty di-project-kg-* regenerates from durable Supabase `specified_by` on cold start; Milestone 520–529 at 7/10"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
@@ -5043,7 +5068,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Specification Document Linking Milestone (520-529) active 6/10; Sprint 501 closed; Sprint 502 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Specification document linking cold-start regeneration after remote seed — sprin)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Specification Document Linking Milestone (520-529) active 7/10; Sprint 502 closed; Sprint 503 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Specification document linking full hydrate / persist path — sprint-503-selftest)",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -5179,7 +5204,8 @@
     "sprint498": "Milestone 520–529 Drawing Intelligence Phase D — Specification Document Linking at 3/10 — Phase B validation matrix row wiring — sprint-498-selftest.ts",
     "sprint499": "Milestone 520–529 Drawing Intelligence Phase D — Specification Document Linking at 4/10 — UI assertions — sprint-499-selftest.ts",
     "sprint500": "Milestone 520–529 Drawing Intelligence Phase D — Specification Document Linking at 5/10 — localStorage mirror reconciliation — sprint-500-selftest.ts",
-    "sprint501": "Milestone 520–529 Drawing Intelligence Phase D — Specification Document Linking at 6/10 — remote seed → localStorage hydrate — sprint-501-selftest.ts"
+    "sprint501": "Milestone 520–529 Drawing Intelligence Phase D — Specification Document Linking at 6/10 — remote seed → localStorage hydrate — sprint-501-selftest.ts",
+    "sprint502": "Milestone 520–529 Drawing Intelligence Phase D — Specification Document Linking at 7/10 — cold-start regeneration after remote seed — sprint-502-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",

@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 520–529 Phase D Specification Document Linking (6/10); Sprint 502 queued.
+**Status:** Active — Milestone 520–529 Phase D Specification Document Linking (7/10); Sprint 503 queued.
 
 **Last updated:** 2026-07-09
-**Current sprint:** 501 closed  
-**Next sprint:** 502 queued
-**Milestone:** 520–529 Phase D Specification Document Linking active (6/10)
+**Current sprint:** 502 closed  
+**Next sprint:** 503 queued
+**Milestone:** 520–529 Phase D Specification Document Linking active (7/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 502 summary
+
+Specification document linking cold-start regeneration after remote seed (`assertSpecificationDocumentLinkingColdStartRegenerationAfterRemoteSeed` · `regenerateSpecificationDocumentLinkingLocalStorageAfterRemoteSeedColdStart` · `runSpecificationDocumentLinkingColdStartRegenerationAfterRemoteSeed` · `docs/SPECIFICATION_DOCUMENT_LINKING_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-502-selftest.ts`.
 
 ## Sprint 501 summary
 
@@ -334,10 +338,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (502)
+## Next sprint (503)
 
-- Stream 1: Specification document linking cold-start regeneration after remote seed — sprint-502-selftest.ts
+- Stream 1: Specification document linking full hydrate / persist path — sprint-503-selftest.ts
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
