@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 530–539 Phase D Natural Language Search (3/10); Sprint 509 queued.
+**Status:** Active — Milestone 530–539 Phase D Natural Language Search (4/10); Sprint 510 queued.
 
 **Last updated:** 2026-07-09
-**Current sprint:** 508 closed  
-**Next sprint:** 509 queued
-**Milestone:** 530–539 Phase D Natural Language Search active (3/10)
+**Current sprint:** 509 closed  
+**Next sprint:** 510 queued
+**Milestone:** 530–539 Phase D Natural Language Search active (4/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 509 summary
+
+Natural language search UI assertions (`assertNaturalLanguageSearchUiAssertions` · `runNaturalLanguageSearchUiAssertions` · `NaturalLanguageSearchHintBanner` · `docs/NATURAL_LANGUAGE_SEARCH_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-509-selftest.ts`.
 
 ## Sprint 508 summary
 
@@ -362,10 +366,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (509)
+## Next sprint (510)
 
-- Stream 1: Natural language search UI assertions — sprint-509-selftest.ts
+- Stream 1: Natural language search haystack match reason Playwright assertions — sprint-510-selftest.ts
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
