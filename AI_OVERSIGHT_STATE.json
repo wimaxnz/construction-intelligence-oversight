@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-08",
   "currentSprint": {
-    "number": 479,
+    "number": 480,
     "status": "closed",
-    "previousClosed": 478,
+    "previousClosed": 479,
     "closedDate": "2026-07-08"
   },
   "currentMilestone": {
@@ -23,15 +23,15 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 4,
-    "percentComplete": 40,
+    "sprintsClosed": 5,
+    "percentComplete": 50,
     "nextWrapReviewSprint": 485,
     "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Playwright canvas marker lifecycle reopen persistence multi-stage re-assertion — sprint-480-selftest.ts"
+      "focus": "Playwright canvas marker lifecycle refresh persistence multi-stage re-assertion — sprint-481-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -1130,6 +1130,12 @@
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 500–509 at 4/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); open → in_progress → completed canvas marker transitions asserted; UI-CANVAS-MARKER-LIFECYCLE passed; gate #2 satisfied; production apply blocked — owner credentials required",
       "deferred": "Production Migration 015 apply blocked pending PRODUCTION_* credentials; canvas marker lifecycle reopen multi-stage persistence re-assertion deferred to Sprint 480+"
+    },
+    "sprint480": {
+      "stream1": "Playwright canvas marker lifecycle reopen persistence multi-stage re-assertion — assertCanvasMarkerLifecycleReopenPersistenceMultiStageReassertion · buildCanvasMarkerLifecycleReopenPersistenceMultiStageReassertionSummary · CANVAS_MARKER_LIFECYCLE_REOPEN_REASSERTION_STAGE · runCanvasMarkerLifecycleReopenPersistenceMultiStageReassertion · phase-b-wynyard-validation.ts · sprint-480-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 500–509 at 5/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); session1 multi-stage + reopen completed stage re-assertion; UI-CANVAS-MARKER-LIFECYCLE passed; gate #2 satisfied; production apply blocked — owner credentials required",
+      "deferred": "Production Migration 015 apply blocked pending PRODUCTION_* credentials; canvas marker lifecycle refresh persistence multi-stage re-assertion deferred to Sprint 481+"
     }
   },
   "changedFiles": {
@@ -3298,6 +3304,21 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint480": [
+      "src/platform/validation/canvasMarkerLifecycleValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/CANVAS_MARKER_LIFECYCLE_VALIDATION_PLAN.json",
+      "scripts/sprint-480-selftest.ts",
+      "scripts/sprint-480-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -3580,14 +3601,16 @@
       "sprint478": "Milestone 500–509 at 3/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase B validation matrix canvas marker lifecycle row wiring)",
       "sprint478PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); Phase B matrix canvas marker lifecycle row wired; UI-CANVAS-MARKER-LIFECYCLE passed",
       "sprint479": "Milestone 500–509 at 4/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Playwright canvas marker lifecycle multi-stage transition assertions)",
-      "sprint479PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); open → in_progress → completed canvas marker transitions asserted; UI-CANVAS-MARKER-LIFECYCLE passed"
+      "sprint479PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); open → in_progress → completed canvas marker transitions asserted; UI-CANVAS-MARKER-LIFECYCLE passed",
+      "sprint480": "Milestone 500–509 at 5/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Playwright canvas marker lifecycle reopen persistence multi-stage re-assertion)",
+      "sprint480PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); session1 multi-stage + reopen completed stage re-assertion; UI-CANVAS-MARKER-LIFECYCLE passed"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-08",
       "lastCertifiedBaseline": "2026-07-08",
       "status": "current — recertified Sprint 476 (500-509 Canvas Marker Lifecycle Validation opens 1/10 Finding 4)",
       "sprintRangeCovered": "476–476 (Drawing Intelligence Phase D — Canvas Marker Lifecycle Validation Milestone 500-509 opens)",
-      "deltaSinceCertification": "Sprints 130–479 delivered (350 sprints); Milestone 500-509 at 4/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); canvas marker lifecycle multi-stage transition assertions (docs/CANVAS_MARKER_LIFECYCLE_VALIDATION_PLAN.json); Platform Certification 3/3 recertified Sprint 476 (Finding 4)",
+      "deltaSinceCertification": "Sprints 130–480 delivered (351 sprints); Milestone 500-509 at 5/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); canvas marker lifecycle reopen persistence re-assertion (docs/CANVAS_MARKER_LIFECYCLE_VALIDATION_PLAN.json); Platform Certification 3/3 recertified Sprint 476 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -3604,12 +3627,12 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 500–509 at 4/10, Sprint 479 closed, Sprint 480 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 479 Playwright canvas marker lifecycle multi-stage transition assertions logged",
-    "docs/CANVAS_MARKER_LIFECYCLE_VALIDATION_PLAN.json — multiStageTransitionAssertionsComplete Sprint 479",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 479 closed, milestone 500-509 active (4/10), sprint 480 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 479 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 479 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 500–509 at 5/10, Sprint 480 closed, Sprint 481 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 480 Playwright canvas marker lifecycle reopen persistence multi-stage re-assertion logged",
+    "docs/CANVAS_MARKER_LIFECYCLE_VALIDATION_PLAN.json — reopenPersistenceMultiStageReassertionComplete Sprint 480",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 480 closed, milestone 500-509 active (5/10), sprint 481 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 480 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 480 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -3705,27 +3728,27 @@
     }
   ],
   "nextSprint": {
-    "number": 480,
-    "stream1": "Playwright canvas marker lifecycle reopen persistence multi-stage re-assertion — sprint-480-selftest.ts",
+    "number": 481,
+    "stream1": "Playwright canvas marker lifecycle refresh persistence multi-stage re-assertion — sprint-481-selftest.ts",
     "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-480-selftest.ts",
-    "credentialNote": "Production apply blocked — owner must provide PRODUCTION_* credentials; gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 500-509 Phase D Canvas Marker Lifecycle Validation active (4/10); multi-stage transition assertions complete docs/CANVAS_MARKER_LIFECYCLE_VALIDATION_PLAN.json"
+    "selftest": "scripts/sprint-481-selftest.ts",
+    "credentialNote": "Production apply blocked — owner must provide PRODUCTION_* credentials; gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 500-509 Phase D Canvas Marker Lifecycle Validation active (5/10); reopen persistence re-assertion complete docs/CANVAS_MARKER_LIFECYCLE_VALIDATION_PLAN.json"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-08T04:13:23.160Z",
+    "lastPushAttempt": "2026-07-08T04:13:51.279Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-08T04:13:23.160Z",
+    "verifiedAt": "2026-07-08T04:13:51.279Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-08T04:12:56.3784925Z",
-    "pushedAt": "2026-07-08T04:13:23.160Z",
-    "remoteHeadSha": "62b3041e44e4b0b57daca17080919b2bf556bf0d",
-    "publicStateVerifiedAt": "2026-07-08T04:13:23.160Z",
+    "sanitizedAt": "2026-07-08T05:14:21.7641806Z",
+    "pushedAt": "2026-07-08T04:13:51.279Z",
+    "remoteHeadSha": "7f6c93afd14700c8d1db176cf637f49f3964d563",
+    "publicStateVerifiedAt": "2026-07-08T04:13:51.279Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "6d1092c724da9a483b514cab96e8e16153615b06ad070eb58f4d7c7baf58dbab",
+    "publicStateContentHash": "af865f33ef46a0b5c676024bb5e4f3075aa75c95a0940956047f52caefcce292",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -3757,21 +3780,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "6d1092c724da9a483b514cab96e8e16153615b06ad070eb58f4d7c7baf58dbab",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-08T04:13:23.160Z",
-      "rawEndpointVerifiedAt": "2026-07-08T04:13:23.160Z",
-      "gitOriginVerifiedAt": "2026-07-08T04:13:23.160Z",
+      "githubApiVerifiedAt": "2026-07-08T04:13:51.279Z",
+      "rawEndpointVerifiedAt": "2026-07-08T04:13:51.279Z",
+      "gitOriginVerifiedAt": "2026-07-08T04:13:51.279Z",
       "routeContentHashes": {
-        "github-api": "6d1092c724da9a483b514cab96e8e16153615b06ad070eb58f4d7c7baf58dbab",
+        "github-api": "af865f33ef46a0b5c676024bb5e4f3075aa75c95a0940956047f52caefcce292",
         "raw-cdn": "6d1092c724da9a483b514cab96e8e16153615b06ad070eb58f4d7c7baf58dbab",
-        "git-origin": "6d1092c724da9a483b514cab96e8e16153615b06ad070eb58f4d7c7baf58dbab"
+        "git-origin": "af865f33ef46a0b5c676024bb5e4f3075aa75c95a0940956047f52caefcce292"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "62b3041e44e4b0b57daca17080919b2bf556bf0d",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "7f6c93afd14700c8d1db176cf637f49f3964d563",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 524,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -3785,9 +3808,9 @@
     "lastConsumedAt": "2026-07-08T02:30:56.620Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 479,
+    "lastSyncedSprint": 480,
     "lastSyncedAt": "2026-07-08",
-    "milestoneProgress": "500-509 ACTIVE (4/10)",
+    "milestoneProgress": "500-509 ACTIVE (5/10)",
     "productionApplyBlocked": true,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -3934,7 +3957,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase D — Canvas Marker Lifecycle Validation Milestone milestone (500-509) active — Sprint 479 closed; Sprint 480 queued",
+    "phaseE": "Drawing Intelligence Phase D — Canvas Marker Lifecycle Validation Milestone milestone (500-509) active — Sprint 480 closed; Sprint 481 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -3947,7 +3970,7 @@
     "sprint382": "No new growth event kinds — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint379": "No new growth event kinds — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (5 days remaining as of 2026-07-07)",
-    "phaseD": "Drawing Intelligence Phase D — Canvas Marker Lifecycle Validation Milestone (500-509) active Sprint 479 (4/10); open → in_progress → completed canvas marker lifecycle multi-stage transition assertions complete"
+    "phaseD": "Drawing Intelligence Phase D — Canvas Marker Lifecycle Validation Milestone (500-509) active Sprint 480 (5/10); session1 multi-stage + reopen completed stage persistence re-assertion complete"
   },
   "digitalBrainImpact": {
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -4043,7 +4066,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 500-509 4/10 sprints closed (40%); latest growth-event sprint 400; Sprint 479 closed; Sprint 480 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 500-509 5/10 sprints closed (50%); latest growth-event sprint 400; Sprint 480 closed; Sprint 481 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -4162,7 +4185,8 @@
     "sprint476": "No new growth event kinds — canvas marker lifecycle validation foundation defines visual-state contract for canvas pin markers (workStatus · markerColor · completed); Milestone 500–509 opens Sprint 476",
     "sprint477": "No new growth event kinds — Playwright canvas marker lifecycle assertion scaffold reads data-marker-work-status on canvas markers after mark complete; Milestone 500–509 at 2/10",
     "sprint478": "No new growth event kinds — Phase B validation matrix canvas marker lifecycle row wiring; Milestone 500–509 at 3/10",
-    "sprint479": "No new growth event kinds — Playwright canvas marker lifecycle multi-stage transition assertions; Milestone 500–509 at 4/10"
+    "sprint479": "No new growth event kinds — Playwright canvas marker lifecycle multi-stage transition assertions; Milestone 500–509 at 4/10",
+    "sprint480": "No new growth event kinds — Playwright canvas marker lifecycle reopen persistence multi-stage re-assertion; Milestone 500–509 at 5/10"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -4344,7 +4368,8 @@
     "sprint476": "No direct KG edge changes — canvas marker lifecycle validation foundation; Milestone 500–509 opens Sprint 476",
     "sprint477": "No direct KG edge changes — Playwright canvas marker lifecycle assertion scaffold; Milestone 500–509 at 2/10",
     "sprint478": "No direct KG edge changes — Phase B validation matrix canvas marker lifecycle row wiring; Milestone 500–509 at 3/10",
-    "sprint479": "No direct KG edge changes — Playwright canvas marker lifecycle multi-stage transition assertions; Milestone 500–509 at 4/10"
+    "sprint479": "No direct KG edge changes — Playwright canvas marker lifecycle multi-stage transition assertions; Milestone 500–509 at 4/10",
+    "sprint480": "No direct KG edge changes — Playwright canvas marker lifecycle reopen persistence multi-stage re-assertion; Milestone 500–509 at 5/10"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
@@ -4430,7 +4455,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Canvas Marker Lifecycle Validation Milestone (500-509) active 4/10; Sprint 479 closed; Sprint 480 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Playwright canvas marker lifecycle reopen persistence multi-stage re-assertion —)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Canvas Marker Lifecycle Validation Milestone (500-509) active 5/10; Sprint 480 closed; Sprint 481 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Playwright canvas marker lifecycle refresh persistence multi-stage re-assertion )",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -4544,7 +4569,8 @@
     "sprint476": "Milestone 500–509 Drawing Intelligence Phase D — Canvas Marker Lifecycle Validation opens — canvas marker lifecycle validation automation foundation — sprint-476-selftest.ts",
     "sprint477": "Milestone 500–509 Drawing Intelligence Phase D — Canvas Marker Lifecycle Validation at 2/10 — Playwright assertion scaffold — sprint-477-selftest.ts",
     "sprint478": "Milestone 500–509 Drawing Intelligence Phase D — Canvas Marker Lifecycle Validation at 3/10 — Phase B validation matrix row wiring — sprint-478-selftest.ts",
-    "sprint479": "Milestone 500–509 Drawing Intelligence Phase D — Canvas Marker Lifecycle Validation at 4/10 — multi-stage transition assertions — sprint-479-selftest.ts"
+    "sprint479": "Milestone 500–509 Drawing Intelligence Phase D — Canvas Marker Lifecycle Validation at 4/10 — multi-stage transition assertions — sprint-479-selftest.ts",
+    "sprint480": "Milestone 500–509 Drawing Intelligence Phase D — Canvas Marker Lifecycle Validation at 5/10 — reopen persistence multi-stage re-assertion — sprint-480-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",

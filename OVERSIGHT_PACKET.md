@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 500–509 Phase D Canvas Marker Lifecycle Validation (4/10); Sprint 480 queued.
+**Status:** Active — Milestone 500–509 Phase D Canvas Marker Lifecycle Validation (5/10); Sprint 481 queued.
 
 **Last updated:** 2026-07-08
-**Current sprint:** 479 closed  
-**Next sprint:** 480 queued
-**Milestone:** 500–509 Phase D Canvas Marker Lifecycle Validation active (4/10)
+**Current sprint:** 480 closed  
+**Next sprint:** 481 queued
+**Milestone:** 500–509 Phase D Canvas Marker Lifecycle Validation active (5/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 480 summary
+
+Playwright canvas marker lifecycle reopen persistence multi-stage re-assertion (`assertCanvasMarkerLifecycleReopenPersistenceMultiStageReassertion` · `phase-b-wynyard-validation.ts` · `docs/CANVAS_MARKER_LIFECYCLE_VALIDATION_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-480-selftest.ts`.
 
 ## Sprint 479 summary
 
@@ -242,10 +246,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json`
 
-## Next sprint (480)
+## Next sprint (481)
 
-- Stream 1: Playwright canvas marker lifecycle reopen persistence multi-stage re-assertion — sprint-480-selftest.ts
+- Stream 1: Playwright canvas marker lifecycle refresh persistence multi-stage re-assertion — sprint-481-selftest.ts
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
