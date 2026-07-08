@@ -19,6 +19,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 
+## Sprint 501 close-out (2026-07-09)
+
+Milestone **520–529 Phase D Specification Document Linking** at **6/10**. Stream 1: Specification document linking remote seed → localStorage hydrate (`assertSpecificationDocumentLinkingRemoteSeedLocalStorageHydrate`). Stream 2: Sprint Validation PHASE_B_RUNS=3. Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **502** queued.
+
 ## Sprint 500 close-out (2026-07-09)
 
 Milestone **520–529 Phase D Specification Document Linking** at **5/10**. Stream 1: Specification document linking localStorage mirror reconciliation (`assertSpecificationDocumentLinkingLocalStorageMirrorReconciliation`). Stream 2: Sprint Validation PHASE_B_RUNS=3. Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **501** queued.
