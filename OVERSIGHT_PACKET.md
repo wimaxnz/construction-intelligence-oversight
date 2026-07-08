@@ -1,12 +1,32 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 500–509 Phase D Canvas Marker Lifecycle Validation (5/10); Sprint 481 queued.
+**Status:** Active — Milestone 500–509 Phase D Canvas Marker Lifecycle Validation CLOSED (10/10); Sprint 486 queued.
 
 **Last updated:** 2026-07-08
-**Current sprint:** 480 closed  
-**Next sprint:** 481 queued
-**Milestone:** 500–509 Phase D Canvas Marker Lifecycle Validation active (5/10)
+**Current sprint:** 485 closed  
+**Next sprint:** 486 queued
+**Milestone:** 500–509 WRAP CLOSED (10/10) · 510–519 next milestone opens Sprint 486
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 485 summary
+
+Milestone 500–509 wrap review — Drawing Intelligence Phase D canvas marker lifecycle full stack completeness review (`sprint-485-selftest.ts` · validation foundation · Playwright assertion scaffold · Phase B validation matrix row · multi-stage transition assertions · reopen · refresh · navigation · full persistence stack multi-stage re-assertion · mid-milestone 476–482 completeness review). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Platform Certification recertified post-milestone-close (Finding 4). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-485-selftest.ts`.
+
+## Sprint 484 summary
+
+Mid-milestone 476–482 Drawing Intelligence Phase D canvas marker lifecycle stack partial completeness review (`sprint-484-selftest.ts` · validation foundation · Playwright assertion scaffold · Phase B validation matrix row · multi-stage transition assertions · reopen persistence re-assertion · refresh persistence re-assertion · navigation persistence re-assertion). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-484-selftest.ts`.
+
+## Sprint 483 summary
+
+Playwright canvas marker lifecycle full persistence stack multi-stage re-assertion (`assertCanvasMarkerLifecycleFullPersistenceStackMultiStageReassertion` · `phase-b-wynyard-validation.ts` · `docs/CANVAS_MARKER_LIFECYCLE_VALIDATION_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-483-selftest.ts`.
+
+## Sprint 482 summary
+
+Playwright canvas marker lifecycle navigation persistence multi-stage re-assertion (`assertCanvasMarkerLifecycleNavigationPersistenceMultiStageReassertion` · `phase-b-wynyard-validation.ts` · `docs/CANVAS_MARKER_LIFECYCLE_VALIDATION_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-482-selftest.ts`.
+
+## Sprint 481 summary
+
+Playwright canvas marker lifecycle refresh persistence multi-stage re-assertion (`assertCanvasMarkerLifecycleRefreshPersistenceMultiStageReassertion` · `phase-b-wynyard-validation.ts` · `docs/CANVAS_MARKER_LIFECYCLE_VALIDATION_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-481-selftest.ts`.
 
 ## Sprint 480 summary
 
@@ -246,10 +266,20 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json`
 
-## Next sprint (481)
+## Next sprint (486)
 
-- Stream 1: Playwright canvas marker lifecycle refresh persistence multi-stage re-assertion — sprint-481-selftest.ts
-- Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+- Stream 1: Milestone 510–519 Phase D next milestone foundation (TBD per DRAWING_INTELLIGENCE_ROADMAP.md) — sprint-486-selftest.ts
+- Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
+
+
+
+
+
+
+
+
+
+
 
 
 
