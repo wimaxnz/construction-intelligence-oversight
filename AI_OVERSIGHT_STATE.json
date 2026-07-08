@@ -3850,9 +3850,10 @@
       "severity": "owner-action",
       "relatedFinding": "finding-3",
       "status": "dashboard_confirmed_execution_pending",
-      "description": "Migration 015 production deploy — Supabase GitHub Integration dashboard confirmed 2026-07-08 (repo wimaxnz/247print-user-dashboard, branch main, Deploy to production ON, Automatic branching ON, Supabase changes only ON). Remote main @ 37e19a5 has migrations 001–015; 016/017 absent. 015 already on main — no PR merge required. Remaining gates: owner approval window for Supabase sync, optional preview RLS 7/7 (owner preview creds), post-sync production RLS 7/7 + PHASE_B_RUNS=3",
+      "description": "Migration 015 production deploy — Supabase GitHub Integration dashboard confirmed 2026-07-08 (repo wimaxnz/247print-user-dashboard, branch main, Deploy to production ON, Automatic branching ON, Supabase changes only ON). Remote main @ 37e19a5 has migrations 001–015; 016/017 absent. 015 already on main — no PR merge required. Owner approval gate: docs/MIGRATION_015_PRE_SYNC_OWNER_CONFIRMATION.md (pre-sync checklist; no sync executed). Remaining gates: owner sign-off + Supabase sync, optional preview RLS 7/7 (owner preview creds), post-sync production RLS 7/7 + PHASE_B_RUNS=3",
       "recordedAt": "2026-07-08",
       "updatedAt": "2026-07-08",
+      "preSyncConfirmationDoc": "docs/MIGRATION_015_PRE_SYNC_OWNER_CONFIRMATION.md",
       "dashboardConfirmedAt": "2026-07-08",
       "appRepo": "wimaxnz/247print-user-dashboard",
       "appRepoBranch": "main",
@@ -3861,7 +3862,7 @@
       "migrationsExcludedFromProdPr": "016,017",
       "migration015OnMain": true,
       "prRequired": false,
-      "evidence": "docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md"
+      "evidence": "docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md · docs/MIGRATION_015_PRE_SYNC_OWNER_CONFIRMATION.md"
     },
     {
       "id": "migration-015-production-credentials",
@@ -3895,18 +3896,18 @@
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-08T08:42:38.722Z",
+    "lastPushAttempt": "2026-07-08T08:43:26.896Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-08T08:42:38.722Z",
+    "verifiedAt": "2026-07-08T08:43:26.896Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-08T08:42:12.7265294Z",
-    "pushedAt": "2026-07-08T08:42:38.722Z",
-    "remoteHeadSha": "063674fc3d3b9784f75997ea678410e898941c06",
-    "publicStateVerifiedAt": "2026-07-08T08:42:38.722Z",
+    "sanitizedAt": "2026-07-08T09:04:47.8321214Z",
+    "pushedAt": "2026-07-08T08:43:26.896Z",
+    "remoteHeadSha": "b86345e155705d3db9a9f2e45605d4e391c5837d",
+    "publicStateVerifiedAt": "2026-07-08T08:43:26.896Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "c9a529bfbf0f82ef1e6923fdc0f951a9f3fa75e438bfc9e4cf6ebd8d394d20b2",
+    "publicStateContentHash": "85139acfc33864aa1e647fe2144c643a56f0f82d3fc33271bc62e9326badb3d6",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -3940,16 +3941,16 @@
     "publicStateRawCdnHash": "4d46207066e5bf2502bf15ecc92cc77ec8f50ebf59be98e87d648775c1ebaa68",
     "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-08T08:42:38.722Z",
-      "rawEndpointVerifiedAt": "2026-07-08T08:42:38.722Z",
-      "gitOriginVerifiedAt": "2026-07-08T08:42:38.722Z",
+      "githubApiVerifiedAt": "2026-07-08T08:43:26.896Z",
+      "rawEndpointVerifiedAt": "2026-07-08T08:43:26.896Z",
+      "gitOriginVerifiedAt": "2026-07-08T08:43:26.896Z",
       "routeContentHashes": {
-        "github-api": "c9a529bfbf0f82ef1e6923fdc0f951a9f3fa75e438bfc9e4cf6ebd8d394d20b2",
+        "github-api": "85139acfc33864aa1e647fe2144c643a56f0f82d3fc33271bc62e9326badb3d6",
         "raw-cdn": "4d46207066e5bf2502bf15ecc92cc77ec8f50ebf59be98e87d648775c1ebaa68",
-        "git-origin": "c9a529bfbf0f82ef1e6923fdc0f951a9f3fa75e438bfc9e4cf6ebd8d394d20b2"
+        "git-origin": "85139acfc33864aa1e647fe2144c643a56f0f82d3fc33271bc62e9326badb3d6"
       },
       "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "063674fc3d3b9784f75997ea678410e898941c06",
+      "canonicalRemoteHeadSha": "b86345e155705d3db9a9f2e45605d4e391c5837d",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 540,
       "classification": "cdn-lag-api-git-agree"
