@@ -19,6 +19,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 
+## Sprint 513 close-out (2026-07-09)
+
+Milestone **530–539 Phase D Natural Language Search** at **8/10**. Stream 1: Natural language search knowledge graph facet Playwright assertions (`assertNaturalLanguageSearchKgFacetPlaywrightAssertions` · `DIHeaderSearch` · `SmartSearchResultCard` · `searchKnowledgeGraphFacets`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (exclusive when deeper KG facet assertions required). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **514** queued.
+
 ## Sprint 512 close-out (2026-07-09)
 
 Milestone **530–539 Phase D Natural Language Search** at **7/10**. Stream 1: Natural language search intent layer hint Playwright assertions (`assertNaturalLanguageSearchIntentLayerHintPlaywrightAssertions` · `DIHeaderSearch` · `NaturalLanguageSearchHintBanner`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (exclusive when deeper intent layer hint assertions required). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **513** queued.
