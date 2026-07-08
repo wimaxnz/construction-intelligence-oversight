@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 490–499 Phase D Report Propagation CLOSED (10/10); Sprint 476 queued.
+**Status:** Active — Milestone 500–509 Phase D Canvas Marker Lifecycle Validation OPEN (1/10); Sprint 477 queued.
 
 **Last updated:** 2026-07-08
-**Current sprint:** 475 closed  
-**Next sprint:** 476 queued
-**Milestone:** 490–499 WRAP CLOSED (10/10) · 500–509 Canvas Marker Lifecycle Validation opens Sprint 476
+**Current sprint:** 476 closed  
+**Next sprint:** 477 queued
+**Milestone:** 500–509 Phase D Canvas Marker Lifecycle Validation active (1/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 476 summary
+
+Milestone 500–509 Phase D canvas marker lifecycle validation automation foundation (`canvasMarkerLifecycleValidationService` · DrawingPdfViewer `canvas-marker` test ids · `docs/CANVAS_MARKER_LIFECYCLE_VALIDATION_PLAN.json`). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Platform Certification recertified post-milestone-open (Finding 4). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-476-selftest.ts`.
 
 ## Sprint 475 summary
 
@@ -226,10 +230,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json`
 
-## Next sprint (476)
+## Next sprint (477)
 
-- Stream 1: Milestone 500–509 Phase D canvas marker lifecycle validation automation foundation — sprint-476-selftest.ts
-- Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
+- Stream 1: Playwright canvas marker lifecycle assertion scaffold — sprint-477-selftest.ts
+- Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
