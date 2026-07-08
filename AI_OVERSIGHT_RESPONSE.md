@@ -19,6 +19,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 
+## Sprint 497 close-out (2026-07-09)
+
+Milestone **520–529 Phase D Specification Document Linking** at **2/10**. Stream 1: Playwright specification document linking assertion scaffold (`UI-SPECIFICATION-DOCUMENT-LINKING`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (exclusive for new result id; stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **498** queued.
+
 ## Sprint 496 close-out (2026-07-09)
 
 Milestone **520–529 Phase D Specification Document Linking OPENS** (1/10). Theme: specification document linking — scope docs → drawing sets (DRAWING_INTELLIGENCE_ROADMAP.md Phase B — Specification document linking). Stream 1: specification document linking validation automation foundation (`specificationDocumentLinkingValidationService`). Stream 2: Platform Certification recertification post-milestone-open (Finding 4) · PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Production apply blocked — owner credentials required. Sprint **497** queued.
