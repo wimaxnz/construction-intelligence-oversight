@@ -262,17 +262,20 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 | #3 Platform Certification 3/3 | **recertified** | Sprint 446 post-milestone-close (Finding 4) |
 | #4 Oversight bridge remote callable | **deferral documented** | Local E2E only |
 
-## Migration 015 production deploy (reassessed 2026-07-08)
+## Migration 015 production deploy (reconciled 2026-07-08)
 
 | Item | Status |
 |------|--------|
-| **Primary path** | Supabase GitHub Integration — merge `015_phase_b_rls_remediation.sql` to production branch after PR/preview validation |
+| **Primary path** | Supabase GitHub Integration — sync `main` to production (015 already on main @ `37e19a5`) |
+| **Dashboard integration** | **Confirmed** — repo `wimaxnz/247print-user-dashboard`, branch `main`, Deploy to production ON, Automatic branching ON, Supabase changes only ON |
 | **Fallback path** | `scripts/prepare-migration-015-production.ts` with `MIGRATION_015_PRODUCTION_APPLY=1` (owner-approved, credential-gated) |
-| **Active blocker** | `migration-015-github-deploy-config` — app repo `wimaxnz/247print-user-dashboard` on GitHub (`main` @ `37e19a5`, migrations 001–015; 016/017 excluded from prod PR). Owner must confirm Supabase Dashboard integration points at this repo, production branch `main`, Deploy to production toggle, and branching status |
-| **Superseded blocker** | `migration-015-production-credentials` — reclassified to alternate-path fallback only |
-| **Production DDL** | **Not applied** — no destructive DDL in reassessment |
+| **Active blocker** | `migration-015-github-deploy-config` (execution pending) — owner approval window for Supabase sync; post-sync RLS 7/7 + PHASE_B_RUNS=3 |
+| **Superseded blocker** | `migration-015-production-credentials` — fallback-only, not primary gate |
+| **PR for 015** | **Not required** — 015 already on remote `main`; 016/017 absent |
+| **Pre-sync validation** | Path B — staging gate #2 satisfied (7/7 RLS) |
+| **Production DDL** | **Not applied** — pending Supabase sync after owner approval |
 
-Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json`
+Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
 ## Next sprint (488)
 
