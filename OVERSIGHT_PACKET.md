@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 520–529 Phase D Specification Document Linking (4/10); Sprint 500 queued.
+**Status:** Active — Milestone 520–529 Phase D Specification Document Linking (5/10); Sprint 501 queued.
 
 **Last updated:** 2026-07-09
-**Current sprint:** 499 closed  
-**Next sprint:** 500 queued
-**Milestone:** 520–529 Phase D Specification Document Linking active (4/10)
+**Current sprint:** 500 closed  
+**Next sprint:** 501 queued
+**Milestone:** 520–529 Phase D Specification Document Linking active (5/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 500 summary
+
+Specification document linking localStorage mirror reconciliation (`assertSpecificationDocumentLinkingLocalStorageMirrorReconciliation` · `reconcileSpecificationDocumentLinkingLocalStorageMirror` · `runSpecificationDocumentLinkingLocalStorageMirrorReconciliation` · `docs/SPECIFICATION_DOCUMENT_LINKING_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-500-selftest.ts`.
 
 ## Sprint 499 summary
 
@@ -326,10 +330,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (500)
+## Next sprint (501)
 
-- Stream 1: Specification document linking localStorage mirror reconciliation — sprint-500-selftest.ts
+- Stream 1: Specification document linking remote seed → localStorage hydrate path — sprint-501-selftest.ts
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
