@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 530–539 Phase D Natural Language Search (9/10); Sprint 515 queued.
+**Status:** Active — Milestone 530–539 Phase D Natural Language Search CLOSED (10/10); Sprint 516 queued (540–549 Intelligence Index Backfill opens).
 
 **Last updated:** 2026-07-09
-**Current sprint:** 514 closed  
-**Next sprint:** 515 queued
-**Milestone:** 530–539 Phase D Natural Language Search active (9/10)
+**Current sprint:** 515 closed  
+**Next sprint:** 516 queued
+**Milestone:** 530–539 WRAP CLOSED (10/10) · 540–549 Intelligence Index Backfill opens Sprint 516
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`)
+
+## Sprint 515 summary
+
+Milestone 530–539 wrap review — Drawing Intelligence Phase D natural language search full stack completeness review (`sprint-515-selftest.ts` · foundation · Playwright assertion scaffold · Phase B validation matrix row · UI assertions · haystack match reason Playwright assertions · query execution Playwright assertions · intent layer hint Playwright assertions · knowledge graph facet Playwright assertions · mid-milestone 506–513 review). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0). Platform Certification recertified post-milestone-close (Finding 4). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-515-selftest.ts`.
 
 ## Sprint 514 summary
 
@@ -386,10 +390,13 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (515)
+## Next sprint (516)
 
-- Stream 1: Milestone 530–539 wrap review — Drawing Intelligence Phase D Natural Language Search wrap completeness review — sprint-515-selftest.ts
-- Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+- Stream 1: Milestone 540–549 Phase D intelligence index backfill validation automation foundation — sprint-516-selftest.ts
+- Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
+- Theme: backfill intelligence index for pre-migration uploads (DRAWING_INTELLIGENCE_ROADMAP.md Phase B — Backfill intelligence index for pre-migration uploads)
+
+
 
 
 

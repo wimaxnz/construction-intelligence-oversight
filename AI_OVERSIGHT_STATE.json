@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-09",
   "currentSprint": {
-    "number": 514,
+    "number": 515,
     "status": "closed",
-    "previousClosed": 513,
+    "previousClosed": 514,
     "closedDate": "2026-07-09"
   },
   "currentMilestone": {
@@ -17,25 +17,26 @@
     "status": "active",
     "theme": "search — natural language queries across extracted text + metadata (DRAWING_INTELLIGENCE_ROADMAP.md Phase B — Search: natural language queries across extracted text + metadata)",
     "openedDate": "2026-07-09",
+    "wrapClosedDate": "2026-07-09",
     "previousMilestoneClosed": "520-529 (Drawing Intelligence Phase D — Specification Document Linking Milestone)",
-    "nextMilestoneOpens": "540-549 (TBD per DRAWING_INTELLIGENCE_ROADMAP.md)",
-    "wrapComplete": false
+    "nextMilestoneOpens": "540-549 (Drawing Intelligence Phase D — Intelligence Index Backfill Milestone per DRAWING_INTELLIGENCE_ROADMAP.md Phase B)",
+    "wrapComplete": true
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 9,
-    "percentComplete": 90,
+    "sprintsClosed": 10,
+    "percentComplete": 100,
     "nextWrapReviewSprint": 515,
-    "milestoneWrapComplete": false
+    "milestoneWrapComplete": true
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Milestone 530–539 wrap review — Drawing Intelligence Phase D Natural Language Search wrap completeness review — sprint-515-selftest.ts"
+      "focus": "Milestone 540–549 Phase D intelligence index backfill validation automation foundation — sprint-516-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
+      "focus": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
     }
   },
   "completedWork": {
@@ -1340,6 +1341,12 @@
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (reuse consecutiveGreen when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 530–539 at 9/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); mid-milestone 506–513 natural language search stack partial completeness review; UI-NATURAL-LANGUAGE-SEARCH passed; gate #2 satisfied; production apply blocked — owner credentials required",
       "deferred": "Production Migration 015 apply blocked pending PRODUCTION_* credentials; milestone 530–539 wrap completeness review deferred to Sprint 515"
+    },
+    "sprint515": {
+      "stream1": "Milestone wrap review — Drawing Intelligence Phase D Natural Language Search completeness — sprint-515-selftest.ts",
+      "stream2": "Milestone 530–539 natural language search full stack completeness review — sprint-515-selftest.ts audits stack (foundation · Playwright scaffold · Phase B matrix · UI assertions · haystack match reasons · query execution · intent layer hints · knowledge graph facets · mid-milestone 506–513 review) · PHASE_B_RUNS=3 (consecutiveGreen reuse / exclusive when needed) · Platform Certification recertification post-milestone-close (Finding 4)",
+      "validation": "Milestone wrap selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied per MIGRATION_015_STAGING_VERIFICATION.json; production apply blocked — owner credentials required",
+      "deferred": "Production Migration 015 apply blocked pending PRODUCTION_* credentials; next milestone 540–549 intelligence index backfill foundation deferred to Sprint 516"
     }
   },
   "changedFiles": {
@@ -4029,6 +4036,20 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint515": [
+      "scripts/sprint-515-selftest.ts",
+      "scripts/sprint-515-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/NATURAL_LANGUAGE_SEARCH_PLAN.json",
+      "docs/INTELLIGENCE_INDEX_BACKFILL_PLAN.json",
+      "[REDACTED-path]",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -4381,14 +4402,16 @@
       "sprint513": "Milestone 530–539 at 8/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + natural language search knowledge graph facet Playwright assertions)",
       "sprint513PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3 exclusive when deeper KG facet assertions required; consecutiveGreen reuse when stampede=0); knowledge graph facet Playwright assertions wired; UI-NATURAL-LANGUAGE-SEARCH passed",
       "sprint514": "Milestone 530–539 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + mid-milestone 506–513 natural language search stack partial completeness review)",
-      "sprint514PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3 reuse when stampede=0); mid-milestone 506–513 natural language search stack partial completeness review; UI-NATURAL-LANGUAGE-SEARCH passed"
+      "sprint514PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3 reuse when stampede=0); mid-milestone 506–513 natural language search stack partial completeness review; UI-NATURAL-LANGUAGE-SEARCH passed",
+      "sprint515": "Milestone 530–539 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + natural language search full stack completeness audit)",
+      "sprint515PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-09",
       "lastCertifiedBaseline": "2026-07-09",
-      "status": "current — recertified Sprint 506 (530-539 Natural Language Search opens 1/10 Finding 4)",
-      "sprintRangeCovered": "506–506 (Drawing Intelligence Phase D — Natural Language Search Milestone 530-539 opens)",
-      "deltaSinceCertification": "Sprints 130–514 delivered (385 sprints); Milestone 530-539 at 9/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); mid-milestone natural language search completeness review (docs/NATURAL_LANGUAGE_SEARCH_PLAN.json); Platform Certification 3/3 recertified Sprint 506 (Finding 4)",
+      "status": "current — recertified Sprint 515 (540-549 next milestone opens post-milestone-close Finding 4)",
+      "sprintRangeCovered": "506–515 (Drawing Intelligence Phase D — Natural Language Search Milestone 530-539 closed + next milestone opens)",
+      "deltaSinceCertification": "Sprints 130–515 delivered (386 sprints); Milestone 530-539 closed; next milestone 540-549 opens; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); natural language search wrap complete (docs/NATURAL_LANGUAGE_SEARCH_PLAN.json); Platform Certification 3/3 recertified Sprint 515 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -4399,18 +4422,20 @@
         "Commercial Intelligence state-machine change",
         "before production release"
       ],
-      "note": "3/3 deterministic re-achieved 2026-07-09 Sprint 506 post-milestone-open; recertify on triggers in recertificationTriggers — not indefinite valid"
+      "note": "3/3 deterministic re-achieved 2026-07-09 Sprint 515 post-milestone-close; recertify on triggers in recertificationTriggers — not indefinite valid"
     },
     "typecheck": "npx tsc -b (per regression gate)"
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 530–539 at 9/10, Sprint 514 closed, Sprint 515 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 514 mid-milestone 506–513 natural language search completeness review logged",
-    "docs/NATURAL_LANGUAGE_SEARCH_PLAN.json — midMilestone506513ReviewComplete Sprint 514",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 514 closed, milestone 530-539 active (9/10), sprint 515 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 514 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 514 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 530–539 closed, Sprint 516 queued (540–549 Intelligence Index Backfill opens)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Milestone 530–539 wrap logged",
+    "docs/NATURAL_LANGUAGE_SEARCH_PLAN.json — milestoneWrapComplete Sprint 515",
+    "docs/INTELLIGENCE_INDEX_BACKFILL_PLAN.json — milestone 540-549 opens Sprint 516",
+    "docs/DRAWING_INTELLIGENCE_ROADMAP.md — Natural language search checked complete",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 515 closed, milestone 530-539 wrap closed (10/10), sprint 516 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 515 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 515 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -4454,7 +4479,7 @@
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Milestone 530–539 Phase D Natural Language Search opens Sprint 506 (1/10); Finding 6 gate #1 satisfied; gate #2 staging satisfied; production apply blocked — owner credentials required"
+      "description": "Milestone 530–539 Phase D Natural Language Search closed Sprint 515; Finding 6 gate #1 satisfied; gate #2 staging satisfied; production apply blocked — owner credentials required; next milestone 540-549 opens Sprint 516"
     },
     {
       "id": "partial-platform-services",
@@ -4465,7 +4490,7 @@
       "id": "platform-certification-stale",
       "severity": "low-governance",
       "relatedFinding": "finding-4",
-      "description": "Platform Certification 3/3 recertified 2026-07-09 Sprint 506 post-milestone-open (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
+      "description": "Platform Certification 3/3 recertified 2026-07-09 Sprint 515 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
     }
   ],
   "blockers": [
@@ -4556,27 +4581,27 @@
     }
   ],
   "nextSprint": {
-    "number": 515,
-    "stream1": "Milestone 530–539 wrap review — Drawing Intelligence Phase D Natural Language Search wrap completeness review — sprint-515-selftest.ts",
-    "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-515-selftest.ts",
-    "credentialNote": "Production apply blocked — owner must provide PRODUCTION_* credentials; gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 530-539 Phase D Natural Language Search active (9/10); mid-milestone 506–513 completeness review complete docs/NATURAL_LANGUAGE_SEARCH_PLAN.json"
+    "number": 516,
+    "stream1": "Milestone 540–549 Phase D intelligence index backfill validation automation foundation — sprint-516-selftest.ts",
+    "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
+    "selftest": "scripts/sprint-516-selftest.ts",
+    "credentialNote": "Production apply blocked — owner must provide PRODUCTION_* credentials; gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Sprint 516 opens 540-549 Phase D Intelligence Index Backfill; stream2 runs Platform Certification recertification post-milestone-close (Finding 4); natural language search wrap complete docs/NATURAL_LANGUAGE_SEARCH_PLAN.json"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-08T19:21:18.459Z",
+    "lastPushAttempt": "2026-07-08T19:21:44.654Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-08T19:21:18.459Z",
+    "verifiedAt": "2026-07-08T19:21:44.654Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-08T19:20:54.5646420Z",
-    "pushedAt": "2026-07-08T19:21:18.459Z",
-    "remoteHeadSha": "fda50652cdfe053cd7f42a1112b9f304609993cb",
-    "publicStateVerifiedAt": "2026-07-08T19:21:18.459Z",
+    "sanitizedAt": "2026-07-08T19:26:28.0724410Z",
+    "pushedAt": "2026-07-08T19:21:44.654Z",
+    "remoteHeadSha": "bda6b48af96f6c572cab81e077d842999c6f0609",
+    "publicStateVerifiedAt": "2026-07-08T19:21:44.654Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "e30e8de1e62c90f2ae74f4efe88922544f37158113c3a3a6da018927daf372be",
+    "publicStateContentHash": "56a641138254cc07882f85b7f9223831123800995db8d35fc9f90074a0b36eca",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -4608,21 +4633,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "e30e8de1e62c90f2ae74f4efe88922544f37158113c3a3a6da018927daf372be",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-08T19:21:18.459Z",
-      "rawEndpointVerifiedAt": "2026-07-08T19:21:18.459Z",
-      "gitOriginVerifiedAt": "2026-07-08T19:21:18.459Z",
+      "githubApiVerifiedAt": "2026-07-08T19:21:44.654Z",
+      "rawEndpointVerifiedAt": "2026-07-08T19:21:44.654Z",
+      "gitOriginVerifiedAt": "2026-07-08T19:21:44.654Z",
       "routeContentHashes": {
-        "github-api": "e30e8de1e62c90f2ae74f4efe88922544f37158113c3a3a6da018927daf372be",
+        "github-api": "56a641138254cc07882f85b7f9223831123800995db8d35fc9f90074a0b36eca",
         "raw-cdn": "e30e8de1e62c90f2ae74f4efe88922544f37158113c3a3a6da018927daf372be",
-        "git-origin": "e30e8de1e62c90f2ae74f4efe88922544f37158113c3a3a6da018927daf372be"
+        "git-origin": "56a641138254cc07882f85b7f9223831123800995db8d35fc9f90074a0b36eca"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "fda50652cdfe053cd7f42a1112b9f304609993cb",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "bda6b48af96f6c572cab81e077d842999c6f0609",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 594,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -4633,12 +4658,12 @@
     "bridgeDocs": "docs/ai-oversight/OVERSIGHT_BRIDGE_ADR.md"
   },
   "oversightBridge": {
-    "lastConsumedAt": "2026-07-08T19:16:27.831Z",
+    "lastConsumedAt": "2026-07-08T19:21:48.982Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 514,
+    "lastSyncedSprint": 515,
     "lastSyncedAt": "2026-07-09",
-    "milestoneProgress": "530-539 ACTIVE (9/10)",
+    "milestoneProgress": "530-539 WRAP CLOSED (10/10)",
     "productionApplyBlocked": true,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -4805,7 +4830,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase D — Natural Language Search Milestone milestone (530-539) active — Sprint 514 closed; Sprint 515 queued",
+    "phaseE": "Drawing Intelligence Phase D — Natural Language Search Milestone milestone (530-539) active — Sprint 515 closed; Sprint 516 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -4818,8 +4843,8 @@
     "sprint382": "No new growth event kinds — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint379": "No new growth event kinds — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (4 days remaining as of 2026-07-08)",
-    "phaseD": "Drawing Intelligence Phase D — Natural Language Search Milestone (530-539) active Sprint 514 (9/10); mid-milestone 506–513 natural language search stack partial completeness review complete",
-    "phaseB": "Phase B remaining: Natural language search (530-539 active); Specification document linking milestone closed Sprint 505"
+    "phaseD": "Drawing Intelligence Phase D — Natural Language Search Milestone (530-539) closed Sprint 515; 540-549 Intelligence Index Backfill opens Sprint 516",
+    "phaseB": "Phase B remaining: Backfill intelligence index (540-549); Natural language search milestone closed Sprint 515"
   },
   "digitalBrainImpact": {
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -4915,7 +4940,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 530-539 9/10 sprints closed (90%); latest growth-event sprint 400; Sprint 514 closed; Sprint 515 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 530-539 10/10 sprints closed (100%); latest growth-event sprint 400; Sprint 515 closed; Sprint 516 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -5069,7 +5094,8 @@
     "sprint511": "No new growth event kinds — Natural language search query execution Playwright assertions; Milestone 530–539 at 6/10",
     "sprint512": "No new growth event kinds — Natural language search intent layer hint Playwright assertions; Milestone 530–539 at 7/10",
     "sprint513": "No new growth event kinds — Natural language search knowledge graph facet Playwright assertions; Milestone 530–539 at 8/10",
-    "sprint514": "No new growth event kinds — mid-milestone 506–513 natural language search stack partial completeness review; Milestone 530–539 at 9/10"
+    "sprint514": "No new growth event kinds — mid-milestone 506–513 natural language search stack partial completeness review; Milestone 530–539 at 9/10",
+    "sprint515": "No new growth event kinds — milestone 530–539 wrap completeness review confirms natural language search full stack audit (foundation · Playwright · Phase B matrix · UI assertions · haystack match reasons · query execution · intent layer hints · knowledge graph facets); milestone closed; 540–549 opens Sprint 516"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -5286,7 +5312,8 @@
     "sprint511": "No direct KG edge changes — Natural language search query execution Playwright assertions (di-search-results-panel + smart-search-match-reasons); Milestone 530–539 at 6/10",
     "sprint512": "No direct KG edge changes — Natural language search intent layer hint Playwright assertions (search-intent-layer-hint + di-search-intent-hint); Milestone 530–539 at 7/10",
     "sprint513": "NL search KG facet assertions — search-kg-facets · search-kg-facet node kinds (discipline · tender_package · subcontractor_package) · smart-search-linked-references on result cards; Milestone 530–539 at 8/10",
-    "sprint514": "No direct KG edge changes — mid-milestone 506–513 natural language search stack partial completeness review; Milestone 530–539 at 9/10"
+    "sprint514": "No direct KG edge changes — mid-milestone 506–513 natural language search stack partial completeness review; Milestone 530–539 at 9/10",
+    "sprint515": "Milestone 530–539 wrap confirms NL search haystack + KG facet validation stack complete; milestone closed; 540–549 Intelligence Index Backfill opens Sprint 516"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
@@ -5372,7 +5399,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Natural Language Search Milestone (530-539) active 9/10; Sprint 514 closed; Sprint 515 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Milestone 530–539 wrap review — Drawing Intelligence Phase D Natural Language Se)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Natural Language Search Milestone (530-539) active 10/10; Sprint 515 closed; Sprint 516 queued (Platform Certification recertification post-milestone-close (Finding 4) — phase- · Milestone 540–549 Phase D intelligence index backfill validation automation foun)",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -5521,7 +5548,8 @@
     "sprint511": "Milestone 530–539 Drawing Intelligence Phase D — Natural Language Search at 6/10 — query execution Playwright assertions — sprint-511-selftest.ts",
     "sprint512": "Milestone 530–539 Drawing Intelligence Phase D — Natural Language Search at 7/10 — intent layer hint Playwright assertions — sprint-512-selftest.ts",
     "sprint513": "Milestone 530–539 Drawing Intelligence Phase D — Natural Language Search at 8/10 — knowledge graph facet Playwright assertions — sprint-513-selftest.ts",
-    "sprint514": "Milestone 530–539 Drawing Intelligence Phase D — Natural Language Search at 9/10 — mid-milestone 506–513 stack partial completeness review — sprint-514-selftest.ts"
+    "sprint514": "Milestone 530–539 Drawing Intelligence Phase D — Natural Language Search at 9/10 — mid-milestone 506–513 stack partial completeness review — sprint-514-selftest.ts",
+    "sprint515": "Milestone 530–539 Drawing Intelligence Phase D — Natural Language Search wrap completeness review — full stack audit; milestone closed; 540–549 opens Sprint 516 — sprint-515-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
@@ -5535,7 +5563,7 @@
     "daysRemaining": 4,
     "computedAsOf": "2026-07-08",
     "status": "at_risk",
-    "statusRationale": "Milestone 530–539 opens Sprint 506 (1/10); Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked — owner credentials required (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); natural language search foundation (docs/NATURAL_LANGUAGE_SEARCH_PLAN.json); specification document linking wrap complete (docs/SPECIFICATION_DOCUMENT_LINKING_PLAN.json); Platform Certification 3/3 recertified Sprint 506 (Finding 4); Milestone 520–529 closed Sprint 505"
+    "statusRationale": "Milestone 530–539 closed Sprint 515; Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); production apply blocked — owner credentials required (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); natural language search full stack wrap complete (docs/NATURAL_LANGUAGE_SEARCH_PLAN.json); Platform Certification 3/3 recertified Sprint 515 (Finding 4); next milestone 540-549 opens Sprint 516"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
