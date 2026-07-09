@@ -6196,20 +6196,20 @@
     "credentialNote": "GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 600-609 Phase D Phase C change cloud detection (assistive) closed (10/10); Phase C change cloud detection (assistive) wrap complete docs/PHASE_C_CHANGE_CLOUD_PLAN.json"
   },
   "oversightSync": {
-    "status": "degraded",
-    "reason": "api-response-anomaly-monitor-api-and-git",
-    "lastPushAttempt": "2026-07-09T11:51:32.889Z",
+    "status": "ok",
+    "reason": null,
+    "lastPushAttempt": "2026-07-09T13:18:52.306Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-09T11:51:32.889Z",
+    "verifiedAt": "2026-07-09T13:18:52.306Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
     "sanitizedAt": "2026-07-09T13:18:25.4508629Z",
-    "pushedAt": "2026-07-09T11:51:32.889Z",
-    "remoteHeadSha": "6f5087da409f58daf6ddeb6dbe8025782751f9a6",
-    "publicStateVerifiedAt": "2026-07-09T11:51:32.889Z",
-    "publicStateJsonParsePassed": false,
-    "publicStateContentHash": "4111b36f8db496f0f587b706db7d3ef61dcc204324f414ff39c816a4c1b521fb",
+    "pushedAt": "2026-07-09T13:18:52.306Z",
+    "remoteHeadSha": "1e8dcddb6591256ef65478627261fc1a40623358",
+    "publicStateVerifiedAt": "2026-07-09T13:18:52.306Z",
+    "publicStateJsonParsePassed": true,
+    "publicStateContentHash": "0e9ef6d2e33c9aed88564e71d992f7cb7288d5954fffe721bd3776b3e5a16eef",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -6240,22 +6240,22 @@
       "note": "bridgeDocsPublished retired — prior list falsely claimed bridge ops docs were on public main; only push allowlist + inbox are public"
     },
     "publicStateVerificationSource": "multi-route",
-    "publicStateRawCdnHash": "ac7a797fa6643f96a668f7affdc3d61e9c78c94c06800cc827cb3b4ab4b060c2",
+    "publicStateRawCdnHash": "856b4373cbd1fdc13818811b53dd0e73afe2e317712c7f80e56917cb26724600",
     "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-09T11:51:32.889Z",
-      "rawEndpointVerifiedAt": "2026-07-09T11:51:32.889Z",
-      "gitOriginVerifiedAt": "2026-07-09T11:51:32.889Z",
+      "githubApiVerifiedAt": "2026-07-09T13:18:52.306Z",
+      "rawEndpointVerifiedAt": "2026-07-09T13:18:52.306Z",
+      "gitOriginVerifiedAt": "2026-07-09T13:18:52.306Z",
       "routeContentHashes": {
-        "github-api": null,
-        "raw-cdn": "ac7a797fa6643f96a668f7affdc3d61e9c78c94c06800cc827cb3b4ab4b060c2",
-        "git-origin": "4111b36f8db496f0f587b706db7d3ef61dcc204324f414ff39c816a4c1b521fb"
+        "github-api": "0e9ef6d2e33c9aed88564e71d992f7cb7288d5954fffe721bd3776b3e5a16eef",
+        "raw-cdn": "856b4373cbd1fdc13818811b53dd0e73afe2e317712c7f80e56917cb26724600",
+        "git-origin": "0e9ef6d2e33c9aed88564e71d992f7cb7288d5954fffe721bd3776b3e5a16eef"
       },
       "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "6f5087da409f58daf6ddeb6dbe8025782751f9a6",
+      "canonicalRemoteHeadSha": "1e8dcddb6591256ef65478627261fc1a40623358",
       "logicalConsistencyPassed": true,
-      "logicalConsistencyTestCount": 712,
-      "classification": "api-response-anomaly-monitor-api-and-git"
+      "logicalConsistencyTestCount": 734,
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
