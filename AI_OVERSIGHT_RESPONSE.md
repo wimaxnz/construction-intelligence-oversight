@@ -19,6 +19,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 
+## Sprint 529 close-out (2026-07-09)
+
+Milestone **550–559 Phase D Phase B UX Sign-off** at **4/10**. Stream 1: Phase B UX sign-off UI assertions (`assertPhaseBUxSignoffUiAssertions` · `PhaseBUxSignoffScaffold`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **520** queued.
+
 ## Sprint 528 close-out (2026-07-09)
 
 Milestone **550–559 Phase D Phase B UX Sign-off** at **3/10**. Stream 1: Phase B validation matrix Phase B UX sign-off row wiring (`buildPhaseBUxSignoffPhaseBMatrixRow`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **529** queued.

@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 550–559 Phase D Phase B UX Sign-off (3/10); Sprint 529 queued.
+**Status:** Active — Milestone 550–559 Phase D Phase B UX Sign-off (4/10); Sprint 520 queued.
 
 **Last updated:** 2026-07-09
-**Current sprint:** 528 closed  
-**Next sprint:** 529 queued
-**Milestone:** 550–559 Phase D Phase B UX Sign-off active (3/10)
+**Current sprint:** 519 closed  
+**Next sprint:** 520 queued
+**Milestone:** 550–559 Phase D Phase B UX Sign-off active (4/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
+
+## Sprint 529 summary
+
+Phase B UX sign-off UI assertions (`assertPhaseBUxSignoffUiAssertions` · `runPhaseBUxSignoffUiAssertions` · `PhaseBUxSignoffScaffold` · `docs/PHASE_B_UX_SIGNOFF_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-529-selftest.ts`.
 
 ## Sprint 528 summary
 
