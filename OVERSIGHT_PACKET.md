@@ -1,12 +1,20 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 550–559 Phase D Phase B UX Sign-off OPEN (1/10); Sprint 527 queued.
+**Status:** Active — Milestone 550–559 Phase D Phase B UX Sign-off (3/10); Sprint 529 queued.
 
 **Last updated:** 2026-07-09
-**Current sprint:** 526 closed  
-**Next sprint:** 527 queued
-**Milestone:** 550–559 Phase D Phase B UX Sign-off active (1/10)
+**Current sprint:** 528 closed  
+**Next sprint:** 529 queued
+**Milestone:** 550–559 Phase D Phase B UX Sign-off active (3/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
+
+## Sprint 528 summary
+
+Phase B validation matrix Phase B UX sign-off row wiring (`buildPhaseBUxSignoffPhaseBMatrixRow` · `phase-b-wynyard-validation.ts` · `docs/PHASE_B_UX_SIGNOFF_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-528-selftest.ts`.
+
+## Sprint 527 summary
+
+Playwright Phase B UX sign-off assertion scaffold (`UI-PHASE-B-UX-SIGNOFF` in `phase-b-wynyard-validation.ts` · `phaseBUxSignoffValidationService` · `docs/PHASE_B_UX_SIGNOFF_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-527-selftest.ts`.
 
 ## Sprint 526 summary
 
@@ -434,10 +442,14 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (527)
+## Next sprint (529)
 
-- Stream 1: Playwright Phase B UX sign-off assertion scaffold — sprint-527-selftest.ts
+- Stream 1: Phase B UX sign-off UI assertions — sprint-529-selftest.ts
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
+
+
 
 
 

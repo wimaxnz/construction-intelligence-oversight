@@ -19,6 +19,14 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 
+## Sprint 528 close-out (2026-07-09)
+
+Milestone **550–559 Phase D Phase B UX Sign-off** at **3/10**. Stream 1: Phase B validation matrix Phase B UX sign-off row wiring (`buildPhaseBUxSignoffPhaseBMatrixRow`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **529** queued.
+
+## Sprint 527 close-out (2026-07-09)
+
+Milestone **550–559 Phase D Phase B UX Sign-off** at **2/10**. Stream 1: Playwright Phase B UX sign-off assertion scaffold (`UI-PHASE-B-UX-SIGNOFF`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (exclusive for new result id; stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **528** queued.
+
 ## Sprint 526 close-out (2026-07-09)
 
 Milestone **550–559 Phase D Phase B UX Sign-off OPENS** (1/10). Theme: Phase B UX sign-off — workflows natural for site teams (DRAWING_INTELLIGENCE_ROADMAP.md Phase B exit criteria UX). Stream 1: Phase B UX sign-off validation automation foundation (`phaseBUxSignoffValidationService`). Stream 2: Platform Certification recertification post-milestone-close (Finding 4) · PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **527** queued.

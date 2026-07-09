@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-09",
   "currentSprint": {
-    "number": 526,
+    "number": 528,
     "status": "closed",
-    "previousClosed": 525,
+    "previousClosed": 527,
     "closedDate": "2026-07-09"
   },
   "currentMilestone": {
@@ -23,15 +23,15 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 1,
-    "percentComplete": 10,
+    "sprintsClosed": 3,
+    "percentComplete": 30,
     "nextWrapReviewSprint": 535,
     "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Playwright Phase B UX sign-off assertion scaffold — sprint-527-selftest.ts"
+      "focus": "Phase B UX sign-off UI assertions — sprint-529-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -1412,6 +1412,18 @@
       "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 550–559 opens selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
       "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; full Playwright Phase B UX sign-off role-path UI assertions deferred to Sprint 527+"
+    },
+    "sprint527": {
+      "stream1": "Playwright Phase B UX sign-off assertion scaffold — parsePhaseBUxSignoffDomObservation · assertPhaseBUxSignoffObservation · buildPhaseBUxSignoffPlaywrightScaffoldSummary · PhaseBUxSignoffScaffold · phase-b-wynyard-validation.ts UI-PHASE-B-UX-SIGNOFF · sprint-527-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (exclusive re-run for new result id; stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 550–559 at 2/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); UI-PHASE-B-UX-SIGNOFF passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
+      "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; full Phase B UX sign-off UI assertions deferred to Sprint 529+"
+    },
+    "sprint528": {
+      "stream1": "Phase B validation matrix Phase B UX sign-off row wiring — buildPhaseBUxSignoffPhaseBMatrixRow · resolvePhaseBUxSignoffPhaseBMatrixStatus · PHASE_B_UX_SIGNOFF_PHASE_B_MATRIX_AREA · phase-b-wynyard-validation.ts · sprint-528-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 550–559 at 3/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); Phase B matrix Phase B UX sign-off row wired; UI-PHASE-B-UX-SIGNOFF passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
+      "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; fuller Phase B UX sign-off UI assertions deferred to Sprint 529+"
     }
   },
   "changedFiles": {
@@ -4280,6 +4292,39 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint527": [
+      "src/platform/validation/phaseBUxSignoffValidationService.ts",
+      "[REDACTED-path]",
+      "[REDACTED-path]",
+      "[REDACTED-path]",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_B_UX_SIGNOFF_PLAN.json",
+      "scripts/sprint-527-selftest.ts",
+      "scripts/sprint-527-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint528": [
+      "src/platform/validation/phaseBUxSignoffValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_B_UX_SIGNOFF_PLAN.json",
+      "scripts/sprint-528-selftest.ts",
+      "scripts/sprint-528-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -4656,14 +4701,18 @@
       "sprint525": "Milestone 540–549 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + intelligence index backfill full stack completeness audit)",
       "sprint525PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
       "sprint526": "Milestone 550–559 opens — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Phase B UX sign-off foundation; consecutiveGreen reuse when stampede=0)",
-      "sprint526PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
+      "sprint526PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
+      "sprint527": "Milestone 550–559 at 2/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Playwright Phase B UX sign-off assertion scaffold)",
+      "sprint527PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3 exclusive for UI-PHASE-B-UX-SIGNOFF; stampede=0); UI-PHASE-B-UX-SIGNOFF passed",
+      "sprint528": "Milestone 550–559 at 3/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase B validation matrix Phase B UX sign-off row wiring)",
+      "sprint528PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase B matrix Phase B UX sign-off row wired; UI-PHASE-B-UX-SIGNOFF passed"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-09",
       "lastCertifiedBaseline": "2026-07-09",
       "status": "current — recertified Sprint 526 (550-559 Phase B UX Sign-off opens 1/10 Finding 4)",
       "sprintRangeCovered": "526–526 (Drawing Intelligence Phase D — Phase B UX Sign-off Milestone 550-559 opens)",
-      "deltaSinceCertification": "Sprints 130–526 delivered (397 sprints); Milestone 540-549 closed; Phase D Phase B UX Sign-off 550-559 opens (1/10); gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); intelligence index backfill wrap complete (docs/INTELLIGENCE_INDEX_BACKFILL_PLAN.json); Phase B UX sign-off foundation (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Platform Certification 3/3 recertified Sprint 526 (Finding 4)",
+      "deltaSinceCertification": "Sprints 130–528 delivered (399 sprints); Milestone 550-559 at 3/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase B validation matrix Phase B UX sign-off row wiring (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Platform Certification 3/3 recertified Sprint 526 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -4680,12 +4729,12 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 550–559 opens (1/10), Sprint 526 closed, Sprint 527 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Milestone 550–559 Phase B UX Sign-off opens logged",
-    "docs/PHASE_B_UX_SIGNOFF_PLAN.json — foundationComplete Sprint 526",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 526 closed, milestone 550-559 active (1/10), sprint 527 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 526 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 526 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 550–559 at 3/10, Sprint 528 closed, Sprint 529 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 528 Phase B validation matrix Phase B UX sign-off row wiring logged",
+    "docs/PHASE_B_UX_SIGNOFF_PLAN.json — phaseBValidationMatrixRowWiringComplete Sprint 528",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — sprint 528 closed, milestone 550-559 active (3/10), sprint 529 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 528 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 528 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -4831,27 +4880,27 @@
     }
   ],
   "nextSprint": {
-    "number": 527,
-    "stream1": "Playwright Phase B UX sign-off assertion scaffold — sprint-527-selftest.ts",
+    "number": 529,
+    "stream1": "Phase B UX sign-off UI assertions — sprint-529-selftest.ts",
     "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-527-selftest.ts",
-    "credentialNote": "GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 550-559 Phase D Phase B UX Sign-off opens (1/10); intelligence index backfill wrap complete docs/INTELLIGENCE_INDEX_BACKFILL_PLAN.json"
+    "selftest": "scripts/sprint-529-selftest.ts",
+    "credentialNote": "GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 550-559 Phase D Phase B UX Sign-off active (3/10); Phase B matrix row wiring complete docs/PHASE_B_UX_SIGNOFF_PLAN.json"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-09T02:35:41.520Z",
+    "lastPushAttempt": "2026-07-09T02:36:17.389Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-09T02:35:41.520Z",
+    "verifiedAt": "2026-07-09T02:36:17.389Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-09T02:35:04.9078690Z",
-    "pushedAt": "2026-07-09T02:35:41.520Z",
-    "remoteHeadSha": "60fd85180f4c65f00d728e6020c670b555c1c9bb",
-    "publicStateVerifiedAt": "2026-07-09T02:35:41.520Z",
+    "sanitizedAt": "2026-07-09T04:02:41.9327294Z",
+    "pushedAt": "2026-07-09T02:36:17.389Z",
+    "remoteHeadSha": "f3515085d1d04c8c1c23235792d2cc29aa46e9c1",
+    "publicStateVerifiedAt": "2026-07-09T02:36:17.389Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "85fd04d97234cfa13e9f043b48804f53dec3720b9c03b6b1f5d6015d410c3ea7",
+    "publicStateContentHash": "1a1ba1eb98f39dc2101933620bc91ade9e51ac2a613b1ddcf608b1371db0207a",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -4883,21 +4932,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "85fd04d97234cfa13e9f043b48804f53dec3720b9c03b6b1f5d6015d410c3ea7",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-09T02:35:41.520Z",
-      "rawEndpointVerifiedAt": "2026-07-09T02:35:41.520Z",
-      "gitOriginVerifiedAt": "2026-07-09T02:35:41.520Z",
+      "githubApiVerifiedAt": "2026-07-09T02:36:17.389Z",
+      "rawEndpointVerifiedAt": "2026-07-09T02:36:17.389Z",
+      "gitOriginVerifiedAt": "2026-07-09T02:36:17.389Z",
       "routeContentHashes": {
-        "github-api": "85fd04d97234cfa13e9f043b48804f53dec3720b9c03b6b1f5d6015d410c3ea7",
+        "github-api": "1a1ba1eb98f39dc2101933620bc91ade9e51ac2a613b1ddcf608b1371db0207a",
         "raw-cdn": "85fd04d97234cfa13e9f043b48804f53dec3720b9c03b6b1f5d6015d410c3ea7",
-        "git-origin": "85fd04d97234cfa13e9f043b48804f53dec3720b9c03b6b1f5d6015d410c3ea7"
+        "git-origin": "1a1ba1eb98f39dc2101933620bc91ade9e51ac2a613b1ddcf608b1371db0207a"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "60fd85180f4c65f00d728e6020c670b555c1c9bb",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "f3515085d1d04c8c1c23235792d2cc29aa46e9c1",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 618,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -4911,9 +4960,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 526,
+    "lastSyncedSprint": 528,
     "lastSyncedAt": "2026-07-09",
-    "milestoneProgress": "550-559 OPENS (1/10)",
+    "milestoneProgress": "550-559 ACTIVE (3/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -5080,7 +5129,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase D — Phase B UX Sign-off Milestone milestone (550-559) active — Sprint 526 closed; Sprint 527 queued",
+    "phaseE": "Drawing Intelligence Phase D — Phase B UX Sign-off Milestone milestone (550-559) active — Sprint 528 closed; Sprint 529 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -5093,7 +5142,7 @@
     "sprint382": "No new growth event kinds — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint379": "No new growth event kinds — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Drawing Intelligence Phase D — Phase B UX Sign-off Milestone (550-559) active Sprint 526 (1/10); 540-549 Intelligence Index Backfill Milestone closed Sprint 525",
+    "phaseD": "Drawing Intelligence Phase D — Phase B UX Sign-off Milestone (550-559) active Sprint 528 (3/10); Phase B validation matrix Phase B UX sign-off row wiring complete",
     "phaseB": "Phase B UX sign-off milestone active (550-559) — technical items complete; UX validation automation foundation Sprint 526"
   },
   "digitalBrainImpact": {
@@ -5190,7 +5239,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 550-559 1/10 sprints closed (10%); latest growth-event sprint 400; Sprint 526 closed; Sprint 527 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 550-559 3/10 sprints closed (30%); latest growth-event sprint 400; Sprint 528 closed; Sprint 529 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -5356,7 +5405,9 @@
     "sprint523": "No new growth event kinds — intelligence index backfill full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 540–549 at 8/10",
     "sprint524": "No new growth event kinds — intelligence index backfill remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 540–549 at 9/10",
     "sprint525": "No new growth event kinds — milestone 540–549 wrap completeness review confirms intelligence index backfill full stack audit (foundation · Playwright · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip); milestone closed; 550–559 opens Sprint 526",
-    "sprint526": "No new growth event kinds — Phase B UX sign-off foundation defines role critical path + checklist contracts for site-team workflow validation; Milestone 550–559 opens Sprint 526"
+    "sprint526": "No new growth event kinds — Phase B UX sign-off foundation defines role critical path + checklist contracts for site-team workflow validation; Milestone 550–559 opens Sprint 526",
+    "sprint527": "No new growth event kinds — Playwright Phase B UX sign-off scaffold reads phase-b-ux-role-path-banner + phase-b-ux-signoff-checklist + phase-b-ux-mobile-target-size; Milestone 550–559 at 2/10",
+    "sprint528": "No new growth event kinds — Phase B validation matrix Phase B UX sign-off row wiring; Milestone 550–559 at 3/10"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -5585,7 +5636,9 @@
     "sprint523": "When VITE_PROJECT_KG_PERSIST=1, di-intelligence-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 540–549 at 8/10",
     "sprint524": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 540–549 at 9/10",
     "sprint525": "Milestone 540–549 wrap confirms durable intelligence_json index backfill validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 550–559 Phase B UX Sign-off opens Sprint 526",
-    "sprint526": "Phase B UX sign-off foundation — role-based critical path coverage for site_manager · foreman · PM · QS · mobile/tablet; Milestone 550–559 opens Sprint 526"
+    "sprint526": "Phase B UX sign-off foundation — role-based critical path coverage for site_manager · foreman · PM · QS · mobile/tablet; Milestone 550–559 opens Sprint 526",
+    "sprint527": "Playwright Phase B UX sign-off assertion scaffold — role critical path + checklist UI chrome; Milestone 550–559 at 2/10",
+    "sprint528": "No direct KG edge changes — Phase B validation matrix Phase B UX sign-off row wiring; Milestone 550–559 at 3/10"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
@@ -5671,7 +5724,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase B UX Sign-off Milestone (550-559) active 1/10; Sprint 526 closed; Sprint 527 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Playwright Phase B UX sign-off assertion scaffold — sprint-527-selftest.ts)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase B UX Sign-off Milestone (550-559) active 3/10; Sprint 528 closed; Sprint 529 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Phase B UX sign-off UI assertions — sprint-529-selftest.ts)",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -5832,7 +5885,9 @@
     "sprint523": "Milestone 540–549 Drawing Intelligence Phase D — Intelligence Index Backfill at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-523-selftest.ts",
     "sprint524": "Milestone 540–549 Drawing Intelligence Phase D — Intelligence Index Backfill at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-524-selftest.ts",
     "sprint525": "Milestone 540–549 Drawing Intelligence Phase D — Intelligence Index Backfill wrap completeness review — full stack audit; milestone closed; 550–559 opens Sprint 526 — sprint-525-selftest.ts",
-    "sprint526": "Milestone 550–559 Drawing Intelligence Phase D — Phase B UX Sign-off opens — validation automation foundation — sprint-526-selftest.ts"
+    "sprint526": "Milestone 550–559 Drawing Intelligence Phase D — Phase B UX Sign-off opens — validation automation foundation — sprint-526-selftest.ts",
+    "sprint527": "Milestone 550–559 Drawing Intelligence Phase D — Phase B UX Sign-off at 2/10 — Playwright assertion scaffold — sprint-527-selftest.ts",
+    "sprint528": "Milestone 550–559 Drawing Intelligence Phase D — Phase B UX Sign-off at 3/10 — Phase B validation matrix row wiring — sprint-528-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
