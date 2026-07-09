@@ -5730,18 +5730,18 @@
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-09T11:13:56.862Z",
+    "lastPushAttempt": "2026-07-09T11:14:39.273Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-09T11:13:56.862Z",
+    "verifiedAt": "2026-07-09T11:14:39.273Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
     "sanitizedAt": "2026-07-09T11:14:18.7245939Z",
-    "pushedAt": "2026-07-09T11:13:56.862Z",
-    "remoteHeadSha": "9cb4b5dae58c7969ca103601b70d4bd0546e9444",
-    "publicStateVerifiedAt": "2026-07-09T11:13:56.862Z",
+    "pushedAt": "2026-07-09T11:14:39.273Z",
+    "remoteHeadSha": "2beef77f596183b4eff18aa87f178a648c74375a",
+    "publicStateVerifiedAt": "2026-07-09T11:14:39.273Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "09ed006bb5f45517aff6b3147776198361c26660c4d6ca0549bb1e76367fb1c9",
+    "publicStateContentHash": "4db508ef27928d63674dba576b9d6ff11a35df45bf2b687923860d2a0440ea78",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -5775,16 +5775,16 @@
     "publicStateRawCdnHash": "524c7bd9f310488e40f84a37bf4010f9559c501e7e419a25bcaa16c8c3b0c42b",
     "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-09T11:13:56.862Z",
-      "rawEndpointVerifiedAt": "2026-07-09T11:13:56.862Z",
-      "gitOriginVerifiedAt": "2026-07-09T11:13:56.862Z",
+      "githubApiVerifiedAt": "2026-07-09T11:14:39.273Z",
+      "rawEndpointVerifiedAt": "2026-07-09T11:14:39.273Z",
+      "gitOriginVerifiedAt": "2026-07-09T11:14:39.273Z",
       "routeContentHashes": {
-        "github-api": "09ed006bb5f45517aff6b3147776198361c26660c4d6ca0549bb1e76367fb1c9",
+        "github-api": "4db508ef27928d63674dba576b9d6ff11a35df45bf2b687923860d2a0440ea78",
         "raw-cdn": "524c7bd9f310488e40f84a37bf4010f9559c501e7e419a25bcaa16c8c3b0c42b",
-        "git-origin": "09ed006bb5f45517aff6b3147776198361c26660c4d6ca0549bb1e76367fb1c9"
+        "git-origin": "4db508ef27928d63674dba576b9d6ff11a35df45bf2b687923860d2a0440ea78"
       },
       "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "9cb4b5dae58c7969ca103601b70d4bd0546e9444",
+      "canonicalRemoteHeadSha": "2beef77f596183b4eff18aa87f178a648c74375a",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 694,
       "classification": "cdn-lag-api-git-agree"
