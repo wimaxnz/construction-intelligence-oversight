@@ -19,6 +19,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 
+## Sprint 536 close-out (2026-07-09)
+
+Milestone **550–559 Phase D Phase C revision management OPENS** (1/10). Theme: Phase C revision management — revision compare and superseding (DRAWING_INTELLIGENCE_ROADMAP.md Phase C — Revision management & compare). Stream 1: Phase C revision management validation automation foundation (`phaseCRevisionManagementValidationService`). Stream 2: Platform Certification recertification post-milestone-close (Finding 4) · PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **527** queued.
+
 ## Sprint 535 close-out (2026-07-09)
 
 Milestone **550–559 Phase D Phase B UX Sign-off WRAP CLOSED** (10/10). Stream 1: milestone wrap completeness review. Stream 2: Phase B UX sign-off full stack completeness audit (foundation · Playwright scaffold · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Platform Certification recertified post-milestone-close (Finding 4). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **536** queued (560–569 Phase C Revision Management opens).

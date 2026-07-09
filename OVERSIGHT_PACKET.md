@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 550–559 Phase D Phase B UX Sign-off CLOSED (10/10); Sprint 536 queued (560–569 Phase C Revision Management opens).
+**Status:** Active — Milestone 550–559 Phase D Phase C revision management OPEN (1/10); Sprint 537 queued.
 
 **Last updated:** 2026-07-09
-**Current sprint:** 535 closed  
-**Next sprint:** 536 queued
+**Current sprint:** 536 closed  
+**Next sprint:** 527 queued
 **Milestone:** 550–559 WRAP CLOSED (10/10) · 560–569 Phase C Revision Management opens Sprint 536
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
+
+## Sprint 536 summary
+
+Milestone 550–559 Phase D Phase C revision management validation automation foundation (`phaseCRevisionManagementValidationService` · `docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json`). Theme: Phase C revision management — revision compare and superseding (DRAWING_INTELLIGENCE_ROADMAP.md Phase C — Revision management & compare). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0). Platform Certification recertified post-milestone-close (Finding 4). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. Selftest: `scripts/sprint-536-selftest.ts`.
 
 ## Sprint 535 summary
 
