@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-09",
   "currentSprint": {
-    "number": 571,
+    "number": 572,
     "status": "closed",
-    "previousClosed": 570,
+    "previousClosed": 571,
     "closedDate": "2026-07-09"
   },
   "currentMilestone": {
@@ -23,15 +23,15 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 6,
-    "percentComplete": 60,
+    "sprintsClosed": 7,
+    "percentComplete": 70,
     "nextWrapReviewSprint": 575,
     "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Phase C pin re-anchor on revision change cold-start regeneration after remote seed — sprint-572-selftest.ts"
+      "focus": "Phase C pin re-anchor on revision change full hydrate / persist path — sprint-573-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -1676,6 +1676,12 @@
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 590–599 at 6/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote seed → localStorage hydrate wired; UI-PHASE-C-PIN-REANCHOR passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
       "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; Phase C pin re-anchor on revision change cold-start regeneration after remote seed deferred to Sprint 522+"
+    },
+    "sprint572": {
+      "stream1": "Phase C pin re-anchor on revision change cold-start regeneration after remote seed — assertPhaseCPinReanchorColdStartRegenerationAfterRemoteSeed · regeneratephaseCBulkUploadLocalStorageAfterRemoteSeedColdStart · isPhaseCPinReanchorLocalStorageClearedOrEmpty · runphaseCBulkUploadColdStartRegenerationAfterRemoteSeed · phase-b-wynyard-validation.ts · sprint-572-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 590–599 at 7/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); cold-start regeneration after remote seed wired; UI-PHASE-C-PIN-REANCHOR passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
+      "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; Phase C pin re-anchor on revision change full hydrate/persist path deferred to Sprint 523+"
     }
   },
   "changedFiles": {
@@ -5222,6 +5228,21 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint572": [
+      "src/platform/validation/phaseCPinReanchorValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_C_PIN_REANCHOR_PLAN.json",
+      "scripts/sprint-572-selftest.ts",
+      "scripts/sprint-572-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -5686,14 +5707,16 @@
       "sprint570": "Milestone 590–599 at 5/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + localStorage mirror reconciliation)",
       "sprint570PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); localStorage mirror reconciliation wired; UI-PHASE-C-PIN-REANCHOR passed",
       "sprint571": "Milestone 590–599 at 6/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote seed → localStorage hydrate)",
-      "sprint571PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); remote seed → localStorage hydrate wired; UI-PHASE-C-PIN-REANCHOR passed"
+      "sprint571PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); remote seed → localStorage hydrate wired; UI-PHASE-C-PIN-REANCHOR passed",
+      "sprint572": "Milestone 590–599 at 7/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + cold-start regeneration after remote seed)",
+      "sprint572PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); cold-start regeneration after remote seed wired; UI-PHASE-C-PIN-REANCHOR passed"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-09",
       "lastCertifiedBaseline": "2026-07-09",
       "status": "current — recertified Sprint 566 (590-599 Phase C pin re-anchor on revision change opens 1/10 Finding 4)",
       "sprintRangeCovered": "526–526 (Drawing Intelligence Phase D — Phase C pin re-anchor on revision change Milestone 590-599 opens)",
-      "deltaSinceCertification": "Sprints 130–531 delivered (402 sprints); Milestone 590-599 at 6/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); remote seed → localStorage hydrate (docs/PHASE_C_PIN_REANCHOR_PLAN.json); Platform Certification 3/3 recertified Sprint 566 (Finding 4)",
+      "deltaSinceCertification": "Sprints 130–532 delivered (403 sprints); Milestone 590-599 at 7/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); cold-start regeneration after remote seed (docs/PHASE_C_PIN_REANCHOR_PLAN.json); Platform Certification 3/3 recertified Sprint 566 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -5710,12 +5733,12 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 590–599 at 6/10, Sprint 571 closed, Sprint 572 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 571 remote seed → localStorage hydrate logged",
-    "docs/PHASE_C_PIN_REANCHOR_PLAN.json — remoteSeedLocalStorageHydrateComplete Sprint 571",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 571 closed, milestone 590-599 active (6/10), Sprint 572 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 571 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 571 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 590–599 at 7/10, Sprint 572 closed, Sprint 573 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 572 cold-start regeneration after remote seed logged",
+    "docs/PHASE_C_PIN_REANCHOR_PLAN.json — coldStartRegenerationAfterRemoteSeedComplete Sprint 572",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 572 closed, milestone 590-599 active (7/10), Sprint 573 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 572 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 572 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -5861,27 +5884,27 @@
     }
   ],
   "nextSprint": {
-    "number": 572,
-    "stream1": "Phase C pin re-anchor on revision change cold-start regeneration after remote seed — sprint-572-selftest.ts",
+    "number": 573,
+    "stream1": "Phase C pin re-anchor on revision change full hydrate / persist path — sprint-573-selftest.ts",
     "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-572-selftest.ts",
-    "credentialNote": "GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 590-599 Phase D Phase C pin re-anchor on revision change active (6/10); remote seed → localStorage hydrate complete docs/PHASE_C_PIN_REANCHOR_PLAN.json"
+    "selftest": "scripts/sprint-573-selftest.ts",
+    "credentialNote": "GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 590-599 Phase D Phase C pin re-anchor on revision change active (7/10); cold-start regeneration after remote seed complete docs/PHASE_C_PIN_REANCHOR_PLAN.json"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-09T11:47:50.835Z",
+    "lastPushAttempt": "2026-07-09T11:48:15.320Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-09T11:47:50.835Z",
+    "verifiedAt": "2026-07-09T11:48:15.320Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-09T11:47:28.4342339Z",
-    "pushedAt": "2026-07-09T11:47:50.835Z",
-    "remoteHeadSha": "55cb15299d5be2f03581dd9505e651ffe4952295",
-    "publicStateVerifiedAt": "2026-07-09T11:47:50.835Z",
+    "sanitizedAt": "2026-07-09T11:48:40.0111893Z",
+    "pushedAt": "2026-07-09T11:48:15.320Z",
+    "remoteHeadSha": "8005a7100350a9307ab9b7de05b87139703e488f",
+    "publicStateVerifiedAt": "2026-07-09T11:48:15.320Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "ac7a797fa6643f96a668f7affdc3d61e9c78c94c06800cc827cb3b4ab4b060c2",
+    "publicStateContentHash": "451d2d33fc3d36dd5c49c6939a6760168cf21e594d502d8a84faaabe94027d11",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -5913,21 +5936,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "ac7a797fa6643f96a668f7affdc3d61e9c78c94c06800cc827cb3b4ab4b060c2",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-09T11:47:50.835Z",
-      "rawEndpointVerifiedAt": "2026-07-09T11:47:50.835Z",
-      "gitOriginVerifiedAt": "2026-07-09T11:47:50.835Z",
+      "githubApiVerifiedAt": "2026-07-09T11:48:15.320Z",
+      "rawEndpointVerifiedAt": "2026-07-09T11:48:15.320Z",
+      "gitOriginVerifiedAt": "2026-07-09T11:48:15.320Z",
       "routeContentHashes": {
-        "github-api": "ac7a797fa6643f96a668f7affdc3d61e9c78c94c06800cc827cb3b4ab4b060c2",
+        "github-api": "451d2d33fc3d36dd5c49c6939a6760168cf21e594d502d8a84faaabe94027d11",
         "raw-cdn": "ac7a797fa6643f96a668f7affdc3d61e9c78c94c06800cc827cb3b4ab4b060c2",
-        "git-origin": "ac7a797fa6643f96a668f7affdc3d61e9c78c94c06800cc827cb3b4ab4b060c2"
+        "git-origin": "451d2d33fc3d36dd5c49c6939a6760168cf21e594d502d8a84faaabe94027d11"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "55cb15299d5be2f03581dd9505e651ffe4952295",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "8005a7100350a9307ab9b7de05b87139703e488f",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 706,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -5941,9 +5964,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 571,
+    "lastSyncedSprint": 572,
     "lastSyncedAt": "2026-07-09",
-    "milestoneProgress": "590-599 ACTIVE (6/10)",
+    "milestoneProgress": "590-599 ACTIVE (7/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -6110,7 +6133,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase D — Phase C Pin Re-anchor Milestone milestone (590-599) active — Sprint 571 closed; Sprint 572 queued",
+    "phaseE": "Drawing Intelligence Phase D — Phase C Pin Re-anchor Milestone milestone (590-599) active — Sprint 572 closed; Sprint 573 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -6123,7 +6146,7 @@
     "sprint382": "No new growth event kinds — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint379": "No new growth event kinds — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Drawing Intelligence Phase D — Phase C pin re-anchor on revision change Milestone (590-599) active Sprint 571 (6/10); remote seed → localStorage hydrate complete",
+    "phaseD": "Drawing Intelligence Phase D — Phase C pin re-anchor on revision change Milestone (590-599) active Sprint 572 (7/10); cold-start regeneration after remote seed complete",
     "phaseB": "Phase C pin re-anchor on revision change milestone active (590-599) — technical items complete; UX validation automation foundation Sprint 566"
   },
   "digitalBrainImpact": {
@@ -6220,7 +6243,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 590-599 6/10 sprints closed (60%); latest growth-event sprint 400; Sprint 571 closed; Sprint 572 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 590-599 7/10 sprints closed (70%); latest growth-event sprint 400; Sprint 572 closed; Sprint 573 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -6429,7 +6452,8 @@
     "sprint568": "No new growth event kinds — Phase B validation matrix Phase C pin re-anchor on revision change row wiring; Milestone 590–599 at 3/10",
     "sprint569": "No new growth event kinds — Phase C pin re-anchor on revision change UI assertions; Milestone 590–599 at 4/10",
     "sprint570": "No new growth event kinds — Phase C pin re-anchor on revision change localStorage mirror reconciliation; Milestone 590–599 at 5/10",
-    "sprint571": "No new growth event kinds — Phase C pin re-anchor on revision change remote seed → localStorage hydrate path; Milestone 590–599 at 6/10"
+    "sprint571": "No new growth event kinds — Phase C pin re-anchor on revision change remote seed → localStorage hydrate path; Milestone 590–599 at 6/10",
+    "sprint572": "No new growth event kinds — Phase C pin re-anchor on revision change cold-start regeneration after remote seed; Milestone 590–599 at 7/10"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -6701,7 +6725,8 @@
     "sprint568": "No direct KG edge changes — Phase B validation matrix Phase C pin re-anchor on revision change row wiring; Milestone 590–599 at 3/10",
     "sprint569": "No direct KG edge changes — Phase C pin re-anchor on revision change UI assertions (phase-c-revision-role-path-banner chrome); Milestone 590–599 at 4/10",
     "sprint570": "localStorage ↔ remote intelligence_json mirror reconciliation contract — durable Supabase indices stay consistent with di-phase-c-pin-reanchor-* offline mirror; Milestone 590–599 at 5/10",
-    "sprint571": "Remote Supabase intelligence_json indices seed di-phase-c-pin-reanchor-* localStorage mirror for cold-start hydrate; Milestone 590–599 at 6/10"
+    "sprint571": "Remote Supabase intelligence_json indices seed di-phase-c-pin-reanchor-* localStorage mirror for cold-start hydrate; Milestone 590–599 at 6/10",
+    "sprint572": "When localStorage cleared after prior remote seed, di-phase-c-pin-reanchor-* indexed sheets regenerate from durable Supabase intelligence_json; Milestone 590–599 at 7/10"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
@@ -6787,7 +6812,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase C Pin Re-anchor Milestone (590-599) active 6/10; Sprint 571 closed; Sprint 572 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Phase C pin re-anchor on revision change cold-start regeneration after remote se)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase C Pin Re-anchor Milestone (590-599) active 7/10; Sprint 572 closed; Sprint 573 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Phase C pin re-anchor on revision change full hydrate / persist path — sprint-57)",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -6991,7 +7016,8 @@
     "sprint568": "Milestone 590–599 Drawing Intelligence Phase D — Phase C pin re-anchor on revision change at 3/10 — Phase B validation matrix row wiring — sprint-568-selftest.ts",
     "sprint569": "Milestone 590–599 Drawing Intelligence Phase D — Phase C pin re-anchor on revision change at 4/10 — UI assertions — sprint-569-selftest.ts",
     "sprint570": "Milestone 590–599 Drawing Intelligence Phase D — Phase C pin re-anchor on revision change at 5/10 — localStorage mirror reconciliation — sprint-570-selftest.ts",
-    "sprint571": "Milestone 590–599 Drawing Intelligence Phase D — Phase C pin re-anchor on revision change at 6/10 — remote seed → localStorage hydrate — sprint-571-selftest.ts"
+    "sprint571": "Milestone 590–599 Drawing Intelligence Phase D — Phase C pin re-anchor on revision change at 6/10 — remote seed → localStorage hydrate — sprint-571-selftest.ts",
+    "sprint572": "Milestone 590–599 Drawing Intelligence Phase D — Phase C pin re-anchor on revision change at 7/10 — cold-start regeneration after remote seed — sprint-572-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
