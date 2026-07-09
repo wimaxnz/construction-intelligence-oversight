@@ -19,6 +19,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 
+## Sprint 522 close-out (2026-07-09)
+
+Milestone **540–549 Phase D Intelligence Index Backfill** at **7/10**. Stream 1: Intelligence index backfill cold-start regeneration after remote seed (`assertIntelligenceIndexBackfillColdStartRegenerationAfterRemoteSeed`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **523** queued.
+
 ## Sprint 521 close-out (2026-07-09)
 
 Milestone **540–549 Phase D Intelligence Index Backfill** at **6/10**. Stream 1: Intelligence index backfill remote seed → localStorage hydrate (`assertIntelligenceIndexBackfillRemoteSeedLocalStorageHydrate`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **522** queued.
