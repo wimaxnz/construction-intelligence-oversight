@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 540–549 Phase D Intelligence Index Backfill (8/10); Sprint 524 queued.
+**Status:** Active — Milestone 540–549 Phase D Intelligence Index Backfill (9/10); Sprint 525 queued.
 
 **Last updated:** 2026-07-09
-**Current sprint:** 523 closed  
-**Next sprint:** 524 queued
-**Milestone:** 540–549 Phase D Intelligence Index Backfill active (8/10)
+**Current sprint:** 524 closed  
+**Next sprint:** 525 queued
+**Milestone:** 540–549 Phase D Intelligence Index Backfill active (9/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
+
+## Sprint 524 summary
+
+Intelligence index backfill remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 (`assertIntelligenceIndexBackfillRemoteReadAfterWriteRoundTrip` · `roundTripIntelligenceIndexBackfillIndexedSheetsRemoteReadAfterWrite` · `runIntelligenceIndexBackfillRemoteReadAfterWriteRoundTrip` · `docs/INTELLIGENCE_INDEX_BACKFILL_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-524-selftest.ts`.
 
 ## Sprint 523 summary
 
@@ -422,10 +426,12 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (524)
+## Next sprint (525)
 
-- Stream 1: Intelligence index backfill remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-524-selftest.ts
+- Stream 1: Milestone wrap review — Drawing Intelligence Phase D Intelligence Index Backfill completeness — sprint-525-selftest.ts
 - Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+
+
 
 
 
