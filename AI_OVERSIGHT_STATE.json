@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-09",
   "currentSprint": {
-    "number": 577,
+    "number": 578,
     "status": "closed",
-    "previousClosed": 576,
+    "previousClosed": 577,
     "closedDate": "2026-07-09"
   },
   "currentMilestone": {
@@ -23,15 +23,15 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 2,
-    "percentComplete": 20,
+    "sprintsClosed": 3,
+    "percentComplete": 30,
     "nextWrapReviewSprint": 575,
     "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Phase B validation matrix Phase C change cloud detection (assistive) row wiring — sprint-578-selftest.ts"
+      "focus": "Phase C change cloud detection (assistive) UI assertions — sprint-579-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -1712,6 +1712,12 @@
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (exclusive re-run for new result id; stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 600–609 at 2/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); UI-PHASE-C-CHANGE-CLOUD passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
       "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; full Phase C change cloud detection (assistive) UI assertions deferred to Sprint 578+"
+    },
+    "sprint578": {
+      "stream1": "Phase B validation matrix Phase C change cloud detection (assistive) row wiring — buildPhaseCChangeCloudPhaseBMatrixRow · resolvePhaseCChangeCloudPhaseBMatrixStatus · PHASE_C_CHANGE_CLOUD_PHASE_B_MATRIX_AREA · phase-b-wynyard-validation.ts · sprint-578-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 600–609 at 3/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); Phase B matrix Phase C change cloud detection (assistive) row wired; UI-PHASE-C-CHANGE-CLOUD passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
+      "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; fuller Phase C change cloud detection (assistive) UI assertions deferred to Sprint 579+"
     }
   },
   "changedFiles": {
@@ -5350,6 +5356,21 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint578": [
+      "src/platform/validation/phaseCChangeCloudValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_C_CHANGE_CLOUD_PLAN.json",
+      "scripts/sprint-578-selftest.ts",
+      "scripts/sprint-578-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -5826,14 +5847,16 @@
       "sprint576": "Milestone 600–609 opens — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Phase C change cloud detection (assistive) foundation; consecutiveGreen reuse when stampede=0)",
       "sprint576PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
       "sprint577": "Milestone 600–609 at 2/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Playwright Phase C change cloud detection (assistive) assertion scaffold)",
-      "sprint577PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3 exclusive for UI-PHASE-C-CHANGE-CLOUD; stampede=0); UI-PHASE-C-CHANGE-CLOUD passed"
+      "sprint577PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3 exclusive for UI-PHASE-C-CHANGE-CLOUD; stampede=0); UI-PHASE-C-CHANGE-CLOUD passed",
+      "sprint578": "Milestone 600–609 at 3/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase B validation matrix Phase C change cloud detection (assistive) row wiring)",
+      "sprint578PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase B matrix Phase C change cloud detection (assistive) row wired; UI-PHASE-C-CHANGE-CLOUD passed"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-09",
       "lastCertifiedBaseline": "2026-07-09",
       "status": "current — recertified Sprint 576 (600-609 Phase C change cloud detection (assistive) opens 1/10 Finding 4)",
       "sprintRangeCovered": "526–526 (Drawing Intelligence Phase D — Phase C change cloud detection (assistive) Milestone 600-609 opens)",
-      "deltaSinceCertification": "Sprints 130–527 delivered (398 sprints); Milestone 600-609 at 2/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Playwright Phase C change cloud detection (assistive) assertion scaffold (docs/PHASE_C_CHANGE_CLOUD_PLAN.json); Platform Certification 3/3 recertified Sprint 586 (Finding 4)",
+      "deltaSinceCertification": "Sprints 130–528 delivered (399 sprints); Milestone 600-609 at 3/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase B validation matrix Phase C change cloud detection (assistive) row wiring (docs/PHASE_C_CHANGE_CLOUD_PLAN.json); Platform Certification 3/3 recertified Sprint 586 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -5850,12 +5873,12 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 600–609 at 2/10, Sprint 577 closed, Sprint 578 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 577 Playwright Phase C change cloud detection (assistive) scaffold logged",
-    "docs/PHASE_C_CHANGE_CLOUD_PLAN.json — playwrightExtensionScaffoldComplete Sprint 577",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 577 closed, milestone 600-609 active (2/10), Sprint 578 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 577 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 577 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 600–609 at 3/10, Sprint 578 closed, Sprint 579 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 578 Phase B validation matrix Phase C change cloud detection (assistive) row wiring logged",
+    "docs/PHASE_C_CHANGE_CLOUD_PLAN.json — phaseBValidationMatrixRowWiringComplete Sprint 578",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 578 closed, milestone 600-609 active (3/10), Sprint 579 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 578 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 578 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -6001,11 +6024,11 @@
     }
   ],
   "nextSprint": {
-    "number": 578,
-    "stream1": "Phase B validation matrix Phase C change cloud detection (assistive) row wiring — sprint-578-selftest.ts",
+    "number": 579,
+    "stream1": "Phase C change cloud detection (assistive) UI assertions — sprint-579-selftest.ts",
     "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-578-selftest.ts",
-    "credentialNote": "GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 600-609 Phase D Phase C change cloud detection (assistive) active (2/10); Playwright scaffold complete docs/PHASE_C_CHANGE_CLOUD_PLAN.json"
+    "selftest": "scripts/sprint-579-selftest.ts",
+    "credentialNote": "GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 600-609 Phase D Phase C change cloud detection (assistive) active (3/10); Phase B matrix row wiring complete docs/PHASE_C_CHANGE_CLOUD_PLAN.json"
   },
   "oversightSync": {
     "status": "degraded",
@@ -6016,7 +6039,7 @@
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-09T12:38:51.9446730Z",
+    "sanitizedAt": "2026-07-09T12:39:44.2766472Z",
     "pushedAt": "2026-07-09T11:51:32.889Z",
     "remoteHeadSha": "6f5087da409f58daf6ddeb6dbe8025782751f9a6",
     "publicStateVerifiedAt": "2026-07-09T11:51:32.889Z",
@@ -6081,9 +6104,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 577,
+    "lastSyncedSprint": 578,
     "lastSyncedAt": "2026-07-09",
-    "milestoneProgress": "600-609 ACTIVE (2/10)",
+    "milestoneProgress": "600-609 ACTIVE (3/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -6250,7 +6273,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase D — Phase C Change Cloud Detection Milestone milestone (600-609) active — Sprint 577 closed; Sprint 578 queued",
+    "phaseE": "Drawing Intelligence Phase D — Phase C Change Cloud Detection Milestone milestone (600-609) active — Sprint 578 closed; Sprint 579 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -6263,7 +6286,7 @@
     "sprint382": "No new growth event kinds — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint379": "No new growth event kinds — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Drawing Intelligence Phase D — Phase C change cloud detection (assistive) Milestone (600-609) active Sprint 577 (2/10); Playwright assertion scaffold complete",
+    "phaseD": "Drawing Intelligence Phase D — Phase C change cloud detection (assistive) Milestone (600-609) active Sprint 578 (3/10); Phase B validation matrix Phase C change cloud detection (assistive) row wiring complete",
     "phaseB": "Phase C change cloud detection (assistive) milestone active (600-609) — technical items complete; UX validation automation foundation Sprint 576"
   },
   "digitalBrainImpact": {
@@ -6360,7 +6383,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 600-609 2/10 sprints closed (20%); latest growth-event sprint 400; Sprint 577 closed; Sprint 578 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 600-609 3/10 sprints closed (30%); latest growth-event sprint 400; Sprint 578 closed; Sprint 579 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -6575,7 +6598,8 @@
     "sprint574": "No new growth event kinds — Phase C pin re-anchor on revision change remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 590–599 at 9/10",
     "sprint575": "No new growth event kinds — milestone 590–599 wrap completeness review confirms Phase C pin re-anchor on revision change full stack audit (foundation · Playwright · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip); milestone closed; 590–599 opens Sprint 576",
     "sprint576": "No new growth event kinds — Phase C change cloud detection (assistive) foundation defines role critical path + checklist contracts for site-team workflow validation; Milestone 600–609 opens Sprint 586",
-    "sprint577": "No new growth event kinds — Playwright Phase C change cloud detection (assistive) scaffold reads phase-c-revision-role-path-banner + phase-c-revision-signoff-checklist + phase-c-revision-mobile-target-size; Milestone 600–609 at 2/10"
+    "sprint577": "No new growth event kinds — Playwright Phase C change cloud detection (assistive) scaffold reads phase-c-revision-role-path-banner + phase-c-revision-signoff-checklist + phase-c-revision-mobile-target-size; Milestone 600–609 at 2/10",
+    "sprint578": "No new growth event kinds — Phase B validation matrix Phase C change cloud detection (assistive) row wiring; Milestone 600–609 at 3/10"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -6853,7 +6877,8 @@
     "sprint574": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 590–599 at 9/10",
     "sprint575": "Milestone 590–599 wrap confirms durable Phase C pin re-anchor on revision change validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 590–599 Phase C Pin Re-anchor opens Sprint 576",
     "sprint576": "Phase C change cloud detection (assistive) foundation — role-based critical path coverage for visual_overlay · foreman · PM · QS · mobile/tablet; Milestone 600–609 opens Sprint 586",
-    "sprint577": "Playwright Phase C change cloud detection (assistive) assertion scaffold — role critical path + checklist UI chrome; Milestone 600–609 at 2/10"
+    "sprint577": "Playwright Phase C change cloud detection (assistive) assertion scaffold — role critical path + checklist UI chrome; Milestone 600–609 at 2/10",
+    "sprint578": "No direct KG edge changes — Phase B validation matrix Phase C change cloud detection (assistive) row wiring; Milestone 600–609 at 3/10"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
@@ -6939,7 +6964,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase C Change Cloud Detection Milestone (600-609) active 2/10; Sprint 577 closed; Sprint 578 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Phase B validation matrix Phase C change cloud detection (assistive) row wiring )",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase C Change Cloud Detection Milestone (600-609) active 3/10; Sprint 578 closed; Sprint 579 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Phase C change cloud detection (assistive) UI assertions — sprint-579-selftest.t)",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -7149,7 +7174,8 @@
     "sprint574": "Milestone 590–599 Drawing Intelligence Phase D — Phase C pin re-anchor on revision change at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-574-selftest.ts",
     "sprint575": "Milestone 590–599 Drawing Intelligence Phase D — Phase C pin re-anchor on revision change wrap completeness review — full stack audit; milestone closed; 590–599 opens Sprint 576 — sprint-575-selftest.ts",
     "sprint576": "Milestone 600–609 Drawing Intelligence Phase D — Phase C change cloud detection (assistive) opens — validation automation foundation — sprint-576-selftest.ts",
-    "sprint577": "Milestone 600–609 Drawing Intelligence Phase D — Phase C change cloud detection (assistive) at 2/10 — Playwright assertion scaffold — sprint-577-selftest.ts"
+    "sprint577": "Milestone 600–609 Drawing Intelligence Phase D — Phase C change cloud detection (assistive) at 2/10 — Playwright assertion scaffold — sprint-577-selftest.ts",
+    "sprint578": "Milestone 600–609 Drawing Intelligence Phase D — Phase C change cloud detection (assistive) at 3/10 — Phase B validation matrix row wiring — sprint-578-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",

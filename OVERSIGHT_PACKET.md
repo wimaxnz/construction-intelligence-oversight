@@ -1,10 +1,10 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 600–609 Phase D Phase C change cloud detection (assistive) (2/10); Sprint 578 queued.
+**Status:** Active — Milestone 600–609 Phase D Phase C change cloud detection (assistive) (3/10); Sprint 579 queued.
 
 **Last updated:** 2026-07-09
-**Current sprint:** 577 closed  
-**Next sprint:** 578 queued
+**Current sprint:** 578 closed  
+**Next sprint:** 579 queued
 **Milestone:** 550–559 WRAP CLOSED (10/10) · 560–569 Phase C Revision Management opens Sprint 536
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
