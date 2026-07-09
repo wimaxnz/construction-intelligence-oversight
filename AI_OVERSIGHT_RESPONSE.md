@@ -19,6 +19,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 
+## Sprint 526 close-out (2026-07-09)
+
+Milestone **550–559 Phase D Phase B UX Sign-off OPENS** (1/10). Theme: Phase B UX sign-off — workflows natural for site teams (DRAWING_INTELLIGENCE_ROADMAP.md Phase B exit criteria UX). Stream 1: Phase B UX sign-off validation automation foundation (`phaseBUxSignoffValidationService`). Stream 2: Platform Certification recertification post-milestone-close (Finding 4) · PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **527** queued.
+
 ## Sprint 525 close-out (2026-07-09)
 
 Milestone **540–549 Phase D Intelligence Index Backfill WRAP CLOSED** (10/10). Stream 1: milestone wrap completeness review. Stream 2: intelligence index backfill full stack completeness audit (foundation · Playwright scaffold · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Platform Certification recertified post-milestone-close (Finding 4). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **526** queued (550–559 Phase B UX Sign-off opens).
