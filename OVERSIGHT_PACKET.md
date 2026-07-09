@@ -1,9 +1,9 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 570–579 Phase D Phase C revision compare & overlay (2/10); Sprint 538 queued.
+**Status:** Active — Milestone 570–579 Phase D Phase C revision compare & overlay (2/10); Sprint 548 queued.
 
 **Last updated:** 2026-07-09
-**Current sprint:** 527 closed  
+**Current sprint:** 547 closed  
 **Next sprint:** 528 queued
 **Milestone:** 550–559 WRAP CLOSED (10/10) · 560–569 Phase C Revision Management opens Sprint 536
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
@@ -51,6 +51,7 @@ Playwright Phase C revision management assertion scaffold (`UI-PHASE-C-REVISION-
 ## Sprint 547 summary
 
 Playwright Phase C revision compare & overlay assertion scaffold (`UI-PHASE-C-REVISION-COMPARE` in `phase-b-wynyard-validation.ts` · `phaseCRevisionCompareValidationService` · `docs/PHASE_C_REVISION_COMPARE_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-547-selftest.ts`.
+
 
 ## Sprint 536 summary
 
