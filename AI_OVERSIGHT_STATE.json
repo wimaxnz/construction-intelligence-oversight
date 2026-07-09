@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-09",
   "currentSprint": {
-    "number": 560,
+    "number": 561,
     "status": "closed",
-    "previousClosed": 559,
+    "previousClosed": 560,
     "closedDate": "2026-07-09"
   },
   "currentMilestone": {
@@ -23,15 +23,15 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 5,
-    "percentComplete": 50,
+    "sprintsClosed": 6,
+    "percentComplete": 60,
     "nextWrapReviewSprint": 565,
     "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Phase C bulk upload engine remote seed → localStorage hydrate — sprint-561-selftest.ts"
+      "focus": "Phase C bulk upload engine cold-start regeneration after remote seed — sprint-562-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -1610,6 +1610,12 @@
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 580–589 at 5/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); localStorage mirror reconciliation wired; UI-PHASE-C-BULK-UPLOAD passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
       "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; Phase C bulk upload engine remote seed → localStorage hydrate deferred to Sprint 521+"
+    },
+    "sprint561": {
+      "stream1": "Phase C bulk upload engine remote seed → localStorage hydrate — assertPhaseCBulkUploadRemoteSeedLocalStorageHydrate · seedphaseCBulkUploadLocalStorageFromRemoteHydrate · buildPhaseCBulkUploadLocalStorageHydratePayload · runphaseCBulkUploadRemoteSeedLocalStorageHydrate · phase-b-wynyard-validation.ts · sprint-561-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 580–589 at 6/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote seed → localStorage hydrate wired; UI-PHASE-C-BULK-UPLOAD passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
+      "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; Phase C bulk upload engine cold-start regeneration after remote seed deferred to Sprint 522+"
     }
   },
   "changedFiles": {
@@ -4987,6 +4993,21 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint561": [
+      "src/platform/validation/phaseCBulkUploadValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_C_BULK_UPLOAD_PLAN.json",
+      "scripts/sprint-561-selftest.ts",
+      "scripts/sprint-561-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -5429,14 +5450,16 @@
       "sprint559": "Milestone 580–589 at 4/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase C bulk upload engine UI assertions)",
       "sprint559PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase C bulk upload engine UI assertions wired; UI-PHASE-C-BULK-UPLOAD passed",
       "sprint560": "Milestone 580–589 at 5/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + localStorage mirror reconciliation)",
-      "sprint560PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); localStorage mirror reconciliation wired; UI-PHASE-C-BULK-UPLOAD passed"
+      "sprint560PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); localStorage mirror reconciliation wired; UI-PHASE-C-BULK-UPLOAD passed",
+      "sprint561": "Milestone 580–589 at 6/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote seed → localStorage hydrate)",
+      "sprint561PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); remote seed → localStorage hydrate wired; UI-PHASE-C-BULK-UPLOAD passed"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-09",
       "lastCertifiedBaseline": "2026-07-09",
       "status": "current — recertified Sprint 556 (580-589 Phase C bulk upload engine opens 1/10 Finding 4)",
       "sprintRangeCovered": "526–526 (Drawing Intelligence Phase D — Phase C bulk upload engine Milestone 580-589 opens)",
-      "deltaSinceCertification": "Sprints 130–530 delivered (401 sprints); Milestone 580-589 at 5/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); localStorage mirror reconciliation (docs/PHASE_C_BULK_UPLOAD_PLAN.json); Platform Certification 3/3 recertified Sprint 566 (Finding 4)",
+      "deltaSinceCertification": "Sprints 130–531 delivered (402 sprints); Milestone 580-589 at 6/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); remote seed → localStorage hydrate (docs/PHASE_C_BULK_UPLOAD_PLAN.json); Platform Certification 3/3 recertified Sprint 566 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -5453,12 +5476,12 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 580–589 at 5/10, Sprint 560 closed, Sprint 561 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 560 localStorage mirror reconciliation logged",
-    "docs/PHASE_C_BULK_UPLOAD_PLAN.json — localStorageMirrorReconciliationComplete Sprint 560",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 560 closed, milestone 580-589 active (5/10), Sprint 561 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 560 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 560 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 580–589 at 6/10, Sprint 561 closed, Sprint 562 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 561 remote seed → localStorage hydrate logged",
+    "docs/PHASE_C_BULK_UPLOAD_PLAN.json — remoteSeedLocalStorageHydrateComplete Sprint 561",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 561 closed, milestone 580-589 active (6/10), Sprint 562 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 561 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 561 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -5604,27 +5627,27 @@
     }
   ],
   "nextSprint": {
-    "number": 561,
-    "stream1": "Phase C bulk upload engine remote seed → localStorage hydrate — sprint-561-selftest.ts",
+    "number": 562,
+    "stream1": "Phase C bulk upload engine cold-start regeneration after remote seed — sprint-562-selftest.ts",
     "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-561-selftest.ts",
-    "credentialNote": "GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 580-589 Phase D Phase C bulk upload engine active (5/10); localStorage mirror reconciliation complete docs/PHASE_C_BULK_UPLOAD_PLAN.json"
+    "selftest": "scripts/sprint-562-selftest.ts",
+    "credentialNote": "GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 580-589 Phase D Phase C bulk upload engine active (6/10); remote seed → localStorage hydrate complete docs/PHASE_C_BULK_UPLOAD_PLAN.json"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-09T11:05:26.463Z",
+    "lastPushAttempt": "2026-07-09T11:05:52.984Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-09T11:05:26.463Z",
+    "verifiedAt": "2026-07-09T11:05:52.984Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-09T11:05:04.5542052Z",
-    "pushedAt": "2026-07-09T11:05:26.463Z",
-    "remoteHeadSha": "faf4065143e09141efc2b477f108f6c3e5afc5be",
-    "publicStateVerifiedAt": "2026-07-09T11:05:26.463Z",
+    "sanitizedAt": "2026-07-09T11:06:18.1820210Z",
+    "pushedAt": "2026-07-09T11:05:52.984Z",
+    "remoteHeadSha": "54fd38ae771c2167f8205feef8e52dfca17ddeb1",
+    "publicStateVerifiedAt": "2026-07-09T11:05:52.984Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "2c5e65fd5dc9c78904bcdde82945bbf76eab5404b91666e59d667712c2dcb391",
+    "publicStateContentHash": "f147b5d62aac0e8014b95d02d2573a9b0e2f279605da03db30da00f85278e1a5",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -5656,21 +5679,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "2c5e65fd5dc9c78904bcdde82945bbf76eab5404b91666e59d667712c2dcb391",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-09T11:05:26.463Z",
-      "rawEndpointVerifiedAt": "2026-07-09T11:05:26.463Z",
-      "gitOriginVerifiedAt": "2026-07-09T11:05:26.463Z",
+      "githubApiVerifiedAt": "2026-07-09T11:05:52.984Z",
+      "rawEndpointVerifiedAt": "2026-07-09T11:05:52.984Z",
+      "gitOriginVerifiedAt": "2026-07-09T11:05:52.984Z",
       "routeContentHashes": {
-        "github-api": "2c5e65fd5dc9c78904bcdde82945bbf76eab5404b91666e59d667712c2dcb391",
+        "github-api": "f147b5d62aac0e8014b95d02d2573a9b0e2f279605da03db30da00f85278e1a5",
         "raw-cdn": "2c5e65fd5dc9c78904bcdde82945bbf76eab5404b91666e59d667712c2dcb391",
-        "git-origin": "2c5e65fd5dc9c78904bcdde82945bbf76eab5404b91666e59d667712c2dcb391"
+        "git-origin": "f147b5d62aac0e8014b95d02d2573a9b0e2f279605da03db30da00f85278e1a5"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "faf4065143e09141efc2b477f108f6c3e5afc5be",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "54fd38ae771c2167f8205feef8e52dfca17ddeb1",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 684,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -5684,9 +5707,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 560,
+    "lastSyncedSprint": 561,
     "lastSyncedAt": "2026-07-09",
-    "milestoneProgress": "580-589 ACTIVE (5/10)",
+    "milestoneProgress": "580-589 ACTIVE (6/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -5853,7 +5876,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase D — Phase C Bulk Upload Milestone milestone (580-589) active — Sprint 560 closed; Sprint 561 queued",
+    "phaseE": "Drawing Intelligence Phase D — Phase C Bulk Upload Milestone milestone (580-589) active — Sprint 561 closed; Sprint 562 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -5866,7 +5889,7 @@
     "sprint382": "No new growth event kinds — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint379": "No new growth event kinds — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Drawing Intelligence Phase D — Phase C bulk upload engine Milestone (580-589) active Sprint 560 (5/10); localStorage mirror reconciliation complete",
+    "phaseD": "Drawing Intelligence Phase D — Phase C bulk upload engine Milestone (580-589) active Sprint 561 (6/10); remote seed → localStorage hydrate complete",
     "phaseB": "Phase C bulk upload engine milestone active (580-589) — technical items complete; UX validation automation foundation Sprint 556"
   },
   "digitalBrainImpact": {
@@ -5963,7 +5986,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 580-589 5/10 sprints closed (50%); latest growth-event sprint 400; Sprint 560 closed; Sprint 561 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 580-589 6/10 sprints closed (60%); latest growth-event sprint 400; Sprint 561 closed; Sprint 562 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -6161,7 +6184,8 @@
     "sprint557": "No new growth event kinds — Playwright Phase C bulk upload engine scaffold reads phase-c-revision-role-path-banner + phase-c-revision-signoff-checklist + phase-c-revision-mobile-target-size; Milestone 580–589 at 2/10",
     "sprint558": "No new growth event kinds — Phase B validation matrix Phase C bulk upload engine row wiring; Milestone 580–589 at 3/10",
     "sprint559": "No new growth event kinds — Phase C bulk upload engine UI assertions; Milestone 580–589 at 4/10",
-    "sprint560": "No new growth event kinds — Phase C bulk upload engine localStorage mirror reconciliation; Milestone 580–589 at 5/10"
+    "sprint560": "No new growth event kinds — Phase C bulk upload engine localStorage mirror reconciliation; Milestone 580–589 at 5/10",
+    "sprint561": "No new growth event kinds — Phase C bulk upload engine remote seed → localStorage hydrate path; Milestone 580–589 at 6/10"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -6422,7 +6446,8 @@
     "sprint557": "Playwright Phase C bulk upload engine assertion scaffold — role critical path + checklist UI chrome; Milestone 580–589 at 2/10",
     "sprint558": "No direct KG edge changes — Phase B validation matrix Phase C bulk upload engine row wiring; Milestone 580–589 at 3/10",
     "sprint559": "No direct KG edge changes — Phase C bulk upload engine UI assertions (phase-c-revision-role-path-banner chrome); Milestone 580–589 at 4/10",
-    "sprint560": "localStorage ↔ remote intelligence_json mirror reconciliation contract — durable Supabase indices stay consistent with di-phase-c-bulk-upload-* offline mirror; Milestone 580–589 at 5/10"
+    "sprint560": "localStorage ↔ remote intelligence_json mirror reconciliation contract — durable Supabase indices stay consistent with di-phase-c-bulk-upload-* offline mirror; Milestone 580–589 at 5/10",
+    "sprint561": "Remote Supabase intelligence_json indices seed di-phase-c-bulk-upload-* localStorage mirror for cold-start hydrate; Milestone 580–589 at 6/10"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
@@ -6508,7 +6533,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase C Bulk Upload Milestone (580-589) active 5/10; Sprint 560 closed; Sprint 561 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Phase C bulk upload engine remote seed → localStorage hydrate — sprint-561-selft)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase C Bulk Upload Milestone (580-589) active 6/10; Sprint 561 closed; Sprint 562 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Phase C bulk upload engine cold-start regeneration after remote seed — sprint-56)",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -6701,7 +6726,8 @@
     "sprint557": "Milestone 580–589 Drawing Intelligence Phase D — Phase C bulk upload engine at 2/10 — Playwright assertion scaffold — sprint-557-selftest.ts",
     "sprint558": "Milestone 580–589 Drawing Intelligence Phase D — Phase C bulk upload engine at 3/10 — Phase B validation matrix row wiring — sprint-558-selftest.ts",
     "sprint559": "Milestone 580–589 Drawing Intelligence Phase D — Phase C bulk upload engine at 4/10 — UI assertions — sprint-559-selftest.ts",
-    "sprint560": "Milestone 580–589 Drawing Intelligence Phase D — Phase C bulk upload engine at 5/10 — localStorage mirror reconciliation — sprint-560-selftest.ts"
+    "sprint560": "Milestone 580–589 Drawing Intelligence Phase D — Phase C bulk upload engine at 5/10 — localStorage mirror reconciliation — sprint-560-selftest.ts",
+    "sprint561": "Milestone 580–589 Drawing Intelligence Phase D — Phase C bulk upload engine at 6/10 — remote seed → localStorage hydrate — sprint-561-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
