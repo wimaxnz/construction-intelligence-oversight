@@ -59,6 +59,10 @@ Milestone **550–559 Phase D Phase C revision management** at **3/10**. Stream 
 
 Milestone **550–559 Phase D Phase C revision management** at **2/10**. Stream 1: Playwright Phase C revision management assertion scaffold (`UI-PHASE-C-REVISION-MANAGEMENT`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (exclusive for new result id; stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **528** queued.
 
+## Sprint 553 close-out (2026-07-09)
+
+Milestone **570–579 Phase D Phase C revision compare & overlay** at **8/10**. Stream 1: Phase C revision compare & overlay full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 (`assertPhaseCRevisionCompareFullHydratePersistPath`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **524** queued.
+
 ## Sprint 552 close-out (2026-07-09)
 
 Milestone **570–579 Phase D Phase C revision compare & overlay** at **7/10**. Stream 1: Phase C revision compare & overlay cold-start regeneration after remote seed (`assertPhaseCRevisionCompareColdStartRegenerationAfterRemoteSeed`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **523** queued.
