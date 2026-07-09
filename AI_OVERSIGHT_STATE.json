@@ -1,15 +1,15 @@
 {
   "lastUpdated": "2026-07-09",
   "currentSprint": {
-    "number": 536,
+    "number": 545,
     "status": "closed",
-    "previousClosed": 535,
+    "previousClosed": 544,
     "closedDate": "2026-07-09"
   },
   "currentMilestone": {
     "range": "560-569",
     "milestoneId": "560-569",
-    "milestoneName": "Drawing Intelligence Phase D — Phase C Revision Management Milestone",
+    "milestoneName": "Drawing Intelligence Phase D — Phase C revision management Milestone",
     "plannedSprintCount": 10,
     "actualSprintStart": 536,
     "actualSprintEnd": 545,
@@ -17,25 +17,26 @@
     "status": "active",
     "theme": "Phase C revision management — revision compare and superseding (DRAWING_INTELLIGENCE_ROADMAP.md Phase C — Revision management & compare)",
     "openedDate": "2026-07-09",
+    "wrapClosedDate": "2026-07-09",
     "previousMilestoneClosed": "550-559 (Drawing Intelligence Phase D — Phase B UX Sign-off Milestone)",
     "nextMilestoneOpens": "570-579 (TBD per DRAWING_INTELLIGENCE_ROADMAP.md Phase D)",
-    "wrapComplete": false
+    "wrapComplete": true
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 1,
-    "percentComplete": 10,
+    "sprintsClosed": 10,
+    "percentComplete": 100,
     "nextWrapReviewSprint": 545,
-    "milestoneWrapComplete": false
+    "milestoneWrapComplete": true
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Playwright Phase C revision management assertion scaffold — sprint-537-selftest.ts"
+      "focus": "Milestone 570–579 TBD — Phase D next item per PLATFORM_EVOLUTION / DRAWING_INTELLIGENCE_ROADMAP.md — sprint-546-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
+      "focus": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
     }
   },
   "completedWork": {
@@ -1414,10 +1415,10 @@
       "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; full Playwright Phase B UX sign-off role-path UI assertions deferred to Sprint 527+"
     },
     "sprint527": {
-      "stream1": "Playwright Phase B UX sign-off assertion scaffold — parsePhaseBUxSignoffDomObservation · assertPhaseBUxSignoffObservation · buildPhaseBUxSignoffPlaywrightScaffoldSummary · PhaseBUxSignoffScaffold · phase-b-wynyard-validation.ts UI-PHASE-B-UX-SIGNOFF · sprint-527-selftest.ts",
+      "stream1": "Playwright Phase C revision management assertion scaffold — parsePhaseCRevisionManagementDomObservation · assertPhaseCRevisionManagementObservation · buildPhaseCRevisionManagementPlaywrightScaffoldSummary · phaseCRevisionManagementScaffold · phase-b-wynyard-validation.ts UI-PHASE-C-REVISION-MANAGEMENT · sprint-537-selftest.ts",
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (exclusive re-run for new result id; stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
-      "validation": "Milestone 550–559 at 2/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); UI-PHASE-B-UX-SIGNOFF passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
-      "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; full Phase B UX sign-off UI assertions deferred to Sprint 529+"
+      "validation": "Milestone 550–559 at 2/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); UI-PHASE-C-REVISION-MANAGEMENT passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
+      "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; full Phase C revision management UI assertions deferred to Sprint 539+"
     },
     "sprint528": {
       "stream1": "Phase B validation matrix Phase B UX sign-off row wiring — buildPhaseBUxSignoffPhaseBMatrixRow · resolvePhaseBUxSignoffPhaseBMatrixStatus · PHASE_B_UX_SIGNOFF_PHASE_B_MATRIX_AREA · phase-b-wynyard-validation.ts · sprint-528-selftest.ts",
@@ -1472,6 +1473,54 @@
       "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 550–559 opens selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
       "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; full Playwright Phase C revision management role-path UI assertions deferred to Sprint 537+"
+    },
+    "sprint538": {
+      "stream1": "Phase B validation matrix Phase C revision management row wiring — buildPhaseCRevisionManagementPhaseBMatrixRow · resolvePhaseCRevisionManagementPhaseBMatrixStatus · PHASE_C_REVISION_MANAGEMENT_PHASE_B_MATRIX_AREA · phase-b-wynyard-validation.ts · sprint-538-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 550–559 at 3/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); Phase B matrix Phase C revision management row wired; UI-PHASE-C-REVISION-MANAGEMENT passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
+      "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; fuller Phase C revision management UI assertions deferred to Sprint 539+"
+    },
+    "sprint539": {
+      "stream1": "Phase C revision management UI assertions — assertPhaseCRevisionManagementUiAssertions · runphaseCRevisionManagementUiAssertions · phaseCRevisionManagementScaffold · phase-b-wynyard-validation.ts · sprint-539-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 550–559 at 4/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); Phase C revision management UI assertions wired; UI-PHASE-C-REVISION-MANAGEMENT passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
+      "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; Phase C revision management localStorage mirror reconciliation deferred to Sprint 540+"
+    },
+    "sprint540": {
+      "stream1": "Phase C revision management localStorage mirror reconciliation — assertPhaseCRevisionManagementLocalStorageMirrorReconciliation · reconcilePhaseCRevisionManagementLocalStorageMirror · parsePhaseCRevisionManagementLocalStorageMirror · runphaseCRevisionManagementLocalStorageMirrorReconciliation · phase-b-wynyard-validation.ts · sprint-540-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 550–559 at 5/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); localStorage mirror reconciliation wired; UI-PHASE-C-REVISION-MANAGEMENT passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
+      "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; Phase C revision management remote seed → localStorage hydrate deferred to Sprint 521+"
+    },
+    "sprint541": {
+      "stream1": "Phase C revision management remote seed → localStorage hydrate — assertPhaseCRevisionManagementRemoteSeedLocalStorageHydrate · seedphaseCRevisionManagementLocalStorageFromRemoteHydrate · buildPhaseCRevisionManagementLocalStorageHydratePayload · runphaseCRevisionManagementRemoteSeedLocalStorageHydrate · phase-b-wynyard-validation.ts · sprint-541-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 550–559 at 6/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote seed → localStorage hydrate wired; UI-PHASE-C-REVISION-MANAGEMENT passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
+      "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; Phase C revision management cold-start regeneration after remote seed deferred to Sprint 522+"
+    },
+    "sprint542": {
+      "stream1": "Phase C revision management cold-start regeneration after remote seed — assertPhaseCRevisionManagementColdStartRegenerationAfterRemoteSeed · regeneratephaseCRevisionManagementLocalStorageAfterRemoteSeedColdStart · isPhaseCRevisionManagementLocalStorageClearedOrEmpty · runphaseCRevisionManagementColdStartRegenerationAfterRemoteSeed · phase-b-wynyard-validation.ts · sprint-542-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 550–559 at 7/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); cold-start regeneration after remote seed wired; UI-PHASE-C-REVISION-MANAGEMENT passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
+      "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; Phase C revision management full hydrate/persist path deferred to Sprint 523+"
+    },
+    "sprint543": {
+      "stream1": "Phase C revision management full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — assertPhaseCRevisionManagementFullHydratePersistPath · dualWritephaseCRevisionManagementStateRemotePath · buildPhaseCRevisionManagementFullHydratePersistPathSummary · runphaseCRevisionManagementFullHydratePersistPath · phase-b-wynyard-validation.ts · sprint-543-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 550–559 at 8/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); full hydrate / persist path dual-write / remote-authoritative wired; UI-PHASE-C-REVISION-MANAGEMENT passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
+      "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; Phase C revision management remote read-after-write round-trip deferred to Sprint 524+"
+    },
+    "sprint544": {
+      "stream1": "Phase C revision management remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — assertPhaseCRevisionManagementRemoteReadAfterWriteRoundTrip · roundTripPhaseCRevisionManagementStateRemoteReadAfterWrite · buildPhaseCRevisionManagementRemoteReadAfterWriteRoundTripSummary · runphaseCRevisionManagementRemoteReadAfterWriteRoundTrip · phase-b-wynyard-validation.ts · sprint-544-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 550–559 at 9/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-PHASE-C-REVISION-MANAGEMENT passed; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
+      "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; Milestone 550–559 wrap review deferred to Sprint 525"
+    },
+    "sprint545": {
+      "stream1": "Milestone wrap review — Drawing Intelligence Phase D Phase C revision management completeness — sprint-545-selftest.ts",
+      "stream2": "Milestone 550–559 Phase C revision management full stack completeness review — sprint-545-selftest.ts audits stack (foundation · Playwright scaffold · Phase B matrix · UI assertions · localStorage mirror reconciliation · remote seed hydrate · cold-start regeneration · full hydrate/persist path · remote read-after-write round-trip) · PHASE_B_RUNS=3 (consecutiveGreen reuse / exclusive when needed) · Platform Certification recertification post-milestone-close (Finding 4)",
+      "validation": "Milestone wrap selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; GitHub Integration sync triggered (9d4c94a); dashboard deploy confirm + post-sync RLS 7/7 + PHASE_B_RUNS=3 pending; deploy credentials fallback-only",
+      "deferred": "Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; next milestone 570–579 TBD deferred to Sprint 546"
     }
   },
   "changedFiles": {
@@ -4342,15 +4391,15 @@
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ],
     "sprint527": [
-      "src/platform/validation/phaseBUxSignoffValidationService.ts",
+      "src/platform/validation/phaseCRevisionManagementValidationService.ts",
       "[REDACTED-path]",
       "[REDACTED-path]",
       "[REDACTED-path]",
       "src/platform/index.ts",
       "scripts/phase-b-wynyard-validation.ts",
-      "docs/PHASE_B_UX_SIGNOFF_PLAN.json",
-      "scripts/sprint-527-selftest.ts",
-      "scripts/sprint-527-close-out.ts",
+      "docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json",
+      "scripts/sprint-537-selftest.ts",
+      "scripts/sprint-537-close-out.ts",
       "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
       "docs/di-screenshots/validation/results.json",
       "docs/PLATFORM_EVOLUTION.md",
@@ -4489,6 +4538,127 @@
       "scripts/sprint-536-close-out.ts",
       "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
       "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint538": [
+      "src/platform/validation/phaseCRevisionManagementValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json",
+      "scripts/sprint-538-selftest.ts",
+      "scripts/sprint-538-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint539": [
+      "src/platform/validation/phaseCRevisionManagementValidationService.ts",
+      "[REDACTED-path]",
+      "src/platform/index.ts",
+      "[REDACTED-path]",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json",
+      "scripts/sprint-539-selftest.ts",
+      "scripts/sprint-539-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint540": [
+      "src/platform/validation/phaseCRevisionManagementValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json",
+      "scripts/sprint-540-selftest.ts",
+      "scripts/sprint-540-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint541": [
+      "src/platform/validation/phaseCRevisionManagementValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json",
+      "scripts/sprint-541-selftest.ts",
+      "scripts/sprint-541-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint542": [
+      "src/platform/validation/phaseCRevisionManagementValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json",
+      "scripts/sprint-542-selftest.ts",
+      "scripts/sprint-542-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint543": [
+      "src/platform/validation/phaseCRevisionManagementValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json",
+      "scripts/sprint-543-selftest.ts",
+      "scripts/sprint-543-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint544": [
+      "src/platform/validation/phaseCRevisionManagementValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json",
+      "scripts/sprint-544-selftest.ts",
+      "scripts/sprint-544-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint545": [
+      "scripts/sprint-545-selftest.ts",
+      "scripts/sprint-545-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json",
+      "docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json",
+      "[REDACTED-path]",
       "docs/PLATFORM_EVOLUTION.md",
       "docs/PHASE_B_UX_ACCEPTANCE.md",
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
@@ -4871,8 +5041,8 @@
       "sprint525PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
       "sprint526": "Milestone 550–559 opens — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Phase B UX sign-off foundation; consecutiveGreen reuse when stampede=0)",
       "sprint526PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
-      "sprint527": "Milestone 550–559 at 2/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Playwright Phase B UX sign-off assertion scaffold)",
-      "sprint527PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3 exclusive for UI-PHASE-B-UX-SIGNOFF; stampede=0); UI-PHASE-B-UX-SIGNOFF passed",
+      "sprint527": "Milestone 550–559 at 2/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Playwright Phase C revision management assertion scaffold)",
+      "sprint527PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3 exclusive for UI-PHASE-C-REVISION-MANAGEMENT; stampede=0); UI-PHASE-C-REVISION-MANAGEMENT passed",
       "sprint528": "Milestone 550–559 at 3/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase B validation matrix Phase B UX sign-off row wiring)",
       "sprint528PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase B matrix Phase B UX sign-off row wired; UI-PHASE-B-UX-SIGNOFF passed",
       "sprint529": "Milestone 550–559 at 4/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase B UX sign-off UI assertions)",
@@ -4890,14 +5060,30 @@
       "sprint535": "Milestone 550–559 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Phase B UX sign-off full stack completeness audit)",
       "sprint535PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
       "sprint536": "Milestone 550–559 opens — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Phase C revision management foundation; consecutiveGreen reuse when stampede=0)",
-      "sprint536PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
+      "sprint536PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
+      "sprint538": "Milestone 550–559 at 3/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase B validation matrix Phase C revision management row wiring)",
+      "sprint538PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase B matrix Phase C revision management row wired; UI-PHASE-C-REVISION-MANAGEMENT passed",
+      "sprint539": "Milestone 550–559 at 4/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase C revision management UI assertions)",
+      "sprint539PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase C revision management UI assertions wired; UI-PHASE-C-REVISION-MANAGEMENT passed",
+      "sprint540": "Milestone 550–559 at 5/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + localStorage mirror reconciliation)",
+      "sprint540PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); localStorage mirror reconciliation wired; UI-PHASE-C-REVISION-MANAGEMENT passed",
+      "sprint541": "Milestone 550–559 at 6/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote seed → localStorage hydrate)",
+      "sprint541PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); remote seed → localStorage hydrate wired; UI-PHASE-C-REVISION-MANAGEMENT passed",
+      "sprint542": "Milestone 550–559 at 7/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + cold-start regeneration after remote seed)",
+      "sprint542PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); cold-start regeneration after remote seed wired; UI-PHASE-C-REVISION-MANAGEMENT passed",
+      "sprint543": "Milestone 550–559 at 8/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1)",
+      "sprint543PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); full hydrate / persist path dual-write / remote-authoritative wired; UI-PHASE-C-REVISION-MANAGEMENT passed",
+      "sprint544": "Milestone 550–559 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
+      "sprint544PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-PHASE-C-REVISION-MANAGEMENT passed",
+      "sprint545": "Milestone 560–569 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Phase C revision management full stack completeness audit)",
+      "sprint545PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-09",
       "lastCertifiedBaseline": "2026-07-09",
-      "status": "current — recertified Sprint 536 (560-569 Phase C revision management opens 1/10 Finding 4)",
-      "sprintRangeCovered": "526–526 (Drawing Intelligence Phase D — Phase C revision management Milestone 560-569 opens)",
-      "deltaSinceCertification": "Sprints 130–526 delivered (397 sprints); Milestone 560-569 closed; Phase D Phase C revision management 560-569 opens (1/10); gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase B UX Sign-off wrap complete (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Phase C revision management foundation (docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json); Platform Certification 3/3 recertified Sprint 536 (Finding 4)",
+      "status": "current — recertified Sprint 545 (560-569 next milestone opens post-milestone-close Finding 4)",
+      "sprintRangeCovered": "536–545 (Drawing Intelligence Phase D — Phase C Revision Management Milestone 560-569 closed)",
+      "deltaSinceCertification": "Sprints 130–545 delivered (416 sprints); Milestone 560-569 closed; next milestone 570-579 TBD; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase C revision management wrap complete (docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json); Platform Certification 3/3 recertified Sprint 545 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -4908,18 +5094,20 @@
         "Commercial Intelligence state-machine change",
         "before production release"
       ],
-      "note": "3/3 deterministic re-achieved 2026-07-09 Sprint 536 post-milestone-close; recertify on triggers in recertificationTriggers — not indefinite valid"
+      "note": "3/3 deterministic re-achieved 2026-07-09 Sprint 545 post-milestone-close; recertify on triggers in recertificationTriggers — not indefinite valid"
     },
     "typecheck": "npx tsc -b (per regression gate)"
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 550–559 opens (1/10), Sprint 536 closed, Sprint 537 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Milestone 550–559 Phase C revision management opens logged",
-    "docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json — foundationComplete Sprint 536",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 536 closed, milestone 560-569 active (1/10), Sprint 537 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 536 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 536 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 550–559 closed, Sprint 536 queued (560–569 Phase C Revision Management opens)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Milestone 550–559 wrap logged",
+    "docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json — milestoneWrapComplete Sprint 545",
+    "docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json — milestone 560-569 opens Sprint 536",
+    "docs/DRAWING_INTELLIGENCE_ROADMAP.md — Phase C revision management validation automation checked complete",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 545 closed, milestone 560-569 wrap closed (10/10), sprint 536 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 545 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 545 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -4963,7 +5151,7 @@
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Milestone 560-569 Phase D Phase C revision management opens Sprint 536 (1/10); Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only"
+      "description": "Milestone 550–559 Phase D Phase C revision management closed Sprint 545; Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; next milestone 560-569 Phase C Revision Management opens Sprint 536"
     },
     {
       "id": "partial-platform-services",
@@ -4974,7 +5162,7 @@
       "id": "platform-certification-stale",
       "severity": "low-governance",
       "relatedFinding": "finding-4",
-      "description": "Platform Certification 3/3 recertified 2026-07-09 Sprint 536 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
+      "description": "Platform Certification 3/3 recertified 2026-07-09 Sprint 545 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
     }
   ],
   "blockers": [
@@ -5065,11 +5253,11 @@
     }
   ],
   "nextSprint": {
-    "number": 527,
-    "stream1": "Playwright Phase C revision management assertion scaffold — sprint-537-selftest.ts",
-    "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-537-selftest.ts",
-    "credentialNote": "GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 560-569 Phase D Phase C revision management opens (1/10); Phase B UX Sign-off wrap complete docs/PHASE_B_UX_SIGNOFF_PLAN.json"
+    "number": 546,
+    "stream1": "Milestone 570–579 TBD — Phase D next item per PLATFORM_EVOLUTION / DRAWING_INTELLIGENCE_ROADMAP.md",
+    "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
+    "selftest": "scripts/sprint-546-selftest.ts",
+    "credentialNote": "GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 560-569 Phase D Phase C revision management closed (10/10); Phase C revision management wrap complete docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json"
   },
   "oversightSync": {
     "status": "ok",
@@ -5080,7 +5268,7 @@
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-09T06:19:08.2261562Z",
+    "sanitizedAt": "2026-07-09T08:42:25.5244157Z",
     "pushedAt": "2026-07-09T06:05:05.777Z",
     "remoteHeadSha": "2fd1025f2498e83e03e89de1354b029eef4a8ac4",
     "publicStateVerifiedAt": "2026-07-09T06:05:05.777Z",
@@ -5145,9 +5333,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 536,
+    "lastSyncedSprint": 535,
     "lastSyncedAt": "2026-07-09",
-    "milestoneProgress": "560-569 OPENS (1/10)",
+    "milestoneProgress": "560-569 WRAP CLOSED (10/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -5314,7 +5502,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication â†’ Knowledge Library version lifecycle â†’ cross-project knowledge reuse â†’ knowledge similarity matching â†’ proactive knowledge warning â†’ user outcome feedback â†’ confidence evolution â†’ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase D — Phase C Revision Management Milestone milestone (560-569) active — Sprint 536 closed; Sprint 527 queued",
+    "phaseE": "Drawing Intelligence Phase D — Phase C revision management Milestone milestone (560-569) active — Sprint 545 closed; Sprint 546 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -5327,8 +5515,8 @@
     "sprint382": "No new growth event kinds — mid-milestone 374–378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint379": "No new growth event kinds — project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Drawing Intelligence Phase D — Phase C revision management Milestone (560-569) active Sprint 536 (1/10); 550-559 Phase B UX Sign-off Milestone closed Sprint 525",
-    "phaseB": "Phase C revision management milestone active (560-569) — technical items complete; UX validation automation foundation Sprint 536"
+    "phaseD": "Drawing Intelligence Phase D — Phase C revision management Milestone (560-569) closed Sprint 545; 560-569 Phase C Revision Management opens Sprint 536",
+    "phaseB": "Phase C revision management complete — Phase C revision management milestone closed Sprint 545; Phase C revision management (560-569) opens Sprint 536"
   },
   "digitalBrainImpact": {
     "sprint376": "No new growth event kinds — Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -5424,7 +5612,7 @@
     "sprint268": "No new growth event kinds â€” operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds â€” publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds â€” operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 560-569 1/10 sprints closed (10%); latest growth-event sprint 400; Sprint 536 closed; Sprint 527 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 560-569 10/10 sprints closed (100%); latest growth-event sprint 400; Sprint 545 closed; Sprint 546 queued per nextSprint",
     "sprint372": "No new growth event kinds — mid-milestone 364–368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators)",
     "sprint371": "No new growth event kinds — project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds — milestone 370–379 wrap completeness review confirms supersede invalidation full stack audit (growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel · project assistant context engine wiring); milestone closed; 380–389 Phase C Revision Management opens Sprint 364",
@@ -5591,7 +5779,7 @@
     "sprint524": "No new growth event kinds — intelligence index backfill remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 540–549 at 9/10",
     "sprint525": "No new growth event kinds — milestone 540–549 wrap completeness review confirms intelligence index backfill full stack audit (foundation · Playwright · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip); milestone closed; 550–559 opens Sprint 526",
     "sprint526": "No new growth event kinds — Phase B UX sign-off foundation defines role critical path + checklist contracts for site-team workflow validation; Milestone 550–559 opens Sprint 526",
-    "sprint527": "No new growth event kinds — Playwright Phase B UX sign-off scaffold reads phase-b-ux-role-path-banner + phase-b-ux-signoff-checklist + phase-b-ux-mobile-target-size; Milestone 550–559 at 2/10",
+    "sprint527": "No new growth event kinds — Playwright Phase C revision management scaffold reads phase-c-revision-role-path-banner + phase-c-revision-signoff-checklist + phase-c-revision-mobile-target-size; Milestone 550–559 at 2/10",
     "sprint528": "No new growth event kinds — Phase B validation matrix Phase B UX sign-off row wiring; Milestone 550–559 at 3/10",
     "sprint529": "No new growth event kinds — Phase B UX sign-off UI assertions; Milestone 550–559 at 4/10",
     "sprint530": "No new growth event kinds — Phase B UX sign-off localStorage mirror reconciliation; Milestone 550–559 at 5/10",
@@ -5599,8 +5787,15 @@
     "sprint532": "No new growth event kinds — Phase B UX sign-off cold-start regeneration after remote seed; Milestone 550–559 at 7/10",
     "sprint533": "No new growth event kinds — Phase B UX sign-off full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 550–559 at 8/10",
     "sprint534": "No new growth event kinds — Phase B UX sign-off remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 550–559 at 9/10",
-    "sprint535": "No new growth event kinds — milestone 550–559 wrap completeness review confirms Phase B UX sign-off full stack audit (foundation · Playwright · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip); milestone closed; 560–569 opens Sprint 536",
-    "sprint536": "No new growth event kinds — Phase C revision management foundation defines role critical path + checklist contracts for site-team workflow validation; Milestone 550–559 opens Sprint 536"
+    "sprint535": "No new growth event kinds — milestone 550–559 wrap completeness review confirms Phase C revision management full stack audit (foundation · Playwright · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip); milestone closed; 560–569 opens Sprint 536",
+    "sprint536": "No new growth event kinds — Phase C revision management foundation defines role critical path + checklist contracts for site-team workflow validation; Milestone 550–559 opens Sprint 536",
+    "sprint538": "No new growth event kinds — Phase B validation matrix Phase C revision management row wiring; Milestone 550–559 at 3/10",
+    "sprint539": "No new growth event kinds — Phase C revision management UI assertions; Milestone 550–559 at 4/10",
+    "sprint540": "No new growth event kinds — Phase C revision management localStorage mirror reconciliation; Milestone 550–559 at 5/10",
+    "sprint541": "No new growth event kinds — Phase C revision management remote seed → localStorage hydrate path; Milestone 550–559 at 6/10",
+    "sprint542": "No new growth event kinds — Phase C revision management cold-start regeneration after remote seed; Milestone 550–559 at 7/10",
+    "sprint543": "No new growth event kinds — Phase C revision management full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 550–559 at 8/10",
+    "sprint544": "No new growth event kinds — Phase C revision management remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 550–559 at 9/10"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -5830,7 +6025,7 @@
     "sprint524": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 540–549 at 9/10",
     "sprint525": "Milestone 540–549 wrap confirms durable intelligence_json index backfill validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 550–559 Phase B UX Sign-off opens Sprint 526",
     "sprint526": "Phase B UX sign-off foundation — role-based critical path coverage for site_manager · foreman · PM · QS · mobile/tablet; Milestone 550–559 opens Sprint 526",
-    "sprint527": "Playwright Phase B UX sign-off assertion scaffold — role critical path + checklist UI chrome; Milestone 550–559 at 2/10",
+    "sprint527": "Playwright Phase C revision management assertion scaffold — role critical path + checklist UI chrome; Milestone 550–559 at 2/10",
     "sprint528": "No direct KG edge changes — Phase B validation matrix Phase B UX sign-off row wiring; Milestone 550–559 at 3/10",
     "sprint529": "No direct KG edge changes — Phase B UX sign-off UI assertions (phase-b-ux-role-path-banner chrome); Milestone 550–559 at 4/10",
     "sprint530": "localStorage ↔ remote intelligence_json mirror reconciliation contract — durable Supabase indices stay consistent with di-phase-b-ux-signoff-* offline mirror; Milestone 550–559 at 5/10",
@@ -5838,8 +6033,15 @@
     "sprint532": "When localStorage cleared after prior remote seed, di-phase-b-ux-signoff-* indexed sheets regenerate from durable Supabase intelligence_json; Milestone 550–559 at 7/10",
     "sprint533": "When VITE_PROJECT_KG_PERSIST=1, di-phase-b-ux-signoff-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 550–559 at 8/10",
     "sprint534": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 550–559 at 9/10",
-    "sprint535": "Milestone 550–559 wrap confirms durable Phase B UX sign-off validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 560–569 Phase C Revision Management opens Sprint 536",
-    "sprint536": "Phase C revision management foundation — role-based critical path coverage for visual_overlay · foreman · PM · QS · mobile/tablet; Milestone 550–559 opens Sprint 536"
+    "sprint535": "Milestone 550–559 wrap confirms durable Phase C revision management validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 560–569 Phase C Revision Management opens Sprint 536",
+    "sprint536": "Phase C revision management foundation — role-based critical path coverage for visual_overlay · foreman · PM · QS · mobile/tablet; Milestone 550–559 opens Sprint 536",
+    "sprint538": "No direct KG edge changes — Phase B validation matrix Phase C revision management row wiring; Milestone 550–559 at 3/10",
+    "sprint539": "No direct KG edge changes — Phase C revision management UI assertions (phase-c-revision-role-path-banner chrome); Milestone 550–559 at 4/10",
+    "sprint540": "localStorage ↔ remote intelligence_json mirror reconciliation contract — durable Supabase indices stay consistent with di-phase-c-revision-* offline mirror; Milestone 550–559 at 5/10",
+    "sprint541": "Remote Supabase intelligence_json indices seed di-phase-c-revision-* localStorage mirror for cold-start hydrate; Milestone 550–559 at 6/10",
+    "sprint542": "When localStorage cleared after prior remote seed, di-phase-c-revision-* indexed sheets regenerate from durable Supabase intelligence_json; Milestone 550–559 at 7/10",
+    "sprint543": "When VITE_PROJECT_KG_PERSIST=1, di-phase-c-revision-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 550–559 at 8/10",
+    "sprint544": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 550–559 at 9/10"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label — drawing revision id · superseded-by revision id · invalidation scope playback lines · lessons_learned stage badge · sprint-355-selftest.ts",
@@ -5925,7 +6127,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase C Revision Management Milestone (560-569) active 1/10; Sprint 536 closed; Sprint 527 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Playwright Phase C revision management assertion scaffold — sprint-537-selftest.)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase C revision management Milestone (560-569) active 10/10; Sprint 545 closed; Sprint 546 queued (Platform Certification recertification post-milestone-close (Finding 4) — phase- · Milestone 570–579 TBD — Phase D next item per PLATFORM_EVOLUTION / DRAWING_INTEL)",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -6087,7 +6289,7 @@
     "sprint524": "Milestone 540–549 Drawing Intelligence Phase D — Intelligence Index Backfill at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-524-selftest.ts",
     "sprint525": "Milestone 540–549 Drawing Intelligence Phase D — Intelligence Index Backfill wrap completeness review — full stack audit; milestone closed; 550–559 opens Sprint 526 — sprint-525-selftest.ts",
     "sprint526": "Milestone 550–559 Drawing Intelligence Phase D — Phase B UX Sign-off opens — validation automation foundation — sprint-526-selftest.ts",
-    "sprint527": "Milestone 550–559 Drawing Intelligence Phase D — Phase B UX Sign-off at 2/10 — Playwright assertion scaffold — sprint-527-selftest.ts",
+    "sprint527": "Milestone 550–559 Drawing Intelligence Phase D — Phase C revision management at 2/10 — Playwright assertion scaffold — sprint-537-selftest.ts",
     "sprint528": "Milestone 550–559 Drawing Intelligence Phase D — Phase B UX Sign-off at 3/10 — Phase B validation matrix row wiring — sprint-528-selftest.ts",
     "sprint529": "Milestone 550–559 Drawing Intelligence Phase D — Phase B UX Sign-off at 4/10 — UI assertions — sprint-529-selftest.ts",
     "sprint530": "Milestone 550–559 Drawing Intelligence Phase D — Phase B UX Sign-off at 5/10 — localStorage mirror reconciliation — sprint-530-selftest.ts",
@@ -6095,8 +6297,15 @@
     "sprint532": "Milestone 550–559 Drawing Intelligence Phase D — Phase B UX Sign-off at 7/10 — cold-start regeneration after remote seed — sprint-532-selftest.ts",
     "sprint533": "Milestone 550–559 Drawing Intelligence Phase D — Phase B UX Sign-off at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-533-selftest.ts",
     "sprint534": "Milestone 550–559 Drawing Intelligence Phase D — Phase B UX Sign-off at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-534-selftest.ts",
-    "sprint535": "Milestone 550–559 Drawing Intelligence Phase D — Phase B UX Sign-off wrap completeness review — full stack audit; milestone closed; 560–569 opens Sprint 536 — sprint-535-selftest.ts",
-    "sprint536": "Milestone 550–559 Drawing Intelligence Phase D — Phase C revision management opens — validation automation foundation — sprint-536-selftest.ts"
+    "sprint535": "Milestone 550–559 Drawing Intelligence Phase D — Phase C revision management wrap completeness review — full stack audit; milestone closed; 560–569 opens Sprint 536 — sprint-545-selftest.ts",
+    "sprint536": "Milestone 550–559 Drawing Intelligence Phase D — Phase C revision management opens — validation automation foundation — sprint-536-selftest.ts",
+    "sprint538": "Milestone 550–559 Drawing Intelligence Phase D — Phase C revision management at 3/10 — Phase B validation matrix row wiring — sprint-538-selftest.ts",
+    "sprint539": "Milestone 550–559 Drawing Intelligence Phase D — Phase C revision management at 4/10 — UI assertions — sprint-539-selftest.ts",
+    "sprint540": "Milestone 550–559 Drawing Intelligence Phase D — Phase C revision management at 5/10 — localStorage mirror reconciliation — sprint-540-selftest.ts",
+    "sprint541": "Milestone 550–559 Drawing Intelligence Phase D — Phase C revision management at 6/10 — remote seed → localStorage hydrate — sprint-541-selftest.ts",
+    "sprint542": "Milestone 550–559 Drawing Intelligence Phase D — Phase C revision management at 7/10 — cold-start regeneration after remote seed — sprint-542-selftest.ts",
+    "sprint543": "Milestone 550–559 Drawing Intelligence Phase D — Phase C revision management at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-543-selftest.ts",
+    "sprint544": "Milestone 550–559 Drawing Intelligence Phase D — Phase C revision management at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-544-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
@@ -6110,7 +6319,7 @@
     "daysRemaining": 3,
     "computedAsOf": "2026-07-09",
     "status": "at_risk",
-    "statusRationale": "Milestone 560-569 opens Sprint 536 (1/10); Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; Phase C revision management foundation (docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json); Phase B UX Sign-off wrap complete (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Platform Certification 3/3 recertified Sprint 536 (Finding 4); Milestone 540–549 closed Sprint 525"
+    "statusRationale": "Milestone 550–559 closed Sprint 545; Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; Phase C revision management full stack wrap complete (docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json); Platform Certification 3/3 recertified Sprint 545 (Finding 4); next milestone 560-569 opens Sprint 536"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
