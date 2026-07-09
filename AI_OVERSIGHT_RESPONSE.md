@@ -19,6 +19,10 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 
 
+## Sprint 525 close-out (2026-07-09)
+
+Milestone **540–549 Phase D Intelligence Index Backfill WRAP CLOSED** (10/10). Stream 1: milestone wrap completeness review. Stream 2: intelligence index backfill full stack completeness audit (foundation · Playwright scaffold · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip). Sprint Validation 3/3 post-recertification (PHASE_B_RUNS=3). Platform Certification recertified post-milestone-close (Finding 4). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **526** queued (550–559 Phase B UX Sign-off opens).
+
 ## Sprint 524 close-out (2026-07-09)
 
 Milestone **540–549 Phase D Intelligence Index Backfill** at **9/10**. Stream 1: Intelligence index backfill remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 (`assertIntelligenceIndexBackfillRemoteReadAfterWriteRoundTrip`). Stream 2: Sprint Validation PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0). Gate #2 satisfied — `docs/MIGRATION_015_STAGING_VERIFICATION.json`. GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. Sprint **525** queued (wrap review).
