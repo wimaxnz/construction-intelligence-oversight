@@ -1,12 +1,16 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 550–559 Phase D Phase B UX Sign-off (7/10); Sprint 533 queued.
+**Status:** Active — Milestone 550–559 Phase D Phase B UX Sign-off (8/10); Sprint 534 queued.
 
 **Last updated:** 2026-07-09
-**Current sprint:** 532 closed  
-**Next sprint:** 533 queued
-**Milestone:** 550–559 Phase D Phase B UX Sign-off active (7/10)
+**Current sprint:** 533 closed  
+**Next sprint:** 534 queued
+**Milestone:** 550–559 Phase D Phase B UX Sign-off active (8/10)
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
+
+## Sprint 533 summary
+
+Phase B UX sign-off full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 (`assertPhaseBUxSignoffFullHydratePersistPath` · `dualWritePhaseBUxSignoffStateRemotePath` · `runPhaseBUxSignoffFullHydratePersistPath` · `docs/PHASE_B_UX_SIGNOFF_PLAN.json`). Sprint Validation 3/3 (PHASE_B_RUNS=3). Selftest: `scripts/sprint-533-selftest.ts`.
 
 ## Sprint 532 summary
 
