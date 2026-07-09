@@ -15,10 +15,10 @@
     "actualSprintEnd": 565,
     "wrapReviewSprint": 565,
     "status": "active",
-    "theme": "Phase C bulk upload engine — bulk upload and superseding (DRAWING_INTELLIGENCE_ROADMAP.md Phase C — Revision management & compare)",
+    "theme": "Bulk drawing upload engine validation automation (batch upload · progress · dedup · orchestration contracts) (DRAWING_INTELLIGENCE_ROADMAP.md Phase C — Bulk upload engine)",
     "openedDate": "2026-07-09",
     "wrapClosedDate": "2026-07-09",
-    "previousMilestoneClosed": "570-579 (Drawing Intelligence Phase D — Phase C Bulk Upload Milestone)",
+    "previousMilestoneClosed": "570-579 (Drawing Intelligence Phase D — Phase C Revision Compare & Overlay Milestone)",
     "nextMilestoneOpens": "590-599 (TBD per DRAWING_INTELLIGENCE_ROADMAP.md Phase E prep or remaining Phase C pin re-anchor)",
     "wrapComplete": true
   },
@@ -5730,18 +5730,18 @@
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-09T11:10:41.007Z",
+    "lastPushAttempt": "2026-07-09T11:13:23.575Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-09T11:10:41.007Z",
+    "verifiedAt": "2026-07-09T11:13:23.575Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
     "sanitizedAt": "2026-07-09T11:12:54.6734985Z",
-    "pushedAt": "2026-07-09T11:10:41.007Z",
-    "remoteHeadSha": "1b2c0315e912b0d198a7d09dd9db27b72321d334",
-    "publicStateVerifiedAt": "2026-07-09T11:10:41.007Z",
+    "pushedAt": "2026-07-09T11:13:23.575Z",
+    "remoteHeadSha": "680b324c60db08c9c615301a2d6b2644c04ff008",
+    "publicStateVerifiedAt": "2026-07-09T11:13:23.575Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "524c7bd9f310488e40f84a37bf4010f9559c501e7e419a25bcaa16c8c3b0c42b",
+    "publicStateContentHash": "d7f959c18404272bc7cfa70f1af97dced0da2899c44ee6bdabe1f8f7d71161f1",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -5773,21 +5773,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "524c7bd9f310488e40f84a37bf4010f9559c501e7e419a25bcaa16c8c3b0c42b",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-09T11:10:41.007Z",
-      "rawEndpointVerifiedAt": "2026-07-09T11:10:41.007Z",
-      "gitOriginVerifiedAt": "2026-07-09T11:10:41.007Z",
+      "githubApiVerifiedAt": "2026-07-09T11:13:23.575Z",
+      "rawEndpointVerifiedAt": "2026-07-09T11:13:23.575Z",
+      "gitOriginVerifiedAt": "2026-07-09T11:13:23.575Z",
       "routeContentHashes": {
-        "github-api": "524c7bd9f310488e40f84a37bf4010f9559c501e7e419a25bcaa16c8c3b0c42b",
+        "github-api": "d7f959c18404272bc7cfa70f1af97dced0da2899c44ee6bdabe1f8f7d71161f1",
         "raw-cdn": "524c7bd9f310488e40f84a37bf4010f9559c501e7e419a25bcaa16c8c3b0c42b",
-        "git-origin": "524c7bd9f310488e40f84a37bf4010f9559c501e7e419a25bcaa16c8c3b0c42b"
+        "git-origin": "d7f959c18404272bc7cfa70f1af97dced0da2899c44ee6bdabe1f8f7d71161f1"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "1b2c0315e912b0d198a7d09dd9db27b72321d334",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "680b324c60db08c9c615301a2d6b2644c04ff008",
       "logicalConsistencyPassed": true,
-      "logicalConsistencyTestCount": 690,
-      "classification": "all-routes-consistent"
+      "logicalConsistencyTestCount": 694,
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
