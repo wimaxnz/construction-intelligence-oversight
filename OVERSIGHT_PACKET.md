@@ -1,6 +1,6 @@
-﻿# Oversight Packet — Sprint 433 Close-out
+# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 750–759 Phase D Phase G Role-scoped responses CLOSED (10/10); Sprint 736 queued (750–759 Phase G AI Project Assistant answer synthesis & multi-turn opens).
+**Status:** Active — Milestone 750–759 Phase D Phase G Role-scoped responses CLOSED (10/10); Sprint 736 queued (760–769 Phase G AI Project Assistant human confirmation gates & commercial answer approval opens).
 
 **Last updated:** 2026-07-10
 **Current sprint:** 735 closed  
