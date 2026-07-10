@@ -1,38 +1,38 @@
 {
   "lastUpdated": "2026-07-10",
   "currentSprint": {
-    "number": 685,
+    "number": 695,
     "status": "closed",
-    "previousClosed": 684,
+    "previousClosed": 694,
     "closedDate": "2026-07-10"
   },
   "currentMilestone": {
-    "range": "700-709",
-    "milestoneId": "700-709",
-    "milestoneName": "Drawing Intelligence Phase E — Commercial Intelligence Commercial stack wrap Foundation Milestone",
+    "range": "710-719",
+    "milestoneId": "710-719",
+    "milestoneName": "Drawing Intelligence Phase E — Commercial Intelligence AI decision support Foundation Milestone",
     "plannedSprintCount": 10,
-    "actualSprintStart": 676,
-    "actualSprintEnd": 685,
-    "wrapReviewSprint": 685,
+    "actualSprintStart": 686,
+    "actualSprintEnd": 695,
+    "wrapReviewSprint": 695,
     "status": "closed",
-    "theme": "Phase E Commercial Intelligence stack wrap — commercialStackWrap detection (assistive) (DRAWING_INTELLIGENCE_ROADMAP.md Phase C — Revision management & compare)",
+    "theme": "Phase F AI decision support — aiDecisionSupport detection (assistive) (DRAWING_INTELLIGENCE_ROADMAP.md Phase C — Revision management & compare)",
     "openedDate": "2026-07-09",
     "wrapClosedDate": "2026-07-10",
-    "previousMilestoneClosed": "690-699 (Drawing Intelligence Phase D — Phase C Change Cloud Detection (Assistive) Milestone)",
-    "nextMilestoneOpens": "710-719 (Phase F AI decision support foundation per DRAWING_INTELLIGENCE_ROADMAP.md)",
+    "previousMilestoneClosed": "700-709 (Drawing Intelligence Phase D — Phase C Change Cloud Detection (Assistive) Milestone)",
+    "nextMilestoneOpens": "720-729 (Phase G AI Project Assistant foundation per DRAWING_INTELLIGENCE_ROADMAP.md)",
     "wrapComplete": true
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
     "sprintsClosed": 10,
     "percentComplete": 100,
-    "nextWrapReviewSprint": 685,
+    "nextWrapReviewSprint": 695,
     "milestoneWrapComplete": true
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Milestone 710–719 Phase F AI decision support foundation per DRAWING_INTELLIGENCE_ROADMAP.md — sprint-686-selftest.ts"
+      "focus": "Milestone 720–729 Phase G AI Project Assistant foundation per DRAWING_INTELLIGENCE_ROADMAP.md — sprint-696-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -2355,6 +2355,66 @@
       "stream2": "Milestone 700–709 Phase E Commercial Intelligence stack wrap full stack completeness review — sprint-685-selftest.ts audits stack (foundation · Playwright scaffold · Phase B matrix · UI assertions · localStorage mirror reconciliation · remote seed hydrate · cold-start regeneration · full hydrate/persist path · remote read-after-write round-trip) · PHASE_B_RUNS=3 (consecutiveGreen reuse / exclusive when needed) · Platform Certification recertification post-milestone-close (Finding 4)",
       "validation": "Milestone wrap selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
       "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 710–719 Phase F AI decision support foundation deferred to Sprint 686"
+    },
+    "sprint686": {
+      "stream1": "Milestone 710–719 Phase D Phase F AI decision support validation automation foundation — phaseFAiDecisionSupportValidationService · PHASE_F_AI_DECISION_SUPPORT_PLAN.json · sprint-686-selftest.ts",
+      "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 710–719 opens selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; full Playwright Phase F AI decision support role-path UI assertions deferred to Sprint 687+"
+    },
+    "sprint687": {
+      "stream1": "Playwright Phase F AI decision support assertion scaffold — parsePhaseFAiDecisionSupportDomObservation · assertPhaseFAiDecisionSupportObservation · buildPhaseFAiDecisionSupportPlaywrightScaffoldSummary · phaseCBulkUploadScaffold · phase-b-wynyard-validation.ts UI-PHASE-F-AI-DECISION-SUPPORT · sprint-687-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (exclusive re-run for new result id; stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 710–719 at 2/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); UI-PHASE-F-AI-DECISION-SUPPORT passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; full Phase F AI decision support UI assertions deferred to Sprint 688+"
+    },
+    "sprint688": {
+      "stream1": "Phase B validation matrix Phase F AI decision support row wiring — buildPhaseFAiDecisionSupportPhaseBMatrixRow · resolvePhaseFAiDecisionSupportPhaseBMatrixStatus · PHASE_F_AI_DECISION_SUPPORT_PHASE_B_MATRIX_AREA · phase-b-wynyard-validation.ts · sprint-688-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 710–719 at 3/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); Phase B matrix Phase F AI decision support row wired; UI-PHASE-F-AI-DECISION-SUPPORT passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; fuller Phase F AI decision support UI assertions deferred to Sprint 689+"
+    },
+    "sprint689": {
+      "stream1": "Phase F AI decision support UI assertions — assertPhaseFAiDecisionSupportUiAssertions · runphaseCBulkUploadUiAssertions · phaseCBulkUploadScaffold · phase-b-wynyard-validation.ts · sprint-689-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 710–719 at 4/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); Phase F AI decision support UI assertions wired; UI-PHASE-F-AI-DECISION-SUPPORT passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase F AI decision support localStorage mirror reconciliation deferred to Sprint 690+"
+    },
+    "sprint690": {
+      "stream1": "Phase F AI decision support localStorage mirror reconciliation — assertPhaseFAiDecisionSupportLocalStorageMirrorReconciliation · reconcilePhaseFAiDecisionSupportLocalStorageMirror · parsePhaseFAiDecisionSupportLocalStorageMirror · runphaseCBulkUploadLocalStorageMirrorReconciliation · phase-b-wynyard-validation.ts · sprint-690-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 710–719 at 5/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); localStorage mirror reconciliation wired; UI-PHASE-F-AI-DECISION-SUPPORT passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase F AI decision support remote seed → localStorage hydrate deferred to Sprint 521+"
+    },
+    "sprint691": {
+      "stream1": "Phase F AI decision support remote seed → localStorage hydrate — assertPhaseFAiDecisionSupportRemoteSeedLocalStorageHydrate · seedphaseCBulkUploadLocalStorageFromRemoteHydrate · buildPhaseFAiDecisionSupportLocalStorageHydratePayload · runphaseCBulkUploadRemoteSeedLocalStorageHydrate · phase-b-wynyard-validation.ts · sprint-691-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 710–719 at 6/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote seed → localStorage hydrate wired; UI-PHASE-F-AI-DECISION-SUPPORT passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase F AI decision support cold-start regeneration after remote seed deferred to Sprint 522+"
+    },
+    "sprint692": {
+      "stream1": "Phase F AI decision support cold-start regeneration after remote seed — assertPhaseFAiDecisionSupportColdStartRegenerationAfterRemoteSeed · regeneratephaseCBulkUploadLocalStorageAfterRemoteSeedColdStart · isPhaseFAiDecisionSupportLocalStorageClearedOrEmpty · runphaseCBulkUploadColdStartRegenerationAfterRemoteSeed · phase-b-wynyard-validation.ts · sprint-692-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 710–719 at 7/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); cold-start regeneration after remote seed wired; UI-PHASE-F-AI-DECISION-SUPPORT passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase F AI decision support full hydrate/persist path deferred to Sprint 523+"
+    },
+    "sprint693": {
+      "stream1": "Phase F AI decision support full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — assertPhaseFAiDecisionSupportFullHydratePersistPath · dualWritephaseCBulkUploadStateRemotePath · buildPhaseFAiDecisionSupportFullHydratePersistPathSummary · runphaseCBulkUploadFullHydratePersistPath · phase-b-wynyard-validation.ts · sprint-693-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 710–719 at 8/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); full hydrate / persist path dual-write / remote-authoritative wired; UI-PHASE-F-AI-DECISION-SUPPORT passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase F AI decision support remote read-after-write round-trip deferred to Sprint 524+"
+    },
+    "sprint694": {
+      "stream1": "Phase F AI decision support remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — assertPhaseFAiDecisionSupportRemoteReadAfterWriteRoundTrip · roundTripPhaseFAiDecisionSupportStateRemoteReadAfterWrite · buildPhaseFAiDecisionSupportRemoteReadAfterWriteRoundTripSummary · runphaseCBulkUploadRemoteReadAfterWriteRoundTrip · phase-b-wynyard-validation.ts · sprint-694-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 710–719 at 9/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-PHASE-F-AI-DECISION-SUPPORT passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Milestone 710–719 wrap review deferred to Sprint 525"
+    },
+    "sprint695": {
+      "stream1": "Milestone wrap review — Drawing Intelligence Phase D Phase F AI decision support completeness — sprint-695-selftest.ts",
+      "stream2": "Milestone 710–719 Phase F AI decision support full stack completeness review — sprint-695-selftest.ts audits stack (foundation · Playwright scaffold · Phase B matrix · UI assertions · localStorage mirror reconciliation · remote seed hydrate · cold-start regeneration · full hydrate/persist path · remote read-after-write round-trip) · PHASE_B_RUNS=3 (consecutiveGreen reuse / exclusive when needed) · Platform Certification recertification post-milestone-close (Finding 4)",
+      "validation": "Milestone wrap selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 720–729 Phase G AI Project Assistant foundation deferred to Sprint 696"
     }
   },
   "changedFiles": {
@@ -7639,6 +7699,160 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint686": [
+      "src/platform/validation/phaseFAiDecisionSupportValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_F_AI_DECISION_SUPPORT_PLAN.json",
+      "scripts/sprint-686-selftest.ts",
+      "scripts/sprint-686-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint687": [
+      "src/platform/validation/phaseFAiDecisionSupportValidationService.ts",
+      "src/components/drawings/intelligence/phaseCBulkUploadScaffold.tsx",
+      "src/app/DrawingsModule.tsx",
+      "src/components/drawings/PinModeBanner.tsx",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_F_AI_DECISION_SUPPORT_PLAN.json",
+      "scripts/sprint-687-selftest.ts",
+      "scripts/sprint-687-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint688": [
+      "src/platform/validation/phaseFAiDecisionSupportValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_F_AI_DECISION_SUPPORT_PLAN.json",
+      "scripts/sprint-688-selftest.ts",
+      "scripts/sprint-688-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint689": [
+      "src/platform/validation/phaseFAiDecisionSupportValidationService.ts",
+      "src/components/drawings/intelligence/phaseCBulkUploadScaffold.tsx",
+      "src/platform/index.ts",
+      "src/app/DrawingsModule.tsx",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_F_AI_DECISION_SUPPORT_PLAN.json",
+      "scripts/sprint-689-selftest.ts",
+      "scripts/sprint-689-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint690": [
+      "src/platform/validation/phaseFAiDecisionSupportValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_F_AI_DECISION_SUPPORT_PLAN.json",
+      "scripts/sprint-690-selftest.ts",
+      "scripts/sprint-690-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint691": [
+      "src/platform/validation/phaseFAiDecisionSupportValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_F_AI_DECISION_SUPPORT_PLAN.json",
+      "scripts/sprint-691-selftest.ts",
+      "scripts/sprint-691-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint692": [
+      "src/platform/validation/phaseFAiDecisionSupportValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_F_AI_DECISION_SUPPORT_PLAN.json",
+      "scripts/sprint-692-selftest.ts",
+      "scripts/sprint-692-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint693": [
+      "src/platform/validation/phaseFAiDecisionSupportValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_F_AI_DECISION_SUPPORT_PLAN.json",
+      "scripts/sprint-693-selftest.ts",
+      "scripts/sprint-693-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint694": [
+      "src/platform/validation/phaseFAiDecisionSupportValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_F_AI_DECISION_SUPPORT_PLAN.json",
+      "scripts/sprint-694-selftest.ts",
+      "scripts/sprint-694-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint695": [
+      "scripts/sprint-695-selftest.ts",
+      "scripts/sprint-695-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PHASE_F_AI_DECISION_SUPPORT_PLAN.json",
+      "docs/PHASE_F_AI_DECISION_SUPPORT_PLAN.json",
+      "docs/DRAWING_INTELLIGENCE_ROADMAP.md",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -8330,14 +8544,34 @@
       "sprint684": "Milestone 700–709 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
       "sprint684PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-PHASE-E-COMMERCIAL-STACK-WRAP passed",
       "sprint685": "Milestone 700–709 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Phase E Commercial Intelligence stack wrap full stack completeness audit)",
-      "sprint685PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
+      "sprint685PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
+      "sprint686": "Milestone 710–719 opens — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Phase F AI decision support foundation; consecutiveGreen reuse when stampede=0)",
+      "sprint686PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
+      "sprint687": "Milestone 710–719 at 2/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Playwright Phase F AI decision support assertion scaffold)",
+      "sprint687PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3 exclusive for UI-PHASE-F-AI-DECISION-SUPPORT; stampede=0); UI-PHASE-F-AI-DECISION-SUPPORT passed",
+      "sprint688": "Milestone 710–719 at 3/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase B validation matrix Phase F AI decision support row wiring)",
+      "sprint688PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase B matrix Phase F AI decision support row wired; UI-PHASE-F-AI-DECISION-SUPPORT passed",
+      "sprint689": "Milestone 710–719 at 4/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase F AI decision support UI assertions)",
+      "sprint689PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase F AI decision support UI assertions wired; UI-PHASE-F-AI-DECISION-SUPPORT passed",
+      "sprint690": "Milestone 710–719 at 5/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + localStorage mirror reconciliation)",
+      "sprint690PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); localStorage mirror reconciliation wired; UI-PHASE-F-AI-DECISION-SUPPORT passed",
+      "sprint691": "Milestone 710–719 at 6/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote seed → localStorage hydrate)",
+      "sprint691PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); remote seed → localStorage hydrate wired; UI-PHASE-F-AI-DECISION-SUPPORT passed",
+      "sprint692": "Milestone 710–719 at 7/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + cold-start regeneration after remote seed)",
+      "sprint692PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); cold-start regeneration after remote seed wired; UI-PHASE-F-AI-DECISION-SUPPORT passed",
+      "sprint693": "Milestone 710–719 at 8/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1)",
+      "sprint693PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); full hydrate / persist path dual-write / remote-authoritative wired; UI-PHASE-F-AI-DECISION-SUPPORT passed",
+      "sprint694": "Milestone 710–719 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
+      "sprint694PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-PHASE-F-AI-DECISION-SUPPORT passed",
+      "sprint695": "Milestone 710–719 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Phase F AI decision support full stack completeness audit)",
+      "sprint695PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-10",
       "lastCertifiedBaseline": "2026-07-10",
-      "status": "current — recertified Sprint 685 (700-709 next milestone opens post-milestone-close Finding 4)",
-      "sprintRangeCovered": "536–545 (Drawing Intelligence Phase D — Phase C Commercial stack wrap Detection Milestone 700-709 closed)",
-      "deltaSinceCertification": "Sprints 130–545 delivered (416 sprints); Milestone 700-709 closed; next milestone 700-709 Commercial stack wrap Detection; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase E Commercial Intelligence Estimating/BoQ wrap complete (docs/PHASE_E_COMMERCIAL_STACK_WRAP_PLAN.json); Platform Certification 3/3 recertified Sprint 685 (Finding 4)",
+      "status": "current — recertified Sprint 695 (710-719 next milestone opens post-milestone-close Finding 4)",
+      "sprintRangeCovered": "536–545 (Drawing Intelligence Phase D — Phase C AI decision support Detection Milestone 710-719 closed)",
+      "deltaSinceCertification": "Sprints 130–545 delivered (416 sprints); Milestone 710-719 closed; next milestone 710-719 AI decision support Detection; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase E Commercial Intelligence Estimating/BoQ wrap complete (docs/PHASE_F_AI_DECISION_SUPPORT_PLAN.json); Platform Certification 3/3 recertified Sprint 695 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -8348,20 +8582,20 @@
         "Commercial Intelligence state-machine change",
         "before production release"
       ],
-      "note": "3/3 deterministic re-achieved 2026-07-10 Sprint 685 post-milestone-close; recertify on triggers in recertificationTriggers — not indefinite valid"
+      "note": "3/3 deterministic re-achieved 2026-07-10 Sprint 695 post-milestone-close; recertify on triggers in recertificationTriggers — not indefinite valid"
     },
     "typecheck": "npx tsc -b (per regression gate)"
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 700–709 closed, Sprint 686 queued (710–719 Phase F AI decision support foundation opens)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Milestone 700–709 wrap logged",
-    "docs/PHASE_E_COMMERCIAL_STACK_WRAP_PLAN.json — milestoneWrapComplete Sprint 685",
-    "docs/PHASE_E_COMMERCIAL_STACK_WRAP_PLAN.json — next milestone 710-719 Phase F AI decision support foundation Sprint 686 queued",
-    "docs/DRAWING_INTELLIGENCE_ROADMAP.md — Phase E Commercial Intelligence stack wrap validation automation checked complete",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 685 closed, milestone 700-709 wrap closed (10/10), sprint 686 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 685 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 685 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 710–719 closed, Sprint 696 queued (720–729 Phase G AI Project Assistant foundation opens)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Milestone 710–719 wrap logged",
+    "docs/PHASE_F_AI_DECISION_SUPPORT_PLAN.json — milestoneWrapComplete Sprint 695",
+    "docs/PHASE_F_AI_DECISION_SUPPORT_PLAN.json — next milestone 720-729 Phase G AI Project Assistant foundation Sprint 696 queued",
+    "docs/DRAWING_INTELLIGENCE_ROADMAP.md — Phase F AI decision support validation automation checked complete",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 695 closed, milestone 710-719 wrap closed (10/10), sprint 696 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 695 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 695 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -8405,7 +8639,7 @@
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Milestone 700–709 Phase D Phase E Commercial Intelligence stack wrap closed Sprint 685; Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 710–719 Phase F AI decision support foundation queued Sprint 686"
+      "description": "Milestone 710–719 Phase D Phase F AI decision support closed Sprint 695; Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 720–729 Phase G AI Project Assistant foundation queued Sprint 696"
     },
     {
       "id": "partial-platform-services",
@@ -8416,7 +8650,7 @@
       "id": "platform-certification-stale",
       "severity": "low-governance",
       "relatedFinding": "finding-4",
-      "description": "Platform Certification 3/3 recertified 2026-07-10 Sprint 685 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
+      "description": "Platform Certification 3/3 recertified 2026-07-10 Sprint 695 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
     },
     "HIGH: write_audit_entry SECURITY DEFINER executable by authenticated without is_project_member â€” audit forgery risk (docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json)"
   ],
@@ -8508,11 +8742,11 @@
     }
   ],
   "nextSprint": {
-    "number": 686,
-    "stream1": "Milestone 710–719 Phase F AI decision support foundation per DRAWING_INTELLIGENCE_ROADMAP.md — sprint-686-selftest.ts",
+    "number": 696,
+    "stream1": "Milestone 720–729 Phase G AI Project Assistant foundation per DRAWING_INTELLIGENCE_ROADMAP.md — sprint-696-selftest.ts",
     "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-686-selftest.ts",
-    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 700-709 Phase D Phase E Commercial Intelligence stack wrap closed (10/10); Phase E Commercial Intelligence Estimating/BoQ wrap complete docs/PHASE_E_COMMERCIAL_STACK_WRAP_PLAN.json"
+    "selftest": "scripts/sprint-696-selftest.ts",
+    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 710-719 Phase D Phase F AI decision support closed (10/10); Phase E Commercial Intelligence Estimating/BoQ wrap complete docs/PHASE_F_AI_DECISION_SUPPORT_PLAN.json"
   },
   "oversightSync": {
     "status": "ok",
@@ -8588,9 +8822,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 685,
+    "lastSyncedSprint": 695,
     "lastSyncedAt": "2026-07-10",
-    "milestoneProgress": "700-709 WRAP CLOSED (10/10)",
+    "milestoneProgress": "710-719 WRAP CLOSED (10/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -8786,7 +9020,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication Ã¢â€ â€™ Knowledge Library version lifecycle Ã¢â€ â€™ cross-project knowledge reuse Ã¢â€ â€™ knowledge similarity matching Ã¢â€ â€™ proactive knowledge warning Ã¢â€ â€™ user outcome feedback Ã¢â€ â€™ confidence evolution Ã¢â€ â€™ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase E — Commercial Intelligence Commercial stack wrap Foundation Milestone milestone (700-709) active — Sprint 685 closed; Sprint 686 queued",
+    "phaseE": "Drawing Intelligence Phase E — Commercial Intelligence AI decision support Foundation Milestone milestone (710-719) active — Sprint 695 closed; Sprint 696 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds â€” Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -8799,8 +9033,8 @@
     "sprint382": "No new growth event kinds â€” mid-milestone 374â€“378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events Â· Memory audit Â· viewer chrome Â· Decision Timeline Â· explainability Â· AI panel indicators)",
     "sprint379": "No new growth event kinds â€” project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Drawing Intelligence Phase E — Commercial Intelligence Commercial stack wrap Foundation Milestone (700-709) closed Sprint 685; 710–719 Phase F AI decision support foundation queued Sprint 686",
-    "phaseB": "Phase E Commercial Intelligence stack wrap complete — Phase E Commercial Intelligence stack wrap milestone closed Sprint 685; Phase F AI decision support foundation (710-719) opens Sprint 686"
+    "phaseD": "Drawing Intelligence Phase E — Commercial Intelligence AI decision support Foundation Milestone (710-719) closed Sprint 695; 720–729 Phase G AI Project Assistant foundation queued Sprint 696",
+    "phaseB": "Phase F AI decision support complete — Phase F AI decision support milestone closed Sprint 695; Phase G AI Project Assistant foundation (720-729) opens Sprint 696"
   },
   "digitalBrainImpact": {
     "sprint376": "No new growth event kinds â€” Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -8896,7 +9130,7 @@
     "sprint268": "No new growth event kinds Ã¢â‚¬â€ operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds Ã¢â‚¬â€ publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds Ã¢â‚¬â€ operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 700-709 10/10 sprints closed (100%); latest growth-event sprint 400; Sprint 685 closed; Sprint 686 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 710-719 10/10 sprints closed (100%); latest growth-event sprint 400; Sprint 695 closed; Sprint 696 queued per nextSprint",
     "sprint372": "No new growth event kinds â€” mid-milestone 364â€“368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events Â· Memory audit Â· viewer chrome Â· Decision Timeline Â· explainability Â· AI panel indicators)",
     "sprint371": "No new growth event kinds â€” project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries Â· isExplainabilityEnrichedDecisionTimelineEntry Â· toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds â€” milestone 370â€“379 wrap completeness review confirms supersede invalidation full stack audit (growth events Â· Memory audit Â· viewer chrome Â· Decision Timeline Â· explainability Â· AI panel Â· project assistant context engine wiring); milestone closed; 380â€“389 Phase C Revision Management opens Sprint 364",
@@ -9218,7 +9452,17 @@
     "sprint682": "No new growth event kinds — Phase E Commercial Intelligence stack wrap cold-start regeneration after remote seed; Milestone 700–709 at 7/10",
     "sprint683": "No new growth event kinds — Phase E Commercial Intelligence stack wrap full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 700–709 at 8/10",
     "sprint684": "No new growth event kinds — Phase E Commercial Intelligence stack wrap remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 700–709 at 9/10",
-    "sprint685": "No new growth event kinds — milestone 700–709 wrap completeness review confirms Phase E Commercial Intelligence stack wrap full stack audit (foundation · Playwright · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip); milestone closed; 710–719 opens Sprint 686"
+    "sprint685": "No new growth event kinds — milestone 700–709 wrap completeness review confirms Phase E Commercial Intelligence stack wrap full stack audit (foundation · Playwright · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip); milestone closed; 710–719 opens Sprint 686",
+    "sprint686": "No new growth event kinds — Phase F AI decision support foundation defines role critical path + checklist contracts for site-team workflow validation; Milestone 710–719 opens Sprint 687",
+    "sprint687": "No new growth event kinds — Playwright Phase F AI decision support scaffold reads phase-c-revision-role-path-banner + phase-c-revision-signoff-checklist + phase-c-revision-mobile-target-size; Milestone 710–719 at 2/10",
+    "sprint688": "No new growth event kinds — Phase B validation matrix Phase F AI decision support row wiring; Milestone 710–719 at 3/10",
+    "sprint689": "No new growth event kinds — Phase F AI decision support UI assertions; Milestone 710–719 at 4/10",
+    "sprint690": "No new growth event kinds — Phase F AI decision support localStorage mirror reconciliation; Milestone 710–719 at 5/10",
+    "sprint691": "No new growth event kinds — Phase F AI decision support remote seed → localStorage hydrate path; Milestone 710–719 at 6/10",
+    "sprint692": "No new growth event kinds — Phase F AI decision support cold-start regeneration after remote seed; Milestone 710–719 at 7/10",
+    "sprint693": "No new growth event kinds — Phase F AI decision support full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 710–719 at 8/10",
+    "sprint694": "No new growth event kinds — Phase F AI decision support remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 710–719 at 9/10",
+    "sprint695": "No new growth event kinds — milestone 710–719 wrap completeness review confirms Phase F AI decision support full stack audit (foundation · Playwright · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip); milestone closed; 720–729 opens Sprint 696"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -9603,7 +9847,17 @@
     "sprint682": "When localStorage cleared after prior remote seed, di-phase-e-commercial-stack-wrap-* indexed sheets regenerate from durable Supabase intelligence_json; Milestone 700–709 at 7/10",
     "sprint683": "When VITE_PROJECT_KG_PERSIST=1, di-phase-e-commercial-stack-wrap-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 700–709 at 8/10",
     "sprint684": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 700–709 at 9/10",
-    "sprint685": "Milestone 700–709 wrap confirms durable Phase E Commercial Intelligence stack wrap validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 710–719 Phase F AI decision support foundation opens Sprint 686"
+    "sprint685": "Milestone 700–709 wrap confirms durable Phase E Commercial Intelligence stack wrap validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 710–719 Phase F AI decision support foundation opens Sprint 686",
+    "sprint686": "Phase F AI decision support foundation — role-based critical path coverage for visual_overlay · foreman · PM · QS · mobile/tablet; Milestone 710–719 opens Sprint 687",
+    "sprint687": "Playwright Phase F AI decision support assertion scaffold — role critical path + checklist UI chrome; Milestone 710–719 at 2/10",
+    "sprint688": "No direct KG edge changes — Phase B validation matrix Phase F AI decision support row wiring; Milestone 710–719 at 3/10",
+    "sprint689": "No direct KG edge changes — Phase F AI decision support UI assertions (phase-c-revision-role-path-banner chrome); Milestone 710–719 at 4/10",
+    "sprint690": "localStorage ↔ remote intelligence_json mirror reconciliation contract — durable Supabase indices stay consistent with di-phase-f-ai-decision-support-* offline mirror; Milestone 710–719 at 5/10",
+    "sprint691": "Remote Supabase intelligence_json indices seed di-phase-f-ai-decision-support-* localStorage mirror for cold-start hydrate; Milestone 710–719 at 6/10",
+    "sprint692": "When localStorage cleared after prior remote seed, di-phase-f-ai-decision-support-* indexed sheets regenerate from durable Supabase intelligence_json; Milestone 710–719 at 7/10",
+    "sprint693": "When VITE_PROJECT_KG_PERSIST=1, di-phase-f-ai-decision-support-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 710–719 at 8/10",
+    "sprint694": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 710–719 at 9/10",
+    "sprint695": "Milestone 710–719 wrap confirms durable Phase F AI decision support validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 720–729 Phase G AI Project Assistant foundation opens Sprint 696"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label â€” drawing revision id Â· superseded-by revision id Â· invalidation scope playback lines Â· lessons_learned stage badge Â· sprint-355-selftest.ts",
@@ -9689,7 +9943,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase E — Commercial Intelligence Commercial stack wrap Foundation Milestone (700-709) active 10/10; Sprint 685 closed; Sprint 686 queued (Platform Certification recertification post-milestone-close (Finding 4) — phase- · Milestone 710–719 Phase F AI decision support foundation per DRAWING_INTELLIGENC)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase E — Commercial Intelligence AI decision support Foundation Milestone (710-719) active 10/10; Sprint 695 closed; Sprint 696 queued (Platform Certification recertification post-milestone-close (Finding 4) — phase- · Milestone 720–729 Phase G AI Project Assistant foundation per DRAWING_INTELLIGEN)",
     "sprint372": "Mid-milestone 364â€“368 Drawing Intelligence Phase C revision supersede completeness review â€” Phase C revision supersede stack partial audit confirms growth events Â· Memory audit Â· viewer chrome Â· Decision Timeline Â· explainability Â· AI panel indicators â€” sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context â€” phaseCRevisionSupersedeExplainabilityEntries Â· isExplainabilityEnrichedDecisionTimelineEntry Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item Â· sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator â€” takeoff COS pipeline stage badge Â· phaseCRevisionSupersedeTimelineEntryCount Â· sprint-366-selftest.ts",
@@ -10006,7 +10260,17 @@
     "sprint682": "Milestone 700–709 Drawing Intelligence Phase D — Phase E Commercial Intelligence stack wrap at 7/10 — cold-start regeneration after remote seed — sprint-682-selftest.ts",
     "sprint683": "Milestone 700–709 Drawing Intelligence Phase D — Phase E Commercial Intelligence stack wrap at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-683-selftest.ts",
     "sprint684": "Milestone 700–709 Drawing Intelligence Phase D — Phase E Commercial Intelligence stack wrap at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-684-selftest.ts",
-    "sprint685": "Milestone 700–709 Drawing Intelligence Phase D — Phase E Commercial Intelligence stack wrap wrap completeness review — full stack audit; milestone closed; 710–719 opens Sprint 686 — sprint-685-selftest.ts"
+    "sprint685": "Milestone 700–709 Drawing Intelligence Phase D — Phase E Commercial Intelligence stack wrap wrap completeness review — full stack audit; milestone closed; 710–719 opens Sprint 686 — sprint-685-selftest.ts",
+    "sprint686": "Milestone 710–719 Drawing Intelligence Phase D — Phase F AI decision support opens — validation automation foundation — sprint-686-selftest.ts",
+    "sprint687": "Milestone 710–719 Drawing Intelligence Phase D — Phase F AI decision support at 2/10 — Playwright assertion scaffold — sprint-687-selftest.ts",
+    "sprint688": "Milestone 710–719 Drawing Intelligence Phase D — Phase F AI decision support at 3/10 — Phase B validation matrix row wiring — sprint-688-selftest.ts",
+    "sprint689": "Milestone 710–719 Drawing Intelligence Phase D — Phase F AI decision support at 4/10 — UI assertions — sprint-689-selftest.ts",
+    "sprint690": "Milestone 710–719 Drawing Intelligence Phase D — Phase F AI decision support at 5/10 — localStorage mirror reconciliation — sprint-690-selftest.ts",
+    "sprint691": "Milestone 710–719 Drawing Intelligence Phase D — Phase F AI decision support at 6/10 — remote seed → localStorage hydrate — sprint-691-selftest.ts",
+    "sprint692": "Milestone 710–719 Drawing Intelligence Phase D — Phase F AI decision support at 7/10 — cold-start regeneration after remote seed — sprint-692-selftest.ts",
+    "sprint693": "Milestone 710–719 Drawing Intelligence Phase D — Phase F AI decision support at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-693-selftest.ts",
+    "sprint694": "Milestone 710–719 Drawing Intelligence Phase D — Phase F AI decision support at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-694-selftest.ts",
+    "sprint695": "Milestone 710–719 Drawing Intelligence Phase D — Phase F AI decision support wrap completeness review — full stack audit; milestone closed; 720–729 opens Sprint 696 — sprint-695-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
@@ -10021,7 +10285,7 @@
     "daysRemaining": 3,
     "computedAsOf": "2026-07-09",
     "status": "at_risk",
-    "statusRationale": "Milestone 700–709 closed Sprint 685; Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase E Commercial Intelligence stack wrap full stack wrap complete (docs/PHASE_E_COMMERCIAL_STACK_WRAP_PLAN.json); Platform Certification 3/3 recertified Sprint 685 (Finding 4); next next milestone 710-719 Phase F AI decision support foundation Sprint 686 queued"
+    "statusRationale": "Milestone 710–719 closed Sprint 695; Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase F AI decision support full stack wrap complete (docs/PHASE_F_AI_DECISION_SUPPORT_PLAN.json); Platform Certification 3/3 recertified Sprint 695 (Finding 4); next next milestone 720-729 Phase G AI Project Assistant foundation Sprint 696 queued"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
