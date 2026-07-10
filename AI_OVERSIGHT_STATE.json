@@ -1,41 +1,42 @@
 {
   "lastUpdated": "2026-07-10",
   "currentSprint": {
-    "number": 754,
+    "number": 755,
     "status": "closed",
-    "previousClosed": 753,
+    "previousClosed": 754,
     "closedDate": "2026-07-10"
   },
   "currentMilestone": {
     "range": "770-779",
     "milestoneId": "770-779",
-    "milestoneName": "Drawing Intelligence Phase D — Phase C Confirmation feedback Detection Milestone",
+    "milestoneName": "Drawing Intelligence Phase E — Commercial Intelligence Confirmation feedback Foundation Milestone",
     "plannedSprintCount": 10,
     "actualSprintStart": 746,
     "actualSprintEnd": 755,
     "wrapReviewSprint": 755,
-    "status": "active",
-    "theme": "Confirmation feedback detection assistive validation automation (revision diff hints · assistive overlay · change detection contracts) (DRAWING_INTELLIGENCE_ROADMAP.md Phase G — Confirmation reject/edit feedback & approved-fact persistence)",
-    "openedDate": "2026-07-10",
-    "previousMilestoneClosed": "760-769 (Drawing Intelligence Phase D — Phase C Confirmation feedback Detection Milestone)",
-    "nextMilestoneOpens": "770-779 (Phase G Confirmation feedback foundation per DRAWING_INTELLIGENCE_ROADMAP.md)",
-    "wrapComplete": false
+    "status": "closed",
+    "theme": "Phase G Confirmation feedback — confirmationFeedback detection (assistive) (DRAWING_INTELLIGENCE_ROADMAP.md Phase C — Revision management & compare)",
+    "openedDate": "2026-07-09",
+    "wrapClosedDate": "2026-07-10",
+    "previousMilestoneClosed": "760-769 (Drawing Intelligence Phase D — Phase C Change Cloud Detection (Assistive) Milestone)",
+    "nextMilestoneOpens": "780-789 (Phase G AI Project Assistant wrap & production certification per DRAWING_INTELLIGENCE_ROADMAP.md)",
+    "wrapComplete": true
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 9,
-    "percentComplete": 90,
+    "sprintsClosed": 10,
+    "percentComplete": 100,
     "nextWrapReviewSprint": 755,
-    "milestoneWrapComplete": false
+    "milestoneWrapComplete": true
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Milestone wrap review — Drawing Intelligence Phase D Phase G Confirmation feedback completeness — sprint-755-selftest.ts"
+      "focus": "Milestone 780–789 Phase G AI Project Assistant wrap & production certification per DRAWING_INTELLIGENCE_ROADMAP.md — sprint-756-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
+      "focus": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
     }
   },
   "completedWork": {
@@ -2768,6 +2769,12 @@
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 770–779 at 9/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-PHASE-G-CONFIRMATION-FEEDBACK passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
       "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Milestone 770–779 wrap review deferred to Sprint 525"
+    },
+    "sprint755": {
+      "stream1": "Milestone wrap review — Drawing Intelligence Phase D Phase G Confirmation feedback completeness — sprint-755-selftest.ts",
+      "stream2": "Milestone 770–779 Phase G Confirmation feedback full stack completeness review — sprint-755-selftest.ts audits stack (foundation · Playwright scaffold · Phase B matrix · UI assertions · localStorage mirror reconciliation · remote seed hydrate · cold-start regeneration · full hydrate/persist path · remote read-after-write round-trip) · PHASE_B_RUNS=3 (consecutiveGreen reuse / exclusive when needed) · Platform Certification recertification post-milestone-close (Finding 4)",
+      "validation": "Milestone wrap selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 780-789 Phase G AI Project Assistant wrap & production certification deferred to Sprint 756"
     }
   },
   "changedFiles": {
@@ -9116,6 +9123,20 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint755": [
+      "scripts/sprint-755-selftest.ts",
+      "scripts/sprint-755-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PHASE_G_CONFIRMATION_FEEDBACK_PLAN.json",
+      "docs/PHASE_G_CONFIRMATION_FEEDBACK_PLAN.json",
+      "[REDACTED-path]",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -9945,14 +9966,16 @@
       "sprint753": "Milestone 770–779 at 8/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1)",
       "sprint753PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); full hydrate / persist path dual-write / remote-authoritative wired; UI-PHASE-G-CONFIRMATION-FEEDBACK passed",
       "sprint754": "Milestone 770–779 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
-      "sprint754PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-PHASE-G-CONFIRMATION-FEEDBACK passed"
+      "sprint754PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-PHASE-G-CONFIRMATION-FEEDBACK passed",
+      "sprint755": "Milestone 770–779 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Phase G Confirmation feedback full stack completeness audit)",
+      "sprint755PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-10",
       "lastCertifiedBaseline": "2026-07-10",
-      "status": "current — recertified Sprint 746 (770-779 Phase G Confirmation feedback opens 1/10 Finding 4)",
-      "sprintRangeCovered": "526–526 (Drawing Intelligence Phase E — Commercial Intelligence Confirmation feedback Foundation Milestone 770-779 opens)",
-      "deltaSinceCertification": "Sprints 130–534 delivered (405 sprints); Milestone 770-779 at 9/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); remote read-after-write round-trip (docs/PHASE_G_CONFIRMATION_FEEDBACK_PLAN.json); Platform Certification 3/3 recertified Sprint 746 (Finding 4)",
+      "status": "current — recertified Sprint 755 (770-779 next milestone opens post-milestone-close Finding 4)",
+      "sprintRangeCovered": "536–545 (Drawing Intelligence Phase D — Phase C Confirmation feedback Detection Milestone 770-779 closed)",
+      "deltaSinceCertification": "Sprints 130–545 delivered (416 sprints); Milestone 770-779 closed; next milestone 770-779 Confirmation feedback Detection; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase E Commercial Intelligence Estimating/BoQ wrap complete (docs/PHASE_G_CONFIRMATION_FEEDBACK_PLAN.json); Platform Certification 3/3 recertified Sprint 755 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -9963,18 +9986,20 @@
         "Commercial Intelligence state-machine change",
         "before production release"
       ],
-      "note": "3/3 deterministic re-achieved 2026-07-10 Sprint 746 post-milestone-close; recertify on triggers in recertificationTriggers — not indefinite valid"
+      "note": "3/3 deterministic re-achieved 2026-07-10 Sprint 755 post-milestone-close; recertify on triggers in recertificationTriggers — not indefinite valid"
     },
     "typecheck": "npx tsc -b (per regression gate)"
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 770–779 at 9/10, Sprint 754 closed, Sprint 755 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 754 remote read-after-write round-trip logged",
-    "docs/PHASE_G_CONFIRMATION_FEEDBACK_PLAN.json — remoteReadAfterWriteRoundTripComplete Sprint 754",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 754 closed, milestone 770-779 active (9/10), Sprint 755 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 754 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 754 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 770–779 closed, Sprint 756 queued (770–779 Phase G AI Project Assistant answer synthesis & multi-turn opens)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Milestone 770–779 wrap logged",
+    "docs/PHASE_G_CONFIRMATION_FEEDBACK_PLAN.json — milestoneWrapComplete Sprint 755",
+    "docs/PHASE_G_CONFIRMATION_FEEDBACK_PLAN.json — next milestone 780-789 Phase G AI Project Assistant wrap & production certification Sprint 756 queued",
+    "docs/DRAWING_INTELLIGENCE_ROADMAP.md — Phase G Confirmation feedback validation automation checked complete",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 755 closed, milestone 770-779 wrap closed (10/10), sprint 756 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 755 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 755 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -10018,7 +10043,7 @@
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Milestone 770-779 Phase D Phase G Confirmation feedback opens Sprint 747 (1/10); Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending"
+      "description": "Milestone 770–779 Phase D Phase G Confirmation feedback closed Sprint 755; Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 770–779 Phase G Confirmation feedback query & citation layer queued Sprint 756"
     },
     {
       "id": "partial-platform-services",
@@ -10029,7 +10054,7 @@
       "id": "platform-certification-stale",
       "severity": "low-governance",
       "relatedFinding": "finding-4",
-      "description": "Platform Certification 3/3 recertified 2026-07-10 Sprint 746 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
+      "description": "Platform Certification 3/3 recertified 2026-07-10 Sprint 755 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
     },
     "HIGH: write_audit_entry SECURITY DEFINER executable by authenticated without is_project_member Ã¢â‚¬â€ audit forgery risk (docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json)"
   ],
@@ -10121,27 +10146,27 @@
     }
   ],
   "nextSprint": {
-    "number": 755,
-    "stream1": "Milestone wrap review — Drawing Intelligence Phase D Phase G Confirmation feedback completeness — sprint-755-selftest.ts",
-    "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-755-selftest.ts",
-    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 770-779 Phase D Phase G Confirmation feedback active (9/10); remote read-after-write round-trip complete docs/PHASE_G_CONFIRMATION_FEEDBACK_PLAN.json"
+    "number": 756,
+    "stream1": "Milestone 780–789 Phase G AI Project Assistant wrap & production certification per DRAWING_INTELLIGENCE_ROADMAP.md — sprint-756-selftest.ts",
+    "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
+    "selftest": "scripts/sprint-756-selftest.ts",
+    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 770-779 Phase D Phase G Confirmation feedback closed (10/10); Phase E Commercial Intelligence Estimating/BoQ wrap complete docs/PHASE_G_CONFIRMATION_FEEDBACK_PLAN.json"
   },
   "oversightSync": {
-    "status": "degraded",
-    "reason": "api-response-anomaly-monitor-api-and-git",
-    "lastPushAttempt": "2026-07-10T18:08:48.242Z",
+    "status": "ok",
+    "reason": null,
+    "lastPushAttempt": "2026-07-10T18:09:50.572Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-10T18:08:48.242Z",
+    "verifiedAt": "2026-07-10T18:09:50.572Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-10T18:08:17.0548612Z",
-    "pushedAt": "2026-07-10T18:08:48.242Z",
-    "remoteHeadSha": "ea2eedd9a334fe23428271231f5d9fe8b0265aa0",
-    "publicStateVerifiedAt": "2026-07-10T18:08:48.242Z",
+    "sanitizedAt": "2026-07-10T18:10:41.1551622Z",
+    "pushedAt": "2026-07-10T18:09:50.572Z",
+    "remoteHeadSha": "0b490a4f5c103cf499de6dd2f927ca03d52ffa14",
+    "publicStateVerifiedAt": "2026-07-10T18:09:50.572Z",
     "publicStateJsonParsePassed": false,
-    "publicStateContentHash": "4ef734fb13ed536713b7dd11fdfff895da5a9b57b7c509da7754fabf2f75b013",
+    "publicStateContentHash": "ea26c787b90388e6968055746898de2a23718b584bde3d48afefccd769322ded",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -10172,19 +10197,19 @@
       "note": "bridgeDocsPublished retired Ã¢â‚¬â€ prior list falsely claimed bridge ops docs were on public main; only push allowlist + inbox are public"
     },
     "publicStateVerificationSource": "multi-route",
-    "publicStateRawCdnHash": "ce390771df24d1635ea3fd8fd23a98baeb1b6e22f8ae352a1c87c0999d72cc3d",
-    "publicStateRawCdnStale": true,
+    "publicStateRawCdnHash": "ea26c787b90388e6968055746898de2a23718b584bde3d48afefccd769322ded",
+    "publicStateRawCdnStale": false,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-10T18:08:48.242Z",
-      "rawEndpointVerifiedAt": "2026-07-10T18:08:48.242Z",
-      "gitOriginVerifiedAt": "2026-07-10T18:08:48.242Z",
+      "githubApiVerifiedAt": "2026-07-10T18:09:50.572Z",
+      "rawEndpointVerifiedAt": "2026-07-10T18:09:50.572Z",
+      "gitOriginVerifiedAt": "2026-07-10T18:09:50.572Z",
       "routeContentHashes": {
-        "github-api": "4ef734fb13ed536713b7dd11fdfff895da5a9b57b7c509da7754fabf2f75b013",
-        "raw-cdn": "ce390771df24d1635ea3fd8fd23a98baeb1b6e22f8ae352a1c87c0999d72cc3d",
+        "github-api": "ea26c787b90388e6968055746898de2a23718b584bde3d48afefccd769322ded",
+        "raw-cdn": "ea26c787b90388e6968055746898de2a23718b584bde3d48afefccd769322ded",
         "git-origin": null
       },
-      "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "ea2eedd9a334fe23428271231f5d9fe8b0265aa0",
+      "routeHashesMatch": true,
+      "canonicalRemoteHeadSha": "0b490a4f5c103cf499de6dd2f927ca03d52ffa14",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 1070,
       "classification": "api-response-anomaly-monitor-api-and-git"
@@ -10201,9 +10226,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 754,
+    "lastSyncedSprint": 755,
     "lastSyncedAt": "2026-07-10",
-    "milestoneProgress": "770-779 ACTIVE (9/10)",
+    "milestoneProgress": "770-779 WRAP CLOSED (10/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -10399,7 +10424,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Knowledge Library version lifecycle ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ cross-project knowledge reuse ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ knowledge similarity matching ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ proactive knowledge warning ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ user outcome feedback ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ confidence evolution ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase D — Phase C Confirmation feedback Detection Milestone milestone (770-779) active — Sprint 754 closed; Sprint 755 queued",
+    "phaseE": "Drawing Intelligence Phase E — Commercial Intelligence Confirmation feedback Foundation Milestone milestone (770-779) active — Sprint 755 closed; Sprint 756 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds Ã¢â‚¬â€ Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -10412,8 +10437,8 @@
     "sprint382": "No new growth event kinds Ã¢â‚¬â€ mid-milestone 374Ã¢â‚¬â€œ378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events Ã‚Â· Memory audit Ã‚Â· viewer chrome Ã‚Â· Decision Timeline Ã‚Â· explainability Ã‚Â· AI panel indicators)",
     "sprint379": "No new growth event kinds Ã¢â‚¬â€ project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Drawing Intelligence Phase E — Commercial Intelligence Confirmation feedback Foundation Milestone (770-779) active Sprint 754 (9/10); remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 complete; wrap review Sprint 525",
-    "phaseB": "Phase G Confirmation feedback milestone active (770-779) — technical items complete; UX validation automation foundation Sprint 746"
+    "phaseD": "Drawing Intelligence Phase E — Commercial Intelligence Confirmation feedback Foundation Milestone (770-779) closed Sprint 755; 770–779 Phase G Confirmation feedback query & citation layer queued Sprint 746",
+    "phaseB": "Phase G Confirmation feedback complete — Phase G Confirmation feedback milestone closed Sprint 755; Phase G Confirmation feedback query & citation layer (770-779) opens Sprint 746"
   },
   "digitalBrainImpact": {
     "sprint376": "No new growth event kinds Ã¢â‚¬â€ Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -10509,7 +10534,7 @@
     "sprint268": "No new growth event kinds ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 770-779 9/10 sprints closed (90%); latest growth-event sprint 400; Sprint 754 closed; Sprint 755 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 770-779 10/10 sprints closed (100%); latest growth-event sprint 400; Sprint 755 closed; Sprint 756 queued per nextSprint",
     "sprint372": "No new growth event kinds Ã¢â‚¬â€ mid-milestone 364Ã¢â‚¬â€œ368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events Ã‚Â· Memory audit Ã‚Â· viewer chrome Ã‚Â· Decision Timeline Ã‚Â· explainability Ã‚Â· AI panel indicators)",
     "sprint371": "No new growth event kinds Ã¢â‚¬â€ project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries Ã‚Â· isExplainabilityEnrichedDecisionTimelineEntry Ã‚Â· toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds Ã¢â‚¬â€ milestone 370Ã¢â‚¬â€œ379 wrap completeness review confirms supersede invalidation full stack audit (growth events Ã‚Â· Memory audit Ã‚Â· viewer chrome Ã‚Â· Decision Timeline Ã‚Â· explainability Ã‚Â· AI panel Ã‚Â· project assistant context engine wiring); milestone closed; 380Ã¢â‚¬â€œ389 Phase C Revision Management opens Sprint 364",
@@ -10900,7 +10925,8 @@
     "sprint751": "No new growth event kinds — Phase G Confirmation feedback remote seed → localStorage hydrate path; Milestone 770–779 at 6/10",
     "sprint752": "No new growth event kinds — Phase G Confirmation feedback cold-start regeneration after remote seed; Milestone 770–779 at 7/10",
     "sprint753": "No new growth event kinds — Phase G Confirmation feedback full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 770–779 at 8/10",
-    "sprint754": "No new growth event kinds — Phase G Confirmation feedback remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 770–779 at 9/10"
+    "sprint754": "No new growth event kinds — Phase G Confirmation feedback remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 770–779 at 9/10",
+    "sprint755": "No new growth event kinds — milestone 770–779 wrap completeness review confirms Phase G Confirmation feedback full stack audit (foundation · Playwright · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip); milestone closed; 780–789 opens Sprint 756"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -11354,7 +11380,8 @@
     "sprint751": "Remote Supabase intelligence_json indices seed di-phase-g-confirmation-feedback-* localStorage mirror for cold-start hydrate; Milestone 770–779 at 6/10",
     "sprint752": "When localStorage cleared after prior remote seed, di-phase-g-confirmation-feedback-* indexed sheets regenerate from durable Supabase intelligence_json; Milestone 770–779 at 7/10",
     "sprint753": "When VITE_PROJECT_KG_PERSIST=1, di-phase-g-confirmation-feedback-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 770–779 at 8/10",
-    "sprint754": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 770–779 at 9/10"
+    "sprint754": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 770–779 at 9/10",
+    "sprint755": "Milestone 770–779 wrap confirms durable Phase G Confirmation feedback validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 770–779 Phase G Confirmation feedback query & citation layer opens Sprint 746"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label Ã¢â‚¬â€ drawing revision id Ã‚Â· superseded-by revision id Ã‚Â· invalidation scope playback lines Ã‚Â· lessons_learned stage badge Ã‚Â· sprint-355-selftest.ts",
@@ -11440,7 +11467,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase C Confirmation feedback Detection Milestone (770-779) active 9/10; Sprint 754 closed; Sprint 755 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Milestone wrap review — Drawing Intelligence Phase D Phase G Confirmation feedba)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase E — Commercial Intelligence Confirmation feedback Foundation Milestone (770-779) active 10/10; Sprint 755 closed; Sprint 756 queued (Platform Certification recertification post-milestone-close (Finding 4) — phase- · Milestone 780–789 Phase G AI Project Assistant wrap & production certification p)",
     "sprint372": "Mid-milestone 364Ã¢â‚¬â€œ368 Drawing Intelligence Phase C revision supersede completeness review Ã¢â‚¬â€ Phase C revision supersede stack partial audit confirms growth events Ã‚Â· Memory audit Ã‚Â· viewer chrome Ã‚Â· Decision Timeline Ã‚Â· explainability Ã‚Â· AI panel indicators Ã¢â‚¬â€ sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context Ã¢â‚¬â€ phaseCRevisionSupersedeExplainabilityEntries Ã‚Â· isExplainabilityEnrichedDecisionTimelineEntry Ã‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries Ã‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item Ã‚Â· sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator Ã¢â‚¬â€ takeoff COS pipeline stage badge Ã‚Â· phaseCRevisionSupersedeTimelineEntryCount Ã‚Â· sprint-366-selftest.ts",
@@ -11826,7 +11853,8 @@
     "sprint751": "Milestone 770–779 Drawing Intelligence Phase D — Phase G Confirmation feedback at 6/10 — remote seed → localStorage hydrate — sprint-751-selftest.ts",
     "sprint752": "Milestone 770–779 Drawing Intelligence Phase D — Phase G Confirmation feedback at 7/10 — cold-start regeneration after remote seed — sprint-752-selftest.ts",
     "sprint753": "Milestone 770–779 Drawing Intelligence Phase D — Phase G Confirmation feedback at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-753-selftest.ts",
-    "sprint754": "Milestone 770–779 Drawing Intelligence Phase D — Phase G Confirmation feedback at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-754-selftest.ts"
+    "sprint754": "Milestone 770–779 Drawing Intelligence Phase D — Phase G Confirmation feedback at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-754-selftest.ts",
+    "sprint755": "Milestone 770–779 Drawing Intelligence Phase D — Phase G Confirmation feedback wrap completeness review — full stack audit; milestone closed; 780–789 opens Sprint 756 — sprint-755-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
@@ -11841,7 +11869,7 @@
     "daysRemaining": 3,
     "computedAsOf": "2026-07-09",
     "status": "at_risk",
-    "statusRationale": "Milestone 770-779 opens Sprint 747 (1/10); Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase E Commercial Intelligence Estimating/BoQ foundation (docs/PHASE_G_CONFIRMATION_FEEDBACK_PLAN.json); Phase B UX Sign-off wrap complete (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Platform Certification 3/3 recertified Sprint 746 (Finding 4); Milestone 540–549 closed Sprint 525"
+    "statusRationale": "Milestone 770–779 closed Sprint 755; Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase G Confirmation feedback full stack wrap complete (docs/PHASE_G_CONFIRMATION_FEEDBACK_PLAN.json); Platform Certification 3/3 recertified Sprint 755 (Finding 4); next next milestone 780-789 Phase G AI Project Assistant wrap & production certification Sprint 756 queued"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
