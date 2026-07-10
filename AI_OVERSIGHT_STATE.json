@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-10",
   "currentSprint": {
-    "number": 596,
+    "number": 597,
     "status": "closed",
-    "previousClosed": 595,
+    "previousClosed": 596,
     "closedDate": "2026-07-10"
   },
   "currentMilestone": {
@@ -23,15 +23,15 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 1,
-    "percentComplete": 10,
+    "sprintsClosed": 2,
+    "percentComplete": 20,
     "nextWrapReviewSprint": 605,
     "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Playwright Phase E Commercial Intelligence Estimating/BoQ assertion scaffold — sprint-597-selftest.ts"
+      "focus": "Phase B validation matrix Phase E Commercial Intelligence Estimating/BoQ row wiring — sprint-598-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -1820,6 +1820,12 @@
       "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 620–629 opens selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
       "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; full Playwright Phase E Commercial Intelligence Estimating/BoQ role-path UI assertions deferred to Sprint 597+"
+    },
+    "sprint597": {
+      "stream1": "Playwright Phase E Commercial Intelligence Estimating/BoQ assertion scaffold — parsePhaseEEstimatingBoqDomObservation · assertPhaseEEstimatingBoqObservation · buildPhaseEEstimatingBoqPlaywrightScaffoldSummary · phaseCBulkUploadScaffold · phase-b-wynyard-validation.ts UI-PHASE-E-ESTIMATING-BOQ · sprint-597-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (exclusive re-run for new result id; stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 620–629 at 2/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); UI-PHASE-E-ESTIMATING-BOQ passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; full Phase E Commercial Intelligence Estimating/BoQ UI assertions deferred to Sprint 598+"
     }
   },
   "changedFiles": {
@@ -5733,6 +5739,24 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint597": [
+      "src/platform/validation/phaseEEstimatingBoqValidationService.ts",
+      "[REDACTED-path]",
+      "[REDACTED-path]",
+      "[REDACTED-path]",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_E_ESTIMATING_BOQ_PLAN.json",
+      "scripts/sprint-597-selftest.ts",
+      "scripts/sprint-597-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -6246,14 +6270,16 @@
       "sprint595": "Milestone 610–619 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Phase E Commercial Intelligence takeoff (E1 assist-only) full stack completeness audit)",
       "sprint595PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
       "sprint596": "Milestone 620–629 opens — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Phase E Commercial Intelligence Estimating/BoQ foundation; consecutiveGreen reuse when stampede=0)",
-      "sprint596PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
+      "sprint596PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
+      "sprint597": "Milestone 620–629 at 2/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Playwright Phase E Commercial Intelligence Estimating/BoQ assertion scaffold)",
+      "sprint597PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3 exclusive for UI-PHASE-E-ESTIMATING-BOQ; stampede=0); UI-PHASE-E-ESTIMATING-BOQ passed"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-10",
       "lastCertifiedBaseline": "2026-07-10",
       "status": "current — recertified Sprint 596 (620-629 Phase E Commercial Intelligence Estimating/BoQ opens 1/10 Finding 4)",
       "sprintRangeCovered": "526–526 (Drawing Intelligence Phase E — Commercial Intelligence Estimating/BoQ Foundation Milestone 620-629 opens)",
-      "deltaSinceCertification": "Sprints 130–526 delivered (397 sprints); Milestone 620-629 closed; Phase D Phase E Commercial Intelligence Estimating/BoQ 620-629 opens (1/10); gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase B UX Sign-off wrap complete (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Phase E Commercial Intelligence Estimating/BoQ foundation (docs/PHASE_E_ESTIMATING_BOQ_PLAN.json); Platform Certification 3/3 recertified Sprint 596 (Finding 4)",
+      "deltaSinceCertification": "Sprints 130–527 delivered (398 sprints); Milestone 620-629 at 2/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Playwright Phase E Commercial Intelligence Estimating/BoQ assertion scaffold (docs/PHASE_E_ESTIMATING_BOQ_PLAN.json); Platform Certification 3/3 recertified Sprint 596 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -6270,12 +6296,12 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 620–629 opens (1/10), Sprint 596 closed, Sprint 597 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Milestone 620–629 Phase E Commercial Intelligence Estimating/BoQ opens logged",
-    "docs/PHASE_E_ESTIMATING_BOQ_PLAN.json — foundationComplete Sprint 596",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 596 closed, milestone 620-629 active (1/10), Sprint 597 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 596 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 596 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 620–629 at 2/10, Sprint 597 closed, Sprint 598 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 597 Playwright Phase E Commercial Intelligence Estimating/BoQ scaffold logged",
+    "docs/PHASE_E_ESTIMATING_BOQ_PLAN.json — playwrightExtensionScaffoldComplete Sprint 597",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 597 closed, milestone 620-629 active (2/10), Sprint 598 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 597 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 597 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -6422,27 +6448,27 @@
     }
   ],
   "nextSprint": {
-    "number": 597,
-    "stream1": "Playwright Phase E Commercial Intelligence Estimating/BoQ assertion scaffold — sprint-597-selftest.ts",
+    "number": 598,
+    "stream1": "Phase B validation matrix Phase E Commercial Intelligence Estimating/BoQ row wiring — sprint-598-selftest.ts",
     "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-597-selftest.ts",
-    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 620-629 Phase D Phase E Commercial Intelligence Estimating/BoQ opens (1/10); Phase C revision management wrap complete docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json"
+    "selftest": "scripts/sprint-598-selftest.ts",
+    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 620-629 Phase D Phase E Commercial Intelligence Estimating/BoQ active (2/10); Playwright scaffold complete docs/PHASE_E_ESTIMATING_BOQ_PLAN.json"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-10T09:12:48.196Z",
+    "lastPushAttempt": "2026-07-10T09:13:41.380Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-10T09:12:48.196Z",
+    "verifiedAt": "2026-07-10T09:13:41.380Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-10T09:12:05.7725840Z",
-    "pushedAt": "2026-07-10T09:12:48.196Z",
-    "remoteHeadSha": "56a98d664d46dc95ac5e09cee7aa2a54c7d07181",
-    "publicStateVerifiedAt": "2026-07-10T09:12:48.196Z",
+    "sanitizedAt": "2026-07-10T09:18:17.3373476Z",
+    "pushedAt": "2026-07-10T09:13:41.380Z",
+    "remoteHeadSha": "a4d8794109679264a506ae50c417ac94eaebfb01",
+    "publicStateVerifiedAt": "2026-07-10T09:13:41.380Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "8637aecce5c24008315621a6b43c8451c0348156edecd79e240e11b034e21128",
+    "publicStateContentHash": "3040d061996af27c8744c9bfdcd5e514df50f2cbcae3b2ba4524d84224a37d6b",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -6474,21 +6500,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "8637aecce5c24008315621a6b43c8451c0348156edecd79e240e11b034e21128",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-10T09:12:48.196Z",
-      "rawEndpointVerifiedAt": "2026-07-10T09:12:48.196Z",
-      "gitOriginVerifiedAt": "2026-07-10T09:12:48.196Z",
+      "githubApiVerifiedAt": "2026-07-10T09:13:41.380Z",
+      "rawEndpointVerifiedAt": "2026-07-10T09:13:41.380Z",
+      "gitOriginVerifiedAt": "2026-07-10T09:13:41.380Z",
       "routeContentHashes": {
-        "github-api": "8637aecce5c24008315621a6b43c8451c0348156edecd79e240e11b034e21128",
+        "github-api": "3040d061996af27c8744c9bfdcd5e514df50f2cbcae3b2ba4524d84224a37d6b",
         "raw-cdn": "8637aecce5c24008315621a6b43c8451c0348156edecd79e240e11b034e21128",
-        "git-origin": "8637aecce5c24008315621a6b43c8451c0348156edecd79e240e11b034e21128"
+        "git-origin": "3040d061996af27c8744c9bfdcd5e514df50f2cbcae3b2ba4524d84224a37d6b"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "56a98d664d46dc95ac5e09cee7aa2a54c7d07181",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "a4d8794109679264a506ae50c417ac94eaebfb01",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 754,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -6502,9 +6528,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 596,
+    "lastSyncedSprint": 597,
     "lastSyncedAt": "2026-07-10",
-    "milestoneProgress": "620-629 OPENS (1/10)",
+    "milestoneProgress": "620-629 ACTIVE (2/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -6700,7 +6726,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication Ã¢â€ â€™ Knowledge Library version lifecycle Ã¢â€ â€™ cross-project knowledge reuse Ã¢â€ â€™ knowledge similarity matching Ã¢â€ â€™ proactive knowledge warning Ã¢â€ â€™ user outcome feedback Ã¢â€ â€™ confidence evolution Ã¢â€ â€™ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase D — Phase C Estimating/BoQ Detection Milestone milestone (620-629) active — Sprint 596 closed; Sprint 597 queued",
+    "phaseE": "Drawing Intelligence Phase D — Phase C Estimating/BoQ Detection Milestone milestone (620-629) active — Sprint 597 closed; Sprint 598 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds â€” Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -6713,7 +6739,7 @@
     "sprint382": "No new growth event kinds â€” mid-milestone 374â€“378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events Â· Memory audit Â· viewer chrome Â· Decision Timeline Â· explainability Â· AI panel indicators)",
     "sprint379": "No new growth event kinds â€” project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Drawing Intelligence Phase E — Commercial Intelligence Estimating/BoQ Foundation Milestone (620-629) active Sprint 596 (1/10); 620-629 Phase B UX Sign-off Milestone closed Sprint 525",
+    "phaseD": "Drawing Intelligence Phase E — Commercial Intelligence Estimating/BoQ Foundation Milestone (620-629) active Sprint 597 (2/10); Playwright assertion scaffold complete",
     "phaseB": "Phase E Commercial Intelligence Estimating/BoQ milestone active (620-629) — technical items complete; UX validation automation foundation Sprint 596"
   },
   "digitalBrainImpact": {
@@ -6810,7 +6836,7 @@
     "sprint268": "No new growth event kinds Ã¢â‚¬â€ operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds Ã¢â‚¬â€ publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds Ã¢â‚¬â€ operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 620-629 1/10 sprints closed (10%); latest growth-event sprint 400; Sprint 596 closed; Sprint 597 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 620-629 2/10 sprints closed (20%); latest growth-event sprint 400; Sprint 597 closed; Sprint 598 queued per nextSprint",
     "sprint372": "No new growth event kinds â€” mid-milestone 364â€“368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events Â· Memory audit Â· viewer chrome Â· Decision Timeline Â· explainability Â· AI panel indicators)",
     "sprint371": "No new growth event kinds â€” project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries Â· isExplainabilityEnrichedDecisionTimelineEntry Â· toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds â€” milestone 370â€“379 wrap completeness review confirms supersede invalidation full stack audit (growth events Â· Memory audit Â· viewer chrome Â· Decision Timeline Â· explainability Â· AI panel Â· project assistant context engine wiring); milestone closed; 380â€“389 Phase C Revision Management opens Sprint 364",
@@ -7043,7 +7069,8 @@
     "sprint593": "No new growth event kinds — Phase E Commercial Intelligence takeoff (E1 assist-only) full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 610–619 at 8/10",
     "sprint594": "No new growth event kinds — Phase E Commercial Intelligence takeoff (E1 assist-only) remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 610–619 at 9/10",
     "sprint595": "No new growth event kinds — milestone 610–619 wrap completeness review confirms Phase E Commercial Intelligence takeoff (E1 assist-only) full stack audit (foundation · Playwright · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip); milestone closed; 620–629 opens Sprint 596",
-    "sprint596": "No new growth event kinds — Phase E Commercial Intelligence Estimating/BoQ foundation defines role critical path + checklist contracts for site-team workflow validation; Milestone 620–629 opens Sprint 597"
+    "sprint596": "No new growth event kinds — Phase E Commercial Intelligence Estimating/BoQ foundation defines role critical path + checklist contracts for site-team workflow validation; Milestone 620–629 opens Sprint 597",
+    "sprint597": "No new growth event kinds — Playwright Phase E Commercial Intelligence Estimating/BoQ scaffold reads phase-c-revision-role-path-banner + phase-c-revision-signoff-checklist + phase-c-revision-mobile-target-size; Milestone 620–629 at 2/10"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -7339,7 +7366,8 @@
     "sprint593": "When VITE_PROJECT_KG_PERSIST=1, di-phase-e-takeoff-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 610–619 at 8/10",
     "sprint594": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 610–619 at 9/10",
     "sprint595": "Milestone 610–619 wrap confirms durable Phase E Commercial Intelligence takeoff (E1 assist-only) validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 620–629 Phase E Estimating/BoQ foundation opens Sprint 596",
-    "sprint596": "Phase E Commercial Intelligence Estimating/BoQ foundation — role-based critical path coverage for visual_overlay · foreman · PM · QS · mobile/tablet; Milestone 620–629 opens Sprint 597"
+    "sprint596": "Phase E Commercial Intelligence Estimating/BoQ foundation — role-based critical path coverage for visual_overlay · foreman · PM · QS · mobile/tablet; Milestone 620–629 opens Sprint 597",
+    "sprint597": "Playwright Phase E Commercial Intelligence Estimating/BoQ assertion scaffold — role critical path + checklist UI chrome; Milestone 620–629 at 2/10"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label â€” drawing revision id Â· superseded-by revision id Â· invalidation scope playback lines Â· lessons_learned stage badge Â· sprint-355-selftest.ts",
@@ -7425,7 +7453,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase C Estimating/BoQ Detection Milestone (620-629) active 1/10; Sprint 596 closed; Sprint 597 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Playwright Phase E Commercial Intelligence Estimating/BoQ assertion scaffold — s)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase C Estimating/BoQ Detection Milestone (620-629) active 2/10; Sprint 597 closed; Sprint 598 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Phase B validation matrix Phase E Commercial Intelligence Estimating/BoQ row wir)",
     "sprint372": "Mid-milestone 364â€“368 Drawing Intelligence Phase C revision supersede completeness review â€” Phase C revision supersede stack partial audit confirms growth events Â· Memory audit Â· viewer chrome Â· Decision Timeline Â· explainability Â· AI panel indicators â€” sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context â€” phaseCRevisionSupersedeExplainabilityEntries Â· isExplainabilityEnrichedDecisionTimelineEntry Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item Â· sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator â€” takeoff COS pipeline stage badge Â· phaseCRevisionSupersedeTimelineEntryCount Â· sprint-366-selftest.ts",
@@ -7653,7 +7681,8 @@
     "sprint593": "Milestone 610–619 Drawing Intelligence Phase D — Phase E Commercial Intelligence takeoff (E1 assist-only) at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-593-selftest.ts",
     "sprint594": "Milestone 610–619 Drawing Intelligence Phase D — Phase E Commercial Intelligence takeoff (E1 assist-only) at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-594-selftest.ts",
     "sprint595": "Milestone 610–619 Drawing Intelligence Phase D — Phase E Commercial Intelligence takeoff (E1 assist-only) wrap completeness review — full stack audit; milestone closed; 620–629 opens Sprint 596 — sprint-595-selftest.ts",
-    "sprint596": "Milestone 620–629 Drawing Intelligence Phase D — Phase E Commercial Intelligence Estimating/BoQ opens — validation automation foundation — sprint-596-selftest.ts"
+    "sprint596": "Milestone 620–629 Drawing Intelligence Phase D — Phase E Commercial Intelligence Estimating/BoQ opens — validation automation foundation — sprint-596-selftest.ts",
+    "sprint597": "Milestone 620–629 Drawing Intelligence Phase D — Phase E Commercial Intelligence Estimating/BoQ at 2/10 — Playwright assertion scaffold — sprint-597-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
