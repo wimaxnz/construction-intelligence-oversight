@@ -1,6 +1,6 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 790–799 Phase D Production readiness & platform certification CLOSED (10/10); Sprint 776 queued (790–799 Phase G AI Project Assistant answer synthesis & multi-turn opens).
+**Status:** Active — Milestone 790–799 Phase D Production readiness & platform certification CLOSED (10/10); Sprint 776 queued (800�809 Phase F AI decision support foundation opens).
 
 **Last updated:** 2026-07-10
 **Current sprint:** 775 closed  
