@@ -1,10 +1,10 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 620–629 Phase D Phase E Commercial Intelligence Estimating/BoQ CLOSED (10/10); Sprint 606 queued (620–629 Phase E Estimating/BoQ foundation opens).
+**Status:** Active — Milestone 630–639 Phase D Phase E Commercial Intelligence Tendering OPEN (1/10); Sprint 607 queued.
 
 **Last updated:** 2026-07-10
-**Current sprint:** 605 closed  
-**Next sprint:** 536 queued
+**Current sprint:** 606 closed  
+**Next sprint:** 607 queued
 **Milestone:** 550–559 WRAP CLOSED (10/10) · 560–569 Phase C Revision Management opens Sprint 536
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
