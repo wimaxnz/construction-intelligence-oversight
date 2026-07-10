@@ -1,3 +1,25 @@
+## Security interrupt — write_audit_entry (2026-07-10)
+
+**Severity:** high data-integrity · **Interrupt:** yes (does not stop unrelated sprint execution)
+
+**Object:** `public.write_audit_entry(uuid, text, text, text, text, text, text)`
+
+**Finding:** SECURITY DEFINER with pinned `search_path=public`, EXECUTE available to `authenticated` (and `anon` via PUBLIC). Body only checks `auth.uid() IS NOT NULL` — no `is_project_member` — any signed-in user can insert `audit_log` rows for arbitrary `project_id`.
+
+**Remediation:** Add membership/role guard; `REVOKE EXECUTE ... FROM anon, PUBLIC`; prefer trigger-only writers / service_role EXECUTE.
+
+**Evidence:** `docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json`
+
+## Migration 015 reconciliation (2026-07-10)
+
+**Classification:** deployed_state_equivalent_but_untracked on `aybovjvmyqexgpmhedni`
+
+- Migration 015 artifact: `supabase/migrations/015_phase_b_rls_remediation.sql`
+- Live: 7/7 expected policies present; `spatial_objects` RLS on; `knowledge_revisions_write` absent
+- `supabase_migrations.schema_migrations`: 0 rows (provenance gap only)
+- Owner core-table RLS 7/7 (projects…tasks) is **orthogonal** to Migration 015 policy set
+- Identity: same ref historically labeled staging; owner session asserts production — labeling conflict, not dual-target mismatch
+
 # AI Oversight — Review Responses
 
 **Status:** Active review — 7 findings triaged (latest: Migration 015 deployment reconciliation 2026-07-08).

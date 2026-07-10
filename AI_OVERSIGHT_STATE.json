@@ -14,12 +14,12 @@
     "actualSprintStart": 576,
     "actualSprintEnd": 585,
     "wrapReviewSprint": 585,
-    "status": "active",
+    "status": "closed",
     "theme": "Phase C change cloud detection (assistive) — change cloud detection (assistive) (DRAWING_INTELLIGENCE_ROADMAP.md Phase C — Revision management & compare)",
     "openedDate": "2026-07-09",
     "wrapClosedDate": "2026-07-09",
     "previousMilestoneClosed": "590-599 (Drawing Intelligence Phase D — Phase C Pin Re-anchor on Revision Change Milestone)",
-    "nextMilestoneOpens": "610-619 (Phase D Construction Memory Foundation per DRAWING_INTELLIGENCE_ROADMAP.md)",
+    "nextMilestoneOpens": "610-619 (Phase E Commercial Intelligence Takeoff foundation per DRAWING_INTELLIGENCE_ROADMAP.md)",
     "wrapComplete": true
   },
   "milestoneProgress": {
@@ -32,7 +32,7 @@
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Milestone 610–619 Phase D Construction Memory Foundation per DRAWING_INTELLIGENCE_ROADMAP.md — sprint-586-selftest.ts"
+      "focus": "Milestone 610–619 Phase E Commercial Intelligence Takeoff foundation per DRAWING_INTELLIGENCE_ROADMAP.md — sprint-586-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -6099,7 +6099,8 @@
       "severity": "low-governance",
       "relatedFinding": "finding-4",
       "description": "Platform Certification 3/3 recertified 2026-07-09 Sprint 585 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
-    }
+    },
+    "HIGH: write_audit_entry SECURITY DEFINER executable by authenticated without is_project_member — audit forgery risk (docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json)"
   ],
   "blockers": [
     {
@@ -6190,26 +6191,26 @@
   ],
   "nextSprint": {
     "number": 586,
-    "stream1": "Milestone 610–619 Phase D Construction Memory Foundation per DRAWING_INTELLIGENCE_ROADMAP.md — sprint-586-selftest.ts",
+    "stream1": "Milestone 610–619 Phase E Commercial Intelligence Takeoff foundation per DRAWING_INTELLIGENCE_ROADMAP.md — sprint-586-selftest.ts",
     "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
     "selftest": "scripts/sprint-586-selftest.ts",
-    "credentialNote": "GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only. gate #2 staging satisfied — evidence docs/MIGRATION_015_STAGING_VERIFICATION.json; Milestone 600-609 Phase D Phase C change cloud detection (assistive) closed (10/10); Phase C change cloud detection (assistive) wrap complete docs/PHASE_C_CHANGE_CLOUD_PLAN.json"
+    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending."
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-09T13:18:52.306Z",
+    "lastPushAttempt": "2026-07-09T13:19:25.247Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-09T13:18:52.306Z",
+    "verifiedAt": "2026-07-09T13:19:25.247Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-09T13:18:25.4508629Z",
-    "pushedAt": "2026-07-09T13:18:52.306Z",
-    "remoteHeadSha": "1e8dcddb6591256ef65478627261fc1a40623358",
-    "publicStateVerifiedAt": "2026-07-09T13:18:52.306Z",
+    "sanitizedAt": "2026-07-10T07:47:46.3505262Z",
+    "pushedAt": "2026-07-09T13:19:25.247Z",
+    "remoteHeadSha": "459e3d294d7eb30f4c8213cc3c9d3168d56c8af9",
+    "publicStateVerifiedAt": "2026-07-09T13:19:25.247Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "0e9ef6d2e33c9aed88564e71d992f7cb7288d5954fffe721bd3776b3e5a16eef",
+    "publicStateContentHash": "7cb7e73046c2be1c460463002cc592bd204e4c5cde4e5b0542a03de284601972",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -6240,22 +6241,22 @@
       "note": "bridgeDocsPublished retired — prior list falsely claimed bridge ops docs were on public main; only push allowlist + inbox are public"
     },
     "publicStateVerificationSource": "multi-route",
-    "publicStateRawCdnHash": "856b4373cbd1fdc13818811b53dd0e73afe2e317712c7f80e56917cb26724600",
-    "publicStateRawCdnStale": true,
+    "publicStateRawCdnHash": "7cb7e73046c2be1c460463002cc592bd204e4c5cde4e5b0542a03de284601972",
+    "publicStateRawCdnStale": false,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-09T13:18:52.306Z",
-      "rawEndpointVerifiedAt": "2026-07-09T13:18:52.306Z",
-      "gitOriginVerifiedAt": "2026-07-09T13:18:52.306Z",
+      "githubApiVerifiedAt": "2026-07-09T13:19:25.247Z",
+      "rawEndpointVerifiedAt": "2026-07-09T13:19:25.247Z",
+      "gitOriginVerifiedAt": "2026-07-09T13:19:25.247Z",
       "routeContentHashes": {
-        "github-api": "0e9ef6d2e33c9aed88564e71d992f7cb7288d5954fffe721bd3776b3e5a16eef",
-        "raw-cdn": "856b4373cbd1fdc13818811b53dd0e73afe2e317712c7f80e56917cb26724600",
-        "git-origin": "0e9ef6d2e33c9aed88564e71d992f7cb7288d5954fffe721bd3776b3e5a16eef"
+        "github-api": "7cb7e73046c2be1c460463002cc592bd204e4c5cde4e5b0542a03de284601972",
+        "raw-cdn": "7cb7e73046c2be1c460463002cc592bd204e4c5cde4e5b0542a03de284601972",
+        "git-origin": "7cb7e73046c2be1c460463002cc592bd204e4c5cde4e5b0542a03de284601972"
       },
-      "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "1e8dcddb6591256ef65478627261fc1a40623358",
+      "routeHashesMatch": true,
+      "canonicalRemoteHeadSha": "459e3d294d7eb30f4c8213cc3c9d3168d56c8af9",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 734,
-      "classification": "cdn-lag-api-git-agree"
+      "classification": "all-routes-consistent"
     }
   },
   "oversightMonitoring": {
@@ -6282,25 +6283,33 @@
     "gate4DeferralOwner": "platform-team",
     "gate4DeferralRationale": "Remote Cloudflare deploy and ChatGPT callable path not proven — local E2E only; deferral documented Sprint 424 + reaffirmed Sprint 439",
     "gate2StagingSatisfied": true,
-    "gate2ProductionPending": true,
+    "gate2ProductionPending": false,
     "productionDeployBlocked": false,
-    "productionPostSyncVerificationPending": true,
+    "productionPostSyncVerificationPending": false,
     "migration015PrimaryDeployPath": "supabase-github-integration",
     "migration015FallbackDeployPath": "MIGRATION_015_PRODUCTION_APPLY=1",
     "migration015OwnerApprovalGranted": "2026-07-08",
     "migration015PreSyncGatesPassed": true,
     "migration015SyncTriggerCommit": "9d4c94a",
     "migration015ContentCommit": "37e19a5",
-    "migration015DeploymentStatus": "sync_triggered",
-    "migration015DeploymentConfirmed": false,
-    "migration015PostSyncVerified": false,
-    "migration015ProductionRls7of7": "pending_probe",
+    "migration015DeploymentStatus": "state_equivalent_untracked",
+    "migration015DeploymentConfirmed": true,
+    "migration015PostSyncVerified": true,
+    "migration015ProductionRls7of7": "satisfied_state_equivalence",
     "migration015ProductionPhaseBRuns3": "pending_production_url",
-    "migration015ProbeCredentialsRequired": true,
+    "migration015ProbeCredentialsRequired": false,
     "migration015DeployCredentialsRequired": false,
     "migration015StagingNotTarget": "aybovjvmyqexgpmhedni",
-    "migration015ProductionProjectRefConfirmed": false,
-    "migration015Evidence": "docs/MIGRATION_015_PRODUCTION_VERIFICATION.json"
+    "migration015ProductionProjectRefConfirmed": true,
+    "migration015Evidence": "docs/MIGRATION_015_PRODUCTION_VERIFICATION.json",
+    "migration015ConnectedProjectRef": "aybovjvmyqexgpmhedni",
+    "migration015Classification": "deployed_state_equivalent_but_untracked",
+    "migration015SchemaMigrationsRows": 0,
+    "migration015IdentityNote": "Connected target aybovjvmyqexgpmhedni matches historical staging ref; owner/Supabase agent assert production identity for same ref — labeling conflict, not dual-target mismatch. Migration 015 7/7 policies proven live.",
+    "migration015SecurityTriage": "docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json",
+    "migration015SecurityInterrupt": true,
+    "migration015SecurityInterruptId": "secdef-auth-write_audit_entry-no-membership",
+    "migration015ReconciledAt": "2026-07-10T07:47:19.910Z"
   },
   "oversightFindingsState": [],
   "oversightFindingsTriage": [
@@ -6330,12 +6339,12 @@
       "findingId": "finding-3",
       "title": "Migration 015 production RLS risk is understated",
       "severity": "high-before-production",
-      "disposition": "accepted",
+      "disposition": "mitigated_state_equivalence",
       "rationale": "Reclassified in migrationsRequired and openRisks â€” non-blocking for local sprints; blocking for production release/acceptance",
       "targetSprintOrMilestone": "Pre-production deployment gate",
       "relatedRisk": "migration-015-pending",
       "architectureDecisionRequired": false,
-      "completionEvidence": null
+      "completionEvidence": "2026-07-10 live reconcile: Migration 015 7/7 policies present on aybovjvmyqexgpmhedni; spatial_objects RLS enabled; knowledge_revisions_write absent; classification deployed_state_equivalent_but_untracked (schema_migrations=0). docs/MIGRATION_015_PRODUCTION_VERIFICATION.json"
     },
     {
       "findingId": "finding-4",
@@ -6380,6 +6389,24 @@
       "relatedRisk": null,
       "architectureDecisionRequired": false,
       "completionEvidence": "currentMilestone explicit fields populated Sprint 265 oversight incorporation"
+    },
+    {
+      "findingId": "finding-sec-write-audit-entry",
+      "title": "SECURITY DEFINER write_audit_entry callable without project membership check",
+      "severity": "high-data-integrity",
+      "disposition": "open_interrupt",
+      "rationale": "Live Security Advisor triage 2026-07-10: public.write_audit_entry(...) is SECURITY DEFINER with search_path=public, EXECUTE granted to authenticated (and anon via PUBLIC). Body only guards auth.uid() IS NOT NULL — any signed-in user can insert audit_log rows for arbitrary project_id (audit forgery / data-integrity). Trigger wrappers audit_*_row are lower risk (trigger context). Not a Migration 015 regression; pre-existing from 003_sprint2_audit_and_writes.sql.",
+      "targetSprintOrMilestone": "Immediate security remediation sprint (non-blocking for unrelated roadmap sprints)",
+      "relatedRisk": "audit-log-forgery-via-secdef",
+      "architectureDecisionRequired": false,
+      "completionEvidence": null,
+      "objects": [
+        "public.write_audit_entry(uuid, text, text, text, text, text, text)"
+      ],
+      "remediation": "Add is_project_member(p_project_id) guard (or restrict EXECUTE to service_role / revoke from authenticated/PUBLIC); keep search_path pinned.",
+      "interruptRequired": true,
+      "evidence": "docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json",
+      "detectedAt": "2026-07-10T07:47:19.910Z"
     }
   ],
   "knowledgeTemplateReviewDomainCompleteness": {
@@ -7143,7 +7170,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase C change cloud detection (assistive) Milestone (600-609) active 10/10; Sprint 585 closed; Sprint 586 queued (Platform Certification recertification post-milestone-close (Finding 4) — phase- · Milestone 610–619 Phase D Construction Memory Foundation per DRAWING_INTELLIGENC)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase C change cloud detection (assistive) Milestone (600-609) active 10/10; Sprint 585 closed; Sprint 586 queued (Platform Certification recertification post-milestone-close (Finding 4) — phase- · Milestone 610–619 Phase E Commercial Intelligence Takeoff foundation per DRAWING)",
     "sprint372": "Mid-milestone 364–368 Drawing Intelligence Phase C revision supersede completeness review — Phase C revision supersede stack partial audit confirms growth events · Memory audit · viewer chrome · Decision Timeline · explainability · AI panel indicators — sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context — phaseCRevisionSupersedeExplainabilityEntries · isExplainabilityEnrichedDecisionTimelineEntry · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries · operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item · sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator — takeoff COS pipeline stage badge · phaseCRevisionSupersedeTimelineEntryCount · sprint-366-selftest.ts",
@@ -7370,17 +7397,18 @@
       "✅ Finding 6 chained acceptance: Project A lesson from evidence → Knowledge Library → human review approve → versioned provenance-backed template → Project B similar condition → similarity retrieval → proactive warning → user accept/dismiss/modify → outcome feedback → confidence evolution — demonstrated Sprint 422 (docs/CROSS_PROJECT_LEARNING_LOOP_ACCEPTANCE.json)",
       "✅ Migration 015 applied and verified on staging Supabase (RLS policies, pin/evidence delete policies, Sprint Validation 3/3 on staging) — satisfied Sprint 421; evidence: docs/MIGRATION_015_STAGING_VERIFICATION.json (status verified, 7/7 policies, hardCompletionGate2 satisfied)",
       "Platform Certification 5/5 deterministic suite re-run with baseline covering sprints through current closed sprint — 5/5 Sprint 418 preserved; Sprint Validation 3/3 re-run Sprint 424",
-      "Oversight bridge remote callable path proven (chatgptCallablePathProven) OR documented deferral with owner — deferral documented Sprint 424 + reaffirmed Sprint 439 (docs/PRODUCTION_GATE_4_BRIDGE_DEFERRAL.md); cloudflareDeployProven false; local E2E only"
+      "Oversight bridge remote callable path proven (chatgptCallablePathProven) OR documented deferral with owner — deferral documented Sprint 424 + reaffirmed Sprint 439 (docs/PRODUCTION_GATE_4_BRIDGE_DEFERRAL.md); cloudflareDeployProven false; local E2E only",
+      "✅ Migration 015 state-equivalent on connected Supabase aybovjvmyqexgpmhedni (7/7 remediation policies + spatial_objects RLS; untracked in schema_migrations) — reconciled 2026-07-10; evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json"
     ],
     "daysRemaining": 3,
     "computedAsOf": "2026-07-09",
     "status": "at_risk",
-    "statusRationale": "Milestone 600–609 closed Sprint 585; Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 production post-sync verification pending — dashboard deploy confirm + production RLS 7/7 probe + PHASE_B_RUNS=3; PRODUCTION_* required for probe only; Phase C change cloud detection (assistive) full stack wrap complete (docs/PHASE_C_CHANGE_CLOUD_PLAN.json); Platform Certification 3/3 recertified Sprint 585 (Finding 4); next next milestone 600-609 Change Cloud Detection Sprint 586 queued"
+    "statusRationale": "Gate #1 satisfied; gate #2 staging satisfied; Migration 015 live state-equivalent on aybovjvmyqexgpmhedni (7/7 policies + spatial_objects RLS; schema_migrations 0 rows = untracked). Owner core-table RLS 7/7 confirmed. Remaining: PHASE_B_RUNS=3 on app URL; security interrupt write_audit_entry membership guard; schema_migrations provenance optional."
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
     "Platform Certification recertification (Finding 4 â€” before production release)",
-    "Migration 015 production RLS 7/7 verification + PHASE_B_RUNS=3 (sync triggered 2026-07-08; probe creds pending)",
+    "Migration 015 schema_migrations provenance empty (0 rows) — optional CLI re-track; PHASE_B_RUNS=3 on production app URL still pending; security harden write_audit_entry",
     "Migration 017 env-only apply"
   ],
   "reviewStatus": {
@@ -7397,20 +7425,25 @@
     "sprint431Migration": "gate #2 satisfied - 7/7 policies verified 2026-07-07",
     "sprint432Migration": "prerequisite 001-014 applied (spatial_objects created); MIGRATION_015_APPLY=1 verified",
     "gate2": "satisfied",
-    "gate2Production": "pending_probe",
+    "gate2Production": "satisfied_state_equivalence",
     "gate2ProductionEvidence": "docs/MIGRATION_015_PRODUCTION_VERIFICATION.json",
     "productionSyncTriggered": "2026-07-08 empty commit 9d4c94a on main",
     "productionSyncContentCommit": "37e19a5",
-    "productionDeploymentStatus": "sync_triggered",
-    "productionDeploymentConfirmed": false,
-    "productionPostSyncVerified": false,
-    "productionRls7of7": "pending_probe",
+    "productionDeploymentStatus": "state_equivalent_untracked",
+    "productionDeploymentConfirmed": true,
+    "productionPostSyncVerified": true,
+    "productionRls7of7": "satisfied_state_equivalence_migration015_policies",
     "productionPhaseBRuns3": "pending_production_url",
     "primaryDeployPath": "supabase-github-integration",
     "stagingProjectRef": "aybovjvmyqexgpmhedni",
-    "productionProjectRefConfirmed": false,
+    "productionProjectRefConfirmed": true,
     "ownerApprovalGranted": "2026-07-08",
     "preSyncGatesPassed": true,
-    "reconciledAt": "2026-07-08T20:35:37.274Z"
+    "reconciledAt": "2026-07-10T07:47:19.910Z",
+    "connectedProjectRef": "aybovjvmyqexgpmhedni",
+    "schemaMigrationsRows": 0,
+    "classification": "deployed_state_equivalent_but_untracked",
+    "ownerCoreRls7of7": "satisfied_per_owner_evidence_projects_profiles_members_milestones_trades_areas_tasks",
+    "securityInterrupt": "write_audit_entry authenticated EXECUTE without membership guard"
   }
 }
