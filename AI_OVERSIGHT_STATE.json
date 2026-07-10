@@ -6205,7 +6205,7 @@
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-10T07:47:46.3505262Z",
+    "sanitizedAt": "2026-07-10T07:52:15.5224515Z",
     "pushedAt": "2026-07-09T13:19:25.247Z",
     "remoteHeadSha": "459e3d294d7eb30f4c8213cc3c9d3168d56c8af9",
     "publicStateVerifiedAt": "2026-07-09T13:19:25.247Z",
@@ -6309,9 +6309,30 @@
     "migration015SecurityTriage": "docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json",
     "migration015SecurityInterrupt": true,
     "migration015SecurityInterruptId": "secdef-auth-write_audit_entry-no-membership",
-    "migration015ReconciledAt": "2026-07-10T07:47:19.910Z"
+    "migration015ReconciledAt": "2026-07-10T07:47:19.910Z",
+    "migration015SecurityInterruptChannel": "securityInterrupts"
   },
-  "oversightFindingsState": [],
+  "oversightFindingsState": [
+    {
+      "findingId": "finding-sec-write-audit-entry",
+      "title": "SECURITY DEFINER write_audit_entry callable without project membership check",
+      "severity": "high-data-integrity",
+      "disposition": "open_interrupt",
+      "rationale": "Live Security Advisor triage 2026-07-10: public.write_audit_entry(...) is SECURITY DEFINER with search_path=public, EXECUTE granted to authenticated (and anon via PUBLIC). Body only guards auth.uid() IS NOT NULL — any signed-in user can insert audit_log rows for arbitrary project_id (audit forgery / data-integrity). Trigger wrappers audit_*_row are lower risk (trigger context). Not a Migration 015 regression; pre-existing from 003_sprint2_audit_and_writes.sql.",
+      "targetSprintOrMilestone": "Immediate security remediation sprint (non-blocking for unrelated roadmap sprints)",
+      "relatedRisk": "audit-log-forgery-via-secdef",
+      "architectureDecisionRequired": false,
+      "completionEvidence": null,
+      "objects": [
+        "public.write_audit_entry(uuid, text, text, text, text, text, text)"
+      ],
+      "remediation": "Add is_project_member(p_project_id) guard (or restrict EXECUTE to service_role / revoke from authenticated/PUBLIC); keep search_path pinned.",
+      "interruptRequired": true,
+      "evidence": "docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json",
+      "detectedAt": "2026-07-10T07:47:19.910Z",
+      "channel": "security_interrupt"
+    }
+  ],
   "oversightFindingsTriage": [
     {
       "findingId": "finding-1",
@@ -6389,24 +6410,6 @@
       "relatedRisk": null,
       "architectureDecisionRequired": false,
       "completionEvidence": "currentMilestone explicit fields populated Sprint 265 oversight incorporation"
-    },
-    {
-      "findingId": "finding-sec-write-audit-entry",
-      "title": "SECURITY DEFINER write_audit_entry callable without project membership check",
-      "severity": "high-data-integrity",
-      "disposition": "open_interrupt",
-      "rationale": "Live Security Advisor triage 2026-07-10: public.write_audit_entry(...) is SECURITY DEFINER with search_path=public, EXECUTE granted to authenticated (and anon via PUBLIC). Body only guards auth.uid() IS NOT NULL — any signed-in user can insert audit_log rows for arbitrary project_id (audit forgery / data-integrity). Trigger wrappers audit_*_row are lower risk (trigger context). Not a Migration 015 regression; pre-existing from 003_sprint2_audit_and_writes.sql.",
-      "targetSprintOrMilestone": "Immediate security remediation sprint (non-blocking for unrelated roadmap sprints)",
-      "relatedRisk": "audit-log-forgery-via-secdef",
-      "architectureDecisionRequired": false,
-      "completionEvidence": null,
-      "objects": [
-        "public.write_audit_entry(uuid, text, text, text, text, text, text)"
-      ],
-      "remediation": "Add is_project_member(p_project_id) guard (or restrict EXECUTE to service_role / revoke from authenticated/PUBLIC); keep search_path pinned.",
-      "interruptRequired": true,
-      "evidence": "docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json",
-      "detectedAt": "2026-07-10T07:47:19.910Z"
     }
   ],
   "knowledgeTemplateReviewDomainCompleteness": {
@@ -7445,5 +7448,25 @@
     "classification": "deployed_state_equivalent_but_untracked",
     "ownerCoreRls7of7": "satisfied_per_owner_evidence_projects_profiles_members_milestones_trades_areas_tasks",
     "securityInterrupt": "write_audit_entry authenticated EXECUTE without membership guard"
-  }
+  },
+  "securityInterrupts": [
+    {
+      "findingId": "finding-sec-write-audit-entry",
+      "title": "SECURITY DEFINER write_audit_entry callable without project membership check",
+      "severity": "high-data-integrity",
+      "disposition": "open_interrupt",
+      "rationale": "Live Security Advisor triage 2026-07-10: public.write_audit_entry(...) is SECURITY DEFINER with search_path=public, EXECUTE granted to authenticated (and anon via PUBLIC). Body only guards auth.uid() IS NOT NULL — any signed-in user can insert audit_log rows for arbitrary project_id (audit forgery / data-integrity). Trigger wrappers audit_*_row are lower risk (trigger context). Not a Migration 015 regression; pre-existing from 003_sprint2_audit_and_writes.sql.",
+      "targetSprintOrMilestone": "Immediate security remediation sprint (non-blocking for unrelated roadmap sprints)",
+      "relatedRisk": "audit-log-forgery-via-secdef",
+      "architectureDecisionRequired": false,
+      "completionEvidence": null,
+      "objects": [
+        "public.write_audit_entry(uuid, text, text, text, text, text, text)"
+      ],
+      "remediation": "Add is_project_member(p_project_id) guard (or restrict EXECUTE to service_role / revoke from authenticated/PUBLIC); keep search_path pinned.",
+      "interruptRequired": true,
+      "evidence": "docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json",
+      "detectedAt": "2026-07-10T07:47:19.910Z"
+    }
+  ]
 }
