@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-10",
   "currentSprint": {
-    "number": 589,
+    "number": 590,
     "status": "closed",
-    "previousClosed": 588,
+    "previousClosed": 589,
     "closedDate": "2026-07-10"
   },
   "currentMilestone": {
@@ -23,15 +23,15 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 4,
-    "percentComplete": 40,
+    "sprintsClosed": 5,
+    "percentComplete": 50,
     "nextWrapReviewSprint": 595,
     "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Phase E Commercial Intelligence takeoff (E1 assist-only) localStorage mirror reconciliation — sprint-590-selftest.ts"
+      "focus": "Phase E Commercial Intelligence takeoff (E1 assist-only) remote seed → localStorage hydrate — sprint-571-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -1784,6 +1784,12 @@
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 610–619 at 4/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); Phase E Commercial Intelligence takeoff (E1 assist-only) UI assertions wired; UI-PHASE-E-TAKEOFF passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
       "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase E Commercial Intelligence takeoff (E1 assist-only) localStorage mirror reconciliation deferred to Sprint 590+"
+    },
+    "sprint590": {
+      "stream1": "Phase E Commercial Intelligence takeoff (E1 assist-only) localStorage mirror reconciliation — assertPhaseETakeoffLocalStorageMirrorReconciliation · reconcilePhaseETakeoffLocalStorageMirror · parsePhaseETakeoffLocalStorageMirror · runphaseCBulkUploadLocalStorageMirrorReconciliation · phase-b-wynyard-validation.ts · sprint-590-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 610–619 at 5/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); localStorage mirror reconciliation wired; UI-PHASE-E-TAKEOFF passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase E Commercial Intelligence takeoff (E1 assist-only) remote seed → localStorage hydrate deferred to Sprint 521+"
     }
   },
   "changedFiles": {
@@ -5608,6 +5614,21 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint590": [
+      "src/platform/validation/phaseETakeoffValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_E_TAKEOFF_PLAN.json",
+      "scripts/sprint-590-selftest.ts",
+      "scripts/sprint-590-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -6108,14 +6129,16 @@
       "sprint588": "Milestone 610–619 at 3/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase B validation matrix Phase E Commercial Intelligence takeoff (E1 assist-only) row wiring)",
       "sprint588PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase B matrix Phase E Commercial Intelligence takeoff (E1 assist-only) row wired; UI-PHASE-E-TAKEOFF passed",
       "sprint589": "Milestone 610–619 at 4/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase E Commercial Intelligence takeoff (E1 assist-only) UI assertions)",
-      "sprint589PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase E Commercial Intelligence takeoff (E1 assist-only) UI assertions wired; UI-PHASE-E-TAKEOFF passed"
+      "sprint589PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase E Commercial Intelligence takeoff (E1 assist-only) UI assertions wired; UI-PHASE-E-TAKEOFF passed",
+      "sprint590": "Milestone 610–619 at 5/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + localStorage mirror reconciliation)",
+      "sprint590PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); localStorage mirror reconciliation wired; UI-PHASE-E-TAKEOFF passed"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-10",
       "lastCertifiedBaseline": "2026-07-10",
       "status": "current â€” recertified Sprint 586 (610-619 Phase E Commercial Intelligence takeoff (E1 assist-only) opens 1/10 Finding 4)",
       "sprintRangeCovered": "526â€“526 (Drawing Intelligence Phase D â€” Phase E Commercial Intelligence takeoff (E1 assist-only) Milestone 610-619 opens)",
-      "deltaSinceCertification": "Sprints 130–529 delivered (400 sprints); Milestone 610-619 at 4/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase E Commercial Intelligence takeoff (E1 assist-only) UI assertions (docs/PHASE_E_TAKEOFF_PLAN.json); Platform Certification 3/3 recertified Sprint 586 (Finding 4)",
+      "deltaSinceCertification": "Sprints 130–530 delivered (401 sprints); Milestone 610-619 at 5/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); localStorage mirror reconciliation (docs/PHASE_E_TAKEOFF_PLAN.json); Platform Certification 3/3 recertified Sprint 586 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -6132,12 +6155,12 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 610–619 at 4/10, Sprint 589 closed, Sprint 590 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 589 Phase E Commercial Intelligence takeoff (E1 assist-only) UI assertions logged",
-    "docs/PHASE_E_TAKEOFF_PLAN.json — uiAssertionsComplete Sprint 589",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 589 closed, milestone 610-619 active (4/10), sprint 520 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 589 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 589 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 610–619 at 5/10, Sprint 590 closed, Sprint 591 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 590 localStorage mirror reconciliation logged",
+    "docs/PHASE_E_TAKEOFF_PLAN.json — localStorageMirrorReconciliationComplete Sprint 590",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 590 closed, milestone 610-619 active (5/10), Sprint 591 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 590 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 590 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -6284,27 +6307,27 @@
     }
   ],
   "nextSprint": {
-    "number": 590,
-    "stream1": "Phase E Commercial Intelligence takeoff (E1 assist-only) localStorage mirror reconciliation — sprint-590-selftest.ts",
+    "number": 591,
+    "stream1": "Phase E Commercial Intelligence takeoff (E1 assist-only) remote seed → localStorage hydrate — sprint-571-selftest.ts",
     "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-590-selftest.ts",
-    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 610-619 Phase D Phase E Commercial Intelligence takeoff (E1 assist-only) active (4/10); UI assertions complete docs/PHASE_E_TAKEOFF_PLAN.json"
+    "selftest": "scripts/sprint-591-selftest.ts",
+    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 610-619 Phase D Phase E Commercial Intelligence takeoff (E1 assist-only) active (5/10); localStorage mirror reconciliation complete docs/PHASE_E_TAKEOFF_PLAN.json"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-10T08:41:46.994Z",
+    "lastPushAttempt": "2026-07-10T08:42:29.006Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-10T08:41:46.994Z",
+    "verifiedAt": "2026-07-10T08:42:29.006Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-10T08:41:13.3470882Z",
-    "pushedAt": "2026-07-10T08:41:46.994Z",
-    "remoteHeadSha": "c26eaaf0d5fe3ae89409cd0437bc6fa1f2dd770a",
-    "publicStateVerifiedAt": "2026-07-10T08:41:46.994Z",
+    "sanitizedAt": "2026-07-10T08:43:01.3696022Z",
+    "pushedAt": "2026-07-10T08:42:29.006Z",
+    "remoteHeadSha": "ab589f693c3a861f06ccb90c889b8290f5b0460c",
+    "publicStateVerifiedAt": "2026-07-10T08:42:29.006Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "c02447bdc84a495da8db4dfca0958884e30640206f21431e3aef29fa16caea69",
+    "publicStateContentHash": "80dc0e4b4964cbd0cc8b4ac593124e0f2815bd9c26b8f426b952147856e31a1c",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -6336,21 +6359,21 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "c02447bdc84a495da8db4dfca0958884e30640206f21431e3aef29fa16caea69",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-10T08:41:46.994Z",
-      "rawEndpointVerifiedAt": "2026-07-10T08:41:46.994Z",
-      "gitOriginVerifiedAt": "2026-07-10T08:41:46.994Z",
+      "githubApiVerifiedAt": "2026-07-10T08:42:29.006Z",
+      "rawEndpointVerifiedAt": "2026-07-10T08:42:29.006Z",
+      "gitOriginVerifiedAt": "2026-07-10T08:42:29.006Z",
       "routeContentHashes": {
-        "github-api": "c02447bdc84a495da8db4dfca0958884e30640206f21431e3aef29fa16caea69",
+        "github-api": "80dc0e4b4964cbd0cc8b4ac593124e0f2815bd9c26b8f426b952147856e31a1c",
         "raw-cdn": "c02447bdc84a495da8db4dfca0958884e30640206f21431e3aef29fa16caea69",
-        "git-origin": "c02447bdc84a495da8db4dfca0958884e30640206f21431e3aef29fa16caea69"
+        "git-origin": "80dc0e4b4964cbd0cc8b4ac593124e0f2815bd9c26b8f426b952147856e31a1c"
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "c26eaaf0d5fe3ae89409cd0437bc6fa1f2dd770a",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "ab589f693c3a861f06ccb90c889b8290f5b0460c",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 742,
-      "classification": "all-routes-consistent"
+      "classification": "cdn-lag-api-git-agree"
     }
   },
   "oversightMonitoring": {
@@ -6364,9 +6387,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 589,
+    "lastSyncedSprint": 590,
     "lastSyncedAt": "2026-07-10",
-    "milestoneProgress": "610-619 ACTIVE (4/10)",
+    "milestoneProgress": "610-619 ACTIVE (5/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -6562,7 +6585,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication Ã¢â€ â€™ Knowledge Library version lifecycle Ã¢â€ â€™ cross-project knowledge reuse Ã¢â€ â€™ knowledge similarity matching Ã¢â€ â€™ proactive knowledge warning Ã¢â€ â€™ user outcome feedback Ã¢â€ â€™ confidence evolution Ã¢â€ â€™ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase D â€” Phase C Takeoff Detection Milestone milestone (610-619) active — Sprint 589 closed; Sprint 590 queued",
+    "phaseE": "Drawing Intelligence Phase D â€” Phase C Takeoff Detection Milestone milestone (610-619) active — Sprint 590 closed; Sprint 591 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds â€” Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -6575,7 +6598,7 @@
     "sprint382": "No new growth event kinds â€” mid-milestone 374â€“378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events Â· Memory audit Â· viewer chrome Â· Decision Timeline Â· explainability Â· AI panel indicators)",
     "sprint379": "No new growth event kinds â€” project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Drawing Intelligence Phase D — Phase E Commercial Intelligence takeoff (E1 assist-only) Milestone (610-619) active Sprint 589 (4/10); Phase E Commercial Intelligence takeoff (E1 assist-only) UI assertions complete",
+    "phaseD": "Drawing Intelligence Phase D — Phase E Commercial Intelligence takeoff (E1 assist-only) Milestone (610-619) active Sprint 590 (5/10); localStorage mirror reconciliation complete",
     "phaseB": "Phase E Commercial Intelligence takeoff (E1 assist-only) milestone active (610-619) â€” technical items complete; UX validation automation foundation Sprint 586"
   },
   "digitalBrainImpact": {
@@ -6672,7 +6695,7 @@
     "sprint268": "No new growth event kinds Ã¢â‚¬â€ operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds Ã¢â‚¬â€ publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds Ã¢â‚¬â€ operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 610-619 4/10 sprints closed (40%); latest growth-event sprint 400; Sprint 589 closed; Sprint 590 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 610-619 5/10 sprints closed (50%); latest growth-event sprint 400; Sprint 590 closed; Sprint 591 queued per nextSprint",
     "sprint372": "No new growth event kinds â€” mid-milestone 364â€“368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events Â· Memory audit Â· viewer chrome Â· Decision Timeline Â· explainability Â· AI panel indicators)",
     "sprint371": "No new growth event kinds â€” project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries Â· isExplainabilityEnrichedDecisionTimelineEntry Â· toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds â€” milestone 370â€“379 wrap completeness review confirms supersede invalidation full stack audit (growth events Â· Memory audit Â· viewer chrome Â· Decision Timeline Â· explainability Â· AI panel Â· project assistant context engine wiring); milestone closed; 380â€“389 Phase C Revision Management opens Sprint 364",
@@ -6899,7 +6922,8 @@
     "sprint586": "No new growth event kinds â€” Phase E Commercial Intelligence takeoff (E1 assist-only) foundation defines role critical path + checklist contracts for site-team workflow validation; Milestone 610â€“619 opens Sprint 587",
     "sprint587": "No new growth event kinds — Playwright Phase E Commercial Intelligence takeoff (E1 assist-only) scaffold reads phase-c-revision-role-path-banner + phase-c-revision-signoff-checklist + phase-c-revision-mobile-target-size; Milestone 610–619 at 2/10",
     "sprint588": "No new growth event kinds — Phase B validation matrix Phase E Commercial Intelligence takeoff (E1 assist-only) row wiring; Milestone 610–619 at 3/10",
-    "sprint589": "No new growth event kinds — Phase E Commercial Intelligence takeoff (E1 assist-only) UI assertions; Milestone 610–619 at 4/10"
+    "sprint589": "No new growth event kinds — Phase E Commercial Intelligence takeoff (E1 assist-only) UI assertions; Milestone 610–619 at 4/10",
+    "sprint590": "No new growth event kinds — Phase E Commercial Intelligence takeoff (E1 assist-only) localStorage mirror reconciliation; Milestone 610–619 at 5/10"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -7189,7 +7213,8 @@
     "sprint586": "Phase E Commercial Intelligence takeoff (E1 assist-only) foundation â€” role-based critical path coverage for visual_overlay Â· foreman Â· PM Â· QS Â· mobile/tablet; Milestone 610â€“619 opens Sprint 587",
     "sprint587": "Playwright Phase E Commercial Intelligence takeoff (E1 assist-only) assertion scaffold — role critical path + checklist UI chrome; Milestone 610–619 at 2/10",
     "sprint588": "No direct KG edge changes — Phase B validation matrix Phase E Commercial Intelligence takeoff (E1 assist-only) row wiring; Milestone 610–619 at 3/10",
-    "sprint589": "No direct KG edge changes — Phase E Commercial Intelligence takeoff (E1 assist-only) UI assertions (phase-c-revision-role-path-banner chrome); Milestone 610–619 at 4/10"
+    "sprint589": "No direct KG edge changes — Phase E Commercial Intelligence takeoff (E1 assist-only) UI assertions (phase-c-revision-role-path-banner chrome); Milestone 610–619 at 4/10",
+    "sprint590": "localStorage ↔ remote intelligence_json mirror reconciliation contract — durable Supabase indices stay consistent with di-phase-e-takeoff-* offline mirror; Milestone 610–619 at 5/10"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label â€” drawing revision id Â· superseded-by revision id Â· invalidation scope playback lines Â· lessons_learned stage badge Â· sprint-355-selftest.ts",
@@ -7275,7 +7300,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D â€” Phase C Takeoff Detection Milestone (610-619) active 4/10; Sprint 589 closed; Sprint 590 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Phase E Commercial Intelligence takeoff (E1 assist-only) localStorage mirror rec)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D â€” Phase C Takeoff Detection Milestone (610-619) active 5/10; Sprint 590 closed; Sprint 591 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Phase E Commercial Intelligence takeoff (E1 assist-only) remote seed → localStor)",
     "sprint372": "Mid-milestone 364â€“368 Drawing Intelligence Phase C revision supersede completeness review â€” Phase C revision supersede stack partial audit confirms growth events Â· Memory audit Â· viewer chrome Â· Decision Timeline Â· explainability Â· AI panel indicators â€” sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context â€” phaseCRevisionSupersedeExplainabilityEntries Â· isExplainabilityEnrichedDecisionTimelineEntry Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item Â· sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator â€” takeoff COS pipeline stage badge Â· phaseCRevisionSupersedeTimelineEntryCount Â· sprint-366-selftest.ts",
@@ -7497,7 +7522,8 @@
     "sprint586": "Milestone 610â€“619 Drawing Intelligence Phase D â€” Phase E Commercial Intelligence takeoff (E1 assist-only) opens â€” validation automation foundation â€” sprint-586-selftest.ts",
     "sprint587": "Milestone 610–619 Drawing Intelligence Phase D — Phase E Commercial Intelligence takeoff (E1 assist-only) at 2/10 — Playwright assertion scaffold — sprint-587-selftest.ts",
     "sprint588": "Milestone 610–619 Drawing Intelligence Phase D — Phase E Commercial Intelligence takeoff (E1 assist-only) at 3/10 — Phase B validation matrix row wiring — sprint-588-selftest.ts",
-    "sprint589": "Milestone 610–619 Drawing Intelligence Phase D — Phase E Commercial Intelligence takeoff (E1 assist-only) at 4/10 — UI assertions — sprint-589-selftest.ts"
+    "sprint589": "Milestone 610–619 Drawing Intelligence Phase D — Phase E Commercial Intelligence takeoff (E1 assist-only) at 4/10 — UI assertions — sprint-589-selftest.ts",
+    "sprint590": "Milestone 610–619 Drawing Intelligence Phase D — Phase E Commercial Intelligence takeoff (E1 assist-only) at 5/10 — localStorage mirror reconciliation — sprint-590-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
