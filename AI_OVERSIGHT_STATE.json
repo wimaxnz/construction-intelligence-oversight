@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-10",
   "currentSprint": {
-    "number": 733,
+    "number": 734,
     "status": "closed",
-    "previousClosed": 732,
+    "previousClosed": 733,
     "closedDate": "2026-07-10"
   },
   "currentMilestone": {
@@ -23,15 +23,15 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 8,
-    "percentComplete": 80,
+    "sprintsClosed": 9,
+    "percentComplete": 90,
     "nextWrapReviewSprint": 735,
     "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Phase G Role-scoped responses remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-734-selftest.ts"
+      "focus": "Milestone wrap review — Drawing Intelligence Phase D Phase G Role-scoped responses completeness — sprint-735-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -2642,6 +2642,12 @@
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 750–759 at 8/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); full hydrate / persist path dual-write / remote-authoritative wired; UI-PHASE-G-ROLE-SCOPED-RESPONSES passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
       "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase G Role-scoped responses remote read-after-write round-trip deferred to Sprint 524+"
+    },
+    "sprint734": {
+      "stream1": "Phase G Role-scoped responses remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — assertPhaseGRoleScopedResponsesRemoteReadAfterWriteRoundTrip · roundTripPhaseGRoleScopedResponsesStateRemoteReadAfterWrite · buildPhaseGRoleScopedResponsesRemoteReadAfterWriteRoundTripSummary · runphaseCBulkUploadRemoteReadAfterWriteRoundTrip · phase-b-wynyard-validation.ts · sprint-734-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 750–759 at 9/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-PHASE-G-ROLE-SCOPED-RESPONSES passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Milestone 750–759 wrap review deferred to Sprint 525"
     }
   },
   "changedFiles": {
@@ -8667,6 +8673,21 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint734": [
+      "src/platform/validation/phaseGRoleScopedResponsesValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_G_ROLE_SCOPED_RESPONSES_PLAN.json",
+      "scripts/sprint-734-selftest.ts",
+      "scripts/sprint-734-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -9454,14 +9475,16 @@
       "sprint732": "Milestone 750–759 at 7/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + cold-start regeneration after remote seed)",
       "sprint732PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); cold-start regeneration after remote seed wired; UI-PHASE-G-ROLE-SCOPED-RESPONSES passed",
       "sprint733": "Milestone 750–759 at 8/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1)",
-      "sprint733PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); full hydrate / persist path dual-write / remote-authoritative wired; UI-PHASE-G-ROLE-SCOPED-RESPONSES passed"
+      "sprint733PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); full hydrate / persist path dual-write / remote-authoritative wired; UI-PHASE-G-ROLE-SCOPED-RESPONSES passed",
+      "sprint734": "Milestone 750–759 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
+      "sprint734PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-PHASE-G-ROLE-SCOPED-RESPONSES passed"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-10",
       "lastCertifiedBaseline": "2026-07-10",
       "status": "current — recertified Sprint 726 (750-759 Phase G Role-scoped responses opens 1/10 Finding 4)",
       "sprintRangeCovered": "526–526 (Drawing Intelligence Phase E — Commercial Intelligence Role-scoped responses Foundation Milestone 750-759 opens)",
-      "deltaSinceCertification": "Sprints 130–533 delivered (404 sprints); Milestone 750-759 at 8/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); full hydrate / persist path (docs/PHASE_G_ROLE_SCOPED_RESPONSES_PLAN.json); Platform Certification 3/3 recertified Sprint 726 (Finding 4)",
+      "deltaSinceCertification": "Sprints 130–534 delivered (405 sprints); Milestone 750-759 at 9/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); remote read-after-write round-trip (docs/PHASE_G_ROLE_SCOPED_RESPONSES_PLAN.json); Platform Certification 3/3 recertified Sprint 726 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -9478,12 +9501,12 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 750–759 at 8/10, Sprint 733 closed, Sprint 734 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 733 full hydrate / persist path logged",
-    "docs/PHASE_G_ROLE_SCOPED_RESPONSES_PLAN.json — fullHydratePersistPathComplete Sprint 733",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 733 closed, milestone 750-759 active (8/10), Sprint 734 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 733 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 733 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 750–759 at 9/10, Sprint 734 closed, Sprint 735 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 734 remote read-after-write round-trip logged",
+    "docs/PHASE_G_ROLE_SCOPED_RESPONSES_PLAN.json — remoteReadAfterWriteRoundTripComplete Sprint 734",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 734 closed, milestone 750-759 active (9/10), Sprint 735 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 734 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 734 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -9630,27 +9653,27 @@
     }
   ],
   "nextSprint": {
-    "number": 734,
-    "stream1": "Phase G Role-scoped responses remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-734-selftest.ts",
+    "number": 735,
+    "stream1": "Milestone wrap review — Drawing Intelligence Phase D Phase G Role-scoped responses completeness — sprint-735-selftest.ts",
     "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-734-selftest.ts",
-    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 750-759 Phase D Phase G Role-scoped responses active (8/10); full hydrate / persist path complete docs/PHASE_G_ROLE_SCOPED_RESPONSES_PLAN.json"
+    "selftest": "scripts/sprint-735-selftest.ts",
+    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 750-759 Phase D Phase G Role-scoped responses active (9/10); remote read-after-write round-trip complete docs/PHASE_G_ROLE_SCOPED_RESPONSES_PLAN.json"
   },
   "oversightSync": {
     "status": "degraded",
     "reason": "api-response-anomaly-monitor-api-and-git",
-    "lastPushAttempt": "2026-07-10T16:21:20.469Z",
+    "lastPushAttempt": "2026-07-10T16:22:17.195Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-10T16:21:20.469Z",
+    "verifiedAt": "2026-07-10T16:22:17.195Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-10T16:20:36.8143208Z",
-    "pushedAt": "2026-07-10T16:21:20.469Z",
-    "remoteHeadSha": "1f9fd70939cecbef854cd851e6072ddf881c5fe4",
-    "publicStateVerifiedAt": "2026-07-10T16:21:20.469Z",
+    "sanitizedAt": "2026-07-10T16:23:26.0511218Z",
+    "pushedAt": "2026-07-10T16:22:17.195Z",
+    "remoteHeadSha": "592933e29e820ca125b473b2cb40a659c1fc71f1",
+    "publicStateVerifiedAt": "2026-07-10T16:22:17.195Z",
     "publicStateJsonParsePassed": false,
-    "publicStateContentHash": "cedd8eaf4f6927ce38c4b6dda866f2c10f44a2e926eab8062870926f10e8e18f",
+    "publicStateContentHash": "165e4ceac8a6c1b02e428ab8861f7ae0733da9e3553fd4a2b9f440344a7d27d4",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -9684,16 +9707,16 @@
     "publicStateRawCdnHash": "1b9bc42a51edf3922378cd1378c9d5e08e2d26de85656ebf86b813040064d34d",
     "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-10T16:21:20.469Z",
-      "rawEndpointVerifiedAt": "2026-07-10T16:21:20.469Z",
-      "gitOriginVerifiedAt": "2026-07-10T16:21:20.469Z",
+      "githubApiVerifiedAt": "2026-07-10T16:22:17.195Z",
+      "rawEndpointVerifiedAt": "2026-07-10T16:22:17.195Z",
+      "gitOriginVerifiedAt": "2026-07-10T16:22:17.195Z",
       "routeContentHashes": {
-        "github-api": "cedd8eaf4f6927ce38c4b6dda866f2c10f44a2e926eab8062870926f10e8e18f",
+        "github-api": "165e4ceac8a6c1b02e428ab8861f7ae0733da9e3553fd4a2b9f440344a7d27d4",
         "raw-cdn": "1b9bc42a51edf3922378cd1378c9d5e08e2d26de85656ebf86b813040064d34d",
         "git-origin": null
       },
       "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "1f9fd70939cecbef854cd851e6072ddf881c5fe4",
+      "canonicalRemoteHeadSha": "592933e29e820ca125b473b2cb40a659c1fc71f1",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 1028,
       "classification": "api-response-anomaly-monitor-api-and-git"
@@ -9710,9 +9733,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 733,
+    "lastSyncedSprint": 734,
     "lastSyncedAt": "2026-07-10",
-    "milestoneProgress": "750-759 ACTIVE (8/10)",
+    "milestoneProgress": "750-759 ACTIVE (9/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -9908,7 +9931,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Knowledge Library version lifecycle ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ cross-project knowledge reuse ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ knowledge similarity matching ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ proactive knowledge warning ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ user outcome feedback ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ confidence evolution ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase D — Phase C Role-scoped responses Detection Milestone milestone (750-759) active — Sprint 733 closed; Sprint 734 queued",
+    "phaseE": "Drawing Intelligence Phase D — Phase C Role-scoped responses Detection Milestone milestone (750-759) active — Sprint 734 closed; Sprint 735 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds Ã¢â‚¬â€ Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -9921,7 +9944,7 @@
     "sprint382": "No new growth event kinds Ã¢â‚¬â€ mid-milestone 374Ã¢â‚¬â€œ378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events Ã‚Â· Memory audit Ã‚Â· viewer chrome Ã‚Â· Decision Timeline Ã‚Â· explainability Ã‚Â· AI panel indicators)",
     "sprint379": "No new growth event kinds Ã¢â‚¬â€ project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Drawing Intelligence Phase E — Commercial Intelligence Role-scoped responses Foundation Milestone (750-759) active Sprint 733 (8/10); full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 complete",
+    "phaseD": "Drawing Intelligence Phase E — Commercial Intelligence Role-scoped responses Foundation Milestone (750-759) active Sprint 734 (9/10); remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 complete; wrap review Sprint 525",
     "phaseB": "Phase G Role-scoped responses milestone active (750-759) — technical items complete; UX validation automation foundation Sprint 726"
   },
   "digitalBrainImpact": {
@@ -10018,7 +10041,7 @@
     "sprint268": "No new growth event kinds ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 750-759 8/10 sprints closed (80%); latest growth-event sprint 400; Sprint 733 closed; Sprint 734 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 750-759 9/10 sprints closed (90%); latest growth-event sprint 400; Sprint 734 closed; Sprint 735 queued per nextSprint",
     "sprint372": "No new growth event kinds Ã¢â‚¬â€ mid-milestone 364Ã¢â‚¬â€œ368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events Ã‚Â· Memory audit Ã‚Â· viewer chrome Ã‚Â· Decision Timeline Ã‚Â· explainability Ã‚Â· AI panel indicators)",
     "sprint371": "No new growth event kinds Ã¢â‚¬â€ project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries Ã‚Â· isExplainabilityEnrichedDecisionTimelineEntry Ã‚Â· toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds Ã¢â‚¬â€ milestone 370Ã¢â‚¬â€œ379 wrap completeness review confirms supersede invalidation full stack audit (growth events Ã‚Â· Memory audit Ã‚Â· viewer chrome Ã‚Â· Decision Timeline Ã‚Â· explainability Ã‚Â· AI panel Ã‚Â· project assistant context engine wiring); milestone closed; 380Ã¢â‚¬â€œ389 Phase C Revision Management opens Sprint 364",
@@ -10388,7 +10411,8 @@
     "sprint730": "No new growth event kinds — Phase G Role-scoped responses localStorage mirror reconciliation; Milestone 750–759 at 5/10",
     "sprint731": "No new growth event kinds — Phase G Role-scoped responses remote seed → localStorage hydrate path; Milestone 750–759 at 6/10",
     "sprint732": "No new growth event kinds — Phase G Role-scoped responses cold-start regeneration after remote seed; Milestone 750–759 at 7/10",
-    "sprint733": "No new growth event kinds — Phase G Role-scoped responses full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 750–759 at 8/10"
+    "sprint733": "No new growth event kinds — Phase G Role-scoped responses full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 750–759 at 8/10",
+    "sprint734": "No new growth event kinds — Phase G Role-scoped responses remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 750–759 at 9/10"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -10821,7 +10845,8 @@
     "sprint730": "localStorage ↔ remote intelligence_json mirror reconciliation contract — durable Supabase indices stay consistent with di-phase-g-role-scoped-responses-* offline mirror; Milestone 750–759 at 5/10",
     "sprint731": "Remote Supabase intelligence_json indices seed di-phase-g-role-scoped-responses-* localStorage mirror for cold-start hydrate; Milestone 750–759 at 6/10",
     "sprint732": "When localStorage cleared after prior remote seed, di-phase-g-role-scoped-responses-* indexed sheets regenerate from durable Supabase intelligence_json; Milestone 750–759 at 7/10",
-    "sprint733": "When VITE_PROJECT_KG_PERSIST=1, di-phase-g-role-scoped-responses-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 750–759 at 8/10"
+    "sprint733": "When VITE_PROJECT_KG_PERSIST=1, di-phase-g-role-scoped-responses-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 750–759 at 8/10",
+    "sprint734": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 750–759 at 9/10"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label Ã¢â‚¬â€ drawing revision id Ã‚Â· superseded-by revision id Ã‚Â· invalidation scope playback lines Ã‚Â· lessons_learned stage badge Ã‚Â· sprint-355-selftest.ts",
@@ -10907,7 +10932,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase C Role-scoped responses Detection Milestone (750-759) active 8/10; Sprint 733 closed; Sprint 734 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Phase G Role-scoped responses remote read-after-write round-trip when VITE_PROJE)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase D — Phase C Role-scoped responses Detection Milestone (750-759) active 9/10; Sprint 734 closed; Sprint 735 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Milestone wrap review — Drawing Intelligence Phase D Phase G Role-scoped respons)",
     "sprint372": "Mid-milestone 364Ã¢â‚¬â€œ368 Drawing Intelligence Phase C revision supersede completeness review Ã¢â‚¬â€ Phase C revision supersede stack partial audit confirms growth events Ã‚Â· Memory audit Ã‚Â· viewer chrome Ã‚Â· Decision Timeline Ã‚Â· explainability Ã‚Â· AI panel indicators Ã¢â‚¬â€ sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context Ã¢â‚¬â€ phaseCRevisionSupersedeExplainabilityEntries Ã‚Â· isExplainabilityEnrichedDecisionTimelineEntry Ã‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries Ã‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item Ã‚Â· sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator Ã¢â‚¬â€ takeoff COS pipeline stage badge Ã‚Â· phaseCRevisionSupersedeTimelineEntryCount Ã‚Â· sprint-366-selftest.ts",
@@ -11272,7 +11297,8 @@
     "sprint730": "Milestone 750–759 Drawing Intelligence Phase D — Phase G Role-scoped responses at 5/10 — localStorage mirror reconciliation — sprint-730-selftest.ts",
     "sprint731": "Milestone 750–759 Drawing Intelligence Phase D — Phase G Role-scoped responses at 6/10 — remote seed → localStorage hydrate — sprint-731-selftest.ts",
     "sprint732": "Milestone 750–759 Drawing Intelligence Phase D — Phase G Role-scoped responses at 7/10 — cold-start regeneration after remote seed — sprint-732-selftest.ts",
-    "sprint733": "Milestone 750–759 Drawing Intelligence Phase D — Phase G Role-scoped responses at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-733-selftest.ts"
+    "sprint733": "Milestone 750–759 Drawing Intelligence Phase D — Phase G Role-scoped responses at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-733-selftest.ts",
+    "sprint734": "Milestone 750–759 Drawing Intelligence Phase D — Phase G Role-scoped responses at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-734-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
