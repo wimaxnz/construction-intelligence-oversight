@@ -1,0 +1,42 @@
+{
+  "sprint": 645,
+  "preparedAt": "2026-07-10T12:52:02.551Z",
+  "status": "plan_ready",
+  "phase": "Drawing Intelligence Phase E — Commercial Intelligence Contract & cost Foundation",
+  "milestone": "660-669",
+  "themeRationale": "DRAWING_INTELLIGENCE_ROADMAP.md Phase E — after Procurement foundation 650-659: Contract baseline · budget lock · cost tracking · dashboard sync · PhaseEContractCostOverlay wiring",
+  "foundationComplete": true,
+  "playwrightExtensionScaffoldComplete": true,
+  "playwrightExtensionDeferred": false,
+  "phaseBValidationMatrixRowWiringComplete": true,
+  "uiAssertionsComplete": true,
+  "localStorageMirrorReconciliationComplete": true,
+  "remoteSeedLocalStorageHydrateComplete": true,
+  "coldStartRegenerationAfterRemoteSeedComplete": true,
+  "fullHydratePersistPathComplete": true,
+  "remoteReadAfterWriteRoundTripComplete": true,
+  "milestoneWrapComplete": true,
+  "phaseBAcceptanceWiring": "docs/PHASE_C_DEPENDENCY_CHECKLIST.md",
+  "wynyardValidationWiring": "scripts/phase-b-wynyard-validation.ts",
+  "validationService": "src/platform/validation/phaseEContractCostValidationService.ts",
+  "overlayWiring": "src/components/drawings/intelligence/PhaseEContractCostOverlay.tsx",
+  "nextSprintWiring": [
+    "Phase E Commercial Intelligence Contract & cost validation automation foundation — Sprint 636",
+    "Playwright assertion scaffold — Sprint 637",
+    "Phase B validation matrix row wiring — Sprint 638",
+    "UI assertions — Sprint 639",
+    "localStorage mirror (di-phase-e-contract-cost-*) — Sprint 640",
+    "remote seed hydrate — Sprint 641",
+    "cold-start regeneration — Sprint 642",
+    "full hydrate/persist VITE_PROJECT_KG_PERSIST=1 — Sprint 643",
+    "remote read-after-write round-trip — Sprint 644",
+    "Milestone wrap review — Sprint 645",
+    "Milestone 660–669 Phase E Contract & cost full stack wrap completeness review — Sprint 645",
+    "Milestone 660–669 Phase E Commercial Intelligence Contract & cost full stack wrap completeness review — Sprint 645"
+  ],
+  "deferredItems": [
+    "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending",
+    "Next milestone 670–679 Phase E Claims & payments — Sprint 646+ (DRAWING_INTELLIGENCE_ROADMAP.md Phase E)"
+  ],
+  "nextAction": "Milestone 660–669 closed Sprint 645 — Phase E Commercial Intelligence Contract & cost full stack wrap complete; Sprint 646 queued (670–679 Phase E Claims & payments)."
+}
