@@ -1,9 +1,9 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 710–719 Phase D Phase F AI decision support CLOSED (10/10); Sprint 696 queued (720–729 Phase G AI Project Assistant foundation opens).
+**Status:** Active — Milestone 720–729 Phase D Phase G AI Project Assistant CLOSED (10/10); Sprint 706 queued (720–729 Phase G AI Project Assistant foundation opens).
 
 **Last updated:** 2026-07-10
-**Current sprint:** 695 closed  
+**Current sprint:** 705 closed  
 **Next sprint:** 536 queued
 **Milestone:** 550–559 WRAP CLOSED (10/10) · 560–569 Phase C Revision Management opens Sprint 536
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
