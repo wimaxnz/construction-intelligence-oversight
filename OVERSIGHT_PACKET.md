@@ -1,10 +1,10 @@
 ﻿# Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 730–739 Phase D Phase G Query & citation OPEN (1/10); Sprint 707 queued.
+**Status:** Active — Milestone 730–739 Phase D Phase G Query & citation (2/10); Sprint 708 queued.
 
 **Last updated:** 2026-07-10
-**Current sprint:** 706 closed  
-**Next sprint:** 707 queued
+**Current sprint:** 707 closed  
+**Next sprint:** 578 queued
 **Milestone:** 550–559 WRAP CLOSED (10/10) · 560–569 Phase C Revision Management opens Sprint 536
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
