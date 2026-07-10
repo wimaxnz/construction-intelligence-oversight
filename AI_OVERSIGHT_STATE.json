@@ -1,42 +1,41 @@
 {
   "lastUpdated": "2026-07-10",
   "currentSprint": {
-    "number": 775,
+    "number": 776,
     "status": "closed",
-    "previousClosed": 774,
+    "previousClosed": 775,
     "closedDate": "2026-07-10"
   },
   "currentMilestone": {
-    "range": "790-799",
-    "milestoneId": "790-799",
-    "milestoneName": "Drawing Intelligence Phase E — Commercial Intelligence Production readiness platform cert Foundation Milestone",
+    "range": "800-809",
+    "milestoneId": "800-809",
+    "milestoneName": "Drawing Intelligence Phase E — Residual production gates Foundation Milestone",
     "plannedSprintCount": 10,
-    "actualSprintStart": 766,
-    "actualSprintEnd": 775,
-    "wrapReviewSprint": 775,
-    "status": "closed",
-    "theme": "Production readiness & platform certification — productionReadinessPlatformCert detection (assistive) (DRAWING_INTELLIGENCE_ROADMAP.md Phase C — Revision management & compare)",
-    "openedDate": "2026-07-09",
-    "wrapClosedDate": "2026-07-10",
-    "previousMilestoneClosed": "780-789 (Drawing Intelligence Phase D — Phase C Change Cloud Detection (Assistive) Milestone)",
-    "nextMilestoneOpens": "800-809 (Phase F AI decision support foundation per DRAWING_INTELLIGENCE_ROADMAP.md)",
-    "wrapComplete": true
+    "actualSprintStart": 776,
+    "actualSprintEnd": 785,
+    "wrapReviewSprint": 785,
+    "status": "active",
+    "theme": "Residual production gates detection assistive validation automation (revision diff hints · assistive overlay · change detection contracts) (DRAWING_INTELLIGENCE_ROADMAP.md Residual production gates)",
+    "openedDate": "2026-07-10",
+    "previousMilestoneClosed": "790-799 (Drawing Intelligence Phase E — Residual production gates Foundation Milestone)",
+    "nextMilestoneOpens": "800-809 (Residual production gates foundation per DRAWING_INTELLIGENCE_ROADMAP.md)",
+    "wrapComplete": false
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 10,
-    "percentComplete": 100,
-    "nextWrapReviewSprint": 775,
-    "milestoneWrapComplete": true
+    "sprintsClosed": 1,
+    "percentComplete": 10,
+    "nextWrapReviewSprint": 785,
+    "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Milestone 800–809 Phase F AI decision support foundation per DRAWING_INTELLIGENCE_ROADMAP.md — sprint-776-selftest.ts"
+      "focus": "Playwright Residual production gates assertion scaffold — sprint-777-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
+      "focus": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
     }
   },
   "completedWork": {
@@ -2837,10 +2836,10 @@
       "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 790-799 Production readiness & platform certification deferred to Sprint 766"
     },
     "sprint766": {
-      "stream1": "Milestone 790–799 Phase D Production readiness & platform certification validation automation foundation — productionReadinessPlatformCertValidationService · PRODUCTION_READINESS_PLATFORM_CERT_PLAN.json · sprint-766-selftest.ts",
+      "stream1": "Milestone 800–809 Phase D Residual production gates validation automation foundation — residualProductionGatesValidationService · RESIDUAL_PRODUCTION_GATES_PLAN.json · sprint-776-selftest.ts",
       "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
-      "validation": "Milestone 790–799 opens selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
-      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; full Playwright Production readiness & platform certification role-path UI assertions deferred to Sprint 767+"
+      "validation": "Milestone 800–809 opens selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; full Playwright Residual production gates role-path UI assertions deferred to Sprint 777+"
     },
     "sprint767": {
       "stream1": "Playwright Production readiness & platform certification assertion scaffold — parseProductionReadinessPlatformCertDomObservation · assertProductionReadinessPlatformCertObservation · buildProductionReadinessPlatformCertPlaywrightScaffoldSummary · phaseCBulkUploadScaffold · phase-b-wynyard-validation.ts UI-PRODUCTION-READINESS-PLATFORM-CERT · sprint-767-selftest.ts",
@@ -9413,12 +9412,12 @@
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ],
     "sprint766": [
-      "src/platform/validation/productionReadinessPlatformCertValidationService.ts",
+      "src/platform/validation/residualProductionGatesValidationService.ts",
       "src/platform/index.ts",
       "scripts/phase-b-wynyard-validation.ts",
-      "docs/PRODUCTION_READINESS_PLATFORM_CERT_PLAN.json",
-      "scripts/sprint-766-selftest.ts",
-      "scripts/sprint-766-close-out.ts",
+      "docs/RESIDUAL_PRODUCTION_GATES_PLAN.json",
+      "scripts/sprint-776-selftest.ts",
+      "scripts/sprint-776-close-out.ts",
       "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
       "docs/di-screenshots/validation/results.json",
       "docs/PLATFORM_EVOLUTION.md",
@@ -10417,7 +10416,7 @@
       "sprint764PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-PHASE-G-WRAP-PRODUCTION-CERT passed",
       "sprint765": "Milestone 780–789 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Phase G Wrap production cert full stack completeness audit)",
       "sprint765PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
-      "sprint766": "Milestone 790–799 opens — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Production readiness & platform certification foundation; consecutiveGreen reuse when stampede=0)",
+      "sprint766": "Milestone 800–809 opens — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Residual production gates foundation; consecutiveGreen reuse when stampede=0)",
       "sprint766PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
       "sprint767": "Milestone 790–799 at 2/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Playwright Production readiness & platform certification assertion scaffold)",
       "sprint767PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3 exclusive for UI-PRODUCTION-READINESS-PLATFORM-CERT; stampede=0); UI-PRODUCTION-READINESS-PLATFORM-CERT passed",
@@ -10441,9 +10440,9 @@
     "platformCertification": {
       "lastAchieved": "2026-07-10",
       "lastCertifiedBaseline": "2026-07-10",
-      "status": "current — recertified Sprint 775 (790-799 next milestone opens post-milestone-close Finding 4)",
-      "sprintRangeCovered": "536–545 (Drawing Intelligence Phase D — Phase C Production readiness platform cert Detection Milestone 790-799 closed)",
-      "deltaSinceCertification": "Sprints 130–545 delivered (416 sprints); Milestone 790-799 closed; next milestone 790-799 Production readiness platform cert Detection; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase E Commercial Intelligence Estimating/BoQ wrap complete (docs/PRODUCTION_READINESS_PLATFORM_CERT_PLAN.json); Platform Certification 3/3 recertified Sprint 775 (Finding 4)",
+      "status": "current — recertified Sprint 776 (800-809 Residual production gates opens 1/10 Finding 4)",
+      "sprintRangeCovered": "526–526 (Drawing Intelligence Phase E — Commercial Intelligence Residual production gates Foundation Milestone 800-809 opens)",
+      "deltaSinceCertification": "Sprints 130–526 delivered (397 sprints); Milestone 800-809 closed; Phase D Residual production gates 800-809 opens (1/10); gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase B UX Sign-off wrap complete (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Phase E Commercial Intelligence Estimating/BoQ foundation (docs/RESIDUAL_PRODUCTION_GATES_PLAN.json); Platform Certification 3/3 recertified Sprint 776 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -10454,20 +10453,18 @@
         "Commercial Intelligence state-machine change",
         "before production release"
       ],
-      "note": "3/3 deterministic re-achieved 2026-07-10 Sprint 775 post-milestone-close; recertify on triggers in recertificationTriggers — not indefinite valid"
+      "note": "3/3 deterministic re-achieved 2026-07-10 Sprint 776 post-milestone-close; recertify on triggers in recertificationTriggers — not indefinite valid"
     },
     "typecheck": "npx tsc -b (per regression gate)"
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 790–799 closed, Sprint 776 queued (790–799 Phase G AI Project Assistant answer synthesis & multi-turn opens)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Milestone 790–799 wrap logged",
-    "docs/PRODUCTION_READINESS_PLATFORM_CERT_PLAN.json — milestoneWrapComplete Sprint 775",
-    "docs/PRODUCTION_READINESS_PLATFORM_CERT_PLAN.json — next milestone 800-809 Phase F AI decision support foundation Sprint 776 queued",
-    "docs/DRAWING_INTELLIGENCE_ROADMAP.md — Production readiness & platform certification validation automation checked complete",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 775 closed, milestone 790-799 wrap closed (10/10), sprint 776 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 775 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 775 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 800–809 opens (1/10), Sprint 776 closed, Sprint 777 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Milestone 800–809 Residual production gates opens logged",
+    "docs/RESIDUAL_PRODUCTION_GATES_PLAN.json — foundationComplete Sprint 776",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 776 closed, milestone 800-809 active (1/10), Sprint 777 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 776 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 776 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -10511,7 +10508,7 @@
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Milestone 790–799 Phase D Production readiness & platform certification closed Sprint 775; Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 800-809 Phase F AI decision support foundation query & citation layer queued Sprint 766"
+      "description": "Milestone 800-809 Phase D Residual production gates opens Sprint 777 (1/10); Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending"
     },
     {
       "id": "partial-platform-services",
@@ -10522,7 +10519,7 @@
       "id": "platform-certification-stale",
       "severity": "low-governance",
       "relatedFinding": "finding-4",
-      "description": "Platform Certification 3/3 recertified 2026-07-10 Sprint 775 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
+      "description": "Platform Certification 3/3 recertified 2026-07-10 Sprint 776 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
     },
     "HIGH: write_audit_entry SECURITY DEFINER executable by authenticated without is_project_member Ã¢â‚¬â€ audit forgery risk (docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json)"
   ],
@@ -10614,27 +10611,27 @@
     }
   ],
   "nextSprint": {
-    "number": 776,
-    "stream1": "Milestone 800–809 Phase F AI decision support foundation per DRAWING_INTELLIGENCE_ROADMAP.md — sprint-776-selftest.ts",
-    "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-776-selftest.ts",
-    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 790-799 Phase D Production readiness & platform certification closed (10/10); Phase E Commercial Intelligence Estimating/BoQ wrap complete docs/PRODUCTION_READINESS_PLATFORM_CERT_PLAN.json"
+    "number": 777,
+    "stream1": "Playwright Residual production gates assertion scaffold — sprint-777-selftest.ts",
+    "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
+    "selftest": "scripts/sprint-777-selftest.ts",
+    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 800-809 Phase D Residual production gates opens (1/10); Phase C revision management wrap complete docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json"
   },
   "oversightSync": {
     "status": "degraded",
     "reason": "api-response-anomaly-monitor-api-and-git",
-    "lastPushAttempt": "2026-07-10T19:54:04.547Z",
+    "lastPushAttempt": "2026-07-10T19:55:10.326Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-10T19:54:04.547Z",
+    "verifiedAt": "2026-07-10T19:55:10.326Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-10T19:53:30.0039551Z",
-    "pushedAt": "2026-07-10T19:54:04.547Z",
-    "remoteHeadSha": "e25037a09d9c5fdc4d77c1721377b3cd17eacb4e",
-    "publicStateVerifiedAt": "2026-07-10T19:54:04.547Z",
+    "sanitizedAt": "2026-07-10T20:09:26.0453179Z",
+    "pushedAt": "2026-07-10T19:55:10.326Z",
+    "remoteHeadSha": "5684efce902e5f69685bffa9fe6034efc45aa365",
+    "publicStateVerifiedAt": "2026-07-10T19:55:10.326Z",
     "publicStateJsonParsePassed": false,
-    "publicStateContentHash": "c5c819a50c0803f3d7fbfcb8a09a84969045b5180ab56a15d7d7b562f2a58bf2",
+    "publicStateContentHash": "c9c60b6fc77397b90cde31ac804355e7b83f053aee7787adc8b7be16c854685f",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -10668,16 +10665,16 @@
     "publicStateRawCdnHash": "4fb831c5bf245cf92bc6b030ebf4bcf1e3d2f990564c536d9090e8b6f853d8f7",
     "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-10T19:54:04.547Z",
-      "rawEndpointVerifiedAt": "2026-07-10T19:54:04.547Z",
-      "gitOriginVerifiedAt": "2026-07-10T19:54:04.547Z",
+      "githubApiVerifiedAt": "2026-07-10T19:55:10.326Z",
+      "rawEndpointVerifiedAt": "2026-07-10T19:55:10.326Z",
+      "gitOriginVerifiedAt": "2026-07-10T19:55:10.326Z",
       "routeContentHashes": {
-        "github-api": "c5c819a50c0803f3d7fbfcb8a09a84969045b5180ab56a15d7d7b562f2a58bf2",
+        "github-api": "c9c60b6fc77397b90cde31ac804355e7b83f053aee7787adc8b7be16c854685f",
         "raw-cdn": "4fb831c5bf245cf92bc6b030ebf4bcf1e3d2f990564c536d9090e8b6f853d8f7",
         "git-origin": null
       },
       "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "e25037a09d9c5fdc4d77c1721377b3cd17eacb4e",
+      "canonicalRemoteHeadSha": "5684efce902e5f69685bffa9fe6034efc45aa365",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 1112,
       "classification": "api-response-anomaly-monitor-api-and-git"
@@ -10694,9 +10691,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 775,
+    "lastSyncedSprint": 776,
     "lastSyncedAt": "2026-07-10",
-    "milestoneProgress": "790-799 WRAP CLOSED (10/10)",
+    "milestoneProgress": "800-809 OPENS (1/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -10892,7 +10889,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Knowledge Library version lifecycle ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ cross-project knowledge reuse ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ knowledge similarity matching ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ proactive knowledge warning ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ user outcome feedback ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ confidence evolution ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase E — Commercial Intelligence Production readiness platform cert Foundation Milestone milestone (790-799) active — Sprint 775 closed; Sprint 776 queued",
+    "phaseE": "Drawing Intelligence Phase E — Residual production gates Foundation Milestone milestone (800-809) active — Sprint 776 closed; Sprint 777 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds Ã¢â‚¬â€ Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -10905,8 +10902,8 @@
     "sprint382": "No new growth event kinds Ã¢â‚¬â€ mid-milestone 374Ã¢â‚¬â€œ378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events Ã‚Â· Memory audit Ã‚Â· viewer chrome Ã‚Â· Decision Timeline Ã‚Â· explainability Ã‚Â· AI panel indicators)",
     "sprint379": "No new growth event kinds Ã¢â‚¬â€ project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Drawing Intelligence Phase E — Commercial Intelligence Production readiness platform cert Foundation Milestone (790-799) closed Sprint 775; 790–799 Production readiness & platform certification query & citation layer queued Sprint 766",
-    "phaseB": "Production readiness & platform certification complete — Production readiness & platform certification milestone closed Sprint 775; Production readiness & platform certification query & citation layer (790-799) opens Sprint 766"
+    "phaseD": "Drawing Intelligence Phase E — Commercial Intelligence Residual production gates Foundation Milestone (800-809) active Sprint 776 (1/10); 800-809 Phase B UX Sign-off Milestone closed Sprint 525",
+    "phaseB": "Residual production gates milestone active (800-809) — technical items complete; UX validation automation foundation Sprint 776"
   },
   "digitalBrainImpact": {
     "sprint376": "No new growth event kinds Ã¢â‚¬â€ Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -11002,7 +10999,7 @@
     "sprint268": "No new growth event kinds ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 790-799 10/10 sprints closed (100%); latest growth-event sprint 400; Sprint 775 closed; Sprint 776 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 800-809 1/10 sprints closed (10%); latest growth-event sprint 400; Sprint 776 closed; Sprint 777 queued per nextSprint",
     "sprint372": "No new growth event kinds Ã¢â‚¬â€ mid-milestone 364Ã¢â‚¬â€œ368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events Ã‚Â· Memory audit Ã‚Â· viewer chrome Ã‚Â· Decision Timeline Ã‚Â· explainability Ã‚Â· AI panel indicators)",
     "sprint371": "No new growth event kinds Ã¢â‚¬â€ project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries Ã‚Â· isExplainabilityEnrichedDecisionTimelineEntry Ã‚Â· toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds Ã¢â‚¬â€ milestone 370Ã¢â‚¬â€œ379 wrap completeness review confirms supersede invalidation full stack audit (growth events Ã‚Â· Memory audit Ã‚Â· viewer chrome Ã‚Â· Decision Timeline Ã‚Â· explainability Ã‚Â· AI panel Ã‚Â· project assistant context engine wiring); milestone closed; 380Ã¢â‚¬â€œ389 Phase C Revision Management opens Sprint 364",
@@ -11405,7 +11402,7 @@
     "sprint763": "No new growth event kinds — Phase G Wrap production cert full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 780–789 at 8/10",
     "sprint764": "No new growth event kinds — Phase G Wrap production cert remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 780–789 at 9/10",
     "sprint765": "No new growth event kinds — milestone 780–789 wrap completeness review confirms Phase G Wrap production cert full stack audit (foundation · Playwright · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip); milestone closed; 790–799 opens Sprint 766",
-    "sprint766": "No new growth event kinds — Production readiness & platform certification foundation defines role critical path + checklist contracts for site-team workflow validation; Milestone 790–799 opens Sprint 767",
+    "sprint766": "No new growth event kinds — Residual production gates foundation defines role critical path + checklist contracts for site-team workflow validation; Milestone 800–809 opens Sprint 777",
     "sprint767": "No new growth event kinds — Playwright Production readiness & platform certification scaffold reads phase-c-revision-role-path-banner + phase-c-revision-signoff-checklist + phase-c-revision-mobile-target-size; Milestone 790–799 at 2/10",
     "sprint768": "No new growth event kinds — Phase B validation matrix Production readiness & platform certification row wiring; Milestone 790–799 at 3/10",
     "sprint769": "No new growth event kinds — Production readiness & platform certification UI assertions; Milestone 790–799 at 4/10",
@@ -11880,7 +11877,7 @@
     "sprint763": "When VITE_PROJECT_KG_PERSIST=1, di-phase-g-wrap-production-cert-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 780–789 at 8/10",
     "sprint764": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 780–789 at 9/10",
     "sprint765": "Milestone 780–789 wrap confirms durable Phase G Wrap production cert validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 780–789 Phase G Wrap production cert query & citation layer opens Sprint 756",
-    "sprint766": "Production readiness & platform certification foundation — role-based critical path coverage for visual_overlay · foreman · PM · QS · mobile/tablet; Milestone 790–799 opens Sprint 767",
+    "sprint766": "Residual production gates foundation — role-based critical path coverage for visual_overlay · foreman · PM · QS · mobile/tablet; Milestone 800–809 opens Sprint 777",
     "sprint767": "Playwright Production readiness & platform certification assertion scaffold — role critical path + checklist UI chrome; Milestone 790–799 at 2/10",
     "sprint768": "No direct KG edge changes — Phase B validation matrix Production readiness & platform certification row wiring; Milestone 790–799 at 3/10",
     "sprint769": "No direct KG edge changes — Production readiness & platform certification UI assertions (phase-c-revision-role-path-banner chrome); Milestone 790–799 at 4/10",
@@ -11975,7 +11972,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase E — Commercial Intelligence Production readiness platform cert Foundation Milestone (790-799) active 10/10; Sprint 775 closed; Sprint 776 queued (Platform Certification recertification post-milestone-close (Finding 4) — phase- · Milestone 800–809 Phase F AI decision support foundation per DRAWING_INTELLIGENC)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase E — Residual production gates Foundation Milestone (800-809) active 1/10; Sprint 776 closed; Sprint 777 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Playwright Residual production gates assertion scaffold — sprint-777-selftest.ts)",
     "sprint372": "Mid-milestone 364Ã¢â‚¬â€œ368 Drawing Intelligence Phase C revision supersede completeness review Ã¢â‚¬â€ Phase C revision supersede stack partial audit confirms growth events Ã‚Â· Memory audit Ã‚Â· viewer chrome Ã‚Â· Decision Timeline Ã‚Â· explainability Ã‚Â· AI panel indicators Ã¢â‚¬â€ sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context Ã¢â‚¬â€ phaseCRevisionSupersedeExplainabilityEntries Ã‚Â· isExplainabilityEnrichedDecisionTimelineEntry Ã‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries Ã‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item Ã‚Â· sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator Ã¢â‚¬â€ takeoff COS pipeline stage badge Ã‚Â· phaseCRevisionSupersedeTimelineEntryCount Ã‚Â· sprint-366-selftest.ts",
@@ -12373,7 +12370,7 @@
     "sprint763": "Milestone 780–789 Drawing Intelligence Phase D — Phase G Wrap production cert at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-763-selftest.ts",
     "sprint764": "Milestone 780–789 Drawing Intelligence Phase D — Phase G Wrap production cert at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-764-selftest.ts",
     "sprint765": "Milestone 780–789 Drawing Intelligence Phase D — Phase G Wrap production cert wrap completeness review — full stack audit; milestone closed; 790–799 opens Sprint 766 — sprint-765-selftest.ts",
-    "sprint766": "Milestone 790–799 Drawing Intelligence Phase D — Production readiness & platform certification opens — validation automation foundation — sprint-766-selftest.ts",
+    "sprint766": "Milestone 800–809 Drawing Intelligence Phase D — Residual production gates opens — validation automation foundation — sprint-776-selftest.ts",
     "sprint767": "Milestone 790–799 Drawing Intelligence Phase D — Production readiness & platform certification at 2/10 — Playwright assertion scaffold — sprint-767-selftest.ts",
     "sprint768": "Milestone 790–799 Drawing Intelligence Phase D — Production readiness & platform certification at 3/10 — Phase B validation matrix row wiring — sprint-768-selftest.ts",
     "sprint769": "Milestone 790–799 Drawing Intelligence Phase D — Production readiness & platform certification at 4/10 — UI assertions — sprint-769-selftest.ts",
@@ -12397,7 +12394,7 @@
     "daysRemaining": 3,
     "computedAsOf": "2026-07-09",
     "status": "at_risk",
-    "statusRationale": "Milestone 790–799 closed Sprint 775; Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Production readiness & platform certification full stack wrap complete (docs/PRODUCTION_READINESS_PLATFORM_CERT_PLAN.json); Platform Certification 3/3 recertified Sprint 775 (Finding 4); next next milestone 800-809 Phase F AI decision support foundation Sprint 776 queued"
+    "statusRationale": "Milestone 800-809 opens Sprint 777 (1/10); Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase E Commercial Intelligence Estimating/BoQ foundation (docs/RESIDUAL_PRODUCTION_GATES_PLAN.json); Phase B UX Sign-off wrap complete (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Platform Certification 3/3 recertified Sprint 776 (Finding 4); Milestone 540–549 closed Sprint 525"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
