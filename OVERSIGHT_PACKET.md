@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active � Milestone 1170-1179 Reports propagation from drawing events OPEN (1/10); Sprint 1147 queued.
+**Status:** Active — Milestone 1170–1179 Reports propagation from drawing events (3/10); Sprint 1149 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1146 closed  
-**Next sprint:** 1147 queued
+**Current sprint:** 1148 closed  
+**Next sprint:** 1149 queued
 **Milestone:** 1160-1169 WRAP CLOSED (10/10) — 1170-1179 Reports propagation from drawing events opens Sprint 1146; write_audit_entry remains standing deferred open_interrupt
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
