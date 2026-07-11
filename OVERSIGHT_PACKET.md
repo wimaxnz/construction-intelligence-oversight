@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 970–979 Job progress UI hardening (3/10); Sprint 949 queued.
+**Status:** Active — Milestone 970–979 Job progress UI hardening (4/10); Sprint 950 queued.
 
 **Last updated:** 2026-07-11
-**Current sprint:** 788 closed  
-**Next sprint:** 579 queued
+**Current sprint:** 789 closed  
+**Next sprint:** 580 queued
 **Milestone:** 960–969 WRAP CLOSED (10/10) · 970–979 Job progress UI hardening opens Sprint 946
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
