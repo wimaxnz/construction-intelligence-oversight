@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1310-1319 Job progress UI continuous CLOSED (10/10); Sprint 1296 queued (1320-1329 Enterprise Drawing Management continuous wrap).
+**Status:** Active � Milestone 1320-1329 Enterprise Drawing Management continuous wrap OPEN (1/10); Sprint 1297 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1295 closed  
-**Next sprint:** 1286 queued (1310-1319 Enterprise Drawing Management continuous wrap validation automation)
+**Current sprint:** 1296 closed  
+**Next sprint:** 1297 queued
 **Milestone:** 1310-1319 WRAP CLOSED (10/10) — 1320-1329 Enterprise Drawing Management continuous wrap opens Sprint 1296
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
