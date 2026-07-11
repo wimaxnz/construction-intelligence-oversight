@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1180–1189 Canvas marker lifecycle validation automation (7/10); Sprint 1163 queued.
+**Status:** Active — Milestone 1180–1189 Canvas marker lifecycle validation automation (8/10); Sprint 1164 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1162 closed  
-**Next sprint:** 1163 queued
+**Current sprint:** 1163 closed  
+**Next sprint:** 1164 queued
 **Milestone:** 1170-1179 WRAP CLOSED (10/10) — 1180-1189 Canvas marker lifecycle validation automation opens Sprint 1156
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
