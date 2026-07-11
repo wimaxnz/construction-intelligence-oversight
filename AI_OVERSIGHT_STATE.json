@@ -17863,18 +17863,18 @@
   "oversightSync": {
     "status": "degraded",
     "reason": "api-response-anomaly-monitor-api-and-git",
-    "lastPushAttempt": "2026-07-11T14:48:52.256Z",
+    "lastPushAttempt": "2026-07-11T14:49:38.844Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-11T14:48:52.256Z",
+    "verifiedAt": "2026-07-11T14:49:38.844Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-11T14:49:22.2155211Z",
-    "pushedAt": "2026-07-11T14:48:52.256Z",
-    "remoteHeadSha": "8ae47e9e23cc6190e021d5a71021d8b76833c52e",
-    "publicStateVerifiedAt": "2026-07-11T14:48:52.256Z",
+    "sanitizedAt": "2026-07-11T14:49:41.6035915Z",
+    "pushedAt": "2026-07-11T14:49:38.844Z",
+    "remoteHeadSha": "fbbf84fccb8af029c8e9e33a88297e0168db96ff",
+    "publicStateVerifiedAt": "2026-07-11T14:49:38.844Z",
     "publicStateJsonParsePassed": false,
-    "publicStateContentHash": "cd6e9fea36f045f7b3136dabf8822221b5cea0c18b5ebd35a6c9a3d7aa1cdce9",
+    "publicStateContentHash": "078a0354266db7815d2dc38bb70272a7a82ace9b5a0e0f2ccf597358875abc28",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -17908,16 +17908,16 @@
     "publicStateRawCdnHash": "88c88ccff59f54638090e19184b57a8aeef5f082be9326c2cc19967d10e5f901",
     "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-11T14:48:52.256Z",
-      "rawEndpointVerifiedAt": "2026-07-11T14:48:52.256Z",
-      "gitOriginVerifiedAt": "2026-07-11T14:48:52.256Z",
+      "githubApiVerifiedAt": "2026-07-11T14:49:38.844Z",
+      "rawEndpointVerifiedAt": "2026-07-11T14:49:38.844Z",
+      "gitOriginVerifiedAt": "2026-07-11T14:49:38.844Z",
       "routeContentHashes": {
         "github-api": null,
         "raw-cdn": "88c88ccff59f54638090e19184b57a8aeef5f082be9326c2cc19967d10e5f901",
-        "git-origin": "cd6e9fea36f045f7b3136dabf8822221b5cea0c18b5ebd35a6c9a3d7aa1cdce9"
+        "git-origin": "078a0354266db7815d2dc38bb70272a7a82ace9b5a0e0f2ccf597358875abc28"
       },
       "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "8ae47e9e23cc6190e021d5a71021d8b76833c52e",
+      "canonicalRemoteHeadSha": "fbbf84fccb8af029c8e9e33a88297e0168db96ff",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 1732,
       "classification": "api-response-anomaly-monitor-api-and-git"
@@ -20478,7 +20478,7 @@
       "evidence": "docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json",
       "detectedAt": "2026-07-10T07:47:19.910Z",
       "remediationGate": "production_deploy_plus_negative_security_tests_plus_completion_evidence",
-      "note": "Remains open until production deployment of membership guard, negative security tests, and completionEvidence are recorded. Phase H write_audit production remediation contracts (1110-1119) builds contracts/tooling only and does NOT satisfy this gate. Phase H write_audit production remediation contracts (1110-1119) does not satisfy this gate."
+      "note": "Remains open until production deployment of membership guard, negative security tests, and completionEvidence are recorded. Phase H write_audit production remediation contracts (1110-1119) builds contracts/tooling only and does NOT satisfy this gate."
     }
   ],
   "growthEventContract": {},
