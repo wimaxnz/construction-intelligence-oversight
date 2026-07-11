@@ -13180,20 +13180,20 @@
     "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 910-919 Hard completion production verification closed (10/10); wrap complete docs/HARD_COMPLETION_PRODUCTION_VERIFICATION_PLAN.json"
   },
   "oversightSync": {
-    "status": "degraded",
-    "reason": "api-response-anomaly-monitor-api-and-git",
-    "lastPushAttempt": "2026-07-11T06:19:52.886Z",
+    "status": "ok",
+    "reason": "cdn-lag-api-git-agree",
+    "lastPushAttempt": "2026-07-11T06:21:09.337Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-11T06:19:52.886Z",
+    "verifiedAt": "2026-07-11T06:21:09.337Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
     "sanitizedAt": "2026-07-11T06:19:29.7252818Z",
-    "pushedAt": "2026-07-11T06:19:52.886Z",
-    "remoteHeadSha": "195c31a17df932cd2f861a4b6aa9f7cc2ac77a30",
-    "publicStateVerifiedAt": "2026-07-11T06:19:52.886Z",
-    "publicStateJsonParsePassed": false,
-    "publicStateContentHash": "93b23f91c03c02dd556bde294200e5ba1e68844bddccb58c9cb3469081ac1b1a",
+    "pushedAt": "2026-07-11T06:21:09.337Z",
+    "remoteHeadSha": "06a515008f900048e892d83f9b08c513266934a3",
+    "publicStateVerifiedAt": "2026-07-11T06:21:09.337Z",
+    "publicStateJsonParsePassed": true,
+    "publicStateContentHash": "2127a16445b889b829ec75387b221fbc2d054e586c108dc442d747e0b7383b90",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -13223,24 +13223,27 @@
       ],
       "note": "bridgeDocsPublished retired ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â prior list falsely claimed bridge ops docs were on public main; only push allowlist + inbox are public"
     },
-    "publicStateVerificationSource": "multi-route",
+    "publicStateVerificationSource": "multi-route-authenticated",
     "publicStateRawCdnHash": "016df41815c1e46bbe32c824bc29a4da8014f0a16f9894cfa97e398b810c6640",
     "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-11T06:19:52.886Z",
-      "rawEndpointVerifiedAt": "2026-07-11T06:19:52.886Z",
-      "gitOriginVerifiedAt": "2026-07-11T06:19:52.886Z",
+      "githubApiVerifiedAt": "2026-07-11T06:21:09.337Z",
+      "rawEndpointVerifiedAt": "2026-07-11T06:21:09.337Z",
+      "gitOriginVerifiedAt": "2026-07-11T06:21:09.337Z",
       "routeContentHashes": {
-        "github-api": null,
+        "github-api": "2127a16445b889b829ec75387b221fbc2d054e586c108dc442d747e0b7383b90",
         "raw-cdn": "016df41815c1e46bbe32c824bc29a4da8014f0a16f9894cfa97e398b810c6640",
-        "git-origin": "93b23f91c03c02dd556bde294200e5ba1e68844bddccb58c9cb3469081ac1b1a"
+        "git-origin": "2127a16445b889b829ec75387b221fbc2d054e586c108dc442d747e0b7383b90"
       },
       "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "195c31a17df932cd2f861a4b6aa9f7cc2ac77a30",
+      "canonicalRemoteHeadSha": "06a515008f900048e892d83f9b08c513266934a3",
       "logicalConsistencyPassed": true,
-      "logicalConsistencyTestCount": 1332,
-      "classification": "api-response-anomaly-monitor-api-and-git"
-    }
+      "classification": "cdn-lag-api-git-agree",
+      "apiAuthUsed": true,
+      "gitShowMaxBufferFixed": true
+    },
+    "publicationIntegrityRepairAt": "2026-07-11T06:21:09.337Z",
+    "publicationIntegritySeverity": "high-governance"
   },
   "oversightMonitoring": {
     "status": "active",
@@ -13305,7 +13308,6 @@
       "targetSprintOrMilestone": "Immediate security remediation sprint (non-blocking for unrelated roadmap sprints)",
       "relatedRisk": "audit-log-forgery-via-secdef",
       "architectureDecisionRequired": false,
-      "completionEvidence": null,
       "objects": [
         "public.write_audit_entry(uuid, text, text, text, text, text, text)"
       ],
@@ -13313,7 +13315,9 @@
       "interruptRequired": true,
       "evidence": "docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json",
       "detectedAt": "2026-07-10T07:47:19.910Z",
-      "channel": "security_interrupt"
+      "channel": "security_interrupt",
+      "remediationGate": "production_deploy_plus_negative_security_tests_plus_completion_evidence",
+      "note": "Remains open until production deployment of membership guard, negative security tests, and completionEvidence are recorded."
     }
   ],
   "oversightFindingsTriage": [
@@ -15186,14 +15190,15 @@
       "targetSprintOrMilestone": "Immediate security remediation sprint (non-blocking for unrelated roadmap sprints)",
       "relatedRisk": "audit-log-forgery-via-secdef",
       "architectureDecisionRequired": false,
-      "completionEvidence": null,
       "objects": [
         "public.write_audit_entry(uuid, text, text, text, text, text, text)"
       ],
       "remediation": "Add is_project_member(p_project_id) guard (or restrict EXECUTE to service_role / revoke from authenticated/PUBLIC); keep search_path pinned.",
       "interruptRequired": true,
       "evidence": "docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json",
-      "detectedAt": "2026-07-10T07:47:19.910Z"
+      "detectedAt": "2026-07-10T07:47:19.910Z",
+      "remediationGate": "production_deploy_plus_negative_security_tests_plus_completion_evidence",
+      "note": "Remains open until production deployment of membership guard, negative security tests, and completionEvidence are recorded."
     }
   ],
   "growthEventContract": {},
@@ -15201,12 +15206,73 @@
   "governanceInterrupts": [
     {
       "findingId": "finding-gov-oversight-publication-integrity",
-      "title": "Oversight publication integrity — publicStateJsonParsePassed false / API route anomaly",
+      "title": "Oversight publication integrity — publicStateJsonParsePassed / triple-route identity",
       "severity": "high-governance",
-      "disposition": "remediating",
-      "rationale": "Unauthenticated GitHub Contents API rate-limit (403) caused publicStateJsonParsePassed=false and api-response-anomaly classification despite valid non-empty STATE on raw CDN and git origin. Remediation: authenticate API route verification, reconcile STATE/REQUEST/RESPONSE/PACKET, prove triple-route hash identity.",
+      "disposition": "remediated_pending_cdn_convergence",
+      "rationale": "Root causes: (1) unauthenticated GitHub API rate-limit 403 → jsonParseExit=1; (2) git show execSync default maxBuffer 1MB insufficient for ~2.8MB STATE. Fixed auth via GITHUB_TOKEN/GCM and maxBuffer=32MB. Authoritative identity is GitHub API + git origin; raw CDN may lag briefly.",
       "openedAt": "2026-07-11T06:18:07.775Z",
-      "targetSprintOrMilestone": "Immediate governance repair (non-blocking for roadmap sprints)"
+      "targetSprintOrMilestone": "Immediate governance repair (non-blocking for roadmap sprints)",
+      "evidence": {
+        "remoteHeadSha": "06a515008f900048e892d83f9b08c513266934a3",
+        "authoritativeContentSha256": "2127a16445b889b829ec75387b221fbc2d054e586c108dc442d747e0b7383b90",
+        "githubApi": {
+          "route": "github-api",
+          "httpStatus": 200,
+          "byteLength": 2883268,
+          "sha256": "2127a16445b889b829ec75387b221fbc2d054e586c108dc442d747e0b7383b90",
+          "jsonParseExit": 0,
+          "currentSprintNumber": 895,
+          "nextSprintNumber": 896,
+          "currentMilestoneRange": "910-919",
+          "milestonePercentComplete": 100,
+          "remoteHeadSha": "06a515008f900048e892d83f9b08c513266934a3"
+        },
+        "rawCdn": {
+          "route": "raw-cdn",
+          "httpStatus": 200,
+          "byteLength": 2876920,
+          "sha256": "016df41815c1e46bbe32c824bc29a4da8014f0a16f9894cfa97e398b810c6640",
+          "jsonParseExit": 0,
+          "currentSprintNumber": 893,
+          "nextSprintNumber": 894,
+          "currentMilestoneRange": "910-919",
+          "milestonePercentComplete": 80,
+          "remoteHeadSha": "06a515008f900048e892d83f9b08c513266934a3"
+        },
+        "gitOrigin": {
+          "route": "git-origin",
+          "httpStatus": 0,
+          "byteLength": 2883268,
+          "sha256": "2127a16445b889b829ec75387b221fbc2d054e586c108dc442d747e0b7383b90",
+          "jsonParseExit": 0,
+          "currentSprintNumber": 895,
+          "nextSprintNumber": 896,
+          "currentMilestoneRange": "910-919",
+          "milestonePercentComplete": 100,
+          "remoteHeadSha": "06a515008f900048e892d83f9b08c513266934a3"
+        },
+        "classification": "cdn-lag-api-git-agree",
+        "currentSprint": {
+          "number": 895,
+          "status": "closed",
+          "previousClosed": 894,
+          "closedDate": "2026-07-11"
+        },
+        "nextSprintNumber": 896,
+        "milestone": "910-919",
+        "milestoneProgress": {
+          "sprintsInMilestone": 10,
+          "sprintsClosed": 10,
+          "percentComplete": 100,
+          "nextWrapReviewSprint": 895,
+          "milestoneWrapComplete": true
+        }
+      },
+      "closedPreconditions": [
+        "api_git_hash_identity",
+        "all_routes_json_parse_pass",
+        "write_audit_entry_remains_open"
+      ]
     }
   ]
 }
