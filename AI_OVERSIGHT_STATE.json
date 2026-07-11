@@ -17159,20 +17159,20 @@
     "queueCorrection": "After Phase H security remediation UI hardening wrap (1080-1089): schema provenance · write_audit membership · PHASE_B app URL chrome hardening complete; next unfinished roadmap item is Phase H live-apply verification UI hardening (write_audit live-apply · PHASE_B production URL chrome still thin; distinct from closed 820–829). write_audit_entry remains open_interrupt until production deploy + negative security tests + completionEvidence."
   },
   "oversightSync": {
-    "status": "ok",
-    "reason": null,
-    "lastPushAttempt": "2026-07-11T14:09:42.288Z",
+    "status": "degraded",
+    "reason": "unexplained-hash-divergence-investigate",
+    "lastPushAttempt": "2026-07-11T14:10:34.059Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-11T14:09:42.288Z",
+    "verifiedAt": "2026-07-11T14:10:34.059Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
     "sanitizedAt": "2026-07-11T14:10:16.2578068Z",
-    "pushedAt": "2026-07-11T14:09:42.288Z",
-    "remoteHeadSha": "8dc3125495af5c49d36ee346ae69f8ca6837ffca",
-    "publicStateVerifiedAt": "2026-07-11T14:09:42.288Z",
+    "pushedAt": "2026-07-11T14:10:34.059Z",
+    "remoteHeadSha": "47c4de04468e040681639aa738705e99ae23da65",
+    "publicStateVerifiedAt": "2026-07-11T14:10:34.059Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "c36fb772eb23d2e0fecebb085d8846727351b2a5cf588789e742b9b047e96f74",
+    "publicStateContentHash": "b0c285ab11891d6a752635f2e92118bcef16ba87b57c234ec089d7d4434e655d",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -17203,22 +17203,22 @@
       "note": "bridgeDocsPublished retired ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â prior list falsely claimed bridge ops docs were on public main; only push allowlist + inbox are public"
     },
     "publicStateVerificationSource": "multi-route",
-    "publicStateRawCdnHash": "483aed2e566add5ec64d70902510172f93d0322b0b27fc6b1f5a9daf68fef22b",
-    "publicStateRawCdnStale": true,
+    "publicStateRawCdnHash": "b0c285ab11891d6a752635f2e92118bcef16ba87b57c234ec089d7d4434e655d",
+    "publicStateRawCdnStale": false,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-11T14:09:42.288Z",
-      "rawEndpointVerifiedAt": "2026-07-11T14:09:42.288Z",
-      "gitOriginVerifiedAt": "2026-07-11T14:09:42.288Z",
+      "githubApiVerifiedAt": "2026-07-11T14:10:34.059Z",
+      "rawEndpointVerifiedAt": "2026-07-11T14:10:34.059Z",
+      "gitOriginVerifiedAt": "2026-07-11T14:10:34.059Z",
       "routeContentHashes": {
-        "github-api": "c36fb772eb23d2e0fecebb085d8846727351b2a5cf588789e742b9b047e96f74",
-        "raw-cdn": "483aed2e566add5ec64d70902510172f93d0322b0b27fc6b1f5a9daf68fef22b",
-        "git-origin": "c36fb772eb23d2e0fecebb085d8846727351b2a5cf588789e742b9b047e96f74"
+        "github-api": "dd503d87805473f22d9cbe2f68a71b7b29cec395a57458fe54193e7f5260a32f",
+        "raw-cdn": "b0c285ab11891d6a752635f2e92118bcef16ba87b57c234ec089d7d4434e655d",
+        "git-origin": "b0c285ab11891d6a752635f2e92118bcef16ba87b57c234ec089d7d4434e655d"
       },
       "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "8dc3125495af5c49d36ee346ae69f8ca6837ffca",
+      "canonicalRemoteHeadSha": "47c4de04468e040681639aa738705e99ae23da65",
       "logicalConsistencyPassed": true,
-      "logicalConsistencyTestCount": 1670,
-      "classification": "cdn-lag-api-git-agree"
+      "logicalConsistencyTestCount": 1672,
+      "classification": "unexplained-hash-divergence-investigate"
     },
     "publicationIntegrityRepairAt": "2026-07-11T06:21:09.337Z",
     "publicationIntegritySeverity": "high-governance"
@@ -19686,7 +19686,7 @@
       "evidence": "docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json",
       "detectedAt": "2026-07-10T07:47:19.910Z",
       "remediationGate": "production_deploy_plus_negative_security_tests_plus_completion_evidence",
-      "note": "Remains open until production deployment of membership guard, negative security tests, and completionEvidence are recorded."
+      "note": "Remains open until production deployment of membership guard, negative security tests, and completionEvidence are recorded. Phase H security remediation UI hardening (1080-1089) does not satisfy this gate."
     }
   ],
   "growthEventContract": {},
