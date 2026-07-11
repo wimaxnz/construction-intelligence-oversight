@@ -1,42 +1,41 @@
 {
   "lastUpdated": "2026-07-12",
   "currentSprint": {
-    "number": 1175,
+    "number": 1176,
     "status": "closed",
-    "previousClosed": 1174,
+    "previousClosed": 1175,
     "closedDate": "2026-07-12"
   },
   "currentMilestone": {
-    "range": "1190-1199",
-    "milestoneId": "1190-1199",
-    "milestoneName": "Drawing Intelligence Phase B — smart search indexing for legacy uploads Milestone",
+    "range": "1200-1209",
+    "milestoneId": "1200-1209",
+    "milestoneName": "Drawing Intelligence Phase B — in-canvas cross-ref accuracy Milestone",
     "plannedSprintCount": 10,
-    "actualSprintStart": 1166,
-    "actualSprintEnd": 1175,
-    "wrapReviewSprint": 1175,
-    "status": "closed",
-    "theme": "Smart search indexing for legacy uploads — backfill intelligence_json / re-upload indexing (DRAWING_INTELLIGENCE_ROADMAP.md In development; write_audit_entry remains standing deferred open_interrupt)",
-    "openedDate": "2026-07-11",
-    "wrapClosedDate": "2026-07-12",
-    "previousMilestoneClosed": "1180-1189 (Canvas marker lifecycle validation automation — Canvas marker lifecycle validation automation Milestone)",
+    "actualSprintStart": 1176,
+    "actualSprintEnd": 1185,
+    "wrapReviewSprint": 1185,
+    "status": "active",
+    "theme": "In-canvas cross-ref accuracy — PDF text position tuning (DRAWING_INTELLIGENCE_ROADMAP.md In development; write_audit_entry remains standing deferred open_interrupt)",
+    "openedDate": "2026-07-12",
+    "previousMilestoneClosed": "1190-1199 (Smart search indexing for legacy uploads — Smart search indexing for legacy uploads Milestone)",
     "nextMilestoneOpens": "1200-1209 (In-canvas cross-ref accuracy — DRAWING_INTELLIGENCE_ROADMAP.md In development; write_audit_entry remains open_interrupt as standing deferred owner action 0/3 gates)",
-    "wrapComplete": true
+    "wrapComplete": false
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 10,
-    "percentComplete": 100,
-    "nextWrapReviewSprint": 1175,
-    "milestoneWrapComplete": true
+    "sprintsClosed": 1,
+    "percentComplete": 10,
+    "nextWrapReviewSprint": 1185,
+    "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Milestone 1200-1209 In-canvas cross-ref accuracy validation automation foundation — sprint-1176-selftest.ts"
+      "focus": "Playwright In-canvas cross-ref accuracy assertion scaffold � sprint-1177-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Platform Certification recertification post-milestone-close (Finding 4) � phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
+      "focus": "Sprint Validation 3/3 post-recertification regression guard � phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
     }
   },
   "completedWork": {
@@ -5235,6 +5234,12 @@
       "stream2": "Milestone 1190-1199 Smart search indexing for legacy uploads full stack completeness review � sprint-1175-selftest.ts audits stack (foundation � Playwright scaffold � Phase B matrix � UI assertions � localStorage mirror reconciliation � remote seed hydrate � cold-start regeneration � full hydrate/persist path � remote read-after-write round-trip) � PHASE_B_RUNS=3 (consecutiveGreen reuse / exclusive when needed) � Platform Certification recertification post-milestone-close (Finding 4)",
       "validation": "Milestone wrap selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
       "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; write_audit_entry standing deferred owner action (0/3 gates REAL); next milestone 1190-1199 Smart search indexing for legacy uploads validation automation deferred to Sprint 1166"
+    },
+    "sprint1176": {
+      "stream1": "Milestone 1200-1209 In-canvas cross-ref accuracy validation automation foundation � inCanvasCrossRefAccuracyValidationService � IN_CANVAS_CROSS_REF_ACCURACY_PLAN.json � sprint-1176-selftest.ts",
+      "stream2": "Platform Certification recertification post-milestone-close (Finding 4) � phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) � docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md � docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 1200-1209 opens selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; full Playwright In-canvas cross-ref accuracy role-path UI assertions deferred to Sprint 1177+"
     }
   },
   "changedFiles": {
@@ -17896,6 +17901,21 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint1176": [
+      "src/platform/validation/inCanvasCrossRefAccuracyValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/IN_CANVAS_CROSS_REF_ACCURACY_PLAN.json",
+      "scripts/sprint-1176-selftest.ts",
+      "scripts/sprint-1176-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -19547,14 +19567,16 @@
       "sprint1174": "Milestone 1190–1199 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
       "sprint1174PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-SMART-SEARCH-INDEXING-FOR-LEGACY-UPLOADS passed",
       "sprint1175": "Milestone 1190-1199 wrap � selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Smart search indexing for legacy uploads full stack completeness audit)",
-      "sprint1175PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
+      "sprint1175PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
+      "sprint1176": "Milestone 1200-1209 opens � selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + In-canvas cross-ref accuracy foundation; consecutiveGreen reuse when stampede=0)",
+      "sprint1176PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-12",
       "lastCertifiedBaseline": "2026-07-12",
-      "status": "current � recertified Sprint 1175 (1190-1199 closed; 1190-1199 next milestone opens post-milestone-close Finding 4)",
-      "sprintRangeCovered": "1166�1175 (Drawing Intelligence Phase B — smart search indexing for legacy uploads Milestone 1190-1199 closed)",
-      "deltaSinceCertification": "Sprints 130�1175 delivered; Milestone 1190-1199 closed; next milestone 1190-1199 Smart search indexing for legacy uploads validation automation; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered � post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Smart search indexing for legacy uploads wrap complete (docs/SMART_SEARCH_INDEXING_FOR_LEGACY_UPLOADS_PLAN.json); Platform Certification 3/3 recertified Sprint 1175 (Finding 4)",
+      "status": "current � recertified Sprint 1176 (1200-1209 In-canvas cross-ref accuracy opens 1/10 Finding 4)",
+      "sprintRangeCovered": "1176�1176 (Drawing Intelligence Phase B — in-canvas cross-ref accuracy Milestone 1200-1209 opens)",
+      "deltaSinceCertification": "Sprints 130�1176 delivered (847 sprints); Milestone 1200-1209 closed; In-canvas cross-ref accuracy 1200-1209 opens (1/10); gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered � post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase B UX Sign-off wrap complete (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Phase E Commercial Intelligence Estimating/BoQ foundation (docs/IN_CANVAS_CROSS_REF_ACCURACY_PLAN.json); Platform Certification 3/3 recertified Sprint 1176 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -19565,21 +19587,18 @@
         "Commercial Intelligence state-machine change",
         "before production release"
       ],
-      "note": "3/3 deterministic re-achieved 2026-07-12 Sprint 1175 post-milestone-close; recertify on triggers in recertificationTriggers � not indefinite valid"
+      "note": "3/3 deterministic re-achieved 2026-07-12 Sprint 1176 post-milestone-close; recertify on triggers in recertificationTriggers � not indefinite valid"
     },
     "typecheck": "npx tsc -b (per regression gate)"
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md � Milestone 1190-1199 closed, Sprint 1166 queued (1190-1199 Smart search indexing for legacy uploads validation automation)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md � Milestone 1190-1199 wrap logged",
-    "docs/SMART_SEARCH_INDEXING_FOR_LEGACY_UPLOADS_PLAN.json � milestoneWrapComplete Sprint 1175",
-    "docs/SMART_SEARCH_INDEXING_FOR_LEGACY_UPLOADS_PLAN.json � next milestone 1190-1199 Smart search indexing for legacy uploads validation automation Sprint 1166 queued; write_audit standing deferred",
-    "docs/SMART_SEARCH_INDEXING_FOR_LEGACY_UPLOADS_HARNESS.json � in-repo harness + probe; three gates unmet; interrupt open",
-    "docs/DRAWING_INTELLIGENCE_ROADMAP.md � Smart search indexing for legacy uploads validation automation checked complete",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json � Sprint 1175 closed, milestone 1190-1199 wrap closed (10/10), Sprint 1166 queued (smart search indexing; write_audit standing deferred)",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md � Sprint 1175 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md � Sprint 1175 close-out note"
+    "docs/PLATFORM_EVOLUTION.md � Milestone 1200-1209 opens (1/10), Sprint 1176 closed, Sprint 1177 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md � Milestone 1200-1209 In-canvas cross-ref accuracy opens logged",
+    "docs/IN_CANVAS_CROSS_REF_ACCURACY_PLAN.json � foundationComplete Sprint 1176",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json � Sprint 1176 closed, milestone 1200-1209 active (1/10), Sprint 1177 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md � Sprint 1176 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md � Sprint 1176 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -19623,7 +19642,7 @@
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Milestone 1190-1199 Smart search indexing for legacy uploads closed Sprint 1175; Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 1190-1199 Smart search indexing for legacy uploads validation automation queued Sprint 1166; write_audit_entry remains standing deferred open_interrupt (0/3 gates)"
+      "description": "Milestone 1200-1209 In-canvas cross-ref accuracy opens Sprint 1177 (1/10); Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending"
     },
     {
       "id": "partial-platform-services",
@@ -19634,7 +19653,7 @@
       "id": "platform-certification-stale",
       "severity": "low-governance",
       "relatedFinding": "finding-4",
-      "description": "Platform Certification 3/3 recertified 2026-07-12 Sprint 1175 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
+      "description": "Platform Certification 3/3 recertified 2026-07-12 Sprint 1176 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
     },
     "HIGH: write_audit_entry SECURITY DEFINER executable by authenticated without is_project_member ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â audit forgery risk (docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json)"
   ],
@@ -19726,28 +19745,27 @@
     }
   ],
   "nextSprint": {
-    "number": 1176,
-    "stream1": "Milestone 1200-1209 In-canvas cross-ref accuracy validation automation foundation — sprint-1176-selftest.ts",
-    "stream2": "Platform Certification recertification post-milestone-close (Finding 4) � phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-1176-selftest.ts",
-    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 1190-1199 Smart search indexing for legacy uploads closed (10/10); wrap complete docs/SMART_SEARCH_INDEXING_FOR_LEGACY_UPLOADS_PLAN.json",
-    "queueCorrection": "After Smart search indexing for legacy uploads wrap (1190-1199): write_audit_entry remains open_interrupt as STANDING DEFERRED OWNER ACTION (0/3 gates REAL — do NOT re-queue write_audit credential loops). Next unfinished NON-write_audit roadmap item: In-canvas cross-ref accuracy (1200-1209; DRAWING_INTELLIGENCE_ROADMAP.md In development). Theme correction: Metadata review screenshot / UX polish is DUPLICATE of closed 1160–1169 Phase B metadata review UX polish — skip; queue In-canvas cross-ref accuracy."
+    "number": 1177,
+    "stream1": "Playwright In-canvas cross-ref accuracy assertion scaffold � sprint-1177-selftest.ts",
+    "stream2": "Sprint Validation 3/3 post-recertification regression guard � phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
+    "selftest": "scripts/sprint-1177-selftest.ts",
+    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 1200-1209 In-canvas cross-ref accuracy opens (1/10); prior Smart search indexing for legacy uploads wrap complete docs/SMART_SEARCH_INDEXING_FOR_LEGACY_UPLOADS_PLAN.json"
   },
   "oversightSync": {
     "status": "degraded",
     "reason": "api-response-anomaly-monitor-api-and-git",
-    "lastPushAttempt": "2026-07-11T16:22:49.989Z",
+    "lastPushAttempt": "2026-07-11T16:23:16.475Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-11T16:22:49.989Z",
+    "verifiedAt": "2026-07-11T16:23:16.475Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-11T16:22:30.9815461Z",
-    "pushedAt": "2026-07-11T16:22:49.989Z",
-    "remoteHeadSha": "87828afa99d26ab090bca6912b044087d4d0ce5f",
-    "publicStateVerifiedAt": "2026-07-11T16:22:49.989Z",
+    "sanitizedAt": "2026-07-11T16:26:46.9815470Z",
+    "pushedAt": "2026-07-11T16:23:16.475Z",
+    "remoteHeadSha": "2d084de1c4b63ac068d43f5bc6c180f74a09149b",
+    "publicStateVerifiedAt": "2026-07-11T16:23:16.475Z",
     "publicStateJsonParsePassed": false,
-    "publicStateContentHash": "7853c9243247f4bf6aa7a489b974cc46ca6ec936c70c43f60d0a5cd0b5c82961",
+    "publicStateContentHash": "faef9e41b6072614f995cf16c04d2ea236a0e03d1b9b47a5fb0bb1a1d9497f55",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -19781,16 +19799,16 @@
     "publicStateRawCdnHash": "3eeae26e4efcc90fef0e765f6b2712f41d79d6c1e24d2703b75b65102c978a1c",
     "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-11T16:22:49.989Z",
-      "rawEndpointVerifiedAt": "2026-07-11T16:22:49.989Z",
-      "gitOriginVerifiedAt": "2026-07-11T16:22:49.989Z",
+      "githubApiVerifiedAt": "2026-07-11T16:23:16.475Z",
+      "rawEndpointVerifiedAt": "2026-07-11T16:23:16.475Z",
+      "gitOriginVerifiedAt": "2026-07-11T16:23:16.475Z",
       "routeContentHashes": {
         "github-api": null,
         "raw-cdn": "3eeae26e4efcc90fef0e765f6b2712f41d79d6c1e24d2703b75b65102c978a1c",
-        "git-origin": "7853c9243247f4bf6aa7a489b974cc46ca6ec936c70c43f60d0a5cd0b5c82961"
+        "git-origin": "faef9e41b6072614f995cf16c04d2ea236a0e03d1b9b47a5fb0bb1a1d9497f55"
       },
       "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "87828afa99d26ab090bca6912b044087d4d0ce5f",
+      "canonicalRemoteHeadSha": "2d084de1c4b63ac068d43f5bc6c180f74a09149b",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 1892,
       "classification": "api-response-anomaly-monitor-api-and-git"
@@ -19809,9 +19827,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 1175,
+    "lastSyncedSprint": 786,
     "lastSyncedAt": "2026-07-12",
-    "milestoneProgress": "1190-1199 WRAP CLOSED (10/10)",
+    "milestoneProgress": "1200-1209 OPENS (1/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -20015,7 +20033,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ Knowledge Library version lifecycle ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ cross-project knowledge reuse ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ knowledge similarity matching ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ proactive knowledge warning ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ user outcome feedback ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ confidence evolution ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase B — smart search indexing for legacy uploads Milestone milestone (1190-1199) active — Sprint 1175 closed; Sprint 1176 queued",
+    "phaseE": "Drawing Intelligence Phase B — in-canvas cross-ref accuracy Milestone milestone (1200-1209) active — Sprint 1176 closed; Sprint 1177 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -20028,8 +20046,8 @@
     "sprint382": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â mid-milestone 374ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators)",
     "sprint379": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Drawing Intelligence Phase B — smart search indexing for legacy uploads Milestone (1190-1199) closed Sprint 1175; 1200-1209 In-canvas cross-ref accuracy queued Sprint 1176; write_audit standing deferred",
-    "phaseB": "Smart search indexing for legacy uploads complete � milestone closed Sprint 1175; Smart search indexing for legacy uploads validation automation (1190-1199) opens Sprint 1166; write_audit_entry remains standing deferred open_interrupt (0/3 gates)"
+    "phaseD": "Drawing Intelligence Phase B — in-canvas cross-ref accuracy Milestone (1200-1209) active Sprint 1176 (1/10); 1200-1209 Phase B UX Sign-off Milestone closed Sprint 525",
+    "phaseB": "In-canvas cross-ref accuracy milestone active (1200-1209) � technical items complete; UX validation automation foundation Sprint 1176"
   },
   "digitalBrainImpact": {
     "sprint376": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -20125,7 +20143,7 @@
     "sprint268": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 1190-1199 10/10 sprints closed (100%); latest growth-event sprint 400; Sprint 1175 closed; Sprint 1176 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 1200-1209 1/10 sprints closed (10%); latest growth-event sprint 400; Sprint 1176 closed; Sprint 1177 queued per nextSprint",
     "sprint372": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â mid-milestone 364ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators)",
     "sprint371": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· isExplainabilityEnrichedDecisionTimelineEntry ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â milestone 370ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“379 wrap completeness review confirms supersede invalidation full stack audit (growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· project assistant context engine wiring); milestone closed; 380ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“389 Phase C Revision Management opens Sprint 364",
@@ -20876,7 +20894,8 @@
     "sprint1172": "No new growth event kinds — Smart search indexing for legacy uploads cold-start regeneration after remote seed; Milestone 1190–1199 at 7/10",
     "sprint1173": "No new growth event kinds — Smart search indexing for legacy uploads full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 1190–1199 at 8/10",
     "sprint1174": "No new growth event kinds — Smart search indexing for legacy uploads remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 1190–1199 at 9/10",
-    "sprint1175": "No new growth event kinds � milestone 1190-1199 wrap completeness review confirms Smart search indexing for legacy uploads full stack audit (foundation � Playwright � Phase B matrix � UI assertions � mirror � hydrate � cold-start � hydrate/persist � round-trip); milestone closed; 1190-1199 opens Sprint 1166"
+    "sprint1175": "No new growth event kinds � milestone 1190-1199 wrap completeness review confirms Smart search indexing for legacy uploads full stack audit (foundation � Playwright � Phase B matrix � UI assertions � mirror � hydrate � cold-start � hydrate/persist � round-trip); milestone closed; 1190-1199 opens Sprint 1166",
+    "sprint1176": "No new growth event kinds � In-canvas cross-ref accuracy foundation defines role critical path + checklist contracts for site-team workflow validation; Milestone 1200-1209 opens Sprint 1177"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -21690,7 +21709,8 @@
     "sprint1172": "When localStorage cleared after prior remote seed, di-smart-search-indexing-for-legacy-uploads-* indexed sheets regenerate from durable Supabase intelligence_json; Milestone 1190–1199 at 7/10",
     "sprint1173": "When VITE_PROJECT_KG_PERSIST=1, di-smart-search-indexing-for-legacy-uploads-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 1190–1199 at 8/10",
     "sprint1174": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 1190–1199 at 9/10",
-    "sprint1175": "Milestone 1190-1199 wrap confirms durable Smart search indexing for legacy uploads validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 1190-1199 Smart search indexing for legacy uploads validation automation opens Sprint 1166"
+    "sprint1175": "Milestone 1190-1199 wrap confirms durable Smart search indexing for legacy uploads validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 1190-1199 Smart search indexing for legacy uploads validation automation opens Sprint 1166",
+    "sprint1176": "In-canvas cross-ref accuracy foundation � role-based critical path coverage for visual_overlay � foreman � PM � QS � mobile/tablet; Milestone 1200-1209 opens Sprint 1177"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â drawing revision id ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· superseded-by revision id ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· invalidation scope playback lines ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· lessons_learned stage badge ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-355-selftest.ts",
@@ -21776,7 +21796,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase B — smart search indexing for legacy uploads Milestone (1190-1199) active 10/10; Sprint 1175 closed; Sprint 1176 queued (Platform Certification recertification post-milestone-close (Finding 4) � phase- · Milestone 1200-1209 In-canvas cross-ref accuracy validation automation foundatio)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase B — in-canvas cross-ref accuracy Milestone (1200-1209) active 1/10; Sprint 1176 closed; Sprint 1177 queued (Sprint Validation 3/3 post-recertification regression guard � phase-b-wynyard-va · Playwright In-canvas cross-ref accuracy assertion scaffold � sprint-1177-selftes)",
     "sprint372": "Mid-milestone 364ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“368 Drawing Intelligence Phase C revision supersede completeness review ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Phase C revision supersede stack partial audit confirms growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â phaseCRevisionSupersedeExplainabilityEntries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· isExplainabilityEnrichedDecisionTimelineEntry ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â takeoff COS pipeline stage badge ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· phaseCRevisionSupersedeTimelineEntryCount ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-366-selftest.ts",
@@ -22522,7 +22542,8 @@
     "sprint1172": "Milestone 1190–1199 Drawing Intelligence Phase D — Construction Memory playback at 7/10 — cold-start regeneration after remote seed — sprint-1172-selftest.ts",
     "sprint1173": "Milestone 1190–1199 Drawing Intelligence Phase D — Construction Memory playback at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-1173-selftest.ts",
     "sprint1174": "Milestone 1190–1199 Drawing Intelligence Phase D — Construction Memory playback at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-1174-selftest.ts",
-    "sprint1175": "Milestone 1190-1199 Smart search indexing for legacy uploads wrap completeness review � full stack audit; milestone closed; 1190-1199 opens Sprint 1166 � sprint-1175-selftest.ts"
+    "sprint1175": "Milestone 1190-1199 Smart search indexing for legacy uploads wrap completeness review � full stack audit; milestone closed; 1190-1199 opens Sprint 1166 � sprint-1175-selftest.ts",
+    "sprint1176": "Milestone 1200-1209 Drawing Intelligence Phase D � Construction Memory playback opens � validation automation foundation � sprint-1176-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
@@ -22537,7 +22558,7 @@
     "daysRemaining": 3,
     "computedAsOf": "2026-07-09",
     "status": "at_risk",
-    "statusRationale": "Milestone 1190-1199 closed Sprint 1175; Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Smart search indexing for legacy uploads full stack wrap complete (docs/SMART_SEARCH_INDEXING_FOR_LEGACY_UPLOADS_PLAN.json); Platform Certification 3/3 recertified Sprint 1175 (Finding 4); next milestone 1190-1199 Smart search indexing for legacy uploads validation automation Sprint 1166 queued; write_audit standing deferred"
+    "statusRationale": "Milestone 1200-1209 opens Sprint 1177 (1/10); Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase E Commercial Intelligence Estimating/BoQ foundation (docs/IN_CANVAS_CROSS_REF_ACCURACY_PLAN.json); Phase B UX Sign-off wrap complete (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Platform Certification 3/3 recertified Sprint 1176 (Finding 4); Milestone 540�549 closed Sprint 525"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
@@ -22598,7 +22619,7 @@
       "evidence": "docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json",
       "detectedAt": "2026-07-10T07:47:19.910Z",
       "remediationGate": "production_deploy_plus_negative_security_tests_plus_completion_evidence",
-      "note": "Remains open until production deployment of membership guard, negative security tests, and completionEvidence are recorded. Smart search indexing for legacy uploads (1190-1199) records in-repo harness + probe attempt only and does NOT satisfy this gate unless all three gates are REAL. write_audit_entry remains open_interrupt until production deploy + negative security tests + completionEvidence are ACTUALLY recorded.",
+      "note": "Remains open until production deployment of membership guard, negative security tests, and completionEvidence are recorded. In-canvas cross-ref accuracy (1200-1209) tooling does not satisfy this gate.",
       "evidenceArtifact": "docs/WRITE_AUDIT_THREE_GATE_PRODUCTION_CLOSURE_HARNESS.json",
       "gates": {
         "productionDeploy": false,
