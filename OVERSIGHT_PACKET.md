@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 910–919 Hard completion production verification CLOSED (10/10); Sprint 896 queued (920–929 AI-assisted import review).
+**Status:** Active — Milestone 920–929 Supersede UI OPEN (1/10); Sprint 897 queued.
 
 **Last updated:** 2026-07-11
-**Current sprint:** 895 closed  
-**Next sprint:** 896 queued
+**Current sprint:** 786 closed  
+**Next sprint:** 787 queued
 **Milestone:** 910–919 WRAP CLOSED (10/10) · 920–929 AI-assisted import review opens Sprint 896
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
