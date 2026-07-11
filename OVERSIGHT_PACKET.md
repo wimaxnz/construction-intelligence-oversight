@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1150–1159 Phase H write_audit three-gate production closure (3/10); Sprint 1129 queued.
+**Status:** Active — Milestone 1150–1159 Phase H write_audit three-gate production closure (4/10); Sprint 1130 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1128 closed  
-**Next sprint:** 1129 queued
+**Current sprint:** 1129 closed  
+**Next sprint:** 1130 queued
 **Milestone:** 1140–1149 WRAP CLOSED (10/10) · 1150-1159 Phase H write_audit three-gate production closure opens Sprint 1126
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
