@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1340–1339 Phase C visual revision overlay continuous (3/10); Sprint 1339 queued.
+**Status:** Active — Milestone 1340–1339 Phase C visual revision overlay continuous (4/10); Sprint 1340 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1338 closed  
-**Next sprint:** 1339 queued
+**Current sprint:** 1339 closed  
+**Next sprint:** 1340 queued
 **Milestone:** 1350-1359 WRAP CLOSED (10/10) — 1360-1369 Phase C visual revision overlay continuous opens Sprint 1336
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
