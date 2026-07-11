@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1180-1189 Canvas marker lifecycle validation automation CLOSED (10/10); Sprint 1166 queued (1190-1199 Smart search indexing for legacy uploads validation automation).
+**Status:** Active � Milestone 1190-1199 Smart search indexing for legacy uploads OPEN (1/10); Sprint 1167 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1165 closed  
-**Next sprint:** 1166 queued (1190-1199 Smart search indexing for legacy uploads validation automation)
+**Current sprint:** 1166 closed  
+**Next sprint:** 1167 queued
 **Milestone:** 1180-1189 WRAP CLOSED (10/10) — 1190-1199 Smart search indexing for legacy uploads validation automation opens Sprint 1166
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
