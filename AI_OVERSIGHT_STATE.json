@@ -19,7 +19,7 @@
     "openedDate": "2026-07-11",
     "wrapClosedDate": "2026-07-12",
     "previousMilestoneClosed": "1140-1149 (Phase H write_audit owner-credential live apply � Phase H write_audit owner-credential live apply Milestone)",
-    "nextMilestoneOpens": "1160-1169 (Phase B metadata review UX polish — DRAWING_INTELLIGENCE_ROADMAP.md In development; write_audit_entry remains open_interrupt as standing deferred owner action 0/3 gates)",
+    "nextMilestoneOpens": "1160-1169 (Reports propagation from drawing events — non-write_audit; write_audit_entry remains standing deferred open_interrupt 0/3 gates)",
     "wrapComplete": true
   },
   "milestoneProgress": {
@@ -32,7 +32,7 @@
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Milestone 1160-1169 Phase B metadata review UX polish foundation — sprint-1136-selftest.ts"
+      "focus": "Milestone 1160-1169 Reports propagation from drawing events foundation — sprint-1136-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -18791,27 +18791,26 @@
   ],
   "nextSprint": {
     "number": 1136,
-    "stream1": "Milestone 1160-1169 Phase B metadata review UX polish foundation — sprint-1136-selftest.ts",
+    "stream1": "Milestone 1160-1169 Reports propagation from drawing events foundation — sprint-1136-selftest.ts",
     "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
     "selftest": "scripts/sprint-1136-selftest.ts",
-    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 1150-1159 Phase H write_audit three-gate production closure closed (10/10); wrap complete docs/PHASE_H_WRITE_AUDIT_THREE_GATE_PRODUCTION_CLOSURE_PLAN.json",
-    "queueCorrection": "After Phase H write_audit three-gate production closure wrap (1150-1159): one more credential discovery attempted; deferred_owner_credentials recorded; 0/3 gates REAL — write_audit_entry remains open_interrupt as STANDING DEFERRED OWNER ACTION. Next unfinished NON-write_audit roadmap item: Phase B metadata review UX polish (1160-1169; DRAWING_INTELLIGENCE_ROADMAP.md In development). Avoid infinite owner-credential loops."
+    "queueCorrection": "After Phase H write_audit three-gate production closure wrap (1150-1159): credential rediscovery attempted; deferred_owner_credentials recorded; 0/3 gates REAL — write_audit_entry remains open_interrupt as STANDING DEFERRED OWNER ACTION (do NOT re-queue write_audit credential loops). Next unfinished NON-write_audit roadmap item: Reports propagation from drawing events (1160-1169; DRAWING_INTELLIGENCE_ROADMAP.md Deferred from Phase B)."
   },
   "oversightSync": {
     "status": "degraded",
     "reason": "api-response-anomaly-monitor-api-and-git",
-    "lastPushAttempt": "2026-07-11T15:38:45.781Z",
+    "lastPushAttempt": "2026-07-11T15:39:06.884Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-11T15:38:45.781Z",
+    "verifiedAt": "2026-07-11T15:39:06.884Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-11T15:38:26.7159677Z",
-    "pushedAt": "2026-07-11T15:38:45.781Z",
-    "remoteHeadSha": "f6d7c26e917be086410d42d12c08704132d34175",
-    "publicStateVerifiedAt": "2026-07-11T15:38:45.781Z",
+    "sanitizedAt": "2026-07-11T15:43:07.8837821Z",
+    "pushedAt": "2026-07-11T15:39:06.884Z",
+    "remoteHeadSha": "28daa14f5cddca785b824a046658080a42c72470",
+    "publicStateVerifiedAt": "2026-07-11T15:39:06.884Z",
     "publicStateJsonParsePassed": false,
-    "publicStateContentHash": "ab3b144155dcad6abce79cb93c63139afc924452d403a5c973346ea559efecfe",
+    "publicStateContentHash": "9ff9a9b9fcdfe4ed90b52319123bf5d1c6407f095258f2ee828d2606af17f1ad",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -18845,16 +18844,16 @@
     "publicStateRawCdnHash": "70d87eff9166098ca68a09aa87e3f2bd24d858cbce831d4a7bc0c6589fc4ef8b",
     "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-11T15:38:45.781Z",
-      "rawEndpointVerifiedAt": "2026-07-11T15:38:45.781Z",
-      "gitOriginVerifiedAt": "2026-07-11T15:38:45.781Z",
+      "githubApiVerifiedAt": "2026-07-11T15:39:06.884Z",
+      "rawEndpointVerifiedAt": "2026-07-11T15:39:06.884Z",
+      "gitOriginVerifiedAt": "2026-07-11T15:39:06.884Z",
       "routeContentHashes": {
         "github-api": null,
         "raw-cdn": "70d87eff9166098ca68a09aa87e3f2bd24d858cbce831d4a7bc0c6589fc4ef8b",
-        "git-origin": "ab3b144155dcad6abce79cb93c63139afc924452d403a5c973346ea559efecfe"
+        "git-origin": "9ff9a9b9fcdfe4ed90b52319123bf5d1c6407f095258f2ee828d2606af17f1ad"
       },
       "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "f6d7c26e917be086410d42d12c08704132d34175",
+      "canonicalRemoteHeadSha": "28daa14f5cddca785b824a046658080a42c72470",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 1812,
       "classification": "api-response-anomaly-monitor-api-and-git"
@@ -20760,7 +20759,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase H � write_audit three-gate production closure Milestone (1150-1159) active 10/10; Sprint 1135 closed; Sprint 1136 queued (Platform Certification recertification post-milestone-close (Finding 4) — phase- · Milestone 1160-1169 Phase B metadata review UX polish foundation — sprint-1136-s)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase H � write_audit three-gate production closure Milestone (1150-1159) active 10/10; Sprint 1135 closed; Sprint 1136 queued (Platform Certification recertification post-milestone-close (Finding 4) — phase- · Milestone 1160-1169 Reports propagation from drawing events foundation — sprint-)",
     "sprint372": "Mid-milestone 364ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“368 Drawing Intelligence Phase C revision supersede completeness review ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Phase C revision supersede stack partial audit confirms growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â phaseCRevisionSupersedeExplainabilityEntries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· isExplainabilityEnrichedDecisionTimelineEntry ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â takeoff COS pipeline stage badge ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· phaseCRevisionSupersedeTimelineEntryCount ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-366-selftest.ts",
@@ -21542,7 +21541,7 @@
       "evidence": "docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json",
       "detectedAt": "2026-07-10T07:47:19.910Z",
       "remediationGate": "production_deploy_plus_negative_security_tests_plus_completion_evidence",
-      "note": "STANDING DEFERRED OWNER ACTION after Milestone 1150-1159 wrap: 0/3 gates REAL. write_audit_entry remains open_interrupt — do NOT false-close; do NOT re-queue write_audit credential loops. Next product work: Reports propagation from drawing events (1160-1169).",
+      "note": "STANDING DEFERRED OWNER ACTION: 0/3 gates REAL after 1150-1159 wrap. write_audit_entry remains open_interrupt. Next: Reports propagation (1160-1169).",
       "evidenceArtifact": "docs/WRITE_AUDIT_THREE_GATE_PRODUCTION_CLOSURE_HARNESS.json",
       "gates": {
         "productionDeploy": false,
