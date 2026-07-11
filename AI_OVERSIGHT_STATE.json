@@ -18797,20 +18797,20 @@
     "queueCorrection": "After Phase H write_audit three-gate production closure wrap (1150-1159): credential rediscovery attempted; deferred_owner_credentials recorded; 0/3 gates REAL — write_audit_entry remains open_interrupt as STANDING DEFERRED OWNER ACTION (do NOT re-queue write_audit credential loops). Next unfinished NON-write_audit roadmap item: Reports propagation from drawing events (1160-1169; DRAWING_INTELLIGENCE_ROADMAP.md Deferred from Phase B)."
   },
   "oversightSync": {
-    "status": "degraded",
-    "reason": "api-response-anomaly-monitor-api-and-git",
-    "lastPushAttempt": "2026-07-11T15:39:06.884Z",
+    "status": "ok",
+    "reason": null,
+    "lastPushAttempt": "2026-07-11T15:43:26.486Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-11T15:39:06.884Z",
+    "verifiedAt": "2026-07-11T15:43:26.486Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
     "sanitizedAt": "2026-07-11T15:43:07.8837821Z",
-    "pushedAt": "2026-07-11T15:39:06.884Z",
-    "remoteHeadSha": "28daa14f5cddca785b824a046658080a42c72470",
-    "publicStateVerifiedAt": "2026-07-11T15:39:06.884Z",
+    "pushedAt": "2026-07-11T15:43:26.486Z",
+    "remoteHeadSha": "85491d1c8560d1509ccef2a2cc420e95c591860a",
+    "publicStateVerifiedAt": "2026-07-11T15:43:26.486Z",
     "publicStateJsonParsePassed": false,
-    "publicStateContentHash": "9ff9a9b9fcdfe4ed90b52319123bf5d1c6407f095258f2ee828d2606af17f1ad",
+    "publicStateContentHash": "375ad658f3cc595bbb130db3a76facda5a023f495481b92040a9724be124e0f4",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -18841,19 +18841,19 @@
       "note": "bridgeDocsPublished retired ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â prior list falsely claimed bridge ops docs were on public main; only push allowlist + inbox are public"
     },
     "publicStateVerificationSource": "multi-route",
-    "publicStateRawCdnHash": "70d87eff9166098ca68a09aa87e3f2bd24d858cbce831d4a7bc0c6589fc4ef8b",
-    "publicStateRawCdnStale": true,
+    "publicStateRawCdnHash": "375ad658f3cc595bbb130db3a76facda5a023f495481b92040a9724be124e0f4",
+    "publicStateRawCdnStale": false,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-11T15:39:06.884Z",
-      "rawEndpointVerifiedAt": "2026-07-11T15:39:06.884Z",
-      "gitOriginVerifiedAt": "2026-07-11T15:39:06.884Z",
+      "githubApiVerifiedAt": "2026-07-11T15:43:26.486Z",
+      "rawEndpointVerifiedAt": "2026-07-11T15:43:26.486Z",
+      "gitOriginVerifiedAt": "2026-07-11T15:43:26.486Z",
       "routeContentHashes": {
         "github-api": null,
-        "raw-cdn": "70d87eff9166098ca68a09aa87e3f2bd24d858cbce831d4a7bc0c6589fc4ef8b",
-        "git-origin": "9ff9a9b9fcdfe4ed90b52319123bf5d1c6407f095258f2ee828d2606af17f1ad"
+        "raw-cdn": "375ad658f3cc595bbb130db3a76facda5a023f495481b92040a9724be124e0f4",
+        "git-origin": "375ad658f3cc595bbb130db3a76facda5a023f495481b92040a9724be124e0f4"
       },
-      "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "28daa14f5cddca785b824a046658080a42c72470",
+      "routeHashesMatch": true,
+      "canonicalRemoteHeadSha": "85491d1c8560d1509ccef2a2cc420e95c591860a",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 1812,
       "classification": "api-response-anomaly-monitor-api-and-git"
