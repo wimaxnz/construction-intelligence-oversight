@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1020–1029 Multi-discipline packages UI hardening (2/10); Sprint 998 queued.
+**Status:** Active — Milestone 1020–1029 Multi-discipline packages UI hardening (3/10); Sprint 999 queued.
 
 **Last updated:** 2026-07-11
-**Current sprint:** 997 closed  
-**Next sprint:** 998 queued
+**Current sprint:** 998 closed  
+**Next sprint:** 999 queued
 **Milestone:** 1010–1019 WRAP CLOSED (10/10) · 1020-1029 Multi-discipline packages UI hardening opens Sprint 996
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
