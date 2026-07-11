@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1240–1249 Revision compare UI (9/10); Sprint 1225 queued.
+**Status:** Active — Milestone 1240-1249 Revision compare UI CLOSED (10/10); Sprint 1216 queued (1240-1249 Background ZIP job queue large archives).
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1224 closed  
-**Next sprint:** 1225 queued
-**Milestone:** 1230-1239 WRAP CLOSED (10/10) — 1230-1239 Background ZIP job queue large archives opens Sprint 1206
+**Current sprint:** 1225 closed  
+**Next sprint:** 1216 queued (1240-1249 Background ZIP job queue large archives validation automation)
+**Milestone:** 1240-1249 WRAP CLOSED (10/10) — 1240-1249 Background ZIP job queue large archives opens Sprint 1216
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
@@ -561,9 +561,11 @@ Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRAT
 
 ## Next sprint (1216)
 
-- Stream 1: Milestone 1240-1249 Revision compare UI validation automation foundation — sprint-1216-selftest.ts
+- Stream 1: Milestone 1250-1259 Bulk upload engine validation automation foundation — sprint-1226-selftest.ts
 - Stream 2: Platform Certification recertification post-milestone-close (Finding 4) � PHASE_B_RUNS=3
-- Theme: 1240-1249 Revision compare UI validation automation — Phase C prepared (DRAWING_INTELLIGENCE_ROADMAP.md In development; non-write_audit; write_audit_entry remains standing deferred open_interrupt)
+- Theme: 1250-1259 Bulk upload engine validation automation — Phase C prepared (DRAWING_INTELLIGENCE_ROADMAP.md prepared, not started; non-write_audit; write_audit_entry remains standing deferred open_interrupt)
+
+
 
 
 
