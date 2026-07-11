@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active � Milestone 1490-1499 Drawing Intelligence continuous wrap OPEN (1/10); Sprint 1467 queued.
+**Status:** Active — Milestone 1490-1499 Drawing Intelligence continuous wrap (2/10); Sprint 1468 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1466 closed  
-**Next sprint:** 1467 queued
+**Current sprint:** 1467 closed  
+**Next sprint:** 1468 queued
 **Milestone:** 1480-1489 WRAP CLOSED (10/10) — 1490-1499 Drawing Intelligence continuous wrap opens Sprint 1466
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
