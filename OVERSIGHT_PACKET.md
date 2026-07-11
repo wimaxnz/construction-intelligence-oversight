@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1320–1319 Phase B Wynyard end-to-end continuous (4/10); Sprint 1320 queued.
+**Status:** Active — Milestone 1320–1319 Phase B Wynyard end-to-end continuous (5/10); Sprint 1321 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1319 closed  
-**Next sprint:** 1320 queued
+**Current sprint:** 1320 closed  
+**Next sprint:** 1321 queued
 **Milestone:** 1330-1339 WRAP CLOSED (10/10) — 1340-1349 Phase B Wynyard end-to-end continuous opens Sprint 1316
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
