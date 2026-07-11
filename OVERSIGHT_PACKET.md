@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1270–1279 Revision management / superseding continuous (7/10); Sprint 1253 queued.
+**Status:** Active — Milestone 1270–1279 Revision management / superseding continuous (8/10); Sprint 1254 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1252 closed  
-**Next sprint:** 1253 queued
+**Current sprint:** 1253 closed  
+**Next sprint:** 1254 queued
 **Milestone:** 1260-1269 WRAP CLOSED (10/10) — 1270-1279 Revision management / superseding continuous opens Sprint 1246
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
