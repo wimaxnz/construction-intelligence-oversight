@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-11",
   "currentSprint": {
-    "number": 1004,
+    "number": 1005,
     "status": "closed",
-    "previousClosed": 1003,
+    "previousClosed": 1004,
     "closedDate": "2026-07-11"
   },
   "currentMilestone": {
@@ -14,28 +14,29 @@
     "actualSprintStart": 996,
     "actualSprintEnd": 1005,
     "wrapReviewSprint": 1005,
-    "status": "active",
-    "theme": "Multi-discipline packages UI hardening assistive validation automation (package membership · discipline chrome · tender package contracts) (DRAWING_INTELLIGENCE_ROADMAP.md Multi-discipline packages — packages UI chrome still thin)",
+    "status": "closed",
+    "theme": "Multi-discipline packages UI hardening assistive validation automation (package membership · discipline chrome · tender package contracts) (DRAWING_INTELLIGENCE_ROADMAP.md Multi-discipline packages UI hardening)",
     "openedDate": "2026-07-11",
+    "wrapClosedDate": "2026-07-11",
     "previousMilestoneClosed": "1010-1019 (Background jobs progress/resumable UX hardening — Background jobs progress/resumable UX hardening Milestone)",
     "nextMilestoneOpens": "1030-1039 (Phase D Construction Memory playback — Timeline, revision diff)",
-    "wrapComplete": false
+    "wrapComplete": true
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 9,
-    "percentComplete": 90,
+    "sprintsClosed": 10,
+    "percentComplete": 100,
     "nextWrapReviewSprint": 1005,
-    "milestoneWrapComplete": false
+    "milestoneWrapComplete": true
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Milestone wrap review — Drawing Intelligence Multi-discipline packages UI hardening completeness — sprint-1005-selftest.ts"
+      "focus": "Milestone 1030-1039 Phase D Construction Memory playback foundation — sprint-1006-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
+      "focus": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
     }
   },
   "completedWork": {
@@ -4208,6 +4209,12 @@
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 1020–1029 at 9/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-MULTI-DISCIPLINE-PACKAGES-UI-HARDENING passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
       "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Milestone 1020–1029 wrap review deferred to Sprint 525"
+    },
+    "sprint1005": {
+      "stream1": "Milestone wrap review — Multi-discipline packages UI hardening completeness — sprint-1005-selftest.ts",
+      "stream2": "Milestone 1020–1029 Multi-discipline packages UI hardening full stack completeness review — sprint-1005-selftest.ts audits stack (foundation · Playwright scaffold · Phase B matrix · UI assertions · localStorage mirror reconciliation · remote seed hydrate · cold-start regeneration · full hydrate/persist path · remote read-after-write round-trip) · PHASE_B_RUNS=3 (consecutiveGreen reuse / exclusive when needed) · Platform Certification recertification post-milestone-close (Finding 4)",
+      "validation": "Milestone wrap selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 1030-1039 Phase D Construction Memory playback deferred to Sprint 1006"
     }
   },
   "changedFiles": {
@@ -14237,6 +14244,20 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint1005": [
+      "scripts/sprint-1005-selftest.ts",
+      "scripts/sprint-1005-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/MULTI_DISCIPLINE_PACKAGES_UI_HARDENING_PLAN.json",
+      "docs/MULTI_DISCIPLINE_PACKAGES_UI_HARDENING_PLAN.json",
+      "[REDACTED-path]",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -15546,14 +15567,16 @@
       "sprint1003": "Milestone 1020–1029 at 8/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1)",
       "sprint1003PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); full hydrate / persist path dual-write / remote-authoritative wired; UI-MULTI-DISCIPLINE-PACKAGES-UI-HARDENING passed",
       "sprint1004": "Milestone 1020–1029 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
-      "sprint1004PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-MULTI-DISCIPLINE-PACKAGES-UI-HARDENING passed"
+      "sprint1004PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-MULTI-DISCIPLINE-PACKAGES-UI-HARDENING passed",
+      "sprint1005": "Milestone 1020–1029 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Multi-discipline packages UI hardening full stack completeness audit)",
+      "sprint1005PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-11",
       "lastCertifiedBaseline": "2026-07-11",
-      "status": "current — recertified Sprint 996 (1020-1029 Multi-discipline packages UI hardening opens 1/10 Finding 4)",
-      "sprintRangeCovered": "996–996 (Enterprise Drawing Management — Multi-discipline packages UI hardening Milestone 1020-1029 opens)",
-      "deltaSinceCertification": "Sprints 130–534 delivered (405 sprints); Milestone 1020-1029 at 9/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); remote read-after-write round-trip (docs/MULTI_DISCIPLINE_PACKAGES_UI_HARDENING_PLAN.json); Platform Certification 3/3 recertified Sprint 996 (Finding 4)",
+      "status": "current — recertified Sprint 1005 (1020-1029 closed; 1020-1029 next milestone opens post-milestone-close Finding 4)",
+      "sprintRangeCovered": "996–1005 (Enterprise Drawing Management — Multi-discipline packages UI hardening Milestone 1020-1029 closed)",
+      "deltaSinceCertification": "Sprints 130–1005 delivered; Milestone 1020-1029 closed; next milestone 1030-1039 Phase D Construction Memory playback; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Multi-discipline packages UI hardening wrap complete (docs/MULTI_DISCIPLINE_PACKAGES_UI_HARDENING_PLAN.json); Platform Certification 3/3 recertified Sprint 1005 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -15564,18 +15587,20 @@
         "Commercial Intelligence state-machine change",
         "before production release"
       ],
-      "note": "3/3 deterministic re-achieved 2026-07-11 Sprint 996 post-milestone-close; recertify on triggers in recertificationTriggers — not indefinite valid"
+      "note": "3/3 deterministic re-achieved 2026-07-11 Sprint 1005 post-milestone-close; recertify on triggers in recertificationTriggers — not indefinite valid"
     },
     "typecheck": "npx tsc -b (per regression gate)"
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 1020–1029 at 9/10, Sprint 1004 closed, Sprint 1005 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 1004 remote read-after-write round-trip logged",
-    "docs/MULTI_DISCIPLINE_PACKAGES_UI_HARDENING_PLAN.json — remoteReadAfterWriteRoundTripComplete Sprint 1004",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 1004 closed, milestone 1020-1029 active (9/10), Sprint 1005 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 1004 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 1004 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 1020–1029 closed, Sprint 1006 queued (1030-1039 Phase D Construction Memory playback)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Milestone 1020–1029 wrap logged",
+    "docs/MULTI_DISCIPLINE_PACKAGES_UI_HARDENING_PLAN.json — milestoneWrapComplete Sprint 1005",
+    "docs/MULTI_DISCIPLINE_PACKAGES_UI_HARDENING_PLAN.json — next milestone 1030-1039 Phase D Construction Memory playback Sprint 1006 queued",
+    "docs/DRAWING_INTELLIGENCE_ROADMAP.md — Multi-discipline packages UI hardening validation automation checked complete",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 1005 closed, milestone 1020-1029 wrap closed (10/10), Sprint 1006 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 1005 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 1005 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -15619,7 +15644,7 @@
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Milestone 1020-1029 Multi-discipline packages UI hardening opens Sprint 997 (1/10); Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending"
+      "description": "Milestone 1020–1029 Multi-discipline packages UI hardening closed Sprint 1005; Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 1030-1039 Phase D Construction Memory playback queued Sprint 1006"
     },
     {
       "id": "partial-platform-services",
@@ -15630,7 +15655,7 @@
       "id": "platform-certification-stale",
       "severity": "low-governance",
       "relatedFinding": "finding-4",
-      "description": "Platform Certification 3/3 recertified 2026-07-11 Sprint 996 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
+      "description": "Platform Certification 3/3 recertified 2026-07-11 Sprint 1005 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
     },
     "HIGH: write_audit_entry SECURITY DEFINER executable by authenticated without is_project_member ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â audit forgery risk (docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json)"
   ],
@@ -15722,27 +15747,28 @@
     }
   ],
   "nextSprint": {
-    "number": 1005,
-    "stream1": "Milestone wrap review — Drawing Intelligence Multi-discipline packages UI hardening completeness — sprint-1005-selftest.ts",
-    "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-1005-selftest.ts",
-    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 1020-1029 Multi-discipline packages UI hardening active (9/10); remote read-after-write round-trip complete docs/MULTI_DISCIPLINE_PACKAGES_UI_HARDENING_PLAN.json"
+    "number": 1006,
+    "stream1": "Milestone 1030-1039 Phase D Construction Memory playback foundation — sprint-1006-selftest.ts",
+    "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
+    "selftest": "scripts/sprint-1006-selftest.ts",
+    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 1020-1029 Multi-discipline packages UI hardening closed (10/10); wrap complete docs/MULTI_DISCIPLINE_PACKAGES_UI_HARDENING_PLAN.json",
+    "queueCorrection": "After Multi-discipline packages UI hardening wrap (1020-1029): EDM chrome-hardening wave complete; next unfinished roadmap item is Phase D Construction Memory playback (DRAWING_INTELLIGENCE_ROADMAP.md Phase D — Timeline, revision diff; distinct from closed Milestone 470-479 Phase D Construction Memory foundation)"
   },
   "oversightSync": {
     "status": "ok",
     "reason": null,
-    "lastPushAttempt": "2026-07-11T12:52:22.253Z",
+    "lastPushAttempt": "2026-07-11T12:53:12.494Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-11T12:52:22.253Z",
+    "verifiedAt": "2026-07-11T12:53:12.494Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-11T12:52:52.6392306Z",
-    "pushedAt": "2026-07-11T12:52:22.253Z",
-    "remoteHeadSha": "cd2b765b2d5f66382257ff9ba65126996d58d0bd",
-    "publicStateVerifiedAt": "2026-07-11T12:52:22.253Z",
+    "sanitizedAt": "2026-07-11T12:53:16.0291621Z",
+    "pushedAt": "2026-07-11T12:53:12.494Z",
+    "remoteHeadSha": "392d003aa037261917cfc6dd6bc42529ebac1e7e",
+    "publicStateVerifiedAt": "2026-07-11T12:53:12.494Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "af9561f06f6d72329f32e5308983885e7866c061bb03769419ecefdd526adf11",
+    "publicStateContentHash": "b4297b5613f6a0c279f4c2141e85446debc77ab29b7dd1fd08c3faaa41993ba9",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -15773,22 +15799,22 @@
       "note": "bridgeDocsPublished retired ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â prior list falsely claimed bridge ops docs were on public main; only push allowlist + inbox are public"
     },
     "publicStateVerificationSource": "multi-route",
-    "publicStateRawCdnHash": "005824a0ec2f68c660d016672f86dab5561de021c6acce1b28eaae561bfa4fd8",
-    "publicStateRawCdnStale": true,
+    "publicStateRawCdnHash": "b4297b5613f6a0c279f4c2141e85446debc77ab29b7dd1fd08c3faaa41993ba9",
+    "publicStateRawCdnStale": false,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-11T12:52:22.253Z",
-      "rawEndpointVerifiedAt": "2026-07-11T12:52:22.253Z",
-      "gitOriginVerifiedAt": "2026-07-11T12:52:22.253Z",
+      "githubApiVerifiedAt": "2026-07-11T12:53:12.494Z",
+      "rawEndpointVerifiedAt": "2026-07-11T12:53:12.494Z",
+      "gitOriginVerifiedAt": "2026-07-11T12:53:12.494Z",
       "routeContentHashes": {
-        "github-api": "af9561f06f6d72329f32e5308983885e7866c061bb03769419ecefdd526adf11",
-        "raw-cdn": "005824a0ec2f68c660d016672f86dab5561de021c6acce1b28eaae561bfa4fd8",
-        "git-origin": "af9561f06f6d72329f32e5308983885e7866c061bb03769419ecefdd526adf11"
+        "github-api": "b4297b5613f6a0c279f4c2141e85446debc77ab29b7dd1fd08c3faaa41993ba9",
+        "raw-cdn": "b4297b5613f6a0c279f4c2141e85446debc77ab29b7dd1fd08c3faaa41993ba9",
+        "git-origin": "b4297b5613f6a0c279f4c2141e85446debc77ab29b7dd1fd08c3faaa41993ba9"
       },
-      "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "cd2b765b2d5f66382257ff9ba65126996d58d0bd",
+      "routeHashesMatch": true,
+      "canonicalRemoteHeadSha": "392d003aa037261917cfc6dd6bc42529ebac1e7e",
       "logicalConsistencyPassed": true,
-      "logicalConsistencyTestCount": 1548,
-      "classification": "cdn-lag-api-git-agree"
+      "logicalConsistencyTestCount": 1552,
+      "classification": "all-routes-consistent"
     },
     "publicationIntegrityRepairAt": "2026-07-11T06:21:09.337Z",
     "publicationIntegritySeverity": "high-governance"
@@ -15804,9 +15830,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 794,
+    "lastSyncedSprint": 1005,
     "lastSyncedAt": "2026-07-11",
-    "milestoneProgress": "1020-1029 ACTIVE (9/10)",
+    "milestoneProgress": "1020-1029 WRAP CLOSED (10/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -16003,7 +16029,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ Knowledge Library version lifecycle ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ cross-project knowledge reuse ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ knowledge similarity matching ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ proactive knowledge warning ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ user outcome feedback ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ confidence evolution ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ future project knowledge reuse",
-    "phaseE": "Enterprise Drawing Management — Multi-discipline packages UI hardening Milestone milestone (1020-1029) active — Sprint 1004 closed; Sprint 1005 queued",
+    "phaseE": "Enterprise Drawing Management — Multi-discipline packages UI hardening Milestone milestone (1020-1029) active — Sprint 1005 closed; Sprint 1006 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -16016,8 +16042,8 @@
     "sprint382": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â mid-milestone 374ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators)",
     "sprint379": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Enterprise Drawing Management — Multi-discipline packages UI hardening Milestone (1020-1029) active Sprint 1004 (9/10); remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 complete; wrap review Sprint 525",
-    "phaseB": "Multi-discipline packages UI hardening milestone active (1020-1029) — technical items complete; UX validation automation foundation Sprint 996"
+    "phaseD": "Enterprise Drawing Management — Multi-discipline packages UI hardening Milestone (1020-1029) closed Sprint 1005; 1030-1039 Phase D Construction Memory playback queued Sprint 1006",
+    "phaseB": "Multi-discipline packages UI hardening complete — milestone closed Sprint 1005; Phase D Construction Memory playback (1030-1039) opens Sprint 1006"
   },
   "digitalBrainImpact": {
     "sprint376": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -16113,7 +16139,7 @@
     "sprint268": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 1020-1029 9/10 sprints closed (90%); latest growth-event sprint 400; Sprint 1004 closed; Sprint 1005 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 1020-1029 10/10 sprints closed (100%); latest growth-event sprint 400; Sprint 1005 closed; Sprint 1006 queued per nextSprint",
     "sprint372": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â mid-milestone 364ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators)",
     "sprint371": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· isExplainabilityEnrichedDecisionTimelineEntry ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â milestone 370ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“379 wrap completeness review confirms supersede invalidation full stack audit (growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· project assistant context engine wiring); milestone closed; 380ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“389 Phase C Revision Management opens Sprint 364",
@@ -16693,7 +16719,8 @@
     "sprint1001": "No new growth event kinds — Multi-discipline packages UI hardening remote seed → localStorage hydrate path; Milestone 1020–1029 at 6/10",
     "sprint1002": "No new growth event kinds — Multi-discipline packages UI hardening cold-start regeneration after remote seed; Milestone 1020–1029 at 7/10",
     "sprint1003": "No new growth event kinds — Multi-discipline packages UI hardening full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 1020–1029 at 8/10",
-    "sprint1004": "No new growth event kinds — Multi-discipline packages UI hardening remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 1020–1029 at 9/10"
+    "sprint1004": "No new growth event kinds — Multi-discipline packages UI hardening remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 1020–1029 at 9/10",
+    "sprint1005": "No new growth event kinds — milestone 1020–1029 wrap completeness review confirms Multi-discipline packages UI hardening full stack audit (foundation · Playwright · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip); milestone closed; 1030-1039 opens Sprint 1006"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -17336,7 +17363,8 @@
     "sprint1001": "Remote Supabase intelligence_json indices seed di-multi-discipline-packages-ui-hardening-* localStorage mirror for cold-start hydrate; Milestone 1020–1029 at 6/10",
     "sprint1002": "When localStorage cleared after prior remote seed, di-multi-discipline-packages-ui-hardening-* indexed sheets regenerate from durable Supabase intelligence_json; Milestone 1020–1029 at 7/10",
     "sprint1003": "When VITE_PROJECT_KG_PERSIST=1, di-multi-discipline-packages-ui-hardening-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 1020–1029 at 8/10",
-    "sprint1004": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 1020–1029 at 9/10"
+    "sprint1004": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 1020–1029 at 9/10",
+    "sprint1005": "Milestone 1020–1029 wrap confirms durable Multi-discipline packages UI hardening validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 1030-1039 Phase D Construction Memory playback opens Sprint 1006"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â drawing revision id ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· superseded-by revision id ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· invalidation scope playback lines ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· lessons_learned stage badge ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-355-selftest.ts",
@@ -17422,7 +17450,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Enterprise Drawing Management — Multi-discipline packages UI hardening Milestone (1020-1029) active 9/10; Sprint 1004 closed; Sprint 1005 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Milestone wrap review — Drawing Intelligence Multi-discipline packages UI harden)",
+    "overall": "Commercial Intelligence Partial — Enterprise Drawing Management — Multi-discipline packages UI hardening Milestone (1020-1029) active 10/10; Sprint 1005 closed; Sprint 1006 queued (Platform Certification recertification post-milestone-close (Finding 4) — phase- · Milestone 1030-1039 Phase D Construction Memory playback foundation — sprint-100)",
     "sprint372": "Mid-milestone 364ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“368 Drawing Intelligence Phase C revision supersede completeness review ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Phase C revision supersede stack partial audit confirms growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â phaseCRevisionSupersedeExplainabilityEntries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· isExplainabilityEnrichedDecisionTimelineEntry ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â takeoff COS pipeline stage badge ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· phaseCRevisionSupersedeTimelineEntryCount ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-366-selftest.ts",
@@ -17997,7 +18025,8 @@
     "sprint1001": "Milestone 1020–1029 Enterprise Drawing Management — Multi-discipline packages UI hardening at 6/10 — remote seed → localStorage hydrate — sprint-1001-selftest.ts",
     "sprint1002": "Milestone 1020–1029 Enterprise Drawing Management — Multi-discipline packages UI hardening at 7/10 — cold-start regeneration after remote seed — sprint-1002-selftest.ts",
     "sprint1003": "Milestone 1020–1029 Enterprise Drawing Management — Multi-discipline packages UI hardening at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-1003-selftest.ts",
-    "sprint1004": "Milestone 1020–1029 Enterprise Drawing Management — Multi-discipline packages UI hardening at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-1004-selftest.ts"
+    "sprint1004": "Milestone 1020–1029 Enterprise Drawing Management — Multi-discipline packages UI hardening at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-1004-selftest.ts",
+    "sprint1005": "Milestone 1020–1029 Multi-discipline packages UI hardening wrap completeness review — full stack audit; milestone closed; 1030-1039 opens Sprint 1006 — sprint-1005-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
@@ -18012,7 +18041,7 @@
     "daysRemaining": 3,
     "computedAsOf": "2026-07-09",
     "status": "at_risk",
-    "statusRationale": "Milestone 1020-1029 opens Sprint 997 (1/10); Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase E Commercial Intelligence Estimating/BoQ foundation (docs/MULTI_DISCIPLINE_PACKAGES_UI_HARDENING_PLAN.json); Phase B UX Sign-off wrap complete (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Platform Certification 3/3 recertified Sprint 996 (Finding 4); Milestone 540–549 closed Sprint 525"
+    "statusRationale": "Milestone 1020–1029 closed Sprint 1005; Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Multi-discipline packages UI hardening full stack wrap complete (docs/MULTI_DISCIPLINE_PACKAGES_UI_HARDENING_PLAN.json); Platform Certification 3/3 recertified Sprint 1005 (Finding 4); next milestone 1030-1039 Phase D Construction Memory playback Sprint 1006 queued"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",

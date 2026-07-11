@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1020–1029 Multi-discipline packages UI hardening (9/10); Sprint 1005 queued.
+**Status:** Active — Milestone 1020–1029 Multi-discipline packages UI hardening CLOSED (10/10); Sprint 1006 queued (1030-1039 Phase D Construction Memory playback).
 
 **Last updated:** 2026-07-11
-**Current sprint:** 1004 closed  
-**Next sprint:** 1005 queued
-**Milestone:** 1010–1019 WRAP CLOSED (10/10) · 1020-1029 Multi-discipline packages UI hardening opens Sprint 996
+**Current sprint:** 1005 closed  
+**Next sprint:** 1006 queued (1030-1039 Phase D Construction Memory playback)
+**Milestone:** 1020–1029 WRAP CLOSED (10/10) · 1030-1039 Phase D Construction Memory playback opens Sprint 1006
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
@@ -559,11 +559,13 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (996)
+## Next sprint (1006)
 
-- Stream 1: Milestone 1020-1029 Multi-discipline packages UI hardening foundation — sprint-996-selftest.ts
+- Stream 1: Milestone 1030-1039 Phase D Construction Memory playback foundation — sprint-1006-selftest.ts
 - Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
-- Theme: 1020-1029 Multi-discipline packages UI hardening — packages UI chrome still thin (DRAWING_INTELLIGENCE_ROADMAP.md Background jobs (progress, resumable))
+- Theme: 1030-1039 Phase D Construction Memory playback — Timeline, revision diff (DRAWING_INTELLIGENCE_ROADMAP.md Phase D — Construction Memory playback)
+
+
 
 
 
