@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1520-1529 Platform Phase B regression continuous wrap (3/10); Sprint 1499 queued.
+**Status:** Active — Milestone 1520-1529 Platform Phase B regression continuous wrap (4/10); Sprint 1500 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1498 closed  
-**Next sprint:** 1499 queued
+**Current sprint:** 1499 closed  
+**Next sprint:** 1500 queued
 **Milestone:** 1510-1519 WRAP CLOSED (10/10) — 1520-1529 Platform Phase B regression continuous wrap opens Sprint 1496
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
