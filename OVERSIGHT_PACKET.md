@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1260–1269 Missing / broken reference detection continuous (4/10); Sprint 1240 queued.
+**Status:** Active — Milestone 1260–1269 Missing / broken reference detection continuous (5/10); Sprint 1241 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1239 closed  
-**Next sprint:** 1240 queued
+**Current sprint:** 1240 closed  
+**Next sprint:** 1241 queued
 **Milestone:** 1250-1259 WRAP CLOSED (10/10) — 1260-1269 Missing / broken reference detection continuous opens Sprint 1236
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
