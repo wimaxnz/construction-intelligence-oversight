@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1310–1309 Phase B UX acceptance continuous (3/10); Sprint 1309 queued.
+**Status:** Active — Milestone 1310–1309 Phase B UX acceptance continuous (4/10); Sprint 1310 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1308 closed  
-**Next sprint:** 1309 queued
+**Current sprint:** 1309 closed  
+**Next sprint:** 1310 queued
 **Milestone:** 1320-1329 WRAP CLOSED (10/10) — 1330-1339 Phase B UX acceptance continuous opens Sprint 1306
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
