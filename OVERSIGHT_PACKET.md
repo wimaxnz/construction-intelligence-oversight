@@ -1,6 +1,6 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 900–909 Enterprise Drawing Management wrap CLOSED (10/10); Sprint 886 queued (910–919 Enterprise Drawing Management — Enterprise Drawing Management wrap).
+**Status:** Active — Milestone 900–909 Enterprise Drawing Management wrap CLOSED (10/10); Sprint 886 queued (910–919 Hard completion production verification).
 
 **Last updated:** 2026-07-11
 **Current sprint:** 815 closed  
