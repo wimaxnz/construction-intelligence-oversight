@@ -4,7 +4,7 @@
 
 **Last updated:** 2026-07-12
 **Current sprint:** 1215 closed  
-**Next sprint:** 1206 queued (1230-1239 Background ZIP job queue large archives validation automation)
+**Next sprint:** 1216 queued (1240-1249 Revision compare UI validation automation)
 **Milestone:** 1230-1239 WRAP CLOSED (10/10) — 1230-1239 Background ZIP job queue large archives opens Sprint 1206
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
@@ -559,7 +559,7 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (1206)
+## Next sprint (1216)
 
 - Stream 1: Milestone 1240-1249 Revision compare UI validation automation foundation — sprint-1216-selftest.ts
 - Stream 2: Platform Certification recertification post-milestone-close (Finding 4) � PHASE_B_RUNS=3
