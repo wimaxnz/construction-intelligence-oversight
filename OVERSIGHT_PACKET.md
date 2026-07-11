@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 920–929 Supersede UI (9/10); Sprint 905 queued.
+**Status:** Active — Milestone 920–929 Supersede UI CLOSED (10/10); Sprint 906 queued (930–939 Broken-ref UI).
 
 **Last updated:** 2026-07-11
-**Current sprint:** 794 closed  
-**Next sprint:** 585 queued
-**Milestone:** 910–919 WRAP CLOSED (10/10) · 920–929 AI-assisted import review opens Sprint 896
+**Current sprint:** 905 closed  
+**Next sprint:** 896 queued
+**Milestone:** 920–929 WRAP CLOSED (10/10) · 930–939 Broken-ref UI opens Sprint 906
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
@@ -561,9 +561,11 @@ Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRAT
 
 ## Next sprint (896)
 
-- Stream 1: Milestone 920–929 AI-assisted import review foundation — sprint-896-selftest.ts
+- Stream 1: Milestone 930–939 Broken-ref UI foundation — sprint-906-selftest.ts
 - Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
-- Theme: 920-929 AI-assisted import review — pre-save review fields / AI review queue UI (DRAWING_INTELLIGENCE_ROADMAP.md AI-assisted import review)
+- Theme: 930-939 Broken-ref UI — broken-ref UI still thin (DRAWING_INTELLIGENCE_ROADMAP.md Missing / broken reference detection)
+
+
 
 
 
