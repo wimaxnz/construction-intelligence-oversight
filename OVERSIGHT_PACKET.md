@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active � Milestone 1160-1169 Phase B metadata review UX polish CLOSED (10/10); Sprint 1136 queued (1160-1169 Phase B metadata review UX polish).
+**Status:** Active — Milestone 1160-1169 Phase B metadata review UX polish CLOSED (10/10); Sprint 1146 queued (1170-1179 Reports propagation from drawing events).
 
 **Last updated:** 2026-07-12
 **Current sprint:** 1145 closed  
-**Next sprint:** 1136 queued (1160-1169 Phase B metadata review UX polish)
-**Milestone:** 1150�1159 WRAP CLOSED (10/10) � 1160-1169 Phase B metadata review UX polish opens Sprint 1136
+**Next sprint:** 1146 queued (1170-1179 Reports propagation from drawing events)
+**Milestone:** 1160-1169 WRAP CLOSED (10/10) — 1170-1179 Reports propagation from drawing events opens Sprint 1146; write_audit_entry remains standing deferred open_interrupt
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
