@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 990–999 Broken-ref UI hardening (9/10); Sprint 975 queued.
+**Status:** Active — Milestone 990–999 Broken-ref UI hardening CLOSED (10/10); Sprint 976 queued (1000-1009 AI review queue UI hardening).
 
 **Last updated:** 2026-07-11
-**Current sprint:** 974 closed  
-**Next sprint:** 975 queued
-**Milestone:** 980–989 WRAP CLOSED (10/10) · 990-999 Broken-ref UI hardening opens Sprint 966
+**Current sprint:** 975 closed  
+**Next sprint:** 976 queued (1000-1009 AI review queue UI hardening)
+**Milestone:** 990–999 WRAP CLOSED (10/10) · 1000-1009 AI review queue UI hardening opens Sprint 976
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
@@ -559,11 +559,13 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (966)
+## Next sprint (976)
 
-- Stream 1: Milestone 990-999 Broken-ref UI hardening foundation — sprint-966-selftest.ts
+- Stream 1: Milestone 1000-1009 AI review queue UI hardening foundation — sprint-976-selftest.ts
 - Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
-- Theme: 990-999 Broken-ref UI hardening — broken-ref review chrome still thin (DRAWING_INTELLIGENCE_ROADMAP.md Missing / broken reference detection)
+- Theme: 1000-1009 AI review queue UI hardening — AI review queue chrome still thin (DRAWING_INTELLIGENCE_ROADMAP.md AI-assisted import review)
+
+
 
 
 
