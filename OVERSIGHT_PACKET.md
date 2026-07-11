@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1230–1239 Background ZIP job queue (large archives) (3/10); Sprint 1209 queued.
+**Status:** Active — Milestone 1230–1239 Background ZIP job queue (large archives) (4/10); Sprint 1210 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1208 closed  
-**Next sprint:** 1209 queued
+**Current sprint:** 1209 closed  
+**Next sprint:** 1210 queued
 **Milestone:** 1220-1229 WRAP CLOSED (10/10) — 1230-1239 Background ZIP job queue large archives opens Sprint 1206
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
