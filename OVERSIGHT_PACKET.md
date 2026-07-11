@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1000–1009 AI review queue UI hardening CLOSED (10/10); Sprint 986 queued (1010-1019 Background jobs progress/resumable UX hardening).
+**Status:** Active — Milestone 1010–1019 Background jobs progress/resumable UX hardening OPEN (1/10); Sprint 987 queued.
 
 **Last updated:** 2026-07-11
-**Current sprint:** 985 closed  
-**Next sprint:** 986 queued (1010-1019 Background jobs progress/resumable UX hardening)
+**Current sprint:** 986 closed  
+**Next sprint:** 987 queued
 **Milestone:** 1000–1009 WRAP CLOSED (10/10) · 1010-1019 Background jobs progress/resumable UX hardening opens Sprint 986
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
