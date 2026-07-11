@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 930–939 Broken-ref UI (9/10); Sprint 915 queued.
+**Status:** Active — Milestone 930–939 Broken-ref UI CLOSED (10/10); Sprint 916 queued (940–949 AI review queue UI).
 
 **Last updated:** 2026-07-11
-**Current sprint:** 794 closed  
-**Next sprint:** 585 queued
-**Milestone:** 920–929 WRAP CLOSED (10/10) · 930–939 Broken-ref UI opens Sprint 906
+**Current sprint:** 915 closed  
+**Next sprint:** 916 queued
+**Milestone:** 930–939 WRAP CLOSED (10/10) · 940–949 AI review queue UI opens Sprint 916
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
@@ -559,11 +559,13 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (896)
+## Next sprint (916)
 
-- Stream 1: Milestone 930–939 Broken-ref UI foundation — sprint-906-selftest.ts
+- Stream 1: Milestone 940–949 AI review queue UI foundation — sprint-916-selftest.ts
 - Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
-- Theme: 930-939 Broken-ref UI — broken-ref UI still thin (DRAWING_INTELLIGENCE_ROADMAP.md Missing / broken reference detection)
+- Theme: 940-949 AI review queue UI — AI review queue UI still thin (DRAWING_INTELLIGENCE_ROADMAP.md Missing / broken reference detection)
+
+
 
 
 
