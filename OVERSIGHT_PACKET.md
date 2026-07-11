@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1380-1389 Phase C change cloud detection assist continuous CLOSED (10/10); Sprint 1366 queued (1390-1399 Phase C pin re-anchor continuous).
+**Status:** Active � Milestone 1390-1399 Phase C pin re-anchor continuous OPEN (1/10); Sprint 1367 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1365 closed  
-**Next sprint:** 1366 queued (1390-1399 Phase C pin re-anchor continuous)
+**Current sprint:** 1366 closed  
+**Next sprint:** 1367 queued
 **Milestone:** 1380-1389 WRAP CLOSED (10/10) — 1390-1399 Phase C pin re-anchor continuous opens Sprint 1366
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
