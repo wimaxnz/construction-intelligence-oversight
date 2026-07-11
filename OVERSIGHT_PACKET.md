@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 840–849 Phase D AI-assisted import review OPEN (1/10); Sprint 827 queued.
+**Status:** Active — Milestone 840–849 Phase D AI-assisted import review (2/10); Sprint 828 queued.
 
 **Last updated:** 2026-07-11
-**Current sprint:** 786 closed  
-**Next sprint:** 787 queued
+**Current sprint:** 787 closed  
+**Next sprint:** 578 queued
 **Milestone:** 550–559 WRAP CLOSED (10/10) · 560–569 Phase C Revision Management opens Sprint 536
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
