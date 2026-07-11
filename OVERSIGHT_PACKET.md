@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1210-1219 Project Digital Brain contracts + growth events CLOSED (10/10); Sprint 1196 queued (1220-1229 Platform job queue ZIP / intelligence).
+**Status:** Active � Milestone 1220-1229 Platform job queue (ZIP / intelligence) OPEN (1/10); Sprint 1197 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1195 closed  
-**Next sprint:** 1196 queued (1220-1229 Platform job queue ZIP / intelligence validation automation)
+**Current sprint:** 1196 closed  
+**Next sprint:** 1197 queued
 **Milestone:** 1210-1219 WRAP CLOSED (10/10) — 1220-1229 Platform job queue ZIP / intelligence opens Sprint 1196
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
