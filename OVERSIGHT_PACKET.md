@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1090–1099 Phase H live-apply verification UI hardening (4/10); Sprint 1070 queued.
+**Status:** Active — Milestone 1090–1099 Phase H live-apply verification UI hardening (5/10); Sprint 1071 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1069 closed  
-**Next sprint:** 1070 queued
+**Current sprint:** 1070 closed  
+**Next sprint:** 1071 queued
 **Milestone:** 1080–1089 WRAP CLOSED (10/10) · 1090-1099 Phase H live-apply verification UI hardening opens Sprint 1066
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
