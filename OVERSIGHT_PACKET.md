@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1370–1369 Phase C pin re-anchor continuous (9/10); Sprint 1375 queued.
+**Status:** Active — Milestone 1390-1399 Phase C pin re-anchor continuous CLOSED (10/10); Sprint 1376 queued (1400-1409 Phase D Construction Memory continuous).
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1374 closed  
-**Next sprint:** 1375 queued
-**Milestone:** 1380-1389 WRAP CLOSED (10/10) — 1390-1399 Phase C pin re-anchor continuous opens Sprint 1366
+**Current sprint:** 1375 closed  
+**Next sprint:** 1376 queued (1400-1409 Phase D Construction Memory continuous)
+**Milestone:** 1390-1399 WRAP CLOSED (10/10) — 1400-1409 Phase D Construction Memory continuous opens Sprint 1376
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
@@ -559,11 +559,13 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (1366)
+## Next sprint (1376)
 
-- Stream 1: Milestone 1390-1399 Phase C pin re-anchor continuous validation automation foundation — sprint-1366-selftest.ts
+- Stream 1: Milestone 1400-1409 Phase D Construction Memory continuous validation automation foundation — sprint-1376-selftest.ts
 - Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
-- Theme: 1390-1399 Phase C pin re-anchor continuous — pin re-anchor on revision change continuous (DRAWING_INTELLIGENCE_ROADMAP.md Phase C; non-write_audit; write_audit_entry remains standing deferred open_interrupt)
+- Theme: 1400-1409 Phase D Construction Memory continuous — Construction Memory playback continuous (DRAWING_INTELLIGENCE_ROADMAP.md Phase D; non-write_audit; write_audit_entry remains standing deferred open_interrupt)
+
+
 
 
 
