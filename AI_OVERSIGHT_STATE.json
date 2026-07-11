@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-12",
   "currentSprint": {
-    "number": 1139,
+    "number": 1145,
     "status": "closed",
-    "previousClosed": 1138,
+    "previousClosed": 1144,
     "closedDate": "2026-07-12"
   },
   "currentMilestone": {
@@ -14,28 +14,29 @@
     "actualSprintStart": 1136,
     "actualSprintEnd": 1145,
     "wrapReviewSprint": 1145,
-    "status": "active",
+    "status": "closed",
     "theme": "Phase B metadata review UX polish assistive validation automation — metadata review screenshot / UX polish (DRAWING_INTELLIGENCE_ROADMAP.md In development; write_audit_entry remains standing deferred open_interrupt)",
-    "openedDate": "2026-07-12",
-    "previousMilestoneClosed": "1150-1159 (Phase H write_audit three-gate production closure — Phase H write_audit three-gate production closure Milestone)",
-    "nextMilestoneOpens": "1160-1169 (Phase B metadata review UX polish — DRAWING_INTELLIGENCE_ROADMAP.md In development; write_audit_entry remains standing deferred open_interrupt 0/3 gates)",
-    "wrapComplete": false
+    "openedDate": "2026-07-11",
+    "wrapClosedDate": "2026-07-12",
+    "previousMilestoneClosed": "1150-1159 (Phase H write_audit owner-credential live apply � Phase H write_audit owner-credential live apply Milestone)",
+    "nextMilestoneOpens": "1170-1179 (Reports propagation from drawing events — DRAWING_INTELLIGENCE_ROADMAP.md Deferred from Phase B; write_audit_entry remains open_interrupt as standing deferred owner action 0/3 gates)",
+    "wrapComplete": true
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 4,
-    "percentComplete": 40,
+    "sprintsClosed": 10,
+    "percentComplete": 100,
     "nextWrapReviewSprint": 1145,
-    "milestoneWrapComplete": false
+    "milestoneWrapComplete": true
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Phase B metadata review UX polish localStorage mirror reconciliation — sprint-1140-selftest.ts"
+      "focus": "Milestone 1170-1179 Reports propagation from drawing events foundation — sprint-1146-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
+      "focus": "Platform Certification recertification post-milestone-close (Finding 4) � phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
     }
   },
   "completedWork": {
@@ -5018,6 +5019,42 @@
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 1160–1169 at 4/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); Phase B metadata review UX polish UI assertions wired; UI-PHASE-B-METADATA-REVIEW-UX-POLISH passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
       "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase B metadata review UX polish localStorage mirror reconciliation deferred to Sprint 1140+"
+    },
+    "sprint1140": {
+      "stream1": "Phase B metadata review UX polish localStorage mirror reconciliation — assertPhaseBMetadataReviewUxPolishLocalStorageMirrorReconciliation · reconcilePhaseBMetadataReviewUxPolishLocalStorageMirror · parsePhaseBMetadataReviewUxPolishLocalStorageMirror · runPhaseBMetadataReviewUxPolishLocalStorageMirrorReconciliation · phase-b-wynyard-validation.ts · sprint-1140-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 1160–1169 at 5/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); localStorage mirror reconciliation wired; UI-PHASE-B-METADATA-REVIEW-UX-POLISH passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase B metadata review UX polish remote seed → localStorage hydrate deferred to Sprint 521+"
+    },
+    "sprint1141": {
+      "stream1": "Phase B metadata review UX polish remote seed → localStorage hydrate — assertPhaseBMetadataReviewUxPolishRemoteSeedLocalStorageHydrate · seedPhaseBMetadataReviewUxPolishLocalStorageFromRemoteHydrate · buildPhaseBMetadataReviewUxPolishLocalStorageHydratePayload · runPhaseBMetadataReviewUxPolishRemoteSeedLocalStorageHydrate · phase-b-wynyard-validation.ts · sprint-1141-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 1160–1169 at 6/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote seed → localStorage hydrate wired; UI-PHASE-B-METADATA-REVIEW-UX-POLISH passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase B metadata review UX polish cold-start regeneration after remote seed deferred to Sprint 522+"
+    },
+    "sprint1142": {
+      "stream1": "Phase B metadata review UX polish cold-start regeneration after remote seed — assertPhaseBMetadataReviewUxPolishColdStartRegenerationAfterRemoteSeed · regeneratePhaseBMetadataReviewUxPolishLocalStorageAfterRemoteSeedColdStart · isPhaseBMetadataReviewUxPolishLocalStorageClearedOrEmpty · runPhaseBMetadataReviewUxPolishColdStartRegenerationAfterRemoteSeed · phase-b-wynyard-validation.ts · sprint-1142-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 1160–1169 at 7/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); cold-start regeneration after remote seed wired; UI-PHASE-B-METADATA-REVIEW-UX-POLISH passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase B metadata review UX polish full hydrate/persist path deferred to Sprint 523+"
+    },
+    "sprint1143": {
+      "stream1": "Phase B metadata review UX polish full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — assertPhaseBMetadataReviewUxPolishFullHydratePersistPath · dualWritePhaseBMetadataReviewUxPolishStateRemotePath · buildPhaseBMetadataReviewUxPolishFullHydratePersistPathSummary · runPhaseBMetadataReviewUxPolishFullHydratePersistPath · phase-b-wynyard-validation.ts · sprint-1143-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 1160–1169 at 8/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); full hydrate / persist path dual-write / remote-authoritative wired; UI-PHASE-B-METADATA-REVIEW-UX-POLISH passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase B metadata review UX polish remote read-after-write round-trip deferred to Sprint 524+"
+    },
+    "sprint1144": {
+      "stream1": "Phase B metadata review UX polish remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — assertPhaseBMetadataReviewUxPolishRemoteReadAfterWriteRoundTrip · roundTripPhaseBMetadataReviewUxPolishStateRemoteReadAfterWrite · buildPhaseBMetadataReviewUxPolishRemoteReadAfterWriteRoundTripSummary · runPhaseBMetadataReviewUxPolishRemoteReadAfterWriteRoundTrip · phase-b-wynyard-validation.ts · sprint-1144-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 1160–1169 at 9/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-PHASE-B-METADATA-REVIEW-UX-POLISH passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Milestone 1160–1169 wrap review deferred to Sprint 525"
+    },
+    "sprint1145": {
+      "stream1": "Milestone wrap review � Phase B metadata review UX polish completeness � sprint-1145-selftest.ts",
+      "stream2": "Milestone 1160-1169 Phase B metadata review UX polish full stack completeness review � sprint-1145-selftest.ts audits stack (foundation � Playwright scaffold � Phase B matrix � UI assertions � localStorage mirror reconciliation � remote seed hydrate � cold-start regeneration � full hydrate/persist path � remote read-after-write round-trip) � PHASE_B_RUNS=3 (consecutiveGreen reuse / exclusive when needed) � Platform Certification recertification post-milestone-close (Finding 4)",
+      "validation": "Milestone wrap selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; write_audit_entry standing deferred owner action (0/3 gates REAL); next milestone 1170-1179 Reports propagation from drawing events deferred to Sprint 1146"
     }
   },
   "changedFiles": {
@@ -17128,6 +17165,95 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint1140": [
+      "src/platform/validation/phaseBMetadataReviewUxPolishValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_B_METADATA_REVIEW_UX_POLISH_PLAN.json",
+      "scripts/sprint-1140-selftest.ts",
+      "scripts/sprint-1140-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint1141": [
+      "src/platform/validation/phaseBMetadataReviewUxPolishValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_B_METADATA_REVIEW_UX_POLISH_PLAN.json",
+      "scripts/sprint-1141-selftest.ts",
+      "scripts/sprint-1141-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint1142": [
+      "src/platform/validation/phaseBMetadataReviewUxPolishValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_B_METADATA_REVIEW_UX_POLISH_PLAN.json",
+      "scripts/sprint-1142-selftest.ts",
+      "scripts/sprint-1142-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint1143": [
+      "src/platform/validation/phaseBMetadataReviewUxPolishValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_B_METADATA_REVIEW_UX_POLISH_PLAN.json",
+      "scripts/sprint-1143-selftest.ts",
+      "scripts/sprint-1143-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint1144": [
+      "src/platform/validation/phaseBMetadataReviewUxPolishValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_B_METADATA_REVIEW_UX_POLISH_PLAN.json",
+      "scripts/sprint-1144-selftest.ts",
+      "scripts/sprint-1144-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint1145": [
+      "scripts/sprint-1145-selftest.ts",
+      "scripts/sprint-1145-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PHASE_B_METADATA_REVIEW_UX_POLISH_PLAN.json",
+      "docs/PHASE_B_METADATA_REVIEW_UX_POLISH_CONTRACTS.json",
+      "[REDACTED-path]",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -18707,14 +18833,26 @@
       "sprint1138": "Milestone 1160–1169 at 3/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase B validation matrix Phase B metadata review UX polish row wiring)",
       "sprint1138PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase B matrix Phase B metadata review UX polish row wired; UI-PHASE-B-METADATA-REVIEW-UX-POLISH passed",
       "sprint1139": "Milestone 1160–1169 at 4/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase B metadata review UX polish UI assertions)",
-      "sprint1139PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase B metadata review UX polish UI assertions wired; UI-PHASE-B-METADATA-REVIEW-UX-POLISH passed"
+      "sprint1139PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase B metadata review UX polish UI assertions wired; UI-PHASE-B-METADATA-REVIEW-UX-POLISH passed",
+      "sprint1140": "Milestone 1160–1169 at 5/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + localStorage mirror reconciliation)",
+      "sprint1140PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); localStorage mirror reconciliation wired; UI-PHASE-B-METADATA-REVIEW-UX-POLISH passed",
+      "sprint1141": "Milestone 1160–1169 at 6/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote seed → localStorage hydrate)",
+      "sprint1141PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); remote seed → localStorage hydrate wired; UI-PHASE-B-METADATA-REVIEW-UX-POLISH passed",
+      "sprint1142": "Milestone 1160–1169 at 7/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + cold-start regeneration after remote seed)",
+      "sprint1142PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); cold-start regeneration after remote seed wired; UI-PHASE-B-METADATA-REVIEW-UX-POLISH passed",
+      "sprint1143": "Milestone 1160–1169 at 8/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1)",
+      "sprint1143PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); full hydrate / persist path dual-write / remote-authoritative wired; UI-PHASE-B-METADATA-REVIEW-UX-POLISH passed",
+      "sprint1144": "Milestone 1160–1169 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
+      "sprint1144PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-PHASE-B-METADATA-REVIEW-UX-POLISH passed",
+      "sprint1145": "Milestone 1150�1159 wrap � selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Phase B metadata review UX polish full stack completeness audit)",
+      "sprint1145PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-12",
       "lastCertifiedBaseline": "2026-07-12",
-      "status": "current � recertified Sprint 1136 (1160-1169 Phase B metadata review UX polish opens 1/10 Finding 4)",
-      "sprintRangeCovered": "1136�1136 (Drawing Intelligence Phase B — metadata review UX polish Milestone 1160-1169 opens)",
-      "deltaSinceCertification": "Sprints 130–529 delivered (400 sprints); Milestone 1160-1169 at 4/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase E Commercial Intelligence Estimating/BoQ UI assertions (docs/PHASE_B_METADATA_REVIEW_UX_POLISH_PLAN.json); Platform Certification 3/3 recertified Sprint 1136 (Finding 4)",
+      "status": "current � recertified Sprint 1145 (1160-1169 closed; 1160-1169 next milestone opens post-milestone-close Finding 4)",
+      "sprintRangeCovered": "1136�1145 (Drawing Intelligence Phase B — metadata review UX polish Milestone 1160-1169 closed)",
+      "deltaSinceCertification": "Sprints 130�1145 delivered; Milestone 1160-1169 closed; next milestone 1160-1169 Phase B metadata review UX polish; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered � post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase B metadata review UX polish wrap complete (docs/PHASE_B_METADATA_REVIEW_UX_POLISH_PLAN.json); Platform Certification 3/3 recertified Sprint 1145 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -18725,18 +18863,21 @@
         "Commercial Intelligence state-machine change",
         "before production release"
       ],
-      "note": "3/3 deterministic re-achieved 2026-07-12 Sprint 1136 post-milestone-close; recertify on triggers in recertificationTriggers � not indefinite valid"
+      "note": "3/3 deterministic re-achieved 2026-07-12 Sprint 1145 post-milestone-close; recertify on triggers in recertificationTriggers � not indefinite valid"
     },
     "typecheck": "npx tsc -b (per regression gate)"
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 1160–1169 at 4/10, Sprint 1139 closed, Sprint 1140 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 1139 Phase B metadata review UX polish UI assertions logged",
-    "docs/PHASE_B_METADATA_REVIEW_UX_POLISH_PLAN.json — uiAssertionsComplete Sprint 1139",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 1139 closed, milestone 1160-1169 active (4/10), sprint 520 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 1139 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 1139 close-out note"
+    "docs/PLATFORM_EVOLUTION.md � Milestone 1150�1159 closed, Sprint 1136 queued (1160-1169 Phase B metadata review UX polish)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md � Milestone 1150�1159 wrap logged",
+    "docs/PHASE_B_METADATA_REVIEW_UX_POLISH_PLAN.json � milestoneWrapComplete Sprint 1145",
+    "docs/PHASE_B_METADATA_REVIEW_UX_POLISH_PLAN.json � next milestone 1170-1179 Reports propagation from drawing events Sprint 1146 queued; write_audit standing deferred",
+    "docs/PHASE_B_METADATA_REVIEW_UX_POLISH_HARNESS.json � in-repo harness + probe; three gates unmet; interrupt open",
+    "docs/DRAWING_INTELLIGENCE_ROADMAP.md � Phase B metadata review UX polish validation automation checked complete",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json � Sprint 1145 closed, milestone 1160-1169 wrap closed (10/10), Sprint 1146 queued (reports propagation; write_audit standing deferred)",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md � Sprint 1145 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md � Sprint 1145 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -18780,7 +18921,7 @@
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Milestone 1160-1169 Phase B metadata review UX polish opens Sprint 1137 (1/10); Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending"
+      "description": "Milestone 1160-1169 Phase B metadata review UX polish closed Sprint 1145; Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 1170-1179 Reports propagation from drawing events queued Sprint 1146; write_audit_entry remains standing deferred open_interrupt (0/3 gates)"
     },
     {
       "id": "partial-platform-services",
@@ -18791,7 +18932,7 @@
       "id": "platform-certification-stale",
       "severity": "low-governance",
       "relatedFinding": "finding-4",
-      "description": "Platform Certification 3/3 recertified 2026-07-12 Sprint 1136 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
+      "description": "Platform Certification 3/3 recertified 2026-07-12 Sprint 1145 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
     },
     "HIGH: write_audit_entry SECURITY DEFINER executable by authenticated without is_project_member ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â audit forgery risk (docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json)"
   ],
@@ -18883,27 +19024,28 @@
     }
   ],
   "nextSprint": {
-    "number": 1140,
-    "stream1": "Phase B metadata review UX polish localStorage mirror reconciliation — sprint-1140-selftest.ts",
-    "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-1140-selftest.ts",
-    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 1160-1169 Phase B metadata review UX polish active (4/10); UI assertions complete docs/PHASE_B_METADATA_REVIEW_UX_POLISH_PLAN.json"
+    "number": 1146,
+    "stream1": "Milestone 1170-1179 Reports propagation from drawing events foundation — sprint-1146-selftest.ts",
+    "stream2": "Platform Certification recertification post-milestone-close (Finding 4) � phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
+    "selftest": "scripts/sprint-1146-selftest.ts",
+    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 1160-1169 Phase B metadata review UX polish closed (10/10); wrap complete docs/PHASE_B_METADATA_REVIEW_UX_POLISH_PLAN.json",
+    "queueCorrection": "After Phase B metadata review UX polish wrap (1160-1169): write_audit_entry remains open_interrupt as STANDING DEFERRED OWNER ACTION (0/3 gates REAL — do NOT re-queue write_audit credential loops). Next unfinished NON-write_audit roadmap item: Reports propagation from drawing events (1170-1179; DRAWING_INTELLIGENCE_ROADMAP.md Deferred from Phase B)."
   },
   "oversightSync": {
     "status": "degraded",
     "reason": "api-response-anomaly-monitor-api-and-git",
-    "lastPushAttempt": "2026-07-11T15:47:03.114Z",
+    "lastPushAttempt": "2026-07-11T15:47:27.227Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-11T15:47:03.114Z",
+    "verifiedAt": "2026-07-11T15:47:27.227Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-11T15:47:07.5536649Z",
-    "pushedAt": "2026-07-11T15:47:03.114Z",
-    "remoteHeadSha": "b6a115d124edafe23011eb0b43fd8d5f3405347d",
-    "publicStateVerifiedAt": "2026-07-11T15:47:03.114Z",
+    "sanitizedAt": "2026-07-11T15:49:07.6007405Z",
+    "pushedAt": "2026-07-11T15:47:27.227Z",
+    "remoteHeadSha": "e2ae4e549179526497b995810fc8e88ce00b660a",
+    "publicStateVerifiedAt": "2026-07-11T15:47:27.227Z",
     "publicStateJsonParsePassed": false,
-    "publicStateContentHash": "a3e0fc16ce9c779ad5a7fa86824b30d9ccd0c9557819507ad7b6588d1f1b26fe",
+    "publicStateContentHash": "bba84ff75ef97ba4109d8205c081a85972417e17a46d18070a15882e4e4e9664",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -18937,18 +19079,18 @@
     "publicStateRawCdnHash": "375ad658f3cc595bbb130db3a76facda5a023f495481b92040a9724be124e0f4",
     "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-11T15:47:03.114Z",
-      "rawEndpointVerifiedAt": "2026-07-11T15:47:03.114Z",
-      "gitOriginVerifiedAt": "2026-07-11T15:47:03.114Z",
+      "githubApiVerifiedAt": "2026-07-11T15:47:27.227Z",
+      "rawEndpointVerifiedAt": "2026-07-11T15:47:27.227Z",
+      "gitOriginVerifiedAt": "2026-07-11T15:47:27.227Z",
       "routeContentHashes": {
         "github-api": null,
         "raw-cdn": "375ad658f3cc595bbb130db3a76facda5a023f495481b92040a9724be124e0f4",
-        "git-origin": "a3e0fc16ce9c779ad5a7fa86824b30d9ccd0c9557819507ad7b6588d1f1b26fe"
+        "git-origin": "bba84ff75ef97ba4109d8205c081a85972417e17a46d18070a15882e4e4e9664"
       },
       "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "b6a115d124edafe23011eb0b43fd8d5f3405347d",
+      "canonicalRemoteHeadSha": "e2ae4e549179526497b995810fc8e88ce00b660a",
       "logicalConsistencyPassed": true,
-      "logicalConsistencyTestCount": 1820,
+      "logicalConsistencyTestCount": 1822,
       "classification": "api-response-anomaly-monitor-api-and-git"
     },
     "publicationIntegrityRepairAt": "2026-07-11T06:21:09.337Z",
@@ -18965,9 +19107,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 789,
+    "lastSyncedSprint": 1145,
     "lastSyncedAt": "2026-07-12",
-    "milestoneProgress": "1160-1169 ACTIVE (4/10)",
+    "milestoneProgress": "1160-1169 WRAP CLOSED (10/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -19171,7 +19313,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ Knowledge Library version lifecycle ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ cross-project knowledge reuse ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ knowledge similarity matching ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ proactive knowledge warning ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ user outcome feedback ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ confidence evolution ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase B — metadata review UX polish Milestone milestone (1160-1169) active — Sprint 1139 closed; Sprint 1140 queued",
+    "phaseE": "Drawing Intelligence Phase B — metadata review UX polish Milestone milestone (1160-1169) active — Sprint 1145 closed; Sprint 1146 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -19184,8 +19326,8 @@
     "sprint382": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â mid-milestone 374ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators)",
     "sprint379": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Drawing Intelligence Phase B — metadata review UX polish Milestone (1160-1169) active Sprint 1139 (4/10); Phase B metadata review UX polish UI assertions complete",
-    "phaseB": "Phase B metadata review UX polish milestone active (1160-1169) � technical items complete; UX validation automation foundation Sprint 1136"
+    "phaseD": "Drawing Intelligence Phase B — metadata review UX polish Milestone (1160-1169) closed Sprint 1145; 1170-1179 Reports propagation from drawing events queued Sprint 1146; write_audit standing deferred",
+    "phaseB": "Phase B metadata review UX polish complete � milestone closed Sprint 1145; Reports propagation from drawing events (1170-1179) opens Sprint 1146; write_audit_entry remains standing deferred open_interrupt (0/3 gates)"
   },
   "digitalBrainImpact": {
     "sprint376": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -19281,7 +19423,7 @@
     "sprint268": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 1160-1169 4/10 sprints closed (40%); latest growth-event sprint 400; Sprint 1139 closed; Sprint 1140 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 1160-1169 10/10 sprints closed (100%); latest growth-event sprint 400; Sprint 1145 closed; Sprint 1146 queued per nextSprint",
     "sprint372": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â mid-milestone 364ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators)",
     "sprint371": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· isExplainabilityEnrichedDecisionTimelineEntry ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â milestone 370ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“379 wrap completeness review confirms supersede invalidation full stack audit (growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· project assistant context engine wiring); milestone closed; 380ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“389 Phase C Revision Management opens Sprint 364",
@@ -19996,7 +20138,13 @@
     "sprint1136": "No new growth event kinds � Phase B metadata review UX polish foundation defines role critical path + checklist contracts for site-team workflow validation; Milestone 1150�1159 opens Sprint 1137",
     "sprint1137": "No new growth event kinds — Playwright Phase B metadata review UX polish scaffold reads phase-c-revision-role-path-banner + phase-c-revision-signoff-checklist + phase-c-revision-mobile-target-size; Milestone 1160–1169 at 2/10",
     "sprint1138": "No new growth event kinds — Phase B validation matrix Phase B metadata review UX polish row wiring; Milestone 1160–1169 at 3/10",
-    "sprint1139": "No new growth event kinds — Phase B metadata review UX polish UI assertions; Milestone 1160–1169 at 4/10"
+    "sprint1139": "No new growth event kinds — Phase B metadata review UX polish UI assertions; Milestone 1160–1169 at 4/10",
+    "sprint1140": "No new growth event kinds — Phase B metadata review UX polish localStorage mirror reconciliation; Milestone 1160–1169 at 5/10",
+    "sprint1141": "No new growth event kinds — Phase B metadata review UX polish remote seed → localStorage hydrate path; Milestone 1160–1169 at 6/10",
+    "sprint1142": "No new growth event kinds — Phase B metadata review UX polish cold-start regeneration after remote seed; Milestone 1160–1169 at 7/10",
+    "sprint1143": "No new growth event kinds — Phase B metadata review UX polish full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 1160–1169 at 8/10",
+    "sprint1144": "No new growth event kinds — Phase B metadata review UX polish remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 1160–1169 at 9/10",
+    "sprint1145": "No new growth event kinds � milestone 1150�1159 wrap completeness review confirms Phase B metadata review UX polish full stack audit (foundation � Playwright � Phase B matrix � UI assertions � mirror � hydrate � cold-start � hydrate/persist � round-trip); milestone closed; 1160-1169 opens Sprint 1136"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -20774,7 +20922,13 @@
     "sprint1136": "Phase B metadata review UX polish foundation � role-based critical path coverage for visual_overlay � foreman � PM � QS � mobile/tablet; Milestone 1150�1159 opens Sprint 1137",
     "sprint1137": "Playwright Phase B metadata review UX polish assertion scaffold — role critical path + checklist UI chrome; Milestone 1160–1169 at 2/10",
     "sprint1138": "No direct KG edge changes — Phase B validation matrix Phase B metadata review UX polish row wiring; Milestone 1160–1169 at 3/10",
-    "sprint1139": "No direct KG edge changes — Phase B metadata review UX polish UI assertions (phase-c-revision-role-path-banner chrome); Milestone 1160–1169 at 4/10"
+    "sprint1139": "No direct KG edge changes — Phase B metadata review UX polish UI assertions (phase-c-revision-role-path-banner chrome); Milestone 1160–1169 at 4/10",
+    "sprint1140": "localStorage ↔ remote intelligence_json mirror reconciliation contract — durable Supabase indices stay consistent with di-phase-b-metadata-review-ux-polish-* offline mirror; Milestone 1160–1169 at 5/10",
+    "sprint1141": "Remote Supabase intelligence_json indices seed di-phase-b-metadata-review-ux-polish-* localStorage mirror for cold-start hydrate; Milestone 1160–1169 at 6/10",
+    "sprint1142": "When localStorage cleared after prior remote seed, di-phase-b-metadata-review-ux-polish-* indexed sheets regenerate from durable Supabase intelligence_json; Milestone 1160–1169 at 7/10",
+    "sprint1143": "When VITE_PROJECT_KG_PERSIST=1, di-phase-b-metadata-review-ux-polish-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 1160–1169 at 8/10",
+    "sprint1144": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 1160–1169 at 9/10",
+    "sprint1145": "Milestone 1150�1159 wrap confirms durable Phase B metadata review UX polish validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 1160-1169 Phase B metadata review UX polish opens Sprint 1136"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â drawing revision id ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· superseded-by revision id ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· invalidation scope playback lines ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· lessons_learned stage badge ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-355-selftest.ts",
@@ -20860,7 +21014,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase B — metadata review UX polish Milestone (1160-1169) active 4/10; Sprint 1139 closed; Sprint 1140 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Phase B metadata review UX polish localStorage mirror reconciliation — sprint-11)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase B — metadata review UX polish Milestone (1160-1169) active 10/10; Sprint 1145 closed; Sprint 1146 queued (Platform Certification recertification post-milestone-close (Finding 4) � phase- · Milestone 1170-1179 Reports propagation from drawing events foundation — sprint-)",
     "sprint372": "Mid-milestone 364ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“368 Drawing Intelligence Phase C revision supersede completeness review ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Phase C revision supersede stack partial audit confirms growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â phaseCRevisionSupersedeExplainabilityEntries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· isExplainabilityEnrichedDecisionTimelineEntry ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â takeoff COS pipeline stage badge ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· phaseCRevisionSupersedeTimelineEntryCount ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-366-selftest.ts",
@@ -21570,7 +21724,13 @@
     "sprint1136": "Milestone 1150�1159 Drawing Intelligence Phase D � Construction Memory playback opens � validation automation foundation � sprint-1136-selftest.ts",
     "sprint1137": "Milestone 1160–1169 Drawing Intelligence Phase D — Construction Memory playback at 2/10 — Playwright assertion scaffold — sprint-1137-selftest.ts",
     "sprint1138": "Milestone 1160–1169 Drawing Intelligence Phase D — Construction Memory playback at 3/10 — Phase B validation matrix row wiring — sprint-1138-selftest.ts",
-    "sprint1139": "Milestone 1160–1169 Drawing Intelligence Phase D — Construction Memory playback at 4/10 — UI assertions — sprint-1139-selftest.ts"
+    "sprint1139": "Milestone 1160–1169 Drawing Intelligence Phase D — Construction Memory playback at 4/10 — UI assertions — sprint-1139-selftest.ts",
+    "sprint1140": "Milestone 1160–1169 Drawing Intelligence Phase D — Construction Memory playback at 5/10 — localStorage mirror reconciliation — sprint-1140-selftest.ts",
+    "sprint1141": "Milestone 1160–1169 Drawing Intelligence Phase D — Construction Memory playback at 6/10 — remote seed → localStorage hydrate — sprint-1141-selftest.ts",
+    "sprint1142": "Milestone 1160–1169 Drawing Intelligence Phase D — Construction Memory playback at 7/10 — cold-start regeneration after remote seed — sprint-1142-selftest.ts",
+    "sprint1143": "Milestone 1160–1169 Drawing Intelligence Phase D — Construction Memory playback at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-1143-selftest.ts",
+    "sprint1144": "Milestone 1160–1169 Drawing Intelligence Phase D — Construction Memory playback at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-1144-selftest.ts",
+    "sprint1145": "Milestone 1160-1169 Phase B metadata review UX polish wrap completeness review � full stack audit; milestone closed; 1160-1169 opens Sprint 1136 � sprint-1145-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
@@ -21585,7 +21745,7 @@
     "daysRemaining": 3,
     "computedAsOf": "2026-07-09",
     "status": "at_risk",
-    "statusRationale": "Milestone 1160-1169 opens Sprint 1137 (1/10); Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase E Commercial Intelligence Estimating/BoQ foundation (docs/PHASE_B_METADATA_REVIEW_UX_POLISH_PLAN.json); Phase B UX Sign-off wrap complete (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Platform Certification 3/3 recertified Sprint 1136 (Finding 4); Milestone 540�549 closed Sprint 525"
+    "statusRationale": "Milestone 1150�1159 closed Sprint 1145; Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase B metadata review UX polish full stack wrap complete (docs/PHASE_B_METADATA_REVIEW_UX_POLISH_PLAN.json); Platform Certification 3/3 recertified Sprint 1145 (Finding 4); next milestone 1170-1179 Reports propagation from drawing events Sprint 1146 queued; write_audit standing deferred"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
@@ -21646,7 +21806,7 @@
       "evidence": "docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json",
       "detectedAt": "2026-07-10T07:47:19.910Z",
       "remediationGate": "production_deploy_plus_negative_security_tests_plus_completion_evidence",
-      "note": "Remains open until production deployment of membership guard, negative security tests, and completionEvidence are recorded. Phase B metadata review UX polish (1160-1169) tooling does not satisfy this gate.",
+      "note": "Remains open until production deployment of membership guard, negative security tests, and completionEvidence are recorded. Phase B metadata review UX polish (1160-1169) records in-repo harness + probe attempt only and does NOT satisfy this gate unless all three gates are REAL. write_audit_entry remains open_interrupt until production deploy + negative security tests + completionEvidence are ACTUALLY recorded.",
       "evidenceArtifact": "docs/WRITE_AUDIT_THREE_GATE_PRODUCTION_CLOSURE_HARNESS.json",
       "gates": {
         "productionDeploy": false,
