@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 910–919 Hard completion production verification (8/10); Sprint 894 queued.
+**Status:** Active — Milestone 910–919 Hard completion production verification CLOSED (10/10); Sprint 896 queued (920–929 AI-assisted import review).
 
 **Last updated:** 2026-07-11
-**Current sprint:** 793 closed  
-**Next sprint:** 584 queued
-**Milestone:** 550–559 WRAP CLOSED (10/10) · 560–569 Phase C Revision Management opens Sprint 536
+**Current sprint:** 895 closed  
+**Next sprint:** 896 queued
+**Milestone:** 910–919 WRAP CLOSED (10/10) · 920–929 AI-assisted import review opens Sprint 896
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
@@ -559,10 +559,13 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (529)
+## Next sprint (896)
 
-- Stream 1: Phase B UX sign-off UI assertions — sprint-529-selftest.ts
-- Stream 2: Sprint Validation 3/3 post-recertification regression guard — PHASE_B_RUNS=3
+- Stream 1: Milestone 920–929 AI-assisted import review foundation — sprint-896-selftest.ts
+- Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
+- Theme: 920-929 AI-assisted import review — pre-save review fields / AI review queue UI (DRAWING_INTELLIGENCE_ROADMAP.md AI-assisted import review)
+
+
 
 
 
