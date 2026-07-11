@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1270–1279 Revision management / superseding continuous (9/10); Sprint 1255 queued.
+**Status:** Active — Milestone 1270-1279 Revision management / superseding continuous CLOSED (10/10); Sprint 1246 queued (1270-1279 Background ZIP job queue large archives).
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1254 closed  
-**Next sprint:** 1255 queued
-**Milestone:** 1260-1269 WRAP CLOSED (10/10) — 1270-1279 Revision management / superseding continuous opens Sprint 1246
+**Current sprint:** 1255 closed  
+**Next sprint:** 1246 queued (1270-1279 Background ZIP job queue large archives validation automation)
+**Milestone:** 1270-1279 WRAP CLOSED (10/10) — 1270-1279 Background ZIP job queue large archives opens Sprint 1246
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
@@ -561,9 +561,11 @@ Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRAT
 
 ## Next sprint (1246)
 
-- Stream 1: Milestone 1270-1279 Revision management / superseding continuous validation automation foundation — sprint-1246-selftest.ts
+- Stream 1: Milestone 1280-1289 Multi-discipline packages continuous validation automation foundation — sprint-1256-selftest.ts
 - Stream 2: Platform Certification recertification post-milestone-close (Finding 4) � PHASE_B_RUNS=3
-- Theme: 1270-1279 Revision management / superseding continuous validation automation — Enterprise Drawing Management Partial (DRAWING_INTELLIGENCE_ROADMAP.md; non-write_audit; write_audit_entry remains standing deferred open_interrupt)
+- Theme: 1280-1289 Multi-discipline packages continuous validation automation — Enterprise Drawing Management Partial (DRAWING_INTELLIGENCE_ROADMAP.md; non-write_audit; write_audit_entry remains standing deferred open_interrupt)
+
+
 
 
 
