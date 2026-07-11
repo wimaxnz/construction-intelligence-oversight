@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-11",
   "currentSprint": {
-    "number": 863,
+    "number": 864,
     "status": "closed",
-    "previousClosed": 862,
+    "previousClosed": 863,
     "closedDate": "2026-07-11"
   },
   "currentMilestone": {
@@ -23,15 +23,15 @@
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 8,
-    "percentComplete": 80,
+    "sprintsClosed": 9,
+    "percentComplete": 90,
     "nextWrapReviewSprint": 865,
     "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Missing / broken reference detection remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-864-selftest.ts"
+      "focus": "Milestone wrap review — Drawing Intelligence Missing / broken reference detection completeness — sprint-865-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
@@ -3304,10 +3304,10 @@
       "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Missing / broken reference detection remote read-after-write round-trip deferred to Sprint 524+"
     },
     "sprint854": {
-      "stream1": "Job progress UI remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — assertJobProgressUiRemoteReadAfterWriteRoundTrip · roundTripJobProgressUiStateRemoteReadAfterWrite · buildJobProgressUiRemoteReadAfterWriteRoundTripSummary · runphaseCBulkUploadRemoteReadAfterWriteRoundTrip · phase-b-wynyard-validation.ts · sprint-854-selftest.ts",
+      "stream1": "Missing / broken reference detection remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — assertMissingBrokenReferenceDetectionRemoteReadAfterWriteRoundTrip · roundTripMissingBrokenReferenceDetectionStateRemoteReadAfterWrite · buildMissingBrokenReferenceDetectionRemoteReadAfterWriteRoundTripSummary · runphaseCBulkUploadRemoteReadAfterWriteRoundTrip · phase-b-wynyard-validation.ts · sprint-864-selftest.ts",
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
-      "validation": "Milestone 860–869 at 9/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-JOB-PROGRESS-UI passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
-      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Milestone 860–869 wrap review deferred to Sprint 525"
+      "validation": "Milestone 870–879 at 9/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Milestone 870–879 wrap review deferred to Sprint 525"
     },
     "sprint855": {
       "stream1": "Milestone wrap review — Drawing Intelligence Job progress UI completeness — sprint-855-selftest.ts",
@@ -11020,12 +11020,12 @@
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ],
     "sprint854": [
-      "src/platform/validation/jobProgressUiValidationService.ts",
+      "src/platform/validation/missingBrokenReferenceDetectionValidationService.ts",
       "src/platform/index.ts",
       "scripts/phase-b-wynyard-validation.ts",
-      "docs/JOB_PROGRESS_UI_PLAN.json",
-      "scripts/sprint-854-selftest.ts",
-      "scripts/sprint-854-close-out.ts",
+      "docs/MISSING_BROKEN_REFERENCE_DETECTION_PLAN.json",
+      "scripts/sprint-864-selftest.ts",
+      "scripts/sprint-864-close-out.ts",
       "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
       "docs/di-screenshots/validation/results.json",
       "docs/PLATFORM_EVOLUTION.md",
@@ -12055,8 +12055,8 @@
       "sprint852PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); cold-start regeneration after remote seed wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
       "sprint853": "Milestone 870–879 at 8/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1)",
       "sprint853PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); full hydrate / persist path dual-write / remote-authoritative wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
-      "sprint854": "Milestone 860–869 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
-      "sprint854PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-JOB-PROGRESS-UI passed",
+      "sprint854": "Milestone 870–879 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
+      "sprint854PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
       "sprint855": "Milestone 870–879 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Job progress UI full stack completeness audit)",
       "sprint855PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
     },
@@ -12065,7 +12065,7 @@
       "lastCertifiedBaseline": "2026-07-11",
       "status": "current — recertified Sprint 856 (880-889 Missing / broken reference detection opens 1/10 Finding 4)",
       "sprintRangeCovered": "526–526 (Enterprise Drawing Management — Missing / broken reference detection Milestone 880-889 opens)",
-      "deltaSinceCertification": "Sprints 130–533 delivered (404 sprints); Milestone 880-889 at 8/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); full hydrate / persist path (docs/MISSING_BROKEN_REFERENCE_DETECTION_PLAN.json); Platform Certification 3/3 recertified Sprint 856 (Finding 4)",
+      "deltaSinceCertification": "Sprints 130–534 delivered (405 sprints); Milestone 880-889 at 9/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); remote read-after-write round-trip (docs/MISSING_BROKEN_REFERENCE_DETECTION_PLAN.json); Platform Certification 3/3 recertified Sprint 856 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -12082,12 +12082,12 @@
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 870–879 at 8/10, Sprint 863 closed, Sprint 864 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 863 full hydrate / persist path logged",
-    "docs/MISSING_BROKEN_REFERENCE_DETECTION_PLAN.json — fullHydratePersistPathComplete Sprint 863",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 863 closed, milestone 880-889 active (8/10), Sprint 864 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 863 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 863 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 870–879 at 9/10, Sprint 864 closed, Sprint 865 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 864 remote read-after-write round-trip logged",
+    "docs/MISSING_BROKEN_REFERENCE_DETECTION_PLAN.json — remoteReadAfterWriteRoundTripComplete Sprint 864",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 864 closed, milestone 880-889 active (9/10), Sprint 865 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 864 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 864 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -12234,11 +12234,11 @@
     }
   ],
   "nextSprint": {
-    "number": 864,
-    "stream1": "Missing / broken reference detection remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-864-selftest.ts",
+    "number": 865,
+    "stream1": "Milestone wrap review — Drawing Intelligence Missing / broken reference detection completeness — sprint-865-selftest.ts",
     "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-864-selftest.ts",
-    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 880-889 Missing / broken reference detection active (8/10); full hydrate / persist path complete docs/MISSING_BROKEN_REFERENCE_DETECTION_PLAN.json"
+    "selftest": "scripts/sprint-865-selftest.ts",
+    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 880-889 Missing / broken reference detection active (9/10); remote read-after-write round-trip complete docs/MISSING_BROKEN_REFERENCE_DETECTION_PLAN.json"
   },
   "oversightSync": {
     "status": "degraded",
@@ -12249,7 +12249,7 @@
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-11T04:26:45.1287908Z",
+    "sanitizedAt": "2026-07-11T04:27:25.5109831Z",
     "pushedAt": "2026-07-11T04:18:52.575Z",
     "remoteHeadSha": "e8822306557e16f41430fbe71c7d9d873b7960f6",
     "publicStateVerifiedAt": "2026-07-11T04:18:52.575Z",
@@ -12314,9 +12314,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 793,
+    "lastSyncedSprint": 794,
     "lastSyncedAt": "2026-07-11",
-    "milestoneProgress": "880-889 ACTIVE (8/10)",
+    "milestoneProgress": "880-889 ACTIVE (9/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -12512,7 +12512,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ Knowledge Library version lifecycle ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ cross-project knowledge reuse ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ knowledge similarity matching ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ proactive knowledge warning ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ user outcome feedback ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ confidence evolution ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ future project knowledge reuse",
-    "phaseE": "Enterprise Drawing Management — Missing / broken reference detection Milestone milestone (880-889) active — Sprint 863 closed; Sprint 864 queued",
+    "phaseE": "Enterprise Drawing Management — Missing / broken reference detection Milestone milestone (880-889) active — Sprint 864 closed; Sprint 865 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -12525,7 +12525,7 @@
     "sprint382": "No new growth event kinds ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â mid-milestone 374ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators)",
     "sprint379": "No new growth event kinds ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Enterprise Drawing Management — Missing / broken reference detection Milestone (880-889) active Sprint 863 (8/10); full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 complete",
+    "phaseD": "Enterprise Drawing Management — Missing / broken reference detection Milestone (880-889) active Sprint 864 (9/10); remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 complete; wrap review Sprint 525",
     "phaseB": "Missing / broken reference detection milestone active (880-889) — technical items complete; UX validation automation foundation Sprint 856"
   },
   "digitalBrainImpact": {
@@ -12622,7 +12622,7 @@
     "sprint268": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 880-889 8/10 sprints closed (80%); latest growth-event sprint 400; Sprint 863 closed; Sprint 864 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 880-889 9/10 sprints closed (90%); latest growth-event sprint 400; Sprint 864 closed; Sprint 865 queued per nextSprint",
     "sprint372": "No new growth event kinds ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â mid-milestone 364ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators)",
     "sprint371": "No new growth event kinds ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· isExplainabilityEnrichedDecisionTimelineEntry ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â milestone 370ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ379 wrap completeness review confirms supersede invalidation full stack audit (growth events ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· project assistant context engine wiring); milestone closed; 380ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ389 Phase C Revision Management opens Sprint 364",
@@ -13062,7 +13062,7 @@
     "sprint801": "No new growth event kinds — Missing / broken reference detection remote seed → localStorage hydrate path; Milestone 870–879 at 6/10",
     "sprint802": "No new growth event kinds — Missing / broken reference detection cold-start regeneration after remote seed; Milestone 870–879 at 7/10",
     "sprint803": "No new growth event kinds — Missing / broken reference detection full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 870–879 at 8/10",
-    "sprint804": "No new growth event kinds — Job progress UI remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 860–869 at 9/10",
+    "sprint804": "No new growth event kinds — Missing / broken reference detection remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 870–879 at 9/10",
     "sprint805": "No new growth event kinds — milestone 870–879 wrap completeness review confirms Job progress UI full stack audit (foundation · Playwright · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip); milestone closed; 870–879 opens Sprint 846"
   },
   "knowledgeGraphImpact": {
@@ -13566,7 +13566,7 @@
     "sprint801": "Remote Supabase intelligence_json indices seed di-missing-broken-reference-detection-* localStorage mirror for cold-start hydrate; Milestone 870–879 at 6/10",
     "sprint802": "When localStorage cleared after prior remote seed, di-missing-broken-reference-detection-* indexed sheets regenerate from durable Supabase intelligence_json; Milestone 870–879 at 7/10",
     "sprint803": "When VITE_PROJECT_KG_PERSIST=1, di-missing-broken-reference-detection-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 870–879 at 8/10",
-    "sprint804": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 860–869 at 9/10",
+    "sprint804": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 870–879 at 9/10",
     "sprint805": "Milestone 870–879 wrap confirms durable Job progress UI validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 880–889 Missing / broken reference detection opens Sprint 856"
   },
   "commercialIntelligenceImpact": {
@@ -13653,7 +13653,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Enterprise Drawing Management — Missing / broken reference detection Milestone (880-889) active 8/10; Sprint 863 closed; Sprint 864 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Missing / broken reference detection remote read-after-write round-trip when VIT)",
+    "overall": "Commercial Intelligence Partial — Enterprise Drawing Management — Missing / broken reference detection Milestone (880-889) active 9/10; Sprint 864 closed; Sprint 865 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Milestone wrap review — Drawing Intelligence Missing / broken reference detectio)",
     "sprint372": "Mid-milestone 364ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ368 Drawing Intelligence Phase C revision supersede completeness review ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Phase C revision supersede stack partial audit confirms growth events ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â phaseCRevisionSupersedeExplainabilityEntries ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· isExplainabilityEnrichedDecisionTimelineEntry ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â takeoff COS pipeline stage badge ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· phaseCRevisionSupersedeTimelineEntryCount ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-366-selftest.ts",
@@ -14088,7 +14088,7 @@
     "sprint801": "Milestone 880–889 Enterprise Drawing Management — Missing / broken reference detection at 6/10 — remote seed → localStorage hydrate — sprint-861-selftest.ts",
     "sprint802": "Milestone 880–889 Enterprise Drawing Management — Missing / broken reference detection at 7/10 — cold-start regeneration after remote seed — sprint-862-selftest.ts",
     "sprint803": "Milestone 880–889 Enterprise Drawing Management — Missing / broken reference detection at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-863-selftest.ts",
-    "sprint804": "Milestone 870–879 Enterprise Drawing Management — Job progress UI at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-854-selftest.ts",
+    "sprint804": "Milestone 880–889 Enterprise Drawing Management — Missing / broken reference detection at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-864-selftest.ts",
     "sprint805": "Milestone 870–879 Enterprise Drawing Management — Job progress UI wrap completeness review — full stack audit; milestone closed; 870–879 opens Sprint 846 — sprint-855-selftest.ts"
   },
   "hardCompletionDirective": {
