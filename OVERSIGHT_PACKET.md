@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1000–1009 AI review queue UI hardening (9/10); Sprint 985 queued.
+**Status:** Active — Milestone 1000–1009 AI review queue UI hardening CLOSED (10/10); Sprint 986 queued (1010-1019 Background jobs progress/resumable UX hardening).
 
 **Last updated:** 2026-07-11
-**Current sprint:** 984 closed  
-**Next sprint:** 985 queued
-**Milestone:** 990–999 WRAP CLOSED (10/10) · 1000-1009 AI review queue UI hardening opens Sprint 976
+**Current sprint:** 985 closed  
+**Next sprint:** 986 queued (1010-1019 Background jobs progress/resumable UX hardening)
+**Milestone:** 1000–1009 WRAP CLOSED (10/10) · 1010-1019 Background jobs progress/resumable UX hardening opens Sprint 986
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
@@ -559,11 +559,13 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (976)
+## Next sprint (986)
 
-- Stream 1: Milestone 1000-1009 AI review queue UI hardening foundation — sprint-976-selftest.ts
+- Stream 1: Milestone 1010-1019 Background jobs progress/resumable UX hardening foundation — sprint-986-selftest.ts
 - Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
-- Theme: 1000-1009 AI review queue UI hardening — AI review queue chrome still thin (DRAWING_INTELLIGENCE_ROADMAP.md AI-assisted import review)
+- Theme: 1010-1019 Background jobs progress/resumable UX hardening — progress/resumable UX chrome still thin (DRAWING_INTELLIGENCE_ROADMAP.md Background jobs (progress, resumable))
+
+
 
 
 
