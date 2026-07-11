@@ -1,42 +1,41 @@
 {
   "lastUpdated": "2026-07-12",
   "currentSprint": {
-    "number": 1155,
+    "number": 1156,
     "status": "closed",
-    "previousClosed": 1154,
+    "previousClosed": 1155,
     "closedDate": "2026-07-12"
   },
   "currentMilestone": {
-    "range": "1170-1179",
-    "milestoneId": "1170-1179",
-    "milestoneName": "Drawing Intelligence Phase B — reports propagation from drawing events Milestone",
+    "range": "1180-1189",
+    "milestoneId": "1180-1189",
+    "milestoneName": "Drawing Intelligence Phase B — canvas marker lifecycle validation automation Milestone",
     "plannedSprintCount": 10,
-    "actualSprintStart": 1146,
-    "actualSprintEnd": 1155,
-    "wrapReviewSprint": 1155,
-    "status": "closed",
-    "theme": "Reports propagation from drawing events assistive validation automation — wire report panel (onOpenReports) to drawing_pin_events / Construction Memory (DRAWING_INTELLIGENCE_ROADMAP.md Deferred from Phase B; write_audit_entry remains standing deferred open_interrupt)",
-    "openedDate": "2026-07-11",
-    "wrapClosedDate": "2026-07-12",
-    "previousMilestoneClosed": "1160-1169 (Phase H write_audit owner-credential live apply � Phase H write_audit owner-credential live apply Milestone)",
-    "nextMilestoneOpens": "1180-1189 (Canvas marker lifecycle validation automation — DRAWING_INTELLIGENCE_ROADMAP.md Deferred from Phase B; write_audit_entry remains open_interrupt as standing deferred owner action 0/3 gates)",
-    "wrapComplete": true
+    "actualSprintStart": 1156,
+    "actualSprintEnd": 1165,
+    "wrapReviewSprint": 1165,
+    "status": "active",
+    "theme": "Canvas marker lifecycle validation automation — extend phase-b-wynyard-validation.ts for canvas marker colour/state transitions (DRAWING_INTELLIGENCE_ROADMAP.md Deferred from Phase B; write_audit_entry remains standing deferred open_interrupt)",
+    "openedDate": "2026-07-12",
+    "previousMilestoneClosed": "1170-1179 (Phase H write_audit three-gate production closure — Phase H write_audit three-gate production closure Milestone)",
+    "nextMilestoneOpens": "1180-1189 (Canvas marker lifecycle validation automation � real production deploy � live negative tests � completionEvidence (write_audit_entry remains open_interrupt until evidence ACTUALLY recorded); write_audit_entry remains open_interrupt until live evidence; distinct from closed 1110�1159 / 1160�1159 / 1160�1159 / 1160�1159)",
+    "wrapComplete": false
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 10,
-    "percentComplete": 100,
-    "nextWrapReviewSprint": 1155,
-    "milestoneWrapComplete": true
+    "sprintsClosed": 1,
+    "percentComplete": 10,
+    "nextWrapReviewSprint": 1165,
+    "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Milestone 1180-1189 Canvas marker lifecycle validation automation foundation — sprint-1156-selftest.ts"
+      "focus": "Playwright Canvas marker lifecycle validation automation assertion scaffold � sprint-1157-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Platform Certification recertification post-milestone-close (Finding 4) � phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
+      "focus": "Sprint Validation 3/3 post-recertification regression guard � phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
     }
   },
   "completedWork": {
@@ -5115,6 +5114,12 @@
       "stream2": "Milestone 1170-1179 Reports propagation from drawing events full stack completeness review � sprint-1155-selftest.ts audits stack (foundation � Playwright scaffold � Phase B matrix � UI assertions � localStorage mirror reconciliation � remote seed hydrate � cold-start regeneration � full hydrate/persist path � remote read-after-write round-trip) � PHASE_B_RUNS=3 (consecutiveGreen reuse / exclusive when needed) � Platform Certification recertification post-milestone-close (Finding 4)",
       "validation": "Milestone wrap selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
       "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; write_audit_entry standing deferred owner action (0/3 gates REAL); next milestone 1180-1189 Canvas marker lifecycle validation automation deferred to Sprint 1156"
+    },
+    "sprint1156": {
+      "stream1": "Milestone 1180-1189 Canvas marker lifecycle validation automation validation automation foundation � canvasMarkerLifecycleValidationAutomationValidationService � CANVAS_MARKER_LIFECYCLE_VALIDATION_AUTOMATION_PLAN.json � sprint-1156-selftest.ts",
+      "stream2": "Platform Certification recertification post-milestone-close (Finding 4) � phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) � docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md � docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 1160�1159 opens selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; full Playwright Canvas marker lifecycle validation automation role-path UI assertions deferred to Sprint 1157+"
     }
   },
   "changedFiles": {
@@ -17468,6 +17473,21 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint1156": [
+      "src/platform/validation/canvasMarkerLifecycleValidationAutomationValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/CANVAS_MARKER_LIFECYCLE_VALIDATION_AUTOMATION_PLAN.json",
+      "scripts/sprint-1156-selftest.ts",
+      "scripts/sprint-1156-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -19079,14 +19099,16 @@
       "sprint1154": "Milestone 1170–1179 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
       "sprint1154PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-REPORTS-PROPAGATION-FROM-DRAWING-EVENTS passed",
       "sprint1155": "Milestone 1150�1159 wrap � selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Reports propagation from drawing events full stack completeness audit)",
-      "sprint1155PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
+      "sprint1155PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
+      "sprint1156": "Milestone 1160�1159 opens � selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Canvas marker lifecycle validation automation foundation; consecutiveGreen reuse when stampede=0)",
+      "sprint1156PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-12",
       "lastCertifiedBaseline": "2026-07-12",
-      "status": "current � recertified Sprint 1155 (1170-1179 closed; 1170-1179 next milestone opens post-milestone-close Finding 4)",
-      "sprintRangeCovered": "1146�1155 (Drawing Intelligence Phase B — reports propagation from drawing events Milestone 1170-1179 closed)",
-      "deltaSinceCertification": "Sprints 130�1155 delivered; Milestone 1170-1179 closed; next milestone 1180-1189 Canvas marker lifecycle validation automation; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered � post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Reports propagation from drawing events wrap complete (docs/REPORTS_PROPAGATION_FROM_DRAWING_EVENTS_PLAN.json); Platform Certification 3/3 recertified Sprint 1155 (Finding 4)",
+      "status": "current � recertified Sprint 1156 (1180-1189 Canvas marker lifecycle validation automation opens 1/10 Finding 4)",
+      "sprintRangeCovered": "1156�1156 (Drawing Intelligence Phase B — canvas marker lifecycle validation automation Milestone 1180-1189 opens)",
+      "deltaSinceCertification": "Sprints 130�1156 delivered (847 sprints); Milestone 1180-1189 closed; Canvas marker lifecycle validation automation 1180-1189 opens (1/10); gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered � post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase B UX Sign-off wrap complete (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Phase E Commercial Intelligence Estimating/BoQ foundation (docs/CANVAS_MARKER_LIFECYCLE_VALIDATION_AUTOMATION_PLAN.json); Platform Certification 3/3 recertified Sprint 1156 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -19097,21 +19119,18 @@
         "Commercial Intelligence state-machine change",
         "before production release"
       ],
-      "note": "3/3 deterministic re-achieved 2026-07-12 Sprint 1155 post-milestone-close; recertify on triggers in recertificationTriggers � not indefinite valid"
+      "note": "3/3 deterministic re-achieved 2026-07-12 Sprint 1156 post-milestone-close; recertify on triggers in recertificationTriggers � not indefinite valid"
     },
     "typecheck": "npx tsc -b (per regression gate)"
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md � Milestone 1150�1159 closed, Sprint 1156 queued (1180-1189 Canvas marker lifecycle validation automation)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md � Milestone 1150�1159 wrap logged",
-    "docs/REPORTS_PROPAGATION_FROM_DRAWING_EVENTS_PLAN.json � milestoneWrapComplete Sprint 1155",
-    "docs/REPORTS_PROPAGATION_FROM_DRAWING_EVENTS_PLAN.json � next milestone 1180-1189 Canvas marker lifecycle validation automation Sprint 1156 queued; write_audit standing deferred",
-    "docs/REPORTS_PROPAGATION_FROM_DRAWING_EVENTS_HARNESS.json � in-repo harness + probe; three gates unmet; interrupt open",
-    "docs/DRAWING_INTELLIGENCE_ROADMAP.md � Reports propagation from drawing events validation automation checked complete",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json � Sprint 1155 closed, milestone 1170-1179 wrap closed (10/10), Sprint 1156 queued (canvas marker lifecycle; write_audit standing deferred)",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md � Sprint 1155 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md � Sprint 1155 close-out note"
+    "docs/PLATFORM_EVOLUTION.md � Milestone 1160�1159 opens (1/10), Sprint 1156 closed, Sprint 1157 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md � Milestone 1180-1189 Canvas marker lifecycle validation automation opens logged",
+    "docs/CANVAS_MARKER_LIFECYCLE_VALIDATION_AUTOMATION_PLAN.json � foundationComplete Sprint 1156",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json � Sprint 1156 closed, milestone 1180-1189 active (1/10), Sprint 1157 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md � Sprint 1156 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md � Sprint 1156 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -19155,7 +19174,7 @@
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Milestone 1170-1179 Reports propagation from drawing events closed Sprint 1155; Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 1180-1189 Canvas marker lifecycle validation automation queued Sprint 1156; write_audit_entry remains standing deferred open_interrupt (0/3 gates)"
+      "description": "Milestone 1180-1189 Canvas marker lifecycle validation automation opens Sprint 1157 (1/10); Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending"
     },
     {
       "id": "partial-platform-services",
@@ -19166,7 +19185,7 @@
       "id": "platform-certification-stale",
       "severity": "low-governance",
       "relatedFinding": "finding-4",
-      "description": "Platform Certification 3/3 recertified 2026-07-12 Sprint 1155 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
+      "description": "Platform Certification 3/3 recertified 2026-07-12 Sprint 1156 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
     },
     "HIGH: write_audit_entry SECURITY DEFINER executable by authenticated without is_project_member ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â audit forgery risk (docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json)"
   ],
@@ -19258,28 +19277,27 @@
     }
   ],
   "nextSprint": {
-    "number": 1156,
-    "stream1": "Milestone 1180-1189 Canvas marker lifecycle validation automation foundation — sprint-1156-selftest.ts",
-    "stream2": "Platform Certification recertification post-milestone-close (Finding 4) � phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-1156-selftest.ts",
-    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 1170-1179 Reports propagation from drawing events closed (10/10); wrap complete docs/REPORTS_PROPAGATION_FROM_DRAWING_EVENTS_PLAN.json",
-    "queueCorrection": "After Reports propagation from drawing events wrap (1170-1179): write_audit_entry remains open_interrupt as STANDING DEFERRED OWNER ACTION (0/3 gates REAL — do NOT re-queue write_audit credential loops). Next unfinished NON-write_audit roadmap item: Canvas marker lifecycle validation automation (1180-1189; DRAWING_INTELLIGENCE_ROADMAP.md Deferred from Phase B)."
+    "number": 1157,
+    "stream1": "Playwright Canvas marker lifecycle validation automation assertion scaffold � sprint-1157-selftest.ts",
+    "stream2": "Sprint Validation 3/3 post-recertification regression guard � phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
+    "selftest": "scripts/sprint-1157-selftest.ts",
+    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 1180-1189 Canvas marker lifecycle validation automation opens (1/10); Phase C revision management wrap complete docs/PHASE_C_REVISION_MANAGEMENT_PLAN.json"
   },
   "oversightSync": {
-    "status": "degraded",
-    "reason": "cdn-lag-or-cache-invalidation-pending",
-    "lastPushAttempt": "2026-07-11T16:02:15.056Z",
+    "status": "ok",
+    "reason": null,
+    "lastPushAttempt": "2026-07-11T16:02:40.470Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-11T16:02:15.056Z",
+    "verifiedAt": "2026-07-11T16:02:40.470Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-11T16:01:54.0450714Z",
-    "pushedAt": "2026-07-11T16:02:15.056Z",
-    "remoteHeadSha": "acb6b3897b1e9c8f357dea3e389f89d2815098ee",
-    "publicStateVerifiedAt": "2026-07-11T16:02:15.056Z",
+    "sanitizedAt": "2026-07-11T16:06:55.8205875Z",
+    "pushedAt": "2026-07-11T16:02:40.470Z",
+    "remoteHeadSha": "74a9dd43299adff0025cd1fd09e93b4ed949c45a",
+    "publicStateVerifiedAt": "2026-07-11T16:02:40.470Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "dd18bace039edbfa570aca749e7a51cfe83a755fe4ef240b8dafc8c4848d23f5",
+    "publicStateContentHash": "e23dd861156fe37b9dd02488e6eef0e6d8e06caec930319e3e963ce66b8af52c",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -19313,19 +19331,19 @@
     "publicStateRawCdnHash": "57a4218260992c794ff25fa7752376373effb4d397a75bf15fadb82ab59f9042",
     "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-11T16:02:15.056Z",
-      "rawEndpointVerifiedAt": "2026-07-11T16:02:15.056Z",
-      "gitOriginVerifiedAt": "2026-07-11T16:02:15.056Z",
+      "githubApiVerifiedAt": "2026-07-11T16:02:40.470Z",
+      "rawEndpointVerifiedAt": "2026-07-11T16:02:40.470Z",
+      "gitOriginVerifiedAt": "2026-07-11T16:02:40.470Z",
       "routeContentHashes": {
-        "github-api": "b1939ebfcea4746c7ab762489138a9d454507b75fde8052a1b28817fad97ba6c",
+        "github-api": "e23dd861156fe37b9dd02488e6eef0e6d8e06caec930319e3e963ce66b8af52c",
         "raw-cdn": "57a4218260992c794ff25fa7752376373effb4d397a75bf15fadb82ab59f9042",
-        "git-origin": "dd18bace039edbfa570aca749e7a51cfe83a755fe4ef240b8dafc8c4848d23f5"
+        "git-origin": "e23dd861156fe37b9dd02488e6eef0e6d8e06caec930319e3e963ce66b8af52c"
       },
       "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "acb6b3897b1e9c8f357dea3e389f89d2815098ee",
+      "canonicalRemoteHeadSha": "74a9dd43299adff0025cd1fd09e93b4ed949c45a",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 1852,
-      "classification": "cdn-lag-or-cache-invalidation-pending"
+      "classification": "cdn-lag-api-git-agree"
     },
     "publicationIntegrityRepairAt": "2026-07-11T06:21:09.337Z",
     "publicationIntegritySeverity": "high-governance"
@@ -19341,9 +19359,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 1155,
+    "lastSyncedSprint": 786,
     "lastSyncedAt": "2026-07-12",
-    "milestoneProgress": "1170-1179 WRAP CLOSED (10/10)",
+    "milestoneProgress": "1180-1189 OPENS (1/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -19547,7 +19565,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ Knowledge Library version lifecycle ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ cross-project knowledge reuse ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ knowledge similarity matching ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ proactive knowledge warning ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ user outcome feedback ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ confidence evolution ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase B — reports propagation from drawing events Milestone milestone (1170-1179) active — Sprint 1155 closed; Sprint 1156 queued",
+    "phaseE": "Drawing Intelligence Phase B — canvas marker lifecycle validation automation Milestone milestone (1180-1189) active — Sprint 1156 closed; Sprint 1157 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -19560,8 +19578,8 @@
     "sprint382": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â mid-milestone 374ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators)",
     "sprint379": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Drawing Intelligence Phase B — reports propagation from drawing events Milestone (1170-1179) closed Sprint 1155; 1180-1189 Canvas marker lifecycle validation automation queued Sprint 1156; write_audit standing deferred",
-    "phaseB": "Reports propagation from drawing events complete � milestone closed Sprint 1155; Canvas marker lifecycle validation automation (1180-1189) opens Sprint 1156; write_audit_entry remains standing deferred open_interrupt (0/3 gates)"
+    "phaseD": "Drawing Intelligence Phase B — canvas marker lifecycle validation automation Milestone (1180-1189) active Sprint 1156 (1/10); 1180-1189 Phase B UX Sign-off Milestone closed Sprint 525",
+    "phaseB": "Canvas marker lifecycle validation automation milestone active (1180-1189) � technical items complete; UX validation automation foundation Sprint 1156"
   },
   "digitalBrainImpact": {
     "sprint376": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -19657,7 +19675,7 @@
     "sprint268": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 1170-1179 10/10 sprints closed (100%); latest growth-event sprint 400; Sprint 1155 closed; Sprint 1156 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 1180-1189 1/10 sprints closed (10%); latest growth-event sprint 400; Sprint 1156 closed; Sprint 1157 queued per nextSprint",
     "sprint372": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â mid-milestone 364ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators)",
     "sprint371": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· isExplainabilityEnrichedDecisionTimelineEntry ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â milestone 370ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“379 wrap completeness review confirms supersede invalidation full stack audit (growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· project assistant context engine wiring); milestone closed; 380ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“389 Phase C Revision Management opens Sprint 364",
@@ -20388,7 +20406,8 @@
     "sprint1152": "No new growth event kinds — Reports propagation from drawing events cold-start regeneration after remote seed; Milestone 1170–1179 at 7/10",
     "sprint1153": "No new growth event kinds — Reports propagation from drawing events full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 1170–1179 at 8/10",
     "sprint1154": "No new growth event kinds — Reports propagation from drawing events remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 1170–1179 at 9/10",
-    "sprint1155": "No new growth event kinds � milestone 1150�1159 wrap completeness review confirms Reports propagation from drawing events full stack audit (foundation � Playwright � Phase B matrix � UI assertions � mirror � hydrate � cold-start � hydrate/persist � round-trip); milestone closed; 1180-1189 opens Sprint 1156"
+    "sprint1155": "No new growth event kinds � milestone 1150�1159 wrap completeness review confirms Reports propagation from drawing events full stack audit (foundation � Playwright � Phase B matrix � UI assertions � mirror � hydrate � cold-start � hydrate/persist � round-trip); milestone closed; 1180-1189 opens Sprint 1156",
+    "sprint1156": "No new growth event kinds � Canvas marker lifecycle validation automation foundation defines role critical path + checklist contracts for site-team workflow validation; Milestone 1160�1159 opens Sprint 1157"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -21182,7 +21201,8 @@
     "sprint1152": "When localStorage cleared after prior remote seed, di-reports-propagation-from-drawing-events-* indexed sheets regenerate from durable Supabase intelligence_json; Milestone 1170–1179 at 7/10",
     "sprint1153": "When VITE_PROJECT_KG_PERSIST=1, di-reports-propagation-from-drawing-events-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 1170–1179 at 8/10",
     "sprint1154": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 1170–1179 at 9/10",
-    "sprint1155": "Milestone 1150�1159 wrap confirms durable Reports propagation from drawing events validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 1180-1189 Canvas marker lifecycle validation automation opens Sprint 1156"
+    "sprint1155": "Milestone 1150�1159 wrap confirms durable Reports propagation from drawing events validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 1180-1189 Canvas marker lifecycle validation automation opens Sprint 1156",
+    "sprint1156": "Canvas marker lifecycle validation automation foundation � role-based critical path coverage for visual_overlay � foreman � PM � QS � mobile/tablet; Milestone 1160�1159 opens Sprint 1157"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â drawing revision id ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· superseded-by revision id ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· invalidation scope playback lines ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· lessons_learned stage badge ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-355-selftest.ts",
@@ -21268,7 +21288,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase B — reports propagation from drawing events Milestone (1170-1179) active 10/10; Sprint 1155 closed; Sprint 1156 queued (Platform Certification recertification post-milestone-close (Finding 4) � phase- · Milestone 1180-1189 Canvas marker lifecycle validation automation foundation — s)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase B — canvas marker lifecycle validation automation Milestone (1180-1189) active 1/10; Sprint 1156 closed; Sprint 1157 queued (Sprint Validation 3/3 post-recertification regression guard � phase-b-wynyard-va · Playwright Canvas marker lifecycle validation automation assertion scaffold � sp)",
     "sprint372": "Mid-milestone 364ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“368 Drawing Intelligence Phase C revision supersede completeness review ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Phase C revision supersede stack partial audit confirms growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â phaseCRevisionSupersedeExplainabilityEntries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· isExplainabilityEnrichedDecisionTimelineEntry ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â takeoff COS pipeline stage badge ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· phaseCRevisionSupersedeTimelineEntryCount ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-366-selftest.ts",
@@ -21994,7 +22014,8 @@
     "sprint1152": "Milestone 1170–1179 Drawing Intelligence Phase D — Construction Memory playback at 7/10 — cold-start regeneration after remote seed — sprint-1152-selftest.ts",
     "sprint1153": "Milestone 1170–1179 Drawing Intelligence Phase D — Construction Memory playback at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-1153-selftest.ts",
     "sprint1154": "Milestone 1170–1179 Drawing Intelligence Phase D — Construction Memory playback at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-1154-selftest.ts",
-    "sprint1155": "Milestone 1170-1179 Reports propagation from drawing events wrap completeness review � full stack audit; milestone closed; 1180-1189 opens Sprint 1156 � sprint-1155-selftest.ts"
+    "sprint1155": "Milestone 1170-1179 Reports propagation from drawing events wrap completeness review � full stack audit; milestone closed; 1180-1189 opens Sprint 1156 � sprint-1155-selftest.ts",
+    "sprint1156": "Milestone 1160�1159 Drawing Intelligence Phase D � Construction Memory playback opens � validation automation foundation � sprint-1156-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
@@ -22009,7 +22030,7 @@
     "daysRemaining": 3,
     "computedAsOf": "2026-07-09",
     "status": "at_risk",
-    "statusRationale": "Milestone 1150�1159 closed Sprint 1155; Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Reports propagation from drawing events full stack wrap complete (docs/REPORTS_PROPAGATION_FROM_DRAWING_EVENTS_PLAN.json); Platform Certification 3/3 recertified Sprint 1155 (Finding 4); next milestone 1180-1189 Canvas marker lifecycle validation automation Sprint 1156 queued; write_audit standing deferred"
+    "statusRationale": "Milestone 1180-1189 opens Sprint 1157 (1/10); Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase E Commercial Intelligence Estimating/BoQ foundation (docs/CANVAS_MARKER_LIFECYCLE_VALIDATION_AUTOMATION_PLAN.json); Phase B UX Sign-off wrap complete (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Platform Certification 3/3 recertified Sprint 1156 (Finding 4); Milestone 540�549 closed Sprint 525"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
@@ -22070,7 +22091,7 @@
       "evidence": "docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json",
       "detectedAt": "2026-07-10T07:47:19.910Z",
       "remediationGate": "production_deploy_plus_negative_security_tests_plus_completion_evidence",
-      "note": "Remains open until production deployment of membership guard, negative security tests, and completionEvidence are recorded. Reports propagation from drawing events (1170-1179) records in-repo harness + probe attempt only and does NOT satisfy this gate unless all three gates are REAL. write_audit_entry remains open_interrupt until production deploy + negative security tests + completionEvidence are ACTUALLY recorded.",
+      "note": "Remains open until production deployment of membership guard, negative security tests, and completionEvidence are recorded. Canvas marker lifecycle validation automation (1180-1189) tooling does not satisfy this gate.",
       "evidenceArtifact": "docs/WRITE_AUDIT_THREE_GATE_PRODUCTION_CLOSURE_HARNESS.json",
       "gates": {
         "productionDeploy": false,
