@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 950–959 Background jobs progress/resumable UX (4/10); Sprint 930 queued.
+**Status:** Active — Milestone 950–959 Background jobs progress/resumable UX (5/10); Sprint 931 queued.
 
 **Last updated:** 2026-07-11
-**Current sprint:** 789 closed  
-**Next sprint:** 580 queued
+**Current sprint:** 790 closed  
+**Next sprint:** 581 queued
 **Milestone:** 940–949 WRAP CLOSED (10/10) · 950–959 Background jobs progress/resumable UX opens Sprint 926
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
