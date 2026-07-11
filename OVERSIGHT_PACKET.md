@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1060–1069 Phase F AI Decision Support UI hardening CLOSED (10/10); Sprint 1046 queued (1070-1079 Phase G AI Project Assistant UI hardening).
+**Status:** Active — Milestone 1070–1079 Phase G AI Project Assistant UI hardening OPEN (1/10); Sprint 1047 queued.
 
 **Last updated:** 2026-07-11
-**Current sprint:** 1045 closed  
-**Next sprint:** 1046 queued (1070-1079 Phase G AI Project Assistant UI hardening)
+**Current sprint:** 1046 closed  
+**Next sprint:** 1047 queued
 **Milestone:** 1060–1069 WRAP CLOSED (10/10) · 1070-1079 Phase G AI Project Assistant UI hardening opens Sprint 1046
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
