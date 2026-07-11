@@ -18095,20 +18095,20 @@
     "queueCorrection": "After Phase H residual production gates UI hardening wrap (1120-1129): UI chrome/validation stack complete (schema_migrations provenance · PHASE_B app URL chrome); live production deploy + negative tests + completionEvidence NOT yet recorded — write_audit_entry remains open_interrupt. Next unfinished roadmap item: Phase H write_audit live production evidence (1130-1139; production deploy · negative security tests · completionEvidence recording; distinct from closed 800–809 / 910–919 / 1110–1119 / 1120–1129)."
   },
   "oversightSync": {
-    "status": "ok",
-    "reason": null,
-    "lastPushAttempt": "2026-07-11T14:58:21.894Z",
+    "status": "degraded",
+    "reason": "cdn-lag-or-cache-invalidation-pending",
+    "lastPushAttempt": "2026-07-11T14:58:51.557Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-11T14:58:21.894Z",
+    "verifiedAt": "2026-07-11T14:58:51.557Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
     "sanitizedAt": "2026-07-11T14:58:34.6030309Z",
-    "pushedAt": "2026-07-11T14:58:21.894Z",
-    "remoteHeadSha": "e3e5b45ecfd48bf2de6e67be2f375f238e482df0",
-    "publicStateVerifiedAt": "2026-07-11T14:58:21.894Z",
+    "pushedAt": "2026-07-11T14:58:51.557Z",
+    "remoteHeadSha": "50d65b88a6697b1a50edebdf084b6c7ec186f9bf",
+    "publicStateVerifiedAt": "2026-07-11T14:58:51.557Z",
     "publicStateJsonParsePassed": true,
-    "publicStateContentHash": "5d79e1b164a67808793f04d30c3cbc232d441df2ac3cc40bd21a4435be68706b",
+    "publicStateContentHash": "ce55d81bcb22ef017a5b7e8f601573b46dd1ec90588b69e4a4a3f1da2cbecdcc",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -18142,19 +18142,19 @@
     "publicStateRawCdnHash": "e92e9ab162bb69ef0424924fa08c51bf3da6ec6149fdfe6737331c3fe4880d55",
     "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-11T14:58:21.894Z",
-      "rawEndpointVerifiedAt": "2026-07-11T14:58:21.894Z",
-      "gitOriginVerifiedAt": "2026-07-11T14:58:21.894Z",
+      "githubApiVerifiedAt": "2026-07-11T14:58:51.557Z",
+      "rawEndpointVerifiedAt": "2026-07-11T14:58:51.557Z",
+      "gitOriginVerifiedAt": "2026-07-11T14:58:51.557Z",
       "routeContentHashes": {
-        "github-api": "5d79e1b164a67808793f04d30c3cbc232d441df2ac3cc40bd21a4435be68706b",
+        "github-api": "4c68e2c6e37263d32db323ddcfc1cc139a2f8a76beda038eb8466d0f8e322378",
         "raw-cdn": "e92e9ab162bb69ef0424924fa08c51bf3da6ec6149fdfe6737331c3fe4880d55",
-        "git-origin": "5d79e1b164a67808793f04d30c3cbc232d441df2ac3cc40bd21a4435be68706b"
+        "git-origin": "ce55d81bcb22ef017a5b7e8f601573b46dd1ec90588b69e4a4a3f1da2cbecdcc"
       },
       "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "e3e5b45ecfd48bf2de6e67be2f375f238e482df0",
+      "canonicalRemoteHeadSha": "50d65b88a6697b1a50edebdf084b6c7ec186f9bf",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 1752,
-      "classification": "cdn-lag-api-git-agree"
+      "classification": "cdn-lag-or-cache-invalidation-pending"
     },
     "publicationIntegrityRepairAt": "2026-07-11T06:21:09.337Z",
     "publicationIntegritySeverity": "high-governance"
