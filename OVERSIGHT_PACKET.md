@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active � Milestone 1400-1409 Phase D Construction Memory continuous OPEN (1/10); Sprint 1377 queued.
+**Status:** Active — Milestone 1380–1379 Phase D Construction Memory continuous (2/10); Sprint 1378 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1376 closed  
-**Next sprint:** 1377 queued
+**Current sprint:** 1377 closed  
+**Next sprint:** 1378 queued
 **Milestone:** 1390-1399 WRAP CLOSED (10/10) — 1400-1409 Phase D Construction Memory continuous opens Sprint 1376
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
