@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 870–879 Job progress UI CLOSED (10/10); Sprint 856 queued (870–879 Enterprise Drawing Management — Job progress UI).
+**Status:** Active — Milestone 870–879 Missing / broken reference detection OPEN (1/10); Sprint 857 queued.
 
 **Last updated:** 2026-07-11
-**Current sprint:** 815 closed  
-**Next sprint:** 536 queued
+**Current sprint:** 786 closed  
+**Next sprint:** 787 queued
 **Milestone:** 550–559 WRAP CLOSED (10/10) · 560–569 Phase C Revision Management opens Sprint 536
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
