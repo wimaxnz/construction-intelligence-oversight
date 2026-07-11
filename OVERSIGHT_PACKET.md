@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active � Milestone 1220-1229 Platform job queue (ZIP / intelligence) OPEN (1/10); Sprint 1197 queued.
+**Status:** Active — Milestone 1220-1229 Platform job queue (ZIP / intelligence) CLOSED (10/10); Sprint 1206 queued (1230-1239 Background ZIP job queue large archives).
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1196 closed  
-**Next sprint:** 1197 queued
-**Milestone:** 1210-1219 WRAP CLOSED (10/10) — 1220-1229 Platform job queue ZIP / intelligence opens Sprint 1196
+**Current sprint:** 1205 closed  
+**Next sprint:** 1206 queued (1230-1239 Background ZIP job queue large archives validation automation)
+**Milestone:** 1220-1229 WRAP CLOSED (10/10) — 1230-1239 Background ZIP job queue large archives opens Sprint 1206
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
@@ -559,11 +559,13 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (1196)
+## Next sprint (1206)
 
-- Stream 1: Milestone 1220-1229 Platform job queue (ZIP / intelligence) validation automation foundation — sprint-1196-selftest.ts
+- Stream 1: Milestone 1230-1239 Background ZIP job queue (large archives) validation automation foundation — sprint-1206-selftest.ts
 - Stream 2: Platform Certification recertification post-milestone-close (Finding 4) � PHASE_B_RUNS=3
-- Theme: 1220-1229 Platform job queue (ZIP / intelligence) validation automation — platform/jobs stub (DRAWING_INTELLIGENCE_ROADMAP.md In development; non-write_audit; write_audit_entry remains standing deferred open_interrupt)
+- Theme: 1230-1239 Background ZIP job queue (large archives) validation automation — platform/jobs large-archive edge worker contracts (DRAWING_INTELLIGENCE_ROADMAP.md In development; non-write_audit; write_audit_entry remains standing deferred open_interrupt)
+
+
 
 
 
