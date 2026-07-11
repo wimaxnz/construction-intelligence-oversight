@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1030–1039 Phase D Construction Memory playback (7/10); Sprint 1013 queued.
+**Status:** Active — Milestone 1030–1039 Phase D Construction Memory playback (8/10); Sprint 1014 queued.
 
 **Last updated:** 2026-07-11
-**Current sprint:** 1012 closed  
-**Next sprint:** 1013 queued
+**Current sprint:** 1013 closed  
+**Next sprint:** 1014 queued
 **Milestone:** 1020–1029 WRAP CLOSED (10/10) · 1030-1039 Phase D Construction Memory playback opens Sprint 1006
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
