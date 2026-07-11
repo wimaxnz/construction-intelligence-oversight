@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1440-1449 Phase H Security remediation continuous (6/10); Sprint 1422 queued.
+**Status:** Active — Milestone 1440-1449 Phase H Security remediation continuous (7/10); Sprint 1423 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1421 closed  
-**Next sprint:** 1422 queued
+**Current sprint:** 1422 closed  
+**Next sprint:** 1423 queued
 **Milestone:** 1430-1439 WRAP CLOSED (10/10) — 1440-1449 Phase H Security remediation continuous opens Sprint 1416
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
