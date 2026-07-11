@@ -1,42 +1,41 @@
 {
   "lastUpdated": "2026-07-12",
   "currentSprint": {
-    "number": 1205,
+    "number": 1206,
     "status": "closed",
-    "previousClosed": 1204,
+    "previousClosed": 1205,
     "closedDate": "2026-07-12"
   },
   "currentMilestone": {
-    "range": "1220-1229",
-    "milestoneId": "1220-1229",
-    "milestoneName": "Drawing Intelligence Phase B — Platform job queue (ZIP / intelligence) Milestone",
+    "range": "1230-1239",
+    "milestoneId": "1230-1239",
+    "milestoneName": "Drawing Intelligence Phase B — Background ZIP job queue (large archives) Milestone",
     "plannedSprintCount": 10,
-    "actualSprintStart": 1196,
-    "actualSprintEnd": 1205,
-    "wrapReviewSprint": 1205,
-    "status": "closed",
-    "theme": "Platform job queue (ZIP / intelligence) — platform/jobs stub + edge worker contracts (DRAWING_INTELLIGENCE_ROADMAP.md In development; write_audit_entry remains standing deferred open_interrupt)",
-    "openedDate": "2026-07-11",
-    "wrapClosedDate": "2026-07-12",
-    "previousMilestoneClosed": "1210-1219 (Project Digital Brain contracts + growth events — Canvas marker lifecycle validation automation Milestone)",
-    "nextMilestoneOpens": "1230-1239 (Background ZIP job queue large archives — DRAWING_INTELLIGENCE_ROADMAP.md In development; write_audit_entry remains open_interrupt as standing deferred owner action 0/3 gates)",
-    "wrapComplete": true
+    "actualSprintStart": 1206,
+    "actualSprintEnd": 1215,
+    "wrapReviewSprint": 1215,
+    "status": "active",
+    "theme": "Background ZIP job queue (large archives) — platform/jobs stub (DRAWING_INTELLIGENCE_ROADMAP.md In development; write_audit_entry remains standing deferred open_interrupt)",
+    "openedDate": "2026-07-12",
+    "previousMilestoneClosed": "1220-1229 (Project Digital Brain contracts + growth events — Project Digital Brain contracts + growth events Milestone)",
+    "nextMilestoneOpens": "1230-1239 (Background ZIP job queue (large archives) — DRAWING_INTELLIGENCE_ROADMAP.md In development; write_audit_entry remains open_interrupt as standing deferred owner action 0/3 gates)",
+    "wrapComplete": false
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 10,
-    "percentComplete": 100,
-    "nextWrapReviewSprint": 1205,
-    "milestoneWrapComplete": true
+    "sprintsClosed": 1,
+    "percentComplete": 10,
+    "nextWrapReviewSprint": 1215,
+    "milestoneWrapComplete": false
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Milestone 1230-1239 Background ZIP job queue (large archives) validation automation foundation — sprint-1206-selftest.ts"
+      "focus": "Playwright Background ZIP job queue (large archives) assertion scaffold � sprint-1207-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Platform Certification recertification post-milestone-close (Finding 4) � phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
+      "focus": "Sprint Validation 3/3 post-recertification regression guard � phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
     }
   },
   "completedWork": {
@@ -5415,6 +5414,12 @@
       "stream2": "Milestone 1220-1229 Platform job queue (ZIP / intelligence) full stack completeness review � sprint-1205-selftest.ts audits stack (foundation � Playwright scaffold � Phase B matrix � UI assertions � localStorage mirror reconciliation � remote seed hydrate � cold-start regeneration � full hydrate/persist path � remote read-after-write round-trip) � PHASE_B_RUNS=3 (consecutiveGreen reuse / exclusive when needed) � Platform Certification recertification post-milestone-close (Finding 4)",
       "validation": "Milestone wrap selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
       "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; write_audit_entry standing deferred owner action (0/3 gates REAL); next milestone 1230-1239 Background ZIP job queue (large archives) deferred to Sprint 1206"
+    },
+    "sprint1206": {
+      "stream1": "Milestone 1230-1239 Background ZIP job queue (large archives) validation automation foundation � backgroundZipJobQueueLargeArchivesValidationService � BACKGROUND_ZIP_JOB_QUEUE_LARGE_ARCHIVES_PLAN.json � sprint-1206-selftest.ts",
+      "stream2": "Platform Certification recertification post-milestone-close (Finding 4) � phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) � docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md � docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 1230-1239 opens selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; full Playwright Background ZIP job queue (large archives) role-path UI assertions deferred to Sprint 1207+"
     }
   },
   "changedFiles": {
@@ -18538,6 +18543,21 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint1206": [
+      "src/platform/validation/backgroundZipJobQueueLargeArchivesValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/BACKGROUND_ZIP_JOB_QUEUE_LARGE_ARCHIVES_PLAN.json",
+      "scripts/sprint-1206-selftest.ts",
+      "scripts/sprint-1206-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -20249,14 +20269,16 @@
       "sprint1204": "Milestone 1220–1229 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
       "sprint1204PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-PLATFORM-JOB-QUEUE-ZIP-INTELLIGENCE passed",
       "sprint1205": "Milestone 1220-1229 wrap � selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Platform job queue (ZIP / intelligence) full stack completeness audit)",
-      "sprint1205PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
+      "sprint1205PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
+      "sprint1206": "Milestone 1230-1239 opens � selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Background ZIP job queue (large archives) foundation; consecutiveGreen reuse when stampede=0)",
+      "sprint1206PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-12",
       "lastCertifiedBaseline": "2026-07-12",
-      "status": "current � recertified Sprint 1205 (1220-1229 closed; 1220-1229 next milestone opens post-milestone-close Finding 4)",
-      "sprintRangeCovered": "1196�1205 (Drawing Intelligence Phase B — Platform job queue (ZIP / intelligence) Milestone 1220-1229 closed)",
-      "deltaSinceCertification": "Sprints 130�1205 delivered; Milestone 1220-1229 closed; next milestone 1230-1239 Background ZIP job queue large archives; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered � post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Platform job queue (ZIP / intelligence) wrap complete (docs/PLATFORM_JOB_QUEUE_ZIP_INTELLIGENCE_PLAN.json); Platform Certification 3/3 recertified Sprint 1205 (Finding 4)",
+      "status": "current � recertified Sprint 1206 (1230-1239 Background ZIP job queue (large archives) opens 1/10 Finding 4)",
+      "sprintRangeCovered": "1206�1206 (Drawing Intelligence Phase B — Background ZIP job queue (large archives) Milestone 1230-1239 opens)",
+      "deltaSinceCertification": "Sprints 130�1206 delivered (847 sprints); Milestone 1230-1239 closed; Background ZIP job queue (large archives) 1230-1239 opens (1/10); gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered � post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase B UX Sign-off wrap complete (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Phase E Commercial Intelligence Estimating/BoQ foundation (docs/BACKGROUND_ZIP_JOB_QUEUE_LARGE_ARCHIVES_PLAN.json); Platform Certification 3/3 recertified Sprint 1206 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -20267,21 +20289,18 @@
         "Commercial Intelligence state-machine change",
         "before production release"
       ],
-      "note": "3/3 deterministic re-achieved 2026-07-12 Sprint 1205 post-milestone-close; recertify on triggers in recertificationTriggers � not indefinite valid"
+      "note": "3/3 deterministic re-achieved 2026-07-12 Sprint 1206 post-milestone-close; recertify on triggers in recertificationTriggers � not indefinite valid"
     },
     "typecheck": "npx tsc -b (per regression gate)"
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md � Milestone 1220-1229 closed, Sprint 1206 queued (1230-1239 Background ZIP job queue large archives)",
-    "docs/PHASE_B_UX_ACCEPTANCE.md � Milestone 1220-1229 wrap logged",
-    "docs/PLATFORM_JOB_QUEUE_ZIP_INTELLIGENCE_PLAN.json � milestoneWrapComplete Sprint 1205",
-    "docs/PLATFORM_JOB_QUEUE_ZIP_INTELLIGENCE_PLAN.json � next milestone 1230-1239 Background ZIP job queue large archives Sprint 1206 queued; write_audit standing deferred",
-    "docs/PLATFORM_JOB_QUEUE_ZIP_INTELLIGENCE_HARNESS.json � in-repo harness + probe; three gates unmet; interrupt open",
-    "docs/DRAWING_INTELLIGENCE_ROADMAP.md � Platform job queue (ZIP / intelligence) validation automation checked complete",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json � Sprint 1205 closed, milestone 1220-1229 wrap closed (10/10), Sprint 1206 queued (Platform job queue ZIP / intelligence; write_audit standing deferred)",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md � Sprint 1205 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md � Sprint 1205 close-out note"
+    "docs/PLATFORM_EVOLUTION.md � Milestone 1230-1239 opens (1/10), Sprint 1206 closed, Sprint 1207 queued",
+    "docs/PHASE_B_UX_ACCEPTANCE.md � Milestone 1230-1239 Background ZIP job queue (large archives) opens logged",
+    "docs/BACKGROUND_ZIP_JOB_QUEUE_LARGE_ARCHIVES_PLAN.json � foundationComplete Sprint 1206",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json � Sprint 1206 closed, milestone 1230-1239 active (1/10), Sprint 1207 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md � Sprint 1206 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md � Sprint 1206 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -20325,7 +20344,7 @@
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Milestone 1220-1229 Platform job queue (ZIP / intelligence) closed Sprint 1205; Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 1230-1239 Background ZIP job queue large archives queued Sprint 1206; write_audit_entry remains standing deferred open_interrupt (0/3 gates)"
+      "description": "Milestone 1230-1239 Background ZIP job queue (large archives) opens Sprint 1207 (1/10); Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending"
     },
     {
       "id": "partial-platform-services",
@@ -20336,7 +20355,7 @@
       "id": "platform-certification-stale",
       "severity": "low-governance",
       "relatedFinding": "finding-4",
-      "description": "Platform Certification 3/3 recertified 2026-07-12 Sprint 1205 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
+      "description": "Platform Certification 3/3 recertified 2026-07-12 Sprint 1206 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
     },
     "HIGH: write_audit_entry SECURITY DEFINER executable by authenticated without is_project_member ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â audit forgery risk (docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json)"
   ],
@@ -20428,28 +20447,27 @@
     }
   ],
   "nextSprint": {
-    "number": 1206,
-    "stream1": "Milestone 1230-1239 Background ZIP job queue (large archives) validation automation foundation — sprint-1206-selftest.ts",
-    "stream2": "Platform Certification recertification post-milestone-close (Finding 4) � phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-1206-selftest.ts",
-    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 1220-1229 Platform job queue (ZIP / intelligence) closed (10/10); wrap complete docs/PLATFORM_JOB_QUEUE_ZIP_INTELLIGENCE_PLAN.json",
-    "queueCorrection": "After Platform job queue (ZIP / intelligence) wrap (1220-1229): write_audit_entry remains open_interrupt as STANDING DEFERRED OWNER ACTION (0/3 gates REAL — do NOT re-queue write_audit credential loops). Next unfinished NON-write_audit roadmap item: Background ZIP job queue (large archives) (1230-1239; DRAWING_INTELLIGENCE_ROADMAP.md In development). Theme correction: Metadata review screenshot / UX polish remains DUPLICATE of closed 1160–1169 — skip."
+    "number": 1207,
+    "stream1": "Playwright Background ZIP job queue (large archives) assertion scaffold � sprint-1207-selftest.ts",
+    "stream2": "Sprint Validation 3/3 post-recertification regression guard � phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
+    "selftest": "scripts/sprint-1207-selftest.ts",
+    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 1230-1239 Background ZIP job queue (large archives) opens (1/10); prior Project Digital Brain contracts + growth events wrap complete docs/PROJECT_DIGITAL_BRAIN_CONTRACTS_GROWTH_EVENTS_PLAN.json"
   },
   "oversightSync": {
     "status": "degraded",
     "reason": "api-response-anomaly-monitor-api-and-git",
-    "lastPushAttempt": "2026-07-11T16:49:42.136Z",
+    "lastPushAttempt": "2026-07-11T16:50:06.345Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-11T16:49:42.136Z",
+    "verifiedAt": "2026-07-11T16:50:06.345Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-11T16:49:22.3490569Z",
-    "pushedAt": "2026-07-11T16:49:42.136Z",
-    "remoteHeadSha": "2a56c7fd469f78e5edbe57c89e7e5688cf8afce3",
-    "publicStateVerifiedAt": "2026-07-11T16:49:42.136Z",
+    "sanitizedAt": "2026-07-11T16:53:58.4297425Z",
+    "pushedAt": "2026-07-11T16:50:06.345Z",
+    "remoteHeadSha": "863d96b52386f927bc5503f76fff308c8d6d3814",
+    "publicStateVerifiedAt": "2026-07-11T16:50:06.345Z",
     "publicStateJsonParsePassed": false,
-    "publicStateContentHash": "56d5537b8258326ccc27f4629c410bfffb871d0c6473ca5887f7113ee404a1b5",
+    "publicStateContentHash": "13201553dc0badead0cef29d211923e5ceeba0e5ed32277349301bbfb8bc7b26",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -20483,16 +20501,16 @@
     "publicStateRawCdnHash": "23d97285c138cdb70e8451949cbe8f40a956f2af50ff318ad73913d3e2895364",
     "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-11T16:49:42.136Z",
-      "rawEndpointVerifiedAt": "2026-07-11T16:49:42.136Z",
-      "gitOriginVerifiedAt": "2026-07-11T16:49:42.136Z",
+      "githubApiVerifiedAt": "2026-07-11T16:50:06.345Z",
+      "rawEndpointVerifiedAt": "2026-07-11T16:50:06.345Z",
+      "gitOriginVerifiedAt": "2026-07-11T16:50:06.345Z",
       "routeContentHashes": {
         "github-api": null,
         "raw-cdn": "23d97285c138cdb70e8451949cbe8f40a956f2af50ff318ad73913d3e2895364",
-        "git-origin": "56d5537b8258326ccc27f4629c410bfffb871d0c6473ca5887f7113ee404a1b5"
+        "git-origin": "13201553dc0badead0cef29d211923e5ceeba0e5ed32277349301bbfb8bc7b26"
       },
       "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "2a56c7fd469f78e5edbe57c89e7e5688cf8afce3",
+      "canonicalRemoteHeadSha": "863d96b52386f927bc5503f76fff308c8d6d3814",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 1952,
       "classification": "api-response-anomaly-monitor-api-and-git"
@@ -20511,9 +20529,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 1205,
+    "lastSyncedSprint": 786,
     "lastSyncedAt": "2026-07-12",
-    "milestoneProgress": "1220-1229 WRAP CLOSED (10/10)",
+    "milestoneProgress": "1230-1239 OPENS (1/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -20717,7 +20735,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ Knowledge Library version lifecycle ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ cross-project knowledge reuse ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ knowledge similarity matching ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ proactive knowledge warning ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ user outcome feedback ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ confidence evolution ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase B — Platform job queue (ZIP / intelligence) Milestone milestone (1220-1229) active — Sprint 1205 closed; Sprint 1206 queued",
+    "phaseE": "Drawing Intelligence Phase B — Background ZIP job queue (large archives) Milestone milestone (1230-1239) active — Sprint 1206 closed; Sprint 1207 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -20730,8 +20748,8 @@
     "sprint382": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â mid-milestone 374ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators)",
     "sprint379": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Drawing Intelligence Phase B — Platform job queue (ZIP / intelligence) Milestone (1220-1229) closed Sprint 1205; 1230-1239 Background ZIP job queue large archives queued Sprint 1206; write_audit standing deferred",
-    "phaseB": "Platform job queue (ZIP / intelligence) complete � milestone closed Sprint 1205; Background ZIP job queue large archives (1230-1239) opens Sprint 1206; write_audit_entry remains standing deferred open_interrupt (0/3 gates)"
+    "phaseD": "Drawing Intelligence Phase B — Background ZIP job queue (large archives) Milestone (1230-1239) active Sprint 1206 (1/10); 1230-1239 Phase B UX Sign-off Milestone closed Sprint 525",
+    "phaseB": "Background ZIP job queue (large archives) milestone active (1230-1239) � technical items complete; UX validation automation foundation Sprint 1206"
   },
   "digitalBrainImpact": {
     "sprint376": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -20827,7 +20845,7 @@
     "sprint268": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 1220-1229 10/10 sprints closed (100%); latest growth-event sprint 400; Sprint 1205 closed; Sprint 1206 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 1230-1239 1/10 sprints closed (10%); latest growth-event sprint 400; Sprint 1206 closed; Sprint 1207 queued per nextSprint",
     "sprint372": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â mid-milestone 364ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators)",
     "sprint371": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· isExplainabilityEnrichedDecisionTimelineEntry ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â milestone 370ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“379 wrap completeness review confirms supersede invalidation full stack audit (growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· project assistant context engine wiring); milestone closed; 380ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“389 Phase C Revision Management opens Sprint 364",
@@ -21608,7 +21626,8 @@
     "sprint1202": "No new growth event kinds — Platform job queue (ZIP / intelligence) cold-start regeneration after remote seed; Milestone 1220–1229 at 7/10",
     "sprint1203": "No new growth event kinds — Platform job queue (ZIP / intelligence) full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 1220–1229 at 8/10",
     "sprint1204": "No new growth event kinds — Platform job queue (ZIP / intelligence) remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 1220–1229 at 9/10",
-    "sprint1205": "No new growth event kinds � milestone 1220-1229 wrap completeness review confirms Platform job queue (ZIP / intelligence) full stack audit (foundation � Playwright � Phase B matrix � UI assertions � mirror � hydrate � cold-start � hydrate/persist � round-trip); milestone closed; 1220-1229 opens Sprint 1206"
+    "sprint1205": "No new growth event kinds � milestone 1220-1229 wrap completeness review confirms Platform job queue (ZIP / intelligence) full stack audit (foundation � Playwright � Phase B matrix � UI assertions � mirror � hydrate � cold-start � hydrate/persist � round-trip); milestone closed; 1220-1229 opens Sprint 1206",
+    "sprint1206": "No new growth event kinds � Background ZIP job queue (large archives) foundation defines role critical path + checklist contracts for site-team workflow validation; Milestone 1230-1239 opens Sprint 1207"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -22452,7 +22471,8 @@
     "sprint1202": "When localStorage cleared after prior remote seed, di-platform-job-queue-zip-intelligence-* indexed sheets regenerate from durable Supabase intelligence_json; Milestone 1220–1229 at 7/10",
     "sprint1203": "When VITE_PROJECT_KG_PERSIST=1, di-platform-job-queue-zip-intelligence-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 1220–1229 at 8/10",
     "sprint1204": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 1220–1229 at 9/10",
-    "sprint1205": "Milestone 1220-1229 wrap confirms durable Platform job queue (ZIP / intelligence) validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 1220-1229 Platform job queue opens Sprint 1206"
+    "sprint1205": "Milestone 1220-1229 wrap confirms durable Platform job queue (ZIP / intelligence) validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 1220-1229 Platform job queue opens Sprint 1206",
+    "sprint1206": "Background ZIP job queue (large archives) foundation � role-based critical path coverage for visual_overlay � foreman � PM � QS � mobile/tablet; Milestone 1230-1239 opens Sprint 1207"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â drawing revision id ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· superseded-by revision id ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· invalidation scope playback lines ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· lessons_learned stage badge ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-355-selftest.ts",
@@ -22538,7 +22558,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase B — Platform job queue (ZIP / intelligence) Milestone (1220-1229) active 10/10; Sprint 1205 closed; Sprint 1206 queued (Platform Certification recertification post-milestone-close (Finding 4) � phase- · Milestone 1230-1239 Background ZIP job queue (large archives) validation automat)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase B — Background ZIP job queue (large archives) Milestone (1230-1239) active 1/10; Sprint 1206 closed; Sprint 1207 queued (Sprint Validation 3/3 post-recertification regression guard � phase-b-wynyard-va · Playwright Background ZIP job queue (large archives) assertion scaffold � sprint)",
     "sprint372": "Mid-milestone 364ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“368 Drawing Intelligence Phase C revision supersede completeness review ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â Phase C revision supersede stack partial audit confirms growth events ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Memory audit ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· viewer chrome ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Decision Timeline ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· explainability ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· AI panel indicators ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â phaseCRevisionSupersedeExplainabilityEntries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· isExplainabilityEnrichedDecisionTimelineEntry ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â takeoff COS pipeline stage badge ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· phaseCRevisionSupersedeTimelineEntryCount ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· sprint-366-selftest.ts",
@@ -23314,7 +23334,8 @@
     "sprint1202": "Milestone 1220–1229 Drawing Intelligence Phase D — Construction Memory playback at 7/10 — cold-start regeneration after remote seed — sprint-1202-selftest.ts",
     "sprint1203": "Milestone 1220–1229 Drawing Intelligence Phase D — Construction Memory playback at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-1203-selftest.ts",
     "sprint1204": "Milestone 1220–1229 Drawing Intelligence Phase D — Construction Memory playback at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-1204-selftest.ts",
-    "sprint1205": "Milestone 1220-1229 Platform job queue (ZIP / intelligence) wrap completeness review � full stack audit; milestone closed; 1220-1229 opens Sprint 1206 � sprint-1205-selftest.ts"
+    "sprint1205": "Milestone 1220-1229 Platform job queue (ZIP / intelligence) wrap completeness review � full stack audit; milestone closed; 1220-1229 opens Sprint 1206 � sprint-1205-selftest.ts",
+    "sprint1206": "Milestone 1230-1239 Drawing Intelligence Phase D � Construction Memory playback opens � validation automation foundation � sprint-1206-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
@@ -23329,7 +23350,7 @@
     "daysRemaining": 3,
     "computedAsOf": "2026-07-09",
     "status": "at_risk",
-    "statusRationale": "Milestone 1220-1229 closed Sprint 1205; Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Platform job queue (ZIP / intelligence) full stack wrap complete (docs/PLATFORM_JOB_QUEUE_ZIP_INTELLIGENCE_PLAN.json); Platform Certification 3/3 recertified Sprint 1205 (Finding 4); next milestone 1230-1239 Background ZIP job queue large archives Sprint 1206 queued; write_audit standing deferred"
+    "statusRationale": "Milestone 1230-1239 opens Sprint 1207 (1/10); Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase E Commercial Intelligence Estimating/BoQ foundation (docs/BACKGROUND_ZIP_JOB_QUEUE_LARGE_ARCHIVES_PLAN.json); Phase B UX Sign-off wrap complete (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Platform Certification 3/3 recertified Sprint 1206 (Finding 4); Milestone 540�549 closed Sprint 525"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
@@ -23390,7 +23411,7 @@
       "evidence": "docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json",
       "detectedAt": "2026-07-10T07:47:19.910Z",
       "remediationGate": "production_deploy_plus_negative_security_tests_plus_completion_evidence",
-      "note": "Remains open until production deployment of membership guard, negative security tests, and completionEvidence are recorded. Platform job queue (ZIP / intelligence) (1220-1229) records in-repo harness + probe attempt only and does NOT satisfy this gate unless all three gates are REAL. write_audit_entry remains open_interrupt until production deploy + negative security tests + completionEvidence are ACTUALLY recorded.",
+      "note": "Remains open until production deployment of membership guard, negative security tests, and completionEvidence are recorded. Background ZIP job queue (large archives) (1230-1239) tooling does not satisfy this gate.",
       "evidenceArtifact": "docs/WRITE_AUDIT_THREE_GATE_PRODUCTION_CLOSURE_HARNESS.json",
       "gates": {
         "productionDeploy": false,
