@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1180–1189 Canvas marker lifecycle validation automation (9/10); Sprint 1165 queued.
+**Status:** Active — Milestone 1180-1189 Canvas marker lifecycle validation automation CLOSED (10/10); Sprint 1166 queued (1190-1199 Smart search indexing for legacy uploads validation automation).
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1164 closed  
-**Next sprint:** 1165 queued
-**Milestone:** 1170-1179 WRAP CLOSED (10/10) — 1180-1189 Canvas marker lifecycle validation automation opens Sprint 1156
+**Current sprint:** 1165 closed  
+**Next sprint:** 1166 queued (1190-1199 Smart search indexing for legacy uploads validation automation)
+**Milestone:** 1180-1189 WRAP CLOSED (10/10) — 1190-1199 Smart search indexing for legacy uploads validation automation opens Sprint 1166
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
@@ -559,11 +559,13 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (1146)
+## Next sprint (1156)
 
-- Stream 1: Milestone 1180-1189 Canvas marker lifecycle validation automation foundation — sprint-1156-selftest.ts
+- Stream 1: Milestone 1190-1199 Smart search indexing for legacy uploads foundation — sprint-1166-selftest.ts
 - Stream 2: Platform Certification recertification post-milestone-close (Finding 4) � PHASE_B_RUNS=3
-- Theme: 1180-1189 Canvas marker lifecycle validation automation — extend phase-b-wynyard-validation.ts for canvas marker colour/state transitions (DRAWING_INTELLIGENCE_ROADMAP.md Deferred from Phase B; non-write_audit; write_audit_entry remains standing deferred open_interrupt)
+- Theme: 1190-1199 Smart search indexing for legacy uploads — backfill intelligence_json for pre-migration uploads (DRAWING_INTELLIGENCE_ROADMAP.md In development; non-write_audit; write_audit_entry remains standing deferred open_interrupt)
+
+
 
 
 
