@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1340–1339 Phase C visual revision overlay continuous (9/10); Sprint 1345 queued.
+**Status:** Active — Milestone 1360-1369 Phase C visual revision overlay continuous CLOSED (10/10); Sprint 1346 queued (1370-1379 Phase C superseded revision workflow continuous).
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1344 closed  
-**Next sprint:** 1345 queued
-**Milestone:** 1350-1359 WRAP CLOSED (10/10) — 1360-1369 Phase C visual revision overlay continuous opens Sprint 1336
+**Current sprint:** 1345 closed  
+**Next sprint:** 1346 queued (1370-1379 Phase C superseded revision workflow continuous)
+**Milestone:** 1360-1369 WRAP CLOSED (10/10) — 1370-1379 Phase C superseded revision workflow continuous opens Sprint 1346
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
@@ -559,11 +559,13 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (1336)
+## Next sprint (1346)
 
-- Stream 1: Milestone 1360-1369 Phase C visual revision overlay continuous validation automation foundation — sprint-1336-selftest.ts
+- Stream 1: Milestone 1370-1379 Phase C superseded revision workflow continuous validation automation foundation — sprint-1346-selftest.ts
 - Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
-- Theme: 1360-1369 Phase C visual revision overlay continuous — visual revision overlay / side-by-side swipe continuous (DRAWING_INTELLIGENCE_ROADMAP.md Phase C; non-write_audit; write_audit_entry remains standing deferred open_interrupt)
+- Theme: 1370-1379 Phase C superseded revision workflow continuous — superseded revision workflow continuous (DRAWING_INTELLIGENCE_ROADMAP.md Phase C; non-write_audit; write_audit_entry remains standing deferred open_interrupt)
+
+
 
 
 
