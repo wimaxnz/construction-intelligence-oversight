@@ -17601,20 +17601,20 @@
     "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 1100-1109 Phase H live-apply owner apply UI hardening active (9/10); remote read-after-write round-trip complete docs/PHASE_H_LIVE_APPLY_OWNER_APPLY_UI_HARDENING_PLAN.json"
   },
   "oversightSync": {
-    "status": "degraded",
-    "reason": "api-response-anomaly-monitor-api-and-git",
-    "lastPushAttempt": "2026-07-11T14:37:51.252Z",
+    "status": "ok",
+    "reason": null,
+    "lastPushAttempt": "2026-07-11T14:38:15.647Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-11T14:37:51.252Z",
+    "verifiedAt": "2026-07-11T14:38:15.647Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
     "sanitizedAt": "2026-07-11T14:37:54.7938549Z",
-    "pushedAt": "2026-07-11T14:37:51.252Z",
-    "remoteHeadSha": "d8fdc0c3a4d1f273c90236b6099f3278bd0f7bc8",
-    "publicStateVerifiedAt": "2026-07-11T14:37:51.252Z",
+    "pushedAt": "2026-07-11T14:38:15.647Z",
+    "remoteHeadSha": "0ff343be5770a752722d2c04d0c6cf73e10d8f3a",
+    "publicStateVerifiedAt": "2026-07-11T14:38:15.647Z",
     "publicStateJsonParsePassed": false,
-    "publicStateContentHash": "3e5531aeda48a14e5f07c0ac1b97fb182c8fc013166bd93194840dbe8a99eb3c",
+    "publicStateContentHash": "a8b4eae82f844e0fba4a3510d4e85ee90554294d06c70f8bc4678596743a249b",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -17645,19 +17645,19 @@
       "note": "bridgeDocsPublished retired ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â prior list falsely claimed bridge ops docs were on public main; only push allowlist + inbox are public"
     },
     "publicStateVerificationSource": "multi-route",
-    "publicStateRawCdnHash": "30dc955b57a14b5bfe33c86ec124e10ebd34ed125f83ee9115b1c4343d57d3bf",
-    "publicStateRawCdnStale": true,
+    "publicStateRawCdnHash": "a8b4eae82f844e0fba4a3510d4e85ee90554294d06c70f8bc4678596743a249b",
+    "publicStateRawCdnStale": false,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-11T14:37:51.252Z",
-      "rawEndpointVerifiedAt": "2026-07-11T14:37:51.252Z",
-      "gitOriginVerifiedAt": "2026-07-11T14:37:51.252Z",
+      "githubApiVerifiedAt": "2026-07-11T14:38:15.647Z",
+      "rawEndpointVerifiedAt": "2026-07-11T14:38:15.647Z",
+      "gitOriginVerifiedAt": "2026-07-11T14:38:15.647Z",
       "routeContentHashes": {
         "github-api": null,
-        "raw-cdn": "30dc955b57a14b5bfe33c86ec124e10ebd34ed125f83ee9115b1c4343d57d3bf",
-        "git-origin": "3e5531aeda48a14e5f07c0ac1b97fb182c8fc013166bd93194840dbe8a99eb3c"
+        "raw-cdn": "a8b4eae82f844e0fba4a3510d4e85ee90554294d06c70f8bc4678596743a249b",
+        "git-origin": "a8b4eae82f844e0fba4a3510d4e85ee90554294d06c70f8bc4678596743a249b"
       },
-      "routeHashesMatch": false,
-      "canonicalRemoteHeadSha": "d8fdc0c3a4d1f273c90236b6099f3278bd0f7bc8",
+      "routeHashesMatch": true,
+      "canonicalRemoteHeadSha": "0ff343be5770a752722d2c04d0c6cf73e10d8f3a",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 1710,
       "classification": "api-response-anomaly-monitor-api-and-git"
