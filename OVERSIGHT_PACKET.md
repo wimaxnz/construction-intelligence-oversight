@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1170–1179 Reports propagation from drawing events (9/10); Sprint 1155 queued.
+**Status:** Active — Milestone 1170-1179 Reports propagation from drawing events CLOSED (10/10); Sprint 1156 queued (1180-1189 Canvas marker lifecycle validation automation).
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1154 closed  
-**Next sprint:** 1155 queued
-**Milestone:** 1160-1169 WRAP CLOSED (10/10) — 1170-1179 Reports propagation from drawing events opens Sprint 1146; write_audit_entry remains standing deferred open_interrupt
+**Current sprint:** 1155 closed  
+**Next sprint:** 1156 queued (1180-1189 Canvas marker lifecycle validation automation)
+**Milestone:** 1170-1179 WRAP CLOSED (10/10) — 1180-1189 Canvas marker lifecycle validation automation opens Sprint 1156
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
@@ -559,11 +559,13 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (1136)
+## Next sprint (1146)
 
-- Stream 1: Milestone 1170-1179 Reports propagation from drawing events foundation — sprint-1146-selftest.ts
+- Stream 1: Milestone 1180-1189 Canvas marker lifecycle validation automation foundation — sprint-1156-selftest.ts
 - Stream 2: Platform Certification recertification post-milestone-close (Finding 4) � PHASE_B_RUNS=3
-- Theme: 1170-1179 Reports propagation from drawing events — wire report panel (onOpenReports) to drawing_pin_events / Construction Memory bus (DRAWING_INTELLIGENCE_ROADMAP.md Deferred from Phase B; non-write_audit; write_audit_entry remains standing deferred open_interrupt)
+- Theme: 1180-1189 Canvas marker lifecycle validation automation — extend phase-b-wynyard-validation.ts for canvas marker colour/state transitions (DRAWING_INTELLIGENCE_ROADMAP.md Deferred from Phase B; non-write_audit; write_audit_entry remains standing deferred open_interrupt)
+
+
 
 
 
