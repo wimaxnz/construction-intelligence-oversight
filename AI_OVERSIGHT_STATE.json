@@ -3257,64 +3257,124 @@
       "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 870-879 Enterprise Drawing Management — Job progress UI deferred to Sprint 846"
     },
     "sprint846": {
-      "stream1": "Milestone 870–879 Missing / broken reference detection validation automation foundation — missingBrokenReferenceDetectionValidationService · MISSING_BROKEN_REFERENCE_DETECTION_PLAN.json · sprint-856-selftest.ts",
-      "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
-      "validation": "Milestone 870–879 opens selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
-      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; full Playwright Missing / broken reference detection role-path UI assertions deferred to Sprint 857+"
+      "stream1": "Milestone 860ΓÇô869 Job progress UI validation automation foundation ΓÇö jobProgressUiValidationService ┬╖ JOB_PROGRESS_UI_PLAN.json ┬╖ sprint-846-selftest.ts",
+      "stream2": "Platform Certification recertification post-milestone-close (Finding 4) ΓÇö phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) ┬╖ docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md ┬╖ docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 860ΓÇô869 opens selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; full Playwright Job progress UI role-path UI assertions deferred to Sprint 847+"
     },
     "sprint847": {
-      "stream1": "Playwright Missing / broken reference detection assertion scaffold — parseMissingBrokenReferenceDetectionDomObservation · assertMissingBrokenReferenceDetectionObservation · buildMissingBrokenReferenceDetectionPlaywrightScaffoldSummary · phaseCBulkUploadScaffold · phase-b-wynyard-validation.ts UI-MISSING-BROKEN-REFERENCE-DETECTION · sprint-857-selftest.ts",
-      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (exclusive re-run for new result id; stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
-      "validation": "Milestone 870–879 at 2/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
-      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; full Missing / broken reference detection UI assertions deferred to Sprint 858+"
+      "stream1": "Playwright Job progress UI assertion scaffold ΓÇö parseJobProgressUiDomObservation ┬╖ assertJobProgressUiObservation ┬╖ buildJobProgressUiPlaywrightScaffoldSummary ┬╖ phaseCBulkUploadScaffold ┬╖ phase-b-wynyard-validation.ts UI-JOB-PROGRESS-UI ┬╖ sprint-847-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard ΓÇö phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (exclusive re-run for new result id; stampede=0) ┬╖ docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md ┬╖ docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 860ΓÇô869 at 2/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); UI-JOB-PROGRESS-UI passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; full Job progress UI UI assertions deferred to Sprint 848+"
     },
     "sprint848": {
-      "stream1": "Phase B validation matrix Missing / broken reference detection row wiring — buildMissingBrokenReferenceDetectionPhaseBMatrixRow · resolveMissingBrokenReferenceDetectionPhaseBMatrixStatus · MISSING_BROKEN_REFERENCE_DETECTION_PHASE_B_MATRIX_AREA · phase-b-wynyard-validation.ts · sprint-858-selftest.ts",
-      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
-      "validation": "Milestone 870–879 at 3/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); Phase B matrix Missing / broken reference detection row wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
-      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; fuller Missing / broken reference detection UI assertions deferred to Sprint 859+"
+      "stream1": "Phase B validation matrix Job progress UI row wiring ΓÇö buildJobProgressUiPhaseBMatrixRow ┬╖ resolveJobProgressUiPhaseBMatrixStatus ┬╖ JOB_PROGRESS_UI_PHASE_B_MATRIX_AREA ┬╖ phase-b-wynyard-validation.ts ┬╖ sprint-848-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard ΓÇö phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) ┬╖ docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md ┬╖ docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 860ΓÇô869 at 3/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); Phase B matrix Job progress UI row wired; UI-JOB-PROGRESS-UI passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; fuller Job progress UI UI assertions deferred to Sprint 849+"
     },
     "sprint849": {
-      "stream1": "Missing / broken reference detection UI assertions — assertMissingBrokenReferenceDetectionUiAssertions · runphaseCBulkUploadUiAssertions · phaseCBulkUploadScaffold · phase-b-wynyard-validation.ts · sprint-859-selftest.ts",
-      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
-      "validation": "Milestone 870–879 at 4/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); Missing / broken reference detection UI assertions wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
-      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Missing / broken reference detection localStorage mirror reconciliation deferred to Sprint 860+"
+      "stream1": "Job progress UI UI assertions ΓÇö assertJobProgressUiUiAssertions ┬╖ runphaseCBulkUploadUiAssertions ┬╖ phaseCBulkUploadScaffold ┬╖ phase-b-wynyard-validation.ts ┬╖ sprint-849-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard ΓÇö phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) ┬╖ docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md ┬╖ docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 860ΓÇô869 at 4/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); Job progress UI UI assertions wired; UI-JOB-PROGRESS-UI passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Job progress UI localStorage mirror reconciliation deferred to Sprint 850+"
     },
     "sprint850": {
-      "stream1": "Missing / broken reference detection localStorage mirror reconciliation — assertMissingBrokenReferenceDetectionLocalStorageMirrorReconciliation · reconcileMissingBrokenReferenceDetectionLocalStorageMirror · parseMissingBrokenReferenceDetectionLocalStorageMirror · runphaseCBulkUploadLocalStorageMirrorReconciliation · phase-b-wynyard-validation.ts · sprint-860-selftest.ts",
-      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
-      "validation": "Milestone 870–879 at 5/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); localStorage mirror reconciliation wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
-      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Missing / broken reference detection remote seed → localStorage hydrate deferred to Sprint 521+"
+      "stream1": "Job progress UI localStorage mirror reconciliation ΓÇö assertJobProgressUiLocalStorageMirrorReconciliation ┬╖ reconcileJobProgressUiLocalStorageMirror ┬╖ parseJobProgressUiLocalStorageMirror ┬╖ runphaseCBulkUploadLocalStorageMirrorReconciliation ┬╖ phase-b-wynyard-validation.ts ┬╖ sprint-850-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard ΓÇö phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) ┬╖ docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md ┬╖ docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 860ΓÇô869 at 5/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); localStorage mirror reconciliation wired; UI-JOB-PROGRESS-UI passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Job progress UI remote seed ΓåÆ localStorage hydrate deferred to Sprint 521+"
     },
     "sprint851": {
-      "stream1": "Missing / broken reference detection remote seed → localStorage hydrate — assertMissingBrokenReferenceDetectionRemoteSeedLocalStorageHydrate · seedphaseCBulkUploadLocalStorageFromRemoteHydrate · buildMissingBrokenReferenceDetectionLocalStorageHydratePayload · runphaseCBulkUploadRemoteSeedLocalStorageHydrate · phase-b-wynyard-validation.ts · sprint-861-selftest.ts",
-      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
-      "validation": "Milestone 870–879 at 6/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote seed → localStorage hydrate wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
-      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Missing / broken reference detection cold-start regeneration after remote seed deferred to Sprint 522+"
+      "stream1": "Job progress UI remote seed ΓåÆ localStorage hydrate ΓÇö assertJobProgressUiRemoteSeedLocalStorageHydrate ┬╖ seedphaseCBulkUploadLocalStorageFromRemoteHydrate ┬╖ buildJobProgressUiLocalStorageHydratePayload ┬╖ runphaseCBulkUploadRemoteSeedLocalStorageHydrate ┬╖ phase-b-wynyard-validation.ts ┬╖ sprint-851-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard ΓÇö phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) ┬╖ docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md ┬╖ docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 860ΓÇô869 at 6/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote seed ΓåÆ localStorage hydrate wired; UI-JOB-PROGRESS-UI passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Job progress UI cold-start regeneration after remote seed deferred to Sprint 522+"
     },
     "sprint852": {
-      "stream1": "Missing / broken reference detection cold-start regeneration after remote seed — assertMissingBrokenReferenceDetectionColdStartRegenerationAfterRemoteSeed · regeneratephaseCBulkUploadLocalStorageAfterRemoteSeedColdStart · isMissingBrokenReferenceDetectionLocalStorageClearedOrEmpty · runphaseCBulkUploadColdStartRegenerationAfterRemoteSeed · phase-b-wynyard-validation.ts · sprint-862-selftest.ts",
-      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
-      "validation": "Milestone 870–879 at 7/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); cold-start regeneration after remote seed wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
-      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Missing / broken reference detection full hydrate/persist path deferred to Sprint 523+"
+      "stream1": "Job progress UI cold-start regeneration after remote seed ΓÇö assertJobProgressUiColdStartRegenerationAfterRemoteSeed ┬╖ regeneratephaseCBulkUploadLocalStorageAfterRemoteSeedColdStart ┬╖ isJobProgressUiLocalStorageClearedOrEmpty ┬╖ runphaseCBulkUploadColdStartRegenerationAfterRemoteSeed ┬╖ phase-b-wynyard-validation.ts ┬╖ sprint-852-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard ΓÇö phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) ┬╖ docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md ┬╖ docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 860ΓÇô869 at 7/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); cold-start regeneration after remote seed wired; UI-JOB-PROGRESS-UI passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Job progress UI full hydrate/persist path deferred to Sprint 523+"
     },
     "sprint853": {
-      "stream1": "Missing / broken reference detection full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — assertMissingBrokenReferenceDetectionFullHydratePersistPath · dualWritephaseCBulkUploadStateRemotePath · buildMissingBrokenReferenceDetectionFullHydratePersistPathSummary · runphaseCBulkUploadFullHydratePersistPath · phase-b-wynyard-validation.ts · sprint-863-selftest.ts",
-      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
-      "validation": "Milestone 870–879 at 8/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); full hydrate / persist path dual-write / remote-authoritative wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
-      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Missing / broken reference detection remote read-after-write round-trip deferred to Sprint 524+"
+      "stream1": "Job progress UI full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 ΓÇö assertJobProgressUiFullHydratePersistPath ┬╖ dualWritephaseCBulkUploadStateRemotePath ┬╖ buildJobProgressUiFullHydratePersistPathSummary ┬╖ runphaseCBulkUploadFullHydratePersistPath ┬╖ phase-b-wynyard-validation.ts ┬╖ sprint-853-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard ΓÇö phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) ┬╖ docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md ┬╖ docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 860ΓÇô869 at 8/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); full hydrate / persist path dual-write / remote-authoritative wired; UI-JOB-PROGRESS-UI passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Job progress UI remote read-after-write round-trip deferred to Sprint 524+"
     },
     "sprint854": {
-      "stream1": "Missing / broken reference detection remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — assertMissingBrokenReferenceDetectionRemoteReadAfterWriteRoundTrip · roundTripMissingBrokenReferenceDetectionStateRemoteReadAfterWrite · buildMissingBrokenReferenceDetectionRemoteReadAfterWriteRoundTripSummary · runphaseCBulkUploadRemoteReadAfterWriteRoundTrip · phase-b-wynyard-validation.ts · sprint-864-selftest.ts",
-      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
-      "validation": "Milestone 870–879 at 9/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
-      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Milestone 870–879 wrap review deferred to Sprint 525"
+      "stream1": "Job progress UI remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 ΓÇö assertJobProgressUiRemoteReadAfterWriteRoundTrip ┬╖ roundTripJobProgressUiStateRemoteReadAfterWrite ┬╖ buildJobProgressUiRemoteReadAfterWriteRoundTripSummary ┬╖ runphaseCBulkUploadRemoteReadAfterWriteRoundTrip ┬╖ phase-b-wynyard-validation.ts ┬╖ sprint-854-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard ΓÇö phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) ┬╖ docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md ┬╖ docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 860ΓÇô869 at 9/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-JOB-PROGRESS-UI passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Milestone 860ΓÇô869 wrap review deferred to Sprint 525"
     },
     "sprint855": {
+      "stream1": "Milestone wrap review ΓÇö Drawing Intelligence Job progress UI completeness ΓÇö sprint-855-selftest.ts",
+      "stream2": "Milestone 870ΓÇô879 Job progress UI full stack completeness review ΓÇö sprint-855-selftest.ts audits stack (foundation ┬╖ Playwright scaffold ┬╖ Phase B matrix ┬╖ UI assertions ┬╖ localStorage mirror reconciliation ┬╖ remote seed hydrate ┬╖ cold-start regeneration ┬╖ full hydrate/persist path ┬╖ remote read-after-write round-trip) ┬╖ PHASE_B_RUNS=3 (consecutiveGreen reuse / exclusive when needed) ┬╖ Platform Certification recertification post-milestone-close (Finding 4)",
+      "validation": "Milestone wrap selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 870-879 Enterprise Drawing Management ΓÇö Job progress UI deferred to Sprint 846"
+    },
+    "sprint856": {
+      "stream1": "Milestone 880–889 Missing / broken reference detection validation automation foundation — missingBrokenReferenceDetectionValidationService · MISSING_BROKEN_REFERENCE_DETECTION_PLAN.json · sprint-856-selftest.ts",
+      "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 880–889 opens selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; full Playwright Missing / broken reference detection role-path UI assertions deferred to Sprint 857+"
+    },
+    "sprint857": {
+      "stream1": "Playwright Missing / broken reference detection assertion scaffold — parseMissingBrokenReferenceDetectionDomObservation · assertMissingBrokenReferenceDetectionObservation · buildMissingBrokenReferenceDetectionPlaywrightScaffoldSummary · phaseCBulkUploadScaffold · phase-b-wynyard-validation.ts UI-MISSING-BROKEN-REFERENCE-DETECTION · sprint-857-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (exclusive re-run for new result id; stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 880–889 at 2/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; full Missing / broken reference detection UI assertions deferred to Sprint 858+"
+    },
+    "sprint858": {
+      "stream1": "Phase B validation matrix Missing / broken reference detection row wiring — buildMissingBrokenReferenceDetectionPhaseBMatrixRow · resolveMissingBrokenReferenceDetectionPhaseBMatrixStatus · MISSING_BROKEN_REFERENCE_DETECTION_PHASE_B_MATRIX_AREA · phase-b-wynyard-validation.ts · sprint-858-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 880–889 at 3/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); Phase B matrix Missing / broken reference detection row wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; fuller Missing / broken reference detection UI assertions deferred to Sprint 859+"
+    },
+    "sprint859": {
+      "stream1": "Missing / broken reference detection UI assertions — assertMissingBrokenReferenceDetectionUiAssertions · runphaseCBulkUploadUiAssertions · phaseCBulkUploadScaffold · phase-b-wynyard-validation.ts · sprint-859-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 880–889 at 4/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); Missing / broken reference detection UI assertions wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Missing / broken reference detection localStorage mirror reconciliation deferred to Sprint 860+"
+    },
+    "sprint860": {
+      "stream1": "Missing / broken reference detection localStorage mirror reconciliation — assertMissingBrokenReferenceDetectionLocalStorageMirrorReconciliation · reconcileMissingBrokenReferenceDetectionLocalStorageMirror · parseMissingBrokenReferenceDetectionLocalStorageMirror · runphaseCBulkUploadLocalStorageMirrorReconciliation · phase-b-wynyard-validation.ts · sprint-860-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 880–889 at 5/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); localStorage mirror reconciliation wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Missing / broken reference detection remote seed → localStorage hydrate deferred to Sprint 521+"
+    },
+    "sprint861": {
+      "stream1": "Missing / broken reference detection remote seed → localStorage hydrate — assertMissingBrokenReferenceDetectionRemoteSeedLocalStorageHydrate · seedphaseCBulkUploadLocalStorageFromRemoteHydrate · buildMissingBrokenReferenceDetectionLocalStorageHydratePayload · runphaseCBulkUploadRemoteSeedLocalStorageHydrate · phase-b-wynyard-validation.ts · sprint-861-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 880–889 at 6/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote seed → localStorage hydrate wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Missing / broken reference detection cold-start regeneration after remote seed deferred to Sprint 522+"
+    },
+    "sprint862": {
+      "stream1": "Missing / broken reference detection cold-start regeneration after remote seed — assertMissingBrokenReferenceDetectionColdStartRegenerationAfterRemoteSeed · regeneratephaseCBulkUploadLocalStorageAfterRemoteSeedColdStart · isMissingBrokenReferenceDetectionLocalStorageClearedOrEmpty · runphaseCBulkUploadColdStartRegenerationAfterRemoteSeed · phase-b-wynyard-validation.ts · sprint-862-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 880–889 at 7/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); cold-start regeneration after remote seed wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Missing / broken reference detection full hydrate/persist path deferred to Sprint 523+"
+    },
+    "sprint863": {
+      "stream1": "Missing / broken reference detection full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — assertMissingBrokenReferenceDetectionFullHydratePersistPath · dualWritephaseCBulkUploadStateRemotePath · buildMissingBrokenReferenceDetectionFullHydratePersistPathSummary · runphaseCBulkUploadFullHydratePersistPath · phase-b-wynyard-validation.ts · sprint-863-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 880–889 at 8/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); full hydrate / persist path dual-write / remote-authoritative wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Missing / broken reference detection remote read-after-write round-trip deferred to Sprint 524+"
+    },
+    "sprint864": {
+      "stream1": "Missing / broken reference detection remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — assertMissingBrokenReferenceDetectionRemoteReadAfterWriteRoundTrip · roundTripMissingBrokenReferenceDetectionStateRemoteReadAfterWrite · buildMissingBrokenReferenceDetectionRemoteReadAfterWriteRoundTripSummary · runphaseCBulkUploadRemoteReadAfterWriteRoundTrip · phase-b-wynyard-validation.ts · sprint-864-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 880–889 at 9/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Milestone 880–889 wrap review deferred to Sprint 525"
+    },
+    "sprint865": {
       "stream1": "Milestone wrap review — Drawing Intelligence Missing / broken reference detection completeness — sprint-865-selftest.ts",
       "stream2": "Milestone 880–889 Missing / broken reference detection full stack completeness review — sprint-865-selftest.ts audits stack (foundation · Playwright scaffold · Phase B matrix · UI assertions · localStorage mirror reconciliation · remote seed hydrate · cold-start regeneration · full hydrate/persist path · remote read-after-write round-trip) · PHASE_B_RUNS=3 (consecutiveGreen reuse / exclusive when needed) · Platform Certification recertification post-milestone-close (Finding 4)",
       "validation": "Milestone wrap selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
-      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 880-889 Enterprise Drawing Management — Missing / broken reference detection deferred to Sprint 856"
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 890-899 Enterprise Drawing Management — Multi-discipline packages deferred to Sprint 866"
     }
   },
   "changedFiles": {
@@ -10896,6 +10956,160 @@
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ],
     "sprint846": [
+      "src/platform/validation/jobProgressUiValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/JOB_PROGRESS_UI_PLAN.json",
+      "scripts/sprint-846-selftest.ts",
+      "scripts/sprint-846-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint847": [
+      "src/platform/validation/jobProgressUiValidationService.ts",
+      "[REDACTED-path]",
+      "[REDACTED-path]",
+      "[REDACTED-path]",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/JOB_PROGRESS_UI_PLAN.json",
+      "scripts/sprint-847-selftest.ts",
+      "scripts/sprint-847-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint848": [
+      "src/platform/validation/jobProgressUiValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/JOB_PROGRESS_UI_PLAN.json",
+      "scripts/sprint-848-selftest.ts",
+      "scripts/sprint-848-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint849": [
+      "src/platform/validation/jobProgressUiValidationService.ts",
+      "[REDACTED-path]",
+      "src/platform/index.ts",
+      "[REDACTED-path]",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/JOB_PROGRESS_UI_PLAN.json",
+      "scripts/sprint-849-selftest.ts",
+      "scripts/sprint-849-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint850": [
+      "src/platform/validation/jobProgressUiValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/JOB_PROGRESS_UI_PLAN.json",
+      "scripts/sprint-850-selftest.ts",
+      "scripts/sprint-850-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint851": [
+      "src/platform/validation/jobProgressUiValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/JOB_PROGRESS_UI_PLAN.json",
+      "scripts/sprint-851-selftest.ts",
+      "scripts/sprint-851-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint852": [
+      "src/platform/validation/jobProgressUiValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/JOB_PROGRESS_UI_PLAN.json",
+      "scripts/sprint-852-selftest.ts",
+      "scripts/sprint-852-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint853": [
+      "src/platform/validation/jobProgressUiValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/JOB_PROGRESS_UI_PLAN.json",
+      "scripts/sprint-853-selftest.ts",
+      "scripts/sprint-853-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint854": [
+      "src/platform/validation/jobProgressUiValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/JOB_PROGRESS_UI_PLAN.json",
+      "scripts/sprint-854-selftest.ts",
+      "scripts/sprint-854-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint855": [
+      "scripts/sprint-855-selftest.ts",
+      "scripts/sprint-855-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/JOB_PROGRESS_UI_PLAN.json",
+      "docs/JOB_PROGRESS_UI_PLAN.json",
+      "[REDACTED-path]",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint856": [
       "src/platform/validation/missingBrokenReferenceDetectionValidationService.ts",
       "src/platform/index.ts",
       "scripts/phase-b-wynyard-validation.ts",
@@ -10910,7 +11124,7 @@
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ],
-    "sprint847": [
+    "sprint857": [
       "src/platform/validation/missingBrokenReferenceDetectionValidationService.ts",
       "[REDACTED-path]",
       "[REDACTED-path]",
@@ -10928,7 +11142,7 @@
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ],
-    "sprint848": [
+    "sprint858": [
       "src/platform/validation/missingBrokenReferenceDetectionValidationService.ts",
       "src/platform/index.ts",
       "scripts/phase-b-wynyard-validation.ts",
@@ -10943,7 +11157,7 @@
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ],
-    "sprint849": [
+    "sprint859": [
       "src/platform/validation/missingBrokenReferenceDetectionValidationService.ts",
       "[REDACTED-path]",
       "src/platform/index.ts",
@@ -10960,7 +11174,7 @@
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ],
-    "sprint850": [
+    "sprint860": [
       "src/platform/validation/missingBrokenReferenceDetectionValidationService.ts",
       "src/platform/index.ts",
       "scripts/phase-b-wynyard-validation.ts",
@@ -10975,7 +11189,7 @@
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ],
-    "sprint851": [
+    "sprint861": [
       "src/platform/validation/missingBrokenReferenceDetectionValidationService.ts",
       "src/platform/index.ts",
       "scripts/phase-b-wynyard-validation.ts",
@@ -10990,7 +11204,7 @@
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ],
-    "sprint852": [
+    "sprint862": [
       "src/platform/validation/missingBrokenReferenceDetectionValidationService.ts",
       "src/platform/index.ts",
       "scripts/phase-b-wynyard-validation.ts",
@@ -11005,7 +11219,7 @@
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ],
-    "sprint853": [
+    "sprint863": [
       "src/platform/validation/missingBrokenReferenceDetectionValidationService.ts",
       "src/platform/index.ts",
       "scripts/phase-b-wynyard-validation.ts",
@@ -11020,7 +11234,7 @@
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ],
-    "sprint854": [
+    "sprint864": [
       "src/platform/validation/missingBrokenReferenceDetectionValidationService.ts",
       "src/platform/index.ts",
       "scripts/phase-b-wynyard-validation.ts",
@@ -11035,7 +11249,7 @@
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ],
-    "sprint855": [
+    "sprint865": [
       "scripts/sprint-865-selftest.ts",
       "scripts/sprint-865-close-out.ts",
       "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
@@ -12040,26 +12254,46 @@
       "sprint844PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-BACKGROUND-JOBS passed",
       "sprint845": "Milestone 860–869 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Background jobs full stack completeness audit)",
       "sprint845PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
-      "sprint846": "Milestone 870–879 opens — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Missing / broken reference detection foundation; consecutiveGreen reuse when stampede=0)",
+      "sprint846": "Milestone 860ΓÇô869 opens ΓÇö selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Job progress UI foundation; consecutiveGreen reuse when stampede=0)",
       "sprint846PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
-      "sprint847": "Milestone 870–879 at 2/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Playwright Missing / broken reference detection assertion scaffold)",
-      "sprint847PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3 exclusive for UI-MISSING-BROKEN-REFERENCE-DETECTION; stampede=0); UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
-      "sprint848": "Milestone 870–879 at 3/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase B validation matrix Missing / broken reference detection row wiring)",
-      "sprint848PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase B matrix Missing / broken reference detection row wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
-      "sprint849": "Milestone 870–879 at 4/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Missing / broken reference detection UI assertions)",
-      "sprint849PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Missing / broken reference detection UI assertions wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
-      "sprint850": "Milestone 870–879 at 5/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + localStorage mirror reconciliation)",
-      "sprint850PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); localStorage mirror reconciliation wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
-      "sprint851": "Milestone 870–879 at 6/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote seed → localStorage hydrate)",
-      "sprint851PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); remote seed → localStorage hydrate wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
-      "sprint852": "Milestone 870–879 at 7/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + cold-start regeneration after remote seed)",
-      "sprint852PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); cold-start regeneration after remote seed wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
-      "sprint853": "Milestone 870–879 at 8/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1)",
-      "sprint853PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); full hydrate / persist path dual-write / remote-authoritative wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
-      "sprint854": "Milestone 870–879 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
-      "sprint854PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
-      "sprint855": "Milestone 880–889 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Missing / broken reference detection full stack completeness audit)",
-      "sprint855PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
+      "sprint847": "Milestone 860ΓÇô869 at 2/10 ΓÇö selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Playwright Job progress UI assertion scaffold)",
+      "sprint847PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3 exclusive for UI-JOB-PROGRESS-UI; stampede=0); UI-JOB-PROGRESS-UI passed",
+      "sprint848": "Milestone 860ΓÇô869 at 3/10 ΓÇö selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase B validation matrix Job progress UI row wiring)",
+      "sprint848PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase B matrix Job progress UI row wired; UI-JOB-PROGRESS-UI passed",
+      "sprint849": "Milestone 860ΓÇô869 at 4/10 ΓÇö selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Job progress UI UI assertions)",
+      "sprint849PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Job progress UI UI assertions wired; UI-JOB-PROGRESS-UI passed",
+      "sprint850": "Milestone 860ΓÇô869 at 5/10 ΓÇö selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + localStorage mirror reconciliation)",
+      "sprint850PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); localStorage mirror reconciliation wired; UI-JOB-PROGRESS-UI passed",
+      "sprint851": "Milestone 860ΓÇô869 at 6/10 ΓÇö selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote seed ΓåÆ localStorage hydrate)",
+      "sprint851PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); remote seed ΓåÆ localStorage hydrate wired; UI-JOB-PROGRESS-UI passed",
+      "sprint852": "Milestone 860ΓÇô869 at 7/10 ΓÇö selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + cold-start regeneration after remote seed)",
+      "sprint852PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); cold-start regeneration after remote seed wired; UI-JOB-PROGRESS-UI passed",
+      "sprint853": "Milestone 860ΓÇô869 at 8/10 ΓÇö selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1)",
+      "sprint853PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); full hydrate / persist path dual-write / remote-authoritative wired; UI-JOB-PROGRESS-UI passed",
+      "sprint854": "Milestone 860ΓÇô869 at 9/10 ΓÇö selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
+      "sprint854PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-JOB-PROGRESS-UI passed",
+      "sprint855": "Milestone 870ΓÇô879 wrap ΓÇö selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Job progress UI full stack completeness audit)",
+      "sprint855PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
+      "sprint856": "Milestone 880–889 opens — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Missing / broken reference detection foundation; consecutiveGreen reuse when stampede=0)",
+      "sprint856PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)",
+      "sprint857": "Milestone 880–889 at 2/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Playwright Missing / broken reference detection assertion scaffold)",
+      "sprint857PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3 exclusive for UI-MISSING-BROKEN-REFERENCE-DETECTION; stampede=0); UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
+      "sprint858": "Milestone 880–889 at 3/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase B validation matrix Missing / broken reference detection row wiring)",
+      "sprint858PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase B matrix Missing / broken reference detection row wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
+      "sprint859": "Milestone 880–889 at 4/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Missing / broken reference detection UI assertions)",
+      "sprint859PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Missing / broken reference detection UI assertions wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
+      "sprint860": "Milestone 880–889 at 5/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + localStorage mirror reconciliation)",
+      "sprint860PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); localStorage mirror reconciliation wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
+      "sprint861": "Milestone 880–889 at 6/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote seed → localStorage hydrate)",
+      "sprint861PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); remote seed → localStorage hydrate wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
+      "sprint862": "Milestone 880–889 at 7/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + cold-start regeneration after remote seed)",
+      "sprint862PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); cold-start regeneration after remote seed wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
+      "sprint863": "Milestone 880–889 at 8/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1)",
+      "sprint863PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); full hydrate / persist path dual-write / remote-authoritative wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
+      "sprint864": "Milestone 880–889 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
+      "sprint864PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-MISSING-BROKEN-REFERENCE-DETECTION passed",
+      "sprint865": "Milestone 880–889 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Missing / broken reference detection full stack completeness audit)",
+      "sprint865PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-11",
@@ -12252,7 +12486,7 @@
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-11T04:28:23.2535508Z",
+    "sanitizedAt": "2026-07-11T04:34:31.6742242Z",
     "pushedAt": "2026-07-11T04:18:52.575Z",
     "remoteHeadSha": "e8822306557e16f41430fbe71c7d9d873b7960f6",
     "publicStateVerifiedAt": "2026-07-11T04:18:52.575Z",
@@ -14107,7 +14341,7 @@
     "daysRemaining": 3,
     "computedAsOf": "2026-07-09",
     "status": "at_risk",
-    "statusRationale": "Milestone 880–889 closed Sprint 865; Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Missing / broken reference detection full stack wrap complete (docs/MISSING_BROKEN_REFERENCE_DETECTION_PLAN.json); Platform Certification 3/3 recertified Sprint 865 (Finding 4); next milestone 880-889 Enterprise Drawing Management — Missing / broken reference detection Sprint 866 queued"
+    "statusRationale": "Milestone 880–889 closed Sprint 865; Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Missing / broken reference detection full stack wrap complete (docs/MISSING_BROKEN_REFERENCE_DETECTION_PLAN.json); Platform Certification 3/3 recertified Sprint 865 (Finding 4); next milestone 890-899 Enterprise Drawing Management — Multi-discipline packages Sprint 866 queued"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
