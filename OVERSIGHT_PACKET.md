@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1250–1259 Bulk upload engine (2/10); Sprint 1228 queued.
+**Status:** Active — Milestone 1250–1259 Bulk upload engine (3/10); Sprint 1229 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1227 closed  
-**Next sprint:** 1228 queued
+**Current sprint:** 1228 closed  
+**Next sprint:** 1229 queued
 **Milestone:** 1240-1249 WRAP CLOSED (10/10) — 1250-1259 Bulk upload engine opens Sprint 1226
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
