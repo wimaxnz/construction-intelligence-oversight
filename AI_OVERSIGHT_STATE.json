@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-07-11",
   "currentSprint": {
-    "number": 800,
+    "number": 805,
     "status": "closed",
-    "previousClosed": 799,
+    "previousClosed": 804,
     "closedDate": "2026-07-11"
   },
   "currentMilestone": {
@@ -14,28 +14,29 @@
     "actualSprintStart": 796,
     "actualSprintEnd": 805,
     "wrapReviewSprint": 805,
-    "status": "active",
-    "theme": "Phase H live-apply verification detection assistive validation automation (revision diff hints · assistive overlay · change detection contracts) (DRAWING_INTELLIGENCE_ROADMAP.md Phase H live-apply verification)",
+    "status": "closed",
+    "theme": "Phase H live-apply verification — phaseHLiveApplyVerification detection (assistive) (DRAWING_INTELLIGENCE_ROADMAP.md Phase C — Revision management & compare)",
     "openedDate": "2026-07-11",
-    "previousMilestoneClosed": "810-819 (Drawing Intelligence Phase H — Security remediation & schema provenance Milestone)",
-    "nextMilestoneOpens": "830-839 (Phase H residual gates verification foundation per DRAWING_INTELLIGENCE_ROADMAP.md)",
-    "wrapComplete": false
+    "wrapClosedDate": "2026-07-11",
+    "previousMilestoneClosed": "810-819 (Drawing Intelligence Phase D — Phase C Change Cloud Detection (Assistive) Milestone)",
+    "nextMilestoneOpens": "830-839 (Phase H residual gates verification & PHASE_B production URL per hardCompletionDirective)",
+    "wrapComplete": true
   },
   "milestoneProgress": {
     "sprintsInMilestone": 10,
-    "sprintsClosed": 5,
-    "percentComplete": 50,
+    "sprintsClosed": 10,
+    "percentComplete": 100,
     "nextWrapReviewSprint": 805,
-    "milestoneWrapComplete": false
+    "milestoneWrapComplete": true
   },
   "activeStreams": {
     "stream1": {
       "name": "UX / PM refinements",
-      "focus": "Phase H live-apply verification remote seed → localStorage hydrate — sprint-571-selftest.ts"
+      "focus": "Milestone 830–839 Phase H residual production gates & live-apply owner apply per hardCompletionDirective — sprint-806-selftest.ts"
     },
     "stream2": {
       "name": "Platform / strategic foundations",
-      "focus": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
+      "focus": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3"
     }
   },
   "completedWork": {
@@ -3044,6 +3045,36 @@
       "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
       "validation": "Milestone 820–829 at 5/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); localStorage mirror reconciliation wired; UI-PHASE-H-LIVE-APPLY-VERIFICATION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
       "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase H live-apply verification remote seed → localStorage hydrate deferred to Sprint 521+"
+    },
+    "sprint801": {
+      "stream1": "Phase H live-apply verification remote seed → localStorage hydrate — assertPhaseHLiveApplyVerificationRemoteSeedLocalStorageHydrate · seedphaseCBulkUploadLocalStorageFromRemoteHydrate · buildPhaseHLiveApplyVerificationLocalStorageHydratePayload · runphaseCBulkUploadRemoteSeedLocalStorageHydrate · phase-b-wynyard-validation.ts · sprint-801-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 820–829 at 6/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote seed → localStorage hydrate wired; UI-PHASE-H-LIVE-APPLY-VERIFICATION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase H live-apply verification cold-start regeneration after remote seed deferred to Sprint 522+"
+    },
+    "sprint802": {
+      "stream1": "Phase H live-apply verification cold-start regeneration after remote seed — assertPhaseHLiveApplyVerificationColdStartRegenerationAfterRemoteSeed · regeneratephaseCBulkUploadLocalStorageAfterRemoteSeedColdStart · isPhaseHLiveApplyVerificationLocalStorageClearedOrEmpty · runphaseCBulkUploadColdStartRegenerationAfterRemoteSeed · phase-b-wynyard-validation.ts · sprint-802-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 820–829 at 7/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); cold-start regeneration after remote seed wired; UI-PHASE-H-LIVE-APPLY-VERIFICATION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase H live-apply verification full hydrate/persist path deferred to Sprint 523+"
+    },
+    "sprint803": {
+      "stream1": "Phase H live-apply verification full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — assertPhaseHLiveApplyVerificationFullHydratePersistPath · dualWritephaseCBulkUploadStateRemotePath · buildPhaseHLiveApplyVerificationFullHydratePersistPathSummary · runphaseCBulkUploadFullHydratePersistPath · phase-b-wynyard-validation.ts · sprint-803-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 820–829 at 8/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); full hydrate / persist path dual-write / remote-authoritative wired; UI-PHASE-H-LIVE-APPLY-VERIFICATION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase H live-apply verification remote read-after-write round-trip deferred to Sprint 524+"
+    },
+    "sprint804": {
+      "stream1": "Phase H live-apply verification remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — assertPhaseHLiveApplyVerificationRemoteReadAfterWriteRoundTrip · roundTripPhaseHLiveApplyVerificationStateRemoteReadAfterWrite · buildPhaseHLiveApplyVerificationRemoteReadAfterWriteRoundTripSummary · runphaseCBulkUploadRemoteReadAfterWriteRoundTrip · phase-b-wynyard-validation.ts · sprint-804-selftest.ts",
+      "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3 (consecutiveGreen reuse when stampede=0) · docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md · docs/di-screenshots/validation/results.json",
+      "validation": "Milestone 820–829 at 9/10; selftest green; 3/3 consecutive Sprint Validation (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-PHASE-H-LIVE-APPLY-VERIFICATION passed; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Milestone 820–829 wrap review deferred to Sprint 525"
+    },
+    "sprint805": {
+      "stream1": "Milestone wrap review — Drawing Intelligence Phase D Phase H live-apply verification completeness — sprint-805-selftest.ts",
+      "stream2": "Milestone 820–829 Phase H live-apply verification full stack completeness review — sprint-805-selftest.ts audits stack (foundation · Playwright scaffold · Phase B matrix · UI assertions · localStorage mirror reconciliation · remote seed hydrate · cold-start regeneration · full hydrate/persist path · remote read-after-write round-trip) · PHASE_B_RUNS=3 (consecutiveGreen reuse / exclusive when needed) · Platform Certification recertification post-milestone-close (Finding 4)",
+      "validation": "Milestone wrap selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3); Platform Certification 3/3 recertified post-milestone-close (Finding 4); gate #1 regression guard green; gate #2 satisfied; Migration 015 state-equivalent (aybovjvmyqexgpmhedni); schema_migrations provenance gap; write_audit_entry security interrupt open; PHASE_B_RUNS=3 app URL pending",
+      "deferred": "Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 830-839 Phase H residual production gates & live-apply owner apply deferred to Sprint 806"
     }
   },
   "changedFiles": {
@@ -10087,6 +10118,80 @@
       "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
       "docs/ai-oversight/OVERSIGHT_PACKET.md",
       "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint801": [
+      "src/platform/validation/phaseHLiveApplyVerificationValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_H_LIVE_APPLY_VERIFICATION_PLAN.json",
+      "scripts/sprint-801-selftest.ts",
+      "scripts/sprint-801-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint802": [
+      "src/platform/validation/phaseHLiveApplyVerificationValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_H_LIVE_APPLY_VERIFICATION_PLAN.json",
+      "scripts/sprint-802-selftest.ts",
+      "scripts/sprint-802-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint803": [
+      "src/platform/validation/phaseHLiveApplyVerificationValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_H_LIVE_APPLY_VERIFICATION_PLAN.json",
+      "scripts/sprint-803-selftest.ts",
+      "scripts/sprint-803-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint804": [
+      "src/platform/validation/phaseHLiveApplyVerificationValidationService.ts",
+      "src/platform/index.ts",
+      "scripts/phase-b-wynyard-validation.ts",
+      "docs/PHASE_H_LIVE_APPLY_VERIFICATION_PLAN.json",
+      "scripts/sprint-804-selftest.ts",
+      "scripts/sprint-804-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
+    ],
+    "sprint805": [
+      "scripts/sprint-805-selftest.ts",
+      "scripts/sprint-805-close-out.ts",
+      "docs/PHASE_B_WYNYARD_VALIDATION_REPORT.md",
+      "docs/di-screenshots/validation/results.json",
+      "docs/PHASE_H_LIVE_APPLY_VERIFICATION_PLAN.json",
+      "docs/PHASE_H_LIVE_APPLY_VERIFICATION_PLAN.json",
+      "[REDACTED-path]",
+      "docs/PLATFORM_EVOLUTION.md",
+      "docs/PHASE_B_UX_ACCEPTANCE.md",
+      "docs/ai-oversight/AI_OVERSIGHT_STATE.json",
+      "docs/ai-oversight/OVERSIGHT_PACKET.md",
+      "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md"
     ]
   },
   "validationResults": {
@@ -11008,14 +11113,24 @@
       "sprint799": "Milestone 820–829 at 4/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + Phase H live-apply verification UI assertions)",
       "sprint799PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); Phase H live-apply verification UI assertions wired; UI-PHASE-H-LIVE-APPLY-VERIFICATION passed",
       "sprint800": "Milestone 820–829 at 5/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + localStorage mirror reconciliation)",
-      "sprint800PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); localStorage mirror reconciliation wired; UI-PHASE-H-LIVE-APPLY-VERIFICATION passed"
+      "sprint800PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); localStorage mirror reconciliation wired; UI-PHASE-H-LIVE-APPLY-VERIFICATION passed",
+      "sprint801": "Milestone 820–829 at 6/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote seed → localStorage hydrate)",
+      "sprint801PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); remote seed → localStorage hydrate wired; UI-PHASE-H-LIVE-APPLY-VERIFICATION passed",
+      "sprint802": "Milestone 820–829 at 7/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + cold-start regeneration after remote seed)",
+      "sprint802PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); cold-start regeneration after remote seed wired; UI-PHASE-H-LIVE-APPLY-VERIFICATION passed",
+      "sprint803": "Milestone 820–829 at 8/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1)",
+      "sprint803PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0); full hydrate / persist path dual-write / remote-authoritative wired; UI-PHASE-H-LIVE-APPLY-VERIFICATION passed",
+      "sprint804": "Milestone 820–829 at 9/10 — selftest green; 3/3 consecutive (PHASE_B_RUNS=3 + remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1)",
+      "sprint804PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3); remote read-after-write round-trip integrity wired; UI-PHASE-H-LIVE-APPLY-VERIFICATION passed",
+      "sprint805": "Milestone 820–829 wrap — selftest green; 3/3 consecutive post-recertification (PHASE_B_RUNS=3 + Phase H live-apply verification full stack completeness audit)",
+      "sprint805PhaseB": "3/3 consecutive green post-recertification regression guard (PHASE_B_RUNS=3; consecutiveGreen reuse when stampede=0)"
     },
     "platformCertification": {
       "lastAchieved": "2026-07-11",
       "lastCertifiedBaseline": "2026-07-11",
-      "status": "current — recertified Sprint 796 (820-829 Phase H live-apply verification opens 1/10 Finding 4)",
-      "sprintRangeCovered": "526–526 (Drawing Intelligence Phase H — Live-apply verification & PHASE_B production URL Milestone 820-829 opens)",
-      "deltaSinceCertification": "Sprints 130–530 delivered (401 sprints); Milestone 820-829 at 5/10; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); localStorage mirror reconciliation (docs/PHASE_H_LIVE_APPLY_VERIFICATION_PLAN.json); Platform Certification 3/3 recertified Sprint 796 (Finding 4)",
+      "status": "current — recertified Sprint 805 (820-829 next milestone opens post-milestone-close Finding 4)",
+      "sprintRangeCovered": "536–545 (Drawing Intelligence Phase H — Live-apply verification & PHASE_B production URL Milestone 820-829 closed)",
+      "deltaSinceCertification": "Sprints 130–545 delivered (416 sprints); Milestone 820-829 closed; next milestone 820-829 Phase H live-apply verification Detection; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); GitHub Integration sync triggered — post-sync verification pending (docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json); Phase E Commercial Intelligence Estimating/BoQ wrap complete (docs/PHASE_H_LIVE_APPLY_VERIFICATION_PLAN.json); Platform Certification 3/3 recertified Sprint 805 (Finding 4)",
       "recertificationTriggers": [
         "milestone close",
         "schema or RLS change",
@@ -11026,18 +11141,20 @@
         "Commercial Intelligence state-machine change",
         "before production release"
       ],
-      "note": "3/3 deterministic re-achieved 2026-07-11 Sprint 796 post-milestone-close; recertify on triggers in recertificationTriggers — not indefinite valid"
+      "note": "3/3 deterministic re-achieved 2026-07-11 Sprint 805 post-milestone-close; recertify on triggers in recertificationTriggers — not indefinite valid"
     },
     "typecheck": "npx tsc -b (per regression gate)"
   },
   "regressionStatus": "green",
   "documentationUpdates": [
-    "docs/PLATFORM_EVOLUTION.md — Milestone 820–829 at 5/10, Sprint 800 closed, Sprint 801 queued",
-    "docs/PHASE_B_UX_ACCEPTANCE.md — Sprint 800 localStorage mirror reconciliation logged",
-    "docs/PHASE_H_LIVE_APPLY_VERIFICATION_PLAN.json — localStorageMirrorReconciliationComplete Sprint 800",
-    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 800 closed, milestone 820-829 active (5/10), Sprint 801 queued",
-    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 800 close-out packet",
-    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 800 close-out note"
+    "docs/PLATFORM_EVOLUTION.md — Milestone 820–829 closed, Sprint 806 queued (830–839 Phase H residual production gates & live-apply owner apply)",
+    "docs/PHASE_B_UX_ACCEPTANCE.md — Milestone 820–829 wrap logged",
+    "docs/PHASE_H_LIVE_APPLY_VERIFICATION_PLAN.json — milestoneWrapComplete Sprint 805",
+    "docs/PHASE_H_LIVE_APPLY_VERIFICATION_PLAN.json — next milestone 820-829 Phase H live-apply verification & PHASE_B production URL Sprint 806 queued",
+    "docs/DRAWING_INTELLIGENCE_ROADMAP.md — Phase H live-apply verification validation automation checked complete",
+    "docs/ai-oversight/AI_OVERSIGHT_STATE.json — Sprint 805 closed, milestone 820-829 wrap closed (10/10), sprint 806 queued",
+    "docs/ai-oversight/OVERSIGHT_PACKET.md — Sprint 805 close-out packet",
+    "docs/ai-oversight/AI_OVERSIGHT_RESPONSE.md — Sprint 805 close-out note"
   ],
   "migrationsRequired": [
     {
@@ -11081,7 +11198,7 @@
     {
       "id": "phase-c-gated",
       "severity": "medium",
-      "description": "Milestone 820-829 Phase D Phase H live-apply verification opens Sprint 797 (1/10); Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending"
+      "description": "Milestone 820–829 Phase D Phase H live-apply verification closed Sprint 805; Finding 6 gate #1 satisfied; gate #2 staging satisfied; Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; next milestone 820-829 Phase H live-apply verification & PHASE_B production URL queued Sprint 806"
     },
     {
       "id": "partial-platform-services",
@@ -11092,7 +11209,7 @@
       "id": "platform-certification-stale",
       "severity": "low-governance",
       "relatedFinding": "finding-4",
-      "description": "Platform Certification 3/3 recertified 2026-07-11 Sprint 796 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
+      "description": "Platform Certification 3/3 recertified 2026-07-11 Sprint 805 post-milestone-close (Finding 4); recertify on schema/RLS/viewer/search/DB/KG/CI triggers per policy"
     },
     "HIGH: write_audit_entry SECURITY DEFINER executable by authenticated without is_project_member Ã¢â‚¬â€ audit forgery risk (docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json)"
   ],
@@ -11184,27 +11301,27 @@
     }
   ],
   "nextSprint": {
-    "number": 801,
-    "stream1": "Phase H live-apply verification remote seed → localStorage hydrate — sprint-571-selftest.ts",
-    "stream2": "Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
-    "selftest": "scripts/sprint-801-selftest.ts",
-    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 820-829 Phase D Phase H live-apply verification active (5/10); localStorage mirror reconciliation complete docs/PHASE_H_LIVE_APPLY_VERIFICATION_PLAN.json"
+    "number": 806,
+    "stream1": "Milestone 830–839 Phase H residual production gates & live-apply owner apply per hardCompletionDirective — sprint-806-selftest.ts",
+    "stream2": "Platform Certification recertification post-milestone-close (Finding 4) — phase-b-wynyard-validation.ts PHASE_B_RUNS=3",
+    "selftest": "scripts/sprint-806-selftest.ts",
+    "credentialNote": "Migration 015 state-equivalent on aybovjvmyqexgpmhedni (7/7 policies; schema_migrations untracked). Security interrupt: write_audit_entry membership guard. PHASE_B_RUNS=3 on app URL pending. production post-sync verified — evidence docs/MIGRATION_015_PRODUCTION_VERIFICATION.json; Milestone 820-829 Phase D Phase H live-apply verification closed (10/10); Phase E Commercial Intelligence Estimating/BoQ wrap complete docs/PHASE_H_LIVE_APPLY_VERIFICATION_PLAN.json"
   },
   "oversightSync": {
-    "status": "ok",
-    "reason": null,
-    "lastPushAttempt": "2026-07-11T00:28:11.269Z",
+    "status": "degraded",
+    "reason": "api-response-anomaly-monitor-api-and-git",
+    "lastPushAttempt": "2026-07-11T00:28:38.867Z",
     "lastPushResult": "success",
-    "verifiedAt": "2026-07-11T00:28:11.269Z",
+    "verifiedAt": "2026-07-11T00:28:38.867Z",
     "allowlistOnly": true,
     "pushMethod": "git push from ../construction-intelligence-oversight (Git: C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe)",
     "localStateGeneratedAt": "2026-07-07T02:23:51.747Z",
-    "sanitizedAt": "2026-07-11T00:27:50.4214542Z",
-    "pushedAt": "2026-07-11T00:28:11.269Z",
-    "remoteHeadSha": "9a7e4cc7870ca8c93343b9f2cf06c102688c4867",
-    "publicStateVerifiedAt": "2026-07-11T00:28:11.269Z",
+    "sanitizedAt": "2026-07-11T00:29:51.3388726Z",
+    "pushedAt": "2026-07-11T00:28:38.867Z",
+    "remoteHeadSha": "0412eaa676fc28573778747eb15d534fd84ffd12",
+    "publicStateVerifiedAt": "2026-07-11T00:28:38.867Z",
     "publicStateJsonParsePassed": false,
-    "publicStateContentHash": "4b856d89367f9413b91b92b8202d125de08c70944ef62348ed54a12ec58cca4e",
+    "publicStateContentHash": "41e38f705b00b6508da26f37fb291326e98b62604c3f8573d08b5ce09ed11860",
     "publicationAudit": {
       "auditedAt": "2026-07-05T02:00:00.000Z",
       "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight",
@@ -11236,18 +11353,18 @@
     },
     "publicStateVerificationSource": "multi-route",
     "publicStateRawCdnHash": "4b856d89367f9413b91b92b8202d125de08c70944ef62348ed54a12ec58cca4e",
-    "publicStateRawCdnStale": false,
+    "publicStateRawCdnStale": true,
     "publicVerificationRoutes": {
-      "githubApiVerifiedAt": "2026-07-11T00:28:11.269Z",
-      "rawEndpointVerifiedAt": "2026-07-11T00:28:11.269Z",
-      "gitOriginVerifiedAt": "2026-07-11T00:28:11.269Z",
+      "githubApiVerifiedAt": "2026-07-11T00:28:38.867Z",
+      "rawEndpointVerifiedAt": "2026-07-11T00:28:38.867Z",
+      "gitOriginVerifiedAt": "2026-07-11T00:28:38.867Z",
       "routeContentHashes": {
-        "github-api": "4b856d89367f9413b91b92b8202d125de08c70944ef62348ed54a12ec58cca4e",
+        "github-api": "41e38f705b00b6508da26f37fb291326e98b62604c3f8573d08b5ce09ed11860",
         "raw-cdn": "4b856d89367f9413b91b92b8202d125de08c70944ef62348ed54a12ec58cca4e",
         "git-origin": null
       },
-      "routeHashesMatch": true,
-      "canonicalRemoteHeadSha": "9a7e4cc7870ca8c93343b9f2cf06c102688c4867",
+      "routeHashesMatch": false,
+      "canonicalRemoteHeadSha": "0412eaa676fc28573778747eb15d534fd84ffd12",
       "logicalConsistencyPassed": true,
       "logicalConsistencyTestCount": 1162,
       "classification": "api-response-anomaly-monitor-api-and-git"
@@ -11264,9 +11381,9 @@
     "lastConsumedAt": "2026-07-08T20:34:02.022Z",
     "lastInboxUpdatedAt": null,
     "newFindingsDetected": 0,
-    "lastSyncedSprint": 790,
+    "lastSyncedSprint": 795,
     "lastSyncedAt": "2026-07-11",
-    "milestoneProgress": "820-829 ACTIVE (5/10)",
+    "milestoneProgress": "820-829 WRAP CLOSED (10/10)",
     "productionApplyBlocked": false,
     "gate2Satisfied": true,
     "localE2EProven": true,
@@ -11462,7 +11579,7 @@
   },
   "strategicRoadmapAlignment": {
     "cosPipelineStage": "knowledge template publication ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Knowledge Library version lifecycle ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ cross-project knowledge reuse ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ knowledge similarity matching ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ proactive knowledge warning ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ user outcome feedback ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ confidence evolution ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ future project knowledge reuse",
-    "phaseE": "Drawing Intelligence Phase H — Live-apply verification & PHASE_B production URL Milestone milestone (820-829) active — Sprint 800 closed; Sprint 801 queued",
+    "phaseE": "Drawing Intelligence Phase H — Live-apply verification & PHASE_B production URL Milestone milestone (820-829) active — Sprint 805 closed; Sprint 806 queued",
     "executionModel": "Continuous parallel streams; no pause for sprint-by-sprint authorisation",
     "alignment": "on-track",
     "sprint376": "No new growth event kinds Ã¢â‚¬â€ Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -11475,8 +11592,8 @@
     "sprint382": "No new growth event kinds Ã¢â‚¬â€ mid-milestone 374Ã¢â‚¬â€œ378 completeness review confirms Phase C pin re-anchor growth event family + Memory audit stack partial (growth events Ã‚Â· Memory audit Ã‚Â· viewer chrome Ã‚Â· Decision Timeline Ã‚Â· explainability Ã‚Â· AI panel indicators)",
     "sprint379": "No new growth event kinds Ã¢â‚¬â€ project assistant context engine Phase C pin re-anchor timeline entry count + label hint wiring + operational workspace AI panel Phase C pin re-anchor context availability surfacing from project assistant context (mergePhaseCPinReanchorTimelineIntoDecisionTimeline in buildProjectAssistantContextSnapshot)",
     "hardCompletionDirective": "Hard completion 2026-07-12: cross-project learning loop + production readiness gates — at_risk (3 days remaining as of 2026-07-09)",
-    "phaseD": "Drawing Intelligence Phase H — Live-apply verification & PHASE_B production URL Milestone (820-829) active Sprint 800 (5/10); localStorage mirror reconciliation complete",
-    "phaseB": "Phase H live-apply verification milestone active (820-829) — technical items complete; UX validation automation foundation Sprint 796"
+    "phaseD": "Drawing Intelligence Phase H — Live-apply verification & PHASE_B production URL Milestone (820-829) closed Sprint 805; 820–829 Phase H live-apply verification query & citation layer queued Sprint 806",
+    "phaseB": "Phase H live-apply verification complete — Phase H live-apply verification milestone closed Sprint 805; Phase H live-apply verification query & citation layer (820-829) opens Sprint 806"
   },
   "digitalBrainImpact": {
     "sprint376": "No new growth event kinds Ã¢â‚¬â€ Decision Timeline Phase C pin re-anchor pipeline stage filtered badge + Phase D playback pipeline-stage line + operational workspace AI panel Phase C pin re-anchor timeline entry count indicator for Phase C pin re-anchor audit filter scope",
@@ -11572,7 +11689,7 @@
     "sprint268": "No new growth event kinds ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â operational workspace AI panel label hint + Decision Timeline explainability rationale summary badges for knowledge template publication filter scope",
     "sprint267": "No new growth event kinds ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â publication viewer chrome session store + Decision Timeline explainability actor/confidence badges for knowledge template publication filter scope",
     "sprint266": "No new growth event kinds ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â operational workspace AI panel entry count + Decision Timeline pipeline stage badge for knowledge template publication filter scope",
-    "overall": "Event engine Partial — milestone 820-829 5/10 sprints closed (50%); latest growth-event sprint 400; Sprint 800 closed; Sprint 801 queued per nextSprint",
+    "overall": "Event engine Partial — milestone 820-829 10/10 sprints closed (100%); latest growth-event sprint 400; Sprint 805 closed; Sprint 806 queued per nextSprint",
     "sprint372": "No new growth event kinds Ã¢â‚¬â€ mid-milestone 364Ã¢â‚¬â€œ368 completeness review confirms Phase C revision supersede growth event family + Memory audit stack partial (growth events Ã‚Â· Memory audit Ã‚Â· viewer chrome Ã‚Â· Decision Timeline Ã‚Â· explainability Ã‚Â· AI panel indicators)",
     "sprint371": "No new growth event kinds Ã¢â‚¬â€ project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context (phaseCRevisionSupersedeExplainabilityEntries Ã‚Â· isExplainabilityEnrichedDecisionTimelineEntry Ã‚Â· toExplainabilityContextEntry in buildProjectAssistantContextSnapshot)",
     "sprint363": "No new growth event kinds Ã¢â‚¬â€ milestone 370Ã¢â‚¬â€œ379 wrap completeness review confirms supersede invalidation full stack audit (growth events Ã‚Â· Memory audit Ã‚Â· viewer chrome Ã‚Â· Decision Timeline Ã‚Â· explainability Ã‚Â· AI panel Ã‚Â· project assistant context engine wiring); milestone closed; 380Ã¢â‚¬â€œ389 Phase C Revision Management opens Sprint 364",
@@ -12008,7 +12125,12 @@
     "sprint797": "No new growth event kinds — Playwright Phase H live-apply verification scaffold reads phase-c-revision-role-path-banner + phase-c-revision-signoff-checklist + phase-c-revision-mobile-target-size; Milestone 820–829 at 2/10",
     "sprint798": "No new growth event kinds — Phase B validation matrix Phase H live-apply verification row wiring; Milestone 820–829 at 3/10",
     "sprint799": "No new growth event kinds — Phase H live-apply verification UI assertions; Milestone 820–829 at 4/10",
-    "sprint800": "No new growth event kinds — Phase H live-apply verification localStorage mirror reconciliation; Milestone 820–829 at 5/10"
+    "sprint800": "No new growth event kinds — Phase H live-apply verification localStorage mirror reconciliation; Milestone 820–829 at 5/10",
+    "sprint801": "No new growth event kinds — Phase H live-apply verification remote seed → localStorage hydrate path; Milestone 820–829 at 6/10",
+    "sprint802": "No new growth event kinds — Phase H live-apply verification cold-start regeneration after remote seed; Milestone 820–829 at 7/10",
+    "sprint803": "No new growth event kinds — Phase H live-apply verification full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1; Milestone 820–829 at 8/10",
+    "sprint804": "No new growth event kinds — Phase H live-apply verification remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1; Milestone 820–829 at 9/10",
+    "sprint805": "No new growth event kinds — milestone 820–829 wrap completeness review confirms Phase H live-apply verification full stack audit (foundation · Playwright · Phase B matrix · UI assertions · mirror · hydrate · cold-start · hydrate/persist · round-trip); milestone closed; 830–839 opens Sprint 806"
   },
   "knowledgeGraphImpact": {
     "sprint303": "No direct KG edge changes",
@@ -12507,7 +12629,12 @@
     "sprint797": "Playwright Phase H live-apply verification assertion scaffold — role critical path + checklist UI chrome; Milestone 820–829 at 2/10",
     "sprint798": "No direct KG edge changes — Phase B validation matrix Phase H live-apply verification row wiring; Milestone 820–829 at 3/10",
     "sprint799": "No direct KG edge changes — Phase H live-apply verification UI assertions (phase-c-revision-role-path-banner chrome); Milestone 820–829 at 4/10",
-    "sprint800": "localStorage ↔ remote intelligence_json mirror reconciliation contract — durable Supabase indices stay consistent with di-phase-h-live-apply-verification-* offline mirror; Milestone 820–829 at 5/10"
+    "sprint800": "localStorage ↔ remote intelligence_json mirror reconciliation contract — durable Supabase indices stay consistent with di-phase-h-live-apply-verification-* offline mirror; Milestone 820–829 at 5/10",
+    "sprint801": "Remote Supabase intelligence_json indices seed di-phase-h-live-apply-verification-* localStorage mirror for cold-start hydrate; Milestone 820–829 at 6/10",
+    "sprint802": "When localStorage cleared after prior remote seed, di-phase-h-live-apply-verification-* indexed sheets regenerate from durable Supabase intelligence_json; Milestone 820–829 at 7/10",
+    "sprint803": "When VITE_PROJECT_KG_PERSIST=1, di-phase-h-live-apply-verification-* indexed sheets dual-write to Supabase drawing_sheets.intelligence_json (remote-authoritative); Milestone 820–829 at 8/10",
+    "sprint804": "When VITE_PROJECT_KG_PERSIST=1, dual-written intelligence_json indexed sheets are read back from Supabase drawing_sheets and asserted equal to the write set (round-trip integrity); Milestone 820–829 at 9/10",
+    "sprint805": "Milestone 820–829 wrap confirms durable Phase H live-apply verification validation stack complete (VITE_PROJECT_KG_PERSIST); milestone closed; 820–829 Phase H live-apply verification query & citation layer opens Sprint 806"
   },
   "commercialIntelligenceImpact": {
     "sprint355": "Decision Timeline drawing revision supersede invalidation Phase D playback row + commercial workflow stage filtered badge + Phase D playback commercial-stage label Ã¢â‚¬â€ drawing revision id Ã‚Â· superseded-by revision id Ã‚Â· invalidation scope playback lines Ã‚Â· lessons_learned stage badge Ã‚Â· sprint-355-selftest.ts",
@@ -12593,7 +12720,7 @@
     "sprint267": "Knowledge template publication viewer chrome indicator + Decision Timeline explainability actor/confidence filtered badges + Phase D playback explainability labels",
     "sprint266": "Operational workspace AI panel knowledge template publication entry count + Decision Timeline pipeline stage filtered badge + Phase D playback pipeline-stage label",
     "viewerChrome": "Phase C pin re-anchor viewer chrome indicator delivered Sprint 377; Phase C revision supersede viewer chrome indicator delivered Sprint 367; drawing revision supersede invalidation viewer chrome indicator delivered Sprint 357; drawing revision provenance viewer chrome indicator delivered Sprint 347; knowledge graph template entity viewer chrome indicator delivered Sprint 337; knowledge template publication viewer chrome indicator delivered Sprint 267; knowledge library version retrieval viewer chrome indicator delivered Sprint 277; knowledge similarity match viewer chrome indicator delivered Sprint 287; proactive knowledge warning viewer chrome indicator delivered Sprint 297",
-    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase H — Live-apply verification & PHASE_B production URL Milestone (820-829) active 5/10; Sprint 800 closed; Sprint 801 queued (Sprint Validation 3/3 post-recertification regression guard — phase-b-wynyard-va · Phase H live-apply verification remote seed → localStorage hydrate — sprint-571-)",
+    "overall": "Commercial Intelligence Partial — Drawing Intelligence Phase H — Live-apply verification & PHASE_B production URL Milestone (820-829) active 10/10; Sprint 805 closed; Sprint 806 queued (Platform Certification recertification post-milestone-close (Finding 4) — phase- · Milestone 830–839 Phase H residual production gates & live-apply owner apply per)",
     "sprint372": "Mid-milestone 364Ã¢â‚¬â€œ368 Drawing Intelligence Phase C revision supersede completeness review Ã¢â‚¬â€ Phase C revision supersede stack partial audit confirms growth events Ã‚Â· Memory audit Ã‚Â· viewer chrome Ã‚Â· Decision Timeline Ã‚Â· explainability Ã‚Â· AI panel indicators Ã¢â‚¬â€ sprint-372-selftest.ts",
     "sprint371": "Project assistant context engine Phase C revision supersede explainability context entry aggregation + operational workspace AI panel explainability context entry surfacing from project assistant context Ã¢â‚¬â€ phaseCRevisionSupersedeExplainabilityEntries Ã‚Â· isExplainabilityEnrichedDecisionTimelineEntry Ã‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entries Ã‚Â· operational-workspace-ai-panel-phase-c-revision-supersede-explainability-context-entry-item Ã‚Â· sprint-371-selftest.ts",
     "sprint366": "Decision Timeline Phase C revision supersede pipeline stage filtered badge + Phase D playback pipeline-stage label + operational workspace AI panel entry count indicator Ã¢â‚¬â€ takeoff COS pipeline stage badge Ã‚Â· phaseCRevisionSupersedeTimelineEntryCount Ã‚Â· sprint-366-selftest.ts",
@@ -13024,7 +13151,12 @@
     "sprint797": "Milestone 820–829 Drawing Intelligence Phase D — Phase H live-apply verification at 2/10 — Playwright assertion scaffold — sprint-797-selftest.ts",
     "sprint798": "Milestone 820–829 Drawing Intelligence Phase D — Phase H live-apply verification at 3/10 — Phase B validation matrix row wiring — sprint-798-selftest.ts",
     "sprint799": "Milestone 820–829 Drawing Intelligence Phase D — Phase H live-apply verification at 4/10 — UI assertions — sprint-799-selftest.ts",
-    "sprint800": "Milestone 820–829 Drawing Intelligence Phase D — Phase H live-apply verification at 5/10 — localStorage mirror reconciliation — sprint-800-selftest.ts"
+    "sprint800": "Milestone 820–829 Drawing Intelligence Phase D — Phase H live-apply verification at 5/10 — localStorage mirror reconciliation — sprint-800-selftest.ts",
+    "sprint801": "Milestone 820–829 Drawing Intelligence Phase D — Phase H live-apply verification at 6/10 — remote seed → localStorage hydrate — sprint-801-selftest.ts",
+    "sprint802": "Milestone 820–829 Drawing Intelligence Phase D — Phase H live-apply verification at 7/10 — cold-start regeneration after remote seed — sprint-802-selftest.ts",
+    "sprint803": "Milestone 820–829 Drawing Intelligence Phase D — Phase H live-apply verification at 8/10 — full hydrate / persist path when VITE_PROJECT_KG_PERSIST=1 — sprint-803-selftest.ts",
+    "sprint804": "Milestone 820–829 Drawing Intelligence Phase D — Phase H live-apply verification at 9/10 — remote read-after-write round-trip when VITE_PROJECT_KG_PERSIST=1 — sprint-804-selftest.ts",
+    "sprint805": "Milestone 820–829 Drawing Intelligence Phase D — Phase H live-apply verification wrap completeness review — full stack audit; milestone closed; 830–839 opens Sprint 806 — sprint-805-selftest.ts"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
@@ -13039,7 +13171,7 @@
     "daysRemaining": 3,
     "computedAsOf": "2026-07-09",
     "status": "at_risk",
-    "statusRationale": "Milestone 820-829 opens Sprint 797 (1/10); Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase E Commercial Intelligence Estimating/BoQ foundation (docs/PHASE_H_LIVE_APPLY_VERIFICATION_PLAN.json); Phase B UX Sign-off wrap complete (docs/PHASE_B_UX_SIGNOFF_PLAN.json); Platform Certification 3/3 recertified Sprint 796 (Finding 4); Milestone 540–549 closed Sprint 525"
+    "statusRationale": "Milestone 820–829 closed Sprint 805; Finding 6 gate #1 satisfied; gate #2 satisfied (docs/MIGRATION_015_STAGING_VERIFICATION.json); Migration 015 state-equivalent but untracked (schema_migrations=0); harden write_audit_entry; PHASE_B_RUNS=3 on app URL pending; Phase H live-apply verification full stack wrap complete (docs/PHASE_H_LIVE_APPLY_VERIFICATION_PLAN.json); Platform Certification 3/3 recertified Sprint 805 (Finding 4); next milestone 830-839 Phase H residual production gates & live-apply owner apply Sprint 806 queued"
   },
   "deferredItems": [
     "Phase C revision management & compare (PHASE_C_DEPENDENCY_CHECKLIST.md)",
