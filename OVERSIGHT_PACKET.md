@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1330–1329 Phase B sign-off continuous wrap (9/10); Sprint 1335 queued.
+**Status:** Active — Milestone 1350-1359 Phase B sign-off continuous wrap CLOSED (10/10); Sprint 1336 queued (1360-1369 Phase C visual revision overlay continuous).
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1334 closed  
-**Next sprint:** 1335 queued
-**Milestone:** 1340-1349 WRAP CLOSED (10/10) — 1350-1359 Phase B sign-off continuous wrap opens Sprint 1326
+**Current sprint:** 1335 closed  
+**Next sprint:** 1336 queued (1360-1369 Phase C visual revision overlay continuous)
+**Milestone:** 1350-1359 WRAP CLOSED (10/10) — 1360-1369 Phase C visual revision overlay continuous opens Sprint 1336
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
@@ -559,11 +559,13 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (1326)
+## Next sprint (1336)
 
-- Stream 1: Milestone 1350-1359 Phase B sign-off continuous wrap validation automation foundation — sprint-1326-selftest.ts
+- Stream 1: Milestone 1360-1369 Phase C visual revision overlay continuous validation automation foundation — sprint-1336-selftest.ts
 - Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
-- Theme: 1350-1359 Phase B sign-off continuous wrap — Phase B exit criteria / UX acceptance gate continuous wrap after Wynyard e2e (DRAWING_INTELLIGENCE_ROADMAP.md; non-write_audit; write_audit_entry remains standing deferred open_interrupt)
+- Theme: 1360-1369 Phase C visual revision overlay continuous — visual revision overlay / side-by-side swipe continuous (DRAWING_INTELLIGENCE_ROADMAP.md Phase C; non-write_audit; write_audit_entry remains standing deferred open_interrupt)
+
+
 
 
 
