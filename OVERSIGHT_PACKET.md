@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1500-1509 Project Digital Brain continuous wrap (7/10); Sprint 1483 queued.
+**Status:** Active — Milestone 1500-1509 Project Digital Brain continuous wrap (8/10); Sprint 1484 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1482 closed  
-**Next sprint:** 1483 queued
+**Current sprint:** 1483 closed  
+**Next sprint:** 1484 queued
 **Milestone:** 1490-1499 WRAP CLOSED (10/10) — 1500-1509 Project Digital Brain continuous wrap opens Sprint 1476
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
