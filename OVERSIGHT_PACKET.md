@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 960–969 Multi-discipline packages UI (9/10); Sprint 945 queued.
+**Status:** Active — Milestone 960–969 Multi-discipline packages UI CLOSED (10/10); Sprint 946 queued (970–979 Job progress UI hardening).
 
 **Last updated:** 2026-07-11
-**Current sprint:** 794 closed  
-**Next sprint:** 585 queued
-**Milestone:** 950–959 WRAP CLOSED (10/10) · 960–969 Multi-discipline packages UI opens Sprint 936
+**Current sprint:** 945 closed  
+**Next sprint:** 946 queued
+**Milestone:** 960–969 WRAP CLOSED (10/10) · 970–979 Job progress UI hardening opens Sprint 946
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
@@ -559,11 +559,13 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (936)
+## Next sprint (946)
 
-- Stream 1: Milestone 960–969 Multi-discipline packages UI foundation — sprint-936-selftest.ts
+- Stream 1: Milestone 970–979 Job progress UI hardening foundation — sprint-946-selftest.ts
 - Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
-- Theme: 960-969 Multi-discipline packages UI — packages UI still thin (DRAWING_INTELLIGENCE_ROADMAP.md Multi-discipline packages — packages UI still thin)
+- Theme: 970-979 Job progress UI hardening — progress chrome still thin (DRAWING_INTELLIGENCE_ROADMAP.md Job progress UI — progress chrome still thin)
+
+
 
 
 
