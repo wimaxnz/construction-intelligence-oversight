@@ -1,11 +1,11 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1580-1589 Platform permanence continuous wrap (9/10); Sprint 1565 queued.
+**Status:** Active — Milestone 1580-1589 Platform permanence continuous wrap CLOSED (10/10); Sprint 1566 queued (1590-1599 Platform permanence continuous wrap).
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1564 closed  
-**Next sprint:** 1565 queued
-**Milestone:** 1570-1579 WRAP CLOSED (10/10) — 1580-1589 Platform permanence continuous wrap opens Sprint 1556
+**Current sprint:** 1565 closed  
+**Next sprint:** 1566 queued (1590-1599 Platform permanence continuous wrap)
+**Milestone:** 1580-1589 WRAP CLOSED (10/10) — 1590-1599 Governance continuous wrap opens Sprint 1566
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
 ## Sprint 545 summary
@@ -559,11 +559,13 @@ Cross-project loop chain step registry expansion + KG entity provenance: `digita
 
 Evidence: `docs/MIGRATION_015_PRODUCTION_DEPLOYMENT_STRATEGY.md` · `docs/MIGRATION_015_PRODUCTION_APPLY_PLAN.json` · `docs/PRODUCTION_DEPLOYMENT_READINESS.json`
 
-## Next sprint (1556)
+## Next sprint (1566)
 
-- Stream 1: Milestone 1580-1589 Platform permanence continuous wrap validation automation foundation — sprint-1556-selftest.ts
+- Stream 1: Milestone 1590-1599 Governance continuous wrap validation automation foundation — sprint-1566-selftest.ts
 - Stream 2: Platform Certification recertification post-milestone-close (Finding 4) — PHASE_B_RUNS=3
-- Theme: 1580-1589 Platform permanence continuous wrap — permanent Platform permanence continuous track (DRAWING_INTELLIGENCE_ROADMAP.md / PLATFORM_EVOLUTION.md platform permanence; non-write_audit; write_audit_entry remains standing deferred open_interrupt; Continuous-roadmap wrap closed)
+- Theme: 1590-1599 Governance continuous wrap — permanent Governance continuous track (DRAWING_INTELLIGENCE_ROADMAP.md / PLATFORM_EVOLUTION.md governance continuous; non-write_audit; write_audit_entry remains standing deferred open_interrupt; Platform-permanence wrap closed)
+
+
 
 
 
