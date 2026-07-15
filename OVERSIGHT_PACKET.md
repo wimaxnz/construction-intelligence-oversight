@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1630-1639 Standing deferred owner gates continuous wrap (7/10); Sprint 1613 queued.
+**Status:** Active — Milestone 1630-1639 Standing deferred owner gates continuous wrap (8/10); Sprint 1614 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1612 closed  
-**Next sprint:** 1613 queued
+**Current sprint:** 1613 closed  
+**Next sprint:** 1614 queued
 **Milestone:** 1620-1629 WRAP CLOSED (10/10) — 1630-1639 Roadmap completion continuous wrap opens Sprint 1606
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
