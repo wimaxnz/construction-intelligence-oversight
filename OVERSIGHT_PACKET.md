@@ -1,10 +1,10 @@
 # Oversight Packet — Sprint 433 Close-out
 
-**Status:** Active — Milestone 1600-1609 Final production acceptance continuous wrap (4/10); Sprint 1580 queued.
+**Status:** Active — Milestone 1600-1609 Final production acceptance continuous wrap (5/10); Sprint 1581 queued.
 
 **Last updated:** 2026-07-12
-**Current sprint:** 1579 closed  
-**Next sprint:** 1580 queued
+**Current sprint:** 1580 closed  
+**Next sprint:** 1581 queued
 **Milestone:** 1590-1599 WRAP CLOSED (10/10) — 1600-1609 Governance continuous wrap opens Sprint 1576
 **hardCompletionDirective:** at_risk · gate #1 satisfied (Finding 6 Sprint 422) · gate #2 staging satisfied Sprint 421 (`docs/MIGRATION_015_STAGING_VERIFICATION.json`) · gate #2 production pending post-sync verification (GitHub Integration sync triggered; dashboard deployment confirmation and post-sync production probe verification pending. Deploy credentials are fallback-only.)
 
