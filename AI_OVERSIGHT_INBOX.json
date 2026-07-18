@@ -1,1 +1,20 @@
-{"version":1,"updatedAt":null,"findings":[]}
+{
+  "version": 1,
+  "updatedAt": "2026-07-18T03:51:57Z",
+  "findings": [
+    {
+      "id": "oversight-2026-07-18-stale-hard-completion-request",
+      "createdAt": "2026-07-18T03:51:57Z",
+      "severity": "medium",
+      "category": "roadmap-governance-metadata",
+      "title": "Retire stale hard-completion monitoring request",
+      "evidence": [
+        "AI_OVERSIGHT_REQUEST.md still marks the Sunday 12 July 2026 hard-completion directive as active monitoring and at_risk.",
+        "Latest published close-out metadata records Sprint 1615 closed, milestone 1630-1639 complete, no autonomous next sprint, and only write_audit_entry as a standing deferred owner action."
+      ],
+      "whyItMatters": "The expired active request can cause workers or oversight automation to reopen completed roadmap work, continue reporting an obsolete deadline, or mistake deliberate owner-only deferral for autonomous delivery failure.",
+      "recommendedAction": "Archive or close the 2026-07-06 request, replace its status with roadmap complete, and retain only the write_audit_entry 0/3 standing deferred owner gate plus production-host verification as current owner-controlled follow-up. Do not queue Sprint 1616 or a new autonomous milestone.",
+      "status": "new"
+    }
+  ]
+}
