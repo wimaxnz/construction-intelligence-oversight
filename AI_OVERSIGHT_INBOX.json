@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-18T03:51:57Z",
+  "updatedAt": "2026-07-18T13:57:53Z",
   "findings": [
     {
       "id": "oversight-2026-07-18-stale-hard-completion-request",
@@ -14,6 +14,21 @@
       ],
       "whyItMatters": "The expired active request can cause workers or oversight automation to reopen completed roadmap work, continue reporting an obsolete deadline, or mistake deliberate owner-only deferral for autonomous delivery failure.",
       "recommendedAction": "Archive or close the 2026-07-06 request, replace its status with roadmap complete, and retain only the write_audit_entry 0/3 standing deferred owner gate plus production-host verification as current owner-controlled follow-up. Do not queue Sprint 1616 or a new autonomous milestone.",
+      "status": "new"
+    },
+    {
+      "id": "oversight-2026-07-19-revision-knowledge-invalidation-gap",
+      "createdAt": "2026-07-18T13:57:53Z",
+      "severity": "high",
+      "category": "knowledge-governance-data-integrity",
+      "title": "Drawing supersession does not invalidate governed knowledge",
+      "evidence": [
+        "The current public state says template review and publication payloads carry templateRevisionId, while linked drawing revision IDs are optional viewer context and are not persisted in Memory audit payloads.",
+        "LessonsLearnedCapture has no sourceRevisionIds field.",
+        "drawing_revision_superseded events exist, but there is no knowledge invalidation or revalidation hook, and the knowledge pipeline does not consume drawing-revision evidence links."
+      ],
+      "whyItMatters": "A lesson or governed knowledge item derived from a superseded drawing can remain approved and be reused by Project B without traceable source-revision lineage. This breaks the Project A to governed knowledge to Project B trust loop and creates construction, commercial, and audit risk.",
+      "recommendedAction": "Add immutable sourceRevisionIds and sourceProjectId lineage to lesson capture and knowledge publication records. On drawing_revision_superseded, mark dependent knowledge stale or revalidation_required, block cross-project recommendation until re-approved, and add an end-to-end test proving Project A revision supersession prevents stale learning from reaching Project B while preserving the full audit chain.",
       "status": "new"
     }
   ]
