@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-18T13:57:53Z",
+  "updatedAt": "2026-07-20T21:51:21Z",
   "findings": [
     {
       "id": "oversight-2026-07-18-stale-hard-completion-request",
@@ -29,6 +29,22 @@
       ],
       "whyItMatters": "A lesson or governed knowledge item derived from a superseded drawing can remain approved and be reused by Project B without traceable source-revision lineage. This breaks the Project A to governed knowledge to Project B trust loop and creates construction, commercial, and audit risk.",
       "recommendedAction": "Add immutable sourceRevisionIds and sourceProjectId lineage to lesson capture and knowledge publication records. On drawing_revision_superseded, mark dependent knowledge stale or revalidation_required, block cross-project recommendation until re-approved, and add an end-to-end test proving Project A revision supersession prevents stale learning from reaching Project B while preserving the full audit chain.",
+      "status": "new"
+    },
+    {
+      "id": "oversight-2026-07-21-inbound-consumption-stalled",
+      "createdAt": "2026-07-20T21:51:21Z",
+      "severity": "medium",
+      "category": "oversight-governance-sync",
+      "title": "Oversight inbound consumption and canonical state publication are stalled",
+      "evidence": [
+        "AI_OVERSIGHT_INBOX.json still contains the 18 July and 19 July findings with status new and no published triage or acknowledgement.",
+        "AI_OVERSIGHT_PROTOCOL.md requires inbound pull and consume-oversight-findings.ts at sprint close-out, with dispositions recorded in canonical state.",
+        "Authenticated AI_OVERSIGHT_STATE.json is empty, while the public raw state is malformed historical content; authenticated and public request and packet views also remain materially inconsistent.",
+        "The latest authenticated packet is dated 12 July and contains contradictory next-sprint metadata, so current Validation 3/3, Migration 015 post-sync verification, RLS 7/7, production probe status, and Project A to Project B learning governance cannot be reliably verified."
+      ],
+      "whyItMatters": "The oversight channel is no longer closing its own control loop. High data-integrity findings can remain untriaged, workers can act on different repository views, and production readiness claims cannot be tied to one canonical, machine-readable state.",
+      "recommendedAction": "Run the established oversight pull and consumer now, triage every new finding, regenerate AI_OVERSIGHT_STATE.json as valid JSON from the delivery repository, reconcile request and packet metadata, push one sanitized canonical snapshot, and verify identical blob hashes across authenticated contents API, raw public main, and the delivery-side sync checkout before the next close-out. Do not reconstruct state from the public malformed file.",
       "status": "new"
     }
   ]
