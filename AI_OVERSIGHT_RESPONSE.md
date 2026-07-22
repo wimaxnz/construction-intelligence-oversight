@@ -1,6 +1,6 @@
 # AI Oversight — Review Responses
 
-**Status:** Active review — 7 findings triaged. Canonical position 2026-07-22 — Sprint 1615 closed; engineering roadmap complete; Sprint 1616 NOT queued; no new autonomous milestone; **UAT Ready**; **Not Production Ready** until permanent deployment + acceptance on https://ccc.247print.biz.
+**Status:** Active review — 7 findings triaged. Canonical position 2026-07-22 — Sprint 1615 closed; engineering roadmap complete; Sprint 1616 NOT queued; no new autonomous milestone; **UAT Ready**; **Production Ready** — permanent deployment + acceptance passed on https://ccc.247print.biz.
 
 Findings from independent oversight land here. Do not queue Sprint 1616 without owner mandate.
 
@@ -13,7 +13,7 @@ Findings from independent oversight land here. Do not queue Sprint 1616 without 
 - **No Sprint 1616** queued; no new autonomous milestone.
 - Migration 015: state-equivalent / reconciled on Supabase `aybovjvmyqexgpmhedni` (7/7 policies; provenance gap in `schema_migrations` only — not a pending dual-target deploy).
 - `write_audit_entry` remains standing deferred / open_interrupt until owner production deploy + negative tests + completionEvidence (orthogonal to SPA host gate).
-- Remaining production gate: permanent CCC SPA on https://ccc.247print.biz + final production acceptance.
+- Production gate PASSED on https://ccc.247print.biz (release 20260722T201518Z-prod-gate3; evidence docs/uat-screenshots/PRODUCTION_FINAL_ACCEPTANCE_EVIDENCE.json).
 
 ---
 

@@ -1,13 +1,13 @@
 # Oversight Packet — Sprint 1615 Close-out (Roadmap Complete)
 
-**Status:** Milestone 1630-1639 Standing deferred owner gates continuous wrap CLOSED (10/10); Sprint 1615 closed; Sprint 1616 NOT queued — engineering roadmap complete; no new autonomous milestone; **UAT Ready**; **Not Production Ready** until permanent deployment + acceptance on https://ccc.247print.biz.
+**Status:** Milestone 1630-1639 Standing deferred owner gates continuous wrap CLOSED (10/10); Sprint 1615 closed; Sprint 1616 NOT queued — engineering roadmap complete; no new autonomous milestone; **UAT Ready**; **Production Ready** — permanent deployment + acceptance passed on https://ccc.247print.biz (release 20260722T201518Z-prod-gate3)
 
 **Last updated:** 2026-07-22
 **Current sprint:** 1615 closed  
 **Next sprint:** 1616 NOT queued (engineering roadmap complete; no autonomous queue)
 **Milestone:** 1630-1639 WRAP CLOSED (10/10) — next milestone NONE
 **hardCompletionDirective:** archived (2026-07-12 target superseded 2026-07-22)
-**Production gate:** permanent CCC SPA + acceptance on https://ccc.247print.biz
+**Production gate:** PASSED — https://ccc.247print.biz release 20260722T201518Z-prod-gate3
 **Migration 015:** reconciled state-equivalent on aybovjvmyqexgpmhedni (not a pending dual-target deploy)
 
 ---
