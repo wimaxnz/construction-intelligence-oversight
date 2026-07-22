@@ -1,37 +1,26 @@
-## Security interrupt — write_audit_entry (2026-07-10)
-
-**Severity:** high data-integrity · **Interrupt:** yes (does not stop unrelated sprint execution)
-
-**Object:** `public.write_audit_entry(uuid, text, text, text, text, text, text)`
-
-**Finding:** SECURITY DEFINER with pinned `search_path=public`, EXECUTE available to `authenticated` (and `anon` via PUBLIC). Body only checks `auth.uid() IS NOT NULL` — no `is_project_member` — any signed-in user can insert `audit_log` rows for arbitrary `project_id`.
-
-**Remediation:** Add membership/role guard; `REVOKE EXECUTE ... FROM anon, PUBLIC`; prefer trigger-only writers / service_role EXECUTE.
-
-**Evidence:** `docs/MIGRATION_015_SECURITY_ADVISOR_TRIAGE.json`
-
-## Migration 015 reconciliation (2026-07-10)
-
-**Classification:** deployed_state_equivalent_but_untracked on `aybovjvmyqexgpmhedni`
-
-- Migration 015 artifact: `supabase/migrations/015_phase_b_rls_remediation.sql`
-- Live: 7/7 expected policies present; `spatial_objects` RLS on; `knowledge_revisions_write` absent
-- `supabase_migrations.schema_migrations`: 0 rows (provenance gap only)
-- Owner core-table RLS 7/7 (projects…tasks) is **orthogonal** to Migration 015 policy set
-- Identity: same ref historically labeled staging; owner session asserts production — labeling conflict, not dual-target mismatch
-
 # AI Oversight — Review Responses
 
-**Status:** Active review — 7 findings triaged (latest: Migration 015 deployment reconciliation 2026-07-08).
+**Status:** Active review — 7 findings triaged. Canonical position 2026-07-22 — Sprint 1615 closed; engineering roadmap complete; Sprint 1616 NOT queued; no new autonomous milestone; **UAT Ready**; **Not Production Ready** until permanent deployment + acceptance on https://ccc.247print.biz.
 
-Findings from independent oversight land here. Sprint execution continues regardless of response timing.
+Findings from independent oversight land here. Do not queue Sprint 1616 without owner mandate.
+
+---
+
+## Canonical close-out note (2026-07-22)
+
+- Milestone **1630–1639** WRAP CLOSED (10/10) with Sprint **1615**.
+- Engineering continuous roadmap is **complete** for autonomous execution.
+- **No Sprint 1616** queued; no new autonomous milestone.
+- Migration 015: state-equivalent / reconciled on Supabase `aybovjvmyqexgpmhedni` (7/7 policies; provenance gap in `schema_migrations` only — not a pending dual-target deploy).
+- `write_audit_entry` remains standing deferred / open_interrupt until owner production deploy + negative tests + completionEvidence (orthogonal to SPA host gate).
+- Remaining production gate: permanent CCC SPA on https://ccc.247print.biz + final production acceptance.
 
 ---
 
 ## How to incorporate responses
 
 1. Triage each finding: accept · defer · reject (with rationale).
-2. Accepted items → backlog or `PLATFORM_EVOLUTION.md` sprint queue.
+2. Accepted items → backlog only when owner authorizes — do not auto-queue Sprint 1616.
 3. Update `AI_OVERSIGHT_STATE.json` (risks, deferred items, alignment).
 4. Clear or archive resolved request sections in `AI_OVERSIGHT_REQUEST.md`.
 
@@ -39,7 +28,7 @@ See `AI_OVERSIGHT_PROTOCOL.md` for interrupt rules (security / data-integrity / 
 
 ---
 
-
+## Historical responses (archived below)
 
 ## Sprint 545 close-out (2026-07-09)
 

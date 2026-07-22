@@ -1,6 +1,6 @@
 # AI Oversight — Review Requests
 
-**Status:** Active monitoring — hard completion target Sunday 12 July 2026 (`hardCompletionDirective` in `AI_OVERSIGHT_STATE.json`).
+**Status:** Monitoring paused for autonomous sprint queue — engineering roadmap complete (Sprint 1615 closed). UAT Ready. Not Production Ready until permanent deployment + acceptance on https://ccc.247print.biz.
 
 Independent review is optional and non-blocking. File a request here only when architectural, product, construction-domain, commercial, or roadmap perspective would add value beyond sprint self-tests.
 
@@ -10,7 +10,7 @@ Independent review is optional and non-blocking. File a request here only when a
 
 1. Copy the template below into a new dated section.
 2. Update `AI_OVERSIGHT_STATE.json` → note the request in `openRisks` or a custom field if urgent.
-3. Continue sprint execution — do not wait for response.
+3. Continue execution — do not wait for response. Do **not** queue Sprint 1616 or open a new autonomous milestone without owner mandate.
 
 ### Request template
 
@@ -28,10 +28,15 @@ Independent review is optional and non-blocking. File a request here only when a
 
 ## Active requests
 
-### Request — 2026-07-06
+_None._ July 12 2026 hard-completion monitoring request archived to `docs/ai-oversight/archive/AI_OVERSIGHT_REQUEST-hard-completion-2026-07-12.md`.
 
-**Topic:** Hard completion directive monitoring (Sunday 12 July 2026)  
-**Context:** Sprint 378 closed; milestone 390–399 Pin Re-anchor at 5/10; governance repair after audit 2152971d; `hardCompletionDirective` added to canonical state with `status: at_risk`  
-**Question:** On each hourly oversight sync, confirm public repo reflects local canonical state and report progress against pass/fail gates: (1) Finding 6 chained acceptance scenario, (2) migration 015 staging verification, (3) platform certification 5/5 re-run, (4) oversight bridge remote callable OR documented deferral  
-**Urgency:** before-milestone-close  
-**Suggested reviewer focus:** roadmap | architecture | governance
+---
+
+## Canonical position (2026-07-22)
+
+- Sprint **1615** closed
+- Engineering roadmap **complete**
+- Sprint **1616** NOT queued
+- No new autonomous milestone
+- **UAT Ready**
+- **Not Production Ready** (remaining gate = permanent deployment + acceptance on https://ccc.247print.biz)
