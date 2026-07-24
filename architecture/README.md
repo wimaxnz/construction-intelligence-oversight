@@ -20,3 +20,5 @@ Independent architecture governance for Construction Command Centre, hosted in t
 **Protocol links:** [`../AI_OVERSIGHT_PROTOCOL.md`](../AI_OVERSIGHT_PROTOCOL.md) · [`../AI_OVERSIGHT_STATE.json`](../AI_OVERSIGHT_STATE.json) · [`../OVERSIGHT_SYNC.md`](../OVERSIGHT_SYNC.md)
 
 **Publication guard:** `node scripts/architecture-office-guard.mjs` (fail-closed)
+
+**Canonical branch:** `main` — see [`DELIVERY.md`](./DELIVERY.md) for Cursor Automation path-filtered dispatch (`NEXT_WORKPACKAGE.md` → GitHub Actions → webhook).

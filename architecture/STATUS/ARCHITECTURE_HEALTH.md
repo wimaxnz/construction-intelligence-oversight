@@ -19,6 +19,7 @@ Architecture Office inaugurated with publication guards. Aligned with roadmap-co
 | Production gate policy CLOSED unless genuine defect | PASS |
 | Parse-once / A→GK→B / Sprint 521 / one-active weather encoded | PASS |
 | Architecture Office guard + selftest | PASS |
+| Canonical on `main` + path-filtered Cursor dispatch wiring | PASS (webhook secret owner-gated) |
 | CCC engineering non-interruption | PASS (oversight-only worktree) |
 
 ## Risks watched

@@ -15,7 +15,9 @@ Architecture Office under `architecture/` in `construction-intelligence-oversigh
 - Structured `NEXT_WORKPACKAGE.md` (AO-WP-002 approved)
 - Completed packages AO-WP-000 / AO-WP-001 and reviews
 - Health / implementation status summaries
-- Fail-closed `scripts/architecture-office-guard.mjs` + GitHub Actions workflow
+- Fail-closed `scripts/architecture-office-guard.mjs` + GitHub Actions guard workflow
+- Path-filtered Cursor Automation dispatch (see [`DELIVERY.md`](../DELIVERY.md) and [`CURSOR_AUTOMATION_DELIVERY.md`](./CURSOR_AUTOMATION_DELIVERY.md))
+- Canonical on **`main`** (feature branch not required long-term)
 
 ## What engineering continues independently
 

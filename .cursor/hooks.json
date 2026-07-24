@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "node .cursor/hooks/architecture-office-session.mjs",
+        "timeout": 60
+      }
+    ]
+  }
+}

@@ -10,6 +10,8 @@ Governing architecture artefacts live under [`architecture/`](./architecture/REA
 - **Machine state:** [`architecture/ARCHITECTURE_STATE.json`](./architecture/ARCHITECTURE_STATE.json)
 - **Next package:** [`architecture/NEXT_WORKPACKAGE.md`](./architecture/NEXT_WORKPACKAGE.md)
 - **Publication guard:** `node scripts/architecture-office-guard.mjs` (fail-closed)
+- **Canonical branch:** `main`
+- **Auto-delivery:** [`architecture/DELIVERY.md`](./architecture/DELIVERY.md) (path-filtered `NEXT_WORKPACKAGE.md` → Cursor Automation webhook)
 
 Architecture Office links to — and does not replace — the AI Oversight Protocol:
 

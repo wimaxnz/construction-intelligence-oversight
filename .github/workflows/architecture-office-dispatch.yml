@@ -1,0 +1,75 @@
+# Path-filtered dispatch to Cursor Architecture Office Automation.
+# Native Cursor git push triggers are branch-level; this workflow provides
+# file-path precision for architecture/NEXT_WORKPACKAGE.md using existing
+# GitHub Actions + Cursor webhook (no new bridge microservice).
+#
+# Owner setup (once):
+# 1. Create/save the Cursor Automation (webhook trigger) for this repo/main.
+# 2. Copy the Automation webhook URL into repo secret CURSOR_AO_WEBHOOK_URL.
+# 3. Optional: CURSOR_AO_WEBHOOK_SECRET if the Automation requires a shared secret header.
+
+name: Architecture Office work-package dispatch
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'architecture/NEXT_WORKPACKAGE.md'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Manual dispatch reason (dry-run allowed when secret missing)'
+        required: false
+        default: 'manual'
+
+jobs:
+  dispatch-cursor-automation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (for evidence only)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Confirm NEXT_WORKPACKAGE path change
+        id: pathcheck
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Manual workflow_dispatch — allowing dispatch attempt."
+            exit 0
+          fi
+          if git diff --name-only HEAD~1 HEAD | grep -qx 'architecture/NEXT_WORKPACKAGE.md'; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "architecture/NEXT_WORKPACKAGE.md changed on main."
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No NEXT_WORKPACKAGE.md change detected — skipping (docs-only / unrelated push)."
+          fi
+
+      - name: POST Cursor Automation webhook
+        if: steps.pathcheck.outputs.changed == 'true'
+        env:
+          WEBHOOK_URL: ${{ secrets.CURSOR_AO_WEBHOOK_URL }}
+          WEBHOOK_SECRET: ${{ secrets.CURSOR_AO_WEBHOOK_SECRET }}
+          GITHUB_SHA: ${{ github.sha }}
+          GITHUB_REF: ${{ github.ref }}
+          GITHUB_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "${WEBHOOK_URL:-}" ]; then
+            echo "::warning::CURSOR_AO_WEBHOOK_URL secret is not set. Path filter matched; owner must paste the Automation webhook URL into this secret."
+            exit 0
+          fi
+          BODY=$(printf '{"repository":"%s","ref":"%s","sha":"%s","path":"architecture/NEXT_WORKPACKAGE.md","source":"architecture-office-dispatch"}' \
+            "$GITHUB_REPO" "$GITHUB_REF" "$GITHUB_SHA")
+          HDR=(-H "Content-Type: application/json" -H "User-Agent: architecture-office-dispatch")
+          if [ -n "${WEBHOOK_SECRET:-}" ]; then
+            HDR+=(-H "Authorization: Bearer ${WEBHOOK_SECRET}")
+          fi
+          curl -fsS -X POST "${HDR[@]}" -d "$BODY" "$WEBHOOK_URL"
+          echo "Dispatched Cursor Architecture Office Automation webhook."

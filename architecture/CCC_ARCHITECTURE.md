@@ -117,12 +117,13 @@ Architecture Office artefacts are **additive**. They must not break existing all
 
 ## 6. Change control
 
-1. Propose package in [`NEXT_WORKPACKAGE.md`](./NEXT_WORKPACKAGE.md).
-2. Implement in delivery repo **without** pausing other active streams.
-3. Complete review using the review template → [`REVIEWS/`](./REVIEWS/).
-4. Archive completed package → [`WORKPACKAGES/`](./WORKPACKAGES/).
-5. Refresh [`ARCHITECTURE_STATE.json`](./ARCHITECTURE_STATE.json) and [`STATUS/`](./STATUS/).
-6. Publish only if Architecture Office guards pass (and existing oversight publication guards remain green for root state).
+1. Propose package in [`NEXT_WORKPACKAGE.md`](./NEXT_WORKPACKAGE.md) on **`main`**.
+2. When status is `approved`, path-filtered GitHub Actions may dispatch the Cursor Automation webhook (see [`DELIVERY.md`](./DELIVERY.md)).
+3. Implement in delivery repo **without** pausing other active streams (CCC via PR; do not fight CIP).
+4. Complete review using the review template → [`REVIEWS/`](./REVIEWS/).
+5. Archive completed package → [`WORKPACKAGES/`](./WORKPACKAGES/).
+6. Refresh [`ARCHITECTURE_STATE.json`](./ARCHITECTURE_STATE.json) and [`STATUS/`](./STATUS/); advance next package or queued sentinel.
+7. Publish only if Architecture Office guards pass (and existing oversight publication guards remain green for root state).
 
 ---
 
