@@ -1,0 +1,35 @@
+# name: Architecture Office publication guard
+
+# Fail-closed checks for architecture/ artefacts.
+# Does not gate CCC app delivery; runs only on this oversight repository.
+
+on:
+  push:
+    paths:
+      - 'architecture/**'
+      - 'scripts/architecture-office-guard.mjs'
+      - 'AI_OVERSIGHT_STATE.json'
+      - '.github/workflows/architecture-office-guard.yml'
+  pull_request:
+    paths:
+      - 'architecture/**'
+      - 'scripts/architecture-office-guard.mjs'
+      - 'AI_OVERSIGHT_STATE.json'
+      - '.github/workflows/architecture-office-guard.yml'
+  workflow_dispatch:
+
+jobs:
+  architecture-office-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Self-test fail-closed behaviours
+        run: node scripts/architecture-office-guard.mjs --selftest
+
+      - name: Validate Architecture Office publishability
+        run: node scripts/architecture-office-guard.mjs
