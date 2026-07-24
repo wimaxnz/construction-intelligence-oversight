@@ -48,9 +48,9 @@
     "productionGatePolicy": "CLOSED unless genuine production defect"
   },
   "nextWorkPackage": {
-    "id": "AO-WP-002",
-    "title": "CIP/ITP parallel-stream architecture coherence checkpoint",
-    "status": "approved",
+    "id": "AO-WP-NONE",
+    "title": "Queued sentinel — no approved package",
+    "status": "queued",
     "path": "architecture/NEXT_WORKPACKAGE.md",
     "conflictsWithActiveEngineering": false
   },
@@ -68,6 +68,13 @@
       "status": "completed",
       "path": "architecture/WORKPACKAGES/AO-WP-001-architecture-office-guards.md",
       "completedAt": "2026-07-25"
+    },
+    {
+      "id": "AO-WP-002",
+      "title": "CIP/ITP parallel-stream architecture coherence checkpoint",
+      "status": "completed",
+      "path": "architecture/WORKPACKAGES/AO-WP-002-cip-itp-coherence-checkpoint.md",
+      "completedAt": "2026-07-25"
     }
   ],
   "completedReviews": [
@@ -84,13 +91,21 @@
       "result": "PASS",
       "path": "architecture/REVIEWS/AO-REV-001-architecture-office-guards.md",
       "reviewedAt": "2026-07-25"
+    },
+    {
+      "id": "AO-REV-002",
+      "workPackageId": "AO-WP-002",
+      "result": "PASS",
+      "path": "architecture/REVIEWS/AO-REV-002-cip-itp-coherence-checkpoint.md",
+      "reviewedAt": "2026-07-25"
     }
   ],
   "health": {
     "architectureHealth": "GREEN",
     "implementationSummaryPath": "architecture/STATUS/IMPLEMENTATION_SUMMARY.md",
     "healthSummaryPath": "architecture/STATUS/ARCHITECTURE_HEALTH.md",
-    "publicationGuards": "scripts/architecture-office-guard.mjs + existing oversight publication guards"
+    "publicationGuards": "scripts/architecture-office-guard.mjs + existing oversight publication guards",
+    "deliveryPath": "architecture/DELIVERY.md"
   },
   "nonInterruption": {
     "mustNotBlockCccEngineering": true,

@@ -30,4 +30,4 @@ Architecture Office inaugurated with publication guards. Aligned with roadmap-co
 
 ## Next health action
 
-Execute AO-WP-002 CIP/ITP coherence checkpoint; keep STATUS refreshed on each package close.
+Queue is at queued sentinel (`AO-WP-NONE`). Refresh STATUS when the next approved package closes. Cloud webhook dispatch remains owner-gated until `CURSOR_AO_WEBHOOK_URL` is set.

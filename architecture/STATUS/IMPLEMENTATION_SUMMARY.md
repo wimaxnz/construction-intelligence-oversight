@@ -40,4 +40,5 @@ Root allowlisted sync files remain the sprint-state publication channel. Archite
 |----|-------|--------|
 | AO-WP-000 | Architecture Office inauguration | completed |
 | AO-WP-001 | Bootstrap and publication guards | completed |
-| AO-WP-002 | CIP/ITP parallel-stream coherence checkpoint | approved / next |
+| AO-WP-002 | CIP/ITP parallel-stream coherence checkpoint | completed |
+| AO-WP-NONE | Queued sentinel | queued (no approved next) |
