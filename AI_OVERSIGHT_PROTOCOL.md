@@ -118,3 +118,18 @@ This is a **docs-only link** — not a git submodule. The delivery repo keeps wo
 | `OVERSIGHT_SYNC.md` | Safe public sync — allowlist, sanitization, usage |
 | `OVERSIGHT_PACKET.md` | Optional human-readable close-out summary for external review |
 | `OVERSIGHT_REMOTE.md` | External repo URL, push/pull workflow, non-blocking rules |
+| `architecture/` | **Architecture Office** — governing reference, packages, reviews, status (see [`architecture/README.md`](./architecture/README.md)) |
+| `architecture/CCC_ARCHITECTURE.md` | Governing architecture reference |
+| `architecture/ARCHITECTURE_STATE.json` | Machine-readable Architecture Office state (guarded) |
+| `scripts/architecture-office-guard.mjs` | Fail-closed Architecture Office publication guard |
+
+---
+
+## Architecture Office (additive)
+
+Architecture governance artefacts live under [`architecture/`](./architecture/README.md) in this oversight repository so they do **not** interrupt CCC engineering worktrees.
+
+- Governing reference: [`architecture/CCC_ARCHITECTURE.md`](./architecture/CCC_ARCHITECTURE.md)
+- Must stay consistent with canonical [`AI_OVERSIGHT_STATE.json`](./AI_OVERSIGHT_STATE.json)
+- Publishability: `node scripts/architecture-office-guard.mjs` (empty/invalid state, contradictory roadmap metadata, or NEXT package conflicts → fail closed)
+- Root allowlisted sync from the delivery repo (`AI_OVERSIGHT_*.md/json`, `OVERSIGHT_PACKET.md`) is unchanged; `architecture/` is native here and validated by Architecture Office CI

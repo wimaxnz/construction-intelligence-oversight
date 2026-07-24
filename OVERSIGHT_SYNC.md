@@ -40,6 +40,19 @@ Only these files from `docs/ai-oversight/` are copied to the oversight repo root
 
 **Never synced:** app source, `.env`, keys, tokens, drawings, customer/personal data, commercial figures, private docs, internal URLs, DB dumps, secret logs, or any file outside the allowlist.
 
+### Architecture Office (native to this repo — not part of delivery allowlist push)
+
+`architecture/` is maintained **in this oversight repository** (not overwritten by delivery `sync-ai-oversight.*` allowlist copies). Before publishing Architecture Office changes:
+
+```bash
+node scripts/architecture-office-guard.mjs --selftest
+node scripts/architecture-office-guard.mjs
+```
+
+Fail-closed when `ARCHITECTURE_STATE.json` is empty/invalid, roadmap metadata contradicts `AI_OVERSIGHT_STATE.json`, or `NEXT_WORKPACKAGE.md` conflicts with active/approved work declarations. See [`architecture/README.md`](./architecture/README.md).
+
+Delivery-repo sync remains responsible for root allowlisted sprint-state files only and must stay fail-closed via existing publication guards.
+
 ---
 
 ## Sanitization (before every push)
