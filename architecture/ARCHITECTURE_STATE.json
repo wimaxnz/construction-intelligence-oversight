@@ -41,16 +41,18 @@
   "activeWork": {
     "engineeringAutonomousQueue": "none",
     "parallelStreams": [
-      "CIP continuous ITP floors",
-      "ITP Library to CI Engine",
+      "Production blank-page root-cause and verified recovery",
+      "CCC production-readiness closure",
+      "ITP Library to CI Engine continuation",
+      "CIP continuous ITP floors (must not be interrupted)",
       "Demo role-switch migration 034 (owner steps may remain)"
     ],
     "productionGatePolicy": "CLOSED unless genuine production defect"
   },
   "nextWorkPackage": {
-    "id": "AO-WP-NONE",
-    "title": "Queued sentinel — no approved package",
-    "status": "queued",
+    "id": "AO-WP-003",
+    "title": "CCC recovery, production readiness, and ITP/CI delivery",
+    "status": "approved",
     "path": "architecture/NEXT_WORKPACKAGE.md",
     "conflictsWithActiveEngineering": false
   },
@@ -109,6 +111,6 @@
   },
   "nonInterruption": {
     "mustNotBlockCccEngineering": true,
-    "workLocation": "construction-intelligence-oversight only"
+    "workLocation": "oversight plus governed clone of wimaxnz/construction-command-centre"
   }
 }
