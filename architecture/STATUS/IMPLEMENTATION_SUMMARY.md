@@ -12,8 +12,8 @@ Architecture Office under `architecture/` in `construction-intelligence-oversigh
 - Vision and governing CCC architecture reference
 - Digital Brain, Knowledge Graph, Data Model, Security, Roadmap docs
 - Machine-readable `ARCHITECTURE_STATE.json`
-- Structured `NEXT_WORKPACKAGE.md` (AO-WP-002 approved)
-- Completed packages AO-WP-000 / AO-WP-001 and reviews
+- Structured `NEXT_WORKPACKAGE.md` (queued sentinel `AO-WP-NONE`)
+- Completed packages AO-WP-000 … AO-WP-003 and reviews
 - Health / implementation status summaries
 - Fail-closed `scripts/architecture-office-guard.mjs` + GitHub Actions guard workflow
 - Path-filtered Cursor Automation dispatch (see [`DELIVERY.md`](../DELIVERY.md) and [`CURSOR_AUTOMATION_DELIVERY.md`](./CURSOR_AUTOMATION_DELIVERY.md))
@@ -41,4 +41,9 @@ Root allowlisted sync files remain the sprint-state publication channel. Archite
 | AO-WP-000 | Architecture Office inauguration | completed |
 | AO-WP-001 | Bootstrap and publication guards | completed |
 | AO-WP-002 | CIP/ITP parallel-stream coherence checkpoint | completed |
+| AO-WP-003 | CCC recovery / readiness / ITP-CI delivery | completed (**FAIL** — CCC remote inaccessible) |
 | AO-WP-NONE | Queued sentinel | queued (no approved next) |
+
+## CCC delivery access
+
+Private repo `wimaxnz/construction-command-centre` is not readable by the current automation GitHub identity. Owner must grant access (or provide sibling checkout with known `origin`) before re-approving CCC engineering packages. See [`AO-WP-003-CCC-DELIVERY.md`](./AO-WP-003-CCC-DELIVERY.md).
