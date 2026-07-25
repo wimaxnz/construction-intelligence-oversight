@@ -41,18 +41,18 @@
   "activeWork": {
     "engineeringAutonomousQueue": "none",
     "parallelStreams": [
-      "Production blank-page root-cause and verified recovery",
-      "CCC production-readiness closure",
-      "ITP Library to CI Engine continuation",
+      "Production blank-page root-cause and verified recovery (blocked: CCC remote access)",
+      "CCC production-readiness closure (blocked: CCC remote access)",
+      "ITP Library to CI Engine continuation (blocked: CCC remote access; remote ITP branch untouched)",
       "CIP continuous ITP floors (must not be interrupted)",
       "Demo role-switch migration 034 (owner steps may remain)"
     ],
     "productionGatePolicy": "CLOSED unless genuine production defect"
   },
   "nextWorkPackage": {
-    "id": "AO-WP-003",
-    "title": "CCC recovery, production readiness, and ITP/CI delivery",
-    "status": "approved",
+    "id": "AO-WP-NONE",
+    "title": "Queued sentinel — no approved package",
+    "status": "queued",
     "path": "architecture/NEXT_WORKPACKAGE.md",
     "conflictsWithActiveEngineering": false
   },
@@ -77,6 +77,15 @@
       "status": "completed",
       "path": "architecture/WORKPACKAGES/AO-WP-002-cip-itp-coherence-checkpoint.md",
       "completedAt": "2026-07-25"
+    },
+    {
+      "id": "AO-WP-003",
+      "title": "CCC recovery, production readiness, and ITP/CI delivery",
+      "status": "completed",
+      "result": "FAIL",
+      "path": "architecture/WORKPACKAGES/AO-WP-003-ccc-recovery-delivery.md",
+      "completedAt": "2026-07-25",
+      "note": "Blocked: private CCC remote not accessible to automation; no CCC writes; production gate unchanged"
     }
   ],
   "completedReviews": [
@@ -100,6 +109,13 @@
       "result": "PASS",
       "path": "architecture/REVIEWS/AO-REV-002-cip-itp-coherence-checkpoint.md",
       "reviewedAt": "2026-07-25"
+    },
+    {
+      "id": "AO-REV-003",
+      "workPackageId": "AO-WP-003",
+      "result": "FAIL",
+      "path": "architecture/REVIEWS/AO-REV-003-CCC-DELIVERY.md",
+      "reviewedAt": "2026-07-25"
     }
   ],
   "health": {
@@ -107,7 +123,8 @@
     "implementationSummaryPath": "architecture/STATUS/IMPLEMENTATION_SUMMARY.md",
     "healthSummaryPath": "architecture/STATUS/ARCHITECTURE_HEALTH.md",
     "publicationGuards": "scripts/architecture-office-guard.mjs + existing oversight publication guards",
-    "deliveryPath": "architecture/DELIVERY.md"
+    "deliveryPath": "architecture/DELIVERY.md",
+    "cccDeliveryAccess": "BLOCKED_OWNER_ONLY_REMOTE"
   },
   "nonInterruption": {
     "mustNotBlockCccEngineering": true,
