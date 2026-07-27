@@ -20,7 +20,7 @@
     "uatReady": true,
     "productionReady": true,
     "productionGate": "CLOSED_UNLESS_GENUINE_DEFECT",
-    "note": "Architecture Office mirrors canonical AI_OVERSIGHT_STATE.json; does not reopen Sprint 1616 or invent autonomous milestones. Access-control (AO-WP-003) COMPLETE — reopen only on ACL regression. Prior coordinated CCC recovery dispatch superseded by ACL close + AO-WP-004."
+    "note": "Architecture Office mirrors canonical AI_OVERSIGHT_STATE.json; does not reopen Sprint 1616 or invent autonomous milestones. Access-control (AO-WP-003) COMPLETE — reopen only on ACL regression. AO-WP-004 ITP CI SPA go-live closed FAIL — CCC remote inaccessible to automation; owner-only remote grant required before re-approval."
   },
   "doctrine": {
     "parseOnceSharedCiOnly": true,
@@ -49,15 +49,15 @@
     "engineeringAutonomousQueue": "none",
     "parallelStreams": [
       "CIP continuous ITP floors (must not be interrupted)",
-      "ITP Library to CI Engine (AO-WP-004 SPA go-live)",
+      "ITP Library to CI Engine (AO-WP-004 SPA go-live blocked: CCC remote access; feature/itp-ci-engine-integration untouched)",
       "Demo role-switch migration 034 (owner steps may remain)"
     ],
     "productionGatePolicy": "CLOSED unless genuine production defect"
   },
   "nextWorkPackage": {
-    "id": "AO-WP-004",
-    "title": "ITP CI Engine SPA quiet-window go-live + production readiness soak",
-    "status": "approved",
+    "id": "AO-WP-NONE",
+    "title": "Queued sentinel — no approved package",
+    "status": "queued",
     "path": "architecture/NEXT_WORKPACKAGE.md",
     "conflictsWithActiveEngineering": false
   },
@@ -93,6 +93,15 @@
       "prs": [1, 2, 3],
       "deliveryStamp": "20260726T010500Z-acl-hardening-sb",
       "supersedesDispatch": "Coordinated CCC recovery/blank-page dispatch closed via ACL live delivery + post-merge regression"
+    },
+    {
+      "id": "AO-WP-004",
+      "title": "ITP CI Engine SPA quiet-window go-live + production readiness soak",
+      "status": "completed",
+      "result": "FAIL",
+      "path": "architecture/WORKPACKAGES/AO-WP-004-itp-ci-spa-go-live.md",
+      "completedAt": "2026-07-27",
+      "note": "Blocked: private CCC remote not accessible to automation; no CCC writes; CIP/ITP branch untouched; production gate unchanged"
     }
   ],
   "completedReviews": [
@@ -124,6 +133,13 @@
       "path": "architecture/REVIEWS/AO-REV-003-access-control-hardening-delivery.md",
       "reviewedAt": "2026-07-27",
       "approvalStatus": "COMPLETE"
+    },
+    {
+      "id": "AO-REV-004",
+      "workPackageId": "AO-WP-004",
+      "result": "FAIL",
+      "path": "architecture/REVIEWS/AO-REV-004-itp-ci-spa-go-live.md",
+      "reviewedAt": "2026-07-27"
     }
   ],
   "health": {
@@ -131,7 +147,8 @@
     "implementationSummaryPath": "architecture/STATUS/IMPLEMENTATION_SUMMARY.md",
     "healthSummaryPath": "architecture/STATUS/ARCHITECTURE_HEALTH.md",
     "publicationGuards": "scripts/architecture-office-guard.mjs + existing oversight publication guards",
-    "deliveryPath": "architecture/DELIVERY.md"
+    "deliveryPath": "architecture/DELIVERY.md",
+    "cccDeliveryAccess": "BLOCKED_OWNER_ONLY_REMOTE"
   },
   "nonInterruption": {
     "mustNotBlockCccEngineering": true,

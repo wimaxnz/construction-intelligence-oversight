@@ -12,8 +12,8 @@ Architecture Office under `architecture/` in `construction-intelligence-oversigh
 - Vision and governing CCC architecture reference
 - Digital Brain, Knowledge Graph, Data Model, Security, Roadmap docs
 - Machine-readable `ARCHITECTURE_STATE.json`
-- Structured `NEXT_WORKPACKAGE.md` (**AO-WP-004** approved — ITP CI Engine SPA go-live)
-- Completed packages AO-WP-000 … AO-WP-003 and matching reviews
+- Structured `NEXT_WORKPACKAGE.md` (**AO-WP-NONE** queued sentinel)
+- Completed packages AO-WP-000 … AO-WP-004 and matching reviews
 - Health / implementation status summaries
 - Fail-closed `scripts/architecture-office-guard.mjs` + GitHub Actions guard workflow
 - Path-filtered Cursor Automation dispatch (see [`DELIVERY.md`](../DELIVERY.md) and [`CURSOR_AUTOMATION_DELIVERY.md`](./CURSOR_AUTOMATION_DELIVERY.md))
@@ -29,9 +29,19 @@ Architecture Office under `architecture/` in `construction-intelligence-oversigh
 | Review | AO-REV-003 **PASS** / approval **COMPLETE** |
 | Evidence archive (CCC) | `docs/uat-screenshots/archive/access-control-20260726/` |
 
+## ITP CI SPA go-live (AO-WP-004) — FAIL (access blocked)
+
+| Field | Value |
+|-------|--------|
+| Status | **completed with FAIL** — CCC private remote inaccessible to automation |
+| Review | AO-REV-004 **FAIL** |
+| STATUS | [`AO-WP-004-ITP-CI-SPA-GO-LIVE.md`](./AO-WP-004-ITP-CI-SPA-GO-LIVE.md) |
+| CCC writes | **None** (`feature/itp-ci-engine-integration` untouched) |
+| Next | Owner-only CCC remote grant, then re-approve a new package |
+
 ## What engineering continues independently
 
-Active CCC CIP ITP floors and ITP Library → CI Engine (AO-WP-004) remain in the private delivery repo and are **not** blocked by this office.
+Active CCC CIP ITP floors and ITP Library → CI Engine remain in the private delivery repo and are **not** blocked by this office. Cloud automation cannot execute CCC code until owner grants remote/sibling access.
 
 ## Oversight protocol integration
 
@@ -51,5 +61,6 @@ Root allowlisted sync files remain the sprint-state publication channel. Archite
 | AO-WP-000 | Architecture Office inauguration | completed |
 | AO-WP-001 | Bootstrap and publication guards | completed |
 | AO-WP-002 | CIP/ITP parallel-stream coherence checkpoint | completed |
-| AO-WP-003 | Access Control hardening live delivery | completed |
-| AO-WP-004 | ITP CI Engine SPA quiet-window go-live | approved (next) |
+| AO-WP-003 | Access Control hardening live delivery | completed (PASS) |
+| AO-WP-004 | ITP CI Engine SPA quiet-window go-live | completed (FAIL — CCC access) |
+| AO-WP-NONE | Queued sentinel | queued (next) |
