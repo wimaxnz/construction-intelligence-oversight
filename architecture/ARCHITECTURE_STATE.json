@@ -1,144 +1,144 @@
-﻿{
-    "schemaVersion":  1,
-    "office":  "Architecture Office",
-    "governingReference":  "architecture/CCC_ARCHITECTURE.md",
-    "lastUpdated":  "2026-07-27",
-    "protocolLinks":  {
-                          "oversightProtocol":  "AI_OVERSIGHT_PROTOCOL.md",
-                          "canonicalOversightState":  "AI_OVERSIGHT_STATE.json",
-                          "oversightPacket":  "OVERSIGHT_PACKET.md",
-                          "oversightSync":  "OVERSIGHT_SYNC.md"
-                      },
-    "canonicalOversightAlignment":  {
-                                        "currentSprint":  1615,
-                                        "currentSprintStatus":  "closed",
-                                        "nextSprint":  1616,
-                                        "nextSprintQueued":  false,
-                                        "nextSprintStatus":  "not_queued",
-                                        "engineeringRoadmap":  "complete",
-                                        "autonomousMilestone":  "none",
-                                        "uatReady":  true,
-                                        "productionReady":  true,
-                                        "productionGate":  "CLOSED_UNLESS_GENUINE_DEFECT",
-                                        "note":  "Architecture Office mirrors canonical AI_OVERSIGHT_STATE.json; does not reopen Sprint 1616 or invent autonomous milestones. Access-control (AO-WP-003) COMPLETE â€” reopen only on ACL regression. Prior coordinated CCC recovery dispatch superseded by ACL close + AO-WP-004."
-                                    },
-    "doctrine":  {
-                     "parseOnceSharedCiOnly":  true,
-                     "crossProjectPath":  "A_TO_GOVERNED_KNOWLEDGE_TO_B",
-                     "forbidMemoryOnlyAtoB":  true,
-                     "forbidDirectAtoB":  true,
-                     "sprint521AiIpServerSide":  true,
-                     "oneActiveWeather":  true,
-                     "cipItpFloorsOngoing":  true,
-                     "itpLibraryToCiEngineParallel":  true,
-                     "demoRoleSwitchMigration034FeatureBranch":  true,
-                     "blankPageAclFix":  {
-                                             "acl":  "mask::---",
-                                             "path":  "public/assets",
-                                             "postDeployMandatory":  "ccc-fix-public-acls"
-                                         },
-                     "accessControlHardening":  {
-                                                    "status":  "completed",
-                                                    "packageId":  "AO-WP-003",
-                                                    "cccMergeTip":  "1cc0069",
-                                                    "deliveryStamp":  "20260726T010500Z-acl-hardening-sb",
-                                                    "reopenOnlyOnRegression":  true
-                                                }
-                 },
-    "activeWork":  {
-                       "engineeringAutonomousQueue":  "none",
-                       "parallelStreams":  [
-                                               "CIP continuous ITP floors (must not be interrupted)",
-                                               "ITP Library to CI Engine (AO-WP-004 SPA go-live)",
-                                               "Demo role-switch migration 034 (owner steps may remain)"
-                                           ],
-                       "productionGatePolicy":  "CLOSED unless genuine production defect"
-                   },
-    "nextWorkPackage":  {
-                            "id":  "AO-WP-004",
-                            "title":  "ITP CI Engine SPA quiet-window go-live + production readiness soak",
-                            "status":  "in_progress",
-                            "path":  "architecture/NEXT_WORKPACKAGE.md",
-                            "conflictsWithActiveEngineering":  false
-                        },
-    "completedWorkPackages":  [
-                                  {
-                                      "id":  "AO-WP-000",
-                                      "title":  "Architecture Office directory and governing reference inauguration",
-                                      "status":  "completed",
-                                      "path":  "architecture/WORKPACKAGES/AO-WP-000-architecture-office-inauguration.md",
-                                      "completedAt":  "2026-07-25"
-                                  },
-                                  {
-                                      "id":  "AO-WP-001",
-                                      "title":  "Architecture Office bootstrap and publication guards",
-                                      "status":  "completed",
-                                      "path":  "architecture/WORKPACKAGES/AO-WP-001-architecture-office-guards.md",
-                                      "completedAt":  "2026-07-25"
-                                  },
-                                  {
-                                      "id":  "AO-WP-002",
-                                      "title":  "CIP/ITP parallel-stream architecture coherence checkpoint",
-                                      "status":  "completed",
-                                      "path":  "architecture/WORKPACKAGES/AO-WP-002-cip-itp-coherence-checkpoint.md",
-                                      "completedAt":  "2026-07-25"
-                                  },
-                                  {
-                                      "id":  "AO-WP-003",
-                                      "title":  "Access Control hardening live delivery",
-                                      "status":  "completed",
-                                      "path":  "architecture/WORKPACKAGES/AO-WP-003-access-control-hardening-delivery.md",
-                                      "completedAt":  "2026-07-27",
-                                      "cccMergeTip":  "1cc0069",
-                                      "prs":  [
-                                                  1,
-                                                  2,
-                                                  3
-                                              ],
-                                      "deliveryStamp":  "20260726T010500Z-acl-hardening-sb",
-                                      "supersedesDispatch":  "Coordinated CCC recovery/blank-page dispatch closed via ACL live delivery + post-merge regression"
-                                  }
-                              ],
-    "completedReviews":  [
-                             {
-                                 "id":  "AO-REV-000",
-                                 "workPackageId":  "AO-WP-000",
-                                 "result":  "PASS",
-                                 "path":  "architecture/REVIEWS/AO-REV-000-architecture-office-inauguration.md",
-                                 "reviewedAt":  "2026-07-25"
-                             },
-                             {
-                                 "id":  "AO-REV-001",
-                                 "workPackageId":  "AO-WP-001",
-                                 "result":  "PASS",
-                                 "path":  "architecture/REVIEWS/AO-REV-001-architecture-office-guards.md",
-                                 "reviewedAt":  "2026-07-25"
-                             },
-                             {
-                                 "id":  "AO-REV-002",
-                                 "workPackageId":  "AO-WP-002",
-                                 "result":  "PASS",
-                                 "path":  "architecture/REVIEWS/AO-REV-002-cip-itp-coherence-checkpoint.md",
-                                 "reviewedAt":  "2026-07-25"
-                             },
-                             {
-                                 "id":  "AO-REV-003",
-                                 "workPackageId":  "AO-WP-003",
-                                 "result":  "PASS",
-                                 "path":  "architecture/REVIEWS/AO-REV-003-access-control-hardening-delivery.md",
-                                 "reviewedAt":  "2026-07-27",
-                                 "approvalStatus":  "COMPLETE"
-                             }
-                         ],
-    "health":  {
-                   "architectureHealth":  "GREEN",
-                   "implementationSummaryPath":  "architecture/STATUS/IMPLEMENTATION_SUMMARY.md",
-                   "healthSummaryPath":  "architecture/STATUS/ARCHITECTURE_HEALTH.md",
-                   "publicationGuards":  "scripts/architecture-office-guard.mjs + existing oversight publication guards",
-                   "deliveryPath":  "architecture/DELIVERY.md"
-               },
-    "nonInterruption":  {
-                            "mustNotBlockCccEngineering":  true,
-                            "workLocation":  "oversight plus governed clone of wimaxnz/construction-command-centre"
-                        }
+{
+  "schemaVersion": 1,
+  "office": "Architecture Office",
+  "governingReference": "architecture/CCC_ARCHITECTURE.md",
+  "lastUpdated": "2026-07-27",
+  "protocolLinks": {
+    "oversightProtocol": "AI_OVERSIGHT_PROTOCOL.md",
+    "canonicalOversightState": "AI_OVERSIGHT_STATE.json",
+    "oversightPacket": "OVERSIGHT_PACKET.md",
+    "oversightSync": "OVERSIGHT_SYNC.md"
+  },
+  "canonicalOversightAlignment": {
+    "currentSprint": 1615,
+    "currentSprintStatus": "closed",
+    "nextSprint": 1616,
+    "nextSprintQueued": false,
+    "nextSprintStatus": "not_queued",
+    "engineeringRoadmap": "complete",
+    "autonomousMilestone": "none",
+    "uatReady": true,
+    "productionReady": true,
+    "productionGate": "CLOSED_UNLESS_GENUINE_DEFECT",
+    "note": "Architecture Office mirrors canonical AI_OVERSIGHT_STATE.json; does not reopen Sprint 1616 or invent autonomous milestones. Access-control (AO-WP-003) COMPLETE â€” reopen only on ACL regression. Prior coordinated CCC recovery dispatch superseded by ACL close + AO-WP-004."
+  },
+  "doctrine": {
+    "parseOnceSharedCiOnly": true,
+    "crossProjectPath": "A_TO_GOVERNED_KNOWLEDGE_TO_B",
+    "forbidMemoryOnlyAtoB": true,
+    "forbidDirectAtoB": true,
+    "sprint521AiIpServerSide": true,
+    "oneActiveWeather": true,
+    "cipItpFloorsOngoing": true,
+    "itpLibraryToCiEngineParallel": true,
+    "demoRoleSwitchMigration034FeatureBranch": true,
+    "blankPageAclFix": {
+      "acl": "mask::---",
+      "path": "public/assets",
+      "postDeployMandatory": "ccc-fix-public-acls"
+    },
+    "accessControlHardening": {
+      "status": "completed",
+      "packageId": "AO-WP-003",
+      "cccMergeTip": "1cc0069",
+      "deliveryStamp": "20260726T010500Z-acl-hardening-sb",
+      "reopenOnlyOnRegression": true
+    }
+  },
+  "activeWork": {
+    "engineeringAutonomousQueue": "none",
+    "parallelStreams": [
+      "CIP continuous ITP floors (must not be interrupted)",
+      "ITP Library to CI Engine (AO-WP-004 SPA go-live)",
+      "Demo role-switch migration 034 (owner steps may remain)"
+    ],
+    "productionGatePolicy": "CLOSED unless genuine production defect"
+  },
+  "nextWorkPackage": {
+    "id": "AO-WP-004",
+    "title": "ITP CI Engine SPA quiet-window go-live + production readiness soak",
+    "status": "in_progress",
+    "path": "architecture/NEXT_WORKPACKAGE.md",
+    "conflictsWithActiveEngineering": false
+  },
+  "completedWorkPackages": [
+    {
+      "id": "AO-WP-000",
+      "title": "Architecture Office directory and governing reference inauguration",
+      "status": "completed",
+      "path": "architecture/WORKPACKAGES/AO-WP-000-architecture-office-inauguration.md",
+      "completedAt": "2026-07-25"
+    },
+    {
+      "id": "AO-WP-001",
+      "title": "Architecture Office bootstrap and publication guards",
+      "status": "completed",
+      "path": "architecture/WORKPACKAGES/AO-WP-001-architecture-office-guards.md",
+      "completedAt": "2026-07-25"
+    },
+    {
+      "id": "AO-WP-002",
+      "title": "CIP/ITP parallel-stream architecture coherence checkpoint",
+      "status": "completed",
+      "path": "architecture/WORKPACKAGES/AO-WP-002-cip-itp-coherence-checkpoint.md",
+      "completedAt": "2026-07-25"
+    },
+    {
+      "id": "AO-WP-003",
+      "title": "Access Control hardening live delivery",
+      "status": "completed",
+      "path": "architecture/WORKPACKAGES/AO-WP-003-access-control-hardening-delivery.md",
+      "completedAt": "2026-07-27",
+      "cccMergeTip": "1cc0069",
+      "prs": [
+        1,
+        2,
+        3
+      ],
+      "deliveryStamp": "20260726T010500Z-acl-hardening-sb",
+      "supersedesDispatch": "Coordinated CCC recovery/blank-page dispatch closed via ACL live delivery + post-merge regression"
+    }
+  ],
+  "completedReviews": [
+    {
+      "id": "AO-REV-000",
+      "workPackageId": "AO-WP-000",
+      "result": "PASS",
+      "path": "architecture/REVIEWS/AO-REV-000-architecture-office-inauguration.md",
+      "reviewedAt": "2026-07-25"
+    },
+    {
+      "id": "AO-REV-001",
+      "workPackageId": "AO-WP-001",
+      "result": "PASS",
+      "path": "architecture/REVIEWS/AO-REV-001-architecture-office-guards.md",
+      "reviewedAt": "2026-07-25"
+    },
+    {
+      "id": "AO-REV-002",
+      "workPackageId": "AO-WP-002",
+      "result": "PASS",
+      "path": "architecture/REVIEWS/AO-REV-002-cip-itp-coherence-checkpoint.md",
+      "reviewedAt": "2026-07-25"
+    },
+    {
+      "id": "AO-REV-003",
+      "workPackageId": "AO-WP-003",
+      "result": "PASS",
+      "path": "architecture/REVIEWS/AO-REV-003-access-control-hardening-delivery.md",
+      "reviewedAt": "2026-07-27",
+      "approvalStatus": "COMPLETE"
+    }
+  ],
+  "health": {
+    "architectureHealth": "GREEN",
+    "implementationSummaryPath": "architecture/STATUS/IMPLEMENTATION_SUMMARY.md",
+    "healthSummaryPath": "architecture/STATUS/ARCHITECTURE_HEALTH.md",
+    "publicationGuards": "scripts/architecture-office-guard.mjs + existing oversight publication guards",
+    "deliveryPath": "architecture/DELIVERY.md"
+  },
+  "nonInterruption": {
+    "mustNotBlockCccEngineering": true,
+    "workLocation": "oversight plus governed clone of wimaxnz/construction-command-centre"
+  }
 }
