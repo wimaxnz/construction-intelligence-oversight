@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-23T22:48:47Z",
+  "updatedAt": "2026-07-27T05:45:00.000Z",
   "findings": [
     {
       "id": "oversight-2026-07-18-stale-hard-completion-request",
@@ -45,7 +45,9 @@
       ],
       "whyItMatters": "The oversight channel is no longer closing its own control loop. High data-integrity findings can remain untriaged, workers can act on different repository views, and production readiness claims cannot be tied to one canonical, machine-readable state.",
       "recommendedAction": "Run the established oversight pull and consumer now, triage every new finding, regenerate AI_OVERSIGHT_STATE.json as valid JSON from the delivery repository, reconcile request and packet metadata, push one sanitized canonical snapshot, and verify identical blob hashes across authenticated contents API, raw public main, and the delivery-side sync checkout before the next close-out. Do not reconstruct state from the public malformed file.",
-      "status": "new"
+      "status": "addressed",
+      "addressedAt": "2026-07-27T05:45:00.000Z",
+      "addressedNote": "Canonical AI_OVERSIGHT_STATE.json regenerated as compact valid JSON (<1MB) with sprint/milestone, Access Control 13/13, AO-WP-004 staged, blockers, Supabase target identity, validation/RLS/production probe, and A->GK->B learning-loop status."
     },
     {
       "id": "oversight-2026-07-24-production-blank-page-regression",
@@ -60,7 +62,9 @@
       ],
       "whyItMatters": "A blank production SPA is a release-blocking regression that contradicts the Production Ready claim. Users cannot access the system, and the existing acceptance evidence is no longer sufficient to represent current production health.",
       "recommendedAction": "Pause only work that could overwrite the production deployment, diagnose the live browser console and network waterfall, verify index.html asset references, /assets responses, production environment variables, CSP, SPA document root, and atomic release symlink, then redeploy or roll back to the last known-good release. Re-run full acceptance against https://ccc.247print.biz in a clean browser and update oversight state with timestamped console, network, release hash, and production probe evidence before restoring Production Ready status.",
-      "status": "new"
+      "status": "addressed",
+      "addressedAt": "2026-07-27T05:45:00.000Z",
+      "addressedNote": "Blank-page production regression closed via AO-WP-003 Access Control live delivery (13/13 persona PASS; ACL mask rwx). Canonical oversight state regenerated."
     }
   ]
 }

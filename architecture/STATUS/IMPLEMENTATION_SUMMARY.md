@@ -12,7 +12,7 @@ Architecture Office under `architecture/` in `construction-intelligence-oversigh
 - Vision and governing CCC architecture reference
 - Digital Brain, Knowledge Graph, Data Model, Security, Roadmap docs
 - Machine-readable `ARCHITECTURE_STATE.json`
-- Structured `NEXT_WORKPACKAGE.md` (**AO-WP-004** approved — ITP CI Engine SPA go-live)
+- Structured `NEXT_WORKPACKAGE.md` (**AO-WP-004** in progress — SPA **STAGED**, go-live deferred)
 - Completed packages AO-WP-000 … AO-WP-003 and matching reviews
 - Health / implementation status summaries
 - Fail-closed `scripts/architecture-office-guard.mjs` + GitHub Actions guard workflow
@@ -52,4 +52,4 @@ Root allowlisted sync files remain the sprint-state publication channel. Archite
 | AO-WP-001 | Bootstrap and publication guards | completed |
 | AO-WP-002 | CIP/ITP parallel-stream coherence checkpoint | completed |
 | AO-WP-003 | Access Control hardening live delivery | completed |
-| AO-WP-004 | ITP CI Engine SPA quiet-window go-live | approved (next) |
+| AO-WP-004 | ITP CI Engine SPA quiet-window go-live | in_progress (STAGED; go-live deferred) |

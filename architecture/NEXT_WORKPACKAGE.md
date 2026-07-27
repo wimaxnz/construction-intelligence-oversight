@@ -2,12 +2,13 @@
 
 **Package ID:** `AO-WP-004`  
 **Title:** ITP CI Engine SPA quiet-window go-live + production readiness soak  
-**Status:** `approved`  
+**Status:** `in_progress` (approved; **STAGED** locally — go-live deferred for CIP quiet window)  
+**Stage stamp:** `20260727T011245Z-itp-ci-engine`  
 **Governing reference:** [`CCC_ARCHITECTURE.md`](./CCC_ARCHITECTURE.md)  
 **Machine state:** [`ARCHITECTURE_STATE.json`](./ARCHITECTURE_STATE.json)  
 **Canonical oversight:** [`../AI_OVERSIGHT_STATE.json`](../AI_OVERSIGHT_STATE.json)  
 **CCC branch:** `feature/itp-ci-engine-integration`  
-**Prior package:** AO-WP-003 Access Control hardening — **COMPLETED** (do not reopen unless ACL regression)
+**Prior package:** AO-WP-003 Access Control hardening — **COMPLETED** (13/13 persona regression PASS; do not reopen unless ACL regression)
 
 > Production-readiness parallel stream. Does **not** reopen Sprint 1616 or invent an autonomous engineering milestone. Must not thrash CIP ITP floors — go-live only when `CIP_SPA_QUIET=1` (or equivalent quiet window). Supersedes the prior coordinated CCC recovery NEXT (blank-page/ACL stream closed by AO-WP-003).
 
@@ -90,12 +91,12 @@ Moves shared ITP CI Engine consumption from staged/branch readiness into live pr
 
 ## Acceptance criteria
 
-- [ ] SPA staged locally with ITP CI Engine stamp marker
+- [x] SPA staged locally with ITP CI Engine stamp marker (`20260727T011245Z-itp-ci-engine`)
 - [ ] Go-live executed only under quiet window
 - [ ] Host HTTP 200 + assets ACL rwx after deploy
 - [ ] Go-live evidence JSON written
-- [ ] ITP CI Engine selftest still PASS
-- [ ] Access-control selftest still PASS (no reopen)
+- [x] ITP CI Engine selftest still PASS (52/52)
+- [x] Access-control selftest still PASS (no reopen; 13/13 persona regression retained)
 
 ## Validation
 

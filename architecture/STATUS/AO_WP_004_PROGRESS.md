@@ -1,7 +1,7 @@
 # AO-WP-004 progress — ITP CI Engine SPA go-live
 
 **As of:** 2026-07-27  
-**Package:** AO-WP-004 (approved / in progress)  
+**Package:** AO-WP-004 (`in_progress` / **STAGED**; go-live deferred)  
 **Prior:** AO-WP-003 Access Control — COMPLETE (no reopen)
 
 ## Done this pulse

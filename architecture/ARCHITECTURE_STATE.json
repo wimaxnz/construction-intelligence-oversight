@@ -20,7 +20,7 @@
     "uatReady": true,
     "productionReady": true,
     "productionGate": "CLOSED_UNLESS_GENUINE_DEFECT",
-    "note": "Architecture Office mirrors canonical AI_OVERSIGHT_STATE.json; does not reopen Sprint 1616 or invent autonomous milestones. Access-control (AO-WP-003) COMPLETE â€” reopen only on ACL regression. Prior coordinated CCC recovery dispatch superseded by ACL close + AO-WP-004."
+    "note": "Architecture Office mirrors canonical AI_OVERSIGHT_STATE.json; does not reopen Sprint 1616 or invent autonomous milestones. Access-control (AO-WP-003) COMPLETE — reopen only on ACL regression. Prior coordinated CCC recovery dispatch superseded by ACL close + AO-WP-004."
   },
   "doctrine": {
     "parseOnceSharedCiOnly": true,
@@ -42,6 +42,7 @@
       "packageId": "AO-WP-003",
       "cccMergeTip": "1cc0069",
       "deliveryStamp": "20260726T010500Z-acl-hardening-sb",
+      "personaRegression": "13/13 PASS",
       "reopenOnlyOnRegression": true
     }
   },
@@ -49,7 +50,7 @@
     "engineeringAutonomousQueue": "none",
     "parallelStreams": [
       "CIP continuous ITP floors (must not be interrupted)",
-      "ITP Library to CI Engine (AO-WP-004 SPA go-live)",
+      "ITP Library to CI Engine (AO-WP-004 SPA staged; go-live deferred for CIP quiet window)",
       "Demo role-switch migration 034 (owner steps may remain)"
     ],
     "productionGatePolicy": "CLOSED unless genuine production defect"
@@ -58,6 +59,10 @@
     "id": "AO-WP-004",
     "title": "ITP CI Engine SPA quiet-window go-live + production readiness soak",
     "status": "in_progress",
+    "stagedStatus": "STAGED",
+    "stageStamp": "20260727T011245Z-itp-ci-engine",
+    "spaDeployed": false,
+    "goLive": "deferred",
     "path": "architecture/NEXT_WORKPACKAGE.md",
     "conflictsWithActiveEngineering": false
   },

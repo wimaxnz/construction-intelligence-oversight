@@ -9,7 +9,7 @@
 
 ## Summary
 
-Architecture Office aligned with roadmap-complete / Sprint 1616 not-queued oversight position. Access Control package **AO-WP-003 CLOSED (PASS)**. Next approved package is **AO-WP-004** ITP CI Engine SPA quiet-window go-live (parallel production readiness — not a reopened autonomous sprint).
+Architecture Office aligned with roadmap-complete / Sprint 1616 not-queued oversight position. Access Control package **AO-WP-003 CLOSED (PASS, 13/13 persona regression)**. **AO-WP-004** is `in_progress` with SPA **STAGED** (`20260727T011245Z-itp-ci-engine`); go-live deferred for CIP quiet window (parallel production readiness — not a reopened autonomous sprint). Canonical `AI_OVERSIGHT_STATE.json` regenerated as a compact machine-readable snapshot.
 
 | Check | Status |
 |-------|--------|
