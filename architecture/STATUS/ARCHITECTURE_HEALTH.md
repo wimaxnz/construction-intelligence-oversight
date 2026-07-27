@@ -1,6 +1,6 @@
 # Architecture Health
 
-**As of:** 2026-07-25  
+**As of:** 2026-07-27  
 **Overall:** **GREEN**  
 **Machine state:** [`../ARCHITECTURE_STATE.json`](../ARCHITECTURE_STATE.json)  
 **Canonical oversight:** [`../../AI_OVERSIGHT_STATE.json`](../../AI_OVERSIGHT_STATE.json)
@@ -9,7 +9,7 @@
 
 ## Summary
 
-Architecture Office inaugurated with publication guards. Aligned with roadmap-complete / Sprint 1616 not-queued oversight position. No contradictory autonomous queue declared.
+Architecture Office aligned with roadmap-complete / Sprint 1616 not-queued oversight position. Access Control package **AO-WP-003 CLOSED (PASS)**. Next approved package is **AO-WP-004** ITP CI Engine SPA quiet-window go-live (parallel production readiness — not a reopened autonomous sprint).
 
 | Check | Status |
 |-------|--------|
@@ -18,16 +18,17 @@ Architecture Office inaugurated with publication guards. Aligned with roadmap-co
 | Alignment with `AI_OVERSIGHT_STATE.json` sprint/queue | PASS |
 | Production gate policy CLOSED unless genuine defect | PASS |
 | Parse-once / A→GK→B / Sprint 521 / one-active weather encoded | PASS |
-| Architecture Office guard + selftest | PASS |
+| Access Control AO-WP-003 closed; no polish reopen | PASS |
+| Architecture Office guard + selftest | PASS (run on publish) |
 | Canonical on `main` + path-filtered Cursor dispatch wiring | PASS (webhook secret owner-gated) |
-| CCC engineering non-interruption | PASS (oversight-only worktree) |
+| CCC engineering non-interruption | PASS (oversight-only AO edits; CIP branch undisturbed) |
 
 ## Risks watched
 
 - Parallel CIP/ITP streams must not be misread as a reopened Sprint 1616 queue
-- Feature-branch mig 034 owner steps must not be treated as architecture reopen
-- Production ACL regressions remain genuine defect class
+- CIP SPA thrashing may change live release stamp strings after ACL delivery — behavioural ACL regression is the reopen trigger
+- `CURSOR_AO_WEBHOOK_URL` owner-gated until set
 
 ## Next health action
 
-Queue is at queued sentinel (`AO-WP-NONE`). Refresh STATUS when the next approved package closes. Cloud webhook dispatch remains owner-gated until `CURSOR_AO_WEBHOOK_URL` is set.
+Execute AO-WP-004 under CIP quiet window; refresh STATUS when SPA go-live evidence lands. Do not reopen AO-WP-003 unless post-merge ACL regression FAIL.

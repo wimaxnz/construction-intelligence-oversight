@@ -27,9 +27,13 @@ Architecture Office **does not** invent Sprint 1616 or a new autonomous mileston
 ## Active parallel streams (non-autonomous queue)
 
 1. **CIP continuous ITP floors** — ongoing quality floors.
-2. **ITP Library → CI Engine** — parallel stream.
+2. **ITP Library → CI Engine** — parallel stream; Architecture Office next package **AO-WP-004** (SPA quiet-window go-live).
 3. **Demo role-switch (mig 034)** — feature branch; owner steps may remain.
 4. **Production defect response only** — e.g. ACL / blank-page class regressions.
+
+## Recently closed (Architecture Office)
+
+- **AO-WP-003 Access Control hardening** — COMPLETE (2026-07-27). CCC PRs #1–#3 / tip `1cc0069`. **Do not reopen** unless post-merge ACL regression.
 
 ---
 
