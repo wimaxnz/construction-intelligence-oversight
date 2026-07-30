@@ -449,7 +449,7 @@
     "status": "enforced"
   },
   "oversightSync": {
-    "status": "regenerated_pending_push",
+    "status": "synced",
     "reason": "Post-deploy verify closed AO-WP-005 (health 200); removed edge-ai-orchestrator-redeploy from active blockers; AO-WP-006 progress started",
     "allowlistOnly": true,
     "regeneratedAt": "2026-07-30T07:48:30.000Z",
