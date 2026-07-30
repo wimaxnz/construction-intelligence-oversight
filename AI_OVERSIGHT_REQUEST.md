@@ -40,7 +40,7 @@ _None._ July 12 2026 hard-completion monitoring request archived to `docs/ai-ove
 - No new autonomous milestone
 - **UAT Ready**
 - **Production Ready** (permanent deployment + acceptance passed on https://ccc.247print.biz; release 20260722T201518Z-prod-gate3)
-- **AO-WP-003** Access Control **COMPLETE**; **AO-WP-004** ITP CI SPA go-live **COMPLETE** (CCC PR #7 tip `7ed70612`; stamp `20260730T032754Z-itp-ci-engine`)
-- Next Architecture Office package: **AO-WP-005** owner-gated Edge `ai-orchestrator` redeploy (not Sprint 1616)
+- **AO-WP-003** Access Control **COMPLETE**; **AO-WP-004** ITP CI SPA go-live **COMPLETE**; **AO-WP-005** Edge redeploy + JWT AGKB hard promote **COMPLETE**
+- Next Architecture Office package: **AO-WP-006** standing deferred owner gates (not Sprint 1616)
 - Migration 015: state-equivalent on `aybovjvmyqexgpmhedni` (RLS **7/7**)
-- Knowledge Graph / Digital Brain: **Partial** (by design); A→GK→B learning loop **PASS**
+- Knowledge Graph / Digital Brain: **Partial** (by design); A→GK→B learning loop **PASS** (JWT Edge hard promote)

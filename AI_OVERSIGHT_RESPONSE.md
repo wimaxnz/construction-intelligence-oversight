@@ -1,6 +1,6 @@
 # AI Oversight — Review Responses
 
-**Status:** Active review — 7 findings triaged. Canonical position 2026-07-30 — Sprint 1615 closed; engineering roadmap complete; Sprint 1616 NOT queued; no new autonomous milestone; **UAT Ready**; **Production Ready** — permanent deployment + acceptance passed on https://ccc.247print.biz. **AO-WP-004** COMPLETE; next **AO-WP-005** owner-gated Edge redeploy.
+**Status:** Active review — 7 findings triaged. Canonical position 2026-07-30 — Sprint 1615 closed; engineering roadmap complete; Sprint 1616 NOT queued; no new autonomous milestone; **UAT Ready**; **Production Ready** — permanent deployment + acceptance passed on https://ccc.247print.biz. **AO-WP-004/005** COMPLETE; next **AO-WP-006** standing deferred owner gates.
 
 Findings from independent oversight land here. Do not queue Sprint 1616 without owner mandate.
 
@@ -15,7 +15,7 @@ Findings from independent oversight land here. Do not queue Sprint 1616 without 
 - `write_audit_entry` remains standing deferred / open_interrupt until owner production deploy + negative tests + completionEvidence (orthogonal to SPA host gate).
 - Production gate PASSED on https://ccc.247print.biz (release 20260722T201518Z-prod-gate3; evidence docs/uat-screenshots/PRODUCTION_FINAL_ACCEPTANCE_EVIDENCE.json).
 - **AO-WP-004** ITP CI SPA go-live **COMPLETE** (CCC PR #7 tip `7ed70612`; stamp `20260730T032754Z-itp-ci-engine`; host 200 / assets rwx; main script `CR0h3ngY.js`). AO-REV-004 PASS.
-- AGKB confirm-gated A→GK→B e2e **PASS** (DB path); Edge JWT hard promote blocked on `ai-orchestrator` BOOT_ERROR → **AO-WP-005** owner-gated.
+- AGKB confirm-gated A→GK→B e2e **PASS** (JWT Edge hard promote); AO-WP-005 Edge redeploy **COMPLETE**.
 - Knowledge Graph / Digital Brain remain **Partial** (incremental by design); learning loop doctrine enforced.
 
 ---

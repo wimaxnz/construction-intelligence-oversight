@@ -12,8 +12,8 @@ Architecture Office under `architecture/` in `construction-intelligence-oversigh
 - Vision and governing CCC architecture reference
 - Digital Brain, Knowledge Graph, Data Model, Security, Roadmap docs
 - Machine-readable `ARCHITECTURE_STATE.json`
-- Structured `NEXT_WORKPACKAGE.md` (**AO-WP-005** owner-gated Edge redeploy)
-- Completed packages AO-WP-000 … AO-WP-004 and matching reviews
+- Structured `NEXT_WORKPACKAGE.md` (**AO-WP-006** standing deferred owner gates)
+- Completed packages AO-WP-000 … AO-WP-005 and matching reviews
 - Health / implementation status summaries
 - Fail-closed `scripts/architecture-office-guard.mjs` + GitHub Actions guard workflow
 - Path-filtered Cursor Automation dispatch (see [`DELIVERY.md`](../DELIVERY.md) and [`CURSOR_AUTOMATION_DELIVERY.md`](./CURSOR_AUTOMATION_DELIVERY.md))
@@ -38,9 +38,19 @@ Architecture Office under `architecture/` in `construction-intelligence-oversigh
 | Host / ACL | HTTP 200 / assets `rwx`; main script `CR0h3ngY.js` |
 | Review | AO-REV-004 **PASS** / approval **COMPLETE** |
 
+## Edge redeploy (AO-WP-005) — COMPLETE
+
+| Field | Value |
+|-------|--------|
+| Status | **completed** — do not reopen unless Edge regression |
+| Project ref | `aybovjvmyqexgpmhedni` |
+| Live anon probe | HTTP 401 (BOOT_ERROR cleared) |
+| AGKB JWT hard promote | **PASS** |
+| Review | AO-REV-005 **PASS** / approval **COMPLETE** |
+
 ## What engineering continues independently
 
-CIP continuous ITP floors continue in CCC. Edge `ai-orchestrator` redeploy is owner-gated AO-WP-005 and does **not** reopen Sprint 1616.
+CIP continuous ITP floors continue in CCC. Standing deferred owner gates are AO-WP-006 and do **not** reopen Sprint 1616.
 
 ## Oversight protocol integration
 
@@ -60,4 +70,5 @@ Architecture Office links to:
 | AO-WP-002 | CIP/ITP parallel-stream coherence checkpoint | completed |
 | AO-WP-003 | Access Control hardening live delivery | completed |
 | AO-WP-004 | ITP CI Engine SPA quiet-window go-live | completed |
-| AO-WP-005 | Edge ai-orchestrator redeploy + JWT AGKB hard promote | owner_gated |
+| AO-WP-005 | Edge ai-orchestrator redeploy + JWT AGKB hard promote | completed |
+| AO-WP-006 | Standing deferred owner gates (write_audit_entry / webhook) | owner_gated |

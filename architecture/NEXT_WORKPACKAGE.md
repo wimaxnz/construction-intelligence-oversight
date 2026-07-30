@@ -1,39 +1,38 @@
 # NEXT WORK PACKAGE
 
-**Package ID:** `AO-WP-005`  
-**Title:** Edge ai-orchestrator redeploy + JWT AGKB hard-promote soak  
-**Status:** `owner_gated` (awaiting owner `SUPABASE_ACCESS_TOKEN`)  
+**Package ID:** `AO-WP-006`  
+**Title:** Standing deferred owner gates (write_audit_entry / webhook)  
+**Status:** `owner_gated` (standing deferred — not an autonomous sprint)  
 **Governing reference:** [`CCC_ARCHITECTURE.md`](./CCC_ARCHITECTURE.md)  
 **Machine state:** [`ARCHITECTURE_STATE.json`](./ARCHITECTURE_STATE.json)  
 **Canonical oversight:** [`../AI_OVERSIGHT_STATE.json`](../AI_OVERSIGHT_STATE.json)  
-**Prior package:** AO-WP-004 ITP CI SPA go-live — **COMPLETED** (CCC PR #7 tip `7ed70612`; stamp `20260730T032754Z-itp-ci-engine`)
+**Prior package:** AO-WP-005 Edge ai-orchestrator redeploy + JWT AGKB hard promote — **COMPLETED** (2026-07-30; BOOT_ERROR cleared; Edge hard promote PASS)
 
-> Production-readiness parallel stream. Does **not** reopen Sprint 1616 or invent an autonomous engineering milestone. Blocked on owner credential for Edge function redeploy.
+> Production-readiness parallel stream. Does **not** reopen Sprint 1616 or invent an autonomous engineering milestone.
 
 ---
 
 ## Objective
 
-Redeploy `ai-orchestrator` Edge to clear live BOOT_ERROR/503, then re-run confirm-gated AGKB e2e for JWT hard promote on the mandatory A→GK→B path.
+Track remaining owner-only standing deferred gates (`write_audit_entry` 0/3, `CURSOR_AO_WEBHOOK_URL`) without reopening the engineering continuous roadmap.
 
 ## Business value
 
-Restores Edge-backed promote/recommend hard path so roadmap production-ready can move from NO (owner Edge gate) to YES once classic owner blockers remain.
+Keeps Architecture Office / oversight honest about residual owner security and dispatch gates after Edge JWT hard promote restored production AI promote path.
 
 ## Scope
 
 **In scope**
 
-- Owner provides `SUPABASE_ACCESS_TOKEN` out-of-band
-- Redeploy recovered `ai-orchestrator` sources (CCC PR #8)
-- Re-run `npm run agkb:confirm-e2e` expecting Edge hard promote PASS
-- Refresh Architecture Office STATUS / oversight state from evidence
+- Monitor standing deferred `write_audit_entry` SECURITY DEFINER membership hardening (0/3 gates)
+- Owner-gated Architecture Office webhook URL for cloud auto-dispatch
+- Refresh STATUS when owner clears a gate
 
 **Out of scope**
 
-- Reopening AO-WP-003/004 unless regression
+- Reopening AO-WP-003/004/005 unless regression
 - Queuing Sprint 1616
-- LLM / Smartsheet / MFA / SIEM / ITP standards unlocks (separate owner list)
+- LLM / Smartsheet / MFA / SIEM / ITP standards unlocks (separate classic owner list)
 
 ## Architecture
 
@@ -43,63 +42,59 @@ Restores Edge-backed promote/recommend hard path so roadmap production-ready can
 
 ## Database
 
-- No new migrations required for redeploy; consume existing AGKB / CI schema
+- No new migrations required for this tracking package; `write_audit_entry` remains owner interrupt
 
 ## API
 
-- Edge: `ai-orchestrator` (confirm / promote path)
-- Related tools remain `ci_itp_*` / AGKB confirm pathway
+- No Edge redeploy required (AO-WP-005 complete)
+- Webhook dispatch remains owner-configured
 
 ## UI
 
-- No SPA redeploy required for this package (AO-WP-004 already live)
+- No SPA redeploy required
 
 ## Knowledge Graph integration
 
-- Soft-link / provenance from AGKB e2e must remain GK-cited after Edge hard promote
+- KG remains Partial by design; AGKB soft-link already PASS under AO-WP-005
 
 ## Digital Brain integration
 
-- Brain lineage objects remain project-scoped; promote stays A→GK→B
+- Brain remains Partial by design; lineage already PASS under AO-WP-005
 
 ## Security
 
-- Do not commit `SUPABASE_ACCESS_TOKEN` or JWTs into evidence
-- Fail closed if Edge redeploy leaves BOOT_ERROR
+- Do not weaken Architecture Office Guard
+- Do not commit secrets; `write_audit_entry` stays fail-closed until owner gates met
 
 ## Dependencies
 
-- AO-WP-004 completed (SPA go-live)
-- CCC Edge source recovery merged (PR #8)
-- Owner `SUPABASE_ACCESS_TOKEN`
+- AO-WP-005 completed (Edge redeploy + JWT AGKB hard promote)
+- Owner action for SECURITY DEFINER / webhook configuration
 
 ## Risks
 
 | Risk | Mitigation |
 |------|------------|
-| Token leakage in logs/evidence | Scrub secrets; evidence records status codes only |
 | Mistaken Sprint 1616 reopen | Package is owner-gated parallel stream only |
-| Edge still 503 after redeploy | Abort; capture logs; do not claim hard promote PASS |
+| Claiming production-ready YES while SECDEF open | Keep standing deferred explicit in oversight |
 
 ## Acceptance criteria
 
-- [ ] Owner provides deploy token
-- [ ] `ai-orchestrator` redeployed; live probe no longer BOOT_ERROR/503
-- [ ] `npm run agkb:confirm-e2e` Edge hard promote PASS
-- [ ] Oversight / Architecture Office state refreshed
+- [ ] Owner advances `write_audit_entry` gates beyond 0/3 **or** explicitly retains standing deferred
+- [ ] `CURSOR_AO_WEBHOOK_URL` configured or remains documented owner-gated
 - [x] Guard: Sprint 1616 remains NOT queued
+- [x] AO-WP-005 Edge / JWT hard promote remains PASS (no reopen)
 
 ## Validation
 
-1. Live Edge health probe (no BOOT_ERROR)  
-2. `npm run agkb:confirm-e2e` → Edge hard promote PASS  
-3. `node scripts/architecture-office-guard.mjs` → PASS  
+1. Canonical `AI_OVERSIGHT_STATE.json` still records AO-WP-005 COMPLETE  
+2. `node scripts/architecture-office-guard.mjs` → PASS  
+3. No autonomous sprint queue mutation  
 
 ## Evidence required
 
-- Updated `docs/uat-screenshots/AGKB_CONFIRM_E2E_SOAK_EVIDENCE.json` (Edge hard)
-- `docs/uat-screenshots/ROADMAP_PRODUCTION_READY_EVIDENCE.json` refresh
-- Optional Edge deploy stamp note (no secrets)
+- Oversight blocker entries for `write_audit_entry` / webhook
+- Prior AO-WP-005 evidence pack remains authoritative for Edge/JWT
 
 ---
 
@@ -109,4 +104,4 @@ Restores Edge-backed promote/recommend hard path so roadmap production-ready can
 |-------|--------|
 | Conflicts with autonomous engineering queue | **No** |
 | Conflicts with parallel CIP/ITP streams | **No** |
-| Production gate impact | **Owner-gated Edge fix**; does not reopen continuous sprint queue |
+| Production gate impact | **Standing deferred owner gates only** |

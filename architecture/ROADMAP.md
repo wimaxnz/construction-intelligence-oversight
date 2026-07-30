@@ -27,12 +27,13 @@ Architecture Office **does not** invent Sprint 1616 or a new autonomous mileston
 ## Active parallel streams (non-autonomous queue)
 
 1. **CIP continuous ITP floors** — ongoing quality floors.
-2. **Edge ai-orchestrator redeploy** — Architecture Office next package **AO-WP-005** (owner-gated `SUPABASE_ACCESS_TOKEN` + JWT AGKB hard promote).
+2. **Standing deferred owner gates** — Architecture Office next package **AO-WP-006** (`write_audit_entry` / webhook).
 3. **Demo role-switch (mig 034)** — feature branch; owner steps may remain.
 4. **Production defect response only** — e.g. ACL / blank-page class regressions.
 
 ## Recently closed (Architecture Office)
 
+- **AO-WP-005 Edge ai-orchestrator redeploy + JWT AGKB hard promote** — COMPLETE (2026-07-30). BOOT_ERROR cleared; Edge hard promote PASS. **Do not reopen** unless Edge regression.
 - **AO-WP-004 ITP CI SPA go-live** — COMPLETE (2026-07-30). CCC PR #7 / tip `7ed70612`; stamp `20260730T032754Z-itp-ci-engine`. **Do not reopen** unless SPA/ACL regression.
 - **AO-WP-003 Access Control hardening** — COMPLETE (2026-07-27). CCC PRs #1–#3 / tip `1cc0069`. **Do not reopen** unless post-merge ACL regression.
 
