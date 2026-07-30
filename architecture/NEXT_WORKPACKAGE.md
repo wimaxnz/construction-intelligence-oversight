@@ -1,116 +1,105 @@
 # NEXT WORK PACKAGE
 
-**Package ID:** `AO-WP-004`  
-**Title:** ITP CI Engine SPA quiet-window go-live + production readiness soak  
-**Status:** `in_progress` (approved; **STAGED** locally — go-live deferred for CIP quiet window)  
-**Stage stamp:** `20260727T011245Z-itp-ci-engine`  
+**Package ID:** `AO-WP-005`  
+**Title:** Edge ai-orchestrator redeploy + JWT AGKB hard-promote soak  
+**Status:** `owner_gated` (awaiting owner `SUPABASE_ACCESS_TOKEN`)  
 **Governing reference:** [`CCC_ARCHITECTURE.md`](./CCC_ARCHITECTURE.md)  
 **Machine state:** [`ARCHITECTURE_STATE.json`](./ARCHITECTURE_STATE.json)  
 **Canonical oversight:** [`../AI_OVERSIGHT_STATE.json`](../AI_OVERSIGHT_STATE.json)  
-**CCC branch:** `feature/itp-ci-engine-integration`  
-**Prior package:** AO-WP-003 Access Control hardening — **COMPLETED** (13/13 persona regression PASS; do not reopen unless ACL regression)
+**Prior package:** AO-WP-004 ITP CI SPA go-live — **COMPLETED** (CCC PR #7 tip `7ed70612`; stamp `20260730T032754Z-itp-ci-engine`)
 
-> Production-readiness parallel stream. Does **not** reopen Sprint 1616 or invent an autonomous engineering milestone. Must not thrash CIP ITP floors — go-live only when `CIP_SPA_QUIET=1` (or equivalent quiet window). Supersedes the prior coordinated CCC recovery NEXT (blank-page/ACL stream closed by AO-WP-003).
+> Production-readiness parallel stream. Does **not** reopen Sprint 1616 or invent an autonomous engineering milestone. Blocked on owner credential for Edge function redeploy.
 
 ---
 
 ## Objective
 
-Ship the ITP Library → CI Engine SPA to production during a CIP quiet window, with ACL post-deploy gate (`ccc-fix-public-acls`), host HTTP 200 / assets rwx, and durable go-live evidence — then deepen live JWT soak where tokens exist.
+Redeploy `ai-orchestrator` Edge to clear live BOOT_ERROR/503, then re-run confirm-gated AGKB e2e for JWT hard promote on the mandatory A→GK→B path.
 
 ## Business value
 
-Moves shared ITP CI Engine consumption from staged/branch readiness into live production surfaces (Defects, Programme, QA) without fighting CIP SPA deploys or reopening access-control.
+Restores Edge-backed promote/recommend hard path so roadmap production-ready can move from NO (owner Edge gate) to YES once classic owner blockers remain.
 
 ## Scope
 
 **In scope**
 
-- Quiet-window detection / coordination (read-only CIP state)
-- `npm run itp-ci-engine:spa-stage` with `--go-live` only when quiet
-- Post-deploy ACL + HTTP gates
-- Update `CIP_ITP_CI_SPA_STAGE_EVIDENCE.json` / go-live evidence
-- Live soak of CI ITP tools when JWT available
-- Architecture Office STATUS refresh on milestone
+- Owner provides `SUPABASE_ACCESS_TOKEN` out-of-band
+- Redeploy recovered `ai-orchestrator` sources (CCC PR #8)
+- Re-run `npm run agkb:confirm-e2e` expecting Edge hard promote PASS
+- Refresh Architecture Office STATUS / oversight state from evidence
 
 **Out of scope**
 
-- Reopening access-control (unless ACL regression)
-- Pausing CIP floors for polish
+- Reopening AO-WP-003/004 unless regression
 - Queuing Sprint 1616
-- Owner credential unlocks (LLM/Smartsheet) as blockers for this SPA gate
-- Force-push / destructive git on CCC or oversight
+- LLM / Smartsheet / MFA / SIEM / ITP standards unlocks (separate owner list)
 
 ## Architecture
 
-- Shared `ci_*` + Governed Knowledge only; no silo ITP tables
-- Parse-once: engine must not re-read PDFs
-- A→GK→B for learning ingest / promote; forbid Memory-only A→B
-- Production gate CLOSED unless genuine defect; this package is parallel production readiness
-- Never overwrite active CIP floor packs mid-flight
+- Shared `ci_*` + Governed Knowledge only
+- A→GK→B mandatory; forbid Memory-only A→B and direct A→B
+- Production gate CLOSED unless genuine defect
 
 ## Database
 
-- Consume existing mig 035 / shared CI schema; no new silo migrations for go-live
+- No new migrations required for redeploy; consume existing AGKB / CI schema
 
 ## API
 
-- Existing Edge tools: `ci_itp_recommend`, `ci_itp_generate_requirements`, `ci_itp_learning_ingest`
+- Edge: `ai-orchestrator` (confirm / promote path)
+- Related tools remain `ci_itp_*` / AGKB confirm pathway
 
 ## UI
 
-- Defects / Programme / QA dashboards already wired on feature branch — SPA go-live publishes them
+- No SPA redeploy required for this package (AO-WP-004 already live)
 
 ## Knowledge Graph integration
 
-- Recommendations and close-out learning must cite shared entities / GK provenance
+- Soft-link / provenance from AGKB e2e must remain GK-cited after Edge hard promote
 
 ## Digital Brain integration
 
-- Project-scoped brain events only; learning promote stays on A→GK→B toolpath
+- Brain lineage objects remain project-scoped; promote stays A→GK→B
 
 ## Security
 
-- Mandatory `ccc-fix-public-acls` after SPA publish
-- Fail closed if host HTTP ≠ 200 or assets ACL mask ≠ rwx
-- Do not embed secrets in evidence
+- Do not commit `SUPABASE_ACCESS_TOKEN` or JWTs into evidence
+- Fail closed if Edge redeploy leaves BOOT_ERROR
 
 ## Dependencies
 
-- AO-WP-003 completed
-- CCC `feature/itp-ci-engine-integration` integration selftests green
-- CIP SPA quiet window for go-live
+- AO-WP-004 completed (SPA go-live)
+- CCC Edge source recovery merged (PR #8)
+- Owner `SUPABASE_ACCESS_TOKEN`
 
 ## Risks
 
 | Risk | Mitigation |
 |------|------------|
-| CIP thrashing overwrites SPA mid-deploy | Require `CIP_SPA_QUIET=1`; stage-only otherwise |
-| ACL blank-page regression | Run `ccc-fix-public-acls`; abort if assets not 200/rwx |
-| Mistaken reopen of access-control | Only reopen on ACL selftest/live FAIL |
+| Token leakage in logs/evidence | Scrub secrets; evidence records status codes only |
+| Mistaken Sprint 1616 reopen | Package is owner-gated parallel stream only |
+| Edge still 503 after redeploy | Abort; capture logs; do not claim hard promote PASS |
 
 ## Acceptance criteria
 
-- [x] SPA staged locally with ITP CI Engine stamp marker (`20260727T011245Z-itp-ci-engine`)
-- [ ] Go-live executed only under quiet window
-- [ ] Host HTTP 200 + assets ACL rwx after deploy
-- [ ] Go-live evidence JSON written
-- [x] ITP CI Engine selftest still PASS (52/52)
-- [x] Access-control selftest still PASS (no reopen; 13/13 persona regression retained)
+- [ ] Owner provides deploy token
+- [ ] `ai-orchestrator` redeployed; live probe no longer BOOT_ERROR/503
+- [ ] `npm run agkb:confirm-e2e` Edge hard promote PASS
+- [ ] Oversight / Architecture Office state refreshed
+- [x] Guard: Sprint 1616 remains NOT queued
 
 ## Validation
 
-1. `npm run itp-ci-engine:selftest` → PASS  
-2. `CIP_SPA_QUIET=1 npm run itp-ci-engine:spa-stage -- --go-live` when quiet  
-3. Host probe HTTP 200; ACL assets 200/rwx  
-4. `npm run access-control:selftest` → PASS (guardrail)  
-5. `node scripts/architecture-office-guard.mjs` → PASS (oversight)
+1. Live Edge health probe (no BOOT_ERROR)  
+2. `npm run agkb:confirm-e2e` → Edge hard promote PASS  
+3. `node scripts/architecture-office-guard.mjs` → PASS  
 
 ## Evidence required
 
-- `docs/uat-screenshots/CIP_ITP_CI_SPA_STAGE_EVIDENCE.json` (go-live fields)
-- Host/ACL probe snippets in evidence
-- Optional live JWT soak artefact when token present
+- Updated `docs/uat-screenshots/AGKB_CONFIRM_E2E_SOAK_EVIDENCE.json` (Edge hard)
+- `docs/uat-screenshots/ROADMAP_PRODUCTION_READY_EVIDENCE.json` refresh
+- Optional Edge deploy stamp note (no secrets)
 
 ---
 
@@ -119,5 +108,5 @@ Moves shared ITP CI Engine consumption from staged/branch readiness into live pr
 | Field | Value |
 |-------|--------|
 | Conflicts with autonomous engineering queue | **No** |
-| Conflicts with parallel CIP/ITP streams | **No** — this *is* the ITP Library→Engine stream; coordinates quiet window only |
-| Production gate impact | **Deploy under ACL gate**; does not reopen continuous sprint queue |
+| Conflicts with parallel CIP/ITP streams | **No** |
+| Production gate impact | **Owner-gated Edge fix**; does not reopen continuous sprint queue |

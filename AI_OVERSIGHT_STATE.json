@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "lastUpdated": "2026-07-27",
-  "regeneratedAt": "2026-07-27T05:45:00.000Z",
-  "regenerationNote": "Canonical machine-readable snapshot regenerated after oversized/malformed historical AI_OVERSIGHT_STATE.json exceeded GitHub Contents API (~1MB) and appeared empty to authenticated consumers. Historical per-sprint maps archived out of the canonical file. Guard alignment preserved (Sprint 1615 closed; 1616 not queued; engineering roadmap complete).",
+  "lastUpdated": "2026-07-30",
+  "regeneratedAt": "2026-07-30T04:20:00.000Z",
+  "regenerationNote": "Canonical compact snapshot refreshed after AO-WP-004 ITP CI SPA go-live evidence on CCC main (PR #7, tip 7ed70612; deploy stamp 20260730T032754Z-itp-ci-engine; live main script CR0h3ngY.js). Prior 2026-07-27 compact repair preserved; Sprint 1615 closed / 1616 not queued unchanged. Governance fields reconciled from CCC execution evidence + Architecture Office artefacts.",
   "currentSprint": {
     "number": 1615,
     "status": "closed",
@@ -37,7 +37,7 @@
     "status": "not_queued",
     "queued": false,
     "stream1": "No further autonomous non-owner milestone — engineering roadmap complete; write_audit_entry remains open_interrupt standing deferred owner action",
-    "stream2": "Parallel Architecture Office production-readiness packages only (AO-WP-004 ITP CI SPA go-live); Sprint 1616 NOT queued",
+    "stream2": "Parallel Architecture Office production-readiness only (AO-WP-004 COMPLETE; AO-WP-005 owner-gated Edge ai-orchestrator redeploy); Sprint 1616 NOT queued",
     "selftest": null,
     "queueCorrection": "Engineering continuous roadmap COMPLETE. Sprint 1616 NOT queued. No new autonomous milestone."
   },
@@ -54,7 +54,8 @@
     "productionRelease": "20260722T201518Z-prod-gate3",
     "acceptanceEvidence": "docs/uat-screenshots/PRODUCTION_FINAL_ACCEPTANCE_EVIDENCE.json",
     "accessControlPackage": "AO-WP-003 completed",
-    "updatedAt": "2026-07-27"
+    "aoWp004Package": "AO-WP-004 completed (SPA go-live)",
+    "updatedAt": "2026-07-30"
   },
   "accessControlPackage": {
     "id": "AO-WP-003",
@@ -62,11 +63,7 @@
     "status": "completed",
     "completedAt": "2026-07-27",
     "cccMergeTip": "1cc0069",
-    "prs": [
-      1,
-      2,
-      3
-    ],
+    "prs": [1, 2, 3],
     "deliveryStamp": "20260726T010500Z-acl-hardening-sb",
     "liveUrl": "https://ccc.247print.biz",
     "personaRegression": {
@@ -86,47 +83,75 @@
   },
   "architectureOffice": {
     "activeWorkPackage": {
-      "id": "AO-WP-004",
-      "title": "ITP CI Engine SPA quiet-window go-live + production readiness soak",
-      "status": "in_progress",
-      "stagedStatus": "STAGED",
-      "stagedLocal": true,
-      "spaDeployed": false,
-      "goLive": "deferred",
-      "goLiveBlockedReason": "stage_only_cip_thrashing_or_no_go_live_flag",
-      "stageStamp": "20260727T011245Z-itp-ci-engine",
-      "itpCiEngineSelftest": "52/52 PASS",
-      "evidence": "docs/uat-screenshots/CIP_ITP_CI_SPA_STAGE_EVIDENCE.json",
-      "progressDoc": "architecture/STATUS/AO_WP_004_PROGRESS.md"
+      "id": "AO-WP-005",
+      "title": "Edge ai-orchestrator redeploy + JWT AGKB hard-promote soak",
+      "status": "owner_gated",
+      "blockedReason": "SUPABASE_ACCESS_TOKEN required to redeploy ai-orchestrator and clear live BOOT_ERROR/503; then re-run agkb:confirm-e2e for JWT hard promote",
+      "evidence": "docs/uat-screenshots/ROADMAP_PRODUCTION_READY_EVIDENCE.json",
+      "progressDoc": "architecture/NEXT_WORKPACKAGE.md"
     },
     "completedWorkPackages": [
       "AO-WP-000",
       "AO-WP-001",
       "AO-WP-002",
-      "AO-WP-003"
-    ]
+      "AO-WP-003",
+      "AO-WP-004"
+    ],
+    "aoWp004": {
+      "id": "AO-WP-004",
+      "title": "ITP CI Engine SPA quiet-window go-live + production readiness soak",
+      "status": "completed",
+      "completedAt": "2026-07-30",
+      "stagedStatus": "GO_LIVE",
+      "spaDeployed": true,
+      "goLive": "completed",
+      "cipSpaQuiet": true,
+      "goLiveStamp": "20260730T032754Z-itp-ci-engine",
+      "cccMergeTip": "7ed70612",
+      "prs": [7],
+      "aclGate": "ccc-fix-public-acls",
+      "hostHttp": "200",
+      "assetsAclMask": "rwx",
+      "productionMainScript": "CR0h3ngY.js",
+      "itpCiEngineSelftest": "52/52 PASS",
+      "agkbConfirmE2e": "PASS (DB confirm path; Edge soft 503)",
+      "evidence": [
+        "docs/uat-screenshots/AO_WP_004_GOLIVE_EVIDENCE.json",
+        "docs/uat-screenshots/CIP_ITP_CI_SPA_STAGE_EVIDENCE.json",
+        "docs/uat-screenshots/COMMAND_CENTRE_PRODUCTION_VALIDATION_STATUS.json",
+        "docs/uat-screenshots/AGKB_CONFIRM_E2E_SOAK_EVIDENCE.json"
+      ],
+      "review": {
+        "id": "AO-REV-004",
+        "result": "PASS",
+        "approvalStatus": "COMPLETE"
+      },
+      "progressDoc": "architecture/STATUS/AO_WP_004_PROGRESS.md",
+      "reopenOnlyOnRegression": true
+    }
   },
   "activeStreams": {
     "stream1": {
       "name": "CIP continuous ITP floors",
-      "focus": "Must not be interrupted; quiet window required for AO-WP-004 SPA go-live"
+      "focus": "Ongoing quality floors; AO-WP-004 SPA go-live completed under CIP quiet window"
     },
     "stream2": {
-      "name": "Architecture Office AO-WP-004",
-      "focus": "ITP CI Engine SPA staged; go-live deferred until CIP_SPA_QUIET"
+      "name": "Architecture Office AO-WP-005",
+      "focus": "Owner-gated Edge ai-orchestrator redeploy + JWT AGKB hard promote (parallel; not Sprint 1616)"
     },
     "stream3": {
       "name": "Standing deferred owner gates",
-      "focus": "write_audit_entry 0/3 gates; CURSOR_AO_WEBHOOK_URL owner-gated"
+      "focus": "write_audit_entry 0/3 gates; CURSOR_AO_WEBHOOK_URL owner-gated; SUPABASE_ACCESS_TOKEN for Edge redeploy"
     }
   },
   "completedWork": {
-    "summary": "Engineering continuous roadmap complete through Sprint 1615 / milestone 1630-1639. Access Control AO-WP-003 completed with 13/13 persona regression PASS. AO-WP-004 SPA staged.",
+    "summary": "Engineering continuous roadmap complete through Sprint 1615 / milestone 1630-1639. Access Control AO-WP-003 completed (13/13). AO-WP-004 ITP CI SPA go-live completed on production (20260730T032754Z).",
     "highlights": [
       "Sprint 1615 closed; milestone 1630-1639 wrap closed 10/10",
       "AO-WP-003 Access Control completed (delivery stamp 20260726T010500Z-acl-hardening-sb)",
       "Persona live UAT 13/13 PASS",
-      "AO-WP-004 local SPA stage STAGED_OK (20260727T011245Z-itp-ci-engine); go-live deferred",
+      "AO-WP-004 SPA go-live COMPLETE (stamp 20260730T032754Z-itp-ci-engine; CCC PR #7 tip 7ed70612; host 200 / assets rwx; main script CR0h3ngY.js)",
+      "AGKB confirm-gated A→GK→B e2e PASS (DB path; Edge soft 503 pending owner redeploy)",
       "Production host https://ccc.247print.biz accepted; gate CLOSED unless genuine defect"
     ]
   },
@@ -137,14 +162,16 @@
     "accessControlSelftest": "PASS",
     "itpCiEngineSelftest": "52/52 PASS",
     "personaRegression": "13/13 PASS",
-    "sprintValidation": "historical_green_at_roadmap_close",
+    "sprintValidation": "3/3 historical_green_at_roadmap_close",
     "platformCertification": "3/3 recertified at Sprint 1615 close",
-    "notes": "Canonical validation for Architecture Office publication is architecture-office-guard + ACL/ITP selftests. Full historical per-sprint validation maps intentionally omitted from regenerated snapshot."
+    "aoWp004GoLive": "PASS",
+    "agkbConfirmE2e": "PASS",
+    "notes": "Canonical validation for Architecture Office publication is architecture-office-guard + ACL/ITP selftests + AO-WP-004 go-live evidence. Full historical per-sprint validation maps intentionally omitted from compact snapshot."
   },
   "validationResults": {
     "architectureOfficeGuard": {
       "status": "PASS",
-      "at": "2026-07-27T05:45:00.000Z"
+      "at": "2026-07-30T04:20:00.000Z"
     },
     "accessControlPersonaRegression": {
       "status": "PASS",
@@ -154,12 +181,31 @@
     "itpCiEngine": {
       "status": "PASS",
       "ratio": "52/52",
-      "stage": "STAGED"
+      "stage": "GO_LIVE"
+    },
+    "aoWp004GoLive": {
+      "status": "PASS",
+      "stamp": "20260730T032754Z-itp-ci-engine",
+      "cccPr": 7,
+      "cccMergeTip": "7ed70612",
+      "evidence": "docs/uat-screenshots/AO_WP_004_GOLIVE_EVIDENCE.json"
+    },
+    "agkbConfirmE2e": {
+      "status": "PASS",
+      "pathway": "A→Memory→KG→Brain→confirm→GK→B→recommend",
+      "edgeSoft": "503 BOOT_ERROR — DB confirm path used",
+      "evidence": "docs/uat-screenshots/AGKB_CONFIRM_E2E_SOAK_EVIDENCE.json",
+      "at": "2026-07-28T23:25:52.341Z"
     },
     "productionFinalAcceptance": {
       "status": "PASS",
       "evidence": "docs/uat-screenshots/PRODUCTION_FINAL_ACCEPTANCE_EVIDENCE.json",
       "at": "2026-07-22T09:45:00.000Z"
+    },
+    "commandCentreProductionValidation": {
+      "status": "PASS",
+      "stamp": "20260730T033034Z-prod-validation",
+      "evidence": "docs/uat-screenshots/COMMAND_CENTRE_PRODUCTION_VALIDATION_STATUS.json"
     }
   },
   "regressionStatus": "green",
@@ -190,7 +236,16 @@
   "productionProbeStatus": {
     "host": "https://ccc.247print.biz",
     "http": "200",
-    "spaAssetsAclMask": "mask::rwx",
+    "spaAssetsAclMask": "rwx",
+    "productionMainScript": "CR0h3ngY.js",
+    "aoWp004Deploy": {
+      "status": "PASS",
+      "stamp": "20260730T032754Z-itp-ci-engine",
+      "spaDeployed": true,
+      "cipSpaQuiet": true,
+      "aclGate": "ccc-fix-public-acls",
+      "evidence": "docs/uat-screenshots/CIP_ITP_CI_SPA_STAGE_EVIDENCE.json"
+    },
     "blankPageRegression": {
       "status": "resolved_via_acl_hardening",
       "package": "AO-WP-003",
@@ -204,7 +259,21 @@
       "at": "2026-07-22T09:45:00.000Z"
     },
     "phaseBRuns3OnProductionUrl": "pending_owner_configured_production_url_reprobe",
-    "liveJwtSoak": "blocked_no_operator_jwt_in_agent_env"
+    "liveJwtSoak": "partial — AGKB confirm e2e JWT mint PASS; Edge hard promote blocked on ai-orchestrator BOOT_ERROR pending owner SUPABASE_ACCESS_TOKEN redeploy",
+    "probedAt": "2026-07-30T03:30:34.000Z"
+  },
+  "knowledgeGraphStatus": {
+    "status": "Partial",
+    "classification": "incremental_delivery_by_design",
+    "agkbSoftLink": "PASS in confirm e2e",
+    "openIntegrityFinding": "oversight-2026-07-19-revision-knowledge-invalidation-gap (drawing supersession → knowledge revalidation)",
+    "note": "KG remains Partial per service register; not a Sprint 1616 reopen."
+  },
+  "digitalBrainStatus": {
+    "status": "Partial",
+    "classification": "incremental_delivery_by_design",
+    "brainLineageInAgkbE2e": "PASS",
+    "note": "Digital Brain remains Partial per service register; project-scoped events only; cross-project via GK."
   },
   "learningLoopStatus": {
     "path": "Project_A_to_governed_knowledge_to_Project_B",
@@ -218,43 +287,45 @@
       "evidence": "docs/CROSS_PROJECT_LEARNING_LOOP_ACCEPTANCE.json",
       "executedAt": "2026-07-06T21:11:10.525Z"
     },
+    "agkbConfirmE2e": {
+      "status": "PASS",
+      "pathway": "A→Memory→KG→Brain→confirm→GK→B→recommend",
+      "jwtMint": true,
+      "edgeHardPromote": "blocked_boot_error_pending_owner_redeploy",
+      "dbConfirmPath": "PASS",
+      "evidence": "docs/uat-screenshots/AGKB_CONFIRM_E2E_SOAK_EVIDENCE.json",
+      "at": "2026-07-28T23:25:52.341Z"
+    },
     "productionFinalAcceptanceGate": {
       "id": "project_a_to_b_learning",
       "pass": true,
-      "detail": "PRIOR PASS harness chain complete"
+      "detail": "PRIOR PASS harness chain complete; AGKB confirm e2e reconfirmed DB path 2026-07-28"
     },
-    "currentStatus": "PASS — mandatory A→governed knowledge→B path intact; Access Control and AO-WP-004 do not introduce Memory-only or direct A→B shortcuts",
+    "currentStatus": "PASS — mandatory A→governed knowledge→B path intact; AO-WP-004/AGKB e2e do not introduce Memory-only or direct A→B shortcuts; Edge JWT hard promote remains owner-gated",
     "openIntegrityFinding": "Inbox finding oversight-2026-07-19-revision-knowledge-invalidation-gap remains open (drawing supersession → knowledge revalidation); does not reopen Sprint 1616"
   },
   "blockers": [
     {
-      "id": "ao-wp-004-cip-spa-thrashing",
-      "severity": "medium",
-      "status": "active",
-      "description": "AO-WP-004 SPA go-live deferred while CIP continuous SPA releases thrash (~every 5m). Local stage STAGED_OK; require CIP_SPA_QUIET=1 (or equivalent quiet window) before --go-live.",
-      "evidence": "architecture/STATUS/AO_WP_004_PROGRESS.md",
-      "updatedAt": "2026-07-27"
+      "id": "edge-ai-orchestrator-redeploy",
+      "severity": "high",
+      "status": "owner_gated",
+      "description": "Live ai-orchestrator returns BOOT_ERROR/503. Source recovered into CCC git (PR #8). Redeploy requires owner SUPABASE_ACCESS_TOKEN; then re-run npm run agkb:confirm-e2e for JWT hard promote.",
+      "evidence": "docs/uat-screenshots/ROADMAP_PRODUCTION_READY_EVIDENCE.json",
+      "updatedAt": "2026-07-30"
     },
     {
       "id": "write-audit-entry-standing-deferred",
       "severity": "owner-action",
       "status": "standing_deferred",
       "description": "write_audit_entry SECURITY DEFINER membership hardening remains standing deferred owner-only (0/3 gates). Not an autonomous sprint queue.",
-      "updatedAt": "2026-07-27"
-    },
-    {
-      "id": "ao-wp-004-live-jwt-soak",
-      "severity": "low",
-      "status": "blocked",
-      "description": "Optional live JWT soak for ITP CI tools blocked — no JWT/operator token in agent environment.",
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-30"
     },
     {
       "id": "cursor-ao-webhook-owner-gated",
       "severity": "low",
       "status": "owner_gated",
       "description": "CURSOR_AO_WEBHOOK_URL remains owner-gated for Architecture Office cloud auto-dispatch (orthogonal to AO-WP-004 SPA gate).",
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-30"
     },
     {
       "id": "migration-015-phase-b-production-reprobe",
@@ -262,7 +333,7 @@
       "status": "pending",
       "description": "PHASE_B_RUNS=3 on a dedicated production app URL re-probe remains pending owner configuration. RLS 7/7 state-equivalence already recorded.",
       "evidence": "docs/MIGRATION_015_PRODUCTION_VERIFICATION.json",
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-30"
     }
   ],
   "openRisks": [
@@ -278,6 +349,11 @@
       "description": "write_audit_entry SECURITY DEFINER executable without is_project_member remains standing deferred owner interrupt."
     },
     {
+      "id": "edge-ai-orchestrator-boot-error",
+      "severity": "high",
+      "description": "Production ai-orchestrator Edge BOOT_ERROR/503 blocks JWT hard promote; source recovered (CCC PR #8); redeploy owner-gated."
+    },
+    {
       "id": "partial-platform-services",
       "severity": "low",
       "description": "Digital Brain, KG, and Commercial Intelligence remain Partial per service register; incremental delivery by design."
@@ -289,6 +365,7 @@
       "status": "deployed_state_equivalent_but_untracked",
       "targetEnvironment": "production Supabase (projectRef aybovjvmyqexgpmhedni)",
       "rls": "7/7 satisfied_state_equivalence",
+      "postSyncVerification": "state_equivalence_recorded; schema_migrations tracking row still 0; PHASE_B_RUNS=3 dedicated reprobe pending owner",
       "completionEvidence": "docs/MIGRATION_015_PRODUCTION_VERIFICATION.json"
     }
   ],
@@ -319,13 +396,14 @@
     "forbidMemoryOnlyAtoB": true,
     "forbidDirectAtoB": true,
     "acceptanceEvidence": "docs/CROSS_PROJECT_LEARNING_LOOP_ACCEPTANCE.json",
+    "agkbConfirmE2eEvidence": "docs/uat-screenshots/AGKB_CONFIRM_E2E_SOAK_EVIDENCE.json",
     "status": "enforced"
   },
   "oversightSync": {
     "status": "regenerated_pending_push",
-    "reason": "Replaced oversized malformed historical state with compact canonical snapshot readable via GitHub Contents API",
+    "reason": "Reconciled AO-WP-004 go-live completion + AO-WP-005 owner-gated Edge redeploy into compact canonical snapshot",
     "allowlistOnly": true,
-    "regeneratedAt": "2026-07-27T05:45:00.000Z",
+    "regeneratedAt": "2026-07-30T04:20:00.000Z",
     "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight"
   },
   "oversightMonitoring": {
@@ -341,25 +419,27 @@
     "migration015ProductionRls7of7": "satisfied_state_equivalence",
     "migration015Classification": "deployed_state_equivalent_but_untracked",
     "gate2StagingSatisfied": true,
-    "productionPostSyncVerificationPending": false
+    "productionPostSyncVerificationPending": false,
+    "aoWp004GoLive": "completed"
   },
   "hardCompletionDirective": {
     "targetDate": "2026-07-12",
     "status": "satisfied_roadmap_complete",
     "scope": "cross-project learning loop + production readiness gates",
-    "note": "Directive complete at Sprint 1615 close; only write_audit_entry remains standing deferred owner action."
+    "note": "Directive complete at Sprint 1615 close; write_audit_entry remains standing deferred; Edge redeploy is parallel owner-gated AO-WP-005."
   },
   "reviewStatus": {
     "architectureOffice": "GREEN",
     "accessControlPackage": "COMPLETE",
-    "nextPackage": "AO-WP-004 in_progress (STAGED)"
+    "aoWp004Package": "COMPLETE",
+    "nextPackage": "AO-WP-005 owner_gated (Edge redeploy)"
   },
   "documentationUpdates": [
-    "AI_OVERSIGHT_STATE.json regenerated (compact canonical)",
-    "architecture/ARCHITECTURE_STATE.json encoding + AO-WP-004 staged alignment",
-    "architecture/NEXT_WORKPACKAGE.md status reconciled to in_progress (staged)"
+    "AI_OVERSIGHT_STATE.json reconciled for AO-WP-004 go-live completion",
+    "architecture/ARCHITECTURE_STATE.json + NEXT_WORKPACKAGE.md advanced to AO-WP-005",
+    "architecture/STATUS AO-WP-004 progress closed; AO-REV-004 recorded"
   ],
   "streamNotes": {
-    "architectureOffice": "AO-WP-003 complete; AO-WP-004 staged; CIP floors uninterrupted; Sprint 1616 not queued"
+    "architectureOffice": "AO-WP-003 complete; AO-WP-004 go-live complete; AO-WP-005 owner-gated Edge redeploy; Sprint 1616 not queued"
   }
 }

@@ -1,6 +1,6 @@
 # Implementation Summary
 
-**As of:** 2026-07-27  
+**As of:** 2026-07-30  
 **Governing reference:** [`../CCC_ARCHITECTURE.md`](../CCC_ARCHITECTURE.md)
 
 ---
@@ -12,8 +12,8 @@ Architecture Office under `architecture/` in `construction-intelligence-oversigh
 - Vision and governing CCC architecture reference
 - Digital Brain, Knowledge Graph, Data Model, Security, Roadmap docs
 - Machine-readable `ARCHITECTURE_STATE.json`
-- Structured `NEXT_WORKPACKAGE.md` (**AO-WP-004** in progress — SPA **STAGED**, go-live deferred)
-- Completed packages AO-WP-000 … AO-WP-003 and matching reviews
+- Structured `NEXT_WORKPACKAGE.md` (**AO-WP-005** owner-gated Edge redeploy)
+- Completed packages AO-WP-000 … AO-WP-004 and matching reviews
 - Health / implementation status summaries
 - Fail-closed `scripts/architecture-office-guard.mjs` + GitHub Actions guard workflow
 - Path-filtered Cursor Automation dispatch (see [`DELIVERY.md`](../DELIVERY.md) and [`CURSOR_AUTOMATION_DELIVERY.md`](./CURSOR_AUTOMATION_DELIVERY.md))
@@ -27,11 +27,20 @@ Architecture Office under `architecture/` in `construction-intelligence-oversigh
 | CCC merge tip | `1cc0069` (PRs #1, #2, #3) |
 | Delivery stamp | `20260726T010500Z-acl-hardening-sb` |
 | Review | AO-REV-003 **PASS** / approval **COMPLETE** |
-| Evidence archive (CCC) | `docs/uat-screenshots/archive/access-control-20260726/` |
+
+## ITP CI SPA go-live (AO-WP-004) — COMPLETE
+
+| Field | Value |
+|-------|--------|
+| Status | **completed** — do not reopen unless SPA/ACL regression |
+| CCC merge tip | `7ed70612` (PR #7) |
+| Go-live stamp | `20260730T032754Z-itp-ci-engine` |
+| Host / ACL | HTTP 200 / assets `rwx`; main script `CR0h3ngY.js` |
+| Review | AO-REV-004 **PASS** / approval **COMPLETE** |
 
 ## What engineering continues independently
 
-Active CCC CIP ITP floors and ITP Library → CI Engine (AO-WP-004) remain in the private delivery repo and are **not** blocked by this office.
+CIP continuous ITP floors continue in CCC. Edge `ai-orchestrator` redeploy is owner-gated AO-WP-005 and does **not** reopen Sprint 1616.
 
 ## Oversight protocol integration
 
@@ -42,8 +51,6 @@ Architecture Office links to:
 - `OVERSIGHT_PACKET.md`
 - `OVERSIGHT_SYNC.md`
 
-Root allowlisted sync files remain the sprint-state publication channel. Architecture artefacts are additive under `architecture/` with dedicated guards.
-
 ## Completed vs next
 
 | ID | Title | Status |
@@ -52,4 +59,5 @@ Root allowlisted sync files remain the sprint-state publication channel. Archite
 | AO-WP-001 | Bootstrap and publication guards | completed |
 | AO-WP-002 | CIP/ITP parallel-stream coherence checkpoint | completed |
 | AO-WP-003 | Access Control hardening live delivery | completed |
-| AO-WP-004 | ITP CI Engine SPA quiet-window go-live | in_progress (STAGED; go-live deferred) |
+| AO-WP-004 | ITP CI Engine SPA quiet-window go-live | completed |
+| AO-WP-005 | Edge ai-orchestrator redeploy + JWT AGKB hard promote | owner_gated |

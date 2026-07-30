@@ -1,14 +1,19 @@
 # Oversight Packet — Sprint 1615 Close-out (Roadmap Complete)
 
-**Status:** Milestone 1630-1639 Standing deferred owner gates continuous wrap CLOSED (10/10); Sprint 1615 closed; Sprint 1616 NOT queued — engineering roadmap complete; no new autonomous milestone; **UAT Ready**; **Production Ready** — permanent deployment + acceptance passed on https://ccc.247print.biz (release 20260722T201518Z-prod-gate3)
+**Status:** Milestone 1630-1639 Standing deferred owner gates continuous wrap CLOSED (10/10); Sprint 1615 closed; Sprint 1616 NOT queued — engineering roadmap complete; no new autonomous milestone; **UAT Ready**; **Production Ready** — permanent deployment + acceptance passed on https://ccc.247print.biz (release 20260722T201518Z-prod-gate3). **AO-WP-004** ITP CI SPA go-live **COMPLETE** (2026-07-30; CCC PR #7 tip `7ed70612`; stamp `20260730T032754Z-itp-ci-engine`). Next Architecture Office package **AO-WP-005** owner-gated Edge redeploy.
 
-**Last updated:** 2026-07-22
+**Last updated:** 2026-07-30
 **Current sprint:** 1615 closed  
 **Next sprint:** 1616 NOT queued (engineering roadmap complete; no autonomous queue)
 **Milestone:** 1630-1639 WRAP CLOSED (10/10) — next milestone NONE
 **hardCompletionDirective:** archived (2026-07-12 target superseded 2026-07-22)
 **Production gate:** PASSED — https://ccc.247print.biz release 20260722T201518Z-prod-gate3
-**Migration 015:** reconciled state-equivalent on aybovjvmyqexgpmhedni (not a pending dual-target deploy)
+**Migration 015:** reconciled state-equivalent on aybovjvmyqexgpmhedni (RLS 7/7; not a pending dual-target deploy)
+**AO-WP-004:** COMPLETE — SPA go-live PASS; AGKB confirm e2e PASS (DB path); Edge JWT hard promote → AO-WP-005
+**Validation:** Sprint Validation / Platform Certification **3/3** at roadmap close; Architecture Office guard PASS on publish
+**Supabase target:** `aybovjvmyqexgpmhedni` (production identity confirmed)
+**KG / Digital Brain:** Partial (incremental by design); A→GK→B learning loop PASS
+**Production probe:** host https://ccc.247print.biz HTTP 200; assets rwx; main script `CR0h3ngY.js`
 
 ---
 

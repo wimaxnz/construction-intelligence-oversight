@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "office": "Architecture Office",
   "governingReference": "architecture/CCC_ARCHITECTURE.md",
-  "lastUpdated": "2026-07-27",
+  "lastUpdated": "2026-07-30",
   "protocolLinks": {
     "oversightProtocol": "AI_OVERSIGHT_PROTOCOL.md",
     "canonicalOversightState": "AI_OVERSIGHT_STATE.json",
@@ -20,7 +20,7 @@
     "uatReady": true,
     "productionReady": true,
     "productionGate": "CLOSED_UNLESS_GENUINE_DEFECT",
-    "note": "Architecture Office mirrors canonical AI_OVERSIGHT_STATE.json; does not reopen Sprint 1616 or invent autonomous milestones. Access-control (AO-WP-003) COMPLETE — reopen only on ACL regression. Prior coordinated CCC recovery dispatch superseded by ACL close + AO-WP-004."
+    "note": "Architecture Office mirrors canonical AI_OVERSIGHT_STATE.json; does not reopen Sprint 1616 or invent autonomous milestones. AO-WP-003 Access Control COMPLETE; AO-WP-004 ITP CI SPA go-live COMPLETE (CCC PR #7 tip 7ed70612). Next: AO-WP-005 owner-gated Edge redeploy."
   },
   "doctrine": {
     "parseOnceSharedCiOnly": true,
@@ -44,25 +44,30 @@
       "deliveryStamp": "20260726T010500Z-acl-hardening-sb",
       "personaRegression": "13/13 PASS",
       "reopenOnlyOnRegression": true
+    },
+    "itpCiSpaGoLive": {
+      "status": "completed",
+      "packageId": "AO-WP-004",
+      "cccMergeTip": "7ed70612",
+      "goLiveStamp": "20260730T032754Z-itp-ci-engine",
+      "spaDeployed": true,
+      "reopenOnlyOnRegression": true
     }
   },
   "activeWork": {
     "engineeringAutonomousQueue": "none",
     "parallelStreams": [
       "CIP continuous ITP floors (must not be interrupted)",
-      "ITP Library to CI Engine (AO-WP-004 SPA staged; go-live deferred for CIP quiet window)",
+      "AO-WP-005 Edge ai-orchestrator redeploy (owner-gated SUPABASE_ACCESS_TOKEN)",
       "Demo role-switch migration 034 (owner steps may remain)"
     ],
     "productionGatePolicy": "CLOSED unless genuine production defect"
   },
   "nextWorkPackage": {
-    "id": "AO-WP-004",
-    "title": "ITP CI Engine SPA quiet-window go-live + production readiness soak",
-    "status": "in_progress",
-    "stagedStatus": "STAGED",
-    "stageStamp": "20260727T011245Z-itp-ci-engine",
-    "spaDeployed": false,
-    "goLive": "deferred",
+    "id": "AO-WP-005",
+    "title": "Edge ai-orchestrator redeploy + JWT AGKB hard-promote soak",
+    "status": "owner_gated",
+    "blockedReason": "SUPABASE_ACCESS_TOKEN required",
     "path": "architecture/NEXT_WORKPACKAGE.md",
     "conflictsWithActiveEngineering": false
   },
@@ -95,13 +100,20 @@
       "path": "architecture/WORKPACKAGES/AO-WP-003-access-control-hardening-delivery.md",
       "completedAt": "2026-07-27",
       "cccMergeTip": "1cc0069",
-      "prs": [
-        1,
-        2,
-        3
-      ],
+      "prs": [1, 2, 3],
       "deliveryStamp": "20260726T010500Z-acl-hardening-sb",
       "supersedesDispatch": "Coordinated CCC recovery/blank-page dispatch closed via ACL live delivery + post-merge regression"
+    },
+    {
+      "id": "AO-WP-004",
+      "title": "ITP CI Engine SPA quiet-window go-live + production readiness soak",
+      "status": "completed",
+      "path": "architecture/WORKPACKAGES/AO-WP-004-itp-ci-spa-golive.md",
+      "completedAt": "2026-07-30",
+      "cccMergeTip": "7ed70612",
+      "prs": [7],
+      "goLiveStamp": "20260730T032754Z-itp-ci-engine",
+      "spaDeployed": true
     }
   ],
   "completedReviews": [
@@ -132,6 +144,14 @@
       "result": "PASS",
       "path": "architecture/REVIEWS/AO-REV-003-access-control-hardening-delivery.md",
       "reviewedAt": "2026-07-27",
+      "approvalStatus": "COMPLETE"
+    },
+    {
+      "id": "AO-REV-004",
+      "workPackageId": "AO-WP-004",
+      "result": "PASS",
+      "path": "architecture/REVIEWS/AO-REV-004-itp-ci-spa-golive.md",
+      "reviewedAt": "2026-07-30",
       "approvalStatus": "COMPLETE"
     }
   ],

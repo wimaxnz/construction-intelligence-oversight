@@ -1,19 +1,22 @@
 # AI Oversight — Review Responses
 
-**Status:** Active review — 7 findings triaged. Canonical position 2026-07-22 — Sprint 1615 closed; engineering roadmap complete; Sprint 1616 NOT queued; no new autonomous milestone; **UAT Ready**; **Production Ready** — permanent deployment + acceptance passed on https://ccc.247print.biz.
+**Status:** Active review — 7 findings triaged. Canonical position 2026-07-30 — Sprint 1615 closed; engineering roadmap complete; Sprint 1616 NOT queued; no new autonomous milestone; **UAT Ready**; **Production Ready** — permanent deployment + acceptance passed on https://ccc.247print.biz. **AO-WP-004** COMPLETE; next **AO-WP-005** owner-gated Edge redeploy.
 
 Findings from independent oversight land here. Do not queue Sprint 1616 without owner mandate.
 
 ---
 
-## Canonical close-out note (2026-07-22)
+## Canonical close-out note (2026-07-30)
 
 - Milestone **1630–1639** WRAP CLOSED (10/10) with Sprint **1615**.
 - Engineering continuous roadmap is **complete** for autonomous execution.
 - **No Sprint 1616** queued; no new autonomous milestone.
-- Migration 015: state-equivalent / reconciled on Supabase `aybovjvmyqexgpmhedni` (7/7 policies; provenance gap in `schema_migrations` only — not a pending dual-target deploy).
+- Migration 015: state-equivalent / reconciled on Supabase `aybovjvmyqexgpmhedni` (7/7 policies; provenance gap in `schema_migrations` only — not a pending dual-target deploy). Finding 3 historical “not applied” wording is **superseded** by this state-equivalence verification.
 - `write_audit_entry` remains standing deferred / open_interrupt until owner production deploy + negative tests + completionEvidence (orthogonal to SPA host gate).
 - Production gate PASSED on https://ccc.247print.biz (release 20260722T201518Z-prod-gate3; evidence docs/uat-screenshots/PRODUCTION_FINAL_ACCEPTANCE_EVIDENCE.json).
+- **AO-WP-004** ITP CI SPA go-live **COMPLETE** (CCC PR #7 tip `7ed70612`; stamp `20260730T032754Z-itp-ci-engine`; host 200 / assets rwx; main script `CR0h3ngY.js`). AO-REV-004 PASS.
+- AGKB confirm-gated A→GK→B e2e **PASS** (DB path); Edge JWT hard promote blocked on `ai-orchestrator` BOOT_ERROR → **AO-WP-005** owner-gated.
+- Knowledge Graph / Digital Brain remain **Partial** (incremental by design); learning loop doctrine enforced.
 
 ---
 
@@ -361,7 +364,7 @@ If exact revision provenance is not already guaranteed, raise this from roadmap 
 ### Finding 3, Migration 015 production RLS risk is understated
 
 **Severity:** High before production release  
-**Disposition:** Continue development, but establish deployment gate
+**Disposition (updated 2026-07-30):** **Superseded** — Migration 015 RLS **7/7** satisfied via state-equivalence on production Supabase `aybovjvmyqexgpmhedni` (`deployed_state_equivalent_but_untracked`; `schema_migrations` tracking row count remains 0). See canonical `AI_OVERSIGHT_STATE.json` `migrationsRequired` / `rlsStatus`. Historical text below retained for audit.
 
 Migration 015 includes RLS/security hardening and delete-policy behavior and is not applied to production.
 
