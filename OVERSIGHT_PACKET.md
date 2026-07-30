@@ -1,6 +1,6 @@
 # Oversight Packet — Sprint 1615 Close-out (Roadmap Complete)
 
-**Status:** Milestone 1630-1639 Standing deferred owner gates continuous wrap CLOSED (10/10); Sprint 1615 closed; Sprint 1616 NOT queued — engineering roadmap complete; no new autonomous milestone; **UAT Ready**; **Production Ready** — permanent deployment + acceptance passed on https://ccc.247print.biz (release 20260722T201518Z-prod-gate3). **AO-WP-004** COMPLETE; **AO-WP-005** Edge redeploy + JWT AGKB hard promote **COMPLETE** (BOOT_ERROR cleared). Next Architecture Office package **AO-WP-006** standing deferred owner gates.
+**Status:** Milestone 1630-1639 Standing deferred owner gates continuous wrap CLOSED (10/10); Sprint 1615 closed; Sprint 1616 NOT queued — engineering roadmap complete; no new autonomous milestone; **UAT Ready**; **Production Ready (~96%)** — permanent deployment + acceptance passed on https://ccc.247print.biz (release 20260722T201518Z-prod-gate3). **AO-WP-004** COMPLETE; **AO-WP-005** Edge redeploy + JWT AGKB hard promote **COMPLETE** (post-deploy health JWT 200; BOOT_ERROR cleared; active Edge blocker removed). Active Architecture Office package **AO-WP-006** standing deferred owner gates (started).
 
 **Last updated:** 2026-07-30
 **Current sprint:** 1615 closed  
@@ -10,8 +10,9 @@
 **Production gate:** PASSED — https://ccc.247print.biz release 20260722T201518Z-prod-gate3
 **Migration 015:** reconciled state-equivalent on aybovjvmyqexgpmhedni (RLS 7/7; not a pending dual-target deploy)
 **AO-WP-004:** COMPLETE — SPA go-live PASS  
-**AO-WP-005:** COMPLETE — Edge BOOT_ERROR cleared; AGKB JWT hard promote PASS → AO-WP-006
-**Validation:** Sprint Validation / Platform Certification **3/3** at roadmap close; Architecture Office guard PASS on publish
+**AO-WP-005:** COMPLETE — Edge BOOT_ERROR cleared; authenticated health 200; AGKB JWT hard promote PASS → AO-WP-006
+**AO-WP-006:** STARTED — write_audit_entry 0/3 + webhook owner-gated; progress `architecture/STATUS/AO_WP_006_PROGRESS.md`
+**Validation:** Sprint Validation / Platform Certification **3/3** at roadmap close; Architecture Office guard PASS on publish; persona-live-audit 14/14 + ACL 33/33 + ITP 52/52 post-deploy
 **Supabase target:** `aybovjvmyqexgpmhedni` (production identity confirmed)
 **KG / Digital Brain:** Partial (incremental by design); A→GK→B learning loop PASS
 **Production probe:** host https://ccc.247print.biz HTTP 200; assets rwx; main script `CR0h3ngY.js`

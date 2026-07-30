@@ -20,7 +20,7 @@
     "uatReady": true,
     "productionReady": true,
     "productionGate": "CLOSED_UNLESS_GENUINE_DEFECT",
-    "note": "Architecture Office mirrors canonical AI_OVERSIGHT_STATE.json; does not reopen Sprint 1616. AO-WP-003/004/005 COMPLETE. Next: AO-WP-006 standing deferred owner gates."
+    "note": "Architecture Office mirrors canonical AI_OVERSIGHT_STATE.json; does not reopen Sprint 1616. AO-WP-003/004/005 COMPLETE (post-deploy health JWT 200). Active: AO-WP-006 standing deferred owner gates (started; write_audit 0/3)."
   },
   "doctrine": {
     "parseOnceSharedCiOnly": true,
@@ -57,8 +57,11 @@
       "status": "completed",
       "packageId": "AO-WP-005",
       "bootErrorCleared": true,
+      "authenticatedHealth": 200,
       "agkbJwtHardPromote": "PASS",
+      "functionVersion": 283,
       "completedAt": "2026-07-30",
+      "postDeployVerifiedAt": "2026-07-30T07:33:24.936Z",
       "reopenOnlyOnRegression": true
     }
   },
@@ -75,8 +78,10 @@
     "id": "AO-WP-006",
     "title": "Standing deferred owner gates (write_audit_entry / webhook)",
     "status": "owner_gated",
+    "startedAt": "2026-07-30T07:48:30.000Z",
     "blockedReason": "write_audit_entry 0/3 + CURSOR_AO_WEBHOOK_URL owner-only",
     "path": "architecture/NEXT_WORKPACKAGE.md",
+    "progressDoc": "architecture/STATUS/AO_WP_006_PROGRESS.md",
     "conflictsWithActiveEngineering": false
   },
   "completedWorkPackages": [

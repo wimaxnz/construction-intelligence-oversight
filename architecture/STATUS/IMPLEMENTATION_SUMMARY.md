@@ -71,4 +71,4 @@ Architecture Office links to:
 | AO-WP-003 | Access Control hardening live delivery | completed |
 | AO-WP-004 | ITP CI Engine SPA quiet-window go-live | completed |
 | AO-WP-005 | Edge ai-orchestrator redeploy + JWT AGKB hard promote | completed |
-| AO-WP-006 | Standing deferred owner gates (write_audit_entry / webhook) | owner_gated |
+| AO-WP-006 | Standing deferred owner gates (write_audit_entry / webhook) | owner_gated (started 2026-07-30) |

@@ -9,7 +9,7 @@
 
 ## Summary
 
-Architecture Office aligned with roadmap-complete / Sprint 1616 not-queued oversight position. **AO-WP-003/004/005 CLOSED**. Edge `ai-orchestrator` BOOT_ERROR cleared; JWT AGKB hard promote PASS. Next package **AO-WP-006** tracks standing deferred owner gates (not a reopened autonomous sprint).
+Architecture Office aligned with roadmap-complete / Sprint 1616 not-queued oversight position. **AO-WP-003/004/005 CLOSED**. Edge `ai-orchestrator` post-deploy verified (health JWT **200**, anon 401, no BOOT_ERROR/503); JWT AGKB hard promote re-PASS. Active package **AO-WP-006** tracks standing deferred owner gates (started; not a reopened autonomous sprint).
 
 | Check | Status |
 |-------|--------|

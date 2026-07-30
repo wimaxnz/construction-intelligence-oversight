@@ -2,11 +2,12 @@
 
 **Package ID:** `AO-WP-006`  
 **Title:** Standing deferred owner gates (write_audit_entry / webhook)  
-**Status:** `owner_gated` (standing deferred — not an autonomous sprint)  
+**Status:** `owner_gated` (standing deferred — not an autonomous sprint) — **STARTED** 2026-07-30  
+**Progress:** [`STATUS/AO_WP_006_PROGRESS.md`](./STATUS/AO_WP_006_PROGRESS.md)  
 **Governing reference:** [`CCC_ARCHITECTURE.md`](./CCC_ARCHITECTURE.md)  
 **Machine state:** [`ARCHITECTURE_STATE.json`](./ARCHITECTURE_STATE.json)  
 **Canonical oversight:** [`../AI_OVERSIGHT_STATE.json`](../AI_OVERSIGHT_STATE.json)  
-**Prior package:** AO-WP-005 Edge ai-orchestrator redeploy + JWT AGKB hard promote — **COMPLETED** (2026-07-30; BOOT_ERROR cleared; Edge hard promote PASS)
+**Prior package:** AO-WP-005 Edge ai-orchestrator redeploy + JWT AGKB hard promote — **COMPLETED** (2026-07-30; authenticated health 200; Edge hard promote PASS; blocker removed from active roadmap)
 
 > Production-readiness parallel stream. Does **not** reopen Sprint 1616 or invent an autonomous engineering milestone.
 

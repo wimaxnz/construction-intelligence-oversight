@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "lastUpdated": "2026-07-30",
-  "regeneratedAt": "2026-07-30T07:10:00.000Z",
-  "regenerationNote": "AO-WP-005 COMPLETE: ai-orchestrator redeployed (BOOT_ERROR cleared via cipModuleIntelligence duplicate payload fix); AGKB confirm e2e JWT Edge hard promote PASS (edge_dry_run 200, edge_confirm_promote 200, edgeWroteGk true). Sprint 1615 closed / 1616 not queued unchanged.",
+  "regeneratedAt": "2026-07-30T07:48:30.000Z",
+  "regenerationNote": "Post-deploy verify CLOSED AO-WP-005: authenticated health HTTP 200 (action=health); anon 401; no BOOT_ERROR/503; AGKB JWT Edge hard promote re-PASS (edgeWroteGk true). Edge redeploy blocker resolved/removed from active roadmap. AO-WP-006 started (owner gates still 0/3). Sprint 1615 closed / 1616 not queued unchanged.",
   "currentSprint": {
     "number": 1615,
     "status": "closed",
@@ -90,9 +90,11 @@
       "id": "AO-WP-006",
       "title": "Standing deferred owner gates (write_audit_entry / webhook)",
       "status": "owner_gated",
+      "startedAt": "2026-07-30T07:48:30.000Z",
       "blockedReason": "write_audit_entry 0/3 gates + CURSOR_AO_WEBHOOK_URL remain owner-only; not an autonomous sprint",
       "evidence": "docs/uat-screenshots/ROADMAP_PRODUCTION_READY_EVIDENCE.json",
-      "progressDoc": "architecture/NEXT_WORKPACKAGE.md"
+      "progressDoc": "architecture/STATUS/AO_WP_006_PROGRESS.md",
+      "nextWorkpackage": "architecture/NEXT_WORKPACKAGE.md"
     },
     "completedWorkPackages": [
       "AO-WP-000",
@@ -142,16 +144,21 @@
       "status": "completed",
       "completedAt": "2026-07-30",
       "projectRef": "aybovjvmyqexgpmhedni",
+      "functionVersion": 283,
       "deployMethod": "npx supabase functions deploy ai-orchestrator --project-ref aybovjvmyqexgpmhedni",
       "bootErrorCleared": true,
       "liveProbeStatus": 401,
       "liveProbeNote": "unauthorized without operator JWT — function boots (no BOOT_ERROR/503)",
+      "authenticatedHealthStatus": 200,
+      "authenticatedHealthRequest": "POST /functions/v1/ai-orchestrator {action:\"health\"} with operator JWT",
       "bootRootCause": "duplicate const payload in cipModuleIntelligence.ts",
-      "agkbConfirmE2e": "PASS (JWT Edge hard promote)",
+      "agkbConfirmE2e": "PASS (JWT Edge hard promote) — re-verified 2026-07-30T07:33Z",
       "edgeDryRun": 200,
       "edgeConfirmPromote": 200,
       "edgeWroteGk": true,
+      "postDeployVerifyAt": "2026-07-30T07:33:24.936Z",
       "evidence": [
+        "docs/uat-screenshots/POST_DEPLOY_EDGE_VERIFY_EVIDENCE.json",
         "docs/uat-screenshots/EDGE_AI_ORCHESTRATOR_RECOVER_EVIDENCE.json",
         "docs/uat-screenshots/AGKB_CONFIRM_E2E_SOAK_EVIDENCE.json",
         "docs/uat-screenshots/EDGE_AI_ORCHESTRATOR_BOOT_DIAG.json",
@@ -194,14 +201,18 @@
     "overall": "PASS",
     "regressionStatus": "green",
     "architectureOfficeGuard": "PASS",
-    "accessControlSelftest": "PASS",
+    "accessControlSelftest": "33/33 PASS",
     "itpCiEngineSelftest": "52/52 PASS",
-    "personaRegression": "13/13 PASS",
+    "personaRegression": "14/14 PASS (persona-live-audit 2026-07-30T07:48Z; AO-WP-003 canonical close remains 13/13)",
+    "demoAccessSelftest": "44/44 PASS",
+    "fieldCaptureSelftest": "18/18 PASS",
     "sprintValidation": "3/3 historical_green_at_roadmap_close",
     "platformCertification": "3/3 recertified at Sprint 1615 close",
     "aoWp004GoLive": "PASS",
+    "aoWp005PostDeploy": "PASS (health JWT 200)",
     "agkbConfirmE2e": "PASS",
-    "notes": "Canonical validation for Architecture Office publication is architecture-office-guard + ACL/ITP selftests + AO-WP-004 go-live evidence. Full historical per-sprint validation maps intentionally omitted from compact snapshot."
+    "productionReadinessPercent": 96,
+    "notes": "Post-deploy 2026-07-30: Edge health JWT 200 + AGKB hard promote + persona/ACL/ITP regression green. Remaining % is classic owner-only gates (write_audit_entry 0/3, webhook, LLM/Smartsheet/MFA/SIEM)."
   },
   "validationResults": {
     "architectureOfficeGuard": {
@@ -357,14 +368,6 @@
   },
   "blockers": [
     {
-      "id": "edge-ai-orchestrator-redeploy",
-      "severity": "high",
-      "status": "resolved",
-      "description": "ai-orchestrator redeployed; BOOT_ERROR cleared (duplicate payload fix); JWT AGKB hard promote PASS.",
-      "evidence": "docs/uat-screenshots/EDGE_AI_ORCHESTRATOR_RECOVER_EVIDENCE.json",
-      "updatedAt": "2026-07-30"
-    },
-    {
       "id": "write-audit-entry-standing-deferred",
       "severity": "owner-action",
       "status": "standing_deferred",
@@ -447,9 +450,9 @@
   },
   "oversightSync": {
     "status": "regenerated_pending_push",
-    "reason": "AO-WP-005 Edge redeploy + JWT AGKB hard promote PASS; advanced to AO-WP-006 standing deferred owner gates",
+    "reason": "Post-deploy verify closed AO-WP-005 (health 200); removed edge-ai-orchestrator-redeploy from active blockers; AO-WP-006 progress started",
     "allowlistOnly": true,
-    "regeneratedAt": "2026-07-30T07:10:00.000Z",
+    "regeneratedAt": "2026-07-30T07:48:30.000Z",
     "publicRepo": "https://github.com/wimaxnz/construction-intelligence-oversight"
   },
   "oversightMonitoring": {
@@ -482,9 +485,9 @@
     "nextPackage": "AO-WP-006 owner_gated (standing deferred owner gates)"
   },
   "documentationUpdates": [
-    "AI_OVERSIGHT_STATE.json reconciled for AO-WP-005 Edge redeploy + JWT hard promote",
-    "architecture/ARCHITECTURE_STATE.json + NEXT_WORKPACKAGE.md advanced to AO-WP-006",
-    "architecture/STATUS AO-WP-005 progress closed; AO-REV-005 recorded"
+    "AI_OVERSIGHT_STATE.json post-deploy verify: AO-WP-005 CLOSED; edge blocker removed from active list",
+    "architecture/STATUS/AO_WP_006_PROGRESS.md started with gate re-check 0/3",
+    "architecture/STATUS AO-WP-005 authenticated health 200 recorded"
   ],
   "streamNotes": {
     "architectureOffice": "AO-WP-003/004/005 complete; AO-WP-006 standing deferred owner gates; Sprint 1616 not queued"
