@@ -1,7 +1,7 @@
 # CCC Architecture — Governing Reference
 
 **Status:** Governing architecture reference for Construction Command Centre (CCC).  
-**Last aligned:** 2026-07-25  
+**Last aligned:** 2026-07-30  
 **Canonical runtime state:** [`../AI_OVERSIGHT_STATE.json`](../AI_OVERSIGHT_STATE.json)  
 **Protocol:** [`../AI_OVERSIGHT_PROTOCOL.md`](../AI_OVERSIGHT_PROTOCOL.md)
 
@@ -83,10 +83,13 @@ Ingest / Parse-once
                 │
                 ▼
         Governed Knowledge (promotion + policy)
-                │
+                │  permanent store: ci_governed_knowledge
+                │  Edge promote: ai-orchestrator ci_learning_promote
                 ▼
         Cross-project reuse (A → GK → B only)
 ```
+
+**Finding 8 (closed):** `project-kg-persist` is **not** an active production Edge service (HTTP 404; never deployed). It is obsolete as a production dependency for governed knowledge. Permanent GK persistence is `ai-orchestrator` → `ci_governed_knowledge` (+ consumptions). Drawing-KG soft-writes use orchestrator `kgSoftWrite` / client RLS upsert. See [`KNOWLEDGE_GRAPH.md`](./KNOWLEDGE_GRAPH.md) and [`EVIDENCE/FINDING8_PROJECT_KG_PERSIST_ARCHITECTURE.json`](./EVIDENCE/FINDING8_PROJECT_KG_PERSIST_ARCHITECTURE.json).
 
 ---
 

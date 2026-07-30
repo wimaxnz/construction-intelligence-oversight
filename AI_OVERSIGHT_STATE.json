@@ -1,8 +1,21 @@
 {
   "schemaVersion": 2,
   "lastUpdated": "2026-07-30",
-  "regeneratedAt": "2026-07-30T07:48:30.000Z",
-  "regenerationNote": "Post-deploy verify CLOSED AO-WP-005: authenticated health HTTP 200 (action=health); anon 401; no BOOT_ERROR/503; AGKB JWT Edge hard promote re-PASS (edgeWroteGk true). Edge redeploy blocker resolved/removed from active roadmap. AO-WP-006 started (owner gates still 0/3). Sprint 1615 closed / 1616 not queued unchanged.",
+  "regeneratedAt": "2026-07-30T20:56:45.000Z",
+  "regenerationNote": "Finding 8 CLOSED: project-kg-persist retired as production Edge (HTTP 404); permanent GK is ai-orchestrator ci_learning_promote → ci_governed_knowledge. Evidence architecture/EVIDENCE/FINDING8_PROJECT_KG_PERSIST_ARCHITECTURE.json. Prior AO-WP-005 post-deploy health/AGKB PASS retained. AO-WP-006 owner gates still 0/3. Sprint 1615 closed / 1616 not queued unchanged.",
+  "finding8ProjectKgPersist": {
+    "id": "Finding 8",
+    "status": "permanently_closed",
+    "architectureVerdict": "RETIRED_AS_PRODUCTION_SERVICE",
+    "deployed": false,
+    "liveProbe": "HTTP 404 anon+JWT",
+    "replacement": "ai-orchestrator ci_learning_promote → ci_governed_knowledge (+ consumptions); kgSoftWrite/client RLS for project_kg_*",
+    "evidence": "architecture/EVIDENCE/FINDING8_PROJECT_KG_PERSIST_ARCHITECTURE.json",
+    "cccEvidenceMirror": "docs/uat-screenshots/FINDING8_EVIDENCE_PACK.json",
+    "closedAt": "2026-07-30T20:56:45.000Z",
+    "productionReleaseHash": "eca9c18e0a184ca4531af84624ae0c11b24f285d",
+    "aiOrchestratorPriorVersion": 283
+  },
   "currentSprint": {
     "number": 1615,
     "status": "closed",
@@ -393,9 +406,9 @@
   "openRisks": [
     {
       "id": "revision-knowledge-invalidation-gap",
-      "severity": "high",
+      "severity": "medium",
       "relatedFinding": "oversight-2026-07-19-revision-knowledge-invalidation-gap",
-      "description": "Drawing supersession does not yet fully invalidate governed knowledge for A→GK→B reuse; tracked as oversight inbox finding — do not reopen Sprint 1616."
+      "description": "CI-artifact supersession → GK invalidation is production-proven (Finding 8 evidence, ci_invalidate_on_supersession). Residual inbox gap may remain for LessonsLearnedCapture / UI drawing_revision_superseded hooks — do not reopen Sprint 1616; do not reopen Finding 8."
     },
     {
       "id": "write-audit-entry-secdef",

@@ -33,6 +33,23 @@ Architecture reviews must verify **Project A → Governed Knowledge → Project 
 
 ---
 
+## Finding 8 — `project-kg-persist` disposition (2026-07-30)
+
+**Verdict: RETIRED as a production Edge dependency** (never deployed; HTTP 404 on production ref `aybovjvmyqexgpmhedni`).
+
+`project-kg-persist` is **not** the governed-knowledge persistence path and must not be treated as an active production service.
+
+| Concern | Production path |
+|---------|-----------------|
+| Permanent governed knowledge | `ai-orchestrator` action `ci_learning_promote` (`confirm:true`) → `ci_governed_knowledge` + `ci_governed_knowledge_consumptions` |
+| Drawing / revision KG soft-write | `ai-orchestrator` `kgSoftWrite` → `project_kg_nodes` / `project_kg_edges` |
+| Client KG upsert fallback | RLS upsert via delivery `projectKnowledgeGraphSupabaseAdapter` (opt-in persist flags) |
+| Optional Edge helper | `project-kg-persist` source may remain behind `VITE_PROJECT_KG_EDGE_WORKER=1` — **not deployed**; not required |
+
+Evidence: [`EVIDENCE/FINDING8_PROJECT_KG_PERSIST_ARCHITECTURE.json`](./EVIDENCE/FINDING8_PROJECT_KG_PERSIST_ARCHITECTURE.json)
+
+---
+
 ## Package checklist
 
 - [ ] Entities/edges named and scoped
@@ -40,3 +57,4 @@ Architecture reviews must verify **Project A → Governed Knowledge → Project 
 - [ ] No silo tables introduced
 - [ ] A→GK→B verified or explicitly N/A (in-project only)
 - [ ] Digital Brain events remain project-scoped unless promotion is declared
+- [ ] Do not require `project-kg-persist` Edge for GK or production KG soft-write

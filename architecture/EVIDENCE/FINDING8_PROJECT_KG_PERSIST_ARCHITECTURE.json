@@ -1,0 +1,154 @@
+{
+  "suite": "finding8-evidence-pack",
+  "finding": "Finding 8 (project-kg-persist)",
+  "stamp": "20260730T205626Z",
+  "at": "2026-07-30T20:56:26.351Z",
+  "projectRef": "aybovjvmyqexgpmhedni",
+  "productionReleaseHash": "eca9c18e0a184ca4531af84624ae0c11b24f285d",
+  "branch": "feature/spatial-location-engine",
+  "architectureVerdict": "RETIRED_AS_PRODUCTION_SERVICE",
+  "replacement": "Permanent governed knowledge: ai-orchestrator ci_learning_promote → ci_governed_knowledge (+ consumptions). Drawing KG soft-write: kgSoftWrite / client RLS upsert. project-kg-persist never deployed (opt-in helper only).",
+  "deploymentVersion": {
+    "aiOrchestratorHealthStatus": 200,
+    "aiOrchestratorHealthDigest": "b9cf4b450402b5ba",
+    "priorKnownVersion": 283,
+    "projectKgPersist": "NOT_DEPLOYED_HTTP_404",
+    "projectKgPersistProbes": [
+      {
+        "path": "project-kg-persist",
+        "status": 404,
+        "digest": "43a88ae05fc9cd3b",
+        "auth": "anon"
+      },
+      {
+        "path": "project-kg-persist",
+        "status": 404,
+        "digest": "43a88ae05fc9cd3b",
+        "auth": "jwt"
+      }
+    ]
+  },
+  "drawingRevisionLineage": {
+    "sourceArtifactId": "4d724350-ae55-4676-a976-70646602879d",
+    "projectA": {
+      "id": "24be1b70-1bbb-4e59-a7e7-a8aaaf23ccdf",
+      "legacyId": "p-demo-sandbox",
+      "name": "Auckland Commercial Office Tower"
+    },
+    "note": "Disposable CI artifact created for Finding8 lineage + supersession proof"
+  },
+  "governanceApproval": {
+    "edgeDryRun": {
+      "status": 200,
+      "ok": true,
+      "digest": "6f2ea981387fc651"
+    },
+    "edgeConfirmPromote": {
+      "status": 200,
+      "ok": true,
+      "digest": "188475c98c26ad8d",
+      "error": null
+    },
+    "confirmRequiredPath": "ci_learning_promote confirm:true"
+  },
+  "projectAGovernedKnowledgeCreation": {
+    "governedKnowledgeId": "093a63bc-ce26-4d7f-a558-58252130b12b",
+    "candidateId": "8aa88c56-b07c-44fb-951e-162b02a8c808",
+    "fingerprint": "finding8-8aa88c56-b07c-44fb-951e-162b02a8c808",
+    "status": "active",
+    "sourceRevisionIds": [
+      "4d724350-ae55-4676-a976-70646602879d"
+    ],
+    "edgeWroteGk": true
+  },
+  "permanentGovernedKnowledgePersistence": {
+    "table": "ci_governed_knowledge",
+    "id": "093a63bc-ce26-4d7f-a558-58252130b12b",
+    "status": "active",
+    "approvalRecordDigest": "35ced1aa26037112",
+    "provenanceDigest": "32b54bb9a64b921c"
+  },
+  "projectBRetrievalLiveEdge": {
+    "projectB": {
+      "id": "c55c8a60-d827-4279-99ad-b434027302a6",
+      "legacyId": "p-mock-westside",
+      "name": "Westside Residentials"
+    },
+    "consumptionLinkRole": "governed_knowledge_view",
+    "ciItpRecommend": {
+      "status": 200,
+      "ok": true,
+      "digest": "eda3d5fbd2188e2a",
+      "error": null
+    }
+  },
+  "auditRecords": {
+    "publishedEventObjectId": "093a63bc-ce26-4d7f-a558-58252130b12b",
+    "consumedEventObjectId": "093a63bc-ce26-4d7f-a558-58252130b12b",
+    "durableMarkerEventId": "a64e67f9-594e-4435-9207-ddaa90ef3078",
+    "durableMarkerEventType": "finding8.architecture_evidence",
+    "recheckSql": "SELECT id, event_type, object_id, payload, occurred_at FROM platform_events WHERE event_type='finding8.architecture_evidence' ORDER BY occurred_at DESC LIMIT 5"
+  },
+  "provenanceChain": {
+    "path": "ProjectA.candidate → ci_learning_promote(confirm) → ci_governed_knowledge → ci_governed_knowledge_consumptions → ProjectB.ci_itp_recommend",
+    "forbidDirectAtoB": true,
+    "forbidMemoryOnlyAtoB": true,
+    "candidateId": "8aa88c56-b07c-44fb-951e-162b02a8c808",
+    "governedKnowledgeId": "093a63bc-ce26-4d7f-a558-58252130b12b",
+    "sourceArtifactId": "4d724350-ae55-4676-a976-70646602879d",
+    "immutableSourceRevisionIds": [
+      "4d724350-ae55-4676-a976-70646602879d"
+    ],
+    "approvalVia": "edge_ci_learning_promote"
+  },
+  "tenantIsolationVerification": {
+    "sameProjectPromoteBlockedOrRejected": true,
+    "status": 200,
+    "digest": "ec6084c45f59717e",
+    "error": "target_must_differ_from_source",
+    "expectedErrorHints": [
+      "isolation_violation_same_project",
+      "target_must_differ",
+      "already",
+      "promoted"
+    ],
+    "projectsDistinct": true
+  },
+  "drawingSupersessionInvalidationVerification": {
+    "oldArtifactId": "4d724350-ae55-4676-a976-70646602879d",
+    "newArtifactId": "ef5d20a1-325e-4aff-8e19-900e8cf2d89f",
+    "unitsInvalidated": 0,
+    "gkStatusAfter": "invalidated",
+    "invalidatedReason": "source_artifact_superseded",
+    "invalidatedAt": "2026-07-30 20:56:45.636243+00",
+    "invalidationEventId": "767c0603-1159-4b68-bc1b-162b82e034b6",
+    "pass": true
+  },
+  "pass": true,
+  "finding8PermanentlyClosed": true,
+  "closeJustification": "project-kg-persist is not an active production service (HTTP 404 anon+JWT). Permanent GK is ai-orchestrator→ci_governed_knowledge; supersession invalidation RPC proved end-to-end; audit marker persisted.",
+  "immutableRecheck": {
+    "marker": {
+      "id": "26463fd3-dfbf-469e-85b2-c5dbe22c3b9e",
+      "occurred_at": "2026-07-30 20:56:44.54823+00",
+      "payload": {
+        "gkId": "093a63bc-ce26-4d7f-a558-58252130b12b",
+        "stamp": "20260730T205626Z",
+        "artOld": "4d724350-ae55-4676-a976-70646602879d",
+        "finding": "Finding8",
+        "commitSha": "eca9c18e0a184ca4531af84624ae0c11b24f285d",
+        "candidateId": "8aa88c56-b07c-44fb-951e-162b02a8c808",
+        "projectKgPersist": "NOT_DEPLOYED_HTTP_404"
+      }
+    },
+    "gkRow": {
+      "id": "093a63bc-ce26-4d7f-a558-58252130b12b",
+      "status": "invalidated",
+      "invalidated_reason": "source_artifact_superseded",
+      "invalidated_at": "2026-07-30 20:56:45.636243+00"
+    }
+  },
+  "evidencePublicationCommitSha": "d4b270e4c656db3f5850bf6bfa26810438514f9c",
+  "probeBaseCommitSha": "eca9c18e0a184ca4531af84624ae0c11b24f285d",
+  "note": "productionReleaseHash is CCC tip at live probe time; evidencePublicationCommitSha is the CCC commit that published Finding 8 evidence."
+}

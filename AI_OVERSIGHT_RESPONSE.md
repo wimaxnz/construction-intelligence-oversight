@@ -1,8 +1,24 @@
 # AI Oversight — Review Responses
 
-**Status:** Active review — 7 findings triaged. Canonical position 2026-07-30 — Sprint 1615 closed; engineering roadmap complete; Sprint 1616 NOT queued; no new autonomous milestone; **UAT Ready**; **Production Ready (~96%)** — permanent deployment + acceptance passed on https://ccc.247print.biz. **AO-WP-004/005** COMPLETE (post-deploy health JWT **200** + AGKB hard promote re-PASS); Edge redeploy blocker **removed from active roadmap**; active package **AO-WP-006** standing deferred owner gates (started).
+**Status:** Active review — 7 findings triaged; **Finding 8 (`project-kg-persist`) permanently closed**. Canonical position 2026-07-30 — Sprint 1615 closed; engineering roadmap complete; Sprint 1616 NOT queued; no new autonomous milestone; **UAT Ready**; **Production Ready (~96%)** — permanent deployment + acceptance passed on https://ccc.247print.biz. **AO-WP-004/005** COMPLETE (post-deploy health JWT **200** + AGKB hard promote re-PASS); Edge redeploy blocker **removed from active roadmap**; active package **AO-WP-006** standing deferred owner gates (started).
 
 Findings from independent oversight land here. Do not queue Sprint 1616 without owner mandate.
+
+---
+
+## Finding 8 — `project-kg-persist` architecture verdict (2026-07-30)
+
+**Disposition: RETIRED as a production service** (never deployed; live anon+JWT probes HTTP **404** on `aybovjvmyqexgpmhedni`).
+
+It is **not** the governed-knowledge store. Permanent governed knowledge is:
+
+`ai-orchestrator` `ci_learning_promote` (`confirm:true`) → `ci_governed_knowledge` + `ci_governed_knowledge_consumptions` → Project B retrieval (`ci_itp_recommend`).
+
+Drawing-KG soft-write replacement: orchestrator `kgSoftWrite` / client RLS upsert to `project_kg_*`. Optional `project-kg-persist` Edge helper remains undeployed behind opt-in flags and is not a production dependency.
+
+**Finding 8 permanently closed: YES** — evidence pack `architecture/EVIDENCE/FINDING8_PROJECT_KG_PERSIST_ARCHITECTURE.json` (CCC mirror `docs/uat-screenshots/FINDING8_EVIDENCE_PACK.json`). Includes A→GK→B Edge promote digests, supersession invalidation (`ci_invalidate_on_supersession`), tenant isolation reject, durable `finding8.architecture_evidence` platform_events marker, release SHA `eca9c18e…`, prior orchestrator version **v283**.
+
+Residual (orthogonal): inbox finding `oversight-2026-07-19-revision-knowledge-invalidation-gap` may still cover LessonsLearnedCapture / UI drawing-revision hooks; CI-artifact GK invalidation path is production-proven under Finding 8.
 
 ---
 
@@ -16,7 +32,7 @@ Findings from independent oversight land here. Do not queue Sprint 1616 without 
 - Production gate PASSED on https://ccc.247print.biz (release 20260722T201518Z-prod-gate3; evidence docs/uat-screenshots/PRODUCTION_FINAL_ACCEPTANCE_EVIDENCE.json).
 - **AO-WP-004** ITP CI SPA go-live **COMPLETE** (CCC PR #7 tip `7ed70612`; stamp `20260730T032754Z-itp-ci-engine`; host 200 / assets rwx; main script `CR0h3ngY.js`). AO-REV-004 PASS.
 - AGKB confirm-gated A→GK→B e2e **PASS** (JWT Edge hard promote); AO-WP-005 Edge redeploy **COMPLETE**.
-- Post-deploy re-verify (2026-07-30T07:33Z): `POST ai-orchestrator {action:"health"}` with operator JWT → **HTTP 200**; anon → 401; no BOOT_ERROR/503; dependent deployed Edges boot (hub 200; gateway/webhook/weather validation errors without BOOT_ERROR). `project-kg-persist` / `send-executive-report` **not deployed** (404).
+- Post-deploy re-verify (2026-07-30T07:33Z): `POST ai-orchestrator {action:"health"}` with operator JWT → **HTTP 200**; anon → 401; no BOOT_ERROR/503; dependent deployed Edges boot (hub 200; gateway/webhook/weather validation errors without BOOT_ERROR). `project-kg-persist` / `send-executive-report` **not deployed** (404) — Finding 8 later closed: `project-kg-persist` **retired** as production dependency (GK path is orchestrator→`ci_governed_knowledge`).
 - Persona live audit **14/14 PASS**; ACL selftest 33/33; ITP CI 52/52; Architecture Office Guard PASS.
 - **AO-WP-006** started — `write_audit_entry` still **0/3**; webhook owner-gated; Sprint 1616 NOT queued.
 - Knowledge Graph / Digital Brain remain **Partial** (incremental by design); learning loop doctrine enforced.
